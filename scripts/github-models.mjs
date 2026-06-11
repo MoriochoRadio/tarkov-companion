@@ -1,7 +1,10 @@
 // GitHub Models 호출 공용 헬퍼 — 호출 횟수 로깅 + 상한 안전장치
 // 무료 한도(하루 50회)의 절반 이하만 쓰는 게 원칙이며,
 // 버그로 인한 폭주를 막기 위해 프로세스당 MAX_CALLS회에서 강제 차단한다.
-const MAX_CALLS = 20
+// 기본 20, 워크플로우별로 MODELS_MAX_CALLS 환경변수로 조정
+// (quest-guides는 30 — 브리핑 5회·주간 1회와 합쳐도 무료 한도 50회/일 이내)
+const MAX_CALLS = Number(process.env.MODELS_MAX_CALLS ?? 20)
+export { MAX_CALLS }
 // 1순위 실패(미지원/한도 초과) 시 다음 모델로
 export const MODELS = ['openai/gpt-4.1-mini', 'openai/gpt-4o-mini']
 

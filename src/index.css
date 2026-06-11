@@ -691,6 +691,32 @@ select:focus-visible {
   font-size: var(--fs-body);
 }
 
+/* 퀘스트 공략 (AI 백필) */
+.guide-steps {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.guide-steps li {
+  padding: 4px 0;
+  color: var(--text-2);
+}
+
+.guide-steps li::marker {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.guide-tips {
+  margin: var(--sp-3) 0 0;
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--bg-inset);
+  border-radius: var(--radius-sm);
+  color: var(--text-2);
+  font-size: var(--fs-sub);
+}
+
 /* 맵 카드 */
 .maps-grid {
   display: grid;

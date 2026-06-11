@@ -1,0 +1,56 @@
+# 매일 02:00 UTC — 위키 퀘스트 가이드 30개씩 AI 요약 백필 (전체 ~510개, 2~3주 소요)
+name: Quest Guides Backfill
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  models: read
+  actions: write
+
+concurrency:
+  group: quest-guides
+  cancel-in-progress: false
+
+jobs:
+  guides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 가이드 생성 (하루 30개, 호출 상한 30)
+        run: node scripts/generate-quest-guides.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MODELS_MAX_CALLS: 30
+
+      - name: 커밋 & 푸시
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -d public/data/guides ]; then
+            git add public/data/guides
+          fi
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "퀘스트 가이드: $(TZ=Asia/Seoul date +%F) 백필"
+            git pull --rebase origin main
+            git push origin main
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # GITHUB_TOKEN push는 push 트리거를 발화시키지 않으므로 배포를 명시적으로 dispatch
+      - name: Pages 재배포 트리거
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main --repo "$GITHUB_REPOSITORY"

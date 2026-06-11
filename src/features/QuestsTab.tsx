@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { fetchGuideStatus } from '../api/guides'
 import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatNumber } from '../lib/format'
@@ -49,6 +50,11 @@ function QuestDetail({
   onBack: () => void
 }) {
   const [zoomed, setZoomed] = useState<QuestItemRef | null>(null)
+  const guideState = useAsyncData(() => fetchGuideStatus(quest.id), [quest.id])
+  const guide =
+    guideState.status === 'ready' && typeof guideState.data === 'object'
+      ? guideState.data
+      : null
   const itemObjectives = quest.objectives.filter((o) => o.items?.length)
   const questLink = (id: string) => {
     const q = byId.get(id)
@@ -116,6 +122,28 @@ function QuestDetail({
           ))}
         </ul>
       </section>
+
+      {guide && (
+        <section className="briefing-section">
+          <h2>📖 공략</h2>
+          <ol className="guide-steps">
+            {guide.steps.map((step, i) => (
+              <li key={i}>{step}</li>
+            ))}
+          </ol>
+          {guide.tips && <p className="guide-tips">💡 {guide.tips}</p>}
+          <p className="hint" style={{ margin: '8px 0 0' }}>
+            출처:{' '}
+            <a className="source-link" href={guide.sourceUrl} target="_blank" rel="noreferrer">
+              EFT 위키 ({guide.license}) ↗
+            </a>{' '}
+            · AI 요약 — 부정확할 수 있으니 원문 확인 권장
+          </p>
+        </section>
+      )}
+      {guideState.status === 'ready' && guideState.data === 'pending' && (
+        <p className="hint">📖 공략 자동 생성 진행 중 — 매일 30개씩 채워집니다</p>
+      )}
 
       {itemObjectives.length > 0 && (
         <section className="briefing-section">
