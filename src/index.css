@@ -166,6 +166,7 @@ body {
   font-weight: 500;
   white-space: nowrap;
   cursor: pointer;
+  transition: color 120ms ease, border-color 120ms ease;
 }
 
 .tabs button:hover {
@@ -226,6 +227,10 @@ body {
   color: var(--accent);
 }
 
+.data-table tbody tr {
+  transition: background-color 100ms ease;
+}
+
 .data-table tbody tr:hover {
   background: var(--bg-hover);
 }
@@ -246,6 +251,19 @@ body {
   background: var(--bg-inset);
   border-radius: var(--radius-sm);
   padding: 2px;
+}
+
+/* 호버로 색·테두리가 바뀌는 요소들 공통 트랜지션 (≤200ms) */
+.btn-ext,
+.quest-back,
+.load-more,
+.item-chip,
+.star-btn,
+.app-footer a,
+.source-link,
+.quest-link {
+  transition: color 120ms ease, border-color 120ms ease,
+    background-color 120ms ease;
 }
 
 /* ============================================================
@@ -444,8 +462,104 @@ select:focus-visible {
   animation: none;
 }
 
+/* 로딩 스켈레톤 — 테이블이 올 자리를 미리 그려둠 */
+.skeleton-label {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin: var(--sp-1) 0 var(--sp-3);
+  color: var(--text-3);
+  font-size: var(--fs-sub);
+}
+
+.skeleton-label::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border: 2px solid var(--border-strong);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+.skeleton-table {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: 12px var(--sp-3);
+}
+
+.skeleton-row + .skeleton-row {
+  border-top: 1px solid var(--border);
+}
+
+.skeleton-block {
+  flex: 1;
+  height: 13px;
+  border-radius: 4px;
+  background: var(--bg-hover);
+  animation: skeleton-pulse 1.2s ease-in-out infinite;
+}
+
+.skeleton-block.icon {
+  flex: 0 0 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+}
+
+.skeleton-block.wide {
+  flex: 2.5;
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ============================================================
+   마이크로 인터랙션 — 전부 200ms 이하, opacity/transform 위주
+   ============================================================ */
+@media (prefers-reduced-motion: no-preference) {
+  /* 탭 전환·목록↔상세 전환 시 패널 페이드 인 */
+  .app-main > * {
+    animation: panel-in 160ms ease-out;
+  }
+
+  .lightbox {
+    animation: fade-in 120ms ease-out;
+  }
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .status::before {
+  .status::before,
+  .skeleton-label::before,
+  .skeleton-block {
     animation: none;
   }
 }

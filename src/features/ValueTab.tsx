@@ -4,6 +4,7 @@ import { useAsyncData } from '../hooks/useAsyncData'
 import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
 import { formatRub } from '../lib/format'
 import { ItemCell } from './ItemRow'
+import { TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 
 const TOP_N = 50
@@ -34,7 +35,7 @@ export function ValueTab() {
   }, [state, excludeKeys, favOnly, favIds])
 
   if (state.status === 'loading') {
-    return <p className="status">아이템 데이터 불러오는 중… (최초 1회, 약 5초)</p>
+    return <TableSkeleton rows={8} label="아이템 데이터 불러오는 중… (최초 1회, 약 5초)" />
   }
   if (state.status === 'error') {
     return <p className="status error">불러오기 실패: {state.message}</p>

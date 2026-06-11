@@ -4,6 +4,7 @@ import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quest
 import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
+import { TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 
 const PAGE_SIZE = 60
@@ -299,7 +300,9 @@ export function QuestsTab() {
   }, [quests, trader, map, maxLevel, query, sortKey, activeOnly, activeIds])
 
   if (state.status === 'loading') {
-    return <p className="status">퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)</p>
+    return (
+      <TableSkeleton rows={10} label="퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)" />
+    )
   }
   if (state.status === 'error') {
     return <p className="status error">불러오기 실패: {state.message}</p>

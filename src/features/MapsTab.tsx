@@ -1,5 +1,6 @@
 import { fetchMapLinks, fetchMaps, type TarkovMap } from '../api/maps'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { TableSkeleton } from './Skeleton'
 
 function bossLabel(map: TarkovMap): string {
   if (map.bosses.length === 0) return '보스 없음'
@@ -78,7 +79,7 @@ export function MapsTab() {
   const linksState = useAsyncData(fetchMapLinks)
 
   if (mapsState.status === 'loading') {
-    return <p className="status">맵 데이터 불러오는 중…</p>
+    return <TableSkeleton rows={6} label="맵 데이터 불러오는 중…" />
   }
   if (mapsState.status === 'error') {
     return <p className="status error">불러오기 실패: {mapsState.message}</p>

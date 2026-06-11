@@ -3,6 +3,7 @@ import { fetchAllItems, type TarkovItem } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatPercent, formatRub, percentClass } from '../lib/format'
 import { ItemCell } from './ItemRow'
+import { TableSkeleton } from './Skeleton'
 
 const TOP_N = 20
 // 싸구려 아이템은 몇백 루블만 움직여도 수십 %가 튀어서 노이즈가 됨 → 최소가 필터
@@ -60,7 +61,7 @@ export function MoversTab() {
   }, [state])
 
   if (state.status === 'loading') {
-    return <p className="status">아이템 데이터 불러오는 중… (최초 1회, 약 5초)</p>
+    return <TableSkeleton rows={8} label="아이템 데이터 불러오는 중… (최초 1회, 약 5초)" />
   }
   if (state.status === 'error') {
     return <p className="status error">불러오기 실패: {state.message}</p>
