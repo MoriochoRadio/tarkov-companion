@@ -38,7 +38,7 @@ function Section({ section }: { section: BriefingSection }) {
               {item.title}
               {item.isNew && <span className="badge-new">🆕 NEW</span>}
             </strong>
-            <p>{item.summary}</p>
+            {item.summary && <p>{item.summary}</p>}
             {item.url && (
               <a
                 className="source-link"

@@ -2,7 +2,7 @@
 // 스키마: docs/briefing-schema.md
 export interface BriefingItem {
   title: string
-  summary: string
+  summary?: string // 영상처럼 요약할 내용이 없는 항목은 생략
   url?: string
   source?: string
   isNew?: boolean // 어제 브리핑에 없던 새 이슈

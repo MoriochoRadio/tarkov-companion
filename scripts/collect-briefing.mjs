@@ -19,6 +19,7 @@ const FETCH_TIMEOUT = 15_000
 // 체인지로그에서 이 일수보다 오래된 패치는 제외 (매일 같은 내용 반복 방지)
 const CHANGELOG_MAX_AGE_DAYS = 7
 const VIDEO_MAX_AGE_HOURS = 24
+const VIDEOS_PER_CHANNEL = 2
 const STEAM_MAX_AGE_DAYS = 3
 
 // 한국 시간 기준 날짜 (cron이 00:00 UTC = 09:00 KST에 돌지만,
@@ -183,6 +184,13 @@ const YOUTUBE_CHANNELS = [
   { name: 'LVNDMARK', id: 'UCOhsgjMEyldgS04MiP2x-zA' }, // 해외 본채널 (클립 채널 아님)
 ]
 
+// Shorts 판별 — RSS에 영상 길이가 없어서 휴리스틱 사용:
+// URL의 /shorts/ 경로, 제목·설명의 #shorts 태그
+function isShort(title, url, description) {
+  if (url.includes('/shorts/')) return true
+  return /#shorts?\b/i.test(`${title} ${description}`)
+}
+
 async function collectYouTube() {
   const cutoff = Date.now() - VIDEO_MAX_AGE_HOURS * 3600 * 1000
   const items = []
@@ -192,19 +200,26 @@ async function collectYouTube() {
       const xml = await getText(
         `https://www.youtube.com/feeds/videos.xml?channel_id=${ch.id}`,
       )
+      let kept = 0
       for (const entry of xml.split('<entry>').slice(1)) {
+        if (kept >= VIDEOS_PER_CHANNEL) break // 피드는 최신순
         const title = entry.match(/<title>([\s\S]*?)<\/title>/)
         const link = entry.match(/<link rel="alternate" href="([^"]+)"/)
         const published = entry.match(/<published>([^<]+)<\/published>/)
+        const desc = entry.match(/<media:description>([\s\S]*?)<\/media:description>/)
         if (!title || !link || !published) continue
         if (new Date(published[1]).getTime() < cutoff) continue
+        const titleText = decodeEntities(title[1].trim())
+        const url = decodeEntities(link[1])
+        if (isShort(titleText, url, desc ? desc[1] : '')) continue
         items.push({
-          title: decodeEntities(title[1].trim()),
-          url: decodeEntities(link[1]),
+          title: titleText,
+          url,
           channel: ch.name,
           source: `YouTube ${ch.name}`,
           publishedAt: published[1],
         })
+        kept += 1
       }
     } catch (err) {
       failures.push(ch.name)

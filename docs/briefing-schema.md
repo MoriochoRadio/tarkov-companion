@@ -37,6 +37,7 @@ public/data/briefings/
 
 - `sections[].type`: `news`(공식 소식) | `community`(커뮤니티 동향) | `tips`(공략·꿀팁) | `warning`(버그·주의사항) | `videos`(신규 영상). 섹션은 그날 내용에 따라 늘거나 줄 수 있음
 - `items[].url`/`source`는 선택 항목이지만 가능하면 항상 포함 (출처 표기)
+- `items[].summary`도 선택 — 영상처럼 제목이 전부인 항목은 생략 (무의미한 "채널 X가 영상을 올렸다" 요약 금지). 프런트는 summary가 없으면 제목+출처만 표시
 - `items[].isNew` (선택, boolean): 어제 브리핑에 없던 새 이슈면 `true` — 프런트에서 🆕 뱃지 표시
 - 모든 텍스트는 한국어
 

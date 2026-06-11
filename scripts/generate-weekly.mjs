@@ -70,11 +70,11 @@ function validateBriefing(parsed) {
       type: VALID_TYPES.has(s.type) ? s.type : 'community',
       title: String(s.title ?? '').trim() || '기타',
       items: (Array.isArray(s.items) ? s.items : [])
-        .filter((i) => i?.title && i?.summary)
+        .filter((i) => i?.title)
         .slice(0, 5)
         .map((i) => ({
           title: String(i.title),
-          summary: String(i.summary),
+          ...(i.summary ? { summary: String(i.summary) } : {}),
           ...(i.url ? { url: String(i.url) } : {}),
           ...(i.source ? { source: String(i.source) } : {}),
         })),
