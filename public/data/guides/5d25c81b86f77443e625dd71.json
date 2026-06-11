@@ -1,0 +1,14 @@
+{
+  "taskId": "5d25c81b86f77443e625dd71",
+  "nameKo": "생존가의 길 - 상처 입은 짐승",
+  "nameEn": "The Survivalist Path - Wounded Beast",
+  "steps": [
+    "다리 뼈를 부러뜨리려면 몇 미터 높이에서 떨어지거나 기지 (Hideout) 체육관 훈련을 일부러 실패하여 팔을 부러뜨립니다.",
+    "탈수 상태를 만들어 고통을 유발하려면 DevilDog 마요네즈 병을 사용하세요. 단, 지속적인 피해가 함께 발생합니다.",
+    "진통제, 모르핀 또는 유사 약물을 사용하면 상태 이상이 제거되므로 퀘스트 진행에 해당하는 고통 상태가 사라집니다."
+  ],
+  "tips": "진통제 등 약물을 사용하면 퀘스트 조건이 충족되지 않으니 주의하세요.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Wounded_Beast",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

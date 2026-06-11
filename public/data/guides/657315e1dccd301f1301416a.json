@@ -1,0 +1,16 @@
+{
+  "taskId": "657315e1dccd301f1301416a",
+  "nameKo": "호화로운 삶",
+  "nameEn": "Luxurious Life",
+  "steps": [
+    "지상 제로(Ground Zero)에 위치한 주류 상점 'ASAP 와이너리(ASAP winery)'를 찾습니다. 이 상점은 테라그룹 빌딩 단지(TerraGroup building complex) 맞은편에 있습니다.",
+    "상점 내부 여러 위치 중 한 곳에서 '르 장 와인 병(Bottle of Le Jean wine)'을 찾습니다. 첫 번째 위치는 큰 바 카운터 왼쪽 코너 선반입니다.",
+    "두 번째 위치는 큰 바 카운터 오른쪽 선반이며, 세 번째 위치는 큰 바 카운터 뒤쪽 선반입니다.",
+    "네 번째, 다섯 번째, 여섯 번째 위치는 큰 바 카운터 뒤쪽에 있는 저장고 방의 선반들입니다.",
+    "와인 병을 획득하면 퀘스트 아이템 인벤토리에 자동으로 들어가며, 추출 전에 이 아이템을 잃지 않도록 주의합니다."
+  ],
+  "tips": "퀘스트가 활성화되어야만 와인 병이 등장하며, 추출 실패 시 아이템을 잃게 되므로 안전한 추출 경로를 확보하세요.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Luxurious_Life",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

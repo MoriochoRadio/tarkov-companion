@@ -1,0 +1,13 @@
+{
+  "taskId": "657315e270bb0b8dba00cc48",
+  "nameKo": "Burning Rubber",
+  "nameEn": "Burning Rubber",
+  "steps": [
+    "그라운드 제로 (Ground Zero) 지역에서 '경찰 검문소 V-Ex (Police Cordon V-Ex)' 추출 지점을 찾습니다.",
+    "'생존 (Survived)' 또는 '돌파 (Run-Through)' 추출 상태로 해당 추출 지점에서 탈출해야 합니다.",
+    "추출 시 기본 비용은 20,000 루블이며, 스캐브 카르마(Scav karma)에 따라 비용이 변동될 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Burning_Rubber",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

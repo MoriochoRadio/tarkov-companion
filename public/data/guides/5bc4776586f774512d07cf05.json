@@ -1,0 +1,14 @@
+{
+  "taskId": "5bc4776586f774512d07cf05",
+  "nameKo": "타르코프의 저격수 - 파트 1",
+  "nameEn": "The Tarkov Shooter - Part 1",
+  "steps": [
+    "볼트액션 소총이나 MP-18을 준비하고, 조준경이나 조준기를 부착하지 말고 철조준기만 사용한다.",
+    "40미터 이상 거리에서 효과적으로 교전할 수 있는 장소가 적기 때문에 공장 (Factory) 맵은 추천하지 않는다.",
+    "스캐브 (Scav)만 이 퀘스트에 카운트되며 PMC는 해당되지 않는다.",
+    "원거리에서 스나이퍼 스캐브를 발견할 수 있는 숲 (Woods), 해안가 (Shoreline), 세관 (Customs) 맵에서 플레이한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_Shooter_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

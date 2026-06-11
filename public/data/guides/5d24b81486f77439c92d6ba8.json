@@ -1,0 +1,16 @@
+{
+  "taskId": "5d24b81486f77439c92d6ba8",
+  "nameKo": "지인",
+  "nameEn": "Acquaintance",
+  "steps": [
+    "1단계: 퀘스트에 필요한 식량 아이템인 이스카라 식량 팩(Iskra ration pack) 3개, 즉석 라면 팩(Pack of instant noodles) 2개, 대형 소고기 스튜 캔(Can of beef stew (Large)) 2개를 레이드에서 찾아야 합니다.",
+    "2단계: 예비군 기지(Reserve)에서는 블랙 비숍 건물의 주방 구역과 지하 벙커의 잠긴 철장 방에서 식량 아이템과 식량 보급 상자를 쉽게 찾을 수 있습니다.",
+    "3단계: 쇼어라인(Shoreline) 리조트의 행정동과 극장 건물 곳곳에 많은 식량 아이템이 흩어져 있으니 꼼꼼히 수색하세요.",
+    "4단계: 인터체인지(Interchange)에서는 고샨(Goshan) 식료품점 내부 선반들을 모두 확인해야 하며, 어두운 구석을 탐색할 때는 손전등이 도움이 됩니다.",
+    "5단계: 우즈(Woods)에서는 USEC 캠프와 호수 남동쪽 캠프 주변에서 식량 팩이 자주 스폰되니 해당 지역을 탐색하세요."
+  ],
+  "tips": "이스카라 식량 팩(Iskra ration pack)은 은신처(Hideout) 내 영양 단위(Nutrition Unit) 레벨 1에서 제작할 수 있으나, 퀘스트용 아이템은 반드시 레이드에서 획득해야 합니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Acquaintance",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

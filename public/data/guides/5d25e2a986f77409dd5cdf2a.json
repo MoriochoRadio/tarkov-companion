@@ -1,0 +1,13 @@
+{
+  "taskId": "5d25e2a986f77409dd5cdf2a",
+  "nameKo": "생존가의 길 - 의무병",
+  "nameEn": "The Survivalist Path - Combat Medic",
+  "steps": [
+    "생존가의 길 - 의무병(The Survivalist Path - Combat Medic) 퀘스트는 생명력(Vitality) 레벨을 올리는 것이 목표입니다.",
+    "생명력 레벨을 올리려면 데미지를 받거나 출혈 상태(Bloodloss)가 되어야 합니다.",
+    "eTG-change 재생 자극제 주사기 또는 Propital 재생 자극제 주사기를 사용한 후 불길을 통과하거나 심한 출혈 상태를 유발하여 생명력 레벨을 올릴 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Combat_Medic",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

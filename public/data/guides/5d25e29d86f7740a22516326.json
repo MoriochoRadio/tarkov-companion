@@ -1,0 +1,14 @@
+{
+  "taskId": "5d25e29d86f7740a22516326",
+  "nameKo": "생존가의 길 - 수리부엉이",
+  "nameEn": "The Survivalist Path - Eagle-Owl",
+  "steps": [
+    "공장 (Factory) 맵을 제외한 모든 맵에서 21:00부터 04:00 사이에 플레이하세요.",
+    "야간 투시 장치, 열화상 장치, 야간 투시 스코프 또는 열화상 조준경을 사용하지 않고 진행해야 합니다.",
+    "장비에 해당 장치가 장착되어 있어도 꺼져 있으면 퀘스트 진행이 불가능하니 반드시 제거하세요.",
+    "이 시간대에 스캐브 (Scav) 6명을 처치하면 퀘스트가 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Eagle-Owl",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

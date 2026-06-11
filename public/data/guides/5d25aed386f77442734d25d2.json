@@ -1,0 +1,14 @@
+{
+  "taskId": "5d25aed386f77442734d25d2",
+  "nameKo": "생존가의 길 - 무방비하지만 위험한",
+  "nameEn": "The Survivalist Path - Unprotected but Dangerous",
+  "steps": [
+    "우즈 (Woods) 지역에서 방어구 조끼나 방탄 흉갑 없이 스캐브 (Scav) 5명을 처치하세요.",
+    "방어구가 없는 상태여야 하며, 방탄 헬멧, 얼굴 가리개, 안경 착용은 허용됩니다.",
+    "만약 방어구를 착용하고 싶다면, 스캐브를 처치하기 직전에 방어구를 벗고 처치하세요.",
+    "스캐브와 최대한 거리를 유지하며 조준경이 달린 무기를 사용하는 것을 추천합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Unprotected_but_Dangerous",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

@@ -1,0 +1,12 @@
+{
+  "taskId": "5d25e2d886f77442734d335e",
+  "nameKo": "사냥꾼의 길 - 상황 통제",
+  "nameEn": "The Huntsman Path - Controller",
+  "steps": [
+    "M7290 수류탄, Zarya 수류탄 또는 Zvezda 섬광탄 탄환이 장착된 KS-23M 샷건을 사용하여 기절 효과를 유발합니다.",
+    "기절 효과를 주기 위해 공장 (Factory) 지도를 추천하며, 이곳은 PMC와 근접 전투를 벌일 기회가 많아 기절 효과를 피할 확률을 줄일 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Controller",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

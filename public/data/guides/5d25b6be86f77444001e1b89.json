@@ -1,0 +1,15 @@
+{
+  "taskId": "5d25b6be86f77444001e1b89",
+  "nameKo": "생존가의 길 - 비축",
+  "nameEn": "The Survivalist Path - Thrifty",
+  "steps": [
+    "1단계: Woods 맵에 있는 벙커 ZB-016에 들어갑니다.",
+    "2단계: ZB-016 벙커 내부의 나무 상자에 물병 (Bottle of water 0.6L) 1개와 이스크라 식량 팩 (Iskra ration pack) 1개를 보관합니다.",
+    "3단계: Woods 맵에 있는 벙커 ZB-014에 들어갑니다.",
+    "4단계: ZB-014 벙커 내부의 나무 상자에 물병 (Bottle of water 0.6L) 1개와 이스크라 식량 팩 (Iskra ration pack) 1개를 보관합니다."
+  ],
+  "tips": "물병과 이스크라 식량 팩은 직접 획득하여 벙커에 보관해야 하며, 벙커 위치는 Woods 맵 내에 있습니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Thrifty",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

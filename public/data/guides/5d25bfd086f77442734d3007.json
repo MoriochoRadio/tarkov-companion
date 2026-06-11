@@ -1,0 +1,16 @@
+{
+  "taskId": "5d25bfd086f77442734d3007",
+  "nameKo": "생존가의 길 - 지브치크",
+  "nameEn": "The Survivalist Path - Zhivchik",
+  "steps": [
+    "탈수 상태에 빠지기 위해 수분 수치를 빠르게 낮출 수 있는 아이템을 섭취합니다. 예를 들어, 데빌독 마요네즈 (Jar of DevilDog mayo)는 수분 -99, 연유 캔 (Can of condensed milk)은 수분 -65를 제공합니다.",
+    "은신처 (Hideout) 내 체육관 모듈을 사용해 에너지와 수분을 소모시킨 후 레이드에 진입할 수 있습니다.",
+    "친구와 함께 플레이할 경우, 친구에게 배를 쏘게 하여 탈수 상태에 빠질 수도 있습니다. 단, 이 방법은 에너지가 빠르게 감소하니 주의하세요.",
+    "피해를 회복할 수 있도록 충분한 의료품 (Meds) 또는 프로피탈 재생 자극기 (Propital regenerative stimulant injector)를 준비하고, 레이드 후에도 계속 사용할 수 있도록 음료 (Drinks)를 충분히 챙기세요.",
+    "\"Run Through\" 추출 상태로 레이드에서 탈출하면 퀘스트가 완료되지 않습니다. 이를 피하려면 레이드 내에서 최소 200 경험치(EXP)를 획득하거나 7분 이상 생존한 후 탈출하세요.",
+    "만약 \"Run Through\" 상태로 탈출했다면, 다른 지역에서 레이드에 생존 후 탈출하여 퀘스트를 완료할 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Zhivchik",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

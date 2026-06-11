@@ -1,0 +1,15 @@
+{
+  "taskId": "5d25cf2686f77443e75488d4",
+  "nameKo": "생존가의 길 - 상남자",
+  "nameEn": "The Survivalist Path - Tough Guy",
+  "steps": [
+    "퀘스트가 활성화된 상태에서는 레이드 중에 어떠한 의료 아이템도 사용하지 마십시오.",
+    "세 명의 스캐브(Scav)를 처치하는 목표를 달성하되, 처치 후에도 의료 아이템을 사용하지 않고 바로 퀘스트를 완료해야 합니다.",
+    "퀘스트 완료 후, 야거(Jaeger)와 대화하여 퀘스트를 반드시 완료 처리해야 하며, 완료 전에는 이후 우즈(Woods) 레이드에서 치료를 하면 퀘스트가 실패합니다.",
+    "레이드에서 생존할 필요는 없으며, 레이드 외에서 치료하는 것은 퀘스트에 영향을 미칩니다.",
+    "음료용 알코올은 진통제로 간주되어 이 퀘스트 실패 조건에 포함되지 않습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Tough_Guy",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

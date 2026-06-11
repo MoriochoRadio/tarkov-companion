@@ -1,0 +1,17 @@
+{
+  "taskId": "5ac23c6186f7741247042bad",
+  "nameKo": "건스미스 - 파트 1",
+  "nameEn": "Gunsmith - Part 1",
+  "steps": [
+    "MP-133 산탄총을 준비합니다.",
+    "내구도(Durability)가 60 이상인지 확인합니다.",
+    "인체공학(Ergonomics)이 45 이상인지 확인합니다.",
+    "반동(Recoil)이 850 이하인지 확인합니다.",
+    "무기 공간이 4칸 이하인지 확인합니다.",
+    "탄창 용량이 최소 5발 이상인지 확인합니다.",
+    "NcSTAR 전술용 블루 레이저(NcSTAR Tactical Blue Laser)와 같은 전술 장비를 장착합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

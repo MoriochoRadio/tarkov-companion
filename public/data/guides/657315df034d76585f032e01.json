@@ -1,0 +1,14 @@
+{
+  "taskId": "657315df034d76585f032e01",
+  "nameKo": "사격 연습",
+  "nameEn": "Shooting Cans",
+  "steps": [
+    "지상 제로 (Ground Zero) 지역에서 퀘스트를 시작합니다.",
+    "타르뱅크 건물 (Tarbank building) 3층 사무실(번호 5번)에서 우티오스 기관총 (Utyos machine gun)을 찾습니다.",
+    "캐피탈 인사이트 건물 (Capital Insight building) 3층 후방 사무실에서 AGS 유탄발사기 (AGS grenade launcher)를 획득합니다.",
+    "지상 제로 지역 내에서 적 엔티티 5명을 처치합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Shooting_Cans",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}

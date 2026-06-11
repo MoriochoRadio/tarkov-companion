@@ -1,0 +1,15 @@
+{
+  "taskId": "5d2495a886f77425cd51e403",
+  "nameKo": "소개",
+  "nameEn": "Introduction",
+  "steps": [
+    "1단계: 세관 (Woods) 지역의 동쪽, 추락한 비행기 근처에 있는 사냥터 망루(hunting stand)를 찾습니다.",
+    "2단계: 사냥터 망루 아래에 숨겨진 야거(Jaeger)의 암호화된 메시지(Encrypted message)를 획득합니다.",
+    "3단계: 메시지를 획득한 후, 세관 (Woods)에서 안전하게 탈출합니다.",
+    "4단계: 탈출 후, 획득한 암호화된 메시지를 메카닉 (Mechanic)에게 전달합니다."
+  ],
+  "tips": "암호화된 메시지는 퀘스트가 활성화되어 있을 때만 스폰되며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동합니다. 메시지를 들고 탈출에 실패하면 아이템을 잃으니 주의하세요.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Introduction",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+}
