@@ -28,6 +28,8 @@ export interface Quest {
   id: string
   nameKo: string
   nameEn: string
+  displayName: string // "한국어명 (English)" — 병합 시 1회 계산
+  searchKey: string // 소문자 ko+en — 검색 필터용 사전 계산
   trader: { id: string; name: string }
   map: { id: string; name: string } | null
   minPlayerLevel: number
@@ -108,10 +110,15 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
     }
   }
 
-  const quests: Quest[] = koTasks.map((t) => ({
+  const quests: Quest[] = koTasks.map((t) => {
+    const nameKo = t.name.trim()
+    const nameEn = (enTaskName.get(t.id) ?? t.name).trim()
+    return {
     id: t.id,
-    nameKo: t.name.trim(),
-    nameEn: (enTaskName.get(t.id) ?? t.name).trim(),
+    nameKo,
+    nameEn,
+    displayName: biName(nameKo, nameEn),
+    searchKey: `${nameKo} ${nameEn}`.toLowerCase(),
     trader: t.trader,
     map: t.map,
     minPlayerLevel: t.minPlayerLevel ?? 1,
@@ -151,7 +158,8 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
         standing: s.standing,
       })),
     },
-  }))
+    }
+  })
 
   // 후행 퀘스트 = requires의 역방향
   const byId = new Map(quests.map((q) => [q.id, q]))

@@ -23,3 +23,9 @@ React + TypeScript + Vite. 배포는 GitHub Actions → GitHub Pages.
 
 - `npm run dev` — 개발 서버
 - `npm run build` — 프로덕션 빌드 (push 전 반드시 통과 확인)
+
+## UI 변경 완료 기준 (필수)
+
+- UI 변경은 **프로덕션 빌드 + CPU 4x 스로틀** 환경에서 직접 조작해 확인할 것. 개발 머신의 빠른 환경 기준 판단 금지
+- 측정 도구: `npm run build && npm run preview` 후 `node scripts/profile-ui.mjs` (Chrome 필요, CPU 4x 스로틀 + 롱태스크/rAF 측정 자동화)
+- 기준: 어떤 조작에서도 메인 스레드 1초 이상 블로킹 금지. 데이터 도착 직후 첫 렌더는 작게 쪼갤 것 — 저사양 기기에서는 큰 레이아웃 패스 하나가 수십 초 프리즈로 증폭됨 (2026-06-12 퀘스트 탭 사례: 1x에서 130ms이던 단일 레이아웃이 20x 환경에서 11~33초로 증폭)

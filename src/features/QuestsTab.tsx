@@ -1,13 +1,19 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { biName, fetchQuests, type Quest } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatNumber } from '../lib/format'
 
 const PAGE_SIZE = 60
+// 데이터 도착 직후 첫 화면은 소량만 그려 단일 레이아웃 패스를 짧게 유지
+// (저사양 기기에서 큰 패스 하나가 수 초 프리즈로 증폭되는 것을 실측으로 확인)
+const FIRST_PAINT_ROWS = 20
 // 화면에 다 나열하기 힘든 "아무 의약품이나" 류 목표는 일부만 표시
 const MAX_OBJECTIVE_ITEMS = 6
 
 type SortKey = 'level' | 'trader'
+
+// 정렬 비교마다 로케일 비교기를 생성하지 않도록 단일 인스턴스 재사용
+const collator = new Intl.Collator('ko')
 
 // ---------- 상세 화면 ----------
 
@@ -28,7 +34,7 @@ function QuestDetail({
     if (!q) return null
     return (
       <button key={id} className="quest-link" onClick={() => onSelect(id)}>
-        {biName(q.nameKo, q.nameEn)}
+        {q.displayName}
       </button>
     )
   }
@@ -47,7 +53,7 @@ function QuestDetail({
       </div>
 
       <h2 className="quest-title">
-        {biName(quest.nameKo, quest.nameEn)}
+        {quest.displayName}
         {quest.kappaRequired && <span className="badge-kappa">κ 카파 필수</span>}
       </h2>
       <p className="hint">
@@ -135,7 +141,17 @@ export function QuestsTab() {
   const [maxLevel, setMaxLevel] = useState('') // "내 레벨" — 이 레벨로 받을 수 있는 퀘스트만
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('level')
-  const [visible, setVisible] = useState(PAGE_SIZE)
+  const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
+
+  // 첫 페인트가 끝나면 한 페이지 분량으로 확장 (2단계 렌더)
+  useEffect(() => {
+    if (state.status === 'ready' && visible < PAGE_SIZE) {
+      const t = setTimeout(() => setVisible(PAGE_SIZE), 50)
+      return () => clearTimeout(t)
+    }
+    // visible은 의도적으로 제외 — 확장은 데이터 도착 후 1회만
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.status])
 
   const quests = state.status === 'ready' ? state.data : []
   const byId = useMemo(() => new Map(quests.map((q) => [q.id, q])), [quests])
@@ -160,14 +176,14 @@ export function QuestsTab() {
         (!trader || quest.trader.id === trader) &&
         (!map || quest.map?.id === map) &&
         (!maxLevel || quest.minPlayerLevel <= level) &&
-        (!q ||
-          quest.nameKo.toLowerCase().includes(q) ||
-          quest.nameEn.toLowerCase().includes(q)),
+        (!q || quest.searchKey.includes(q)),
     )
     return result.sort((a, b) =>
       sortKey === 'level'
-        ? a.minPlayerLevel - b.minPlayerLevel || a.trader.name.localeCompare(b.trader.name, 'ko')
-        : a.trader.name.localeCompare(b.trader.name, 'ko') || a.minPlayerLevel - b.minPlayerLevel,
+        ? a.minPlayerLevel - b.minPlayerLevel ||
+          collator.compare(a.trader.name, b.trader.name)
+        : collator.compare(a.trader.name, b.trader.name) ||
+          a.minPlayerLevel - b.minPlayerLevel,
     )
   }, [quests, trader, map, maxLevel, query, sortKey])
 
@@ -235,7 +251,7 @@ export function QuestsTab() {
         {filtered.length}개 퀘스트 · 행을 클릭하면 상세 보기 · κ = 카파 컨테이너 필수
         퀘스트
       </p>
-      <table className="data-table">
+      <table className="data-table quest-table">
         <thead>
           <tr>
             <th>퀘스트</th>
@@ -248,7 +264,7 @@ export function QuestsTab() {
           {shown.map((q) => (
             <tr key={q.id} className="quest-row" onClick={() => setSelectedId(q.id)}>
               <td>
-                {biName(q.nameKo, q.nameEn)}
+                {q.displayName}
                 {q.kappaRequired && <span className="badge-kappa">κ</span>}
               </td>
               <td>{q.trader.name}</td>

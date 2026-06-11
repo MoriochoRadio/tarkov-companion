@@ -282,6 +282,33 @@ select:focus {
 }
 
 /* 퀘스트 */
+/* table-layout: fixed — 셀 내용의 고유 너비 측정을 생략해 레이아웃 비용을
+   행 수에 선형·저비용으로 고정 (저사양 기기 프리즈 방지, 실측 근거는 커밋 메시지) */
+.quest-table {
+  table-layout: fixed;
+}
+
+.quest-table th:nth-child(1) {
+  width: 56%;
+}
+
+.quest-table th:nth-child(2) {
+  width: 17%;
+}
+
+.quest-table th:nth-child(3) {
+  width: 17%;
+}
+
+.quest-table th:nth-child(4) {
+  width: 10%;
+}
+
+.quest-table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .quest-row {
   cursor: pointer;
 }
