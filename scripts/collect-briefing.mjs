@@ -110,6 +110,8 @@ function searchFeed(query, sort, t) {
   return `${SUB}/search.rss?q=${encodeURIComponent(query)}&restrict_sr=on&sort=${sort}&t=${t}`
 }
 
+// 모든 검색 피드는 sort=top & t=day — 추천수 상위만 수집해
+// "유저 평가로 검증된 글"만 들어오게 한다 (RSS에 점수는 없지만 정렬이 검증 역할)
 const REDDIT_FEEDS = [
   { label: '일간 인기', max: 8, url: `${SUB}/top/.rss?t=day&limit=10` },
   {
@@ -127,11 +129,24 @@ const REDDIT_FEEDS = [
     url: searchFeed('flair:"Cheating"', 'top', 'day'),
   },
   {
-    label: '공략·팁', // 공략 글은 유효기간이 길어 주간 톱으로
+    label: '공략·팁',
     max: 5,
-    url: searchFeed('title:guide OR title:tip OR title:"how to"', 'top', 'week'),
+    url: searchFeed('title:guide OR title:tip OR title:"how to"', 'top', 'day'),
   },
 ]
+
+// 본문 발췌 — 편집장이 제목만이 아니라 내용을 보고 선별할 수 있게
+function extractExcerpt(entryXml) {
+  const content = entryXml.match(/<content type="html">([\s\S]*?)<\/content>/)
+  if (!content) return null
+  const text = decodeEntities(decodeEntities(content[1])) // RSS가 HTML을 이중 이스케이프함
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/submitted by\s+\/u\/\S+/i, '')
+    .replace(/\[link\]|\[comments\]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+  return text.length >= 40 ? text.slice(0, 400) : null // 링크/짤 게시물은 본문이 없음
+}
 
 function parseAtomEntries(xml, max) {
   const items = []
@@ -139,9 +154,11 @@ function parseAtomEntries(xml, max) {
     const title = entry.match(/<title>([\s\S]*?)<\/title>/)
     const link = entry.match(/<link href="([^"]+)"/)
     if (!title || !link) continue
+    const excerpt = extractExcerpt(entry)
     items.push({
       title: decodeEntities(title[1].trim()),
       url: decodeEntities(link[1]),
+      ...(excerpt ? { excerpt } : {}),
     })
     if (items.length >= max) break
   }
