@@ -1,46 +1,96 @@
 {
   "date": "2026-06-11",
-  "generatedAt": "2026-06-11T18:57:32.481+09:00",
-  "headline": "적 AI 행동 변화 및 엔진룸 너프, TarCoin 도입과 스트리머 챌린지 결과 발표",
+  "generatedAt": "2026-06-11T21:14:11.960+09:00",
+  "headline": "적 AI 개선과 엔진룸 변화, 새로운 게임 내 화폐 TarCoin 등장",
   "sections": [
     {
       "type": "warning",
-      "title": "적 AI 및 엔진룸 너프 관련 주의 사항",
+      "title": "적 AI 및 게임 내 버그 주의사항",
       "items": [
         {
-          "title": "[주의] 적 발견 시간 증가 및 적 AI 행동 변경",
-          "summary": "Rogues가 적을 발견하는 시간이 증가했으며, Black Division은 엔진룸에서 플레이어를 향해 이동할 때 더 고르게 퍼져 움직이고, 수류탄을 더 자주 사용하도록 변경되었습니다. Wedge 보스는 가스 수류탄 트립와이어를 더 많이 배치합니다.",
+          "title": "적 발견 시간 증가 및 Black Division AI 개선",
+          "summary": "Rogues가 적을 발견하는 시간이 증가했고, Black Division은 엔진룸에서 플레이어를 향해 이동할 때 더 고르게 분산되며 수류탄 사용 빈도가 높아졌습니다. 전투 시 적 AI의 변화에 주의가 필요합니다.",
           "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
-          "source": "EFT 위키 체인지로그"
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
         },
         {
-          "title": "버그 수정: Knight 보스 및 Black Division AI 문제 해결",
-          "summary": "Knight 보스가 문을 통해 갑판에 들어가는 문제와 Black Division이 엔진룸에서 플레이어를 향해 이동하지 않고 정지하는 문제가 수정되었습니다.",
+          "title": "Black Division AI 버그 수정",
+          "summary": "Black Division이 엔진룸에서 플레이어를 향해 이동하지 않고 정지하는 문제와 Knight 보스가 문을 통해 갑판에 들어가지 못하는 문제를 해결해 AI 행동이 정상화되었습니다.",
           "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
-          "source": "EFT 위키 체인지로그"
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
         },
         {
-          "title": "[주의] 아레나 모드 관련 여러 버그 보고",
-          "summary": "아레나 모드에서 말 달리는 소리만 나는 현상, BG 토큰이 전술 지도에 표시되지 않는 문제 등 다양한 버그가 보고되고 있습니다. 튜토리얼 크래시, 하늘과 유리 깜빡임 현상도 함께 언급되었습니다.",
+          "title": "Wedge 보스의 가스 수류탄 함정 강화",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치하도록 변경되어 전투 시 함정에 주의해야 합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "튜토리얼 크래시 문제 해결법",
+          "summary": "튜토리얼 진행 중 78%에서 로딩이 멈추는 크래시 문제는 앱 데이터 삭제 및 재설치로 해결할 수 있어, 동일 문제 발생 시 참고하면 유용합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u2s05s/bug_tutorial_crashing/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Arena 모드 오디오 버그 발생",
+          "summary": "Arena 모드에서 달리는 말 소리 같은 이상한 오디오 버그가 보고되어 게임 내 사운드 품질 저하가 발생하고 있습니다.",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u2j6cc/bug_arena_is_now_a_running_horse_sound_simulator/",
-          "source": "Reddit r/EscapefromTarkov"
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "개발자 답변 및 커뮤니티 토론",
+      "items": [
+        {
+          "title": "개발자 Domontovich와 Nik의 엔진룸 너프 관련 답변",
+          "summary": "개발자들이 엔진룸 너프 의도와 플레이어가 느끼는 문제점을 설명하며, 투척 수류탄 대처법에 대한 의견을 공유해 게임 플레이 전략에 참고할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u23zgy/discussion_domontovich_and_niks_responses_to_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "두 번째 업적 획득 방법 질문과 토론",
+          "summary": "모든 잠긴 방과 퀘스트 완료 후에도 두 번째 업적이 해제되지 않는 문제에 대해 숨겨진 조건을 찾기 위한 활발한 토론이 진행 중입니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u2nb28/discussion_how_to_get_second_achievement/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "퀘스트 공략",
+      "items": [
+        {
+          "title": "Icebreaker 퀘스트 공략 영상 (러시아식) 3부",
+          "summary": "Icebreaker 퀘스트를 효율적으로 완료하는 구체적인 방법을 담은 영상으로, 도전 과제 달성에 실질적인 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u27pt2/video_how_to_complete_ice_breaker_in_tarkov_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
     {
       "type": "news",
-      "title": "게임 내 화폐 TarCoin 및 스트리머 챌린지 소식",
+      "title": "게임 내 신규 화폐 및 이벤트 소식",
       "items": [
         {
           "title": "TarCoin이란 무엇인가?",
-          "summary": "TarCoin은 최근 레이드에서 등장하기 시작한 새로운 게임 내 화폐로, Expansion Hub 내에서만 사용됩니다. 현재 레이드에서 TarCoin을 획득할 수 있으며, 게임 내에 추가될 예정입니다.",
+          "summary": "TarCoin은 Expansion Hub 내에서만 사용 가능한 새로운 게임 내 화폐로, 개발팀이 TarkovTV에서 상세히 설명했습니다. 앞으로 게임 내 경제 시스템에 중요한 역할을 할 예정입니다.",
           "url": "https://store.steampowered.com/news/app/3932890/view/717907577518686302",
           "source": "Steam 뉴스",
           "isNew": true
         },
         {
           "title": "스트리머 챌린지 종료 및 결과 발표",
-          "summary": "#EscapefromTarkov 스트리머 챌린지에서 H4RD가 근소한 차이로 우승을 차지했습니다. 우승자는 Battlestate Games 팀과 협력해 제작한 개인화된 스트리머 아이템을 받게 됩니다.",
+          "summary": "H4RD가 근소한 차이로 스트리머 챌린지에서 우승했으며, 우승자에게는 Battlestate Games 팀과 협업한 개인화된 스트리머 아이템이 수여됩니다.",
           "url": "https://store.steampowered.com/news/app/3932890/view/708899744197380002",
           "source": "Steam 뉴스",
           "isNew": true
@@ -48,97 +98,27 @@
       ]
     },
     {
-      "type": "community",
-      "title": "커뮤니티 토론 및 퀘스트, 하이드아웃 의견",
-      "items": [
-        {
-          "title": "[토론] 엔진 룸 너프에 대한 개발자 Domontovich와 Nik의 답변",
-          "summary": "최근 엔진 룸 너프에 대해 Domontovich와 Nik가 공식적으로 답변하며 변화의 이유와 향후 계획에 대해 설명했습니다. 커뮤니티 내에서 다양한 반응이 이어지고 있습니다.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u23zgy/discussion_domontovich_and_niks_responses_to_the/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[토론] 하이드아웃 특정 구역에 무엇이 있어야 할까?",
-          "summary": "하이드아웃의 특정 구역에 어떤 시설이나 기능이 추가되면 좋을지에 대한 커뮤니티 의견이 활발히 교환되고 있습니다. 다양한 아이디어가 제시되어 향후 업데이트 기대감을 높이고 있습니다.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u26bji/discussion_what_do_you_think_should_be_in_this/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[피드백] 아이스브레이커 퀘스트 공략 및 팁 공유",
-          "summary": "러시아식 아이스브레이커 퀘스트 공략 영상 2부와 3부가 올라와 효율적인 클리어 방법을 소개합니다. 커뮤니티 내에서 퀘스트 공략법에 대한 관심이 높아지고 있습니다.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1tyn18s/video_tarkov_how_to_do_ice_breaker_the_russian/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[토론] 100% Tarcoin 도입 시 치터 증가 우려",
-          "summary": "Tarcoin을 100% 도입하면 치터가 대거 몰릴 것이라는 우려가 커뮤니티에서 제기되고 있습니다. 이에 대한 대응책과 의견이 활발히 논의 중입니다.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u2bmd1/discussion_100_tarcoin_will_bring_mannnnnny/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[토론] 'The guide' 퀘스트에 대한 불만",
-          "summary": "커뮤니티에서 'The guide' 퀘스트가 가장 불합리하고 어려운 퀘스트라는 의견이 다수 제기되고 있습니다. 퀘스트 난이도와 보상에 대한 논의가 이어지고 있습니다.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u1jksq/discussion_the_guide_is_the_most_bullshit_quest/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[토론] 더 많은 맵을 잠금 해제하는 방법",
-          "summary": "게임 내에서 추가 맵을 어떻게 잠금 해제할 수 있는지에 대한 질문과 답변이 활발히 오가고 있습니다. 신규 유저들에게 유용한 정보가 공유되고 있습니다.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1tzp7g6/how_to_unlock_more_maps_loot/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "videos",
-      "title": "추천 유튜브 영상 모음",
+      "title": "주요 영상 모음",
       "items": [
         {
           "title": "쇄빙선 얏호~ 새로운 날먹 맛떼루용~",
-          "summary": "채널 유우양이 쇄빙선에 대한 영상을 올렸다.",
           "url": "https://www.youtube.com/watch?v=7IpIsivkgWE",
           "source": "YouTube 유우양"
         },
         {
           "title": "2부 생일 기념 라디오 / 1부 쇄빙선 1억 모으기",
-          "summary": "채널 유우양이 생일 기념 라디오와 쇄빙선 1억 모으기에 대한 영상을 올렸다.",
           "url": "https://www.youtube.com/watch?v=JWlWBR_dNIQ",
           "source": "YouTube 유우양"
         },
         {
           "title": "ESCAPE FROM TARKOV - CHILL PVP RAIDS",
-          "summary": "채널 LVNDMARK이 Escape From Tarkov PVP 레이드에 대한 영상을 올렸다.",
           "url": "https://www.youtube.com/watch?v=Ai6shdvqTQ4",
           "source": "YouTube LVNDMARK"
         },
         {
-          "title": "GLOCK-18C WINS",
-          "summary": "채널 LVNDMARK이 GLOCK-18C 무기에 대한 영상을 올렸다.",
-          "url": "https://www.youtube.com/shorts/ArQAumqQXto",
-          "source": "YouTube LVNDMARK"
-        },
-        {
           "title": "Taking on the CLEANUP CREW - Escape From Tarkov",
-          "summary": "채널 LVNDMARK이 Escape From Tarkov의 클린업 크루 도전에 대한 영상을 올렸다.",
           "url": "https://www.youtube.com/watch?v=YwRd-VUoKt0",
-          "source": "YouTube LVNDMARK"
-        },
-        {
-          "title": "INSANE TIMING",
-          "summary": "채널 LVNDMARK이 타이밍에 관한 영상을 올렸다.",
-          "url": "https://www.youtube.com/shorts/SQif_k5l6GQ",
-          "source": "YouTube LVNDMARK"
-        },
-        {
-          "title": "Farming STREAMERS During the Streamer Challenge - Escape From Tarkov",
-          "summary": "채널 LVNDMARK이 스트리머 챌린지 중 스트리머 파밍에 대한 영상을 올렸다.",
-          "url": "https://www.youtube.com/watch?v=HwmFfp9oADw",
           "source": "YouTube LVNDMARK"
         }
       ]
