@@ -71,6 +71,27 @@ export function fetchAllItems(): Promise<TarkovItem[]> {
   return itemsCache
 }
 
+export interface SiteCounts {
+  items: number
+  quests: number
+}
+
+// 히어로 인트로의 라이브 지표용 — id만 받아서 개수만 셈.
+// 전체 아이템(1.3MB)/퀘스트(3MB) 캐시를 인트로 때문에 당겨 받지 않기 위한 경량 쿼리
+let countsCache: Promise<SiteCounts> | null = null
+
+export function fetchCounts(): Promise<SiteCounts> {
+  countsCache ??= gql<{ items: { id: string }[]; tasks: { id: string }[] }>(
+    `{ items { id } tasks { id } }`,
+  )
+    .then((d) => ({ items: d.items.length, quests: d.tasks.length }))
+    .catch((err: unknown) => {
+      countsCache = null
+      throw err
+    })
+  return countsCache
+}
+
 export interface PricePoint {
   price: number
   timestamp: string // epoch ms 문자열

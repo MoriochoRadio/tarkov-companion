@@ -83,6 +83,238 @@ body {
 }
 
 /* ============================================================
+   히어로 인트로 — 첫 방문 전용 풀스크린 오버레이
+   ============================================================ */
+.hero {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  overflow: hidden;
+  transition: opacity 450ms ease;
+}
+
+.hero.leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 가장자리 비네트 — canvas 비용 없이 CSS로 */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 42%,
+    rgba(8, 10, 12, 0.6) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  padding: var(--sp-5);
+  text-align: center;
+}
+
+.hero-kicker {
+  margin: 0;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  animation: fade-up 500ms ease-out both;
+}
+
+/* 로고: 스캔 와이프 리빌 + 짧은 글리치 한 번 (남발 금지) */
+.hero-logo {
+  margin: var(--sp-3) 0 0;
+  font-size: clamp(1.6rem, 7vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  color: var(--text);
+  animation:
+    logo-wipe 650ms ease-out 200ms both,
+    logo-glitch 220ms steps(2) 880ms;
+}
+
+.hero-logo .logo-accent {
+  color: var(--accent);
+}
+
+/* 탄 골드 라인이 좌→우로 그려짐 */
+.hero-rule {
+  width: min(340px, 64%);
+  height: 2px;
+  margin: var(--sp-4) auto;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: rule-draw 550ms ease-out 1000ms forwards;
+}
+
+.hero-sub {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 1rem;
+  animation: fade-up 500ms ease-out 1150ms both;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-3) var(--sp-6);
+  margin: var(--sp-6) 0 var(--sp-5);
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  animation: fade-up 500ms ease-out both;
+}
+
+.hero-stat-num {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+}
+
+.hero-stat-label {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.hero-enter {
+  padding: 12px 44px;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--accent-ink);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  animation: fade-up 500ms ease-out 1500ms both;
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.hero-enter:hover {
+  background: var(--accent-bright);
+  transform: translateY(-1px);
+}
+
+.hero-enter:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 3px;
+}
+
+.hero-hint {
+  margin: var(--sp-3) 0 0;
+  color: var(--text-3);
+  font-size: var(--fs-sub);
+  animation: fade-up 500ms ease-out 1700ms both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes logo-wipe {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes logo-glitch {
+  0% {
+    transform: translateX(2px);
+    opacity: 0.75;
+  }
+  50% {
+    transform: translateX(-2px) skewX(-1.5deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rule-draw {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-kicker {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+  }
+
+  .hero-sub {
+    font-size: var(--fs-body);
+  }
+
+  .hero-stats {
+    gap: var(--sp-3) var(--sp-5);
+  }
+
+  .hero-stat-num {
+    font-size: 1.5rem;
+  }
+}
+
+/* reduced-motion: 리빌 전부 생략, 정적 구성으로 즉시 표시 */
+@media (prefers-reduced-motion: reduce) {
+  .hero {
+    transition: none;
+  }
+
+  .hero-kicker,
+  .hero-logo,
+  .hero-sub,
+  .hero-stat,
+  .hero-enter,
+  .hero-hint {
+    animation: none;
+  }
+
+  .hero-rule {
+    animation: none;
+    transform: scaleX(1);
+  }
+}
+
+/* ============================================================
    레이아웃 골격
    ============================================================ */
 .app {
