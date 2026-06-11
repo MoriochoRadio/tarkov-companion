@@ -5,9 +5,10 @@ export interface BriefingItem {
   summary: string
   url?: string
   source?: string
+  isNew?: boolean // 어제 브리핑에 없던 새 이슈
 }
 
-export type SectionType = 'news' | 'tips' | 'community' | 'warning'
+export type SectionType = 'news' | 'tips' | 'community' | 'warning' | 'videos'
 
 export interface BriefingSection {
   type: SectionType | string
@@ -23,38 +24,59 @@ export interface Briefing {
 }
 
 // GitHub Pages 하위 경로(/tarkov-companion/)에서도 동작하도록 BASE_URL 기준으로 fetch
-const BASE = `${import.meta.env.BASE_URL}data/briefings/`
+const DAILY_BASE = `${import.meta.env.BASE_URL}data/briefings/`
+const WEEKLY_BASE = `${import.meta.env.BASE_URL}data/weekly/`
 
-async function fetchJson<T>(path: string): Promise<T> {
-  const res = await fetch(BASE + path)
+async function fetchJson<T>(base: string, path: string): Promise<T> {
+  const res = await fetch(base + path)
   if (!res.ok) {
     throw new Error(`브리핑 데이터 응답 오류 (HTTP ${res.status})`)
   }
   return (await res.json()) as T
 }
 
-let indexCache: Promise<string[]> | null = null
+let dailyIndexCache: Promise<string[]> | null = null
 
 export function fetchBriefingDates(): Promise<string[]> {
-  indexCache ??= fetchJson<{ dates: string[] }>('index.json')
+  dailyIndexCache ??= fetchJson<{ dates: string[] }>(DAILY_BASE, 'index.json')
     .then((d) => d.dates)
     .catch((err: unknown) => {
-      indexCache = null
+      dailyIndexCache = null
       throw err
     })
-  return indexCache
+  return dailyIndexCache
 }
 
-const briefingCache = new Map<string, Promise<Briefing>>()
+let weeklyIndexCache: Promise<string[]> | null = null
 
-export function fetchBriefing(date: string): Promise<Briefing> {
-  let cached = briefingCache.get(date)
+// 주간 리포트는 첫 발행 전까지 index가 없을 수 있음 → 404는 빈 목록으로 처리
+export function fetchWeeklyDates(): Promise<string[]> {
+  weeklyIndexCache ??= fetchJson<{ dates: string[] }>(WEEKLY_BASE, 'index.json')
+    .then((d) => d.dates)
+    .catch(() => [] as string[])
+  return weeklyIndexCache
+}
+
+const docCache = new Map<string, Promise<Briefing>>()
+
+function fetchDoc(base: string, date: string): Promise<Briefing> {
+  const key = base + date
+  let cached = docCache.get(key)
   if (!cached) {
-    cached = fetchJson<Briefing>(`${date}.json`).catch((err: unknown) => {
-      briefingCache.delete(date)
+    cached = fetchJson<Briefing>(base, `${date}.json`).catch((err: unknown) => {
+      docCache.delete(key)
       throw err
     })
-    briefingCache.set(date, cached)
+    docCache.set(key, cached)
   }
   return cached
+}
+
+export function fetchBriefing(date: string): Promise<Briefing> {
+  return fetchDoc(DAILY_BASE, date)
+}
+
+// 주간 리포트도 같은 스키마를 쓰므로 렌더러를 공유할 수 있음
+export function fetchWeeklyReport(date: string): Promise<Briefing> {
+  return fetchDoc(WEEKLY_BASE, date)
 }

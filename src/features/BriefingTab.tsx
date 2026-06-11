@@ -2,6 +2,8 @@ import { useState } from 'react'
 import {
   fetchBriefing,
   fetchBriefingDates,
+  fetchWeeklyDates,
+  fetchWeeklyReport,
   type BriefingSection,
 } from '../api/briefings'
 import { useAsyncData } from '../hooks/useAsyncData'
@@ -12,6 +14,7 @@ const SECTION_BADGES: Record<string, string> = {
   tips: '💡',
   community: '💬',
   warning: '⚠️',
+  videos: '🎬',
 }
 
 function formatDate(date: string): string {
@@ -31,7 +34,10 @@ function Section({ section }: { section: BriefingSection }) {
       <ul>
         {section.items.map((item, i) => (
           <li key={i} className="briefing-item">
-            <strong>{item.title}</strong>
+            <strong>
+              {item.title}
+              {item.isNew && <span className="badge-new">🆕 NEW</span>}
+            </strong>
             <p>{item.summary}</p>
             {item.url && (
               <a
@@ -50,17 +56,31 @@ function Section({ section }: { section: BriefingSection }) {
   )
 }
 
+// 선택값 인코딩: "d:날짜" = 일일 브리핑, "w:날짜" = 주간 리포트
+type DocKey = `d:${string}` | `w:${string}`
+
 export function BriefingTab() {
   const datesState = useAsyncData(fetchBriefingDates)
-  const [selected, setSelected] = useState<string | null>(null)
+  const weeklyState = useAsyncData(fetchWeeklyDates)
+  const [selected, setSelected] = useState<DocKey | null>(null)
 
-  // 선택 전에는 목록의 첫 번째(최신) 날짜
-  const dates = datesState.status === 'ready' ? datesState.data : []
-  const date = selected ?? dates[0] ?? null
+  const dailyDates = datesState.status === 'ready' ? datesState.data : []
+  const weeklyDates = weeklyState.status === 'ready' ? weeklyState.data : []
+
+  // 선택 전 기본값: 최신 일일 브리핑
+  const key: DocKey | null =
+    selected ?? (dailyDates[0] ? `d:${dailyDates[0]}` : null)
+  const isWeekly = key?.startsWith('w:') ?? false
+  const date = key?.slice(2) ?? null
 
   const briefingState = useAsyncData(
-    () => (date ? fetchBriefing(date) : Promise.reject(new Error('브리핑 없음'))),
-    [date],
+    () =>
+      date
+        ? isWeekly
+          ? fetchWeeklyReport(date)
+          : fetchBriefing(date)
+        : Promise.reject(new Error('브리핑 없음')),
+    [key],
   )
 
   if (datesState.status === 'loading') {
@@ -70,21 +90,41 @@ export function BriefingTab() {
     return <p className="status error">불러오기 실패: {datesState.message}</p>
   }
   if (!date) {
-    return <p className="status">아직 발행된 브리핑이 없습니다. 매일 오전 9시에 생성됩니다.</p>
+    return (
+      <p className="status">
+        아직 발행된 브리핑이 없습니다. 매일 오전 9시에 생성됩니다.
+      </p>
+    )
   }
 
   return (
     <div>
       <div className="toolbar">
-        <select value={date} onChange={(e) => setSelected(e.target.value)}>
-          {dates.map((d) => (
-            <option key={d} value={d}>
-              {formatDate(d)}
-              {d === dates[0] ? ' — 최신' : ''}
-            </option>
-          ))}
+        <select
+          value={key ?? ''}
+          onChange={(e) => setSelected(e.target.value as DocKey)}
+        >
+          <optgroup label="일일 브리핑">
+            {dailyDates.map((d) => (
+              <option key={`d:${d}`} value={`d:${d}`}>
+                {formatDate(d)}
+                {d === dailyDates[0] ? ' — 최신' : ''}
+              </option>
+            ))}
+          </optgroup>
+          {weeklyDates.length > 0 && (
+            <optgroup label="주간 메타 리포트">
+              {weeklyDates.map((d) => (
+                <option key={`w:${d}`} value={`w:${d}`}>
+                  📅 {formatDate(d)} 주간 정리
+                </option>
+              ))}
+            </optgroup>
+          )}
         </select>
-        <span className="hint">매일 오전 9시 자동 발행</span>
+        <span className="hint">
+          {isWeekly ? '매주 월요일 발행' : '매일 오전 9시 자동 발행'}
+        </span>
       </div>
 
       {briefingState.status === 'loading' && (
@@ -98,7 +138,10 @@ export function BriefingTab() {
           <p className="briefing-headline">{briefingState.data.headline}</p>
           {/* 주의사항을 항상 맨 위로 — 손해 보기 전에 봐야 하는 정보라서 */}
           {[...briefingState.data.sections]
-            .sort((a, b) => Number(b.type === 'warning') - Number(a.type === 'warning'))
+            .sort(
+              (a, b) =>
+                Number(b.type === 'warning') - Number(a.type === 'warning'),
+            )
             .map((section, i) => (
               <Section key={i} section={section} />
             ))}
