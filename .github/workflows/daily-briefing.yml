@@ -1,0 +1,57 @@
+# 매일 한국 시간 오전 9시(00:00 UTC)에 브리핑을 수집·생성·커밋하고 사이트를 재배포
+name: Daily Briefing
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 00:00 UTC = 09:00 KST
+  workflow_dispatch: # Actions 탭에서 수동 실행 가능
+
+permissions:
+  contents: write # 브리핑 JSON 커밋·푸시
+  models: read # GitHub Models (무료 AI 요약)
+  actions: write # 배포 워크플로우 dispatch
+
+concurrency:
+  group: daily-briefing
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 소스 수집 (위키 체인지로그 + Reddit RSS)
+        run: node scripts/collect-briefing.mjs
+
+      - name: 브리핑 생성 (GitHub Models 요약, 실패 시 링크 목록 폴백)
+        run: node scripts/generate-briefing.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 커밋 & 푸시
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/briefings
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "브리핑: $(TZ=Asia/Seoul date +%F) 자동 생성"
+            git pull --rebase origin main
+            git push origin main
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # GITHUB_TOKEN으로 push한 커밋은 push 트리거 워크플로우를 실행시키지 않으므로
+      # (GitHub의 재귀 방지 정책) 배포를 명시적으로 dispatch해야 사이트에 반영됨
+      - name: Pages 재배포 트리거
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main --repo "$GITHUB_REPOSITORY"
