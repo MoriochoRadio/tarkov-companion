@@ -8,6 +8,8 @@ Escape From Tarkov 플레이어를 위한 한국어 컴패니언 웹.
 
 **▶ 사이트: https://moriochoradio.github.io/tarkov-companion/**
 
+![히어로 인트로 — 첫 방문 시](docs/images/hero-desktop.png)
+
 | 데스크톱 | 모바일 |
 |---|---|
 | ![데스크톱 — 오늘의 브리핑](docs/images/desktop.png) | ![모바일 — 탄약 비교 카드형](docs/images/mobile.png) |

@@ -20,6 +20,11 @@ await page.evaluateOnNewDocument(() => {
       window.__longTasks.push(Math.round(e.duration))
     }
   }).observe({ entryTypes: ['longtask'] })
+  // 히어로 인트로(첫 방문 전용)가 탭 조작을 가로막지 않게 방문 처리
+  // 히어로 자체 성능은 scripts/profile-hero.mjs로 따로 측정
+  try {
+    localStorage.setItem('tc:visited', '1')
+  } catch {}
 })
 
 await page.goto(URL, { waitUntil: 'networkidle2', timeout: 60_000 })
