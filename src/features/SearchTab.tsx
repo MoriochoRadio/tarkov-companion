@@ -7,6 +7,7 @@ import {
 } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
+import { consumePendingSearch } from '../lib/searchSeed'
 import { formatPercent, formatRub, percentClass } from '../lib/format'
 import { CountUp } from './CountUp'
 import { ItemCell } from './ItemRow'
@@ -102,7 +103,8 @@ function ItemsTable({
 
 export function SearchTab() {
   const state = useAsyncData(fetchAllItems)
-  const [query, setQuery] = useState('')
+  // 티커 클릭으로 넘어온 검색어가 있으면 그걸로 시작
+  const [query, setQuery] = useState(() => consumePendingSearch() ?? '')
   const { ids: favIds, toggle: toggleFav } = useIdSet(FAV_ITEMS_KEY)
 
   const results = useMemo(() => {

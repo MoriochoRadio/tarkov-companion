@@ -331,10 +331,100 @@ body {
 /* ============================================================
    레이아웃 골격
    ============================================================ */
+/* 상시 배경 — 히어로 캔버스를 약하게 깐 것. 콘텐츠 뒤(z-index -1) */
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.13;
+  pointer-events: none;
+}
+
 .app {
   max-width: 1080px;
   margin: 0 auto;
   padding: var(--sp-5) var(--sp-4) var(--sp-6);
+}
+
+/* ============================================================
+   시세 티커 바 — 헤더 아래 가로 흐름
+   ============================================================ */
+.ticker {
+  min-height: 42px;
+  margin-bottom: var(--sp-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-raised);
+  overflow: hidden;
+  /* 좌우 끝을 살짝 페이드 — 흐르다 잘리는 느낌 완화 */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 4%,
+    #000 96%,
+    transparent
+  );
+}
+
+.ticker-track {
+  display: inline-flex;
+  width: max-content;
+  animation: ticker-scroll 48s linear infinite;
+}
+
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-right: var(--sp-5);
+  padding: 9px 2px;
+  background: none;
+  border: none;
+  color: var(--text-2);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sub);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 120ms ease;
+}
+
+.ticker-item:hover {
+  color: var(--accent);
+}
+
+.ticker-item img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border-radius: 4px;
+}
+
+.ticker-item .num {
+  font-size: 0.74rem;
+}
+
+@keyframes ticker-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+
+  /* 흐르지 않는 대신 손으로 넘겨볼 수 있게 */
+  .ticker {
+    overflow-x: auto;
+  }
 }
 
 .app-header {
@@ -897,6 +987,152 @@ select:focus-visible {
 
 .briefing-section.warning h2 {
   color: var(--warn);
+}
+
+/* 상황실 그리드 — warning과 영상은 전체 폭, 나머지는 2열 */
+.briefing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-4);
+  align-items: start;
+}
+
+.briefing-grid > .briefing-section {
+  margin-bottom: 0;
+  min-width: 0;
+  animation: fade-up 200ms ease-out both; /* delay는 인라인 stagger */
+}
+
+.briefing-section.warning,
+.briefing-section.videos {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .briefing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 타이프라이터 커서 */
+.type-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 3px;
+  vertical-align: -2px;
+  background: var(--accent);
+  animation: caret-blink 0.8s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 유튜브 썸네일 카드 */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: var(--sp-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.video-card {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.video-thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.video-card:hover .video-thumb img {
+  transform: scale(1.05);
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-bright);
+  font-size: 1.5rem;
+  text-shadow: 0 0 14px rgba(8, 10, 12, 0.9);
+  opacity: 0.85;
+  transition: opacity 150ms ease;
+}
+
+.video-card:hover .video-play {
+  opacity: 1;
+}
+
+.video-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 6px;
+  font-size: var(--fs-sub);
+  line-height: 1.4;
+}
+
+.video-card:hover .video-title {
+  color: var(--accent);
+}
+
+.video-src {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-3);
+  font-size: var(--fs-label);
+}
+
+/* 유리 레이어 — 배경 입자가 비치는 데스크톱만. blur는 비싸서 모바일은 불투명 유지 */
+@media (min-width: 641px) {
+  .briefing-section,
+  .map-card,
+  .ticker {
+    background: color-mix(in srgb, var(--bg-raised) 72%, transparent);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+  }
+
+  .briefing-section.warning {
+    background: color-mix(
+      in srgb,
+      var(--warn) 8%,
+      color-mix(in srgb, var(--bg-raised) 70%, transparent)
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .briefing-grid > .briefing-section {
+    animation: none;
+  }
+
+  .type-caret {
+    animation: none;
+  }
 }
 
 .briefing-section ul {

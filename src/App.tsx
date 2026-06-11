@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { AmbientBackground } from './features/AmbientBackground'
 import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
 import { Hero } from './features/Hero'
@@ -6,16 +7,18 @@ import { MapsTab } from './features/MapsTab'
 import { MoversTab } from './features/MoversTab'
 import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
+import { TickerBar } from './features/TickerBar'
 import { ValueTab } from './features/ValueTab'
+import { setPendingSearch } from './lib/searchSeed'
 
 const TABS = [
-  { key: 'briefing', label: '오늘의 브리핑', element: <BriefingTab /> },
-  { key: 'search', label: '아이템 검색', element: <SearchTab /> },
-  { key: 'value', label: '가성비 랭킹', element: <ValueTab /> },
-  { key: 'movers', label: '급등/급락', element: <MoversTab /> },
-  { key: 'ammo', label: '탄약 비교', element: <AmmoTab /> },
-  { key: 'quests', label: '퀘스트', element: <QuestsTab /> },
-  { key: 'maps', label: '맵', element: <MapsTab /> },
+  { key: 'briefing', label: '오늘의 브리핑', Comp: BriefingTab },
+  { key: 'search', label: '아이템 검색', Comp: SearchTab },
+  { key: 'value', label: '가성비 랭킹', Comp: ValueTab },
+  { key: 'movers', label: '급등/급락', Comp: MoversTab },
+  { key: 'ammo', label: '탄약 비교', Comp: AmmoTab },
+  { key: 'quests', label: '퀘스트', Comp: QuestsTab },
+  { key: 'maps', label: '맵', Comp: MapsTab },
 ] as const
 
 type TabKey = (typeof TABS)[number]['key']
@@ -35,6 +38,10 @@ function shouldShowHero(): boolean {
 export default function App() {
   const [active, setActive] = useState<TabKey>('briefing')
   const [showHero, setShowHero] = useState(shouldShowHero)
+  // 검색 탭에 이미 있을 때도 티커 클릭이 반영되도록 리마운트용 논스
+  const [searchNonce, setSearchNonce] = useState(0)
+  // 티커(아이템 1.3MB)는 첫 페인트와 경쟁하지 않게 잠깐 늦게 켬
+  const [tickerOn, setTickerOn] = useState(false)
 
   const enterDashboard = () => {
     try {
@@ -43,6 +50,17 @@ export default function App() {
       // 저장 실패해도 이번 세션은 정상 진행
     }
     setShowHero(false)
+  }
+
+  useEffect(() => {
+    const t = setTimeout(() => setTickerOn(true), 1500)
+    return () => clearTimeout(t)
+  }, [])
+
+  const pickFromTicker = (name: string) => {
+    setPendingSearch(name)
+    setSearchNonce((n) => n + 1)
+    setActive('search')
   }
 
   // 모바일에서 탭바가 잘려 있을 때 "오른쪽에 더 있음" 힌트 표시.
@@ -78,9 +96,13 @@ export default function App() {
     return () => window.removeEventListener('resize', place)
   }, [active])
 
+  const activeTab = TABS.find((tab) => tab.key === active) ?? TABS[0]
+  const ActiveComp = activeTab.Comp
+
   return (
     <>
       {showHero && <Hero onEnter={enterDashboard} />}
+      {!showHero && <AmbientBackground />}
       <div className="app">
         <header className="app-header">
           <h1 className="logo">
@@ -88,6 +110,12 @@ export default function App() {
           </h1>
           <p className="tagline">Escape From Tarkov 한국어 시세·브리핑 대시보드</p>
         </header>
+        {/* 로딩 전에도 같은 높이의 빈 바를 둬서 레이아웃 시프트 방지 */}
+        {tickerOn ? (
+          <TickerBar onPick={pickFromTicker} />
+        ) : (
+          <div className="ticker" aria-hidden />
+        )}
         <div className="tabs-wrap">
           <nav className="tabs" ref={tabsRef}>
             {TABS.map((tab) => (
@@ -108,7 +136,9 @@ export default function App() {
           )}
         </div>
         <main className="app-main">
-          {TABS.find((tab) => tab.key === active)?.element}
+          <ActiveComp
+            key={active === 'search' ? `search-${searchNonce}` : active}
+          />
         </main>
         <footer className="app-footer">
           <span>

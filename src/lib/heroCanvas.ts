@@ -27,15 +27,18 @@ interface Smoke {
 
 export function startHeroCanvas(
   canvas: HTMLCanvasElement,
-  { staticFrame = false } = {},
+  { staticFrame = false, ambient = false } = {},
 ): () => void {
   const ctx = canvas.getContext('2d')
   if (!ctx) return () => {}
 
-  // 모바일은 입자 수 자동 축소
+  // 모바일은 입자 수 자동 축소.
+  // ambient(대시보드 상시 배경)는 절반 — 도구 조작에 끼어들면 안 되는 배경이라
   const mobile = window.matchMedia('(max-width: 640px)').matches
-  const ASH_COUNT = mobile ? 26 : 64
-  const SMOKE_COUNT = mobile ? 4 : 7
+  const scale = ambient ? 0.5 : 1
+  const ASH_COUNT = Math.round((mobile ? 26 : 64) * scale)
+  const SMOKE_COUNT = Math.round((mobile ? 4 : 7) * scale)
+  const SWEEP_SEC = ambient ? 14 : 9 // 배경은 더 느긋하게
 
   let w = 0
   let h = 0
@@ -196,7 +199,7 @@ export function startHeroCanvas(
   function frame(now: number) {
     const dt = Math.min((now - last) / 1000, 0.05) // 탭 복귀 직후 점프 방지
     last = now
-    sweep += dt * ((Math.PI * 2) / 9) // 9초에 한 바퀴
+    sweep += dt * ((Math.PI * 2) / SWEEP_SEC)
     draw(dt, now)
     rafId = requestAnimationFrame(frame)
   }

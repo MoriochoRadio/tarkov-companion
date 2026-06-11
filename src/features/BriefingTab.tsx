@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   fetchBriefing,
   fetchBriefingDates,
   fetchWeeklyDates,
   fetchWeeklyReport,
+  type BriefingItem,
   type BriefingSection,
 } from '../api/briefings'
 import { useAsyncData } from '../hooks/useAsyncData'
@@ -25,34 +26,137 @@ function formatDate(date: string): string {
   return `${date} (${weekday})`
 }
 
-function Section({ section }: { section: BriefingSection }) {
-  const isWarning = section.type === 'warning'
+// 헤드라인 타이프라이터 — 같은 문서는 세션 중 1회만 (날짜를 오가도 다시 안 침)
+const typedOnce = new Set<string>()
+
+function TypewriterHeadline({ text, docKey }: { text: string; docKey: string }) {
+  const [skip] = useState(
+    () =>
+      typedOnce.has(docKey) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  )
+  const [n, setN] = useState(skip ? text.length : 0)
+
+  useEffect(() => {
+    if (skip) return
+    // 헤드라인이 길어도 총 1.2초 안에 끝나도록 스텝 크기 조절
+    const step = Math.max(1, Math.ceil(text.length / 40))
+    const id = setInterval(() => {
+      setN((prev) => {
+        const next = Math.min(text.length, prev + step)
+        if (next >= text.length) {
+          clearInterval(id)
+          typedOnce.add(docKey)
+        }
+        return next
+      })
+    }, 30)
+    return () => clearInterval(id)
+    // docKey가 바뀌면 key로 리마운트되므로 의존성은 비움
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   return (
-    <section className={`briefing-section${isWarning ? ' warning' : ''}`}>
-      <h2>
-        {SECTION_BADGES[section.type] ?? '•'} {section.title}
-      </h2>
-      <ul>
-        {section.items.map((item, i) => (
-          <li key={i} className="briefing-item">
-            <strong>
-              {item.title}
-              {item.isNew && <span className="badge-new">🆕 NEW</span>}
-            </strong>
-            {item.summary && <p>{item.summary}</p>}
-            {item.url && (
+    <p className="briefing-headline" aria-label={text}>
+      {text.slice(0, n)}
+      {n < text.length && <span className="type-caret" aria-hidden />}
+    </p>
+  )
+}
+
+function ListItem({ item }: { item: BriefingItem }) {
+  return (
+    <li className="briefing-item">
+      <strong>
+        {item.title}
+        {item.isNew && <span className="badge-new">🆕 NEW</span>}
+      </strong>
+      {item.summary && <p>{item.summary}</p>}
+      {item.url && (
+        <a className="source-link" href={item.url} target="_blank" rel="noreferrer">
+          {item.source ?? '출처'} ↗
+        </a>
+      )}
+    </li>
+  )
+}
+
+function videoIdFrom(url?: string): string | null {
+  if (!url) return null
+  const m = url.match(
+    /(?:youtube\.com\/watch\?[^#]*v=|youtu\.be\/|youtube\.com\/shorts\/)([\w-]{6,})/,
+  )
+  return m?.[1] ?? null
+}
+
+// 영상 섹션은 유튜브 썸네일 카드로 (id를 못 읽는 항목은 일반 목록으로 폴백)
+function VideoGrid({ items }: { items: BriefingItem[] }) {
+  const cards = items.filter((i) => videoIdFrom(i.url))
+  const plain = items.filter((i) => !videoIdFrom(i.url))
+  return (
+    <>
+      {cards.length > 0 && (
+        <ul className="video-grid">
+          {cards.map((item, i) => (
+            <li key={i}>
               <a
-                className="source-link"
+                className="video-card"
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                {item.source ?? '출처'} ↗
+                <span className="video-thumb">
+                  <img
+                    src={`https://i.ytimg.com/vi/${videoIdFrom(item.url)}/hqdefault.jpg`}
+                    alt=""
+                    loading="lazy"
+                  />
+                  <span className="video-play" aria-hidden>
+                    ▶
+                  </span>
+                </span>
+                <span className="video-title">
+                  {item.title}
+                  {item.isNew && <span className="badge-new">🆕</span>}
+                </span>
+                {item.source && <span className="video-src">{item.source}</span>}
               </a>
-            )}
-          </li>
-        ))}
-      </ul>
+            </li>
+          ))}
+        </ul>
+      )}
+      {plain.length > 0 && (
+        <ul>
+          {plain.map((item, i) => (
+            <ListItem key={i} item={item} />
+          ))}
+        </ul>
+      )}
+    </>
+  )
+}
+
+function Section({ section, index }: { section: BriefingSection; index: number }) {
+  const isWarning = section.type === 'warning'
+  const isVideos = section.type === 'videos'
+  return (
+    <section
+      className={`briefing-section${isWarning ? ' warning' : ''}${isVideos ? ' videos' : ''}`}
+      // 카드 stagger 진입 — 늦어도 0.5초 안에 전부 등장
+      style={{ animationDelay: `${Math.min(index * 60, 300)}ms` }}
+    >
+      <h2>
+        {SECTION_BADGES[section.type] ?? '•'} {section.title}
+      </h2>
+      {isVideos ? (
+        <VideoGrid items={section.items} />
+      ) : (
+        <ul>
+          {section.items.map((item, i) => (
+            <ListItem key={i} item={item} />
+          ))}
+        </ul>
+      )}
     </section>
   )
 }
@@ -164,16 +268,22 @@ export function BriefingTab() {
       )}
       {briefingState.status === 'ready' && (
         <article>
-          <p className="briefing-headline">{briefingState.data.headline}</p>
+          <TypewriterHeadline
+            key={key}
+            text={briefingState.data.headline}
+            docKey={key ?? ''}
+          />
           {/* 주의사항을 항상 맨 위로 — 손해 보기 전에 봐야 하는 정보라서 */}
-          {[...briefingState.data.sections]
-            .sort(
-              (a, b) =>
-                Number(b.type === 'warning') - Number(a.type === 'warning'),
-            )
-            .map((section, i) => (
-              <Section key={i} section={section} />
-            ))}
+          <div className="briefing-grid">
+            {[...briefingState.data.sections]
+              .sort(
+                (a, b) =>
+                  Number(b.type === 'warning') - Number(a.type === 'warning'),
+              )
+              .map((section, i) => (
+                <Section key={i} section={section} index={i} />
+              ))}
+          </div>
         </article>
       )}
     </div>
