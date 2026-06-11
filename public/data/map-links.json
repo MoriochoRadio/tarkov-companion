@@ -1,0 +1,4 @@
+{
+  "_comment": "맵별 한글 지도 링크 모음. 키는 tarkov.dev의 normalizedName (예: customs, woods, ground-zero). 값은 { label: 버튼에 표시할 이름, url: 링크 주소 } 배열. 외부 지도 이미지를 복사·핫링크하지 말고 반드시 '페이지 링크'만 넣을 것. 이 파일은 저장소 주인이 직접 추가·수정한다.",
+  "_예시": [{ "label": "예: OO님 한글지도", "url": "https://example.com/customs" }]
+}

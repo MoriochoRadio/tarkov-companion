@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { biName, fetchQuests, type Quest } from '../api/quests'
+import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatNumber } from '../lib/format'
 
@@ -17,6 +17,26 @@ const collator = new Intl.Collator('ko')
 
 // ---------- 상세 화면 ----------
 
+// 아이템 칩: 아이콘 + 한/영 이름. 클릭하면 512px 이미지 라이트박스
+function ItemChip({
+  item,
+  onZoom,
+}: {
+  item: QuestItemRef
+  onZoom: (item: QuestItemRef) => void
+}) {
+  return (
+    <button
+      className="item-chip"
+      onClick={() => item.imageLink && onZoom(item)}
+      title={item.imageLink ? '클릭하면 큰 이미지' : undefined}
+    >
+      {item.iconLink && <img src={item.iconLink} alt="" loading="lazy" />}
+      <span>{biName(item.nameKo, item.nameEn)}</span>
+    </button>
+  )
+}
+
 function QuestDetail({
   quest,
   byId,
@@ -28,6 +48,7 @@ function QuestDetail({
   onSelect: (id: string) => void
   onBack: () => void
 }) {
+  const [zoomed, setZoomed] = useState<QuestItemRef | null>(null)
   const itemObjectives = quest.objectives.filter((o) => o.items?.length)
   const questLink = (id: string) => {
     const q = byId.get(id)
@@ -61,6 +82,29 @@ function QuestDetail({
         {quest.minPlayerLevel}
       </p>
 
+      <div className="quest-actions">
+        {quest.map && (
+          <a
+            className="btn-ext"
+            href={`https://tarkov.dev/map/${quest.map.normalizedName}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            🗺️ 맵에서 위치 보기 ({quest.map.name})
+          </a>
+        )}
+        <a
+          className="btn-ext"
+          href={`https://www.youtube.com/results?search_query=${encodeURIComponent(
+            `${quest.nameEn} tarkov quest`,
+          )}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          ▶ 영상 공략 검색
+        </a>
+      </div>
+
       <section className="briefing-section">
         <h2>🎯 목표</h2>
         <ul className="quest-objectives">
@@ -79,10 +123,17 @@ function QuestDetail({
           <ul className="quest-objectives">
             {itemObjectives.map((o) => (
               <li key={o.id}>
-                {(o.items ?? []).slice(0, MAX_OBJECTIVE_ITEMS).map((i) => biName(i.nameKo, i.nameEn)).join(', ')}
-                {(o.items?.length ?? 0) > MAX_OBJECTIVE_ITEMS &&
-                  ` 외 ${(o.items?.length ?? 0) - MAX_OBJECTIVE_ITEMS}종 중`}
-                {o.count != null && ` × ${o.count}`}
+                <span className="chip-row">
+                  {(o.items ?? []).slice(0, MAX_OBJECTIVE_ITEMS).map((i) => (
+                    <ItemChip key={i.id} item={i} onZoom={setZoomed} />
+                  ))}
+                </span>
+                {(o.items?.length ?? 0) > MAX_OBJECTIVE_ITEMS && (
+                  <span className="dim">
+                    {' '}외 {(o.items?.length ?? 0) - MAX_OBJECTIVE_ITEMS}종 중
+                  </span>
+                )}
+                {o.count != null && <span className="num"> × {o.count}</span>}
                 {o.foundInRaid === true && <span className="badge-fir">FIR 필수</span>}
                 {o.foundInRaid === false && <span className="dim"> (FIR 불필요)</span>}
               </li>
@@ -103,7 +154,10 @@ function QuestDetail({
           ))}
           {quest.rewards.items.map((i) => (
             <li key={i.id}>
-              {biName(i.nameKo, i.nameEn)} × {i.count}
+              <span className="chip-row">
+                <ItemChip item={i} onZoom={setZoomed} />
+              </span>
+              <span className="num"> × {i.count}</span>
             </li>
           ))}
           {quest.experience === 0 &&
@@ -126,6 +180,23 @@ function QuestDetail({
             </p>
           )}
         </section>
+      )}
+
+      {zoomed?.imageLink && (
+        <div
+          className="lightbox"
+          onClick={() => setZoomed(null)}
+          role="dialog"
+          aria-label={zoomed.nameKo}
+        >
+          <figure>
+            <img src={zoomed.imageLink} alt={zoomed.nameKo} />
+            <figcaption>
+              {biName(zoomed.nameKo, zoomed.nameEn)}
+              <span className="dim"> · 클릭하면 닫힘 · 이미지: tarkov.dev</span>
+            </figcaption>
+          </figure>
+        </div>
       )}
     </div>
   )

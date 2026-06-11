@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
+import { MapsTab } from './features/MapsTab'
 import { MoversTab } from './features/MoversTab'
 import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
@@ -13,6 +14,7 @@ const TABS = [
   { key: 'movers', label: '급등/급락', element: <MoversTab /> },
   { key: 'ammo', label: '탄약 비교', element: <AmmoTab /> },
   { key: 'quests', label: '퀘스트', element: <QuestsTab /> },
+  { key: 'maps', label: '맵', element: <MapsTab /> },
 ] as const
 
 type TabKey = (typeof TABS)[number]['key']

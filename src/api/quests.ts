@@ -7,6 +7,8 @@ export interface QuestItemRef {
   id: string
   nameKo: string
   nameEn: string
+  iconLink: string | null
+  imageLink: string | null // 512px — 라이트박스용
 }
 
 export interface QuestObjective {
@@ -31,7 +33,7 @@ export interface Quest {
   displayName: string // "한국어명 (English)" — 병합 시 1회 계산
   searchKey: string // 소문자 ko+en — 검색 필터용 사전 계산
   trader: { id: string; name: string }
-  map: { id: string; name: string } | null
+  map: { id: string; name: string; normalizedName: string } | null
   minPlayerLevel: number
   experience: number
   kappaRequired: boolean
@@ -46,14 +48,14 @@ const QUERY = `{
   ko: tasks(lang: ko) {
     id name minPlayerLevel experience kappaRequired wikiLink
     trader { id name }
-    map { id name }
+    map { id name normalizedName }
     taskRequirements { task { id } }
     objectives {
       id type description optional
-      ... on TaskObjectiveItem { items { id name } count foundInRaid }
+      ... on TaskObjectiveItem { items { id name iconLink image512pxLink } count foundInRaid }
     }
     finishRewards {
-      items { item { id name } count }
+      items { item { id name iconLink image512pxLink } count }
       traderStanding { trader { name } standing }
     }
   }
@@ -72,21 +74,28 @@ interface RawKoTask {
   kappaRequired: boolean | null
   wikiLink: string | null
   trader: { id: string; name: string }
-  map: { id: string; name: string } | null
+  map: { id: string; name: string; normalizedName: string } | null
   taskRequirements: { task: { id: string } | null }[]
   objectives: {
     id: string
     type: string
     description: string | null
     optional: boolean | null
-    items?: { id: string; name: string }[]
+    items?: RawItem[]
     count?: number | null
     foundInRaid?: boolean | null
   }[]
   finishRewards: {
-    items: { item: { id: string; name: string }; count: number }[]
+    items: { item: RawItem; count: number }[]
     traderStanding: { trader: { name: string }; standing: number }[]
   } | null
+}
+
+interface RawItem {
+  id: string
+  name: string
+  iconLink: string | null
+  image512pxLink: string | null
 }
 
 interface RawEnTask {
@@ -140,6 +149,8 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
               id: i.id,
               nameKo: i.name.trim(),
               nameEn: (enItemName.get(i.id) ?? i.name).trim(),
+              iconLink: i.iconLink,
+              imageLink: i.image512pxLink,
             })),
           }
         : {}),
@@ -151,6 +162,8 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
         id: r.item.id,
         nameKo: r.item.name.trim(),
         nameEn: (enItemName.get(r.item.id) ?? r.item.name).trim(),
+        iconLink: r.item.iconLink,
+        imageLink: r.item.image512pxLink,
         count: r.count,
       })),
       standing: (t.finishRewards?.traderStanding ?? []).map((s) => ({
