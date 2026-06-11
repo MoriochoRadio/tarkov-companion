@@ -23,8 +23,10 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Tarkov Companion</h1>
-        <p className="tagline">Escape From Tarkov 시세·가성비 한국어 대시보드</p>
+        <h1 className="logo">
+          TARKOV<span className="logo-accent">&nbsp;COMPANION</span>
+        </h1>
+        <p className="tagline">Escape From Tarkov 한국어 시세·브리핑 대시보드</p>
       </header>
       <nav className="tabs">
         {TABS.map((tab) => (
@@ -41,11 +43,19 @@ export default function App() {
         {TABS.find((tab) => tab.key === active)?.element}
       </main>
       <footer className="app-footer">
-        시세 데이터:{' '}
-        <a href="https://tarkov.dev" target="_blank" rel="noreferrer">
-          tarkov.dev
-        </a>{' '}
-        (무료 공개 API) · 시세는 플리마켓 24시간 평균 기준
+        <span>
+          비공식 팬 프로젝트 · Battlestate Games와 무관 · 데이터:{' '}
+          <a href="https://tarkov.dev" target="_blank" rel="noreferrer">
+            tarkov.dev
+          </a>
+        </span>
+        <a
+          href="https://github.com/MoriochoRadio/tarkov-companion"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub ↗
+        </a>
       </footer>
     </div>
   )

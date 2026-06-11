@@ -76,7 +76,7 @@ export function ValueTab() {
                 {item.width}×{item.height}
               </td>
               <td className="num">{formatRub(item.avg24hPrice)}</td>
-              <td className="num">{formatRub(item.perSlot)}</td>
+              <td className="num metric">{formatRub(item.perSlot)}</td>
             </tr>
           ))}
         </tbody>

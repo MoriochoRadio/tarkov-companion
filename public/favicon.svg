@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 탄 골드 단색 마크: 라운드 사각 + 조준점 모티프의 T -->
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#c9b482"/>
+  <rect x="14" y="16" width="36" height="9" rx="2" fill="#101418"/>
+  <rect x="27.5" y="25" width="9" height="23" rx="2" fill="#101418"/>
+</svg>

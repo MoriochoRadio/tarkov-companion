@@ -251,7 +251,7 @@ export function QuestsTab() {
         {filtered.length}개 퀘스트 · 행을 클릭하면 상세 보기 · κ = 카파 컨테이너 필수
         퀘스트
       </p>
-      <table className="data-table quest-table">
+      <table className="data-table quest-table card-table">
         <thead>
           <tr>
             <th>퀘스트</th>
@@ -267,9 +267,9 @@ export function QuestsTab() {
                 {q.displayName}
                 {q.kappaRequired && <span className="badge-kappa">κ</span>}
               </td>
-              <td>{q.trader.name}</td>
-              <td className="dim">{q.map?.name ?? '무관'}</td>
-              <td className="num">{q.minPlayerLevel}</td>
+              <td data-label="트레이더">{q.trader.name}</td>
+              <td className="dim" data-label="맵">{q.map?.name ?? '무관'}</td>
+              <td className="num" data-label="레벨">{q.minPlayerLevel}</td>
             </tr>
           ))}
         </tbody>

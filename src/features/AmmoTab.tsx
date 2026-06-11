@@ -103,7 +103,7 @@ export function AmmoTab() {
         관통력이 방어구 상대 핵심 지표 · 산탄은 펠릿 수를 곱한 총 데미지 표시 ·
         ‘—’는 플리마켓 거래 불가(상인/제작 전용)
       </p>
-      <table className="data-table">
+      <table className="data-table card-table">
         <thead>
           <tr>
             <th>탄약</th>
@@ -124,16 +124,18 @@ export function AmmoTab() {
                   shortName={ammo.item.shortName}
                 />
               </td>
-              <td className="dim">{caliberLabel(ammo.caliber)}</td>
-              <td className="num">
-                {totalDamage(ammo)}
-                {(ammo.projectileCount ?? 1) > 1 && (
-                  <span className="dim"> ({ammo.damage}×{ammo.projectileCount})</span>
-                )}
+              <td className="dim" data-label="구경">{caliberLabel(ammo.caliber)}</td>
+              <td className="num" data-label="데미지">
+                <span>
+                  {totalDamage(ammo)}
+                  {(ammo.projectileCount ?? 1) > 1 && (
+                    <span className="dim"> ({ammo.damage}×{ammo.projectileCount})</span>
+                  )}
+                </span>
               </td>
-              <td className="num">{ammo.penetrationPower}</td>
-              <td className="num">{ammo.armorDamage}</td>
-              <td className="num">{formatRub(ammo.item.avg24hPrice)}</td>
+              <td className="num" data-label="관통">{ammo.penetrationPower}</td>
+              <td className="num" data-label="방어구 손상">{ammo.armorDamage}</td>
+              <td className="num" data-label="플리 평균가">{formatRub(ammo.item.avg24hPrice)}</td>
             </tr>
           ))}
         </tbody>
