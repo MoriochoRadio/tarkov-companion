@@ -1,80 +1,45 @@
-// 일일 브리핑 2단계: GitHub Models로 한국어 요약 → 스키마(docs/briefing-schema.md) JSON 생성
+// 일일 브리핑 2단계: AI 요약 → 스키마(docs/briefing-schema.md) JSON 생성
 // 입력: tmp/collected.json (collect-briefing.mjs 출력)
 // 출력: public/data/briefings/<날짜>.json + index.json 갱신
 //
-// AI 호출이 실패해도 제목+링크 목록으로 브리핑을 만들어 절대 빈 날이 없게 한다.
+// 2패스 구조:
+//   1차 "기자" — 소스 그룹별로 각각 요약 (그룹당 1회 호출)
+//   2차 "편집장" — 통합·중복 제거·중요도 랭킹·섹션 분류.
+//        어제 브리핑을 컨텍스트로 줘서 새 이슈에 isNew: true 표시
+// 어느 단계가 실패해도 남은 재료로 브리핑을 만들어 절대 빈 날이 없게 한다.
+// 호출 횟수는 github-models.mjs가 로깅하며 상한 20회에서 차단된다.
+// (평소 사용량: 기자 ≤4회 + 편집장 1회 = 하루 ≤5회)
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { callWithFallback, getCallCount } from './github-models.mjs'
 
 // 로컬 테스트 시 실제 데이터를 건드리지 않도록 OUTPUT_DIR로 출력 경로 변경 가능
 const OUTPUT_DIR = process.env.OUTPUT_DIR ?? 'public/data/briefings'
-// 1순위 실패(미지원/한도 초과) 시 다음 모델로 넘어감
-const MODELS = ['openai/gpt-4.1-mini', 'openai/gpt-4o-mini']
-const VALID_TYPES = new Set(['news', 'tips', 'community', 'warning'])
+const VALID_TYPES = new Set(['news', 'tips', 'community', 'warning', 'videos'])
 
 const collected = JSON.parse(await readFile('tmp/collected.json', 'utf8'))
 const date = collected.date
 // toISOString은 UTC(Z) 표기라서, +9h 보정한 시각에 +09:00을 붙여 KST로 표현
-const generatedAt =
-  new Date(Date.now() + 9 * 3600 * 1000).toISOString().replace('Z', '+09:00')
+const generatedAt = new Date(Date.now() + 9 * 3600 * 1000)
+  .toISOString()
+  .replace('Z', '+09:00')
+const token = process.env.GITHUB_TOKEN
 
-const SYSTEM_PROMPT = `너는 Escape From Tarkov 플레이어를 위한 한국어 일일 브리핑 작성자다.
-입력으로 주어진 수집 데이터만 사용해 아래 스키마의 JSON 객체 하나만 출력한다.
+// ---------- 공통 검증 ----------
 
-스키마:
-{
-  "headline": "오늘 가장 중요한 내용 한 줄 요약",
-  "sections": [
-    {
-      "type": "news | tips | community | warning",
-      "title": "섹션 제목 (한국어)",
-      "items": [
-        { "title": "제목(한국어)", "summary": "2~3문장 한국어 요약", "url": "출처 링크", "source": "출처 이름" }
-      ]
-    }
-  ]
+function validateItems(items) {
+  return (Array.isArray(items) ? items : [])
+    .filter((i) => i?.title && i?.summary)
+    .map((i) => ({
+      title: String(i.title),
+      summary: String(i.summary),
+      ...(i.url ? { url: String(i.url) } : {}),
+      ...(i.source ? { source: String(i.source) } : {}),
+      ...(i.isNew === true ? { isNew: true } : {}),
+    }))
 }
 
-규칙:
-- 모든 텍스트는 한국어로 쓴다. 아이템·보스·맵 이름 등 고유명사는 원어를 그대로 써도 된다
-- url과 source는 입력 데이터에 있는 값만 사용한다. 절대 지어내지 않는다
-- 패치노트는 type "news", 공략이 될 만한 내용은 "tips", Reddit 글 동향은 "community"
-- 너프·버그·사망 위험 등 플레이어가 손해 볼 수 있는 내용은 반드시 type "warning" 섹션으로 분리한다
-- 입력에 해당 내용이 없는 섹션은 만들지 않는다
-- Reddit 글은 비슷한 주제끼리 묶어 동향으로 요약해도 된다 (이때 url은 대표 글 하나)`
-
-async function callModel(model, token) {
-  const res = await fetch('https://models.github.ai/inference/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({
-      model,
-      temperature: 0.3,
-      response_format: { type: 'json_object' },
-      messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
-        { role: 'user', content: JSON.stringify(collected.sources) },
-      ],
-    }),
-    signal: AbortSignal.timeout(120_000),
-  })
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`)
-  }
-  const data = await res.json()
-  return data.choices[0].message.content
-}
-
-// AI 출력 검증 — 깨진 JSON이나 스키마 불일치면 throw → 폴백으로
-function parseAndValidate(text) {
-  const cleaned = text
-    .trim()
-    .replace(/^```(?:json)?\s*/, '')
-    .replace(/```\s*$/, '')
-  const parsed = JSON.parse(cleaned)
+function validateBriefing(parsed) {
   if (!parsed.headline || !Array.isArray(parsed.sections)) {
     throw new Error('headline/sections 누락')
   }
@@ -82,46 +47,140 @@ function parseAndValidate(text) {
     .map((s) => ({
       type: VALID_TYPES.has(s.type) ? s.type : 'community',
       title: String(s.title ?? '').trim() || '기타',
-      items: (Array.isArray(s.items) ? s.items : [])
-        .filter((i) => i?.title && i?.summary)
-        .map((i) => ({
-          title: String(i.title),
-          summary: String(i.summary),
-          ...(i.url ? { url: String(i.url) } : {}),
-          ...(i.source ? { source: String(i.source) } : {}),
-        })),
+      items: validateItems(s.items),
     }))
     .filter((s) => s.items.length > 0)
   if (sections.length === 0) throw new Error('유효한 섹션이 없음')
   return { headline: String(parsed.headline), sections }
 }
 
-// 폴백: AI 없이 수집 결과를 제목+링크 위주로 그대로 브리핑화
-function buildFallback() {
-  const sections = []
-  const wiki = collected.sources.wikiChangelog
-  if (wiki?.length) {
-    sections.push({
-      type: 'news',
-      title: '패치노트 (EFT 위키)',
-      items: wiki.map((i) => ({
-        title: i.title,
-        summary: (i.content ?? '').slice(0, 300) || '원문 링크를 참고하세요.',
-        url: i.url,
-        source: i.source,
-      })),
-    })
+// ---------- 1차: 기자 패스 (소스 그룹별 요약) ----------
+
+const REPORTER_RULES = `출력은 JSON 객체 하나: { "items": [{ "title": "한국어 제목", "summary": "1~3문장 한국어 요약", "url": "...", "source": "..." }] }
+- url과 source는 입력에 있는 값만 사용한다. 절대 지어내지 않는다
+- 중요하지 않은 항목은 버려도 된다 (최대 8개)
+- 모든 텍스트는 한국어. 고유명사는 원어 유지 가능`
+
+const REPORTER_PROMPTS = {
+  wikiChangelog: `너는 Escape From Tarkov 패치노트 담당 기자다. 위키 체인지로그 원문에서 플레이어에게 영향이 큰 변경을 골라 요약한다. 너프·버그·사망 위험 항목은 summary 앞에 [주의]를 붙인다.\n${REPORTER_RULES}`,
+  reddit: `너는 Escape From Tarkov 커뮤니티 담당 기자다. Reddit 글 목록(피드별: 인기글/버그·이슈/공략)에서 의미 있는 동향을 골라 요약한다. 비슷한 글은 하나로 묶고(url은 대표 글), 버그·이슈 제보는 summary 앞에 [주의]를 붙인다. 단순 짤·자랑글은 버린다.\n${REPORTER_RULES}`,
+  youtube: `너는 Escape From Tarkov 영상 담당 기자다. 최근 24시간 신규 영상 목록을 정리한다. 제목만으로 판단하고(영상 내용 추측 금지), summary는 "채널 OOO이 ~에 대한 영상을 올렸다" 수준으로 짧게 쓴다. 한국 채널 영상을 앞에 배치한다.\n${REPORTER_RULES}`,
+  steam: `너는 Escape From Tarkov 공식 소식 담당 기자다. Steam 뉴스 피드에서 공지·이벤트·패치 소식을 요약한다.\n${REPORTER_RULES}`,
+}
+
+async function reporterPass() {
+  const reports = {}
+  for (const [group, items] of Object.entries(collected.sources)) {
+    if (!items?.length) continue
+    const system = REPORTER_PROMPTS[group]
+    if (!system) {
+      // 프롬프트가 없는 새 그룹은 원자료 그대로 편집장에게
+      reports[group] = { raw: true, items }
+      continue
+    }
+    try {
+      reports[group] = await callWithFallback({
+        system,
+        user: JSON.stringify(items),
+        token,
+        purpose: `기자(${group})`,
+        validate: (parsed) => {
+          const validated = validateItems(parsed.items)
+          if (validated.length === 0) throw new Error('기자 출력이 비어 있음')
+          return { items: validated }
+        },
+      })
+    } catch (err) {
+      console.error(`✗ 기자(${group}) 전체 실패 → 원자료로 대체: ${err}`)
+      reports[group] = { raw: true, items }
+    }
   }
-  const reddit = collected.sources.reddit
-  if (reddit?.length) {
+  return reports
+}
+
+// ---------- 2차: 편집장 패스 (통합 + isNew 판정) ----------
+
+const EDITOR_PROMPT = `너는 Escape From Tarkov 한국어 일일 브리핑의 편집장이다.
+기자들이 보낸 그룹별 요약(reports)과 어제 브리핑(yesterday, 없으면 null)을 받아 오늘의 최종 브리핑을 만든다.
+
+출력은 JSON 객체 하나:
+{
+  "headline": "오늘 가장 중요한 내용 한 줄",
+  "sections": [
+    { "type": "news | tips | community | warning | videos", "title": "섹션 제목",
+      "items": [{ "title": "...", "summary": "2~3문장", "url": "...", "source": "...", "isNew": true }] }
+  ]
+}
+
+규칙:
+- 그룹을 넘나드는 중복(같은 사건을 위키·Reddit·Steam이 각각 다룸)은 하나로 합치고 가장 좋은 출처 하나를 남긴다
+- 중요한 것부터: 섹션 안에서 플레이어 영향이 큰 항목을 위로
+- 너프·버그·사망 위험 등 손해 볼 수 있는 내용은 반드시 type "warning" 섹션으로 분리
+- 유튜브 영상은 type "videos" 섹션으로
+- yesterday에 같은 내용이 이미 있으면 isNew를 생략하고, 어제 없던 새 이슈에만 isNew: true
+- yesterday가 null이면 isNew를 아무 데도 붙이지 않는다
+- url/source는 입력에 있는 값만 사용. 내용 없는 섹션은 만들지 않는다
+- 모든 텍스트는 한국어`
+
+async function editorPass(reports, yesterday) {
+  return callWithFallback({
+    system: EDITOR_PROMPT,
+    user: JSON.stringify({ reports, yesterday }),
+    token,
+    purpose: '편집장(통합)',
+    validate: validateBriefing,
+  })
+}
+
+// 어제 브리핑 로드 (없으면 null) — 편집장의 isNew 판정 기준
+async function loadYesterday() {
+  const d = new Date(`${date}T00:00:00Z`)
+  d.setUTCDate(d.getUTCDate() - 1)
+  const yDate = d.toISOString().slice(0, 10)
+  try {
+    const y = JSON.parse(
+      await readFile(path.join(OUTPUT_DIR, `${yDate}.json`), 'utf8'),
+    )
+    // 프롬프트를 가볍게 유지 — 판정에 필요한 제목·요약만 추림
+    return {
+      date: y.date,
+      headline: y.headline,
+      sections: (y.sections ?? []).map((s) => ({
+        type: s.type,
+        items: (s.items ?? []).map((i) => ({ title: i.title, summary: i.summary })),
+      })),
+    }
+  } catch {
+    return null
+  }
+}
+
+// ---------- 폴백: AI 없이 수집/기자 결과를 그대로 브리핑화 ----------
+
+const GROUP_FALLBACK_SECTIONS = {
+  wikiChangelog: { type: 'news', title: '패치노트 (EFT 위키)' },
+  steam: { type: 'news', title: 'Steam 공식 소식' },
+  reddit: { type: 'community', title: 'Reddit 커뮤니티' },
+  youtube: { type: 'videos', title: '신규 영상' },
+}
+
+function buildFallback(reports) {
+  const sections = []
+  for (const [group, meta] of Object.entries(GROUP_FALLBACK_SECTIONS)) {
+    const report = reports?.[group] ?? { raw: true, items: collected.sources[group] }
+    const items = report?.items
+    if (!items?.length) continue
     sections.push({
-      type: 'community',
-      title: 'Reddit 일간 인기글',
-      items: reddit.map((i) => ({
+      type: meta.type,
+      title: meta.title,
+      items: items.slice(0, 8).map((i) => ({
         title: i.title,
-        summary: 'AI 요약 없이 수집된 글입니다. 원문 링크를 참고하세요.',
-        url: i.url,
-        source: i.source,
+        summary:
+          i.summary ??
+          ((i.content ?? '').slice(0, 300) ||
+            'AI 요약 없이 수집된 항목입니다. 원문 링크를 참고하세요.'),
+        ...(i.url ? { url: i.url } : {}),
+        ...(i.source ? { source: i.source } : {}),
       })),
     })
   }
@@ -144,13 +203,15 @@ function buildFallback() {
     }
   }
   return {
-    headline: `${date} 브리핑 — AI 요약을 사용할 수 없어 출처 링크 위주로 제공`,
+    headline: `${date} 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공`,
     sections,
   }
 }
 
+// ---------- 메인 ----------
+
 let briefing = null
-const token = process.env.GITHUB_TOKEN
+let reports = null
 const hasData = Object.values(collected.sources).some((arr) => arr?.length)
 
 if (!token) {
@@ -158,18 +219,16 @@ if (!token) {
 } else if (!hasData) {
   console.error('수집된 데이터 없음 → 폴백 사용')
 } else {
-  for (const model of MODELS) {
-    try {
-      briefing = parseAndValidate(await callModel(model, token))
-      console.log(`✓ AI 요약 성공 (${model})`)
-      break
-    } catch (err) {
-      console.error(`✗ ${model} 실패: ${err}`)
-    }
+  reports = await reporterPass()
+  try {
+    briefing = await editorPass(reports, await loadYesterday())
+    console.log('✓ 편집장 통합 완료')
+  } catch (err) {
+    console.error(`✗ 편집장 실패 → 폴백: ${err}`)
   }
 }
 
-briefing ??= buildFallback()
+briefing ??= buildFallback(reports)
 
 const output = { date, generatedAt, ...briefing }
 await mkdir(OUTPUT_DIR, { recursive: true })
@@ -190,5 +249,5 @@ dates = [...new Set([date, ...dates])].sort().reverse()
 await writeFile(indexPath, `${JSON.stringify({ dates })}\n`)
 
 console.log(
-  `브리핑 생성 완료 → ${OUTPUT_DIR}/${date}.json (섹션 ${output.sections.length}개, 헤드라인: ${output.headline})`,
+  `브리핑 생성 완료 → ${OUTPUT_DIR}/${date}.json (섹션 ${output.sections.length}개, API 호출 ${getCallCount()}회)`,
 )
