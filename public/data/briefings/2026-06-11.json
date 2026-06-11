@@ -1,0 +1,79 @@
+{
+  "date": "2026-06-11",
+  "generatedAt": "2026-06-11T18:40:00+09:00",
+  "headline": "Icebreaker 정착기 — 보스 'Wedge' 공략법 정리, 레이드 타이머는 커뮤니티 피드백으로 50분 확대",
+  "sections": [
+    {
+      "type": "news",
+      "title": "공식 소식",
+      "items": [
+        {
+          "title": "스트리머 챌린지 종료 — H4RD 우승 (6/8)",
+          "summary": "5일간 진행된 Escape from Tarkov 스트리머 챌린지가 종료되고 H4RD가 우승을 차지했다.",
+          "url": "https://www.escapefromtarkov.com/news",
+          "source": "EFT 공식"
+        },
+        {
+          "title": "현재 게임 버전: 1.0.5.0 'Icebreaker' (5/25 배포)",
+          "summary": "신규 PvE 전용 맵 쇄빙선(1~3인, AI 전용), 신규 보스 Wedge, 해킹 메커니즘, 퀘스트 아이템 방향 표시기가 추가된 대형 패치. Twitch Drops 캠페인도 진행됐다.",
+          "url": "https://www.escapefromtarkov.com/news/id/385",
+          "source": "EFT 공식"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·꿀팁",
+      "items": [
+        {
+          "title": "Icebreaker 보스 'Wedge' 대처법",
+          "summary": "MP7A1로 무장하고 엄폐를 적극 활용하며 다른 적과 연계 압박한다. Goons(나이트·빅 파이프·버드아이)도 선내를 돌아다니므로 스캐브 운용 감각으로 들어가면 위험하다. 장비에 충분히 투자하고 입장할 것.",
+          "url": "https://skycoach.gg/blog/escape-from-tarkov/articles/icebreaker-map-guide",
+          "source": "Skycoach 가이드"
+        },
+        {
+          "title": "해킹 메커니즘 진행 순서",
+          "summary": "자동화실 3곳에서 Toolset으로 장비를 수리한 뒤 중앙 제어실에 로컬 네트워크 해킹 장치를 설치하는 순서. 일반 키패드 문은 코드가 랜덤이지만, 스토리 관련 문 하나는 고정 코드 312220이 확인됐다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Wiring_the_Vessel",
+          "source": "EFT 위키"
+        },
+        {
+          "title": "입장 방법",
+          "summary": "해안선(Shoreline)에서 트랜짓으로만 진입 가능. 보레아스 메인 퀘스트를 일정 수준 진행하면 레이드 화면에서 직접 입장이 해금된다.",
+          "url": "https://namu.wiki/w/Icebreaker(%ED%83%80%EB%A5%B4%EC%BD%94%ED%94%84)",
+          "source": "나무위키"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "커뮤니티 동향",
+      "items": [
+        {
+          "title": "Icebreaker 레이드 타이머 30분 → 50분 확대",
+          "summary": "타이머가 너무 짧다는 커뮤니티 피드백을 BSG가 수용해 레이드 시간이 50분으로 늘었다. 탐색 위주 플레이가 한층 수월해졌다.",
+          "url": "https://insider-gaming.com/tarkov-icebreaker-raid-timer-increased-community/",
+          "source": "Insider Gaming"
+        },
+        {
+          "title": "PvE 확장에 대한 반응 양극화",
+          "summary": "저격 위협 없이 스토리·장비를 진행할 수 있는 '숨구멍'이라는 호평과, PvE 우선 기조가 경쟁 밸런싱·디싱크 개선 리소스를 뺏을 거라는 우려가 공존한다.",
+          "url": "https://gameloop.gg/articles/escape-from-tarkov-icebreaker-boreas-pve-story/",
+          "source": "GameLoop"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "주의사항",
+      "items": [
+        {
+          "title": "Obdolbos 1 사망 확률 33%로 상향",
+          "summary": "1.0.5 패치에서 Obdolbos 1 주사 후 사망 확률이 33%로 올랐다. 습관적으로 쓰던 유저는 주의.",
+          "url": "https://games.gg/escape-from-tarkov/guides/escape-from-tarkov-icebreaker-update-rundown/",
+          "source": "GAMES.GG"
+        }
+      ]
+    }
+  ]
+}
