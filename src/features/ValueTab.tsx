@@ -1,8 +1,10 @@
 import { useMemo, useState } from 'react'
 import { fetchAllItems } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
 import { formatRub } from '../lib/format'
 import { ItemCell } from './ItemRow'
+import { StarButton } from './StarButton'
 
 const TOP_N = 50
 
@@ -13,12 +15,15 @@ export function ValueTab() {
   // 열쇠/키카드는 1×1에 수백만 루블이라 랭킹을 도배하지만,
   // 레이드에서 '주울' 수 있는 물건이 아니므로 기본 제외
   const [excludeKeys, setExcludeKeys] = useState(true)
+  const [favOnly, setFavOnly] = useState(false)
+  const { ids: favIds, toggle: toggleFav } = useIdSet(FAV_ITEMS_KEY)
 
   const ranked = useMemo(() => {
     if (state.status !== 'ready') return []
     return state.data
       .filter((item) => (item.avg24hPrice ?? 0) > 0)
       .filter((item) => !excludeKeys || !item.types.includes('keys'))
+      .filter((item) => !favOnly || favIds.has(item.id))
       .map((item) => ({
         ...item,
         slots: item.width * item.height,
@@ -26,7 +31,7 @@ export function ValueTab() {
       }))
       .sort((a, b) => b.perSlot - a.perSlot)
       .slice(0, TOP_N)
-  }, [state, excludeKeys])
+  }, [state, excludeKeys, favOnly, favIds])
 
   if (state.status === 'loading') {
     return <p className="status">아이템 데이터 불러오는 중… (최초 1회, 약 5초)</p>
@@ -46,14 +51,29 @@ export function ValueTab() {
           />
           열쇠/키카드 제외
         </label>
+        <label className="toggle">
+          <input
+            type="checkbox"
+            checked={favOnly}
+            onChange={(e) => setFavOnly(e.target.checked)}
+          />
+          ★ 즐겨찾기만
+        </label>
       </div>
       <p className="hint">
         슬롯당 가치 = 플리마켓 24시간 평균가 ÷ 차지하는 칸 수 · 상위 {TOP_N}개 ·
         레이드에서 뭘 챙길지 고를 때 참고
       </p>
+      {favOnly && ranked.length === 0 && (
+        <p className="hint">
+          즐겨찾기한 아이템이 없습니다 — ★를 눌러 추가하면 여기서 모아 볼 수
+          있습니다.
+        </p>
+      )}
       <table className="data-table">
         <thead>
           <tr>
+            <th className="star-col">★</th>
             <th className="num">#</th>
             <th>아이템</th>
             <th className="num">크기</th>
@@ -64,6 +84,13 @@ export function ValueTab() {
         <tbody>
           {ranked.map((item, i) => (
             <tr key={item.id}>
+              <td className="star-col">
+                <StarButton
+                  on={favIds.has(item.id)}
+                  onToggle={() => toggleFav(item.id)}
+                  label="즐겨찾기"
+                />
+              </td>
               <td className="num dim">{i + 1}</td>
               <td>
                 <ItemCell

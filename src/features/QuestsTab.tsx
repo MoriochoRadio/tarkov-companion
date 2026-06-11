@@ -2,7 +2,9 @@ import { useEffect, useMemo, useState } from 'react'
 import { fetchGuideStatus } from '../api/guides'
 import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
+import { StarButton } from './StarButton'
 
 const PAGE_SIZE = 60
 // 데이터 도착 직후 첫 화면은 소량만 그려 단일 레이아웃 패스를 짧게 유지
@@ -50,6 +52,7 @@ function QuestDetail({
   onBack: () => void
 }) {
   const [zoomed, setZoomed] = useState<QuestItemRef | null>(null)
+  const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
   const guideState = useAsyncData(() => fetchGuideStatus(quest.id), [quest.id])
   const guide =
     guideState.status === 'ready' && typeof guideState.data === 'object'
@@ -89,6 +92,12 @@ function QuestDetail({
       </p>
 
       <div className="quest-actions">
+        <button
+          className={`btn-ext${activeIds.has(quest.id) ? ' active' : ''}`}
+          onClick={() => toggleActive(quest.id)}
+        >
+          {activeIds.has(quest.id) ? '★ 진행 중' : '☆ 진행 중으로 표시'}
+        </button>
         {quest.map && (
           <a
             className="btn-ext"
@@ -240,7 +249,9 @@ export function QuestsTab() {
   const [maxLevel, setMaxLevel] = useState('') // "내 레벨" — 이 레벨로 받을 수 있는 퀘스트만
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('level')
+  const [activeOnly, setActiveOnly] = useState(false)
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
+  const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
 
   // 첫 페인트가 끝나면 한 페이지 분량으로 확장 (2단계 렌더)
   useEffect(() => {
@@ -272,6 +283,7 @@ export function QuestsTab() {
     const level = Number(maxLevel)
     const result = quests.filter(
       (quest) =>
+        (!activeOnly || activeIds.has(quest.id)) &&
         (!trader || quest.trader.id === trader) &&
         (!map || quest.map?.id === map) &&
         (!maxLevel || quest.minPlayerLevel <= level) &&
@@ -284,7 +296,7 @@ export function QuestsTab() {
         : collator.compare(a.trader.name, b.trader.name) ||
           a.minPlayerLevel - b.minPlayerLevel,
     )
-  }, [quests, trader, map, maxLevel, query, sortKey])
+  }, [quests, trader, map, maxLevel, query, sortKey, activeOnly, activeIds])
 
   if (state.status === 'loading') {
     return <p className="status">퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)</p>
@@ -345,11 +357,24 @@ export function QuestsTab() {
           <option value="level">레벨순</option>
           <option value="trader">트레이더순</option>
         </select>
+        <label className="toggle">
+          <input
+            type="checkbox"
+            checked={activeOnly}
+            onChange={(e) => { setActiveOnly(e.target.checked); setVisible(PAGE_SIZE) }}
+          />
+          ★ 진행 중만
+        </label>
       </div>
       <p className="hint">
-        {filtered.length}개 퀘스트 · 행을 클릭하면 상세 보기 · κ = 카파 컨테이너 필수
-        퀘스트
+        {filtered.length}개 퀘스트 · 행을 클릭하면 상세 보기 · ☆를 누르면 진행 중
+        표시 — 내 레벨 필터와 조합하면 “지금 할 일” 목록 · κ = 카파 필수
       </p>
+      {activeOnly && filtered.length === 0 && (
+        <p className="hint">
+          진행 중으로 표시한 퀘스트가 없습니다 — 목록에서 ☆를 눌러 추가하세요.
+        </p>
+      )}
       <table className="data-table quest-table card-table">
         <thead>
           <tr>
@@ -363,6 +388,11 @@ export function QuestsTab() {
           {shown.map((q) => (
             <tr key={q.id} className="quest-row" onClick={() => setSelectedId(q.id)}>
               <td>
+                <StarButton
+                  on={activeIds.has(q.id)}
+                  onToggle={() => toggleActive(q.id)}
+                  label="진행 중"
+                />
                 {q.displayName}
                 {q.kappaRequired && <span className="badge-kappa">κ</span>}
               </td>

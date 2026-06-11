@@ -1,14 +1,64 @@
 import { useMemo, useState } from 'react'
-import { fetchAllItems } from '../api/tarkov'
+import { fetchAllItems, type TarkovItem } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
 import { formatPercent, formatRub, percentClass } from '../lib/format'
 import { ItemCell } from './ItemRow'
+import { StarButton } from './StarButton'
 
 const MAX_RESULTS = 50
+
+function ItemsTable({
+  rows,
+  favIds,
+  onToggleFav,
+}: {
+  rows: TarkovItem[]
+  favIds: ReadonlySet<string>
+  onToggleFav: (id: string) => void
+}) {
+  return (
+    <table className="data-table">
+      <thead>
+        <tr>
+          <th className="star-col">★</th>
+          <th>아이템</th>
+          <th className="num">플리 평균가 (24h)</th>
+          <th className="num">48시간 변동</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((item) => (
+          <tr key={item.id}>
+            <td className="star-col">
+              <StarButton
+                on={favIds.has(item.id)}
+                onToggle={() => onToggleFav(item.id)}
+                label="즐겨찾기"
+              />
+            </td>
+            <td>
+              <ItemCell
+                iconLink={item.iconLink}
+                name={item.name}
+                shortName={item.shortName}
+              />
+            </td>
+            <td className="num">{formatRub(item.avg24hPrice)}</td>
+            <td className={`num ${percentClass(item.changeLast48hPercent)}`}>
+              {formatPercent(item.changeLast48hPercent)}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
 
 export function SearchTab() {
   const state = useAsyncData(fetchAllItems)
   const [query, setQuery] = useState('')
+  const { ids: favIds, toggle: toggleFav } = useIdSet(FAV_ITEMS_KEY)
 
   const results = useMemo(() => {
     if (state.status !== 'ready') return []
@@ -24,12 +74,22 @@ export function SearchTab() {
       .slice(0, MAX_RESULTS)
   }, [state, query])
 
+  // 검색하지 않을 때는 즐겨찾기 모아보기 — "내 관심 아이템 시세 한눈에"
+  const favorites = useMemo(() => {
+    if (state.status !== 'ready') return []
+    return state.data
+      .filter((item) => favIds.has(item.id))
+      .sort((a, b) => (b.avg24hPrice ?? 0) - (a.avg24hPrice ?? 0))
+  }, [state, favIds])
+
   if (state.status === 'loading') {
     return <p className="status">아이템 데이터 불러오는 중… (최초 1회, 약 5초)</p>
   }
   if (state.status === 'error') {
     return <p className="status error">불러오기 실패: {state.message}</p>
   }
+
+  const searching = query.trim().length >= 2
 
   return (
     <div>
@@ -43,42 +103,30 @@ export function SearchTab() {
           autoFocus
         />
       </div>
-      {query.trim().length >= 2 && results.length === 0 && (
+      {searching && results.length === 0 && (
         <p className="status">검색 결과 없음</p>
       )}
-      {results.length > 0 && (
+      {searching && results.length > 0 && (
         <>
           <p className="hint">
             플리마켓 24시간 평균가 기준 · 최대 {MAX_RESULTS}개 표시 · ‘—’는 플리마켓
-            거래 불가 아이템
+            거래 불가 아이템 · ★를 누르면 즐겨찾기에 저장
           </p>
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>아이템</th>
-                <th className="num">플리 평균가 (24h)</th>
-                <th className="num">48시간 변동</th>
-              </tr>
-            </thead>
-            <tbody>
-              {results.map((item) => (
-                <tr key={item.id}>
-                  <td>
-                    <ItemCell
-                      iconLink={item.iconLink}
-                      name={item.name}
-                      shortName={item.shortName}
-                    />
-                  </td>
-                  <td className="num">{formatRub(item.avg24hPrice)}</td>
-                  <td className={`num ${percentClass(item.changeLast48hPercent)}`}>
-                    {formatPercent(item.changeLast48hPercent)}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <ItemsTable rows={results} favIds={favIds} onToggleFav={toggleFav} />
         </>
+      )}
+      {!searching && favorites.length > 0 && (
+        <>
+          <h2 className="fav-heading">★ 즐겨찾기 ({favorites.length})</h2>
+          <p className="hint">이 브라우저에 저장됨 · ★를 다시 누르면 해제</p>
+          <ItemsTable rows={favorites} favIds={favIds} onToggleFav={toggleFav} />
+        </>
+      )}
+      {!searching && favorites.length === 0 && (
+        <p className="hint">
+          검색 결과에서 ★를 누르면 즐겨찾기에 저장되고, 검색창이 비어 있을 때 여기에
+          모아 보입니다.
+        </p>
       )}
     </div>
   )
