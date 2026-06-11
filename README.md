@@ -48,16 +48,19 @@ main에 push하면 GitHub Actions가 자동으로 빌드·배포합니다.
 
 ## 데이터 출처 · 크레딧
 
-- 시세/아이템 데이터: [tarkov.dev](https://tarkov.dev/) — 무료 오픈소스 커뮤니티 API
-- 패치노트: [EFT 공식 위키 체인지로그](https://escapefromtarkov.fandom.com/wiki/Changelog)
-- 커뮤니티 동향: [r/EscapefromTarkov](https://www.reddit.com/r/EscapefromTarkov/)
+- 시세/아이템 데이터·아이콘: [tarkov.dev](https://tarkov.dev/) — 무료 오픈소스 커뮤니티 API. 본 사이트는 데이터를 저장하지 않고 방문자 브라우저가 직접 조회합니다
+- 패치노트: [Escape from Tarkov Wiki(Fandom) 체인지로그](https://escapefromtarkov.fandom.com/wiki/Changelog) — 위키 텍스트 콘텐츠는 [CC BY-SA](https://www.fandom.com/licensing) 라이선스를 따르며, 브리핑에서는 출처 링크와 함께 요약·인용합니다
+- 커뮤니티 동향: [r/EscapefromTarkov](https://www.reddit.com/r/EscapefromTarkov/) — 공개 RSS 피드 기반. 각 게시물의 권리는 해당 작성자에게 있으며, 브리핑은 원문 링크와 함께 짧은 요약만 제공합니다
+- 브리핑 요약 생성: [GitHub Models](https://docs.github.com/en/github-models)
 
 ## 면책
 
-본 프로젝트는 팬이 만든 **비공식** 도구로, Battlestate Games와 아무런 관련이 없습니다.
-Escape from Tarkov은 Battlestate Games Limited의 상표입니다.
-게임 내 데이터·이미지의 권리는 각 권리자에게 있습니다.
+- 본 프로젝트는 팬이 만든 **비공식** 도구로, Battlestate Games와 아무런 관련이 없으며 어떠한 제휴·승인·후원 관계도 없습니다. Escape from Tarkov™ 및 관련 상표·게임 데이터·이미지의 모든 권리는 Battlestate Games Limited 등 각 권리자에게 있습니다.
+- **일일 브리핑은 AI가 자동 생성한 요약입니다.** 부정확하거나 오래된 정보가 포함될 수 있으며, 정확한 내용은 각 항목의 원문 출처를 확인하세요. 본 사이트의 정보(시세·공략 포함)를 활용한 게임 내 판단과 그 결과는 이용자 본인의 책임입니다.
+- 시세 데이터는 tarkov.dev가 제공하는 시점 기준이며 실제 게임 내 가격과 차이가 있을 수 있습니다.
+- 권리자(Battlestate Games 또는 콘텐츠 원작자)의 요청이 있을 경우 해당 콘텐츠를 즉시 수정·삭제하겠습니다. 문의: GitHub Issues
 
 ## 라이선스
 
-[MIT](LICENSE) — 자유롭게 사용·수정·배포할 수 있습니다.
+이 저장소의 **소스 코드**는 [MIT 라이선스](LICENSE)로 자유롭게 사용·수정·배포할 수 있습니다.
+단, MIT 라이선스는 외부에서 가져오는 게임 데이터·아이콘·위키/커뮤니티 콘텐츠에는 적용되지 않으며, 이들의 권리는 위 "데이터 출처" 항목의 각 권리자에게 있습니다.
