@@ -30,7 +30,7 @@ Escape From Tarkov 플레이어를 위한 한국어 컴패니언 웹.
 ```
 
 - **시세**: 방문자의 브라우저가 [tarkov.dev](https://tarkov.dev/api/) 공개 API를 직접 호출 — 서버·키·비용 없음
-- **브리핑**: GitHub Actions가 매일 EFT 위키 체인지로그와 Reddit 인기글을 수집하고, [GitHub Models](https://docs.github.com/en/github-models)(무료)로 요약해 정적 JSON으로 커밋 — 사람 개입 없이 완전 자동
+- **브리핑**: GitHub Actions가 매일 EFT 위키 체인지로그·Reddit(인기글+버그 제보)·YouTube 신규 영상·Steam 뉴스를 수집하고, [GitHub Models](https://docs.github.com/en/github-models)(무료)로 2단계 요약(소스별 → 통합)해 정적 JSON으로 커밋 — 사람 개입 없이 완전 자동. 매주 월요일엔 주간 메타 리포트도 발행
 - AI 요약이 실패하는 날에도 제목+링크 목록으로 폴백되어 브리핑이 비는 날이 없음
 
 상세 설계는 [docs/DESIGN.md](docs/DESIGN.md), 브리핑 데이터 형식은 [docs/briefing-schema.md](docs/briefing-schema.md) 참고.
@@ -51,6 +51,8 @@ main에 push하면 GitHub Actions가 자동으로 빌드·배포합니다.
 - 시세/아이템 데이터·아이콘: [tarkov.dev](https://tarkov.dev/) — 무료 오픈소스 커뮤니티 API. 본 사이트는 데이터를 저장하지 않고 방문자 브라우저가 직접 조회합니다
 - 패치노트: [Escape from Tarkov Wiki(Fandom) 체인지로그](https://escapefromtarkov.fandom.com/wiki/Changelog) — 위키 텍스트 콘텐츠는 [CC BY-SA](https://www.fandom.com/licensing) 라이선스를 따르며, 브리핑에서는 출처 링크와 함께 요약·인용합니다
 - 커뮤니티 동향: [r/EscapefromTarkov](https://www.reddit.com/r/EscapefromTarkov/) — 공개 RSS 피드 기반. 각 게시물의 권리는 해당 작성자에게 있으며, 브리핑은 원문 링크와 함께 짧은 요약만 제공합니다
+- 신규 영상: YouTube 채널 공개 RSS (노잼망겜, 유우양, Pestily, LVNDMARK) — 제목·링크만 수록하며 각 영상의 권리는 해당 채널에 있습니다
+- 공식 소식: Steam 뉴스 공개 RSS
 - 브리핑 요약 생성: [GitHub Models](https://docs.github.com/en/github-models)
 
 ## 면책
