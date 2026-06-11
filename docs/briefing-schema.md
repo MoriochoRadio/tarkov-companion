@@ -41,4 +41,8 @@ public/data/briefings/
 
 ## 생성 주체
 
-매일 오전 9시 Cowork 예약 작업이 공식 뉴스·웹 검색 결과를 수집·요약해 이 형식으로 생성하고 git 커밋한다. Reddit 직접 fetch는 Cowork 정책상 불가 → 웹 검색 경유로 커뮤니티 동향 수집.
+매일 00:00 UTC(한국 오전 9시) GitHub Actions(`daily-briefing.yml`)가 생성한다:
+
+1. `scripts/collect-briefing.mjs` — EFT 위키 체인지로그(MediaWiki API) + Reddit r/EscapefromTarkov 일간 인기글(RSS) 수집. 소스 하나가 실패해도 나머지로 진행
+2. `scripts/generate-briefing.mjs` — GitHub Models(GITHUB_TOKEN, 무료)로 한국어 요약. AI 실패 시 제목+링크 목록 폴백 — 빈 날이 없도록 보장
+3. 같은 날짜 파일이 있으면 덮어쓰고 `index.json` 갱신 후 커밋, 배포 워크플로우 dispatch
