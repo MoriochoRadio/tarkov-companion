@@ -1,3 +1,7 @@
+export function formatNumber(value: number): string {
+  return value.toLocaleString('ko-KR')
+}
+
 export function formatRub(value: number | null | undefined): string {
   if (value == null || value <= 0) return '—'
   return `₽ ${Math.round(value).toLocaleString('ko-KR')}`
