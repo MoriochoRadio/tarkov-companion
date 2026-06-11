@@ -7,7 +7,12 @@ const URL = process.argv[2]?.startsWith('http')
   ? process.argv[2]
   : 'http://localhost:4173/tarkov-companion/'
 
-const browser = await puppeteer.launch({ executablePath: CHROME, headless: true })
+// --use-gl=angle: 헤드리스에서도 WebGL 활성화 — 3D 무기 쇼케이스까지 포함해 측정
+const browser = await puppeteer.launch({
+  executablePath: CHROME,
+  headless: true,
+  args: ['--use-gl=angle'],
+})
 const page = await browser.newPage()
 const cdp = await page.createCDPSession()
 await cdp.send('Emulation.setCPUThrottlingRate', { rate: 4 })
