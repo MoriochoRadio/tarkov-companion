@@ -237,6 +237,136 @@ body {
   animation: fade-up 500ms ease-out 1700ms both;
 }
 
+/* ============================================================
+   3D 무기 쇼케이스
+   ============================================================ */
+.weapon-stage {
+  display: block;
+}
+
+.weapon-canvas,
+.weapon-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.weapon-poster {
+  object-fit: contain;
+}
+
+/* 히어로 중앙 — 로고 아래 */
+.hero-weapon {
+  margin: var(--sp-2) auto 0;
+  animation: fade-up 500ms ease-out 700ms both;
+}
+
+.weapon-stage.stage-hero {
+  width: min(460px, 82vw);
+  height: 170px;
+  margin: 0 auto;
+}
+
+.weapon-switch {
+  margin-top: 2px;
+  padding: 4px 14px;
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--text-2);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sub);
+  cursor: pointer;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+
+.weapon-switch:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* 대시보드 헤더 우측 위젯 */
+.weapon-widget {
+  margin-left: auto;
+  align-self: center;
+  width: 148px;
+  height: 76px;
+  padding: 0;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 120ms ease;
+}
+
+.weapon-widget:hover {
+  border-color: var(--accent);
+}
+
+.weapon-widget .weapon-stage {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 640px) {
+  .weapon-widget {
+    display: none; /* 모바일 헤더는 좁음 — 3D도 포스터 폴백이라 위젯 생략 */
+  }
+}
+
+/* 풀스크린 뷰어 */
+.weapon-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  background: rgba(8, 10, 12, 0.93);
+  padding: var(--sp-5);
+}
+
+.weapon-close {
+  position: absolute;
+  top: var(--sp-4);
+  right: var(--sp-4);
+}
+
+.weapon-stage.stage-modal {
+  width: min(880px, 94vw);
+  height: min(56vh, 500px);
+}
+
+.weapon-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+}
+
+.weapon-name {
+  min-width: 120px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.weapon-credit {
+  margin: 0;
+  color: var(--text-3);
+  font-size: var(--fs-sub);
+}
+
+.weapon-credit a {
+  color: var(--text-2);
+}
+
+.weapon-credit a:hover {
+  color: var(--accent);
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;

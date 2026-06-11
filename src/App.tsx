@@ -9,6 +9,7 @@ import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
 import { ValueTab } from './features/ValueTab'
+import { WeaponWidget } from './features/WeaponShowcase'
 import { setPendingSearch } from './lib/searchSeed'
 
 const TABS = [
@@ -109,6 +110,7 @@ export default function App() {
             TARKOV<span className="logo-accent">&nbsp;COMPANION</span>
           </h1>
           <p className="tagline">Escape From Tarkov 한국어 시세·브리핑 대시보드</p>
+          <WeaponWidget />
         </header>
         {/* 로딩 전에도 같은 높이의 빈 바를 둬서 레이아웃 시프트 방지 */}
         {tickerOn ? (
@@ -145,6 +147,10 @@ export default function App() {
             비공식 팬 프로젝트 · Battlestate Games와 무관 · 데이터:{' '}
             <a href="https://tarkov.dev" target="_blank" rel="noreferrer">
               tarkov.dev
+            </a>{' '}
+            · 3D 모델:{' '}
+            <a href="https://quaternius.com" target="_blank" rel="noreferrer">
+              Quaternius (CC0)
             </a>
           </span>
           <a

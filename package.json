@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.184.1",
     "@vitejs/plugin-react": "^5.0.0",
     "puppeteer-core": "^25.1.0",
     "typescript": "~5.9.0",

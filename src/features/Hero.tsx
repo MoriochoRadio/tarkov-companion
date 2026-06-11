@@ -4,6 +4,7 @@ import { fetchCounts } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { startHeroCanvas } from '../lib/heroCanvas'
 import { CountUp } from './CountUp'
+import { HeroWeapon } from './WeaponShowcase'
 
 // 풀스크린 히어로 인트로 — 첫 방문자 전용 (게이트는 App.tsx의 shouldShowHero).
 // 절대 원칙: 매일 쓰는 사람을 방해하지 않는다 — 재방문/PWA에선 아예 안 뜸
@@ -92,6 +93,7 @@ export function Hero({ onEnter }: { onEnter: () => void }) {
           TARKOV<span className="logo-accent">&nbsp;COMPANION</span>
         </h1>
         <div className="hero-rule" aria-hidden />
+        <HeroWeapon />
         <p className="hero-sub">
           실시간 플리마켓 시세 · 가성비 분석 · 매일 아침 AI 브리핑
         </p>
