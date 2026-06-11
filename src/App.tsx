@@ -1,7 +1,13 @@
 import { useState } from 'react'
+import { MoversTab } from './features/MoversTab'
 import { SearchTab } from './features/SearchTab'
+import { ValueTab } from './features/ValueTab'
 
-const TABS = [{ key: 'search', label: '아이템 검색', element: <SearchTab /> }] as const
+const TABS = [
+  { key: 'search', label: '아이템 검색', element: <SearchTab /> },
+  { key: 'value', label: '가성비 랭킹', element: <ValueTab /> },
+  { key: 'movers', label: '급등/급락', element: <MoversTab /> },
+] as const
 
 type TabKey = (typeof TABS)[number]['key']
 
