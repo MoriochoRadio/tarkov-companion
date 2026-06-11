@@ -11,6 +11,7 @@ export interface TarkovItem {
   changeLast48hPercent: number | null
   width: number
   height: number
+  types: string[] // 'keys', 'ammo', 'meds' 등 카테고리 태그
 }
 
 export interface AmmoInfo {
@@ -58,7 +59,7 @@ export function fetchAllItems(): Promise<TarkovItem[]> {
       items(lang: ko) {
         id name shortName iconLink
         avg24hPrice changeLast48hPercent
-        width height
+        width height types
       }
     }`,
   )
