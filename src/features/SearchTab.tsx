@@ -1,21 +1,42 @@
 import { useMemo, useState } from 'react'
-import { fetchAllItems, type TarkovItem } from '../api/tarkov'
+import {
+  fetchAllItems,
+  fetchPriceHistory,
+  type PricePoint,
+  type TarkovItem,
+} from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
 import { formatPercent, formatRub, percentClass } from '../lib/format'
 import { ItemCell } from './ItemRow'
+import { Sparkline } from './Sparkline'
 import { StarButton } from './StarButton'
 
 const MAX_RESULTS = 50
+
+// 히스토리 호출은 아이템당 1회라 무거움 → 즐겨찾기한 아이템에만 미니 차트 표시
+function HistoryCell({
+  isFav,
+  points,
+}: {
+  isFav: boolean
+  points: PricePoint[] | undefined | null
+}) {
+  if (!isFav) return <span className="dim">—</span>
+  if (points == null) return <span className="dim">…</span>
+  return <Sparkline points={points} />
+}
 
 function ItemsTable({
   rows,
   favIds,
   onToggleFav,
+  histories,
 }: {
   rows: TarkovItem[]
   favIds: ReadonlySet<string>
   onToggleFav: (id: string) => void
+  histories: Map<string, PricePoint[]> | null
 }) {
   return (
     <table className="data-table">
@@ -25,6 +46,7 @@ function ItemsTable({
           <th>아이템</th>
           <th className="num">플리 평균가 (24h)</th>
           <th className="num">48시간 변동</th>
+          <th>7일 추이</th>
         </tr>
       </thead>
       <tbody>
@@ -47,6 +69,12 @@ function ItemsTable({
             <td className="num">{formatRub(item.avg24hPrice)}</td>
             <td className={`num ${percentClass(item.changeLast48hPercent)}`}>
               {formatPercent(item.changeLast48hPercent)}
+            </td>
+            <td className="spark-cell">
+              <HistoryCell
+                isFav={favIds.has(item.id)}
+                points={histories?.get(item.id)}
+              />
             </td>
           </tr>
         ))}
@@ -82,6 +110,17 @@ export function SearchTab() {
       .sort((a, b) => (b.avg24hPrice ?? 0) - (a.avg24hPrice ?? 0))
   }, [state, favIds])
 
+  // 즐겨찾기 아이템의 7일 가격 히스토리 (아이템별 캐시 — 새로 추가된 것만 받음)
+  const favKey = [...favIds].sort().join(',')
+  const histState = useAsyncData(
+    () =>
+      favIds.size > 0
+        ? fetchPriceHistory([...favIds])
+        : Promise.resolve(new Map<string, PricePoint[]>()),
+    [favKey],
+  )
+  const histories = histState.status === 'ready' ? histState.data : null
+
   if (state.status === 'loading') {
     return <p className="status">아이템 데이터 불러오는 중… (최초 1회, 약 5초)</p>
   }
@@ -110,16 +149,26 @@ export function SearchTab() {
         <>
           <p className="hint">
             플리마켓 24시간 평균가 기준 · 최대 {MAX_RESULTS}개 표시 · ‘—’는 플리마켓
-            거래 불가 아이템 · ★를 누르면 즐겨찾기에 저장
+            거래 불가 아이템 · ★를 누르면 즐겨찾기에 저장되고 7일 추이가 표시됨
           </p>
-          <ItemsTable rows={results} favIds={favIds} onToggleFav={toggleFav} />
+          <ItemsTable
+            rows={results}
+            favIds={favIds}
+            onToggleFav={toggleFav}
+            histories={histories}
+          />
         </>
       )}
       {!searching && favorites.length > 0 && (
         <>
           <h2 className="fav-heading">★ 즐겨찾기 ({favorites.length})</h2>
           <p className="hint">이 브라우저에 저장됨 · ★를 다시 누르면 해제</p>
-          <ItemsTable rows={favorites} favIds={favIds} onToggleFav={toggleFav} />
+          <ItemsTable
+            rows={favorites}
+            favIds={favIds}
+            onToggleFav={toggleFav}
+            histories={histories}
+          />
         </>
       )}
       {!searching && favorites.length === 0 && (

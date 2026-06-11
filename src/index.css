@@ -286,6 +286,24 @@ th.star-col {
   color: var(--accent);
 }
 
+/* 시세 스파크라인 — 추세 색은 시맨틱 토큰 재사용 (.up/.down/.dim) */
+.sparkline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sparkline.up {
+  color: var(--up);
+}
+
+.sparkline.down {
+  color: var(--down);
+}
+
+.sparkline.dim {
+  color: var(--text-3);
+}
+
 /* .btn-ext를 button 요소에도 쓸 수 있게 (원래는 a 전용) */
 button.btn-ext {
   cursor: pointer;

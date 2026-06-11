@@ -71,6 +71,45 @@ export function fetchAllItems(): Promise<TarkovItem[]> {
   return itemsCache
 }
 
+export interface PricePoint {
+  price: number
+  timestamp: string // epoch ms 문자열
+}
+
+// 가격 히스토리는 아이템당 별도 조회라 무거움 → 즐겨찾기 아이템에만 사용.
+// GraphQL 별칭으로 여러 개를 한 요청에 묶고, 아이템별로 캐시해
+// 즐겨찾기를 하나 추가하면 그 아이템만 새로 받아옴
+const historyCache = new Map<string, Promise<PricePoint[]>>()
+const HISTORY_BATCH = 30 // 한 요청에 묶는 최대 아이템 수 (응답 비대화 방지)
+
+export function fetchPriceHistory(
+  ids: string[],
+): Promise<Map<string, PricePoint[]>> {
+  const missing = [...new Set(ids)].filter((id) => !historyCache.has(id))
+  for (let i = 0; i < missing.length; i += HISTORY_BATCH) {
+    const batch = missing.slice(i, i + HISTORY_BATCH)
+    const fields = batch
+      // id는 tarkov.dev가 주는 영숫자 값이지만 쿼리에 끼워 넣으므로 한 번 거름
+      .map((id, k) => `h${k}: historicalItemPrices(id: "${id.replace(/[^\w-]/g, '')}", days: 7) { price timestamp }`)
+      .join('\n')
+    const request = gql<Record<string, PricePoint[]>>(`{ ${fields} }`)
+    batch.forEach((id, k) => {
+      historyCache.set(
+        id,
+        request
+          .then((d) => d[`h${k}`] ?? [])
+          .catch((err: unknown) => {
+            historyCache.delete(id)
+            throw err
+          }),
+      )
+    })
+  }
+  return Promise.all(
+    ids.map(async (id) => [id, await historyCache.get(id)!] as const),
+  ).then((entries) => new Map(entries))
+}
+
 let ammoCache: Promise<AmmoInfo[]> | null = null
 
 export function fetchAmmo(): Promise<AmmoInfo[]> {
