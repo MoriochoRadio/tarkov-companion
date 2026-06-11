@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
 import { Hero } from './features/Hero'
@@ -63,6 +63,21 @@ export default function App() {
     }
   }, [])
 
+  // 활성 탭 밑줄을 슬라이딩 인디케이터로 — translateX/scaleX만 써서 레이아웃 비용 0
+  const indicatorRef = useRef<HTMLSpanElement>(null)
+  useLayoutEffect(() => {
+    const nav = tabsRef.current
+    const ind = indicatorRef.current
+    const btn = nav?.querySelector<HTMLButtonElement>('button.active')
+    if (!nav || !ind || !btn) return
+    const place = () => {
+      ind.style.transform = `translateX(${btn.offsetLeft}px) scaleX(${btn.offsetWidth})`
+    }
+    place()
+    window.addEventListener('resize', place)
+    return () => window.removeEventListener('resize', place)
+  }, [active])
+
   return (
     <>
       {showHero && <Hero onEnter={enterDashboard} />}
@@ -84,6 +99,7 @@ export default function App() {
                 {tab.label}
               </button>
             ))}
+            <span className="tab-indicator" ref={indicatorRef} aria-hidden />
           </nav>
           {moreRight && (
             <span className="tabs-more" aria-hidden>

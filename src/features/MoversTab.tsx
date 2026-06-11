@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { fetchAllItems, type TarkovItem } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatPercent, formatRub, percentClass } from '../lib/format'
@@ -9,7 +9,13 @@ const TOP_N = 20
 // 싸구려 아이템은 몇백 루블만 움직여도 수십 %가 튀어서 노이즈가 됨 → 최소가 필터
 const MIN_PRICE = 10_000
 
-function MoversTable({ rows }: { rows: TarkovItem[] }) {
+function MoversTable({
+  rows,
+  seen,
+}: {
+  rows: TarkovItem[]
+  seen: ReadonlySet<string> | null
+}) {
   return (
     <table className="data-table">
       <thead>
@@ -21,7 +27,7 @@ function MoversTable({ rows }: { rows: TarkovItem[] }) {
       </thead>
       <tbody>
         {rows.map((item) => (
-          <tr key={item.id}>
+          <tr key={item.id} className={seen && !seen.has(item.id) ? 'pulse-new' : ''}>
             <td>
               <ItemCell
                 iconLink={item.iconLink}
@@ -40,8 +46,21 @@ function MoversTable({ rows }: { rows: TarkovItem[] }) {
   )
 }
 
+const SEEN_KEY = 'tc:seen-movers'
+
 export function MoversTab() {
   const state = useAsyncData(fetchAllItems)
+
+  // 지난 방문 때의 급등/급락 목록 — 그때 없던 항목만 골드 펄스 1회.
+  // 첫 방문(저장 없음)은 전부 "신규"라 펄스가 노이즈 → null로 두고 끔
+  const seen = useMemo<ReadonlySet<string> | null>(() => {
+    try {
+      const raw = localStorage.getItem(SEEN_KEY)
+      return raw ? new Set(JSON.parse(raw) as string[]) : null
+    } catch {
+      return null
+    }
+  }, [])
 
   const { risers, fallers } = useMemo(() => {
     if (state.status !== 'ready') return { risers: [], fallers: [] }
@@ -60,6 +79,19 @@ export function MoversTab() {
     }
   }, [state])
 
+  // 이번에 본 목록을 다음 방문의 비교 기준으로 저장
+  useEffect(() => {
+    if (risers.length + fallers.length === 0) return
+    try {
+      localStorage.setItem(
+        SEEN_KEY,
+        JSON.stringify([...risers, ...fallers].map((i) => i.id)),
+      )
+    } catch {
+      // 저장 실패 시 펄스만 못 쓸 뿐
+    }
+  }, [risers, fallers])
+
   if (state.status === 'loading') {
     return <TableSkeleton rows={8} label="아이템 데이터 불러오는 중… (최초 1회, 약 5초)" />
   }
@@ -76,11 +108,11 @@ export function MoversTab() {
       <div className="movers-grid">
         <section>
           <h2 className="up">급등 톱 {TOP_N}</h2>
-          <MoversTable rows={risers} />
+          <MoversTable rows={risers} seen={seen} />
         </section>
         <section>
           <h2 className="down">급락 톱 {TOP_N}</h2>
-          <MoversTable rows={fallers} />
+          <MoversTable rows={fallers} seen={seen} />
         </section>
       </div>
     </div>

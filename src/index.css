@@ -274,6 +274,20 @@ body {
   }
 }
 
+/* 급등/급락: 지난 방문에 없던 항목 — 골드 펄스 1회 */
+@keyframes pulse-gold {
+  from {
+    background-color: color-mix(in srgb, var(--accent) 16%, transparent);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.pulse-new {
+  animation: pulse-gold 1.5s ease-out 1;
+}
+
 @media (max-width: 640px) {
   .hero-kicker {
     font-size: 0.6rem;
@@ -380,11 +394,26 @@ body {
 }
 
 .tabs {
+  position: relative; /* 슬라이딩 인디케이터 기준 */
   display: flex;
   gap: var(--sp-1);
   border-bottom: 1px solid var(--border);
   overflow-x: auto;
   scrollbar-width: none;
+}
+
+/* 활성 탭 밑줄 — 1px 기준 폭을 translateX+scaleX로만 이동/신축 */
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+  pointer-events: none;
 }
 
 /* 탭이 잘려 있을 때 우측 페이드 + 화살표 — "더 있음" 힌트 */
@@ -427,7 +456,7 @@ body {
 .tabs button.active {
   color: var(--accent);
   font-weight: 700;
-  border-bottom-color: var(--accent);
+  /* 밑줄은 .tab-indicator가 그림 (슬라이딩 모션) */
 }
 
 /* ============================================================
@@ -559,6 +588,22 @@ th.star-col {
 .sparkline {
   display: inline-block;
   vertical-align: middle;
+}
+
+/* 호버 툴팁 — 테이블 overflow에 잘리지 않게 화면 좌표(fixed)로 띄움 */
+.spark-tip {
+  position: fixed;
+  z-index: 60;
+  transform: translate(-50%, -120%);
+  padding: 3px 8px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-size: 0.72rem;
+  white-space: nowrap;
+  pointer-events: none;
+  text-align: center;
 }
 
 .sparkline.up {
@@ -810,8 +855,13 @@ select:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .status::before,
   .skeleton-label::before,
-  .skeleton-block {
+  .skeleton-block,
+  .pulse-new {
     animation: none;
+  }
+
+  .tab-indicator {
+    transition: none;
   }
 }
 
@@ -1171,6 +1221,7 @@ select:focus-visible {
   border-radius: var(--radius);
   padding: var(--sp-4) var(--sp-5);
   min-width: 0;
+  transition: transform 150ms ease-out; /* 3D 틸트 복귀를 부드럽게 */
 }
 
 .map-card h2 {

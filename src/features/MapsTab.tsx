@@ -1,5 +1,6 @@
 import { fetchMapLinks, fetchMaps, type TarkovMap } from '../api/maps'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { useTilt } from '../hooks/useTilt'
 import { TableSkeleton } from './Skeleton'
 
 function bossLabel(map: TarkovMap): string {
@@ -21,8 +22,14 @@ function MapCard({
   map: TarkovMap
   links: { label: string; url: string }[]
 }) {
+  const tilt = useTilt<HTMLElement>()
   return (
-    <section className="map-card">
+    <section
+      className="map-card"
+      ref={tilt.ref}
+      onMouseMove={tilt.onMove}
+      onMouseLeave={tilt.onLeave}
+    >
       <h2>
         {map.name} <span className="dim">{map.normalizedName}</span>
       </h2>

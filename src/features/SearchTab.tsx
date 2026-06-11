@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   fetchAllItems,
   fetchPriceHistory,
@@ -8,12 +8,16 @@ import {
 import { useAsyncData } from '../hooks/useAsyncData'
 import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
 import { formatPercent, formatRub, percentClass } from '../lib/format'
+import { CountUp } from './CountUp'
 import { ItemCell } from './ItemRow'
 import { TableSkeleton } from './Skeleton'
 import { Sparkline } from './Sparkline'
 import { StarButton } from './StarButton'
 
 const MAX_RESULTS = 50
+
+// 즐겨찾기 시세 카운트업은 세션당 1회만 — 검색을 지울 때마다 다시 차오르면 성가심
+let favCountedUp = false
 
 // 히스토리 호출은 아이템당 1회라 무거움 → 즐겨찾기한 아이템에만 미니 차트 표시
 function HistoryCell({
@@ -33,11 +37,13 @@ function ItemsTable({
   favIds,
   onToggleFav,
   histories,
+  countUp = false,
 }: {
   rows: TarkovItem[]
   favIds: ReadonlySet<string>
   onToggleFav: (id: string) => void
   histories: Map<string, PricePoint[]> | null
+  countUp?: boolean
 }) {
   return (
     <table className="data-table">
@@ -67,7 +73,17 @@ function ItemsTable({
                 shortName={item.shortName}
               />
             </td>
-            <td className="num">{formatRub(item.avg24hPrice)}</td>
+            <td className="num">
+              {countUp && (item.avg24hPrice ?? 0) > 0 ? (
+                <CountUp
+                  value={item.avg24hPrice!}
+                  duration={900}
+                  format={formatRub}
+                />
+              ) : (
+                formatRub(item.avg24hPrice)
+              )}
+            </td>
             <td className={`num ${percentClass(item.changeLast48hPercent)}`}>
               {formatPercent(item.changeLast48hPercent)}
             </td>
@@ -122,14 +138,21 @@ export function SearchTab() {
   )
   const histories = histState.status === 'ready' ? histState.data : null
 
+  const searching = query.trim().length >= 2
+  const showingFavs = !searching && favorites.length > 0
+
+  // 즐겨찾기 모아보기가 한 번 표시되면 이후로는 카운트업 안 함.
+  // 훅은 아래 early return보다 먼저 와야 함 (호출 순서 고정)
+  useEffect(() => {
+    if (showingFavs) favCountedUp = true
+  }, [showingFavs])
+
   if (state.status === 'loading') {
     return <TableSkeleton label="아이템 데이터 불러오는 중… (최초 1회, 약 5초)" />
   }
   if (state.status === 'error') {
     return <p className="status error">불러오기 실패: {state.message}</p>
   }
-
-  const searching = query.trim().length >= 2
 
   return (
     <div>
@@ -169,6 +192,7 @@ export function SearchTab() {
             favIds={favIds}
             onToggleFav={toggleFav}
             histories={histories}
+            countUp={!favCountedUp}
           />
         </>
       )}
