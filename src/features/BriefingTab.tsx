@@ -98,6 +98,18 @@ export function BriefingTab() {
     )
   }
 
+  // 같은 종류(일일/주간) 안에서 이전·다음 날짜로 이동.
+  // 날짜 목록은 최신순이라 "이전(과거)" = 인덱스 +1
+  const kindDates = isWeekly ? weeklyDates : dailyDates
+  const prefix = isWeekly ? 'w:' : 'd:'
+  const cursor = date ? kindDates.indexOf(date) : -1
+  const older =
+    cursor >= 0 && cursor < kindDates.length - 1
+      ? (`${prefix}${kindDates[cursor + 1]}` as DocKey)
+      : null
+  const newer =
+    cursor > 0 ? (`${prefix}${kindDates[cursor - 1]}` as DocKey) : null
+
   return (
     <div>
       <div className="toolbar">
@@ -123,6 +135,22 @@ export function BriefingTab() {
             </optgroup>
           )}
         </select>
+        <button
+          className="quest-back"
+          disabled={!older}
+          onClick={() => older && setSelected(older)}
+          aria-label="이전 날짜"
+        >
+          ◀ 이전
+        </button>
+        <button
+          className="quest-back"
+          disabled={!newer}
+          onClick={() => newer && setSelected(newer)}
+          aria-label="다음 날짜"
+        >
+          다음 ▶
+        </button>
         <span className="hint">
           {isWeekly ? '매주 월요일 발행' : '매일 오전 9시 자동 발행'}
         </span>

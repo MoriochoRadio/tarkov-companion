@@ -142,13 +142,32 @@ body {
 /* ============================================================
    탭바 — 모바일에서 가로 스크롤
    ============================================================ */
+.tabs-wrap {
+  position: relative;
+  margin-bottom: var(--sp-5);
+}
+
 .tabs {
   display: flex;
   gap: var(--sp-1);
   border-bottom: 1px solid var(--border);
-  margin-bottom: var(--sp-5);
   overflow-x: auto;
   scrollbar-width: none;
+}
+
+/* 탭이 잘려 있을 때 우측 페이드 + 화살표 — "더 있음" 힌트 */
+.tabs-more {
+  position: absolute;
+  inset: 0 0 1px auto; /* 하단 보더는 가리지 않게 1px 띄움 */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 56px;
+  padding-right: 2px;
+  pointer-events: none; /* 마지막 탭 클릭을 막으면 안 됨 */
+  background: linear-gradient(to right, transparent, var(--bg) 75%);
+  color: var(--accent);
+  font-size: 1.1rem;
 }
 
 .tabs::-webkit-scrollbar {
@@ -762,6 +781,14 @@ select:focus-visible {
 .quest-back:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+/* 브리핑 이전/다음처럼 끝에 도달해 비활성화된 상태 */
+.quest-back:disabled {
+  opacity: 0.4;
+  cursor: default;
+  border-color: var(--border-strong);
+  color: var(--text);
 }
 
 .load-more {

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
 import { MapsTab } from './features/MapsTab'
@@ -22,6 +22,24 @@ type TabKey = (typeof TABS)[number]['key']
 export default function App() {
   const [active, setActive] = useState<TabKey>('briefing')
 
+  // 모바일에서 탭바가 잘려 있을 때 "오른쪽에 더 있음" 힌트 표시.
+  // 끝까지 스크롤하면 숨김 — 스크롤 위치는 리렌더 없이 이벤트로만 추적
+  const tabsRef = useRef<HTMLElement>(null)
+  const [moreRight, setMoreRight] = useState(false)
+  useEffect(() => {
+    const el = tabsRef.current
+    if (!el) return
+    const update = () =>
+      setMoreRight(el.scrollWidth - el.clientWidth - el.scrollLeft > 8)
+    update()
+    el.addEventListener('scroll', update, { passive: true })
+    window.addEventListener('resize', update)
+    return () => {
+      el.removeEventListener('scroll', update)
+      window.removeEventListener('resize', update)
+    }
+  }, [])
+
   return (
     <div className="app">
       <header className="app-header">
@@ -30,17 +48,24 @@ export default function App() {
         </h1>
         <p className="tagline">Escape From Tarkov 한국어 시세·브리핑 대시보드</p>
       </header>
-      <nav className="tabs">
-        {TABS.map((tab) => (
-          <button
-            key={tab.key}
-            className={tab.key === active ? 'active' : ''}
-            onClick={() => setActive(tab.key)}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </nav>
+      <div className="tabs-wrap">
+        <nav className="tabs" ref={tabsRef}>
+          {TABS.map((tab) => (
+            <button
+              key={tab.key}
+              className={tab.key === active ? 'active' : ''}
+              onClick={() => setActive(tab.key)}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </nav>
+        {moreRight && (
+          <span className="tabs-more" aria-hidden>
+            ›
+          </span>
+        )}
+      </div>
       <main className="app-main">
         {TABS.find((tab) => tab.key === active)?.element}
       </main>
