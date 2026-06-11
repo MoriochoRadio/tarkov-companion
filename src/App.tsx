@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { AmmoTab } from './features/AmmoTab'
+import { BriefingTab } from './features/BriefingTab'
 import { MoversTab } from './features/MoversTab'
 import { SearchTab } from './features/SearchTab'
 import { ValueTab } from './features/ValueTab'
 
 const TABS = [
+  { key: 'briefing', label: '오늘의 브리핑', element: <BriefingTab /> },
   { key: 'search', label: '아이템 검색', element: <SearchTab /> },
   { key: 'value', label: '가성비 랭킹', element: <ValueTab /> },
   { key: 'movers', label: '급등/급락', element: <MoversTab /> },
@@ -14,7 +16,7 @@ const TABS = [
 type TabKey = (typeof TABS)[number]['key']
 
 export default function App() {
-  const [active, setActive] = useState<TabKey>('search')
+  const [active, setActive] = useState<TabKey>('briefing')
 
   return (
     <div className="app">

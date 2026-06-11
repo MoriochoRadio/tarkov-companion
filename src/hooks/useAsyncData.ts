@@ -5,12 +5,17 @@ type AsyncState<T> =
   | { status: 'error'; message: string }
   | { status: 'ready'; data: T }
 
-// 로딩/에러/완료 3단계를 공통 처리하는 훅
-export function useAsyncData<T>(loader: () => Promise<T>): AsyncState<T> {
+// 로딩/에러/완료 3단계를 공통 처리하는 훅.
+// deps가 바뀌면 다시 로딩 (예: 브리핑 날짜 선택)
+export function useAsyncData<T>(
+  loader: () => Promise<T>,
+  deps: unknown[] = [],
+): AsyncState<T> {
   const [state, setState] = useState<AsyncState<T>>({ status: 'loading' })
 
   useEffect(() => {
     let active = true
+    setState({ status: 'loading' })
     loader()
       .then((data) => {
         if (active) setState({ status: 'ready', data })
@@ -26,9 +31,9 @@ export function useAsyncData<T>(loader: () => Promise<T>): AsyncState<T> {
     return () => {
       active = false
     }
-    // loader는 모듈 레벨 함수만 넘기므로 의존성에서 제외해도 안전
+    // loader 자체는 의존성에서 제외 — 호출부가 deps로 갱신 시점을 명시함
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, deps)
 
   return state
 }
