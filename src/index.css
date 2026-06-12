@@ -3267,6 +3267,108 @@ summary:focus-visible {
   background: color-mix(in srgb, var(--bg-inset) 38%, transparent);
 }
 
+/* --- 돈벌이 탭: 레시피 행 (재료 → 산출 + 수익) --- */
+.profit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.profit-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: var(--sp-2) var(--sp-4);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.profit-io {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+
+.profit-ing {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.profit-ing img,
+.profit-out img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border-radius: 4px;
+}
+
+.profit-ing .num {
+  font-size: var(--fs-label);
+  color: var(--text-3);
+}
+
+.profit-arrow {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.profit-out {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+
+.profit-out-name {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.profit-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  white-space: nowrap;
+}
+
+.profit-nums {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.profit-per-hour {
+  color: var(--accent-bright);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  /* 폰: 숫자 블록을 아랫줄 전체로 */
+  .profit-row {
+    grid-template-columns: 1fr auto;
+  }
+
+  .profit-nums {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: var(--sp-3);
+    border-top: 1px solid var(--border);
+    padding-top: var(--sp-2);
+  }
+}
+
 /* --- 스크롤 연동 (Chrome 115+ 점진 향상, JS 0) --- */
 
 /* 페이지 스크롤 진행 바 — 미지원 브라우저는 scaleX(0)으로 안 보임 */

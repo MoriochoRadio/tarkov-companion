@@ -8,6 +8,7 @@ import { MapsTab } from './features/MapsTab'
 import { ModdingTab } from './features/ModdingTab'
 import { MoversTab } from './features/MoversTab'
 import { PrepTab } from './features/PrepTab'
+import { ProfitTab } from './features/ProfitTab'
 import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
@@ -21,6 +22,7 @@ const TABS = [
   { key: 'search', label: '아이템 검색', eyebrow: 'ITEM SEARCH', Comp: SearchTab },
   { key: 'value', label: '가성비 랭킹', eyebrow: 'VALUE PER SLOT', Comp: ValueTab },
   { key: 'movers', label: '급등/급락', eyebrow: 'MARKET MOVERS', Comp: MoversTab },
+  { key: 'profit', label: '돈벌이', eyebrow: 'PROFIT LAB', Comp: ProfitTab },
   { key: 'ammo', label: '탄약 비교', eyebrow: 'AMMO CHART', Comp: AmmoTab },
   { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
   { key: 'prep', label: '준비물', eyebrow: 'RAID CHECKLIST', Comp: PrepTab },
