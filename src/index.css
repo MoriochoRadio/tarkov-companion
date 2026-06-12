@@ -3206,6 +3206,67 @@ summary:focus-visible {
   outline-offset: 2px;
 }
 
+/* --- 탄약 차트: 방어구 효율 매트릭스 + 스탯 바 --- */
+.ammo-armor {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.ammo-r {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 20px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-ink);
+}
+
+/* 0(튕김)→6(확실) — 커뮤니티 탄약 차트 관례의 적→녹 그라데이션 */
+.ammo-r0 { background: #8a4a42; color: #f2ddda; }
+.ammo-r1 { background: #96604a; color: #f4e4dc; }
+.ammo-r2 { background: #a1794f; color: #16120a; }
+.ammo-r3 { background: #ab9254; color: #16120a; }
+.ammo-r4 { background: #9aa45c; color: #16120a; }
+.ammo-r5 { background: #87a868; color: #16120a; }
+.ammo-r6 { background: #84b48c; color: #14271a; }
+
+.ammo-legend .ammo-r {
+  width: 18px;
+  height: 16px;
+  margin-right: 2px;
+  vertical-align: -2px;
+}
+
+/* 숫자 아래 깔리는 미니 막대 — 표를 훑을 때 크기 비교가 한눈에 */
+.ammo-stat {
+  position: relative;
+  display: inline-block;
+  min-width: 56px;
+}
+
+.ammo-bar {
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: -3px;
+  height: 2px;
+  background: color-mix(in srgb, var(--text-3) 55%, transparent);
+  border-radius: 999px;
+}
+
+.ammo-bar.pen {
+  background: color-mix(in srgb, var(--accent) 75%, transparent);
+}
+
+/* 넓은 표 가독성 — 은은한 지브라 (호버는 기존 유지) */
+.data-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--bg-inset) 38%, transparent);
+}
+
 /* --- 스크롤 연동 (Chrome 115+ 점진 향상, JS 0) --- */
 
 /* 페이지 스크롤 진행 바 — 미지원 브라우저는 scaleX(0)으로 안 보임 */

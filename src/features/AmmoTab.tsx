@@ -48,6 +48,33 @@ function totalDamage(ammo: AmmoInfo): number {
   return ammo.damage * (ammo.projectileCount ?? 1)
 }
 
+// 방어구 클래스별 관통 효율 0~6 (커뮤니티 탄약 차트 방식의 근사식).
+// 클래스 c의 기준 방어력을 c×10으로 보고, 관통력이 기준+15면 확실(6),
+// 기준-15면 무력(0), 사이는 선형. 실전은 내구도·명중 각도에 따라 달라짐
+function armorRating(pen: number, cls: number): number {
+  return Math.max(0, Math.min(6, Math.round((pen - (cls * 10 - 15)) / 5)))
+}
+
+// C2~C6 한 줄 칩 — 데스크톱 표·모바일 카드 양쪽에서 같은 마크업 사용
+function ArmorCells({ pen }: { pen: number }) {
+  return (
+    <span className="ammo-armor">
+      {[2, 3, 4, 5, 6].map((cls) => {
+        const r = armorRating(pen, cls)
+        return (
+          <span
+            key={cls}
+            className={`ammo-r ammo-r${r}`}
+            title={`클래스 ${cls} 방어구 — 효율 ${r}/6`}
+          >
+            {r}
+          </span>
+        )
+      })}
+    </span>
+  )
+}
+
 export function AmmoTab() {
   const state = useAsyncData(fetchAmmo)
   const [caliber, setCaliber] = useState('')
@@ -101,8 +128,15 @@ export function AmmoTab() {
         <span className="hint">열 제목을 클릭하면 정렬 기준이 바뀜</span>
       </div>
       <p className="hint">
-        관통력이 방어구 상대 핵심 지표 · 산탄은 펠릿 수를 곱한 총 데미지 표시 ·
-        ‘—’는 플리마켓 거래 불가(상인/제작 전용)
+        <span className="ammo-legend">
+          C2~C6 = 방어구 클래스별 관통 효율{' '}
+          <span className="ammo-r ammo-r6">6</span>확실{' '}
+          <span className="ammo-r ammo-r4">4</span>양호{' '}
+          <span className="ammo-r ammo-r2">2</span>불안정{' '}
+          <span className="ammo-r ammo-r0">0</span>튕김
+        </span>{' '}
+        — 근사 등급, 실전은 내구도·각도에 따라 달라짐 · 산탄은 펠릿 수를 곱한 총
+        데미지 · ‘—’는 플리 거래 불가(상인/제작 전용)
       </p>
       <table className="data-table card-table">
         <thead>
@@ -111,6 +145,7 @@ export function AmmoTab() {
             <th>구경</th>
             {sortableHeader('damage', '데미지')}
             {sortableHeader('penetrationPower', '관통')}
+            <th>방어구 효율 C2~C6</th>
             {sortableHeader('armorDamage', '방어구 손상')}
             {sortableHeader('price', '플리 평균가')}
           </tr>
@@ -127,14 +162,31 @@ export function AmmoTab() {
               </td>
               <td className="dim" data-label="구경">{caliberLabel(ammo.caliber)}</td>
               <td className="num" data-label="데미지">
-                <span>
+                <span className="ammo-stat">
                   {totalDamage(ammo)}
                   {(ammo.projectileCount ?? 1) > 1 && (
                     <span className="dim"> ({ammo.damage}×{ammo.projectileCount})</span>
                   )}
+                  <span
+                    className="ammo-bar"
+                    style={{ width: `${Math.min(100, totalDamage(ammo) / 1.8)}%` }}
+                    aria-hidden
+                  />
                 </span>
               </td>
-              <td className="num" data-label="관통">{ammo.penetrationPower}</td>
+              <td className="num" data-label="관통">
+                <span className="ammo-stat">
+                  {ammo.penetrationPower}
+                  <span
+                    className="ammo-bar pen"
+                    style={{ width: `${Math.min(100, ammo.penetrationPower / 0.75)}%` }}
+                    aria-hidden
+                  />
+                </span>
+              </td>
+              <td data-label="방어구 효율">
+                <ArmorCells pen={ammo.penetrationPower} />
+              </td>
               <td className="num" data-label="방어구 손상">{ammo.armorDamage}</td>
               <td className="num" data-label="플리 평균가">{formatRub(ammo.item.avg24hPrice)}</td>
             </tr>
