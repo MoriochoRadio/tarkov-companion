@@ -7,6 +7,7 @@ import {
   type BuildDef,
   type BuildItemInfo,
 } from '../api/builds'
+import { fetchAmmo } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatRub } from '../lib/format'
 import { TableSkeleton } from './Skeleton'
@@ -35,8 +36,71 @@ interface BuildView {
   parts: BuildItemInfo[]
   cost: number | null
   costPartial: boolean // 일부 부품 시세 없음 — 합계가 실제보다 낮음
+  ergoBase: number | null
   ergo: number | null
+  recoilBase: number | null
   recoil: number | null
+  recoilH: number | null
+  weight: number
+}
+
+// 전→후 한 쌍 — 좋아진 쪽을 골드로
+function Delta({
+  base,
+  final,
+  lowerIsBetter = false,
+}: {
+  base: number | null
+  final: number | null
+  lowerIsBetter?: boolean
+}) {
+  if (final == null) return <>—</>
+  if (base == null || base === final) return <>{final}</>
+  const improved = lowerIsBetter ? final < base : final > base
+  return (
+    <>
+      <span className="dim">{base} →</span>{' '}
+      <span className={improved ? 'stat-up' : 'down'}>{final}</span>
+    </>
+  )
+}
+
+// 인게임 풍 스탯 바 — 에르고는 높을수록, 반동은 낮을수록 길게(좋게) 표시
+function StatBar({ pct }: { pct: number }) {
+  return (
+    <span className="stat-bar" aria-hidden>
+      <span style={{ width: `${Math.max(2, Math.min(100, pct))}%` }} />
+    </span>
+  )
+}
+
+// 이 빌드 구경의 추천 탄약 톱 3 (관통력순) — 탄약 캐시는 탄약 탭과 공유
+function AmmoRecs({ caliber }: { caliber: string }) {
+  const state = useAsyncData(fetchAmmo)
+  if (state.status !== 'ready') return <p className="hint">추천 탄약 불러오는 중…</p>
+  const top = state.data
+    .filter((a) => a.caliber?.replace(/^Caliber/, '') === caliber)
+    .sort((a, b) => b.penetrationPower - a.penetrationPower)
+    .slice(0, 3)
+  if (top.length === 0) return null
+  return (
+    <div className="build-ammo">
+      <h4>추천 탄약 (관통력순)</h4>
+      <ul>
+        {top.map((a) => (
+          <li key={a.item.id}>
+            {a.item.iconLink && <img src={a.item.iconLink} alt="" loading="lazy" />}
+            <span className="build-ammo-name">{a.item.shortName}</span>
+            <span className="num">
+              관통 <strong>{a.penetrationPower}</strong>
+            </span>
+            <span className="num dim">데미지 {a.damage}</span>
+            <span className="num dim">{formatRub(a.item.avg24hPrice)}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 function BuildCard({
@@ -50,15 +114,17 @@ function BuildCard({
 }) {
   const { def, weapon, parts } = view
   const rows = [weapon, ...parts]
+  const banner = weapon.presetImageLink ?? weapon.imageLink
   return (
     <article className={`build-card${expanded ? ' open' : ''}`}>
       <button className="build-head" onClick={onToggle} aria-expanded={expanded}>
         <span className="build-banner">
-          {weapon.imageLink && <img src={weapon.imageLink} alt="" loading="lazy" />}
+          {banner && <img src={banner} alt="" loading="lazy" />}
           <span className="build-badges">
             <span className="build-tier">LL{def.tier}</span>
             <span className="build-cat">{CATEGORY_LABELS[def.category]}</span>
           </span>
+          {weapon.caliber && <span className="build-caliber num">{weapon.caliber}</span>}
         </span>
         <span className="build-body">
           <span className="build-name">{def.name}</span>
@@ -79,48 +145,86 @@ function BuildCard({
             </span>
             <span>
               <em>에르고</em>
-              {view.ergo ?? '—'}
+              <Delta base={view.ergoBase} final={view.ergo} />
+              {view.ergo != null && <StatBar pct={view.ergo} />}
             </span>
             <span>
               <em>수직반동</em>
-              {view.recoil ?? '—'}
+              <Delta base={view.recoilBase} final={view.recoil} lowerIsBetter />
+              {view.recoil != null && <StatBar pct={100 - view.recoil / 5} />}
             </span>
           </span>
           <span className="build-desc">{def.desc}</span>
         </span>
       </button>
       {expanded && (
-        <ul className="build-detail">
-          {rows.map((item, i) => {
-            const buy = buyInfo(item, def.tier)
-            return (
-              <li key={item.id}>
-                {item.iconLink && <img src={item.iconLink} alt="" loading="lazy" />}
-                <span className="build-detail-name">
-                  {item.displayName}
-                  {i === 0 && <span className="prep-chip">무기</span>}
-                </span>
-                <span className="build-detail-buy">
-                  {buy ? (
-                    <>
-                      <span className="dim">{buy.label}</span>
-                      <span className="num">{formatRub(buy.price)}</span>
-                    </>
-                  ) : (
-                    <span className="dim">시세 없음 (레이드 파밍/물물교환)</span>
-                  )}
-                </span>
-              </li>
-            )
-          })}
-          {def.source && (
-            <li className="build-source">
-              <a className="source-link" href={def.source} target="_blank" rel="noreferrer">
-                참고 자료 ↗
-              </a>
-            </li>
-          )}
-        </ul>
+        <div className="build-detail">
+          <dl className="build-spec num">
+            <div>
+              <dt>수평반동</dt>
+              <dd>{view.recoilH ?? '—'}</dd>
+            </div>
+            <div>
+              <dt>연사력</dt>
+              <dd>{weapon.fireRate != null ? `${weapon.fireRate}rpm` : '—'}</dd>
+            </div>
+            <div>
+              <dt>총 무게</dt>
+              <dd>{view.weight.toFixed(2)}kg</dd>
+            </div>
+          </dl>
+          <ul className="build-detail-list">
+            {rows.map((item, i) => {
+              const buy = buyInfo(item, def.tier)
+              return (
+                <li key={item.id}>
+                  {item.iconLink && <img src={item.iconLink} alt="" loading="lazy" />}
+                  <span className="build-detail-name">
+                    {item.displayName}
+                    {i === 0 && <span className="prep-chip">무기</span>}
+                    <span className="build-detail-stats num">
+                      {item.ergonomics != null && item.ergonomics !== 0 && i > 0 && (
+                        <span className={item.ergonomics > 0 ? 'stat-up' : 'down'}>
+                          에르고 {item.ergonomics > 0 ? '+' : ''}
+                          {item.ergonomics}
+                        </span>
+                      )}
+                      {item.recoilModifier != null && item.recoilModifier !== 0 && (
+                        <span className={item.recoilModifier < 0 ? 'stat-up' : 'down'}>
+                          반동 {item.recoilModifier > 0 ? '+' : ''}
+                          {Math.round(item.recoilModifier * 100)}%
+                        </span>
+                      )}
+                    </span>
+                  </span>
+                  <span className="build-detail-buy">
+                    {buy ? (
+                      <>
+                        <span className="dim">{buy.label}</span>
+                        <span className="num">{formatRub(buy.price)}</span>
+                      </>
+                    ) : (
+                      <span className="dim">시세 없음 (레이드 파밍/물물교환)</span>
+                    )}
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+          {weapon.caliber && <AmmoRecs caliber={weapon.caliber} />}
+          <p className="hint build-fineprint">
+            배너 이미지는 기본 프리셋 기준(부품 구성과 다를 수 있음) · 에르고/반동은
+            부품 보정 단순 합산 근사치
+            {def.source && (
+              <>
+                {' · '}
+                <a className="source-link" href={def.source} target="_blank" rel="noreferrer">
+                  참고 자료 ↗
+                </a>
+              </>
+            )}
+          </p>
+        </div>
       )}
     </article>
   )
@@ -157,18 +261,29 @@ export function BuildsView() {
         if (buy) cost += buy.price
         else costPartial = true
       }
-      const ergo =
-        weapon.ergonomics != null
-          ? Math.round(weapon.ergonomics + parts.reduce((s, p) => s + (p.ergonomics ?? 0), 0))
-          : null
-      const recoil =
-        weapon.recoilVertical != null
-          ? Math.round(
-              weapon.recoilVertical *
-                (1 + parts.reduce((s, p) => s + (p.recoilModifier ?? 0), 0)),
-            )
-          : null
-      out.push({ def, weapon, parts, cost, costPartial, ergo, recoil })
+      const recoilSum = parts.reduce((s, p) => s + (p.recoilModifier ?? 0), 0)
+      out.push({
+        def,
+        weapon,
+        parts,
+        cost,
+        costPartial,
+        ergoBase: weapon.ergonomics,
+        ergo:
+          weapon.ergonomics != null
+            ? Math.round(weapon.ergonomics + parts.reduce((s, p) => s + (p.ergonomics ?? 0), 0))
+            : null,
+        recoilBase: weapon.recoilVertical,
+        recoil:
+          weapon.recoilVertical != null
+            ? Math.round(weapon.recoilVertical * (1 + recoilSum))
+            : null,
+        recoilH:
+          weapon.recoilHorizontal != null
+            ? Math.round(weapon.recoilHorizontal * (1 + recoilSum))
+            : null,
+        weight: weapon.weight + parts.reduce((s, p) => s + p.weight, 0),
+      })
     }
     return out.sort(
       (a, b) => a.def.tier - b.def.tier || (a.cost ?? Infinity) - (b.cost ?? Infinity),
@@ -203,10 +318,9 @@ export function BuildsView() {
         </select>
       </div>
       <p className="hint">
-        카드를 누르면 부품별 가격·구매처 · 총비용 = 실시간 시세 합산(티어 내
-        트레이더 현금가 우선, 없으면 플리) · 에르고/반동은 부품 보정 단순 합산
-        근사치 · ⚿ = 퀘스트 해금 · 빌드는 참고용이며 패치로 부품·시세가 바뀔 수
-        있습니다
+        카드를 누르면 부품별 가격·스탯 보정·추천 탄약 · 총비용 = 실시간 시세
+        합산(티어 내 트레이더 현금가 우선, 없으면 플리) · ⚿ = 퀘스트 해금 ·
+        빌드는 참고용이며 패치로 부품·시세가 바뀔 수 있습니다
       </p>
       {views.length === 0 && <p className="hint">조건에 맞는 빌드가 없습니다.</p>}
       <div className="build-grid">

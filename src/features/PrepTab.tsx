@@ -2,9 +2,11 @@ import { useEffect, useMemo, useState } from 'react'
 import { CURRENCY_IDS, fetchHideoutRequirements } from '../api/hideout'
 import { biName, fetchQuests } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
-import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
+import { ACTIVE_QUESTS_KEY, HIDEOUT_BUILT_KEY, useIdSet } from '../lib/favorites'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
+import { HideoutView } from './HideoutView'
+import { QuestNeedsView } from './QuestNeedsView'
 import { TableSkeleton } from './Skeleton'
 
 const PAGE_SIZE = 60
@@ -25,6 +27,7 @@ interface PrepNeed {
   fir: boolean
   minLevel: number // 퀘스트 수령 가능 레벨 (은신처는 0 = 레벨 무관)
   questId: string | null
+  stationKey: string | null // `${stationId}:${level}` — "지었음" 제외용
 }
 
 interface PrepRow {
@@ -82,6 +85,7 @@ function buildRows(
         fir: o.foundInRaid === true,
         minLevel: q.minPlayerLevel,
         questId: q.id,
+        stationKey: null,
       })
     }
   }
@@ -94,6 +98,7 @@ function buildRows(
       fir: false,
       minLevel: 0,
       questId: null,
+      stationKey: `${h.stationId}:${h.level}`,
     })
   }
   return [...map.values()]
@@ -178,7 +183,44 @@ function PrepRowView({
   )
 }
 
+type PrepViewMode = 'list' | 'hideout' | 'quests'
+
 export function PrepTab() {
+  // 통합 체크리스트(레이드 중 빠른 확인) / 은신처(스테이션별) / 퀘스트(트레이더별)
+  const [viewMode, setViewMode] = useState<PrepViewMode>('list')
+
+  return (
+    <div>
+      <div className="toolbar">
+        <nav className="mode-seg" aria-label="준비물 보기 방식">
+          <button
+            className={viewMode === 'list' ? 'active' : ''}
+            onClick={() => setViewMode('list')}
+          >
+            통합 체크리스트
+          </button>
+          <button
+            className={viewMode === 'hideout' ? 'active' : ''}
+            onClick={() => setViewMode('hideout')}
+          >
+            은신처
+          </button>
+          <button
+            className={viewMode === 'quests' ? 'active' : ''}
+            onClick={() => setViewMode('quests')}
+          >
+            퀘스트
+          </button>
+        </nav>
+      </div>
+      {viewMode === 'list' && <PrepChecklist />}
+      {viewMode === 'hideout' && <HideoutView />}
+      {viewMode === 'quests' && <QuestNeedsView />}
+    </div>
+  )
+}
+
+function PrepChecklist() {
   const state = useAsyncData(() =>
     Promise.all([fetchQuests(), fetchHideoutRequirements()]),
   )
@@ -191,6 +233,7 @@ export function PrepTab() {
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const { ids: activeIds } = useIdSet(ACTIVE_QUESTS_KEY)
+  const { ids: builtLevels } = useIdSet(HIDEOUT_BUILT_KEY)
   const { counts, add } = usePrepCounts()
 
   // 첫 페인트 후 한 페이지 분량으로 확장 (QuestsTab과 같은 2단계 렌더)
@@ -215,6 +258,8 @@ export function PrepTab() {
     for (const r of allRows) {
       if (q && !r.searchKey.includes(q)) continue
       let needs = r.needs
+      // 은신처 뷰에서 "지었음"으로 표시한 레벨의 몫은 더 모을 필요 없음
+      needs = needs.filter((n) => !n.stationKey || !builtLevels.has(n.stationKey))
       if (source === 'quest') needs = needs.filter((n) => n.kind === 'quest')
       if (source === 'hideout') needs = needs.filter((n) => n.kind === 'hideout')
       // "진행 중만"은 퀘스트 기준 필터 — 은신처 몫은 같이 숨김 (지금 할 일 뷰)
@@ -244,7 +289,7 @@ export function PrepTab() {
         : collator.compare(a.nameKo, b.nameKo),
     )
     return out
-  }, [allRows, query, level, source, firOnly, activeOnly, activeIds, sortKey])
+  }, [allRows, query, level, source, firOnly, activeOnly, activeIds, builtLevels, sortKey])
 
   // 다 모은 아이템은 아래 접힘 섹션으로 — 진행 중 목록을 짧게 유지
   const { todo, doneRows, gotSum, needSum } = useMemo(() => {
@@ -340,8 +385,9 @@ export function PrepTab() {
       <p className="hint">
         레이드에서 버리거나 팔면 안 되는 아이템 — 퀘스트 제출(FIR = 레이드 획득
         체크 필수) + 은신처 건설 수요 집계 · +/−로 모은 개수를 기록 (이 브라우저에
-        저장) · “여러 아이템 중 하나” 선택형 목표와 화폐는 제외 · 내 레벨을
-        입력하면 그 레벨에 받을 수 있는 퀘스트만 집계
+        저장) · 은신처 뷰에서 “지었음” 표시한 레벨 몫은 자동 제외 · “여러 아이템
+        중 하나” 선택형 목표와 화폐는 제외 · 내 레벨을 입력하면 그 레벨에 받을 수
+        있는 퀘스트만 집계
       </p>
 
       <div className="prep-summary">

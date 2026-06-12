@@ -7,6 +7,8 @@ import { useSyncExternalStore } from 'react'
 
 export const FAV_ITEMS_KEY = 'tc:fav-items'
 export const ACTIVE_QUESTS_KEY = 'tc:active-quests'
+// 은신처에서 "이미 지은 레벨" — id는 `${stationId}:${level}` 형식
+export const HIDEOUT_BUILT_KEY = 'tc:hideout-built'
 
 type Listener = () => void
 
@@ -14,6 +16,7 @@ interface IdSetStore {
   subscribe: (listener: Listener) => () => void
   getSnapshot: () => ReadonlySet<string>
   toggle: (id: string) => void
+  set: (id: string, on: boolean) => void
 }
 
 function createStore(storageKey: string): IdSetStore {
@@ -26,6 +29,16 @@ function createStore(storageKey: string): IdSetStore {
   }
   const listeners = new Set<Listener>()
 
+  const write = (next: Set<string>) => {
+    ids = next
+    try {
+      localStorage.setItem(storageKey, JSON.stringify([...ids]))
+    } catch {
+      // 저장 실패는 무시 — 세션 동안은 메모리로 동작
+    }
+    listeners.forEach((l) => l())
+  }
+
   return {
     subscribe(listener) {
       listeners.add(listener)
@@ -34,15 +47,18 @@ function createStore(storageKey: string): IdSetStore {
     getSnapshot: () => ids,
     toggle(id) {
       // useSyncExternalStore가 변경을 감지하도록 매번 새 Set 생성
-      ids = new Set(ids)
-      if (ids.has(id)) ids.delete(id)
-      else ids.add(id)
-      try {
-        localStorage.setItem(storageKey, JSON.stringify([...ids]))
-      } catch {
-        // 저장 실패는 무시 — 세션 동안은 메모리로 동작
-      }
-      listeners.forEach((l) => l())
+      const next = new Set(ids)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      write(next)
+    },
+    // 켜기/끄기를 지정 — 은신처 "N레벨까지 지음" 같은 연쇄 갱신용
+    set(id, on) {
+      if (ids.has(id) === on) return
+      const next = new Set(ids)
+      if (on) next.add(id)
+      else next.delete(id)
+      write(next)
     },
   }
 }
@@ -61,8 +77,9 @@ function getStore(storageKey: string): IdSetStore {
 export function useIdSet(storageKey: string): {
   ids: ReadonlySet<string>
   toggle: (id: string) => void
+  set: (id: string, on: boolean) => void
 } {
   const store = getStore(storageKey)
   const ids = useSyncExternalStore(store.subscribe, store.getSnapshot)
-  return { ids, toggle: store.toggle }
+  return { ids, toggle: store.toggle, set: store.set }
 }

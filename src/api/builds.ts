@@ -48,9 +48,14 @@ export interface BuildItemInfo {
   shortName: string
   iconLink: string | null
   imageLink: string | null // 512px — 무기 카드 배너용
+  presetImageLink: string | null // 기본 프리셋(조립 상태) 이미지 — 배너에 우선 사용
+  weight: number
   ergonomics: number | null
   recoilModifier: number | null // 모드: -0.06 = 수직 반동 -6%
   recoilVertical: number | null // 무기 기본 수직 반동
+  recoilHorizontal: number | null
+  fireRate: number | null
+  caliber: string | null
   fleaPrice: number | null
   offers: {
     trader: string
@@ -66,11 +71,16 @@ interface RawBuildItem {
   shortName: string
   iconLink: string | null
   image512pxLink: string | null
+  weight: number | null
   avg24hPrice: number | null
   properties: {
     ergonomics?: number | null
     recoilModifier?: number | null
     recoilVertical?: number | null
+    recoilHorizontal?: number | null
+    fireRate?: number | null
+    caliber?: string | null
+    defaultPreset?: { image512pxLink: string | null } | null
   } | null
   buyFor: {
     priceRUB: number
@@ -92,9 +102,12 @@ export function fetchBuildItems(ids: string[]): Promise<Map<string, BuildItemInf
       .join(',')
     const query = `{
       ko: items(ids: [${idList}], lang: ko) {
-        id name shortName iconLink image512pxLink avg24hPrice
+        id name shortName iconLink image512pxLink weight avg24hPrice
         properties {
-          ... on ItemPropertiesWeapon { ergonomics recoilVertical }
+          ... on ItemPropertiesWeapon {
+            ergonomics recoilVertical recoilHorizontal fireRate caliber
+            defaultPreset { image512pxLink }
+          }
           ... on ItemPropertiesWeaponMod { ergonomics recoilModifier }
           ... on ItemPropertiesBarrel { ergonomics recoilModifier }
           ... on ItemPropertiesMagazine { ergonomics recoilModifier }
@@ -130,9 +143,14 @@ export function fetchBuildItems(ids: string[]): Promise<Map<string, BuildItemInf
           shortName: i.shortName,
           iconLink: i.iconLink,
           imageLink: i.image512pxLink,
+          presetImageLink: i.properties?.defaultPreset?.image512pxLink ?? null,
+          weight: i.weight ?? 0,
           ergonomics: i.properties?.ergonomics ?? null,
           recoilModifier: i.properties?.recoilModifier ?? null,
           recoilVertical: i.properties?.recoilVertical ?? null,
+          recoilHorizontal: i.properties?.recoilHorizontal ?? null,
+          fireRate: i.properties?.fireRate ?? null,
+          caliber: i.properties?.caliber?.replace(/^Caliber/, '') ?? null,
           fleaPrice: i.avg24hPrice,
           offers: i.buyFor
             .filter((o) => o.vendor.trader)

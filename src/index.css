@@ -2185,6 +2185,248 @@ select:focus-visible {
   color: var(--accent);
 }
 
+/* --- 은신처 뷰: 인게임풍 스테이션 그리드 --- */
+.station-grid {
+  list-style: none;
+  margin: 0 0 var(--sp-4);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: var(--sp-3);
+}
+
+.station-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  width: 100%;
+  padding: var(--sp-4) var(--sp-2) var(--sp-3);
+  background:
+    radial-gradient(ellipse at 50% 0%, #1a222b 0%, var(--bg-raised) 70%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 150ms ease, transform 120ms ease;
+}
+
+.station-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.station-card.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.station-card.done {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+}
+
+.station-card.done .station-progress {
+  color: var(--accent-bright);
+}
+
+.station-card img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  /* 스테이션 아이콘은 흰색 PNG — 골드 톤으로 물들임 */
+  filter: sepia(1) saturate(0.7) hue-rotate(-10deg) brightness(0.95);
+}
+
+.station-name {
+  font-size: var(--fs-sub);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.station-progress {
+  font-size: var(--fs-label);
+  color: var(--text-3);
+}
+
+.station-detail {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.station-detail-title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin: 0;
+  font-size: var(--fs-display-2);
+  font-weight: 900;
+}
+
+.station-detail-title img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: sepia(1) saturate(0.7) hue-rotate(-10deg) brightness(0.95);
+}
+
+.hideout-level {
+  border-top: 1px solid var(--border);
+  padding-top: var(--sp-3);
+}
+
+.hideout-level.built {
+  opacity: 0.66;
+}
+
+.hideout-level-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-2);
+}
+
+.hideout-level-head h4 {
+  margin: 0;
+  font-size: var(--fs-body);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.hideout-level-head .btn-ext {
+  margin-left: auto;
+}
+
+.hideout-built-badge {
+  color: var(--accent-bright);
+  font-size: var(--fs-label);
+  font-weight: 700;
+}
+
+.hideout-prereqs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  margin: 0 0 var(--sp-2);
+}
+
+.hideout-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.hideout-items li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-sub);
+}
+
+.hideout-items img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border-radius: 4px;
+  flex: none;
+}
+
+.hideout-item-name {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.hideout-have {
+  color: var(--accent-bright);
+  font-size: var(--fs-label);
+}
+
+/* --- 퀘스트 뷰: 트레이더 그룹 --- */
+.trader-group {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: var(--sp-3);
+  overflow: hidden;
+}
+
+.trader-group-head {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  width: 100%;
+  padding: var(--sp-3) var(--sp-4);
+  background: none;
+  border: none;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.trader-group-head:hover .trader-group-name {
+  color: var(--accent);
+}
+
+.trader-group-head img {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex: none;
+}
+
+.trader-group-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.trader-group-head .prep-arrow {
+  margin-left: auto;
+}
+
+.trader-quests {
+  list-style: none;
+  margin: 0;
+  padding: 0 var(--sp-4) var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.trader-quests > li {
+  border-top: 1px solid var(--border);
+  padding-top: var(--sp-3);
+}
+
+.quest-need-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  margin: 0 0 var(--sp-2);
+}
+
+.quest-need-name {
+  font-weight: 600;
+}
+
+.quest-need-items {
+  margin: 0;
+}
+
 @media (max-width: 640px) {
   /* 폰: 이름 줄 전체 폭 + 카운터를 아랫줄로 — 한 손 조작 동선 */
   .prep-row {
@@ -2535,10 +2777,26 @@ select:focus-visible {
   border-radius: 4px;
 }
 
+.build-caliber {
+  position: absolute;
+  right: var(--sp-3);
+  bottom: var(--sp-2);
+  color: var(--text-3);
+  font-size: var(--fs-label);
+  letter-spacing: 0.06em;
+}
+
 .build-stats {
   display: flex;
   gap: var(--sp-5);
   font-size: var(--fs-body);
+}
+
+.build-stats > span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 76px;
 }
 
 .build-stats em {
@@ -2551,6 +2809,27 @@ select:focus-visible {
   letter-spacing: 0.04em;
 }
 
+/* 좋아진 스탯은 골드 — 테마 액센트와 통일 */
+.stat-up {
+  color: var(--accent-bright);
+  font-weight: 700;
+}
+
+/* 인게임 풍 스탯 바 — width %만 변해 레이아웃 비용 없음 */
+.stat-bar {
+  display: block;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--bg-inset);
+  overflow: hidden;
+}
+
+.stat-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
 .build-desc {
   color: var(--text-2);
   font-size: var(--fs-sub);
@@ -2558,23 +2837,48 @@ select:focus-visible {
 }
 
 .build-detail {
-  list-style: none;
-  margin: 0;
   padding: var(--sp-3) var(--sp-4) var(--sp-4);
   border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.build-spec {
+  display: flex;
+  gap: var(--sp-5);
+  margin: 0;
+}
+
+.build-spec dt {
+  color: var(--text-3);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.build-spec dd {
+  margin: 0;
+}
+
+.build-detail-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: var(--sp-2);
 }
 
-.build-detail li {
+.build-detail-list li {
   display: flex;
   align-items: center;
   gap: var(--sp-3);
   font-size: var(--fs-sub);
 }
 
-.build-detail img {
+.build-detail-list img {
   width: 32px;
   height: 32px;
   object-fit: contain;
@@ -2588,8 +2892,15 @@ select:focus-visible {
   min-width: 0;
   overflow-wrap: anywhere;
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--sp-2);
+}
+
+.build-detail-stats {
+  display: inline-flex;
+  gap: var(--sp-2);
+  font-size: var(--fs-label);
 }
 
 .build-detail-buy {
@@ -2600,8 +2911,48 @@ select:focus-visible {
   text-align: right;
 }
 
-.build-source {
-  justify-content: flex-end;
+.build-ammo h4 {
+  margin: 0 0 var(--sp-2);
+  color: var(--text-3);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.build-ammo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.build-ammo li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-sub);
+}
+
+.build-ammo img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.build-ammo-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.build-ammo strong {
+  color: var(--accent-bright);
+}
+
+.build-fineprint {
+  margin: 0;
 }
 
 @media (max-width: 640px) {
