@@ -742,11 +742,27 @@ body {
 }
 
 /* ============================================================
-   탭바 — 모바일에서 가로 스크롤
+   탭바 — 모바일에서 가로 스크롤.
+   스크롤하면 상단에 붙는 유리 바 — 긴 목록(퀘스트 등)에서도 탭 접근 유지
    ============================================================ */
 .tabs-wrap {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 50;
   margin-bottom: var(--sp-5);
+  padding-top: var(--sp-2);
+  background: var(--bg);
+}
+
+/* 데스크톱: 반투명 + 블러 — 배경 레이더 캔버스가 비쳐 보이는 유리 질감.
+   모바일은 블러 비용을 피해서 불투명 유지 */
+@media (min-width: 641px) {
+  @supports (backdrop-filter: blur(1px)) {
+    .tabs-wrap {
+      background: color-mix(in srgb, var(--bg) 78%, transparent);
+      backdrop-filter: blur(10px);
+    }
+  }
 }
 
 .tabs {
@@ -3188,6 +3204,65 @@ a:focus-visible,
 summary:focus-visible {
   outline: 2px solid var(--accent-bright);
   outline-offset: 2px;
+}
+
+/* --- 스크롤 연동 (Chrome 115+ 점진 향상, JS 0) --- */
+
+/* 페이지 스크롤 진행 바 — 미지원 브라우저는 scaleX(0)으로 안 보임 */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 60;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-progress {
+      animation: progress-grow linear both;
+      animation-timeline: scroll();
+    }
+  }
+}
+
+@keyframes progress-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* 목록 카드가 뷰포트에 들어올 때 차오르는 리빌 — 스크롤 위치에 직접 연동.
+   to 키프레임을 비워 완료 후에는 어떤 값도 덮어쓰지 않음 (틸트 등과 공존).
+   map-card는 JS 틸트가 transform을 쓰므로 제외 */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .prep-row,
+    .build-card,
+    .weapon-grid > li,
+    .station-grid > li,
+    .trader-group,
+    .mod-slot {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 30%;
+    }
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0.15;
+    transform: translateY(18px);
+  }
 }
 
 /* ============================================================

@@ -178,6 +178,8 @@ export default function App() {
     <>
       {showHero && <Hero onEnter={enterDashboard} />}
       {!showHero && <AmbientBackground />}
+      {/* 페이지 스크롤 진행 바 — CSS scroll() 타임라인 전용, 미지원이면 안 보임 */}
+      <div className="scroll-progress" aria-hidden />
       <div className="app">
         <header className="app-header">
           <h1 className="logo">
