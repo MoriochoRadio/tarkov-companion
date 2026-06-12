@@ -117,6 +117,18 @@ await new Promise((r) => setTimeout(r, 200))
 console.log(`7) 체크리스트 +1 반영: ${Date.now() - t2}ms`)
 
 await measure(
+  '7.5) 돈벌이 탭 진입 → 수익 랭킹',
+  () =>
+    page.evaluate(() => {
+      const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
+        b.textContent.includes('돈벌이'),
+      )
+      btn.click()
+    }),
+  '.profit-row',
+)
+
+await measure(
   '8) 모딩 탭 진입 → 추천 빌드 카드',
   () =>
     page.evaluate(() => {
