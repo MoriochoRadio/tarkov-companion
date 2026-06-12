@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "taskId": "5fd9fad9c1ce6b1a3b486d00",
+  "nameKo": "수색 임무",
+  "nameEn": "Search Mission",
+  "steps": [
+    "1단계: 삼림(Woods) 맵에 진입하여 프라퍼(Prapor)의 실종된 호송대(convoy)를 찾는다. 호송대는 맵 북쪽, 두 개의 호수 사이 도로에 위치하며, '스캐브 벙커(Scav Bunker)' 추출 지점으로 가는 길목에 있다. 목표가 활성화되려면 차량 근처로 반드시 접근해야 한다.",
+    "2단계: 같은 레이드 내에서 삼림 맵 북서쪽에 위치한 USEC 캠프를 찾아야 한다. USEC 캠프는 북서쪽에 있으며, 캠프로 접근하는 서쪽과 북서쪽 경로에는 지뢰가 설치되어 있으니 주의한다.",
+    "3단계: USEC 캠프 북서쪽 접근로는 지뢰가 심어져 있어 위험하므로, 지뢰가 설치된 숲 지역을 피해 안전한 경로로 접근한다. 지뢰 지역은 나무 그루터기, 시체, 지뢰 폭발 흔적(크레이터)로 식별할 수 있다.",
+    "4단계: USEC 캠프 서쪽 접근로 역시 지뢰가 설치되어 있으니, 폭발 흔적이 있는 바위 주변과 경사로를 조심하며 이동한다.",
+    "5단계: 두 위치(호송대와 USEC 캠프)를 모두 방문한 후, 같은 레이드에서 반드시 추출해야 한다. 만약 한 곳만 방문하고 레이드를 종료하면 퀘스트가 초기화되므로 주의한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/Search_Mission_map.jpg/revision/latest/scale-to-width-down/640?cb=20240811142416",
+      "caption": "Convoy location marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/Search_Mission_Convoy.png/revision/latest/scale-to-width-down/640?cb=20260221222750",
+      "caption": "The convoy"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dd/Search_mission_camp.png/revision/latest/scale-to-width-down/640?cb=20230307203957",
+      "caption": "The USEC camp"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Woods_USEC_camp_northwest_approach_mines.png/revision/latest/scale-to-width-down/640?cb=20240811155208",
+      "caption": "North-west approach view that leads to the mined forested area"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/Woods_USEC_camp_northwest_approach_mines2.png/revision/latest/scale-to-width-down/640?cb=20240811155216",
+      "caption": "View on the mined forested area from the camp, recognized by tree stumps, corpses and craters"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Woods_USEC_camp_west_approach_mines2.png/revision/latest/scale-to-width-down/640?cb=20240811153350",
+      "caption": "West rocks approach view with detonated mine spots"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/Woods_USEC_camp_west_approach_mines.png/revision/latest/scale-to-width-down/640?cb=20240811151926",
+      "caption": "West ramp approach view with detonated mine spots"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Search_Mission",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "59689ee586f7740d1570bbd5",
+  "nameKo": "위생 기준 - 파트 1",
+  "nameEn": "Sanitary Standards - Part 1",
+  "steps": [
+    "1단계: Hideout(은신처) 작업대(Workbench) 레벨 1에서 Gas analyzer(가스 분석기)를 제작합니다.",
+    "2단계: 제작한 Gas analyzer(가스 분석기)를 준비하여 퀘스트 담당자에게 제출합니다."
+  ],
+  "tips": "Gas analyzer(가스 분석기)는 레이드 획득(FIR)도 가능하지만, 은신처 작업대 레벨 1에서 직접 제작하는 것이 일반적입니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Sanitary_Standards_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

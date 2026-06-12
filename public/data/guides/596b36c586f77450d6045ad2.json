@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "596b36c586f77450d6045ad2",
+  "nameKo": "공급자",
+  "nameEn": "Supplier",
+  "steps": [
+    "1단계: BNTI Module-3M 방탄복 1개를 준비합니다. 이 아이템은 레이드 획득(FIR)이 가능하며, 은신처(Lavatory) 1레벨에서 제작할 수도 있습니다.",
+    "2단계: TOZ-106 20게이지 볼트액션 샷건 1개를 준비합니다. 이 아이템 역시 레이드 획득(FIR)이 필요합니다.",
+    "3단계: 준비한 BNTI Module-3M 방탄복과 TOZ-106 샷건을 퀘스트 담당자에게 제출하여 퀘스트를 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Supplier",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

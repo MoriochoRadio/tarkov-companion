@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "675c3507a06634b5110e3c18",
+  "nameKo": "Belka and Strelka",
+  "nameEn": "Belka and Strelka",
+  "steps": [
+    "1단계: 세관( Customs)으로 이동합니다.",
+    "2단계: 기차 선로를 따라 이동하여 신호탄 발사 지역에 도착합니다.",
+    "3단계: 신호탄 발사 지역에 들어가면 화면 오른쪽 하단에 알림이 나타납니다.",
+    "4단계: RSP-30 신호탄을 사용하거나 26x75mm 신호 권총용 초록색 신호탄 카트리지를 준비합니다.",
+    "5단계: RSP-30 신호탄을 사용할 경우, 위쪽으로 발사하되 너무 높지 않게 조준하여 발사합니다.",
+    "6단계: 신호탄이 적절한 높이에 도달하면 새로운 알림이 나타납니다.",
+    "7단계: 신호탄을 발사한 후, 최소 200 EXP를 얻거나 레이드에서 최소 7분 이상 생존해야 합니다.",
+    "8단계: 기차 선로를 따라 이동하며 적의 공격을 피합니다.",
+    "9단계: 신호탄 발사 후, 'Railroad Passage' 추출 지점으로 이동합니다.",
+    "10단계: 'Railroad Passage'에서 생존 상태로 추출합니다."
+  ],
+  "tips": "추가 신호탄이 필요할 경우, 예거(Jaeger)에게서 구매할 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/KlimovStreetSignalAreaNote.png/revision/latest?cb=20260330220637",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7f/FlareSuccessNote.png/revision/latest?cb=20260603210733",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/70/Belka_and_Strelka_Map.png/revision/latest/scale-to-width-down/640?cb=20241229165207",
+      "caption": "Extraction marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/48/Railroad_Passage.png/revision/latest/scale-to-width-down/640?cb=20250316141948",
+      "caption": "The extraction"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/RailroadPassageCustomsSignalArea.png/revision/latest?cb=20250105151809",
+      "caption": "Signal flare area and extract zone map"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Belka_and_Strelka",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

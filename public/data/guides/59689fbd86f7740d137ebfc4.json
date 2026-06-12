@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "59689fbd86f7740d137ebfc4",
+  "nameKo": "물병자리 작전 - 파트 1",
+  "nameEn": "Operation Aquarius - Part 1",
+  "steps": [
+    "세관(Customs)으로 이동합니다.",
+    "세관에 도착하면, 2층 기숙사(두 층 기숙사) 건물로 향합니다.",
+    "기숙사 건물의 정문으로 들어가서 계단을 올라 2층으로 이동합니다.",
+    "2층에 도착하면, 왼쪽 복도로 가서 206호실을 찾습니다.",
+    "206호실에 들어가기 위해 '기숙사 206호 열쇠(Dorm room 206 key)'가 필요합니다.",
+    "206호실 문을 열고 내부로 들어갑니다.",
+    "방 안에서 숨겨진 물을 찾습니다."
+  ],
+  "tips": "기숙사 206호 열쇠는 세관의 두 층 기숙사에서만 찾을 수 있으며, 레이드 획득(FIR) 필요 없음.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/92/OP_Aquarius1_Customs.png/revision/latest/scale-to-width-down/640?cb=20220211210242",
+      "caption": "2 story dorms and room 206 marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/de/Rom_206_door.png/revision/latest/scale-to-width-down/640?cb=20260416025126",
+      "caption": "Room 206 in the two-story dorms"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/99/Inside-Room-206.png/revision/latest/scale-to-width-down/640?cb=20180314234507",
+      "caption": "The hidden water"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Operation_Aquarius_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

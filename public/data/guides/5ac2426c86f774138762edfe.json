@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "taskId": "5ac2426c86f774138762edfe",
+  "nameKo": "건스미스 - 파트 2",
+  "nameEn": "Gunsmith - Part 2",
+  "steps": [
+    "AKS-74U 소총을 준비한다. 이 소총은 다음 사양을 충족해야 한다: 내구도 60 이상, 인체공학 56 이상, 반동 550 미만, 조준 거리 100 이상, 탄창 용량 최소 60발, 무게 3.5kg 이하, 셀 수 6개 이하, 그리고 AKS-74U Zenit B-11 핸드가드가 장착되어야 한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

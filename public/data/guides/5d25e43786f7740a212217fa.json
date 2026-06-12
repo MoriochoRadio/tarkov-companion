@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5d25e43786f7740a212217fa",
+  "nameKo": "사냥꾼의 길 - 정의",
+  "nameEn": "The Huntsman Path - Justice",
+  "steps": [
+    "1단계: 리저브(Reserve) 맵으로 이동합니다.",
+    "2단계: 리저브 내에서 Reshala의 추종자들을 찾습니다. Reshala는 리저브에서 활동하는 주요 적 NPC이며, 그의 추종자들은 주로 리저브 내 여러 지점에 분포되어 있습니다.",
+    "3단계: Reshala의 추종자 3명을 사살합니다. 추종자들은 Reshala와 함께 다니거나 리저브의 주요 건물 주변에서 발견할 수 있습니다.",
+    "4단계: 3명의 추종자를 모두 처치한 후, 퀘스트 완료를 위해 지정된 NPC에게 돌아갑니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Justice",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

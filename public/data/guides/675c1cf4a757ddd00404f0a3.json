@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "taskId": "675c1cf4a757ddd00404f0a3",
+  "nameKo": "Work Smarter",
+  "nameEn": "Work Smarter",
+  "steps": [
+    "세관(Customs) 맵에서 두 개의 숨겨진 출구 중 하나를 방문해야 합니다.",
+    "첫 번째 숨겨진 출구는 '밀수업자 보트(Smugglers' Boat)'입니다. 이 출구는 세관 해안가 쪽에 위치해 있으며, 일반 출구와 다르게 잘 알려지지 않은 위치에 있습니다.",
+    "두 번째 숨겨진 출구는 '밀수업자 벙커(Smugglers' Bunker, ZB-1012)'입니다. 이 벙커 출구는 세관 맵 내 특정 지하 벙커 안에 위치해 있습니다. 벙커 입구는 지상에서 찾기 어렵기 때문에 주변 지형과 표지판을 주의 깊게 살펴야 합니다.",
+    "퀘스트 목표는 이 두 출구 중 한 곳을 방문하는 것이며, 반드시 출구를 통해 탈출할 필요는 없습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2f/Work_Smarter_Map.png/revision/latest/scale-to-width-down/640?cb=20241229170917",
+      "caption": "Extractions marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/86/Smuggler%27s_Boat.png/revision/latest/scale-to-width-down/640?cb=20250908201720",
+      "caption": "The Smugglers' Boat extraction"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/ZB-1012.png/revision/latest/scale-to-width-down/640?cb=20250316143902",
+      "caption": "The Smugglers' Bunker (ZB-1012) extraction"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Work_Smarter",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

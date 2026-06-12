@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "taskId": "596b43fb86f77457ca186186",
+  "nameKo": "약탈자",
+  "nameEn": "The Extortionist",
+  "steps": [
+    "1단계: 세관( Customs )으로 이동합니다.",
+    "2단계: 세관의 차고( garages ) 뒤에 있는 덤불( bush )로 가서 죽은 스캐브( dead Scav )를 찾습니다.",
+    "3단계: 죽은 스캐브에서 'Unknown key'를 획득합니다. 이 키는 매 레이드마다 반드시 한 개가 생성됩니다.",
+    "4단계: 'Unknown key'를 사용하여 세관에 있는 잠긴 오두막( cabin )으로 이동합니다.",
+    "5단계: 오두막의 문을 열고 내부로 들어갑니다.",
+    "6단계: 오두막 내부 바닥에 있는 재킷( jacket ) 아래에서 'Secure Folder 0048'을 찾습니다.",
+    "7단계: 'Secure Folder 0048'을 획득합니다. 이 아이템은 퀘스트가 활성화된 상태에서만 찾을 수 있으며, 레이드에서 추출하지 못하면 잃게 됩니다.",
+    "8단계: 퀘스트 아이템을 가지고 안전하게 추출 지점으로 이동합니다."
+  ],
+  "tips": "죽은 스캐브는 세관에서 항상 스폰되므로, 퀘스트가 활성화되지 않은 경우에도 키를 찾을 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/Customs.PNG/revision/latest/scale-to-width-down/640?cb=20221204183402",
+      "caption": "Dead Scav and cabin marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2f/The_bush_where_the_hidden_body_is.png/revision/latest/scale-to-width-down/640?cb=20220706015222",
+      "caption": "The dead Scav is located in a bush behind garages"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a6/The_cabin_that_is_opened_by_the_unknown_key.png/revision/latest/scale-to-width-down/640?cb=20220820190601",
+      "caption": "The cabin that is opened with the key"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c0/Docs_0048-The_Extortionist.png/revision/latest/scale-to-width-down/640?cb=20220821162246",
+      "caption": "The folder is located under a jacket on the floor"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Extortionist",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

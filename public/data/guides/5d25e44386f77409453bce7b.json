@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "taskId": "5d25e44386f77409453bce7b",
+  "nameKo": "사냥꾼의 길 - 사악한 경비원",
+  "nameEn": "The Huntsman Path - Evil Watchman",
+  "steps": [
+    "세관(Customs) 맵의 기숙사(Dorms) 구역으로 이동한다.",
+    "기숙사 구역 내에서 PMC(플레이어 캐릭터)를 찾아서 총 5명을 사살한다."
+  ],
+  "tips": "기숙사 구역은 세관 맵 내에서도 PMC들이 자주 출몰하는 지역이므로, 신중하게 움직이며 주변을 잘 살펴야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/DormsMap.png/revision/latest/scale-to-width-down/640?cb=20260604192450",
+      "caption": "Kill area marked on map"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Evil_Watchman",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "5967530a86f77462ba22226b",
+  "nameKo": "나쁜 평판의 증거",
+  "nameEn": "Bad Rep Evidence",
+  "steps": [
+    "1단계: 세관(Customs)으로 이동합니다.",
+    "2단계: 세관 내의 벙크하우스(bunkhouse)로 가야 합니다. 벙크하우스는 지도에서 확인할 수 있습니다.",
+    "3단계: 벙크하우스는 잠겨 있지만, 창문을 통해 아이템을 획득할 수 있습니다. 열쇠가 필요하지 않습니다.",
+    "4단계: 벙크하우스 내부로 들어가면 테이블 위에 있는 Secure Folder 0031을 찾을 수 있습니다.",
+    "5단계: Secure Folder 0031을 획득합니다. 이 아이템은 퀘스트가 활성화된 상태에서만 획득할 수 있습니다.",
+    "6단계: Secure Folder 0031을 획득한 후, 안전하게 탈출 지점으로 이동합니다.",
+    "7단계: Secure Folder 0031을 가지고 탈출에 성공해야 합니다. 탈출하지 못하면 아이템을 잃게 됩니다."
+  ],
+  "tips": "Secure Folder 0031은 레이드 획득(FIR) 가능하며, 퀘스트 활성화 상태에서만 획득할 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c7/Bad_Rep_Evidence_Customs.png/revision/latest/scale-to-width-down/640?cb=20220815194155",
+      "caption": "Bunkhouse location marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/Customs-Portable-cabin-portable.png/revision/latest/scale-to-width-down/640?cb=20250808234617",
+      "caption": "The bunkhouse"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Docs_0031_location.png/revision/latest/scale-to-width-down/640?cb=20241230151756",
+      "caption": "The secure folder on the table"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Bad_Rep_Evidence",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

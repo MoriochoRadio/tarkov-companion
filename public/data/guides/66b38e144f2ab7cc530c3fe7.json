@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "taskId": "66b38e144f2ab7cc530c3fe7",
+  "nameKo": "Every Hunter Knows This",
+  "nameEn": "Every Hunter Knows This",
+  "steps": [
+    "공장(Factory) 맵에서 트립와이어 설치 지점을 찾으려면, 사무실 건물 3층으로 이동합니다. 3층 사무실 뒤쪽에 있는 문을 강제로 개방(breach)해야 하며, 이 문은 일반적인 열쇠나 키카드가 필요하지 않고, 직접 부수거나 강제로 열어야 합니다.",
+    "문을 개방한 후, 그 방 안에서 트립와이어 설치 지점을 찾을 수 있습니다. 해당 위치는 방 안에 명확히 표시되어 있으니, 방을 꼼꼼히 살펴 설치 지점을 확인하세요.",
+    "세관(Customs) 맵에서는 3층짜리 기숙사 건물로 이동합니다. 1층에서 2층으로 올라가는 내부 계단(내부 계단참)에서 트립와이어 설치 지점을 찾을 수 있습니다.",
+    "기숙사 내부 계단에서 설치 지점을 발견하면, 별도의 트립와이어 설치 키트 없이도 설치 지점을 확인할 수 있습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/00/HCPP5.png/revision/latest/scale-to-width-down/640?cb=20240824191113",
+      "caption": "Location marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/The_breach_room.png/revision/latest/scale-to-width-down/640?cb=20240821223335",
+      "caption": "The door to the \"breach room\" where you find the spot"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/08/EHKT_Factory_spot.png/revision/latest/scale-to-width-down/640?cb=20240826222751",
+      "caption": "The spot"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1b/Every_Hunter_Knows_This_Map.png/revision/latest/scale-to-width-down/640?cb=20240826223925",
+      "caption": "Location marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/EHKT_Customs.png/revision/latest/scale-to-width-down/640?cb=20240826223451",
+      "caption": "The spot"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Every_Hunter_Knows_This",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

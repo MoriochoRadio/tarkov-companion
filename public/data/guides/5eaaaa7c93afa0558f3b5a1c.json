@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "taskId": "5eaaaa7c93afa0558f3b5a1c",
+  "nameKo": "생존가의 길 - 약쟁이",
+  "nameEn": "The Survivalist Path - Junkie",
+  "steps": [
+    "1단계: 삼림(Woods) 맵에서 스티뮬런트(stimulants) 또는 프로비전(provisions) 아이템을 사용하여 버프 또는 디버프 효과를 활성화한다. 단, 효과가 사라진 상태에서는 카운트되지 않으므로 반드시 효과가 지속 중일 때 진행해야 한다.",
+    "2단계: 버프 또는 디버프 효과가 활성화된 상태에서 삼림 맵 내에서 스캐브(Scavs)를 15명 처치한다."
+  ],
+  "tips": "스티뮬런트 및 프로비전 아이템은 프라퍼(Prapor)나 테라피스트(Therapist) 등 트레이더에게 구매하거나 레이드 중 획득할 수 있다. 효과가 지속되는 동안 최대한 많은 스캐브를 처치하는 것이 효율적이다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8e/On_Painkillers.png/revision/latest?cb=20230807005304",
+      "caption": "on painkillers"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Junkie",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

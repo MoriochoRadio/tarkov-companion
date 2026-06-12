@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "taskId": "59674eb386f774539f14813a",
+  "nameKo": "과거에서 온 배달",
+  "nameEn": "Delivery From the Past",
+  "steps": [
+    "1단계: 타르코프 세관(Customs) 맵의 동쪽에 위치한 빨간색 Paradigm 창고로 이동합니다. 창고 입구 근처에 있는 금속 계단을 올라가면 타르콘 디렉터 사무실(Tarcone Director's office)이 있습니다. 이 사무실은 타르콘 디렉터 사무실 열쇠(Tarcone Director's office key)를 사용해 문을 열어야 합니다. 열쇠는 서랍에서 찾거나 스카브(Scav)에게서 획득할 수 있으며, 테라피스트(Therapist)와 교환(바터)도 가능합니다.",
+    "2단계: 사무실 문을 열고 들어가면 두 개의 방이 나옵니다. 두 번째 방으로 들어가기 위해서는 문을 강제로 열어야 하며, 이 과정에서 큰 소음이 발생합니다. 두 번째 방 안에 있는 책상 아래, 서랍 위쪽에 Secure Folder 0022 문서가 있습니다. 문서를 찾기 위해 몸을 숙여서 자세히 살펴보세요.",
+    "3단계: Secure Folder 0022 문서를 획득하면 해당 아이템은 퀘스트 아이템 인벤토리로 자동 이동합니다. 문서를 획득한 후에는 세관 맵에서 반드시 추출(Extract)해야 하며, 문서를 가지고 있는 상태에서 사망하거나 추출하지 못하면 문서를 잃게 되어 다시 획득해야 합니다. 즉, 문서를 획득한 후에는 안전하게 추출하는 것이 중요합니다.",
+    "4단계: 문서를 바로 다음 단계에서 사용하지 않을 경우, 캐릭터 메뉴의 'Tasks' 탭에서 문서를 오프 레이드 퀘스트 인벤토리로 이동시켜 보관할 수 있습니다.",
+    "5단계: 다음으로 공장(Factory) 맵으로 이동합니다. 낮이나 밤 시간대 모두 가능하며, 문서를 인벤토리에 가지고 있는 상태여야 합니다.",
+    "6단계: 공장 맵에서 Gate 3 추출 지점으로 이동합니다. 추출 지점 왼쪽에 짧은 금속 계단이 있으며, 이 계단을 올라가면 판금(sheet metal)으로 된 휴게실 방이 나옵니다. 이 방이 문서를 배치해야 하는 장소입니다.",
+    "7단계: 문서를 배치하려면 사용 키(기본 F)를 10초간 누르고 있어야 합니다. 배치 중에는 문과 창문에서 보이지 않도록 엎드려서 진행하는 것이 안전합니다.",
+    "8단계: 문서 배치 중에 사망하면 문서를 다시 획득해야 하므로, 배치할 때 주변에 다른 PMC가 없는지 확인하거나 모두 처치한 후 진행하는 것이 좋습니다.",
+    "9단계: 문서 배치가 완료되면 공장 맵에서 추출해야 합니다. 반드시 같은 레이드에서 생존 추출할 필요는 없으며, 문서를 심은 레이드와 다른 레이드에서 추출해도 퀘스트 진행에 문제가 없습니다."
+  ],
+  "tips": "타르콘 디렉터 사무실 열쇠는 세관 맵 내 서랍에서 발견하거나 스카브에게서 획득할 수 있으며, 테라피스트와 바터로도 구할 수 있습니다. Secure Folder 0022 문서는 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리에 자동으로 들어갑니다. 문서 획득 후에는 반드시 안전하게 추출해야 하므로, 적의 움직임을 주시하고 위험을 최소화하세요. 공장 맵에서 문서를 배치할 때는 주변 상황을 철저히 확인하고, 엎드려서 배치하여 적에게 노출되지 않도록 주의해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/Delivery_from_the_past_Customs.png/revision/latest/scale-to-width-down/640?cb=20220214002541",
+      "caption": "Warehouse marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8a/Customs-Factory1-Outside-3.png/revision/latest/scale-to-width-down/640?cb=20230117183410",
+      "caption": "The warehouse"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/CustomsOffice.png/revision/latest/scale-to-width-down/640?cb=20230117184032",
+      "caption": "The office"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5e/Farming3Office.png/revision/latest/scale-to-width-down/640?cb=20230117182707",
+      "caption": "The second room"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/Docs_0022-Delivery_From_the_Past.png/revision/latest/scale-to-width-down/640?cb=20200220001533",
+      "caption": "Docs 0022 is under the desk, on top of the drawers"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/Delivery_from_the_past_Factory.png/revision/latest/scale-to-width-down/640?cb=20240824193029",
+      "caption": "Break room marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5c/Delivery_from_the_past_dropoff.png/revision/latest/scale-to-width-down/640?cb=20240824175058",
+      "caption": "The sheet metal break room where you have to place the documents"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Delivery_From_the_Past",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

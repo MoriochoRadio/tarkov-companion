@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "taskId": "59c124d686f774189b3c843f",
+  "nameKo": "BP 연료 확보",
+  "nameEn": "BP Depot",
+  "steps": [
+    "프라퍼(Prapor)에게서 게임 내 우편으로 MS2000 마커 4개를 받습니다. 마커는 특수 아이템 슬롯이나 보안 컨테이너에 넣어 사망 시에도 잃지 않도록 합니다.",
+    "세관(Customs) 맵에서 4대의 연료 탱커 트럭을 찾아야 합니다. 각 트럭 위치는 다음과 같습니다.",
+    "첫 번째 연료 탱커 트럭은 새 주유소(new gas station) 뒤에 있습니다. 트럭을 찾아 MS2000 마커를 설치합니다.",
+    "두 번째 연료 탱커 트럭은 연료 탱크가 있는 건설 현장(construction site)에 있습니다. 위치를 찾아 마커를 설치합니다.",
+    "세 번째 연료 탱커 트럭은 '구 주유소(Old Gas Station)' 추출 지점 옆에 있습니다. 해당 위치에서 마커를 설치합니다.",
+    "네 번째 연료 탱커 트럭은 '트레일러 파크(Trailer Park)' 추출 지점 근처 차고(garages) 뒤에 있습니다. 이곳에서 마커를 설치합니다.",
+    "각 마커 설치 후에는 30초 동안 생존해야 설치가 완료됩니다. 설치 후 반드시 30초를 버티고 살아있어야 하며, 설치 위치 근처에 계속 있을 필요는 없습니다.",
+    "만약 30초 이내에 사망하면 해당 마커는 무효 처리되므로, 다시 설치해야 합니다.",
+    "4개의 마커를 모두 설치한 후, 세관 맵에서 '생존(Survived)' 상태로 추출해야 퀘스트가 완료됩니다.",
+    "'Run Through' 상태로 추출하면 퀘스트가 완료되지 않으므로 주의해야 합니다.",
+    "'Run Through' 상태를 피하려면 레이드 내에서 최소 7분 이상 머무르거나, 적을 처치하거나 아이템을 획득하여 최소 200 경험치를 얻어야 합니다.",
+    "추가 MS2000 마커가 필요하면 프라퍼(Prapor) 또는 래그맨(Ragman) 상점에서 구매할 수 있습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/39/BP_Depot_Marked_Map.png/revision/latest/scale-to-width-down/640?cb=20240729135604",
+      "caption": "Fuel tanker truck locations marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/BPTanker.png/revision/latest/scale-to-width-down/640?cb=20240729135637",
+      "caption": "Tanker truck #1 behind the new gas station"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/BPTanker2.png/revision/latest/scale-to-width-down/640?cb=20240729140300",
+      "caption": "Tanker truck #2 at the construction site with the fuel tanks"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b1/BPTanker3.png/revision/latest/scale-to-width-down/640?cb=20240729140112",
+      "caption": "Tanker truck #3 next to the \"Old Gas Station\" extraction"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/BPTanker4.png/revision/latest/scale-to-width-down/640?cb=20240729140359",
+      "caption": "Tanker truck #4 behind the garages near the \"Trailer Park\" extraction"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/BP_Depot",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

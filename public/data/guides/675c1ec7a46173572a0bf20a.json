@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "taskId": "675c1ec7a46173572a0bf20a",
+  "nameKo": "Rite of Passage",
+  "nameEn": "Rite of Passage",
+  "steps": [
+    "세관(Customs) 맵 내 가스 스테이션 두 곳에서 각각 스캐브(Scav) 10명을 처치한다. 가스 스테이션 위치는 퀘스트 지도에 표시된 곳을 참고한다.",
+    "레이드 중에 획득한 금속 연료 탱크(Metal fuel tank) 2개를 준비한다. 금속 연료 탱크는 레이드 획득(FIR) 아이템으로, 플리마켓이나 트레이더 구매는 불가능하다.",
+    "스캐브 처치와 금속 연료 탱크 2개를 모두 완료한 후, 퀘스트 완료를 위해 해당 아이템들을 제출한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/70/Rite_of_Passage_map.png/revision/latest/scale-to-width-down/640?cb=20260404170143",
+      "caption": "Kill areas marked on map"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Rite_of_Passage",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

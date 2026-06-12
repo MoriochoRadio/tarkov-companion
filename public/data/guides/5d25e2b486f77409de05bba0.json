@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "taskId": "5d25e2b486f77409de05bba0",
+  "nameKo": "사냥꾼의 길 - 구역 확보",
+  "nameEn": "The Huntsman Path - Secured Perimeter",
+  "steps": [
+    "공장(Factory) 맵 내 사무실 지역 주변과 내부에서 적대 PMC 6명을 처치해야 합니다.",
+    "킬이 인정되는 적 PMC는 반드시 지도에 표시된 사무실 구역 내에 있어야 합니다.",
+    "사무실 구역은 공장 맵 내 중앙 부근에 위치하며, 정확한 위치는 'The Huntsman Path - Secured Perimeter Map.jpg'에 표시된 영역을 참고하세요.",
+    "적 PMC를 사무실 내부와 주변 복도, 방 등에서 조심스럽게 찾아 처치합니다.",
+    "킬 카운트는 해당 구역 내에서 이루어진 PMC 처치만 인정되므로, 구역 밖에서의 처치는 카운트되지 않습니다.",
+    "적 PMC를 처치한 후 퀘스트가 자동으로 진행되며, 총 6명을 처치하면 완료됩니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/09/The_Huntsman_Path_-_Secured_Perimeter_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260404145906",
+      "caption": "Kill area marked on map"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Secured_Perimeter",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

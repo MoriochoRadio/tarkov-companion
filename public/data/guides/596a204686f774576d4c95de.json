@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "596a204686f774576d4c95de",
+  "nameKo": "위생 기준 - 파트 2",
+  "nameEn": "Sanitary Standards - Part 2",
+  "steps": [
+    "1단계: 인터체인지(Interchange) 맵으로 이동합니다.",
+    "2단계: 전자상가(Electronics stores) 내부로 들어갑니다.",
+    "3단계: 상점 내부의 산업 선반(Industrial shelves)에서 가스 분석기(Gas analyzer)를 2개 찾습니다.",
+    "4단계: 가스 분석기를 찾은 후, 해당 아이템을 프라퍼(Пrapor)에게 전달합니다."
+  ],
+  "tips": "가스 분석기는 레이드 획득(FIR) 가능하며, 숨겨진 기지(Hideout)에서 작업대(Workbench) 레벨 1을 사용해 제작할 수 있습니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Sanitary_Standards_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}

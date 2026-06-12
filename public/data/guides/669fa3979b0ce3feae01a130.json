@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "669fa3979b0ce3feae01a130",
+  "nameKo": "Claustrophobia",
+  "nameEn": "Claustrophobia",
+  "steps": [
+    "공장(Factory) 맵의 지하 구역에서 샷건을 사용하여 적 5명을 처치해야 합니다.",
+    "적이 반드시 지하 구역 내에 있어야 하며, 처치한 적이 지하 구역 밖에 있으면 퀘스트에 반영되지 않습니다.",
+    "탱크 컨테이너 아래 구역은 퀘스트 처치 카운트에 포함되지 않으니 이 구역에서는 적을 처치하지 마십시오."
+  ],
+  "tips": "샷건은 다양한 트레이더(예: 메카닉)나 플리마켓에서 구매할 수 있으며, 공장 지하 구역은 좁고 복잡하므로 적과의 교전 시 주의가 필요합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/29/Claustrophobia_Map.png/revision/latest/scale-to-width-down/640?cb=20240916184715",
+      "caption": "Excluded area marked on map"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Claustrophobia",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:12:07.302+09:00"
+}
