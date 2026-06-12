@@ -12,6 +12,11 @@ import path from 'node:path'
 
 const WIKI_API = 'https://escapefromtarkov.fandom.com/api.php'
 const OUT = path.join(process.cwd(), 'public', 'data', 'storyline.json')
+// 목표 한국어 번역 — 영어 원문 그대로를 키로 쓰는 수동 큐레이션 사전.
+// 위키가 바뀌어 새 줄이 생기면 영어로 폴백되고 아래 로그에 찍힘 → 사전에 추가
+const OBJ_KO = JSON.parse(
+  fs.readFileSync(new URL('./storyline-objectives-ko.json', import.meta.url), 'utf8'),
+)
 
 // 챕터 순서·한국어 큐레이션. order는 시작 조건이 풀리는 자연스러운 진행 순서:
 // 투어(자동) → 추락하는 하늘(투어 중 파생) → 필드 발견형 4종(대략 발견 난이도순)
@@ -153,6 +158,9 @@ function parseObjectives(sec) {
     const text = stripMarkup(line)
     if (!text) continue
     const o = { text, depth }
+    const ko = OBJ_KO[text]
+    if (ko) o.ko = ko
+    else missingKo.add(text)
     if (optional) o.optional = true
     if (kind !== 'obj') o.kind = kind
     out.push(o)
@@ -160,13 +168,20 @@ function parseObjectives(sec) {
   return out
 }
 
+const missingKo = new Set()
+
 async function wiki(params) {
   const url = `${WIKI_API}?${new URLSearchParams({ format: 'json', ...params })}`
-  const res = await fetch(url, {
-    headers: { 'user-agent': 'tarkov-companion (storyline authoring tool)' },
-  })
-  if (!res.ok) throw new Error(`위키 응답 오류 HTTP ${res.status} (${url})`)
-  return res.json()
+  // fandom은 간헐적으로 503을 던짐 — 3회 백오프 재시도
+  for (let attempt = 1; ; attempt++) {
+    const res = await fetch(url, {
+      headers: { 'user-agent': 'tarkov-companion (storyline authoring tool)' },
+    })
+    if (res.ok) return res.json()
+    if (attempt >= 3) throw new Error(`위키 응답 오류 HTTP ${res.status} (${url})`)
+    console.warn(`위키 HTTP ${res.status} — ${attempt * 3}초 후 재시도`)
+    await new Promise((r) => setTimeout(r, attempt * 3000))
+  }
 }
 
 const list = await wiki({
@@ -224,3 +239,7 @@ const payload = {
 }
 fs.writeFileSync(OUT, JSON.stringify(payload, null, 2) + '\n')
 console.log(`✓ ${OUT} (챕터 ${chapters.length}개)`)
+if (missingKo.size > 0) {
+  console.warn(`⚠ 한국어 번역 없는 목표 ${missingKo.size}줄 — storyline-objectives-ko.json에 추가 필요:`)
+  for (const t of missingKo) console.warn(`  "${t}"`)
+}

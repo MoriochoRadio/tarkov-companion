@@ -1,11 +1,13 @@
 // 퀘스트 공략 — quest-guides.yml이 매일 30개씩 백필하는 정적 JSON
 // 스키마: docs/quest-guide-schema.md
 export interface QuestGuide {
+  version?: number // 없으면 v1(요약). 2부터 상세 공략 + 이미지
   taskId: string
   nameKo: string
   nameEn: string
   steps: string[]
   tips?: string
+  images?: { url: string; caption: string }[] // 위키 위치 스크린샷 (핫링크)
   sourceUrl: string
   license: string // "CC BY-SA"
   generatedAt: string

@@ -1,0 +1,155 @@
+{
+  "slug": "tour",
+  "nameKo": "투어",
+  "nameEn": "Tour",
+  "sections": [
+    {
+      "title": "그라운드 제로 탈출",
+      "titleEn": "Escape Ground Zero",
+      "body": "\"스카이사이드(Skyside)\" 비즈니스 센터 뒤에 위치한 \"클리모프 스트리트(Klimov Street)\" 추출 지점을 통해 튜토리얼 레이드를 완료하세요. 튜토리얼 동안 조작법과 게임 메커니즘에 대한 다양한 힌트가 표시되지만, 레이드를 완료하는 데 반드시 따라야 할 필요는 없습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b8/Tutorial_By_xTycho.png/revision/latest/scale-to-width-down/640?cb=20251115145408",
+          "caption": "위치 지도"
+        }
+      ]
+    },
+    {
+      "title": "테라피스트와 대화하기",
+      "titleEn": "Talk to Therapist",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템명 · 수량 · 조건 · 레이드 획득(FIR)\n- link=루블(Roubles) · 루블 · 250,000 · 아이템 전달 · 아니요\n\n트레이더 화면에서 테라피스트를 방문해 대화 옵션이 뜨면 250,000 루블을 전달하세요.\n\n[보상]\n* 위치 선택에서 타르코프 시내(Streets of Tarkov) 잠금 해제",
+      "images": []
+    },
+    {
+      "title": "래그맨 - 인터체인지",
+      "titleEn": "Ragman - Interchange",
+      "body": "인터체인지(Interchange)에서 \"생존(Survived)\" 또는 \"통과(Run-Through)\" 상태로 추출하거나, 해당 지역을 3회 방문하세요.\n\n[보상]\n* 스키어(Skier) 트레이더 잠금 해제\n* 위치 선택에서 세관(Customs) 잠금 해제",
+      "images": []
+    },
+    {
+      "title": "스키어 - 세관",
+      "titleEn": "Skier - Customs",
+      "body": "- 관련 퀘스트 아이템\n- 아이템명 · 수량 · 조건 · 레이드 획득(FIR) · 비고\n- 건축 자재 또는 도구 · 5 · 아이템 전달 · 예 · 부분 전달 불가\n\n세관(Customs)에서 \"생존\" 또는 \"통과\" 상태로 추출하거나, 해당 지역을 3회 방문하세요.\n\n[보상]\n* 메카닉(Mechanic) 트레이더 잠금 해제\n* 위치 선택에서 공장(Factory) 잠금 해제",
+      "images": []
+    },
+    {
+      "title": "메카닉 - 공장",
+      "titleEn": "Mechanic - Factory",
+      "body": "- 관련 퀘스트 아이템\n- 아이템명 · 수량 · 조건 · 레이드 획득(FIR)\n- 무기 아무거나 · 2 · 아이템 전달 · 예\n\n공장(Factory)에서 \"생존\" 또는 \"통과\" 상태로 추출하거나, 해당 지역을 3회 방문하세요.\n\n[보상]\n* 프라퍼(Prapor) 트레이더 잠금 해제\n* 위치 선택에서 삼림(Woods) 잠금 해제",
+      "images": []
+    },
+    {
+      "title": "스키어 - 삼림",
+      "titleEn": "Skier - Woods",
+      "body": "삼림(Woods)에서 적 3명을 처치하고 \"생존\" 또는 \"통과\" 상태로 추출하거나, 해당 지역을 3회 방문하세요. 처치는 반드시 생존 목표와 같은 레이드에서 할 필요는 없습니다.\n\n[보상]\n* 피스키퍼(Peacekeeper) 트레이더 잠금 해제\n* 위치 선택에서 해안선(Shoreline) 잠금 해제",
+      "images": []
+    },
+    {
+      "title": "터미널",
+      "titleEn": "Terminal",
+      "body": "다음 몇 가지 목표를 완료하려면 해안선(Shoreline) 남동쪽 구석에 있는 터미널 앞 감시탑의 인터콤과 상호작용해야 합니다.\n\n터미널 벽에 너무 가까이 가지 않도록 주의하세요. 경비병들이 누구든지 쏘기 때문입니다. 경비병을 죽이려 하지 마세요. 그들은 매우 정확하게 반격합니다. 퇴거하라는 말을 들은 후에도 인터콤을 너무 많이 작동시키면 경비병에게 사망할 수 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/Tour_Shoreline_Map.png/revision/latest/scale-to-width-down/640?cb=20251123120658",
+          "caption": "지도에 표시된 인터콤 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/Tour_Shoreline_Tower.png/revision/latest/scale-to-width-down/640?cb=20251122211655",
+          "caption": "인터콤이 있는 감시탑"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ad/Tour_Shoreline_Intercom.png/revision/latest/scale-to-width-down/640?cb=20251122211659",
+          "caption": "인터콤"
+        }
+      ]
+    },
+    {
+      "title": "프라퍼 - 리저브",
+      "titleEn": "Prapor - Reserve",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템명 · 수량 · 조건 · 레이드 획득(FIR)\n- link=개인 신분증(Dogtag) · 개인 신분증 · 5 · 아이템 전달 · 아니요\n\n해안선(Shoreline)에서 \"생존\" 또는 \"통과\" 상태로 추출하거나, 해당 지역을 3회 방문하세요. 이후 트레이더 화면에서 프라퍼를 방문해 대화 옵션이 뜨면 개인 신분증 5개를 전달하세요. 개인 신분증은 죽은 PMC에게서 얻을 수 있으며, 반드시 직접 처치할 필요는 없습니다.\n\n[보상]\n* 위치 선택에서 리저브(Reserve) 잠금 해제",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ec/Dogtags.png/revision/latest?cb=20250101011346",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "메카닉 - 등대",
+      "titleEn": "Mechanic - Lighthouse",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템명 · 수량 · 조건 · 레이드 획득(FIR)\n- link=달러(Dollars) · 달러 · 20,000 · 아이템 전달 · 아니요\n\n트레이더 화면에서 메카닉을 방문해 대화 옵션이 뜨면 20,000 달러를 전달하세요. 달러는 피스키퍼에게 루블로 구매할 수 있습니다.\n\n[보상]\n* 위치 선택에서 등대(Lighthouse) 잠금 해제",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c4/Dollarsicon.png/revision/latest?cb=20250107082426",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "비밀 테라그룹 시설 연구소(The Lab)",
+      "titleEn": "Secret TerraGroup facility The Lab",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템명 · 수량 · 비고\n- frameless|link=테라그룹 연구소 출입 키카드(TerraGroup Labs access keycard) · 테라그룹 연구소 출입 키카드 · 1 · 연구소 위치에 한 번 입장 가능\n\n다음 두 가지 이동 경로 중 하나를 사용해 연구소에 입장해야 합니다:\n[타르코프 시내에서 연구소로]\n코스모나우트 그림이 있는 클리모바 16A 건물 앞 지하 입구. 테라그룹 연구소 출입 키카드 필요. 이동 경로는 레이드 시작 1분 후부터 이용 가능.\n\n[공장에서 연구소로]\n지하 침수 구역과 연결된 하수도 터널 내. 테라그룹 연구소 출입 키카드 필요. 이동 경로는 레이드 시작 1분 후부터 이용 가능.\n\n[최고 경영진 사무실 수색]\n2층에 있는 실험실 관리자 사무실(O21).\n\n[서버실 수색]\n1층 헝가 옆.\n\n[배수구를 통한 탈출 경로 찾기]\n지하실 \"하수도 출구\" 추출 지점에 위치. 이 추출 지점은 활성화할 필요 없으며, 레이드 생존도 필요 없습니다.\n\n[보상]\n* 위치 선택에서 연구소(The Lab) 잠금 해제\n* 업적 Pathfinder 잠금 해제\n\n카테고리: 스토리 챕터\n\nru:Тур",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/79/Terragroup_Labs_access_keycard_icon.png/revision/latest?cb=20211220202500",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/75/StreetsTransitToLabsMap.png/revision/latest/scale-to-width-down/640?cb=20240828224823",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/StreetsTransitToLabsUpstairs.png/revision/latest/scale-to-width-down/640?cb=20240824233945",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/StreetsTransitToLabsDownstairs.png/revision/latest/scale-to-width-down/640?cb=20240824233942",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8d/FactoryTransitToLabsMap.png/revision/latest/scale-to-width-down/640?cb=20251123121148",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/FactoryTransitToTheLab2.png/revision/latest/scale-to-width-down/640?cb=20240927080837",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/31/FactoryTransitToTheLab.png/revision/latest/scale-to-width-down/640?cb=20240927081031",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4f/Lab_Managers_Location.png/revision/latest/scale-to-width-down/640?cb=20190326144251",
+          "caption": "지도에 표시된 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a8/Lab_Managers_Bridge.png/revision/latest/scale-to-width-down/640?cb=20251122220523",
+          "caption": "최고 경영진 사무실"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/37/LabsServerRoomMap.png/revision/latest/scale-to-width-down/640?cb=20240828223423",
+          "caption": "지도에 표시된 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/LabsServerRoom.png/revision/latest/scale-to-width-down/640?cb=20240828221953",
+          "caption": "서버실"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/Tour_The_Lab_Escape_path_Map.png/revision/latest/scale-to-width-down/640?cb=20251123124447",
+          "caption": "지도에 표시된 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Tour_The_Lab_Escape_path_1.png/revision/latest/scale-to-width-down/640?cb=20251122221906",
+          "caption": "하수도로 이어지는 문 중 하나"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/Tour_The_Lab_Escape_path_2.png/revision/latest/scale-to-width-down/640?cb=20251130174323",
+          "caption": "하수도 끝의 탈출 경로"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Tour",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:03:06.159+09:00"
+}

@@ -159,12 +159,38 @@ function QuestDetail({
             ))}
           </ol>
           {guide.tips && <p className="guide-tips">💡 {guide.tips}</p>}
+          {(guide.images?.length ?? 0) > 0 && (
+            <ul className="story-guide-shots">
+              {guide.images!.map((img, i) => (
+                <li key={i}>
+                  {/* 라이트박스는 아이템 칩과 공유 — 캡션을 이름 자리에 넣는다 */}
+                  <button
+                    onClick={() =>
+                      setZoomed({
+                        id: img.url,
+                        nameKo: img.caption || '위치 스크린샷',
+                        nameEn: '',
+                        iconLink: null,
+                        imageLink: img.url,
+                      })
+                    }
+                    title="클릭하면 크게"
+                  >
+                    <img src={img.url} alt={img.caption} loading="lazy" />
+                  </button>
+                  {img.caption && <span className="dim">{img.caption}</span>}
+                </li>
+              ))}
+            </ul>
+          )}
           <p className="hint" style={{ margin: '8px 0 0' }}>
             출처:{' '}
             <a className="source-link" href={guide.sourceUrl} target="_blank" rel="noreferrer">
               EFT 위키 ({guide.license}) ↗
             </a>{' '}
-            · AI 요약 — 부정확할 수 있으니 원문 확인 권장
+            {guide.images?.length ? '· 이미지: EFT 위키 ' : ''}· AI{' '}
+            {(guide.version ?? 1) >= 2 ? '번역' : '요약'} — 부정확할 수 있으니 원문
+            확인 권장
           </p>
         </section>
       )}

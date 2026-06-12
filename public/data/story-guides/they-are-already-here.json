@@ -1,0 +1,479 @@
+{
+  "slug": "they-are-already-here",
+  "nameKo": "그들은 이미 와 있다",
+  "nameEn": "They Are Already Here",
+  "sections": [
+    {
+      "title": "두건을 쓴 남자들에 대해 더 알아보기/타르코프에 이상한 기호를 남기는 사람들에 대해 더 알아보기",
+      "titleEn": "Learn more about the hooded men/Learn more about the people leaving strange symbols in Tarkov",
+      "body": "요구 조건을 확인하세요.",
+      "images": []
+    },
+    {
+      "title": "세계의 눈과 관련된 장소 찾기/고문실에서 컬트 희생자에 대해 더 알아보기",
+      "titleEn": "Locate a place connected to the Eye of the World/Learn more about the cultist's victim from the torture room",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 조건 · 레이드 획득(FIR)\n- link=Cult victim audio tape 2]] · 컬트 희생자 오디오 테이프 #2 · 1 · 필수 · 예\n\n이 목표를 완료하려면 등대(Lighthouse)에 있는 컬트 신도의 고문 집을 찾아 그곳에서 오디오 테이프를 줍고 들어야 합니다.\n\n다음 목표에 필요한 컬트 희생자의 아파트 열쇠도 이 집에서 얻을 수 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7b/Cult_victim_audio_tape_2_icon.png/revision/latest?cb=20260119121844",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8d/Cult_victims_apartment_key_Spawn_Map.png/revision/latest/scale-to-width-down/640?cb=20251129005707",
+          "caption": "지도에 표시된 집 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b2/Cult_victims_apartment_key_Spawn_House.png/revision/latest/scale-to-width-down/640?cb=20251129005434",
+          "caption": "수배된 집"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/Cult_victim_audio_tape_2_spawn.png/revision/latest/scale-to-width-down/640?cb=20260215164104",
+          "caption": "의자 위에 있는 테이프"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/Cult_victims_apartment_key_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20251129005822",
+          "caption": "넘어진 선반 위에 스폰 1"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/Cult_victims_apartment_key_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20251129005718",
+          "caption": "의자 위에 스폰 2"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2e/Cult_victims_apartment_key_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20251129010024",
+          "caption": "나무 탁자 위에 스폰 3"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ed/Cult_victims_apartment_key_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20260215164424",
+          "caption": "금속 탁자 위에 스폰 4"
+        }
+      ]
+    },
+    {
+      "title": "컬트 희생자의 아파트 위치 찾기",
+      "titleEn": "Locate the cult victim's apartment",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 조건 · 레이드 획득(FIR)\n- link=Cult victim's apartment key]] · 컬트 희생자의 아파트 열쇠 · 1 · 필수 · 해당 없음\n\n수배된 아파트는 타르코프 시내(Streets of Tarkov)의 클리모프 쇼핑몰 뒤에 있는 오래된 아파트 건물 3층에 있습니다. 입장하려면 컬트 희생자의 아파트 열쇠가 필요합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/Cult_victim%27s_apartment_key_icon.png/revision/latest?cb=20251128235856",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f0/CultVictimsApartmentKeyMap.png/revision/latest/scale-to-width-down/640?cb=20251128235156",
+          "caption": "지도에 표시된 건물 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/CultVictimsApartmentKeyBuilding.png/revision/latest/scale-to-width-down/640?cb=20251128235016",
+          "caption": "오래된 아파트 건물"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/CultVictimsApartmentKeyDoor.png/revision/latest/scale-to-width-down/640?cb=20251128235028",
+          "caption": "5번 아파트 문"
+        }
+      ]
+    },
+    {
+      "title": "희생자의 아파트 조사/희생자의 첫 번째 오디오 테이프와 컬트 신도가 심어놓은 책 획득",
+      "titleEn": "Investigate the victim's apartment/Obtain the victim's first audio tape and the book the Cultists planted",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 조건 · 레이드 획득(FIR)\n- link=Note on preparations for the Arrival]] · 도착 준비에 관한 메모 · 1 · 필수 · 예\n- link=Cult victim audio tape 1]] · 컬트 희생자 오디오 테이프 #1 · 1 · 필수 · 예\n- link=Book of the Arrival]] · 도착의 책 · 1 · 필수 · 예\n\n이 목표를 완료하려면 아파트 안 사무실에서 두 개의 메모를 주워 읽고 오디오 테이프를 주워 들어야 합니다. 사무실 문은 강제로 열어야 합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/32/Note_on_preparations_for_the_Arrival_icon.png/revision/latest?cb=20260215180917",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7b/Cult_victim_audio_tape_1_icon.png/revision/latest?cb=20260121003856",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Book_of_the_Arrival_icon.png/revision/latest?cb=20260215180946",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Cult_Victim_Apartment_Office.png/revision/latest/scale-to-width-down/640?cb=20260215174508",
+          "caption": "사무실 문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/Book_on_the_Arrival.png/revision/latest/scale-to-width-down/640?cb=20260215182831",
+          "caption": "책장이 있는 책"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c2/Note_on_preparations_for_the_Arrival.png/revision/latest/scale-to-width-down/640?cb=20260119181144",
+          "caption": "책상 위 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/Cult_Victim_Tape_1.png/revision/latest/scale-to-width-down/640?cb=20260119181121",
+          "caption": "책상 위 테이프"
+        }
+      ]
+    },
+    {
+      "title": "메카닉에게 세계의 눈에 대해 물어보기",
+      "titleEn": "Ask Mechanic about the Eye of the World",
+      "body": "트레이더 화면에서 메카닉을 찾아가 세계의 눈에 대해 물어보세요.",
+      "images": []
+    },
+    {
+      "title": "컬트 신도 사제 찾기 및 처치",
+      "titleEn": "Locate and neutralize a Cultist priest",
+      "body": "어느 장소에서든 컬트 신도 사제를 찾아 처치하세요.",
+      "images": []
+    },
+    {
+      "title": "세계의 눈에 대해 더 많은 정보 얻기",
+      "titleEn": "Obtain more information about the Eye of the World",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 조건 · 레이드 획득(FIR)\n- link=Dorm room 314 marked key]] · 기숙사 314호 표시 열쇠 · 1 · 필수 * · 해당 없음\n- link=Abandoned factory marked key]] · 폐공장 표시 열쇠 · 1 · 필수 * · 해당 없음\n- link=RB-BK marked key]] · RB-BK 표시 열쇠 · 1 · 필수 * · 해당 없음\n- link=RB-PKPM marked key]] · RB-PKPM 표시 열쇠 · 1 · 필수 * · 해당 없음\n- link=RB-VO marked key]] · RB-VO 표시 열쇠 · 1 · 필수 * · 해당 없음\n- link=Cultist priest's note]] · 컬트 신도 사제의 메모 · 1 · 필수 · 예\n\n* 목표 완료를 위해 이 열쇠들 중 하나만 있으면 됩니다.\n\n이 목표를 완료하려면 세관(Customs), 타르코프 시내(Streets of Tarkov), 리저브(Reserve)의 표시된 방 중 한 곳에서 컬트 신도 사제의 메모를 주워 읽어야 합니다. 참고로 이전 목표를 완료하기 전에는 아이템이 스폰되지 않습니다.\n\n[세관]\n3층 기숙사 건물의 표시된 방입니다. 입장하려면 기숙사 314호 표시 열쇠가 필요합니다.\n\n[타르코프 시내]\n북쪽 폐공장 건물 3층의 표시된 방입니다. 입장하려면 폐공장 표시 열쇠가 필요합니다.\n\n[리저브]\n[=RB-BK=]\n검은색 병영 건물 1층의 표시된 방입니다. 입장하려면 RB-BK 표시 열쇠가 필요합니다.\n\n[=RB-PKPM=]\n지하 터널 시스템 내 지휘소 옆 표시된 방입니다. 입장하려면 RB-PKPM 표시 열쇠가 필요합니다.\n\n[=RB-VO=]\n리저브의 경비 병영 건물 내 표시된 방입니다. 입장하려면 RB-VO 표시 열쇠가 필요합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b1/Marked-key-Icon.png/revision/latest?cb=20251119222813",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/Abandoned_factory_marked_key_icon.png/revision/latest?cb=20221229224934",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c9/RB-BK_Icon.png/revision/latest?cb=20251119222912",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/31/RB-PKPM_key_icon.png/revision/latest?cb=20251119222948",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/75/RB-VO_key_icon.png/revision/latest?cb=20251119222926",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/69/Cultist_priest%27s_note_icon.png/revision/latest?cb=20260215183440",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5f/TheCultPart2DormsMap.png/revision/latest/scale-to-width-down/640?cb=20230311024204",
+          "caption": "지도에 표시된 방 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/84/Marked_Room_Door.png/revision/latest/scale-to-width-down/640?cb=20260416031530",
+          "caption": "방 문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/Customs_Cultist_priest%27s_note_spawn.png/revision/latest/scale-to-width-down/640?cb=20260215190842",
+          "caption": "책 더미 위 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/AbandonedFactoryNorthernBuilding.png/revision/latest/scale-to-width-down/640?cb=20230825212659",
+          "caption": "지도에 표시된 방 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/FactoryMarkedRoomDoor.png/revision/latest/scale-to-width-down/640?cb=20221231233111",
+          "caption": "방 문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/59/Streets_of_Tarkov_Cultist_priest%27s_note_spawn.png/revision/latest/scale-to-width-down/640?cb=20260215190806",
+          "caption": "바닥 위 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/RB-BK_lock_location.png/revision/latest/scale-to-width-down/640?cb=20260215201131",
+          "caption": "지도에 표시된 방 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3d/2019-10-28marked.png/revision/latest/scale-to-width-down/640?cb=20260215194200",
+          "caption": "방 문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c0/Reserve_RB-BK_Cultist_priest%27s_note_spawn.png/revision/latest/scale-to-width-down/640?cb=20260215190855",
+          "caption": "책장 위 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/RB-PKPM.png/revision/latest/scale-to-width-down/640?cb=20250319211825",
+          "caption": "지하 지도에 표시된 방 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c1/RBPKPM_Entrance.png/revision/latest/scale-to-width-down/640?cb=20260215194410",
+          "caption": "방 문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/04/Reserve_RB-PKPM_Cultist_priest%27s_note_spawn.png/revision/latest/scale-to-width-down/640?cb=20260215190909",
+          "caption": "넘어진 책장 위 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/RB-VO_lock_location.png/revision/latest/scale-to-width-down/640?cb=20260215200438",
+          "caption": "지도에 표시된 방 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f9/RB-VO.png/revision/latest/scale-to-width-down/640?cb=20260215193234",
+          "caption": "방 문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Reserve_RB-VO_Cultist_priest%27s_note_spawn.png/revision/latest/scale-to-width-down/640?cb=20260216013229",
+          "caption": "책장 위 메모"
+        }
+      ]
+    },
+    {
+      "title": "등대에서 세계의 눈 표시된 장소 찾기/샬레 내 컬트 신도 방 조사/희생자의 열쇠 획득",
+      "titleEn": "Locate the place marked with the Eye of the World on Lighthouse/Investigate the cultist room in the chalet/Obtain the victim's key",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 조건 · 레이드 획득(FIR)\n- link=Victim's note]] · 희생자의 메모 · 1 · 필수 · 예\n- link=Station 14-4 KORD Arshavin K. pass (Damaged)]] · 14-4 KORD Arshavin K. 출입증 (손상됨) · 1 · 필수 · 예\n\n수배된 장소는 등대 북쪽 파란색 샬레 2층 남쪽 작은 침실입니다. 인접한 발코니에서 희생자의 메모를 주워 읽을 수 있습니다.\n\n14-4 KORD Arshavin K. 출입증(손상됨)은 샬레 맞은편 차고 앞 ATV 위에 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8d/Victim%27s_note_icon.png/revision/latest?cb=20260217140221",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/88/Station_14-4_KORD_Arshavin_K._pass_%28Damaged%29_icon.png/revision/latest?cb=20260214234150",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/BlueChaletMapKTT.png/revision/latest/scale-to-width-down/640?cb=20230115032329",
+          "caption": "지도에 표시된 샬레"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/Victim%27s_Note_Spawn.png/revision/latest/scale-to-width-down/640?cb=20260217134201",
+          "caption": "발코니 위 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/82/14-4_dmg._Spawn.png/revision/latest/scale-to-width-down/640?cb=20260217134519",
+          "caption": "ATV 위 키카드"
+        }
+      ]
+    },
+    {
+      "title": "삼림에서 세계의 눈 표시된 장소 찾기",
+      "titleEn": "Locate the place marked with the Eye of the World on Woods",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 조건 · 레이드 획득(FIR)\n- link=Newspaper clipping from the cultists' house]] · 컬트 신도 집에서 발견한 신문 스크랩 · 1 · 필수 · 예\n\n수배된 장소는 삼림 북쪽 낡은 마을에 있는 집입니다. 책상 옆 화이트보드에서 컬트 신도 집에서 발견한 신문 스크랩을 주워 읽을 수 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Newspaper_clipping_from_the_cultists%27_house_icon.png/revision/latest?cb=20260217153636",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/EFT_TAAH_Woods_House_Map.png/revision/latest/scale-to-width-down/640?cb=20260217151051",
+          "caption": "지도에 표시된 집 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/EFT_TAAH_Woods_House.png/revision/latest/scale-to-width-down/640?cb=20260217150816",
+          "caption": "수배된 집"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4e/EFT_TAAH_Woods_Newspaper.png/revision/latest/scale-to-width-down/640?cb=20260217151411",
+          "caption": "화이트보드 위 신문"
+        }
+      ]
+    },
+    {
+      "title": "해안선에서 세계의 눈 표시된 장소 찾기/지역 조사/소르디 타워 수리",
+      "titleEn": "Locate the place marked with the Eye of the World on Shoreline/Investigate the area/Repair the Sordi tower",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 조건 · 레이드 획득(FIR) · 비고\n- link=Toolset]] · 공구 세트 · 1 · 필수 · 해당 없음 · 소르디 타워 수리에 사용됩니다. 사용 시 인벤토리에서 사라집니다.\n- link=Programmer's note]] · 프로그래머의 메모 · 1 · 필수 · 예\n\n수배된 장소는 해안선의 \"세관으로 가는 길\" 추출 지점 근처 라디오 타워 옆 빨간색 금속 오두막입니다. 타워 옆 시체에서 프로그래머의 메모를 주워 읽을 수 있습니다. 타워를 수리하려면 오두막 안에서 공구 세트를 사용해야 합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/Toolsicon.png/revision/latest?cb=20210805173459",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/Programmer%27s_note_icon.png/revision/latest?cb=20260217170208",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Shoreline_Eye_of_World_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260217170735",
+          "caption": "지도에 표시된 라디오 타워 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b0/Signal3.png/revision/latest/scale-to-width-down/640?cb=20260217224001",
+          "caption": "라디오 타워"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/Shoreline_Eye_of_World_Location.png/revision/latest/scale-to-width-down/640?cb=20260217162539",
+          "caption": "오두막"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5f/Shoreline_Eye_of_World_Dead_Body_Relative_Location.png/revision/latest/scale-to-width-down/640?cb=20260217162602",
+          "caption": "시체 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Note_in_dead_body.png/revision/latest/scale-to-width-down/640?cb=20260217162553",
+          "caption": "시체 오른손에 있는 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/Repair_location_for_the_Sordi_tower.png/revision/latest/scale-to-width-down/640?cb=20260217162525",
+          "caption": "오두막 내 수리 위치"
+        }
+      ]
+    },
+    {
+      "title": "메카닉(Mechanic)에게서 14-4 KORD 기지에 대해 더 알아보기",
+      "titleEn": "Learn more about Station 14-4 KORD from Mechanic",
+      "body": "거래 화면에서 메카닉을 찾아 메뉴에서 방문한 뒤, 다시 한 번 세계의 눈(Eye of the World)에 대해 물어보면 됩니다.",
+      "images": []
+    },
+    {
+      "title": "아르샤빈(Arshavin)의 키카드 복원하기",
+      "titleEn": "Restore Arshavin's keycard",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR) · 비고\n- link=Station 14-4 KORD Arshavin K. pass (Restored)]] · 14-4 KORD 아르샤빈 K. 패스 (복원됨) · 1 · 필수 · 해당 없음 · 은신처 내 정보 센터 레벨 1에서 제작해야 합니다.\n\n은신처의 정보 센터 레벨 1에서 14-4 KORD 아르샤빈 K. 패스 (복원됨)를 제작하세요. 제작 과정 내내 전기가 공급되어야 하며, 그렇지 않으면 제작이 중단됩니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Station_14-4_KORD_Arshavin_K._pass_%28Restored%29_icon.png/revision/latest?cb=20260214234240",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "NGO 코발트(Cobalt)의 비밀 시설 출입 권한 얻기",
+      "titleEn": "Gain access to NGO Cobalt's secret facility",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Station 14-4 KORD Arshavin K. pass (Restored)]] · 14-4 KORD 아르샤빈 K. 패스 (복원됨) · 1 · 필수 · 해당 없음\n\nNGO 코발트의 비밀 시설은 인터체인지(Interchange) 전력 시설 지하에 위치해 있습니다. 출입하려면 14-4 KORD 아르샤빈 K. 패스 (복원됨)가 필요합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Station_14-4_KORD_Arshavin_K._pass_%28Restored%29_icon.png/revision/latest?cb=20260214234240",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8f/PowerStationMap.png/revision/latest/scale-to-width-down/640?cb=20220409231159",
+          "caption": "지도에 표시된 전력 시설"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/InterchangePowerStation.png/revision/latest/scale-to-width-down/640?cb=20240606034854",
+          "caption": "전력 시설 전경"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5f/PowerStationStairsDoor.png/revision/latest/scale-to-width-down/640?cb=20251130202937",
+          "caption": "지하 계단으로 통하는 문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Station_14-4_KORD_Door.png/revision/latest/scale-to-width-down/640?cb=20251130203122",
+          "caption": "비밀 시설 입구 문"
+        }
+      ]
+    },
+    {
+      "title": "기지 내 전력 복구하기",
+      "titleEn": "Restore power at the station",
+      "body": "전력 복구를 위해 입구 바로 옆에 있는 키카드 패널에 14-4 KORD 아르샤빈 K. 패스 (복원됨)를 대면 됩니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/01/Reader_in_14-4_KORD.png/revision/latest/scale-to-width-down/640?cb=20260217235842",
+          "caption": "키카드 패널"
+        }
+      ]
+    },
+    {
+      "title": "서버실 냉각 시스템 켜기",
+      "titleEn": "Turn on the cooling system in the server room",
+      "body": "서버실은 철창문 뒤에 있습니다. 냉각 시스템을 켜려면 안쪽에 있는 레버를 당기면 됩니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/56/Grate_door_in_14-4_KORD.png/revision/latest/scale-to-width-down/640?cb=20260218000624",
+          "caption": "철창문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Lever_in_14-4_KORD.png/revision/latest/scale-to-width-down/640?cb=20260218000521",
+          "caption": "레버"
+        }
+      ]
+    },
+    {
+      "title": "데이터 다운로드용 플래시 드라이브 설치하기",
+      "titleEn": "Install a flash drive to download the data",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR) · 비고\n- link=Secure Flash drive]] · 보안 플래시 드라이브 · 1 · 필수 · 해당 없음 · 은닉 아이템\n\n보안 플래시 드라이브는 서버실 냉각 시스템 레버 왼쪽에 은닉해야 합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b7/Secure_Flash_drive_Icon.png/revision/latest?cb=20241031165629",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f3/USB_Plant_Location_inside_Cooling_Room_in_14-4_KORD.png/revision/latest/scale-to-width-down/640?cb=20260218000859",
+          "caption": "은닉 위치"
+        }
+      ]
+    },
+    {
+      "title": "ARRS 14-4 KORD 기지 철저히 조사하기",
+      "titleEn": "Investigate ARRS Station 14-4 KORD thoroughly",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Mysterious audio tape]] · 수상한 오디오 테이프 · 1 · 필수 · 있음\n\n목표 달성을 위해 입구 옆 금고에서 수상한 오디오 테이프를 획득해 들어야 합니다. 냉각 시스템을 켜면 금고가 자동으로 열립니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/Mysterious_audio_tape_icon.png/revision/latest?cb=20260411163242",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/Mysterious_Audio_Tape_spawn.png/revision/latest/scale-to-width-down/640?cb=20260218001301",
+          "caption": "금고 안의 테이프"
+        }
+      ]
+    },
+    {
+      "title": "인터체인지에서 생존 후 탈출하기",
+      "titleEn": "Survive and extract from Interchange",
+      "body": "인터체인지에서 \"생존(Survived)\" 또는 \"돌파(Run-Through)\" 탈출 상태로 탈출하세요.",
+      "images": []
+    },
+    {
+      "title": "기지를 외부 요원과 차단할 방법 찾기",
+      "titleEn": "Find a way to disconnect the station from external agents",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=ARRS station mechanic's notes]] · ARRS 기지 정비공 노트 · 1 · 필수 · 있음\n\n인터체인지 비밀 시설로 돌아가 큰 책상 위에 있는 ARRS 기지 정비공 노트를 획득해 읽으세요.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f3/ARRS_station_mechanic%27s_notes_icon.png/revision/latest?cb=20260218011019",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/09/ARRS_mech..png/revision/latest/scale-to-width-down/640?cb=20260218004502",
+          "caption": "책상 위 노트"
+        }
+      ]
+    },
+    {
+      "title": "ARRS 기지를 백업 설정으로 복원하기",
+      "titleEn": "Restore the ARRS station to backup settings",
+      "body": "전원을 다시 켠 뒤 서버실로 들어가 탁자 아래 버튼을 누르세요.\n\n참고: 한 레이드당 플레이어 1명만 버튼을 눌러 이 목표 진행이 가능합니다. 상호작용이 안 되면 새 레이드에서 다시 시도하세요.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8f/ARRS_disconnect_button.png/revision/latest/scale-to-width-down/640?cb=20260218004919",
+          "caption": "버튼"
+        }
+      ]
+    },
+    {
+      "title": "ARRS 기지에서 플래시 드라이브 수집하기",
+      "titleEn": "Collect the flash drive from the ARRS station",
+      "body": "- 이전 목표를 완료해야 주요 증거인 ARRS 시스템 사양을 얻을 수 있습니다!\n\n- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Flash drive for ARRS station]] · ARRS 기지용 플래시 드라이브 · 1 · 제출 아이템 · 있음\n\n서버실 냉각 시스템 레버 옆 서버에서 ARRS 기지용 플래시 드라이브를 획득하세요.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/ucp-internal-test-starter-commons/images/e/e4/Icon-warning-red.svg/revision/latest?cb=20200818143559",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/Flash_drive_for_ARRS_station_icon.png/revision/latest?cb=20260218011635",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e7/ARRS_USB_spawn.png/revision/latest/scale-to-width-down/640?cb=20260218005408",
+          "caption": "플래시 드라이브"
+        }
+      ]
+    },
+    {
+      "title": "인터체인지에서 생존 후 탈출하기",
+      "titleEn": "Survive and extract from Interchange",
+      "body": "인터체인지에서 \"생존(Survived)\" 또는 \"돌파(Run-Through)\" 탈출 상태로 탈출하세요.",
+      "images": []
+    },
+    {
+      "title": "메카닉에게 데이터가 담긴 플래시 드라이브 전달하기",
+      "titleEn": "Hand over the flash drive with data to Mechanic",
+      "body": "거래 화면을 통해 ARRS 기지용 플래시 드라이브를 메카닉에게 전달하세요.",
+      "images": []
+    },
+    {
+      "title": "ARRS 기지 사양서 읽기",
+      "titleEn": "Read the ARRS station specifications",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=ARRS system specifications]] · ARRS 시스템 사양서 · 1 · 필수 · 해당 없음\n\n핸드북에서 ARRS 시스템 사양서를 읽으세요.\n\n[보상]\n* 업적 '다른 이의 눈을 통해(Through Another's Eyes)' 해금\n* 업적 '빛이 사라질 때(When the Light Fades)' 해금\n\n분류: 스토리 챕터\n\nru:Они уже здесь",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/97/ARRS_system_specifications_icon.png/revision/latest?cb=20260103005133",
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/They_Are_Already_Here",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:03:06.159+09:00"
+}

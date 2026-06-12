@@ -16,163 +16,201 @@
       "objectives": [
         {
           "text": "Escape Ground Zero",
-          "depth": 0
+          "depth": 0,
+          "ko": "그라운드 제로에서 탈출하기"
         },
         {
           "text": "Talk to Therapist",
-          "depth": 0
+          "depth": 0,
+          "ko": "테라피스트와 대화하기"
         },
         {
           "text": "Ensure access to the Streets of Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "타르코프 시내 진입로 확보하기"
         },
         {
           "text": "Hand over the cash to Therapist",
-          "depth": 1
+          "depth": 1,
+          "ko": "테라피스트에게 현금 전달하기"
         },
         {
           "text": "Collect the required 250,000 Roubles",
           "depth": 1,
+          "ko": "필요한 250,000루블 모으기",
           "optional": true
         },
         {
           "text": "Talk to Ragman",
-          "depth": 0
+          "depth": 0,
+          "ko": "래그맨과 대화하기"
         },
         {
           "text": "Survive and extract from Interchange or visit Interchange 3 times",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터체인지에서 생존 탈출하거나 인터체인지를 3회 방문하기"
         },
         {
           "text": "Tell Ragman what you found during the recon",
-          "depth": 0
+          "depth": 0,
+          "ko": "정찰에서 본 것을 래그맨에게 보고하기"
         },
         {
           "text": "Talk to Skier",
-          "depth": 0
+          "depth": 0,
+          "ko": "스키어와 대화하기"
         },
         {
           "text": "Survive and extract from Customs or visit Customs 3 times",
-          "depth": 0
+          "depth": 0,
+          "ko": "세관에서 생존 탈출하거나 세관을 3회 방문하기"
         },
         {
           "text": "Hand over any 5 found in raid building materials items to Skier",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 건축 자재류 아이템 아무거나 5개를 스키어에게 전달하기"
         },
         {
           "text": "Find any 5 items in raid from the building materials category",
           "depth": 1,
+          "ko": "건축 자재 분류 아이템 아무거나 5개를 레이드에서 획득하기",
           "optional": true
         },
         {
           "text": "Talk to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉과 대화하기"
         },
         {
           "text": "Survive and extract from Factory or visit Factory 3 times",
-          "depth": 0
+          "depth": 0,
+          "ko": "공장에서 생존 탈출하거나 공장을 3회 방문하기"
         },
         {
           "text": "Hand over any 2 found in raid weapons to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 무기 아무거나 2정을 메카닉에게 전달하기"
         },
         {
           "text": "Find any 2 weapons in raid",
           "depth": 1,
+          "ko": "무기 아무거나 2정을 레이드에서 획득하기",
           "optional": true
         },
         {
           "text": "Talk to Skier",
-          "depth": 0
+          "depth": 0,
+          "ko": "스키어와 대화하기"
         },
         {
           "text": "Eliminate any 3 targets on Woods",
-          "depth": 0
+          "depth": 0,
+          "ko": "삼림에서 아무 적이든 3명 제거하기"
         },
         {
           "text": "Survive and extract from Woods or visit Woods 3 times",
-          "depth": 0
+          "depth": 0,
+          "ko": "삼림에서 생존 탈출하거나 삼림을 3회 방문하기"
         },
         {
           "text": "Locate the entrance to the port Terminal",
-          "depth": 0
+          "depth": 0,
+          "ko": "항만 터미널 입구 찾기"
         },
         {
           "text": "Find a way to contact the soldiers at the Terminal",
-          "depth": 0
+          "depth": 0,
+          "ko": "터미널의 군인들과 접촉할 방법 찾기"
         },
         {
           "text": "Use the intercom to contact the port garrison",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터컴으로 항만 수비대와 교신하기"
         },
         {
           "text": "Learn how to escape Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "타르코프에서 탈출하는 방법 알아내기"
         },
         {
           "text": "Ensure access to Reserve",
-          "depth": 0
+          "depth": 0,
+          "ko": "리저브 진입로 확보하기"
         },
         {
           "text": "Survive and extract from Shoreline or visit Shoreline 3 times",
-          "depth": 1
+          "depth": 1,
+          "ko": "해안선에서 생존 탈출하거나 해안선을 3회 방문하기"
         },
         {
           "text": "Hand over 5 PMC dogtags to Prapor",
-          "depth": 1
+          "depth": 1,
+          "ko": "PMC 인식표 5개를 프라퍼에게 전달하기"
         },
         {
           "text": "Find 5 PMC dogtags in raid",
           "depth": 1,
+          "ko": "PMC 인식표 5개를 레이드에서 획득하기",
           "optional": true
         },
         {
           "text": "Ensure access to Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대 진입로 확보하기"
         },
         {
           "text": "Hand over 20,000 USD to Mechanic",
-          "depth": 1
+          "depth": 1,
+          "ko": "20,000달러를 메카닉에게 전달하기"
         },
         {
           "text": "Collect the required 20,000 USD",
           "depth": 1,
+          "ko": "필요한 20,000달러 모으기",
           "optional": true
         },
         {
           "text": "Ensure access to The Lab",
-          "depth": 0
+          "depth": 0,
+          "ko": "연구소 진입로 확보하기"
         },
         {
           "text": "Access the secret TerraGroup facility",
-          "depth": 1
+          "depth": 1,
+          "ko": "테라그룹 비밀 시설에 진입하기"
         },
         {
           "text": "Obtain a keycard or access codes to enter the facility",
           "depth": 1,
+          "ko": "시설에 들어갈 키카드 또는 출입 코드 확보하기",
           "optional": true
         },
         {
           "text": "Locate the entrance to the facility on Factory",
           "depth": 1,
+          "ko": "공장에서 시설 입구 찾기",
           "optional": true
         },
         {
           "text": "Locate the entrance to the facility on Streets of Tarkov",
           "depth": 1,
+          "ko": "타르코프 시내에서 시설 입구 찾기",
           "optional": true
         },
         {
           "text": "Search the top management offices in The Lab",
-          "depth": 1
+          "depth": 1,
+          "ko": "연구소의 최고 경영진 사무실 수색하기"
         },
         {
           "text": "Search the server room in The Lab",
-          "depth": 1
+          "depth": 1,
+          "ko": "연구소의 서버실 수색하기"
         },
         {
           "text": "Locate the escape path through the drainage system in The Lab",
-          "depth": 1
+          "depth": 1,
+          "ko": "연구소 배수 시설을 통한 탈출 경로 찾기"
         }
       ]
     },
@@ -188,85 +226,105 @@
       "objectives": [
         {
           "text": "Locate the fallen plane",
-          "depth": 0
+          "depth": 0,
+          "ko": "추락한 비행기 위치 찾기"
         },
         {
           "text": "Reach Loyalty Level 2 with Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼 로열티 레벨 2 달성하기"
         },
         {
           "text": "Ask the traders about the fallen plane",
-          "depth": 0
+          "depth": 0,
+          "ko": "추락한 비행기에 대해 트레이더들에게 물어보기"
         },
         {
           "text": "Hand over 2,000 USD to Therapist to learn details about the SUV",
           "depth": 0,
+          "ko": "SUV에 대한 정보를 얻기 위해 테라피스트에게 2,000달러 전달하기",
           "optional": true
         },
         {
           "text": "Retrieve the flash drive from one of the G-Wagon SUVs",
-          "depth": 0
+          "depth": 0,
+          "ko": "G바겐 SUV 중 한 대에서 플래시 드라이브 회수하기"
         },
         {
           "text": "Hand over the flash drive to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "플래시 드라이브를 프라퍼에게 전달하기"
         },
         {
           "text": "Wait for information from Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼의 소식 기다리기"
         },
         {
           "text": "Retrieve the plane's flight recorder",
-          "depth": 0
+          "depth": 0,
+          "ko": "비행기의 블랙박스(비행 기록 장치) 회수하기"
         },
         {
           "text": "Leave the flight recorder in the specified spot",
-          "depth": 0
+          "depth": 0,
+          "ko": "블랙박스를 지정된 장소에 두고 오기"
         },
         {
           "text": "Visit Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼 방문하기"
         },
         {
           "text": "Hand over 3 found in raid Rechargeable batteries",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 충전식 배터리 3개 전달하기"
         },
         {
           "text": "Hand over 5 found in raid Printed circuit boards",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 인쇄 회로 기판(PCB) 5개 전달하기"
         },
         {
           "text": "Hand over 2 found in raid Toolsets",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 공구 세트 2개 전달하기"
         },
         {
           "text": "Wait for information from Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼의 소식 기다리기"
         },
         {
           "text": "Hand over the flight crew's transcript to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "승무원 교신 기록을 프라퍼에게 전달하기"
         },
         {
           "text": "Hand over Elektronik's secure flash drive to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "엘렉트로닉의 보안 플래시 드라이브를 프라퍼에게 전달하기"
         },
         {
           "text": "Wait for information from Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼의 소식 기다리기"
         },
         {
           "text": "Retrieve the armored case",
-          "depth": 0
+          "depth": 0,
+          "ko": "장갑 케이스 회수하기"
         },
         {
           "text": "Find any additional clues",
           "depth": 1,
+          "ko": "추가 단서 찾기",
           "optional": true
         },
         {
           "text": "Keep the armored case for yourself or hand it over to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "장갑 케이스를 직접 갖거나 프라퍼에게 넘기기 (선택의 갈림길)"
         }
       ]
     },
@@ -282,128 +340,157 @@
       "objectives": [
         {
           "text": "Figure out where Kozlov lived",
-          "depth": 0
+          "depth": 0,
+          "ko": "코즐로프가 살던 곳 알아내기"
         },
         {
           "text": "Read the note on Kozlov's door",
-          "depth": 0
+          "depth": 0,
+          "ko": "코즐로프의 문에 붙은 쪽지 읽기"
         },
         {
           "text": "Find out what Kozlov was involved in",
-          "depth": 0
+          "depth": 0,
+          "ko": "코즐로프가 무슨 일에 연루됐는지 알아내기"
         },
         {
           "text": "Access Kozlov's room",
           "depth": 1,
+          "ko": "코즐로프의 방에 들어가기",
           "optional": true
         },
         {
           "text": "Figure out where to get Kozlov's key",
           "depth": 1,
+          "ko": "코즐로프의 열쇠를 어디서 구할지 알아내기",
           "optional": true
         },
         {
           "text": "Investigate Kozlov's room",
           "depth": 1,
+          "ko": "코즐로프의 방 조사하기",
           "optional": true
         },
         {
           "text": "Ask the traders about Anastasia",
-          "depth": 0
+          "depth": 0,
+          "ko": "아나스타샤에 대해 트레이더들에게 물어보기"
         },
         {
           "text": "Access Skier's accomplice's apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "스키어의 공범 아파트에 들어가기"
         },
         {
           "text": "Find the key to the apartment",
           "depth": 1,
+          "ko": "아파트 열쇠 찾기",
           "optional": true
         },
         {
           "text": "Learn more about Skier's accomplice",
-          "depth": 0
+          "depth": 0,
+          "ko": "스키어의 공범에 대해 더 알아내기"
         },
         {
           "text": "Investigate the apartment",
           "depth": 1,
+          "ko": "아파트 조사하기",
           "optional": true
         },
         {
           "text": "Read the documents in Skier's accomplice's apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "스키어의 공범 아파트에 있는 문서 읽기"
         },
         {
           "text": "Survive and extract from Streets of Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "타르코프 시내에서 생존 탈출하기"
         },
         {
           "text": "Report to Skier",
-          "depth": 0
+          "depth": 0,
+          "ko": "스키어에게 보고하기"
         },
         {
           "text": "Talk to Ragman",
-          "depth": 0
+          "depth": 0,
+          "ko": "래그맨과 대화하기"
         },
         {
           "text": "Locate Anastasia's apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "아나스타샤의 아파트 찾기"
         },
         {
           "text": "Learn more about Anastasia",
-          "depth": 0
+          "depth": 0,
+          "ko": "아나스타샤에 대해 더 알아내기"
         },
         {
           "text": "Investigate the entrance of Anastasia's building",
-          "depth": 0
+          "depth": 0,
+          "ko": "아나스타샤가 사는 건물 입구 조사하기"
         },
         {
           "text": "Locate courier Pasha",
-          "depth": 0
+          "depth": 0,
+          "ko": "배달부 파샤 찾기"
         },
         {
           "text": "Search the ambush spot",
-          "depth": 0
+          "depth": 0,
+          "ko": "매복 지점 수색하기"
         },
         {
           "text": "Talk to Skier",
-          "depth": 0
+          "depth": 0,
+          "ko": "스키어와 대화하기"
         },
         {
           "text": "Locate Reshala's stash",
-          "depth": 0
+          "depth": 0,
+          "ko": "레샬라의 은닉처 찾기"
         },
         {
           "text": "Locate and neutralize Reshala",
           "depth": 1,
+          "ko": "레샬라를 찾아 제거하기",
           "optional": true
         },
         {
           "text": "Obtain the key to Reshala's stash",
           "depth": 1,
+          "ko": "레샬라의 은닉처 열쇠 획득하기",
           "optional": true
         },
         {
           "text": "Investigate Reshala's bunkhouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "레샬라의 간이 숙소 조사하기"
         },
         {
           "text": "Obtain Reshala's work notes",
           "depth": 1,
+          "ko": "레샬라의 작업 노트 획득하기",
           "optional": true
         },
         {
           "text": "Obtain courier Pasha's belongings",
           "depth": 1,
+          "ko": "배달부 파샤의 소지품 획득하기",
           "optional": true
         },
         {
           "text": "Locate Kozlov's hideout",
-          "depth": 0
+          "depth": 0,
+          "ko": "코즐로프의 은신처 찾기"
         },
         {
           "text": "Locate and obtain Kozlov's evidence",
-          "depth": 0
+          "depth": 0,
+          "ko": "코즐로프의 증거물을 찾아 획득하기"
         }
       ]
     },
@@ -419,147 +506,182 @@
       "objectives": [
         {
           "text": "Learn more about the hooded men/Learn more about the people leaving strange symbols in Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "후드를 쓴 무리에 대해 알아내기 / 타르코프에 기이한 문양을 남기는 자들에 대해 알아내기"
         },
         {
           "text": "Locate a place connected to the Eye of the World",
-          "depth": 0
+          "depth": 0,
+          "ko": "'세계의 눈'과 연관된 장소 찾기"
         },
         {
           "text": "Learn more about the cultist's victim from the torture room",
-          "depth": 0
+          "depth": 0,
+          "ko": "고문실에 있던 컬티스트의 희생자에 대해 알아내기"
         },
         {
           "text": "Locate the cult victim's apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "컬트 희생자의 아파트 찾기"
         },
         {
           "text": "Obtain the key to the apartment",
           "depth": 1,
+          "ko": "아파트 열쇠 획득하기",
           "optional": true
         },
         {
           "text": "Investigate the victim's apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "희생자의 아파트 조사하기"
         },
         {
           "text": "Obtain the victim's first audio tape",
-          "depth": 0
+          "depth": 0,
+          "ko": "희생자의 첫 번째 오디오 테이프 획득하기"
         },
         {
           "text": "Obtain and read the book that the cultists planted with Igor",
-          "depth": 0
+          "depth": 0,
+          "ko": "컬티스트들이 이고르에게 심어 둔 책을 획득해 읽기"
         },
         {
           "text": "Ask Mechanic about the Eye of the World",
-          "depth": 0
+          "depth": 0,
+          "ko": "'세계의 눈'에 대해 메카닉에게 물어보기"
         },
         {
           "text": "Gain access to Mechanic",
           "depth": 1,
+          "ko": "메카닉 거래 해금하기",
           "optional": true
         },
         {
           "text": "Locate and neutralize a Cultist priest",
-          "depth": 0
+          "depth": 0,
+          "ko": "컬티스트 사제를 찾아 제거하기"
         },
         {
           "text": "Obtain more information about the Eye of the World",
-          "depth": 0
+          "depth": 0,
+          "ko": "'세계의 눈'에 대한 추가 정보 획득하기"
         },
         {
           "text": "Locate the place marked with the Eye of the World on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대에서 '세계의 눈' 표식이 있는 장소 찾기"
         },
         {
           "text": "Investigate the ransacked cultist room in the chalet",
-          "depth": 0
+          "depth": 0,
+          "ko": "산장의 어질러진 컬티스트 방 조사하기"
         },
         {
           "text": "Locate the victim's belongings",
           "depth": 1,
+          "ko": "희생자의 소지품 찾기",
           "optional": true
         },
         {
           "text": "Locate and obtain the key mentioned in the victim's note",
-          "depth": 0
+          "depth": 0,
+          "ko": "희생자의 쪽지에 언급된 열쇠를 찾아 획득하기"
         },
         {
           "text": "Locate the place marked with the Eye of the World on Woods",
-          "depth": 0
+          "depth": 0,
+          "ko": "삼림에서 '세계의 눈' 표식이 있는 장소 찾기"
         },
         {
           "text": "Investigate the cultists' house marked with the Eye of the World",
-          "depth": 0
+          "depth": 0,
+          "ko": "'세계의 눈' 표식이 있는 컬티스트의 집 조사하기"
         },
         {
           "text": "Locate the place marked with the Eye of the World on Shoreline",
-          "depth": 0
+          "depth": 0,
+          "ko": "해안선에서 '세계의 눈' 표식이 있는 장소 찾기"
         },
         {
           "text": "Investigate the area around the Sordi communications tower",
-          "depth": 0
+          "depth": 0,
+          "ko": "소르디 통신탑 주변 조사하기"
         },
         {
           "text": "Repair the Sordi tower",
-          "depth": 0
+          "depth": 0,
+          "ko": "소르디 통신탑 수리하기"
         },
         {
           "text": "Restore Arshavin's keycard",
-          "depth": 0
+          "depth": 0,
+          "ko": "아르샤빈의 키카드 복원하기"
         },
         {
           "text": "Gain access to NGO Cobalt's secret facility",
-          "depth": 0
+          "depth": 0,
+          "ko": "NGO 코발트의 비밀 시설에 진입하기"
         },
         {
           "text": "Restore power at the station",
-          "depth": 0
+          "depth": 0,
+          "ko": "기지의 전원 복구하기"
         },
         {
           "text": "Turn on the cooling system in the server room",
-          "depth": 0
+          "depth": 0,
+          "ko": "서버실의 냉각 시스템 켜기"
         },
         {
           "text": "Install a flash drive to download the data",
-          "depth": 0
+          "depth": 0,
+          "ko": "데이터를 내려받을 플래시 드라이브 설치하기"
         },
         {
           "text": "Investigate ARRS Station 14-4 KORD thoroughly",
-          "depth": 0
+          "depth": 0,
+          "ko": "ARRS 14-4 KORD 기지를 샅샅이 조사하기"
         },
         {
           "text": "Survive and extract from Interchange",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터체인지에서 생존 탈출하기"
         },
         {
           "text": "Find a way to disconnect the station from external agents",
-          "depth": 0
+          "depth": 0,
+          "ko": "기지를 외부 세력으로부터 차단할 방법 찾기"
         },
         {
           "text": "Restore the ARRS station to backup settings",
-          "depth": 0
+          "depth": 0,
+          "ko": "ARRS 기지를 백업 설정으로 복원하기"
         },
         {
           "text": "Check that the station power is turned on",
           "depth": 1,
+          "ko": "기지 전원이 켜져 있는지 확인하기",
           "optional": true
         },
         {
           "text": "Collect the flash drive from the ARRS station",
-          "depth": 0
+          "depth": 0,
+          "ko": "ARRS 기지에서 플래시 드라이브 회수하기"
         },
         {
           "text": "Survive and extract from Interchange",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터체인지에서 생존 탈출하기"
         },
         {
           "text": "Hand over the flash drive with data to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "데이터가 담긴 플래시 드라이브를 메카닉에게 전달하기"
         },
         {
           "text": "Read the ARRS station specifications",
-          "depth": 0
+          "depth": 0,
+          "ko": "ARRS 기지 사양서 읽기"
         }
       ]
     },
@@ -575,200 +697,247 @@
       "objectives": [
         {
           "text": "Locate the traces of the BEAR special squad",
-          "depth": 0
+          "depth": 0,
+          "ko": "BEAR 특수부대의 흔적 찾기"
         },
         {
           "text": "Locate and obtain the Bogatyr squad patch",
           "depth": 1,
+          "ko": "보가티르 부대 패치를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Learn more about the Bogatyr squad from the traders",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대에 대해 트레이더들에게 알아내기"
         },
         {
           "text": "Locate the Ryabina outpost",
-          "depth": 0
+          "depth": 0,
+          "ko": "랴비나 전초기지 찾기"
         },
         {
           "text": "Find more information about the Bogatyr squad",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대에 대한 추가 정보 찾기"
         },
         {
           "text": "Locate and obtain a keepsake of one of the Bogatyrs",
           "depth": 1,
+          "ko": "보가티르 대원의 유품을 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Locate the Carousel outpost",
-          "depth": 0
+          "depth": 0,
+          "ko": "카루셀 전초기지 찾기"
         },
         {
           "text": "Find the Bogatyr squad's personal notes",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대의 개인 수기 찾기"
         },
         {
           "text": "Learn more about Strelets",
-          "depth": 0
+          "depth": 0,
+          "ko": "스트렐레츠에 대해 더 알아내기"
         },
         {
           "text": "Learn more about Taran",
-          "depth": 0
+          "depth": 0,
+          "ko": "타란에 대해 더 알아내기"
         },
         {
           "text": "Locate and obtain a personal item of one of the Bogatyrs",
           "depth": 1,
+          "ko": "보가티르 대원의 개인 물품을 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Learn more about Voevoda",
-          "depth": 0
+          "depth": 0,
+          "ko": "보예보다에 대해 더 알아내기"
         },
         {
           "text": "Find Voevoda's personal belongings",
-          "depth": 0
+          "depth": 0,
+          "ko": "보예보다의 개인 소지품 찾기"
         },
         {
           "text": "Locate and obtain the squad commander's recorder",
           "depth": 1,
+          "ko": "부대 지휘관의 녹음기를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Locate the Gnezdo outpost",
-          "depth": 0
+          "depth": 0,
+          "ko": "그네즈도 전초기지 찾기"
         },
         {
           "text": "Search the Gnezdo outpost",
-          "depth": 0
+          "depth": 0,
+          "ko": "그네즈도 전초기지 수색하기"
         },
         {
           "text": "Figure out what happened to the Bogatyr squad",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대에 무슨 일이 있었는지 알아내기"
         },
         {
           "text": "Figure out where the Bogatyr squad got ambushed",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대가 어디서 매복당했는지 알아내기"
         },
         {
           "text": "Learn more about the Bogatyr squad's activities",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대의 활동에 대해 더 알아내기"
         },
         {
           "text": "Learn more about the Bogatyr squad's members",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대원들에 대해 더 알아내기"
         },
         {
           "text": "Locate the ambush spot",
-          "depth": 0
+          "depth": 0,
+          "ko": "매복 지점 찾기"
         },
         {
           "text": "Obtain more information about the Bogatyr squad",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대에 대한 추가 정보 획득하기"
         },
         {
           "text": "Inspect Moreman's body",
-          "depth": 0
+          "depth": 0,
+          "ko": "모어맨의 시신 살펴보기"
         },
         {
           "text": "Locate and obtain Moreman's phone",
           "depth": 1,
+          "ko": "모어맨의 휴대전화를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Locate and obtain a dogtag of one of the Bogatyrs",
           "depth": 1,
+          "ko": "보가티르 대원의 인식표를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Retrieve more information about the ambush from Moreman's phone",
-          "depth": 0
+          "depth": 0,
+          "ko": "모어맨의 휴대전화에서 매복에 대한 추가 정보 복원하기"
         },
         {
           "text": "Obtain Intelligence Center level 3",
-          "depth": 0
+          "depth": 0,
+          "ko": "은신처 정보센터 3레벨 건설하기"
         },
         {
           "text": "Contact the Bogatyr squad",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대와 접촉하기"
         },
         {
           "text": "Gain access to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기 거래 해금하기"
         },
         {
           "text": "Stay on good terms with Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기와 좋은 관계 유지하기"
         },
         {
           "text": "Bring all the Bogatyr squad's items to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "보가티르 부대의 물품 전부를 등대지기에게 가져가기"
         },
         {
           "text": "Wait for Voevoda to reach out",
-          "depth": 0
+          "depth": 0,
+          "ko": "보예보다의 연락 기다리기"
         },
         {
           "text": "Reach the Light Machine Guns skill level 5",
-          "depth": 0
+          "depth": 0,
+          "ko": "경기관총(LMG) 스킬 레벨 5 달성하기"
         },
         {
           "text": "Reach the Assault Rifles skill level 10",
-          "depth": 0
+          "depth": 0,
+          "ko": "돌격소총 스킬 레벨 10 달성하기"
         },
         {
           "text": "Reach the Stress Resistance skill level 10",
-          "depth": 0
+          "depth": 0,
+          "ko": "스트레스 저항 스킬 레벨 10 달성하기"
         },
         {
           "text": "Reach the Strength skill level 15",
-          "depth": 0
+          "depth": 0,
+          "ko": "근력 스킬 레벨 15 달성하기"
         },
         {
           "text": "Eliminate any 15 targets without dying",
-          "depth": 0
+          "depth": 0,
+          "ko": "죽지 않고 아무 적이든 15명 제거하기"
         },
         {
           "text": "Eliminate 4 PMC operatives without dying",
-          "depth": 0
+          "depth": 0,
+          "ko": "죽지 않고 PMC 요원 4명 제거하기"
         },
         {
           "text": "Contact Voevoda",
-          "depth": 0
+          "depth": 0,
+          "ko": "보예보다와 접촉하기"
         },
         {
           "text": "Locate the traces of the traitors",
-          "depth": 0
+          "depth": 0,
+          "ko": "배신자들의 흔적 찾기"
         },
         {
           "text": "Investigate the command bunker on Reserve",
           "depth": 1,
+          "ko": "리저브의 지휘 벙커 조사하기",
           "optional": true
         },
         {
           "text": "Investigate the BEAR camp on Lighthouse",
           "depth": 1,
+          "ko": "등대의 BEAR 캠프 조사하기",
           "optional": true
         },
         {
           "text": "Investigate the BEAR camp east of the Ultra mall on Interchange",
           "depth": 1,
+          "ko": "인터체인지 울트라 몰 동쪽의 BEAR 캠프 조사하기",
           "optional": true
         },
         {
           "text": "Interrogate Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼 추궁하기"
         },
         {
           "text": "Figure out how the cultists are connected to the General",
-          "depth": 0
+          "depth": 0,
+          "ko": "컬티스트들이 장군과 어떻게 연결돼 있는지 알아내기"
         },
         {
           "text": "Talk to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기와 대화하기"
         },
         {
           "text": "Wait for Lightkeeper to prepare the documents on The Unheard",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기가 언허드에 대한 문서를 준비할 때까지 기다리기"
         }
       ]
     },
@@ -784,48 +953,59 @@
       "objectives": [
         {
           "text": "Talk to Mechanic about the EMP blast",
-          "depth": 0
+          "depth": 0,
+          "ko": "EMP 폭발에 대해 메카닉과 대화하기"
         },
         {
           "text": "Gain access to Mechanic",
           "depth": 1,
+          "ko": "메카닉 거래 해금하기",
           "optional": true
         },
         {
           "text": "Locate and obtain the device fragment",
-          "depth": 0
+          "depth": 0,
+          "ko": "장치 파편을 찾아 획득하기"
         },
         {
           "text": "Hand over the device fragment to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "장치 파편을 메카닉에게 전달하기"
         },
         {
           "text": "Plant the hacking device in the server room in the Lab",
-          "depth": 0
+          "depth": 0,
+          "ko": "연구소 서버실에 해킹 장치 설치하기"
         },
         {
           "text": "Talk to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉과 대화하기"
         },
         {
           "text": "Keep the fragment of Item 1156 for yourself or hand it over to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "Item 1156 파편을 직접 갖거나 메카닉에게 넘기기 (선택의 갈림길)"
         },
         {
           "text": "Find a lead on Item 1156",
-          "depth": 0
+          "depth": 0,
+          "ko": "Item 1156에 대한 단서 찾기"
         },
         {
           "text": "Investigate the Rus Post office",
-          "depth": 0
+          "depth": 0,
+          "ko": "루스 포스트(우체국) 사무소 조사하기"
         },
         {
           "text": "Locate the Rus Post Car",
-          "depth": 0
+          "depth": 0,
+          "ko": "루스 포스트 차량 찾기"
         },
         {
           "text": "Obtain the blueprint for Item 1156",
-          "depth": 0
+          "depth": 0,
+          "ko": "Item 1156의 설계도 획득하기"
         }
       ]
     },
@@ -841,76 +1021,92 @@
       "objectives": [
         {
           "text": "Ask the traders about the underground facility",
-          "depth": 0
+          "depth": 0,
+          "ko": "지하 시설에 대해 트레이더들에게 물어보기"
         },
         {
           "text": "Ask Therapist how to access the underground facility",
           "depth": 1,
+          "ko": "지하 시설에 들어가는 방법을 테라피스트에게 물어보기",
           "optional": true
         },
         {
           "text": "Wait for Jaeger to gather the keycards",
-          "depth": 0
+          "depth": 0,
+          "ko": "예거가 키카드를 모을 때까지 기다리기"
         },
         {
           "text": "Figure out what happened to the BEAR squad",
-          "depth": 0
+          "depth": 0,
+          "ko": "BEAR 분대에 무슨 일이 있었는지 알아내기"
         },
         {
           "text": "Locate the entrance to the underground facility beneath the Health Resort",
           "depth": 1,
+          "ko": "보양소 아래 지하 시설의 입구 찾기",
           "optional": true
         },
         {
           "text": "Access the facility",
           "depth": 1,
+          "ko": "시설에 진입하기",
           "optional": true
         },
         {
           "text": "Locate the traces of the BEAR squad in The Labyrinth",
           "depth": 1,
+          "ko": "미궁에서 BEAR 분대의 흔적 찾기",
           "optional": true
         },
         {
           "text": "Investigate the BEAR squad regroup spot at Item 1156",
           "depth": 1,
+          "ko": "Item 1156 옆 BEAR 분대 집결 지점 조사하기",
           "optional": true
         },
         {
           "text": "Locate the squad leader",
           "depth": 1,
+          "ko": "분대장 찾기",
           "optional": true
         },
         {
           "text": "Gather more information about the squad",
           "depth": 1,
+          "ko": "분대에 대한 추가 정보 모으기",
           "optional": true
         },
         {
           "text": "Investigate the 5 lab staff bodies",
           "depth": 1,
+          "ko": "연구소 직원 시신 5구 조사하기",
           "optional": true
         },
         {
           "text": "Access the locked office",
           "depth": 1,
+          "ko": "잠긴 사무실에 들어가기",
           "optional": true
         },
         {
           "text": "Listen to the audio tape from the office",
-          "depth": 0
+          "depth": 0,
+          "ko": "사무실에서 찾은 오디오 테이프 듣기"
         },
         {
           "text": "Hand over the audio tape to Jaeger",
-          "depth": 0
+          "depth": 0,
+          "ko": "오디오 테이프를 예거에게 전달하기"
         },
         {
           "text": "Read the Labyrinth facility research report",
-          "depth": 0
+          "depth": 0,
+          "ko": "미궁 시설 연구 보고서 읽기"
         },
         {
           "text": "Locate and obtain the Labyrinth facility research report",
           "depth": 1,
+          "ko": "미궁 시설 연구 보고서를 찾아 획득하기",
           "optional": true
         }
       ]
@@ -927,120 +1123,149 @@
       "objectives": [
         {
           "text": "Learn more about The Unheard",
-          "depth": 0
+          "depth": 0,
+          "ko": "언허드에 대해 더 알아내기"
         },
         {
           "text": "Learn more about TerraGroup's activities",
-          "depth": 0
+          "depth": 0,
+          "ko": "테라그룹의 활동에 대해 더 알아내기"
         },
         {
           "text": "Learn more about the \"fuel\" mentioned in the note",
-          "depth": 0
+          "depth": 0,
+          "ko": "쪽지에 언급된 '연료'에 대해 더 알아내기"
         },
         {
           "text": "Find more information about the special catalyst shipment",
-          "depth": 0
+          "depth": 0,
+          "ko": "특수 촉매 수송에 대한 추가 정보 찾기"
         },
         {
           "text": "Locate Rzhevsky's service vehicle and obtain his personal belongings",
-          "depth": 0
+          "depth": 0,
+          "ko": "르제프스키의 업무 차량을 찾아 개인 소지품 획득하기"
         },
         {
           "text": "Retrieve the data from the hard drive in Rzhevsky's car",
-          "depth": 0
+          "depth": 0,
+          "ko": "르제프스키의 차에 있던 하드 드라이브에서 데이터 복원하기"
         },
         {
           "text": "Read the transcript of Rzhevsky's conversation",
-          "depth": 0
+          "depth": 0,
+          "ko": "르제프스키의 대화 녹취록 읽기"
         },
         {
           "text": "Locate and obtain the documents on the Blue Ice fuel catalyst research",
-          "depth": 0
+          "depth": 0,
+          "ko": "'블루 아이스' 연료 촉매 연구 문서를 찾아 획득하기"
         },
         {
           "text": "Find as much information as possible about the plans of The Unheard",
-          "depth": 0
+          "depth": 0,
+          "ko": "언허드의 계획에 대한 정보를 최대한 모으기"
         },
         {
           "text": "Learn more about A.P.'s activities",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 활동에 대해 더 알아내기"
         },
         {
           "text": "Learn more about A.P.'s role",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 역할에 대해 더 알아내기"
         },
         {
           "text": "Search for any mention of A.P. in The Lab",
-          "depth": 0
+          "depth": 0,
+          "ko": "연구소에서 A.P.에 대한 언급 수색하기"
         },
         {
           "text": "Locate A.P.'s room in the Health Resort",
-          "depth": 0
+          "depth": 0,
+          "ko": "보양소에서 A.P.의 방 찾기"
         },
         {
           "text": "Find out which room A.P. was assigned to",
           "depth": 1,
+          "ko": "A.P.가 배정받은 방이 어디인지 알아내기",
           "optional": true
         },
         {
           "text": "Obtain A.P.'s personal belongings",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 개인 소지품 획득하기"
         },
         {
           "text": "Obtain A.P.'s data storage device",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 데이터 저장 장치 획득하기"
         },
         {
           "text": "Decrypt the flash drive from A.P.'s room",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 방에서 찾은 플래시 드라이브 복호화하기"
         },
         {
           "text": "Ask Mechanic for help",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉에게 도움 요청하기"
         },
         {
           "text": "Hand over 5,000,000 Roubles to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "5,000,000루블을 메카닉에게 전달하기"
         },
         {
           "text": "Hand over the A.P. flash drive to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 플래시 드라이브를 메카닉에게 전달하기"
         },
         {
           "text": "Wait for the news from Elektronik",
-          "depth": 0
+          "depth": 0,
+          "ko": "엘렉트로닉의 소식 기다리기"
         },
         {
           "text": "Integrate the tech files from A.P.'s flash drive into a TerraGroup keycard",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P. 플래시 드라이브의 기술 파일을 테라그룹 키카드에 통합하기"
         },
         {
           "text": "Access A.P.'s corporate apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 사택 아파트에 들어가기"
         },
         {
           "text": "Investigate A.P.'s apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 아파트 조사하기"
         },
         {
           "text": "Access the hidden room in A.P.'s apartment",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 아파트에 있는 숨겨진 방에 들어가기"
         },
         {
           "text": "Study the TerraGroup documentation in A.P.'s office",
-          "depth": 0
+          "depth": 0,
+          "ko": "A.P.의 사무실에서 테라그룹 문서 검토하기"
         },
         {
           "text": "Study the role of the Blue Ice catalyst in The Unheard's protocol",
-          "depth": 0
+          "depth": 0,
+          "ko": "언허드의 의식에서 '블루 아이스' 촉매의 역할 검토하기"
         },
         {
           "text": "Learn more about The Unheard's protocol",
-          "depth": 0
+          "depth": 0,
+          "ko": "언허드의 의식 절차에 대해 더 알아내기"
         },
         {
           "text": "Figure out how The Unheard are connected to Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "언허드가 타르코프와 어떻게 연결돼 있는지 알아내기"
         }
       ]
     },
@@ -1056,416 +1281,513 @@
       "objectives": [
         {
           "text": "Find out from traders more about the connection between TerraGroup and Paradigm Shipping/Ask Mechanic where the distress signal came from",
-          "depth": 0
+          "depth": 0,
+          "ko": "테라그룹과 패러다임 시핑의 관계를 트레이더들에게 알아내기 / 조난 신호가 어디서 왔는지 메카닉에게 물어보기"
         },
         {
           "text": "Locate the equipment under the cellular tower on Woods",
-          "depth": 0
+          "depth": 0,
+          "ko": "삼림의 기지국 철탑 아래 장비 찾기"
         },
         {
           "text": "Repair the equipment under the cellular tower on Woods",
-          "depth": 0
+          "depth": 0,
+          "ko": "삼림의 기지국 철탑 아래 장비 수리하기"
         },
         {
           "text": "Report back to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉에게 보고하기"
         },
         {
           "text": "Locate and obtain the Paradigm Shipping documentation",
-          "depth": 0
+          "depth": 0,
+          "ko": "패러다임 시핑 문서를 찾아 획득하기"
         },
         {
           "text": "Tell Mechanic about \"Boreas\"",
-          "depth": 0
+          "depth": 0,
+          "ko": "'보레아스'에 대해 메카닉에게 알리기"
         },
         {
           "text": "Arrange a transport to the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선으로 갈 수송편 마련하기"
         },
         {
           "text": "If you gave the Armored case to Prapor in Falling Skies",
           "depth": 0,
+          "ko": "'추락하는 하늘'에서 장갑 케이스를 프라퍼에게 줬다면",
           "kind": "branch"
         },
         {
           "text": "Hand over the AMG-10 fluid to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "AMG-10 유압유를 프라퍼에게 전달하기"
         },
         {
           "text": "If you kept the Armored case from Prapor in Falling Skies",
           "depth": 0,
+          "ko": "'추락하는 하늘'에서 장갑 케이스를 직접 가졌다면",
           "kind": "branch"
         },
         {
           "text": "Hand over 3 found in raid Military power filters to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 군용 전원 필터 3개를 프라퍼에게 전달하기"
         },
         {
           "text": "Hand over the AMG-10 fluid to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "AMG-10 유압유를 프라퍼에게 전달하기"
         },
         {
           "text": "If you have not completed Falling Skies",
           "depth": 0,
+          "ko": "'추락하는 하늘'을 완료하지 않았다면",
           "kind": "branch"
         },
         {
           "text": "Eliminate any 30 targets on Reserve",
-          "depth": 0
+          "depth": 0,
+          "ko": "리저브에서 아무 적이든 30명 제거하기"
         },
         {
           "text": "Launch a yellow signal flare at the Woods transit on Reserve",
-          "depth": 0
+          "depth": 0,
+          "ko": "리저브의 삼림 방면 트랜짓 지점에서 노란 신호탄 쏘기"
         },
         {
           "text": "Hand over the AMG-10 fluid to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "AMG-10 유압유를 프라퍼에게 전달하기"
         },
         {
           "text": "Find an alternative transport to the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선으로 갈 다른 수송편 찾기"
         },
         {
           "text": "Talk to the BTR Driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "BTR 운전병과 대화하기"
         },
         {
           "text": "If you have completed The Price of Independence",
           "depth": 0,
+          "ko": "'The Price of Independence' 퀘스트를 완료했다면",
           "kind": "branch"
         },
         {
           "text": "Return to the Hideout",
-          "depth": 0
+          "depth": 0,
+          "ko": "은신처로 돌아가기"
         },
         {
           "text": "Return to the BTR Driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "BTR 운전병에게 돌아가기"
         },
         {
           "text": "Tell Mechanic that you found transport to the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선으로 갈 수송편을 찾았다고 메카닉에게 알리기"
         },
         {
           "text": "If you have completed Choose Your Friends Wisely",
           "depth": 0,
+          "ko": "'Choose Your Friends Wisely' 퀘스트를 완료했다면",
           "kind": "branch"
         },
         {
           "text": "Hand over 200 7.62x54mm R BT gzh",
-          "depth": 0
+          "depth": 0,
+          "ko": "7.62x54mm R BT gzh 탄 200발 전달하기"
         },
         {
           "text": "Locate and obtain Skier's reports on Customs",
-          "depth": 0
+          "depth": 0,
+          "ko": "세관에서 스키어의 보고서를 찾아 획득하기"
         },
         {
           "text": "Burn Skier's reports on Customs",
-          "depth": 0
+          "depth": 0,
+          "ko": "세관에서 스키어의 보고서 소각하기"
         },
         {
           "text": "Eliminate any 15 targets at the smugglers' territories",
-          "depth": 0
+          "depth": 0,
+          "ko": "밀수꾼 구역에서 아무 적이든 15명 제거하기"
         },
         {
           "text": "Report back to the BTR Driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "BTR 운전병에게 보고하기"
         },
         {
           "text": "Tell Mechanic that you found transport to the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선으로 갈 수송편을 찾았다고 메카닉에게 알리기"
         },
         {
           "text": "If you have not completed either The Price of Independence or Choose Your Friends Wisely",
           "depth": 0,
+          "ko": "'The Price of Independence'와 'Choose Your Friends Wisely' 둘 다 완료하지 않았다면",
           "kind": "branch"
         },
         {
           "text": "Eliminate any 10 targets at the smugglers' territories",
-          "depth": 0
+          "depth": 0,
+          "ko": "밀수꾼 구역에서 아무 적이든 10명 제거하기"
         },
         {
           "text": "Report back to the BTR Driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "BTR 운전병에게 보고하기"
         },
         {
           "text": "Tell Mechanic that you found transport to the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선으로 갈 수송편을 찾았다고 메카닉에게 알리기"
         },
         {
           "text": "Board the smuggler hovercraft on Shoreline",
-          "depth": 0
+          "depth": 0,
+          "ko": "해안선에서 밀수꾼의 호버크래프트에 탑승하기"
         },
         {
           "text": "Bring 400,000 Roubles to pay for the insertion onto icebreaker",
           "depth": 1,
+          "ko": "쇄빙선 진입 비용 400,000루블 챙겨가기",
           "optional": true
         },
         {
           "text": "Bring a green signal flare",
           "depth": 1,
+          "ko": "초록 신호탄 챙겨가기",
           "optional": true
         },
         {
           "text": "Bring 2,500 Euros to pay for the evacuation from icebreaker",
           "depth": 1,
+          "ko": "쇄빙선 철수 비용 2,500유로 챙겨가기",
           "optional": true
         },
         {
           "text": "Arrive at the Icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선에 도착하기"
         },
         {
           "text": "Check if any crew members survived on the ship",
-          "depth": 0
+          "depth": 0,
+          "ko": "배에 생존한 승조원이 있는지 확인하기"
         },
         {
           "text": "Access the engine room",
-          "depth": 0
+          "depth": 0,
+          "ko": "기관실에 들어가기"
         },
         {
           "text": "Locate and obtain the engine room keycard",
           "depth": 1,
+          "ko": "기관실 키카드를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Reach the engine room",
           "depth": 1,
+          "ko": "기관실에 도달하기",
           "optional": true
         },
         {
           "text": "Find a way into the icebreaker superstructure",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선 상부 구조물로 들어갈 방법 찾기"
         },
         {
           "text": "Ask Mechanic about explosives",
-          "depth": 0
+          "depth": 0,
+          "ko": "폭발물에 대해 메카닉에게 물어보기"
         },
         {
           "text": "Ask Prapor about explosives",
-          "depth": 0
+          "depth": 0,
+          "ko": "폭발물에 대해 프라퍼에게 물어보기"
         },
         {
           "text": "Arrive at the Icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선에 도착하기"
         },
         {
           "text": "Reach the damaged door on the roof of the engine room",
-          "depth": 0
+          "depth": 0,
+          "ko": "기관실 지붕의 파손된 문에 도달하기"
         },
         {
           "text": "Break the chain on the door on the roof of the engine room using the SZ-1 charge",
-          "depth": 0
+          "depth": 0,
+          "ko": "SZ-1 폭약으로 기관실 지붕 문의 사슬 끊기"
         },
         {
           "text": "Enter the icebreaker superstructure from the roof of the engine room",
-          "depth": 0
+          "depth": 0,
+          "ko": "기관실 지붕을 통해 쇄빙선 상부 구조물에 진입하기"
         },
         {
           "text": "Inspect the crew living quarters in the icebreaker superstructure",
           "depth": 1,
+          "ko": "상부 구조물의 승조원 거주 구역 살펴보기",
           "optional": true
         },
         {
           "text": "Find a way to the upper decks of the icebreaker superstructure",
-          "depth": 0
+          "depth": 0,
+          "ko": "상부 구조물의 상층 갑판으로 가는 길 찾기"
         },
         {
           "text": "Ask the surviving scientist how to open the code-locked door on level 6",
-          "depth": 0
+          "depth": 0,
+          "ko": "6층의 코드 잠금 문을 여는 방법을 생존한 과학자에게 물어보기"
         },
         {
           "text": "Ask Mechanic for help with finding the second part of the code for the locked door on level 6",
-          "depth": 0
+          "depth": 0,
+          "ko": "6층 잠금 문 코드의 나머지 절반을 찾도록 메카닉에게 도움 요청하기"
         },
         {
           "text": "Plant the hacking device in the server room in The Lab",
-          "depth": 0
+          "depth": 0,
+          "ko": "연구소 서버실에 해킹 장치 설치하기"
         },
         {
           "text": "Return to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉에게 돌아가기"
         },
         {
           "text": "Arrive at the Icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선에 도착하기"
         },
         {
           "text": "Reach the engine room",
-          "depth": 0
+          "depth": 0,
+          "ko": "기관실에 도달하기"
         },
         {
           "text": "Locate and obtain the engine room keycard",
           "depth": 1,
+          "ko": "기관실 키카드를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Reach the damaged door on the roof of the engine room",
-          "depth": 0
+          "depth": 0,
+          "ko": "기관실 지붕의 파손된 문에 도달하기"
         },
         {
           "text": "After completing Stick to It",
           "depth": 0,
+          "ko": "'Stick to It' 완료 후",
           "kind": "branch"
         },
         {
           "text": "Return to the BTR driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "BTR 운전병에게 돌아가기"
         },
         {
           "text": "After completing A Bitter Victory",
           "depth": 0,
+          "ko": "'A Bitter Victory' 완료 후",
           "kind": "branch"
         },
         {
           "text": "Return to the BTR driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "BTR 운전병에게 돌아가기"
         },
         {
           "text": "Break the chain on the door on the roof of the engine room using the SZ-1 charge",
-          "depth": 0
+          "depth": 0,
+          "ko": "SZ-1 폭약으로 기관실 지붕 문의 사슬 끊기"
         },
         {
           "text": "Reach the code-locked door",
-          "depth": 0
+          "depth": 0,
+          "ko": "코드 잠금 문에 도달하기"
         },
         {
           "text": "Use the correct access code",
-          "depth": 0
+          "depth": 0,
+          "ko": "올바른 출입 코드 입력하기"
         },
         {
           "text": "Locate compartment C-1",
-          "depth": 0
+          "depth": 0,
+          "ko": "C-1 구획 찾기"
         },
         {
           "text": "Locate and obtain the keycard with access to compartment C-1",
           "depth": 1,
+          "ko": "C-1 구획 출입 키카드를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Locate the entrance to the bridge",
           "depth": 1,
+          "ko": "함교 입구 찾기",
           "optional": true
         },
         {
           "text": "Locate an alternative path to the bridge",
           "depth": 1,
+          "ko": "함교로 가는 우회 경로 찾기",
           "optional": true
         },
         {
           "text": "Reach the upper decks",
-          "depth": 0
+          "depth": 0,
+          "ko": "상층 갑판에 도달하기"
         },
         {
           "text": "Thaw the hatch on the roof of the bridge",
-          "depth": 0
+          "depth": 0,
+          "ko": "함교 지붕의 해치 녹이기"
         },
         {
           "text": "Find something to thaw the hatch on the roof of the bridge",
           "depth": 1,
+          "ko": "함교 지붕 해치를 녹일 도구 찾기",
           "optional": true
         },
         {
           "text": "Rescue the icebreaker captain",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선 선장 구출하기"
         },
         {
           "text": "Access Compartment C-1",
-          "depth": 0
+          "depth": 0,
+          "ko": "C-1 구획에 들어가기"
         },
         {
           "text": "Search the shelves in compartment C-1",
-          "depth": 0
+          "depth": 0,
+          "ko": "C-1 구획의 선반 수색하기"
         },
         {
           "text": "Search the area near the workstation in compartment C-1",
-          "depth": 0
+          "depth": 0,
+          "ko": "C-1 구획의 워크스테이션 주변 수색하기"
         },
         {
           "text": "Search the servers in compartment C-1",
-          "depth": 0
+          "depth": 0,
+          "ko": "C-1 구획의 서버 수색하기"
         },
         {
           "text": "Ask Mechanic for help decoding the hard drives from the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선에서 가져온 하드 드라이브 해독을 메카닉에게 요청하기"
         },
         {
           "text": "Hand over 3 found in raid Ultralink satellite modules to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 울트라링크 위성 통신 모듈 3개를 메카닉에게 전달하기"
         },
         {
           "text": "Locate and obtain Ultralink satellite modules on the icebreaker",
           "depth": 1,
+          "ko": "쇄빙선에서 울트라링크 위성 통신 모듈을 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Hand over 4 found in raid server RAM modules to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 서버 RAM 모듈 4개를 메카닉에게 전달하기"
         },
         {
           "text": "Locate and obtain the server RAM modules on the icebreaker",
           "depth": 1,
+          "ko": "쇄빙선에서 서버 RAM 모듈을 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Hand over 2 found in raid cryptographic processors to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "레이드 획득(FIR) 암호화 프로세서 2개를 메카닉에게 전달하기"
         },
         {
           "text": "Locate and obtain the cryptographic processors on the icebreaker",
           "depth": 1,
+          "ko": "쇄빙선에서 암호화 프로세서를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Analyse the data from the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선에서 가져온 데이터 분석하기"
         },
         {
           "text": "Inform the scientist about the captain's death",
-          "depth": 0
+          "depth": 0,
+          "ko": "선장의 죽음을 과학자에게 알리기"
         },
         {
           "text": "Ask the BTR driver if he can help evacuate the scientist from the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "과학자를 쇄빙선에서 철수시킬 수 있는지 BTR 운전병에게 물어보기"
         },
         {
           "text": "Eliminate 20 targets on the icebreaker",
-          "depth": 0
+          "depth": 0,
+          "ko": "쇄빙선에서 적 20명 제거하기"
         },
         {
           "text": "Hand over 5 respirators to the BTR driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "호흡기(레스피레이터) 5개를 BTR 운전병에게 전달하기"
         },
         {
           "text": "Obtain respirators for the BTR driver",
           "depth": 1,
+          "ko": "BTR 운전병에게 줄 호흡기 구하기",
           "optional": true
         },
         {
           "text": "Hand over 2 class 5 or higher ballistic plates to the BTR driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "5클래스 이상 방탄판 2개를 BTR 운전병에게 전달하기"
         },
         {
           "text": "Obtain class 5+ ballistic plates for the BTR driver",
           "depth": 1,
+          "ko": "BTR 운전병에게 줄 5클래스 이상 방탄판 구하기",
           "optional": true
         },
         {
           "text": "Hand over the Kirasa-N body armor to the BTR driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "키라사-N 방탄복을 BTR 운전병에게 전달하기"
         },
         {
           "text": "Obtain the Kirasa-N body armor for the BTR driver",
           "depth": 1,
+          "ko": "BTR 운전병에게 줄 키라사-N 방탄복 구하기",
           "optional": true
         },
         {
           "text": "Inform the scientist that everything is ready for his evacuation",
-          "depth": 0
+          "depth": 0,
+          "ko": "철수 준비가 끝났다고 과학자에게 알리기"
         },
         {
           "text": "Ask the BTR driver how the scientist's rescue went",
-          "depth": 0
+          "depth": 0,
+          "ko": "과학자 구출이 어떻게 됐는지 BTR 운전병에게 물어보기"
         }
       ]
     },
@@ -1481,707 +1803,866 @@
       "objectives": [
         {
           "text": "Obtain Intelligence Center level 1",
-          "depth": 0
+          "depth": 0,
+          "ko": "은신처 정보센터 1레벨 건설하기"
         },
         {
           "text": "Talk to Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만과 대화하기"
         },
         {
           "text": "Wait for Mr. Kerman to reach out",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만의 연락 기다리기"
         },
         {
           "text": "Talk to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼와 대화하기"
         },
         {
           "text": "Talk to Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만과 대화하기"
         },
         {
           "text": "If the Armored case was given to Prapor in Falling Skies",
           "depth": 0,
+          "ko": "'추락하는 하늘'에서 장갑 케이스를 프라퍼에게 줬다면",
           "kind": "branch"
         },
         {
           "text": "Locate the camp of Prapor's people on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대에서 프라퍼 부하들의 캠프 찾기"
         },
         {
           "text": "Find any clues about Prapor's people's intentions",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼 부하들의 의도에 대한 단서 찾기"
         },
         {
           "text": "Talk to Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만과 대화하기"
         },
         {
           "text": "Talk to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기와 대화하기"
         },
         {
           "text": "Gain access to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기 거래 해금하기"
         },
         {
           "text": "Stay on good terms with Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기와 좋은 관계 유지하기"
         },
         {
           "text": "Obtain 3 TerraGroup \"Blue Folders\" materials",
-          "depth": 0
+          "depth": 0,
+          "ko": "테라그룹 '파란 폴더' 자료 3개 획득하기"
         },
         {
           "text": "Bring the found items to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "찾은 물건들을 등대지기에게 가져가기"
         },
         {
           "text": "Launch a yellow signal flare in front of ULTRA's main entrance on Interchange",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터체인지 울트라 몰 정문 앞에서 노란 신호탄 쏘기"
         },
         {
           "text": "Eliminate any 15 targets in one raid on Interchange",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터체인지에서 한 레이드에 아무 적이든 15명 제거하기"
         },
         {
           "text": "Talk to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기와 대화하기"
         },
         {
           "text": "Once you have the case",
           "depth": 0,
+          "ko": "케이스를 손에 넣었다면",
           "kind": "branch"
         },
         {
           "text": "Unlock the armored case",
-          "depth": 0
+          "depth": 0,
+          "ko": "장갑 케이스 잠금 해제하기"
         },
         {
           "text": "Obtain the \"Ticket\"",
-          "depth": 0
+          "depth": 0,
+          "ko": "'티켓' 획득하기"
         },
         {
           "text": "Ask Mechanic for help",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉에게 도움 요청하기"
         },
         {
           "text": "Obtain the Experimental signal jammer",
-          "depth": 0
+          "depth": 0,
+          "ko": "실험용 신호 교란기 획득하기"
         },
         {
           "text": "Gain access to The Lab",
           "depth": 1,
+          "ko": "연구소 진입 수단 확보하기",
           "optional": true
         },
         {
           "text": "Obtain the TerraGroup Labs access keycard",
           "depth": 1,
+          "ko": "테라그룹 연구소 출입 키카드 획득하기",
           "optional": true
         },
         {
           "text": "Use the Experimental signal jammer to unlock the case",
-          "depth": 0
+          "depth": 0,
+          "ko": "실험용 신호 교란기로 케이스 잠금 해제하기"
         },
         {
           "text": "Read the instructions from the armored case",
-          "depth": 0
+          "depth": 0,
+          "ko": "장갑 케이스에서 나온 설명서 읽기"
         },
         {
           "text": "Contact Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만에게 연락하기"
         },
         {
           "text": "If you accept Mr. Kerman's offer",
           "depth": 0,
+          "ko": "Mr. 케르만의 제안을 수락하면 (구원자·채무자·타락자 엔딩 방향)",
           "kind": "branch"
         },
         {
           "text": "Accept Mr. Kerman's offer",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만의 제안 수락하기"
         },
         {
           "text": "Activate the RFID card from the case",
-          "depth": 0
+          "depth": 0,
+          "ko": "케이스에서 나온 RFID 카드 활성화하기"
         },
         {
           "text": "Obtain Solar Power level 1",
           "depth": 1,
+          "ko": "은신처 태양광 발전기 1레벨 건설하기",
           "optional": true
         },
         {
           "text": "Obtain a Blank RFID keycard",
           "depth": 1,
+          "ko": "공(blank) RFID 키카드 획득하기",
           "optional": true
         },
         {
           "text": "Obtain the Laboratory master pass",
-          "depth": 0
+          "depth": 0,
+          "ko": "연구소 마스터 패스 획득하기"
         },
         {
           "text": "Use the Laboratory master pass to activate Kruglov's keycard",
-          "depth": 0
+          "depth": 0,
+          "ko": "연구소 마스터 패스로 크루글로프의 키카드 활성화하기"
         },
         {
           "text": "Gain access to The Lab",
           "depth": 1,
+          "ko": "연구소 진입 수단 확보하기",
           "optional": true
         },
         {
           "text": "Obtain an RFID card encryption device",
-          "depth": 0
+          "depth": 0,
+          "ko": "RFID 카드 암호화 장치 획득하기"
         },
         {
           "text": "Talk to Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만과 대화하기"
         },
         {
           "text": "Talk to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉과 대화하기"
         },
         {
           "text": "Wait for a response from Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "메카닉의 답신 기다리기"
         },
         {
           "text": "Hand over 40 Physical Bitcoins to Mechanic",
-          "depth": 0
+          "depth": 0,
+          "ko": "실물 비트코인 40개를 메카닉에게 전달하기"
         },
         {
           "text": "Obtain Bitcoin Farm level 1",
           "depth": 1,
+          "ko": "은신처 비트코인 채굴 시설 1레벨 건설하기",
           "optional": true
         },
         {
           "text": "Obtain 40 Physical Bitcoins to pay for Elektronik's services",
           "depth": 1,
+          "ko": "엘렉트로닉에게 지불할 실물 비트코인 40개 모으기",
           "optional": true
         },
         {
           "text": "Collect the RFID card encryption device to activate Kruglov's keycard",
-          "depth": 0
+          "depth": 0,
+          "ko": "크루글로프의 키카드를 활성화할 RFID 카드 암호화 장치 수령하기"
         },
         {
           "text": "Gain access to Streets of Tarkov",
           "depth": 1,
+          "ko": "타르코프 시내 진입 수단 확보하기",
           "optional": true
         },
         {
           "text": "Access Kruglov's apartment on Streets of Tarkov",
           "depth": 1,
+          "ko": "타르코프 시내의 크루글로프 아파트에 들어가기",
           "optional": true
         },
         {
           "text": "Arrive at the entrance pathway to the port Terminal",
-          "depth": 0
+          "depth": 0,
+          "ko": "항만 터미널 진입로에 도착하기"
         },
         {
           "text": "Swipe the keycard at the intercom reader",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터컴 단말기에 키카드 인식시키기"
         },
         {
           "text": "If you refuse Mr. Kerman's offer",
           "depth": 0,
+          "ko": "Mr. 케르만의 제안을 거절하면 (생존자 엔딩 방향)",
           "kind": "branch"
         },
         {
           "text": "Arrive at the entrance pathway to the port Terminal",
-          "depth": 0
+          "depth": 0,
+          "ko": "항만 터미널 진입로에 도착하기"
         },
         {
           "text": "Swipe the keycard at the intercom reader",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터컴 단말기에 키카드 인식시키기"
         },
         {
           "text": "Talk to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼와 대화하기"
         },
         {
           "text": "If you gave the Armored case to Prapor in Falling Skies",
           "depth": 0,
+          "ko": "'추락하는 하늘'에서 장갑 케이스를 프라퍼에게 줬다면",
           "kind": "branch"
         },
         {
           "text": "Hand over the cash to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼에게 현금 전달하기"
         },
         {
           "text": "Collect the required amount in RUB: 300,000,000",
           "depth": 1,
+          "ko": "필요한 금액 모으기 — 300,000,000루블",
           "optional": true
         },
         {
           "text": "If you kept the Armored case from Prapor in Falling Skies",
           "depth": 0,
+          "ko": "'추락하는 하늘'에서 장갑 케이스를 직접 가졌다면",
           "kind": "branch"
         },
         {
           "text": "Hand over the cash to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼에게 현금 전달하기"
         },
         {
           "text": "Collect the required amount in RUB: 500,000,000",
           "depth": 1,
+          "ko": "필요한 금액 모으기 — 500,000,000루블",
           "optional": true
         },
         {
           "text": "Complete all Prapor's tasks in time",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼의 과제를 기한 안에 모두 완료하기"
         },
         {
           "text": "Convert the evidence folders to digital format and save them to an SSD",
-          "depth": 1
+          "depth": 1,
+          "ko": "증거 폴더를 디지털로 변환해 SSD에 저장하기"
         },
         {
           "text": "Obtain the item: Folder with TerraGroup Labs evidence (Reports)",
           "depth": 2,
+          "ko": "아이템 획득: 테라그룹 연구소 증거 폴더 (보고서)",
           "optional": true
         },
         {
           "text": "Obtain the item: Folder with TerraGroup evidence (Staff)",
           "depth": 2,
+          "ko": "아이템 획득: 테라그룹 증거 폴더 (인사)",
           "optional": true
         },
         {
           "text": "Obtain the item: Folder with TerraGroup Labs evidence (Developments)",
           "depth": 2,
+          "ko": "아이템 획득: 테라그룹 연구소 증거 폴더 (개발)",
           "optional": true
         },
         {
           "text": "Obtain the item: Folder with TerraGroup evidence (Finances)",
           "depth": 2,
+          "ko": "아이템 획득: 테라그룹 증거 폴더 (재정)",
           "optional": true
         },
         {
           "text": "Eliminate any 50 targets on Streets of Tarkov",
-          "depth": 1
+          "depth": 1,
+          "ko": "타르코프 시내에서 아무 적이든 50명 제거하기"
         },
         {
           "text": "Eliminate 4 PMC operatives in one raid",
-          "depth": 1
+          "depth": 1,
+          "ko": "한 레이드에 PMC 요원 4명 제거하기"
         },
         {
           "text": "Report to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼에게 보고하기"
         },
         {
           "text": "Only if you fail to complete Prapor's tasks in time",
           "depth": 0,
+          "ko": "프라퍼의 과제를 기한 안에 못 끝냈을 때만",
           "kind": "branch"
         },
         {
           "text": "Hand over Secure container Kappa to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "보안 컨테이너 카파를 프라퍼에게 전달하기"
         },
         {
           "text": "If you accept Mr. Kerman's offer and agree to find evidence on TerraGroup",
           "depth": 0,
+          "ko": "케르만의 제안을 수락하고 테라그룹 증거 수집에 동의하면 (구원자·채무자 엔딩 방향)",
           "kind": "branch"
         },
         {
           "text": "Talk to Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만과 대화하기"
         },
         {
           "text": "Agree to find dirt on TerraGroup for Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만을 위해 테라그룹의 비리를 캐는 데 동의하기"
         },
         {
           "text": "Obtain Intelligence Center level 3",
-          "depth": 0
+          "depth": 0,
+          "ko": "은신처 정보센터 3레벨 건설하기"
         },
         {
           "text": "Deliver the 8 major TerraGroup evidence to Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "테라그룹 주요 증거 8개를 Mr. 케르만에게 전달하기"
         },
         {
           "text": "Deliver the 36 minor TerraGroup evidence to Mr. Kerman",
           "depth": 1,
+          "ko": "테라그룹 보조 증거 36개를 Mr. 케르만에게 전달하기",
           "optional": true
         },
         {
           "text": "Negotiate with Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만과 협상하기"
         },
         {
           "text": "Confirm with Mr. Kerman that all the evidence has been delivered",
-          "depth": 0
+          "depth": 0,
+          "ko": "증거를 전부 전달했음을 Mr. 케르만에게 확인받기"
         },
         {
           "text": "Wait for Mr. Kerman's trusted contact to get in touch",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만이 신뢰하는 연락책의 접촉 기다리기"
         },
         {
           "text": "Talk to Fence",
-          "depth": 0
+          "depth": 0,
+          "ko": "펜스와 대화하기"
         },
         {
           "text": "Reach 4.0 reputation with Fence",
-          "depth": 0
+          "depth": 0,
+          "ko": "펜스 평판 4.0 달성하기"
         },
         {
           "text": "Complete Fence's assignments",
-          "depth": 0
+          "depth": 0,
+          "ko": "펜스의 과제 완료하기"
         },
         {
           "text": "Keep the standing with Fence above 4.0",
-          "depth": 0
+          "depth": 0,
+          "ko": "펜스 평판을 4.0 이상으로 유지하기"
         },
         {
           "text": "Extract through the Friendship Bridge (Co-Op) on Woods",
-          "depth": 0
+          "depth": 0,
+          "ko": "삼림의 우정의 다리(협동) 탈출구로 탈출하기"
         },
         {
           "text": "Note: The objective in the PvE mode is to eliminate 5 PMC operatives on Interchange in one raid without killing Scavs instead.",
           "depth": 0,
+          "ko": "참고: PvE 모드에서는 이 목표 대신 인터체인지에서 스캐브를 죽이지 않고 한 레이드에 PMC 5명을 제거해야 합니다.",
           "kind": "note"
         },
         {
           "text": "Extract through the Scav Lands (Co-Op) on Reserve",
-          "depth": 0
+          "depth": 0,
+          "ko": "리저브의 스캐브 랜드(협동) 탈출구로 탈출하기"
         },
         {
           "text": "Note: The objective in the PvE mode is to eliminate 5 PMC operatives on Shoreline in one raid without killing Scavs instead.",
           "depth": 0,
+          "ko": "참고: PvE 모드에서는 이 목표 대신 해안선에서 스캐브를 죽이지 않고 한 레이드에 PMC 5명을 제거해야 합니다.",
           "kind": "note"
         },
         {
           "text": "Reach 0.4 standing with BTR Driver",
-          "depth": 0
+          "depth": 0,
+          "ko": "BTR 운전병 평판 0.4 달성하기"
         },
         {
           "text": "Tell Fence that the assignment is complete",
-          "depth": 0
+          "depth": 0,
+          "ko": "과제를 끝냈다고 펜스에게 알리기"
         },
         {
           "text": "Obtain Solar Power level 1",
-          "depth": 0
+          "depth": 0,
+          "ko": "은신처 태양광 발전기 1레벨 건설하기"
         },
         {
           "text": "If you accept Mr. Kerman's offer and agree to find evidence on TerraGroup, but refuse to hand in more than 2 major evidence",
           "depth": 0,
+          "ko": "케르만의 제안을 수락하고 증거 수집에 동의했지만, 주요 증거를 2개 이하로만 넘기면 (채무자 엔딩 방향)",
           "kind": "branch"
         },
         {
           "text": "Ask the traders how to leave Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "타르코프를 떠나는 방법을 트레이더들에게 물어보기"
         },
         {
           "text": "Hand over the military flash drive with compiled data to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "취합한 데이터가 담긴 군용 플래시 드라이브를 등대지기에게 전달하기"
         },
         {
           "text": "Record the compiled data to a military flash drive",
           "depth": 1,
+          "ko": "취합한 데이터를 군용 플래시 드라이브에 기록하기",
           "optional": true
         },
         {
           "text": "Obtain the topographic intel documents on Lighthouse",
           "depth": 1,
+          "ko": "등대에서 지형 정보 문서 획득하기",
           "optional": true
         },
         {
           "text": "Obtain the topographic intel documents on Woods",
           "depth": 1,
+          "ko": "삼림에서 지형 정보 문서 획득하기",
           "optional": true
         },
         {
           "text": "Obtain the topographic intel documents on Customs",
           "depth": 1,
+          "ko": "세관에서 지형 정보 문서 획득하기",
           "optional": true
         },
         {
           "text": "Obtain the topographic intel documents on Ground Zero",
           "depth": 1,
+          "ko": "그라운드 제로에서 지형 정보 문서 획득하기",
           "optional": true
         },
         {
           "text": "Obtain the topographic intel documents on Factory",
           "depth": 1,
+          "ko": "공장에서 지형 정보 문서 획득하기",
           "optional": true
         },
         {
           "text": "Eliminate 30 PMCs on Woods",
-          "depth": 0
+          "depth": 0,
+          "ko": "삼림에서 PMC 30명 제거하기"
         },
         {
           "text": "Hand over 100 PMC dogtags to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "PMC 인식표 100개를 등대지기에게 전달하기"
         },
         {
           "text": "Obtain 100 PMC dogtags",
           "depth": 1,
+          "ko": "PMC 인식표 100개 모으기",
           "optional": true
         },
         {
           "text": "Stash the first amulet in the marked room on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "첫 번째 부적을 등대의 마킹룸에 넣어 두기"
         },
         {
           "text": "Obtain the amulet from the marked room on Customs",
           "depth": 1,
+          "ko": "세관의 마킹룸에서 부적 획득하기",
           "optional": true
         },
         {
           "text": "Stash the second amulet in the marked room on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "두 번째 부적을 등대의 마킹룸에 넣어 두기"
         },
         {
           "text": "Obtain the amulet from the first marked room on Streets of Tarkov",
           "depth": 1,
+          "ko": "타르코프 시내의 첫 번째 마킹룸에서 부적 획득하기",
           "optional": true
         },
         {
           "text": "Stash the third amulet in the marked room on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "세 번째 부적을 등대의 마킹룸에 넣어 두기"
         },
         {
           "text": "Obtain the amulet from the second marked room on Streets of Tarkov",
           "depth": 1,
+          "ko": "타르코프 시내의 두 번째 마킹룸에서 부적 획득하기",
           "optional": true
         },
         {
           "text": "Stash the fourth amulet in the marked room on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "네 번째 부적을 등대의 마킹룸에 넣어 두기"
         },
         {
           "text": "Obtain the amulet from the first marked room on Reserve",
           "depth": 1,
+          "ko": "리저브의 첫 번째 마킹룸에서 부적 획득하기",
           "optional": true
         },
         {
           "text": "Stash the fifth amulet in the marked room on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "다섯 번째 부적을 등대의 마킹룸에 넣어 두기"
         },
         {
           "text": "Obtain the amulet from the second marked room on Reserve",
           "depth": 1,
+          "ko": "리저브의 두 번째 마킹룸에서 부적 획득하기",
           "optional": true
         },
         {
           "text": "Stash the sixth amulet in the marked room on Lighthouse",
-          "depth": 0
+          "depth": 0,
+          "ko": "여섯 번째 부적을 등대의 마킹룸에 넣어 두기"
         },
         {
           "text": "Obtain the amulet from the third marked room on Reserve",
           "depth": 1,
+          "ko": "리저브의 세 번째 마킹룸에서 부적 획득하기",
           "optional": true
         },
         {
           "text": "Report to Lightkeeper",
-          "depth": 0
+          "depth": 0,
+          "ko": "등대지기에게 보고하기"
         },
         {
           "text": "If you accept Mr. Kerman's offer and refuse to find evidence on TerraGroup",
           "depth": 0,
+          "ko": "케르만의 제안을 수락하되 테라그룹 증거 수집은 거절하면 (타락자 엔딩 방향)",
           "kind": "branch"
         },
         {
           "text": "Talk to Mr. Kerman",
-          "depth": 0
+          "depth": 0,
+          "ko": "Mr. 케르만과 대화하기"
         },
         {
           "text": "Ask the traders how to leave Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "타르코프를 떠나는 방법을 트레이더들에게 물어보기"
         },
         {
           "text": "If you kept the Armored case from Prapor in Falling Skies",
           "depth": 0,
+          "ko": "'추락하는 하늘'에서 장갑 케이스를 직접 가졌다면",
           "kind": "branch"
         },
         {
           "text": "Complete Prapor's tasks",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼의 과제 완료하기"
         },
         {
           "text": "Hand over any military or advanced electronics to Prapor",
-          "depth": 1
+          "depth": 1,
+          "ko": "군용/고급 전자장비 아무거나 프라퍼에게 전달하기"
         },
         {
           "text": "Obtain any 50 military or advanced electronics",
           "depth": 2,
+          "ko": "군용/고급 전자장비 아무거나 50개 모으기",
           "optional": true
         },
         {
           "text": "Hand over Secure container Theta, Epsilon or Kappa to Prapor",
-          "depth": 1
+          "depth": 1,
+          "ko": "보안 컨테이너 세타·엡실론·카파 중 하나를 프라퍼에게 전달하기"
         },
         {
           "text": "Obtain Secure container Kappa",
           "depth": 2,
+          "ko": "보안 컨테이너 카파 획득하기",
           "optional": true
         },
         {
           "text": "Obtain Secure container Epsilon",
           "depth": 2,
+          "ko": "보안 컨테이너 엡실론 획득하기",
           "optional": true
         },
         {
           "text": "Obtain Secure container Theta",
           "depth": 2,
+          "ko": "보안 컨테이너 세타 획득하기",
           "optional": true
         },
         {
           "text": "Hand over 40 weapon and armor repair kits to Prapor",
-          "depth": 1
+          "depth": 1,
+          "ko": "무기/방어구 수리 키트 40개를 프라퍼에게 전달하기"
         },
         {
           "text": "Obtain 40 weapon and armor repair kits with full durability",
           "depth": 2,
+          "ko": "내구도 100%짜리 무기/방어구 수리 키트 40개 모으기",
           "optional": true
         },
         {
           "text": "After the completion of Prapor's tasks OR if you gave the Armored case to Prapor in Falling Skies",
           "depth": 0,
+          "ko": "프라퍼의 과제를 끝냈거나, '추락하는 하늘'에서 장갑 케이스를 프라퍼에게 줬다면",
           "kind": "branch"
         },
         {
           "text": "Hand over Case with dangerous cargo to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "위험 화물 케이스를 프라퍼에게 전달하기"
         },
         {
           "text": "Locate and obtain the Case with dangerous cargo",
           "depth": 1,
+          "ko": "위험 화물 케이스를 찾아 획득하기",
           "optional": true
         },
         {
           "text": "Report to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼에게 보고하기"
         },
         {
           "text": "Hand over 1,000,000 Dollars to Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "1,000,000달러를 프라퍼에게 전달하기"
         },
         {
           "text": "Collect the required amount in USD: 1,000,000",
           "depth": 1,
+          "ko": "필요한 금액 모으기 — 1,000,000달러",
           "optional": true
         },
         {
           "text": "Wait for the info from Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼의 정보 기다리기"
         },
         {
           "text": "Collect the updated hash codes from Prapor",
-          "depth": 0
+          "depth": 0,
+          "ko": "프라퍼에게서 갱신된 해시 코드 수령하기"
         },
         {
           "text": "Obtain Solar Power level 1",
-          "depth": 0
+          "depth": 0,
+          "ko": "은신처 태양광 발전기 1레벨 건설하기"
         },
         {
           "text": "Identical for all endings",
           "depth": 0,
+          "ko": "모든 엔딩 공통",
           "kind": "branch"
         },
         {
           "text": "Arrive at the entrance pathway to the port Terminal",
-          "depth": 0
+          "depth": 0,
+          "ko": "항만 터미널 진입로에 도착하기"
         },
         {
           "text": "Bring the Reprogrammed RFID keycard with Mr. Kerman's hash codes",
           "depth": 1,
+          "ko": "Mr. 케르만의 해시 코드로 재프로그래밍한 RFID 키카드 챙겨가기",
           "optional": true
         },
         {
           "text": "Bring the Reprogrammed RFID keycard with Prapor's hash codes",
           "depth": 1,
+          "ko": "프라퍼의 해시 코드로 재프로그래밍한 RFID 키카드 챙겨가기",
           "optional": true
         },
         {
           "text": "Bring the RFID keycard with unknown name",
           "depth": 1,
+          "ko": "이름 미상의 RFID 키카드 챙겨가기",
           "optional": true
         },
         {
           "text": "Bring the Prapor's letter for the port checkpoint",
           "depth": 1,
+          "ko": "항만 검문소에 보일 프라퍼의 서신 챙겨가기",
           "optional": true
         },
         {
           "text": "Swipe the keycard at the intercom reader",
-          "depth": 0
+          "depth": 0,
+          "ko": "인터컴 단말기에 키카드 인식시키기"
         },
         {
           "text": "Access the port Terminal",
-          "depth": 0
+          "depth": 0,
+          "ko": "항만 터미널에 진입하기"
         },
         {
           "text": "Bring the Secure container Alpha-1 with TerraGroup evidence",
           "depth": 1,
+          "ko": "테라그룹 증거가 든 보안 컨테이너 알파-1 챙겨가기",
           "optional": true
         },
         {
           "text": "Pass the security check",
-          "depth": 0
+          "depth": 0,
+          "ko": "보안 검문 통과하기"
         },
         {
           "text": "Escape from Tarkov",
-          "depth": 0
+          "depth": 0,
+          "ko": "타르코프에서 탈출하기"
         },
         {
           "text": "Locate the armory with the confiscated equipment",
           "depth": 1,
+          "ko": "압수된 장비가 보관된 무기고 찾기",
           "optional": true
         },
         {
           "text": "Retrieve the Secure container Alpha-1",
           "depth": 1,
+          "ko": "보안 컨테이너 알파-1 회수하기",
           "optional": true
         },
         {
           "text": "Obtain the keycard to unlock the service passage",
           "depth": 1,
+          "ko": "업무용 통로를 여는 키카드 획득하기",
           "optional": true
         },
         {
           "text": "Locate the exit leading to the Terminal loading zone",
           "depth": 1,
+          "ko": "터미널 하역장으로 통하는 출구 찾기",
           "optional": true
         },
         {
           "text": "Unlock the service passage inside the seaport building",
           "depth": 1,
+          "ko": "항만 건물 안의 업무용 통로 잠금 해제하기",
           "optional": true
         },
         {
           "text": "Access the Terminal loading zone",
           "depth": 1,
+          "ko": "터미널 하역장에 진입하기",
           "optional": true
         },
         {
           "text": "Locate the way into the fuel depot",
           "depth": 1,
+          "ko": "연료 저장소로 들어가는 길 찾기",
           "optional": true
         },
         {
           "text": "Figure out how to restore power to the pumping station",
           "depth": 1,
+          "ko": "양수장 전원을 복구할 방법 알아내기",
           "optional": true
         },
         {
           "text": "Obtain the diagram of the electrical panels",
           "depth": 1,
+          "ko": "배전반 도면 획득하기",
           "optional": true
         },
         {
           "text": "Drain the water in the pumping station",
           "depth": 1,
+          "ko": "양수장의 물 빼내기",
           "optional": true
         },
         {
           "text": "Obtain the key to the gate blocking the road to the pier",
           "depth": 1,
+          "ko": "부두로 가는 길을 막은 정문 열쇠 획득하기",
           "optional": true
         },
         {
           "text": "Locate the exit leading to the pier",
           "depth": 1,
+          "ko": "부두로 통하는 출구 찾기",
           "optional": true
         },
         {
           "text": "Reach the evacuation area at the pier",
           "depth": 1,
+          "ko": "부두의 철수 지점에 도달하기",
           "optional": true
         }
       ]

@@ -1,0 +1,220 @@
+{
+  "slug": "the-labyrinth",
+  "nameKo": "미궁",
+  "nameEn": "The Labyrinth",
+  "sections": [
+    {
+      "title": "예거(Jaeger)와 대화하기",
+      "titleEn": "Speak to Jaeger",
+      "body": "거래 화면의 트레이더 메뉴에서 예거를 찾아가 지하 시설에 대해 물어보면 됩니다.",
+      "images": []
+    },
+    {
+      "title": "예거가 키카드를 모을 때까지 기다리기",
+      "titleEn": "Wait for Jaeger to gather the keycards",
+      "body": "24~48시간 기다린 후 거래 화면의 트레이더 메뉴에서 예거를 찾아가 미궁에 대해 물어보세요. 대화를 마치면 예거가 게임 내 우편으로 미궁 출입용 키카드 2장을 보내주며, 추가 키카드는 교환으로 구할 수 있습니다.",
+      "images": []
+    },
+    {
+      "title": "지하 시설에 진입하기",
+      "titleEn": "Access the underground facility",
+      "body": "미궁은 해안선(Shoreline)에서 환승(transit)을 통해서만 출입할 수 있으며, 환승 지점은 보양소(Health Resort) 서쪽 동(서윙) 지하에 있습니다. 진입하려면 Knossos LLC 시설 키가 필요합니다. 참고: 이 위치는 독특한 특징이 있으니 첫 방문 전에 반드시 관련 정보를 숙지하세요.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Vitamins1_Shoreline_outdoor_map.png/revision/latest/scale-to-width-down/640?cb=20241020215322",
+          "caption": "보양소 서쪽 동 위치가 지도에 표시됨"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/be/The_Labyrinth_Transit_Map.png/revision/latest/scale-to-width-down/640?cb=20250328020348",
+          "caption": "서쪽 동 지하 환승 위치가 지도에 표시됨"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/The_Labyrinth_Transit_Door.png/revision/latest/scale-to-width-down/640?cb=20251012162826",
+          "caption": "환승 출입문"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/The_Labyrinth_Transit.png/revision/latest/scale-to-width-down/640?cb=20251012163024",
+          "caption": "환승 구역"
+        }
+      ]
+    },
+    {
+      "title": "BEAR 분대의 흔적 찾기",
+      "titleEn": "Locate the traces of the BEAR squad",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Leshy's orders]] · Leshy의 명령서 · 1 · 필수 · 있음\n\n이 목표를 달성하려면 Leshy의 명령서를 찾아야 합니다. 명령서는 스폰 챔버 2 앞 바닥에 있는 식품 컨테이너 안에서 획득할 수 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c3/Leshy%27s_orders_icon.png/revision/latest?cb=20260202231616",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4c/Leshy%27s_orders_location_map.png/revision/latest/scale-to-width-down/640?cb=20260202202531",
+          "caption": "지도에 위치 표시됨"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/ba/Leshy%27s_orders_location_far.png/revision/latest/scale-to-width-down/640?cb=20260202202300",
+          "caption": "식품 컨테이너 안 명령서 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1c/Leshy%27s_orders_location_close.png/revision/latest/scale-to-width-down/640?cb=20260202202249",
+          "caption": "명령서"
+        }
+      ]
+    },
+    {
+      "title": "Item 1156에서 BEAR 분대 재집결 지점 조사하기",
+      "titleEn": "Investigate the BEAR squad regroup spot at Item 1156",
+      "body": "재집결 지점은 프로토타입 무기 구역에 위치해 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5b/Labryrinth_missile_area_map.png/revision/latest/scale-to-width-down/640?cb=20260212011556",
+          "caption": "프로토타입 무기 구역이 지도에 표시됨"
+        }
+      ]
+    },
+    {
+      "title": "분대장 위치 찾기/분대에 대한 추가 정보 수집하기",
+      "titleEn": "Locate the squad leader/Gather more information about the squad",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Leshy's diary]] · Leshy의 일기 · 1 · 필수 · 있음\n\n분대장은 고문실에 있으며, Leshy의 일기는 그 옆에서 찾을 수 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/Leshy%27s_diary_icon.png/revision/latest?cb=20260120225701",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Labryrinth_torture_room_map.png/revision/latest/scale-to-width-down/640?cb=20250329225017",
+          "caption": "지도에 고문실 위치 표시됨"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/30/Leshy%27s_diary_location_far.png/revision/latest/scale-to-width-down/640?cb=20260110230621",
+          "caption": "고문실 옆 분대장 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/81/Leshy%27s_diary_location_close.png/revision/latest/scale-to-width-down/640?cb=20260202203843",
+          "caption": "일기"
+        }
+      ]
+    },
+    {
+      "title": "실험실 직원 5명의 시신 조사하기",
+      "titleEn": "Investigate the 5 lab staff bodies",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Observation room key]] · 관찰실 키 · 1 · 필수 · 해당 없음\n- link=Assistant's notes on Group 3]] · 3번 그룹에 관한 조수의 메모 · 1 · 필수 · 있음\n- link=Assistant's notes on Group 8]] · 8번 그룹에 관한 조수의 메모 · 1 · 필수 · 있음\n- link=Assistant's notes on Group 3 and Group 10]] · 3번 및 10번 그룹에 관한 조수의 메모 · 1 · 필수 · 있음\n- link=Assistant's notes on Group 12]] · 12번 그룹에 관한 조수의 메모 · 1 · 필수 · 있음\n- link=Assistant's notes on TG-Vi-24 test subjects]] · TG-Vi-24 실험 대상에 관한 조수의 메모 · 1 · 필수 · 있음\n\n이 목표를 위해서는 실험실 과학자 시신 옆에 있는 5개의 메모를 수집해야 하며, 4번째 메모는 관찰실 키가 필요합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/69/Observation_room_key_icon.png/revision/latest?cb=20251130012521",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/31/Assistant%27s_notes_on_Group_3_icon.png/revision/latest?cb=20260104023306",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/Assistant%27s_notes_on_Group_8_icon.png/revision/latest?cb=20260118233214",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d2/Assistant%27s_notes_on_Group_3_and_Group_10_icon.png/revision/latest?cb=20260118233218",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/25/Assistant%27s_notes_on_Group_12_icon.png/revision/latest?cb=20260104024152",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/Assistant%27s_notes_on_TG-Vi-24_test_subjects_icon.png/revision/latest?cb=20260118233209",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/77/The_Labyrinth_Scientist_locations_map.png/revision/latest/scale-to-width-down/640?cb=20260202213523",
+          "caption": "지도에 과학자 위치 표시됨"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a8/Assistant_note_3_spawn.png/revision/latest/scale-to-width-down/640?cb=20260110230604",
+          "caption": "#1: 오른손 아래에 있는 3번 그룹에 관한 조수의 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/Assistant_note_3_and_10_spawn.png/revision/latest/scale-to-width-down/640?cb=20260110230639",
+          "caption": "#2: 왼팔 아래에 있는 8번 그룹에 관한 조수의 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/38/Assistant_note_8_spawn.png/revision/latest/scale-to-width-down/640?cb=20260110230648",
+          "caption": "#3: 시신 옆에 있는 3번 및 10번 그룹에 관한 조수의 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/94/Assistant_note_12_spawn.png/revision/latest/scale-to-width-down/640?cb=20260110230612",
+          "caption": "#4: 시신 아래에 있는 12번 그룹에 관한 조수의 메모"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Assistant_note_on_TG-Vi-24_test_subject_spawn.png/revision/latest/scale-to-width-down/640?cb=20260110230656",
+          "caption": "#5: 머리 아래에 있는 TG-Vi-24 실험 대상에 관한 조수의 메모"
+        }
+      ]
+    },
+    {
+      "title": "잠긴 사무실에 진입하기",
+      "titleEn": "Access the locked office",
+      "body": "잠긴 사무실은 관찰실이며, 입장하려면 관찰실 키가 필요합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/Observation_room_Map.png/revision/latest/scale-to-width-down/640?cb=20251130012739",
+          "caption": "지도에 관찰실 위치 표시됨"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/Observation_room_Door.png/revision/latest/scale-to-width-down/640?cb=20251130012409",
+          "caption": "관찰실 출입문"
+        }
+      ]
+    },
+    {
+      "title": "사무실에서 오디오 테이프 듣기",
+      "titleEn": "Listen to the audio tape from the office",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Deceased scientist's audio tape]] · 고인 과학자의 오디오 테이프 · 1 · 제출 아이템 · 있음\n\n오디오 테이프는 과학자의 오른손 아래 바닥에서 찾을 수 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/33/Deceased_scientist%27s_audio_tape_icon.png/revision/latest?cb=20260324111254",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Deceased_scientist%27s_audio_tape_location_far.png/revision/latest/scale-to-width-down/640?cb=20260202214500",
+          "caption": "과학자"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/Deceased_scientist%27s_audio_tape_location_close.png/revision/latest/scale-to-width-down/640?cb=20260202214503",
+          "caption": "오디오 테이프"
+        }
+      ]
+    },
+    {
+      "title": "오디오 테이프를 예거에게 제출하기",
+      "titleEn": "Hand over the audio tape to Jaeger",
+      "body": "고인 과학자의 오디오 테이프를 거래 화면을 통해 예거에게 제출하세요.\n\n[보상]\n* 500,000 루블\n* 1× Accuracy International AXMC .338 LM 볼트액션 저격총\n* 2× AI AXMC .338 LM 10발 탄창\n* 2× .338 Lapua Magnum FMJ 탄약 팩 (20발)",
+      "images": []
+    },
+    {
+      "title": "미궁 시설 연구 보고서 획득 및 읽기",
+      "titleEn": "Obtain and read the Labyrinth facility research report",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 조건 · 레이드 획득(FIR)\n- link=Labyrinth facility research report]] · 미궁 시설 연구 보고서 · 1 · 필수 · 있음\n\n보고서는 해안선의 부두 옆 배수관에서 찾을 수 있습니다.\n\n[보상]\n* 업적 '테세우스(Theseus)' 해금\n\n카테고리: 스토리 챕터\n\nru:Лабиринт (глава истории)",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f7/Labyrinth_facility_research_report_icon.png/revision/latest?cb=20260214224854",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Labyrinth_facility_research_report_location_map.png/revision/latest/scale-to-width-down/640?cb=20260202195552",
+          "caption": "지도에 위치 표시됨"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ef/Labyrinth_facility_research_report_location_far.png/revision/latest/scale-to-width-down/640?cb=20260202195039",
+          "caption": "배수관 옆 보고서 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ee/Labyrinth_facility_research_report_location_close.png/revision/latest/scale-to-width-down/640?cb=20260202194942",
+          "caption": "보고서"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Labyrinth_(story_chapter)",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:03:06.159+09:00"
+}

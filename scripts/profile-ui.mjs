@@ -109,7 +109,7 @@ await measure(
 )
 
 await measure(
-  '5.6) 챕터 목표 펼치기',
+  '5.6) 챕터 상세 진입 (목표 한국어 + 공략)',
   () => page.evaluate(() => document.querySelector('.story-foot .quest-link').click()),
   '.story-objectives',
 )

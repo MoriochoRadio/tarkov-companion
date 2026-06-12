@@ -1,0 +1,188 @@
+{
+  "slug": "falling-skies",
+  "nameKo": "추락하는 하늘",
+  "nameEn": "Falling Skies",
+  "sections": [
+    {
+      "title": "추락한 비행기 찾기",
+      "titleEn": "Locate the fallen plane",
+      "body": "추락한 비행기는 삼림의 동쪽에 위치해 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ce/Falling_Skies_Map.jpg/revision/latest/scale-to-width-down/640?cb=20251214180056",
+          "caption": "지도에 표시된 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/25/Woods_Showcase_12.png/revision/latest/scale-to-width-down/640?cb=20230730013025",
+          "caption": "원하는 비행기"
+        }
+      ]
+    },
+    {
+      "title": "프라퍼와 대화하기",
+      "titleEn": "Speak to Prapor",
+      "body": "트레이더 화면에서 메뉴를 통해 프라퍼를 방문하고 추락한 비행기에 대해 물어보면 됩니다.",
+      "images": []
+    },
+    {
+      "title": "프라퍼와의 충성도 레벨 2 달성하기",
+      "titleEn": "Reach Loyalty Level 2 with Prapor",
+      "body": "비행기에 대한 추가 정보를 얻으려면 프라퍼와의 충성도 레벨 2에 도달해야 하며, 그 후 다시 추락한 비행기에 대해 물어보면 됩니다. 참고: \"탈출 준비\", \"들리지 않는 자들\" 또는 \"어둠의 가장자리에\" 에디션 소유자는 프라퍼의 충성도 레벨에 관계없이 이 목표를 자동으로 건너뜁니다.",
+      "images": []
+    },
+    {
+      "title": "트레이더에게 추락한 비행기에 대해 물어보기",
+      "titleEn": "Ask the traders about the fallen plane",
+      "body": "트레이더 화면에서 메뉴를 통해 프라퍼, 테라피스트, 스키어, 메카닉, 예거를 방문하고 추락한 비행기에 대해 물어보면 됩니다.",
+      "images": []
+    },
+    {
+      "title": "(선택 사항) 테라피스트에게 2,000 USD 전달하기",
+      "titleEn": "(Optional) Hand over 2,000 USD to Therapist to learn details about the SUV",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 사항 · 레이드 획득(FIR)\n- 링크=달러 · 달러 · 2,000 · 아이템 전달 · 아니오\n\n트레이더 화면에서 메뉴를 통해 테라피스트를 방문하고 추락한 비행기에 대한 정보를 요청합니다. 2,000 USD를 전달하면 그녀가 원하는 SUV의 위치를 알려줍니다.",
+      "images": []
+    },
+    {
+      "title": "G-Wagon SUV에서 플래시 드라이브 회수하기",
+      "titleEn": "Retrieve the flash drive from one of the G-Wagon SUVs",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 사항 · 레이드 획득(FIR)\n- 링크=G-Wagon 플래시 드라이브 · G-Wagon 플래시 드라이브 · 1 · 아이템 전달 · 예\n\nG-Wagon 플래시 드라이브는 해안선의 \"터널\" 추출 지점 옆에 있는 G-Wagon SUV의 운전석 사이드 러닝 보드에서 찾을 수 있습니다.\n\nG-Wagon 플래시 드라이브를 프라퍼에게 트레이더 화면을 통해 전달하면 됩니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d8/G-Wagon_flash_drive_icon.png/revision/latest?cb=20260102205334",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/FallingSkiesGWagonUSBMap.png/revision/latest/scale-to-width-down/640?cb=20260102214259",
+          "caption": "지도에 표시된 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/73/FallingSkiesGWagonUSBSpawn.png/revision/latest/scale-to-width-down/640?cb=20260101145047",
+          "caption": "러닝 보드에 있는 플래시 드라이브가 있는 원하는 SUV"
+        }
+      ]
+    },
+    {
+      "title": "프라퍼에게서 정보 기다리기",
+      "titleEn": "Wait for the information from Prapor",
+      "body": "1시간 기다린 후 트레이더 화면에서 메뉴를 통해 프라퍼를 방문하고 추락한 비행기에 대해 물어보면 됩니다.",
+      "images": []
+    },
+    {
+      "title": "비행기의 비행 기록 장치 회수하기",
+      "titleEn": "Retrieve the plane's flight recorder",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 사항 · 레이드 획득(FIR)\n- 링크=추락한 비행기의 비행 기록 장치 · 추락한 비행기의 비행 기록 장치 · 1 · 필요 · 예\n\n추락한 비행기의 비행 기록 장치는 비행기의 오른쪽 측면, 뒤쪽의 파손된 부분에서 찾을 수 있습니다.\n\n[지정된 장소에 비행 기록 장치 두기]\n\n- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 사항 · 레이드 획득(FIR) · 비고\n- 링크=추락한 비행기의 비행 기록 장치 · 추락한 비행기의 비행 기록 장치 · 1 · 필요 · N/A · 보관 아이템\n\n추락한 비행기의 비행 기록 장치는 해안선 섬의 집에 있는 파괴된 방에 보관해야 합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/Crashed_plane%27s_flight_recorder_icon.png/revision/latest?cb=20260110230558",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8b/FallingSkiesFlightRecorderSpawn.png/revision/latest/scale-to-width-down/640?cb=20260113143352",
+          "caption": "기록 장치가 있는 파손된 부분"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/FallingSkiesFlightRecorderSpawnCloseUp.png/revision/latest/scale-to-width-down/640?cb=20260113143456",
+          "caption": "기록 장치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/FallingSkiesFlightRecorderStashMap.png/revision/latest/scale-to-width-down/640?cb=20260102222721",
+          "caption": "지도에 표시된 집 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/FallingSkiesFlightRecorderStashLocation.png/revision/latest/scale-to-width-down/640?cb=20260409210110",
+          "caption": "보관 위치"
+        }
+      ]
+    },
+    {
+      "title": "프라퍼 방문하기",
+      "titleEn": "Visit Prapor",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 사항 · 레이드 획득(FIR) · 비고\n- 링크=도구 세트 · 도구 세트 · 2 · 아이템 전달 · 예 · 은신처에서 제작 가능 (작업대 lv. 1).\n- 링크=충전식 배터리 · 충전식 배터리 · 3 · 아이템 전달 · 예 · 은신처에서 제작 가능 (작업대 lv. 2).\n- 링크=인쇄 회로 기판 · 인쇄 회로 기판 · 5 · 아이템 전달 · 예 · 은신처에서 제작 가능 (작업대 lv. 1).\n\n프라퍼는 계속 진행하기 위해 이 아이템들을 요청합니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/Toolsicon.png/revision/latest?cb=20210805173459",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/Circuit_Icon.png/revision/latest?cb=20250308182945",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "프라퍼에게서 정보 기다리기",
+      "titleEn": "Wait for the information from Prapor",
+      "body": "3-5시간 기다린 후 트레이더 화면에서 메뉴를 통해 프라퍼를 방문하고 추락한 비행기에 대해 물어보면 됩니다.",
+      "images": []
+    },
+    {
+      "title": "비행기 승무원 전사와 엘렉트로니크의 보안 플래시 드라이브를 프라퍼에게 전달하기",
+      "titleEn": "Hand over the flight crew's transcript and Elektronik's secure flash drive to Prapor",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 사항 · 레이드 획득(FIR)\n- 링크=비행기 승무원 전사 · 비행기 승무원 전사 · 1 · 아이템 전달 · 예\n- 링크=엘렉트로니크의 플래시 드라이브 · 엘렉트로니크의 플래시 드라이브 · 1 · 아이템 전달 · 예\n\n두 아이템 모두 해안선의 의장 집에서 찾을 수 있습니다.\n\n[보상]\n두 아이템을 전달하면 보상을 받게 됩니다.\n* 300,000 루블\n** 정보 센터 레벨 1일 경우 315,000 루블\n** 정보 센터 레벨 2일 경우 345,000 루블",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bb/Plane_crew_transcript_icon.png/revision/latest?cb=20260102201404",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/49/Elektronik%27s_flash_drive_icon.png/revision/latest?cb=20260102201017",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2d/FallingSkiesElektroniksUSBMap.png/revision/latest/scale-to-width-down/640?cb=20260102194736",
+          "caption": "지도에 표시된 집 위치"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/95/Chairman_house.png/revision/latest/scale-to-width-down/640?cb=20191103193815",
+          "caption": "원하는 집"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/FallingSkiesElektroniksTranscript.png/revision/latest/scale-to-width-down/640?cb=20260118224426",
+          "caption": "뒤집힌 침대의 매트리스 아래에 있는 전사"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ee/FallingSkiesElektroniksFlashDrive.png/revision/latest/scale-to-width-down/640?cb=20260102193322",
+          "caption": "침대 옆 선반 위에 있는 플래시 드라이브"
+        }
+      ]
+    },
+    {
+      "title": "프라퍼에게서 정보 기다리기",
+      "titleEn": "Wait for the information from Prapor",
+      "body": "1-3시간 기다린 후 트레이더 화면에서 메뉴를 통해 프라퍼를 방문하고 추락한 비행기에 대해 물어보면 됩니다. 프라퍼는 당신이 전사를 읽었는지 물어보며, '예'라고 대답하면 보상을 받고, '아니오'라고 대답하면 보상을 받지 못합니다.\n\n[보상]\n* 300,000 루블\n** 정보 센터 레벨 1일 경우 315,000 루블\n** 정보 센터 레벨 2일 경우 345,000 루블",
+      "images": []
+    },
+    {
+      "title": "장갑 케이스 회수하기/추가 단서 찾기",
+      "titleEn": "Retrieve the armored case/Find any additional clues",
+      "body": "- 관련 퀘스트 아이템\n- 아이콘 · 아이템 이름 · 수량 · 요구 사항 · 레이드 획득(FIR)\n- 링크=장갑 케이스 · 장갑 케이스 · 1 · 아이템 전달 · 예\n- 링크=Mr. 케르만의 메모 · Mr. 케르만의 메모 · 1 · 선택 사항 · 예\n\n장갑 케이스는 추락한 비행기의 조종석 뒤에서 찾을 수 있으며, 선택 사항인 Mr. 케르만의 메모는 조종사 좌석에 위치해 있습니다.",
+      "images": [
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/Armored_case_icon.png/revision/latest?cb=20260102224040",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bb/Note_from_Mr._Kerman_icon.png/revision/latest?cb=20260102225400",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/FallingSkiesArmoredCaseSpawn.png/revision/latest/scale-to-width-down/640?cb=20260102230356",
+          "caption": "장갑 케이스"
+        },
+        {
+          "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d7/FallingSkiesKermanNoteSpawn.png/revision/latest/scale-to-width-down/640?cb=20260102230218",
+          "caption": "Mr. 케르만의 메모"
+        }
+      ]
+    },
+    {
+      "title": "장갑 케이스를 자신이 보관하거나 프라퍼에게 넘기기",
+      "titleEn": "Keep the armored case for yourself or hand it over to Prapor",
+      "body": "이것은 중요한 선택의 기로입니다! 결정에 따라 보상이 다릅니다.\n\n[결정: 장갑 케이스를 보관하기]\n[=보상=]\n* 프라퍼 평판 -0.3\n* 1× 장갑 케이스\n* 업적 '그냥 비즈니스' 해제\n\n[결정: 장갑 케이스를 프라퍼에게 직접 넘기기]\n[=보상=]\n* 1,500,000 루블\n* 업적 '신의 한 수' 해제\n\n[결정: 장갑 케이스를 발견하지 않은 척 하지만 여전히 프라퍼에게 넘기기]\n[=보상=]\n* 1,000,000 루블\n* 업적 '신의 한 수' 해제\n\n카테고리: 스토리 챕터\n\nfr: Tombé du ciel\nru: Небеса в огне",
+      "images": []
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Falling_Skies",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-12T22:03:06.159+09:00"
+}

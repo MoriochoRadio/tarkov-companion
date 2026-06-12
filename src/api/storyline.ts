@@ -3,6 +3,7 @@
 // (tasks 510개는 전부 트레이더 의뢰) 위키가 유일한 무료 소스.
 export interface StoryObjective {
   text: string // 영어 원문 (위키)
+  ko?: string // 한국어 번역 (scripts/storyline-objectives-ko.json 큐레이션)
   depth: number // 0=목표, 1~2=하위 단계
   optional?: boolean
   kind?: 'branch' | 'note' // branch=선택지/분기 제목, note=참고
