@@ -3460,6 +3460,58 @@ summary:focus-visible {
   font-size: var(--fs-label);
 }
 
+/* --- 내 데이터 백업/복원 --- */
+.footer-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-4);
+}
+
+.data-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-3);
+  font: inherit;
+  font-size: var(--fs-sub);
+  cursor: pointer;
+}
+
+.data-btn:hover {
+  color: var(--accent);
+}
+
+.data-dialog {
+  padding: var(--sp-5);
+}
+
+.data-dialog h3 {
+  margin: 0 0 var(--sp-2);
+  font-size: 1.2rem;
+}
+
+.data-list {
+  list-style: none;
+  margin: var(--sp-3) 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--sp-1) var(--sp-3);
+  font-size: var(--fs-sub);
+}
+
+.data-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+}
+
+.data-danger:hover {
+  border-color: var(--down);
+  color: var(--down);
+}
+
 /* --- 커맨드 팔레트 (Ctrl+K) --- */
 .app-header {
   position: relative;

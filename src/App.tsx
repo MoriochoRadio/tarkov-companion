@@ -4,6 +4,7 @@ import { AmbientBackground, pulseAmbient } from './features/AmbientBackground'
 import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
 import { CommandPalette } from './features/CommandPalette'
+import { DataManager } from './features/DataManager'
 import { Hero } from './features/Hero'
 import { MapsTab } from './features/MapsTab'
 import { ModdingTab } from './features/ModdingTab'
@@ -274,13 +275,16 @@ export default function App() {
               Quaternius (CC0)
             </a>
           </span>
-          <a
-            href="https://github.com/MoriochoRadio/tarkov-companion"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub ↗
-          </a>
+          <span className="footer-actions">
+            <DataManager />
+            <a
+              href="https://github.com/MoriochoRadio/tarkov-companion"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </span>
         </footer>
       </div>
       {paletteOpen && (
