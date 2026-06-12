@@ -117,7 +117,7 @@ await new Promise((r) => setTimeout(r, 200))
 console.log(`7) 체크리스트 +1 반영: ${Date.now() - t2}ms`)
 
 await measure(
-  '8) 모딩 탭 진입 → 무기 목록',
+  '8) 모딩 탭 진입 → 추천 빌드 카드',
   () =>
     page.evaluate(() => {
       const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
@@ -125,17 +125,32 @@ await measure(
       )
       btn.click()
     }),
+  '.build-card',
+)
+
+await measure(
+  '9) 빌드 카드 펼치기 → 부품 상세',
+  () => page.evaluate(() => document.querySelector('.build-head').click()),
+  '.build-detail',
+)
+
+await measure(
+  '10) "부품 직접 탐색" 토글 → 무기 목록',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.mode-seg button')].at(-1).click(),
+    ),
   '.weapon-card',
 )
 
 await measure(
-  '9) 무기 선택 → 슬롯 목록 (lazy 조회)',
+  '11) 무기 선택 → 슬롯 목록 (lazy 조회)',
   () => page.evaluate(() => document.querySelector('.weapon-card').click()),
   '.mod-slot',
 )
 
 await measure(
-  '10) 슬롯 펼치기 → 부품 행',
+  '12) 슬롯 펼치기 → 부품 행',
   () => page.evaluate(() => document.querySelector('.mod-slot summary').click()),
   '.mod-part',
 )

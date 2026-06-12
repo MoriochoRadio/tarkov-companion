@@ -2397,6 +2397,220 @@ select:focus-visible {
 }
 
 /* ============================================================
+   모딩 탭 — 추천 빌드 카드 (Phase 13 기본 화면)
+   ============================================================ */
+.mode-seg {
+  display: inline-flex;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.mode-seg button {
+  background: var(--bg-raised);
+  border: none;
+  padding: var(--sp-2) var(--sp-4);
+  color: var(--text-2);
+  font: inherit;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.mode-seg button + button {
+  border-left: 1px solid var(--border-strong);
+}
+
+.mode-seg button.active {
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--sp-4);
+  align-items: start;
+}
+
+.build-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 150ms ease;
+}
+
+.build-card:hover,
+.build-card.open {
+  border-color: var(--accent);
+}
+
+.build-head {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* 무기 이미지를 크게 — 카드의 첫인상. 어두운 인셋 위에 떠 있는 느낌 */
+.build-banner {
+  position: relative;
+  display: block;
+  aspect-ratio: 5 / 2;
+  background:
+    radial-gradient(ellipse at center, #151b21 0%, var(--bg-inset) 75%);
+  border-bottom: 1px solid var(--border);
+}
+
+.build-banner img {
+  position: absolute;
+  inset: 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.build-badges {
+  position: absolute;
+  top: var(--sp-3);
+  left: var(--sp-3);
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.build-tier {
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: var(--fs-label);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.build-cat {
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  border: 1px solid var(--border-strong);
+  color: var(--text-2);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.build-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-4) var(--sp-4);
+}
+
+.build-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.build-weapon {
+  font-size: var(--fs-sub);
+}
+
+.build-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+}
+
+.build-strip img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.build-stats {
+  display: flex;
+  gap: var(--sp-5);
+  font-size: var(--fs-body);
+}
+
+.build-stats em {
+  display: block;
+  font-style: normal;
+  color: var(--text-3);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.build-desc {
+  color: var(--text-2);
+  font-size: var(--fs-sub);
+  line-height: 1.5;
+}
+
+.build-detail {
+  list-style: none;
+  margin: 0;
+  padding: var(--sp-3) var(--sp-4) var(--sp-4);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.build-detail li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-sub);
+}
+
+.build-detail img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border-radius: 4px;
+  flex: none;
+}
+
+.build-detail-name {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.build-detail-buy {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: none;
+  text-align: right;
+}
+
+.build-source {
+  justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+  .build-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
    모바일 반응형
    ============================================================ */
 @media (max-width: 800px) {

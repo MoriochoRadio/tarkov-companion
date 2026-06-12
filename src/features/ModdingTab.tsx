@@ -8,6 +8,7 @@ import {
 } from '../api/modding'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatRub } from '../lib/format'
+import { BuildsView } from './BuildsView'
 import { TableSkeleton } from './Skeleton'
 
 type SortKey = 'ergo' | 'recoil' | 'price'
@@ -244,14 +245,14 @@ function WeaponPicker({ onPick }: { onPick: (w: WeaponSummary) => void }) {
   )
 }
 
-// ---------- 탭 본체 ----------
+// ---------- 부품 직접 탐색 (슬롯 드릴다운 브라우저) ----------
 
 interface Crumb {
   id: string
   label: string
 }
 
-export function ModdingTab() {
+function PartsBrowser() {
   // 빈 스택 = 무기 선택 화면, 그 외 = 스택 마지막 아이템의 슬롯 브라우저
   const [stack, setStack] = useState<Crumb[]>([])
   const [levelText, setLevelText] = useState('')
@@ -265,19 +266,6 @@ export function ModdingTab() {
 
   return (
     <div>
-      <p className="hint mod-builder-link">
-        부품 탐색·트레이더 해금 확인용 — 풀 빌드 시뮬레이션(호환 검증·스탯 합산)은{' '}
-        <a
-          className="source-link"
-          href="https://tarkov.dev/gun-builder"
-          target="_blank"
-          rel="noreferrer"
-        >
-          tarkov.dev 빌더 ↗
-        </a>
-        에서
-      </p>
-
       {!current ? (
         <WeaponPicker
           onPick={(w) => setStack([{ id: w.id, label: w.shortName || w.nameKo }])}
@@ -335,6 +323,47 @@ export function ModdingTab() {
           />
         </div>
       )}
+    </div>
+  )
+}
+
+// ---------- 탭 본체 ----------
+
+export function ModdingTab() {
+  // 친구 피드백: 부품 백과보다 "레벨별 추천 빌드"가 먼저 — 브라우저는 토글로 강등
+  const [mode, setMode] = useState<'builds' | 'browser'>('builds')
+
+  return (
+    <div>
+      <div className="toolbar">
+        <nav className="mode-seg" aria-label="모딩 보기 방식">
+          <button
+            className={mode === 'builds' ? 'active' : ''}
+            onClick={() => setMode('builds')}
+          >
+            추천 빌드
+          </button>
+          <button
+            className={mode === 'browser' ? 'active' : ''}
+            onClick={() => setMode('browser')}
+          >
+            부품 직접 탐색
+          </button>
+        </nav>
+        <p className="hint mod-builder-link">
+          풀 빌드 시뮬레이션(호환 검증·스탯 합산)은{' '}
+          <a
+            className="source-link"
+            href="https://tarkov.dev/gun-builder"
+            target="_blank"
+            rel="noreferrer"
+          >
+            tarkov.dev 빌더 ↗
+          </a>
+          에서
+        </p>
+      </div>
+      {mode === 'builds' ? <BuildsView /> : <PartsBrowser />}
     </div>
   )
 }

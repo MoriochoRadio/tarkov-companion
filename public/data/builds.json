@@ -1,0 +1,250 @@
+{
+  "$comment": "추천 빌드 데이터 — 형식 설명은 docs/builds-schema.md. 수정 후 반드시 `node scripts/validate-builds.mjs`로 장착 가능 여부를 검증할 것",
+  "updated": "2026-06-12",
+  "builds": [
+    {
+      "id": "ak74n-ll1-scout",
+      "weapon": "5644bd2b4bdc2d3b4c8b4572",
+      "name": "AK-74N 막싸움 입문",
+      "category": "ar",
+      "tier": 1,
+      "parts": [
+        "59ccfdba86f7747f2109a587",
+        "57ae0171245977343c27bfcf",
+        "5648ac824bdc2ded0b8b457d"
+      ],
+      "desc": "스키어·예거 1레벨만으로 도트(PK-06)와 에르고 +14 확보 — 부품값 1.5만 루블 안쪽의 첫 커스텀"
+    },
+    {
+      "id": "akm-ll2-recoil",
+      "weapon": "59d6088586f774275f37482f",
+      "name": "AKM 국민 반동 세팅",
+      "category": "ar",
+      "tier": 2,
+      "parts": [
+        "5a9ea27ca2750c00137fa672",
+        "5beec8ea0db834001a6f9dbf",
+        "5649b0fc4bdc2d17108b4588",
+        "59ccfdba86f7747f2109a587",
+        "57ae0171245977343c27bfcf",
+        "59d6272486f77466146386ff",
+        "5648ac824bdc2ded0b8b457d"
+      ],
+      "desc": "다이나컴프 + AK-74 폴리머 개머리판으로 7.62 반동을 2레벨 예산에서 최대로 깎는 정석 조합"
+    },
+    {
+      "id": "m4a1-ll3-laser",
+      "weapon": "5447a9cd4bdc2dbd208b4567",
+      "name": "M4A1 클래식 레이저빔",
+      "category": "ar",
+      "tier": 3,
+      "parts": [
+        "68a86bd51d1284a8e20e39d5",
+        "5c7fb51d2e2216001219ce11",
+        "6034e3e20ddce744014cb878",
+        "57cffb66245977632f391a99",
+        "627254cc9c563e6e442c398f",
+        "57c55efc2459772d2c6271e7",
+        "616554fe50224f204c1da2aa",
+        "61657230d92c473c770213d7",
+        "5c6d450c2e221600114c997d"
+      ],
+      "desc": "11.5인치 + SF3P + 바이퍼 PDW — 3레벨 트레이더 현금 구매만으로 만드는 고전 반동컷 M4"
+    },
+    {
+      "id": "rd704-ll4-end",
+      "weapon": "628a60ae6b1d481ff772e9c8",
+      "name": "RD-704 엔드게임",
+      "category": "ar",
+      "tier": 4,
+      "parts": [
+        "5b0e794b5acfc47a877359b2",
+        "5f6341043ada5942720e2dc5",
+        "618178aa1cb55961fa0fdc80",
+        "638db77630c4240f9e06f8b6",
+        "616554fe50224f204c1da2aa",
+        "61657230d92c473c770213d7",
+        "57cffb66245977632f391a99",
+        "59fafc5086f7740dbe19f6c3"
+      ],
+      "desc": "주코프-S + 스콜피우스 그립 — 기본 SLR 핸드가드를 살려 7.62x39 최상급 반동을 비교적 싸게"
+    },
+    {
+      "id": "mp5-ll1-pk",
+      "weapon": "5926bb2186f7744b1c6c6e60",
+      "name": "MP5 피스키퍼 입문 패키지",
+      "category": "smg",
+      "tier": 1,
+      "parts": [
+        "5926d40686f7740f152b6b7e",
+        "5926dad986f7741f82604363",
+        "57ae0171245977343c27bfcf"
+      ],
+      "desc": "피스키퍼 1레벨에서 끝 — A3 구형 개머리판이 반동 -23%, 마운트에 도트만 얹으면 초반 PMC전 주력"
+    },
+    {
+      "id": "vityaz-ll2-quiet",
+      "weapon": "59984ab886f7743e98271174",
+      "name": "비티아즈 소음 세팅",
+      "category": "smg",
+      "tier": 2,
+      "parts": [
+        "676177df1f08ed5e8800b7ae",
+        "651a8e529829226ceb67c319",
+        "5beec8ea0db834001a6f9dbf",
+        "59bfc5c886f7743bf6794e62",
+        "5947db3f86f77447880cf76f",
+        "5c0672ed0db834001b7353f3"
+      ],
+      "desc": "전용 소음기 + SAG 핸드가드 — 2레벨에 완성되는 저소음 9mm, 싼 탄으로 스캐브런에 최적"
+    },
+    {
+      "id": "ump-ll3-cqb",
+      "weapon": "5fc3e272f8b6a877a729eac5",
+      "name": "UMP45 CQB 표준",
+      "category": "smg",
+      "tier": 3,
+      "parts": [
+        "6130c3dffaa1272e43151c7d",
+        "5fb65424956329274326f316",
+        "5fc53954f8b6a877a729eaeb",
+        "5c1bc7752e221602b1779b34",
+        "57ae0171245977343c27bfcf",
+        "5fc3e466187fea44d52eda90"
+      ],
+      "desc": "기본 에르고 62에 RK-6·도트만 보태면 끝 — .45 한 발 한 발이 묵직한 가성비 CQB"
+    },
+    {
+      "id": "vector9-ll4-full",
+      "weapon": "5fc3f2d5900b1d5091531e57",
+      "name": "벡터 9mm 풀세팅",
+      "category": "smg",
+      "tier": 4,
+      "parts": [
+        "5fb6558ad6f0b2136f2d7eb7",
+        "5fbbc383d5cb881a7363194a",
+        "5a32a064c4a28200741e22de",
+        "5fbb978207e8a97d1f0902d3",
+        "59f8a37386f7747af3328f06",
+        "616554fe50224f204c1da2aa",
+        "61657230d92c473c770213d7",
+        "630767c37d50ff5e8a1ea71a"
+      ],
+      "desc": "기본 반동 48에 오스프리 소음기까지 — 발사속도 950rpm을 통제 가능하게 만드는 마무리 세팅"
+    },
+    {
+      "id": "opsks-ll2-marksman",
+      "weapon": "587e02ff24597743df3deaeb",
+      "name": "OP-SKS 몬테카를로",
+      "category": "dmr",
+      "tier": 2,
+      "parts": [
+        "653ecef836fae5a82f02b869",
+        "587e08ee245977446b4410cf",
+        "5947db3f86f77447880cf76f",
+        "587df583245977373c4f1129"
+      ],
+      "desc": "몬테카를로 스톡 하나로 에르고 +22·반동 -35% — 싸구려 SKS가 2레벨 예산에서 준수한 DMR로"
+    },
+    {
+      "id": "m1a-ll3-archangel",
+      "weapon": "5aafa857e5b5b00018480968",
+      "name": "M1A 아크엔젤",
+      "category": "dmr",
+      "tier": 3,
+      "parts": [
+        "5addbf175acfc408fb13965b",
+        "5aaf9d53e5b5b00015042a52",
+        "5addbfe15acfc4001a5fc58b",
+        "544a3a774bdc2d3a388b4567",
+        "5aaf8a0be5b5b00015693243"
+      ],
+      "desc": "아크엔젤 섀시(에르고 +40·반동 -30%) + HAMR 4배율 — 3레벨에서 7.62x51 원거리 화력 완성"
+    },
+    {
+      "id": "sr25-ll4-overwatch",
+      "weapon": "5df8ce05b11454561e39243b",
+      "name": "SR-25 정밀 오버워치",
+      "category": "dmr",
+      "tier": 4,
+      "parts": [
+        "5b0800175acfc400153aebd4",
+        "57c55efc2459772d2c6271e7",
+        "57ac965c24597706be5f975c",
+        "5df8f541c41b2312ea3335e3"
+      ],
+      "desc": "ELCAN 1x/4x 전환 스코프 + F93 스톡 — 기본 총열·소염기를 살려 부품값을 아끼는 M61 정밀 사격 플랫폼"
+    },
+    {
+      "id": "mp133-ll1-patrol",
+      "weapon": "54491c4f4bdc2db1078b4568",
+      "name": "MP-133 순찰 산탄총",
+      "category": "shotgun",
+      "tier": 1,
+      "parts": [
+        "56083a334bdc2dc8488b4571",
+        "560837544bdc2de22e8b456e",
+        "55d484b44bdc2d1d4e8b456d"
+      ],
+      "desc": "예거 1레벨 1.5만 루블 — 권총 손잡이로 기동성을 챙긴 초반 스캐브 사냥용 펌프"
+    },
+    {
+      "id": "m870-ll2-sga",
+      "weapon": "5a7828548dc32e5a9c28b516",
+      "name": "M870 SGA 콤보",
+      "category": "shotgun",
+      "tier": 2,
+      "parts": [
+        "5a78813bc5856700186c4abe",
+        "5a788068c5856700137e4c8f",
+        "5a787ebcc5856700142fdd98",
+        "5a78830bc5856700137e4c90"
+      ],
+      "desc": "SGA 스톡(반동 -29%) + MOE 핸드가드 — 2레벨 메카닉만으로 펌프 산탄총 완성형"
+    },
+    {
+      "id": "saiga-ll3-auto",
+      "weapon": "576165642459773c7a400233",
+      "name": "사이가 속사 세팅",
+      "category": "shotgun",
+      "tier": 3,
+      "parts": [
+        "6086b5731246154cad35d6c7",
+        "58272d7f2459774f6311ddfd",
+        "5beec8ea0db834001a6f9dbf",
+        "5947db3f86f77447880cf76f",
+        "5a966f51a2750c00156aacf6",
+        "5648ac824bdc2ded0b8b457d"
+      ],
+      "desc": "GK-02(반동 -13.5%) + 10발 SAI-02 탄창(예거 퀘스트 해금) — 반자동 12게이지 연사를 통제하는 보스전 정석",
+      "source": "https://escapefromtarkov.fandom.com/wiki/Saiga-12"
+    },
+    {
+      "id": "mosin-ll1-pu",
+      "weapon": "5ae08f0a5acfc408fb1398a1",
+      "name": "모신 PU 국밥 저격",
+      "category": "sniper",
+      "tier": 1,
+      "parts": [
+        "5b3f7bf05acfc433000ecf6b",
+        "5b3f7c005acfc4704b4a1de8",
+        "5b3f7c1c5acfc40dc5296b1d"
+      ],
+      "desc": "프라퍼 1레벨 풀구성 — 1.6만 루블짜리 PU 3.5배율로 초반 레벨에 7.62x54R 원샷 화력",
+      "source": "https://escapefromtarkov.fandom.com/wiki/Mosin_7.62x54R_bolt-action_rifle_(Sniper)"
+    },
+    {
+      "id": "svds-ll3-pso",
+      "weapon": "5c46fbd72e2216398b5a8c9c",
+      "name": "SVDS PSO 클래식",
+      "category": "sniper",
+      "tier": 3,
+      "parts": [
+        "5c82342f2e221644f31c060e",
+        "6516b129609aaf354b34b3a8",
+        "5b30ac585acfc433000eb79c"
+      ],
+      "desc": "PSO-1 4배율 + AK 그립 어댑터 — 반자동 54R을 프라퍼 스코프 하나로 굴리는 저비용 마크스맨"
+    }
+  ]
+}
