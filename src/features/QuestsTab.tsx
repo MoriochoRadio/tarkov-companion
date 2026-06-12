@@ -155,7 +155,8 @@ function QuestDetail({
           <h2>📖 공략</h2>
           <ol className="guide-steps">
             {guide.steps.map((step, i) => (
-              <li key={i}>{step}</li>
+              // 일부 생성분에 "1단계:" 번호가 박혀 있음 — <ol>이 번호를 매기므로 제거
+              <li key={i}>{step.replace(/^(?:\d+\s*단계|\d+)\s*[:.)]\s*/, '')}</li>
             ))}
           </ol>
           {guide.tips && <p className="guide-tips">💡 {guide.tips}</p>}
