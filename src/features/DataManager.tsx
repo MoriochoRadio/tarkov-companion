@@ -1,8 +1,13 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 // 내 데이터 백업/복원 — 즐겨찾기·진행 중 퀘스트·체크리스트·은신처·알림이
 // 전부 localStorage라 브라우저를 바꾸거나 캐시를 지우면 사라진다.
-// 서버 없는 제약에서의 해답: JSON 파일로 내보내고 다른 기기에서 가져오기
+// 서버 없는 제약에서의 해답: JSON 파일로 내보내고 다른 기기에서 가져오기.
+// "로그인 동기화"는 의도적으로 만들지 않음 — 서버 없는 로그인은 성립하지
+// 않고, 무료 BaaS 의존은 한도·키 관리·개인정보 책임을 1인 프로젝트에
+// 떠넘긴다 (2026-06 분석, 결론은 파일 백업 + 영구 저장 요청)
+
+const LAST_EXPORT_KEY = 'tc:last-export' // 백업 파일에는 포함하지 않는 메타
 
 const DATA_KEYS = [
   'tc:fav-items',
@@ -22,6 +27,33 @@ const KEY_LABELS: Record<string, string> = {
   'tc:my-level': '내 레벨',
   'tc:price-alerts': '가격 알림',
   'tc:quest-item-marks': '퀘스트 아이템 그리드 표시',
+}
+
+// "몇 개 저장돼 있나" — 키마다 저장 형태가 달라 형태별로 센다
+function countEntries(key: string): number {
+  try {
+    const raw = localStorage.getItem(key)
+    if (raw == null) return 0
+    if (key === 'tc:my-level') return raw ? 1 : 0
+    const parsed = JSON.parse(raw) as unknown
+    if (Array.isArray(parsed)) return parsed.length
+    if (parsed && typeof parsed === 'object') return Object.keys(parsed).length
+    return 1
+  } catch {
+    return 0
+  }
+}
+
+function lastExportLabel(): string {
+  try {
+    const t = localStorage.getItem(LAST_EXPORT_KEY)
+    if (!t) return '백업한 적 없음'
+    const days = Math.floor((Date.now() - Number(t)) / 86_400_000)
+    if (days <= 0) return '오늘 백업함'
+    return `마지막 백업 ${days}일 전`
+  } catch {
+    return ''
+  }
 }
 
 function exportData() {
@@ -48,12 +80,27 @@ function exportData() {
   a.download = `tarkov-companion-backup-${new Date().toISOString().slice(0, 10)}.json`
   a.click()
   URL.revokeObjectURL(a.href)
+  try {
+    localStorage.setItem(LAST_EXPORT_KEY, String(Date.now()))
+  } catch {
+    // 무시
+  }
 }
 
 export function DataManager() {
   const [open, setOpen] = useState(false)
   const [message, setMessage] = useState('')
+  const [persisted, setPersisted] = useState<boolean | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
+
+  // 다이얼로그를 열 때 영구 보관 상태 확인 + 미승인 시 한 번 더 요청
+  useEffect(() => {
+    if (!open || !navigator.storage?.persisted) return
+    navigator.storage
+      .persist()
+      .then(setPersisted)
+      .catch(() => setPersisted(null))
+  }, [open])
 
   const importFile = async (file: File) => {
     try {
@@ -110,24 +157,29 @@ export function DataManager() {
           >
             <h3>내 데이터</h3>
             <p className="hint">
-              즐겨찾기·진행 중 퀘스트·체크리스트·은신처·알림은 전부 이 브라우저에만
-              저장됩니다. 다른 기기로 옮기거나 백업하려면 파일로 내보내세요.
+              모든 진행도는 이 브라우저에 <strong>자동 저장</strong>됩니다 — 껐다
+              켜도 유지. 사라지는 경우는 브라우저 데이터 삭제·시크릿 모드·다른
+              기기뿐이니, 가끔 파일로 백업해 두면 안전합니다.
             </p>
             <ul className="data-list dim">
               {DATA_KEYS.map((k) => {
-                let has = false
-                try {
-                  has = localStorage.getItem(k) != null
-                } catch {
-                  // 무시
-                }
+                const n = countEntries(k)
                 return (
                   <li key={k}>
-                    {has ? '✓' : '–'} {KEY_LABELS[k]}
+                    {n > 0 ? '✓' : '–'} {KEY_LABELS[k]}
+                    {n > 0 && <span className="num"> {n}</span>}
                   </li>
                 )
               })}
             </ul>
+            <p className="hint data-status">
+              {persisted === true &&
+                '✓ 브라우저 영구 보관 승인됨 — 저장 공간 자동 정리 대상에서 제외'}
+              {persisted === false &&
+                '⚠ 저장 공간이 부족하면 브라우저가 지울 수 있는 상태 — 백업 권장'}
+              {' · '}
+              {lastExportLabel()}
+            </p>
             <div className="data-actions">
               <button className="btn-ext" onClick={exportData}>
                 ⬇ 파일로 내보내기

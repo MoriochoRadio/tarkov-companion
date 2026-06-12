@@ -118,6 +118,12 @@ export default function App() {
   // 가격 알림 폴러 — 알림이 걸려 있을 때만 실제 요청 발생
   useEffect(() => startAlertPoller(), [])
 
+  // 진행도(localStorage)가 저장 공간 정리로 지워지지 않게 영구 보관 요청.
+  // 크롬은 프롬프트 없이 사용 빈도 기준으로 조용히 승인/거절함
+  useEffect(() => {
+    navigator.storage?.persist?.().catch(() => {})
+  }, [])
+
   // Ctrl/Cmd+K — 빠른 검색 팔레트
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
