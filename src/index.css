@@ -2197,6 +2197,206 @@ select:focus-visible {
 }
 
 /* ============================================================
+   모딩 탭 — 무기 그리드 + 슬롯 아코디언 + 부품 행
+   ============================================================ */
+.mod-builder-link {
+  margin-bottom: var(--sp-4);
+}
+
+.weapon-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--sp-3);
+}
+
+.weapon-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  width: 100%;
+  height: 100%;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-3) var(--sp-4);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 150ms ease;
+}
+
+.weapon-card:hover {
+  border-color: var(--accent);
+}
+
+.weapon-card img {
+  height: 44px;
+  align-self: flex-start;
+  object-fit: contain;
+}
+
+.weapon-name {
+  overflow-wrap: anywhere;
+}
+
+.weapon-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  font-size: var(--fs-sub);
+}
+
+.mod-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.mod-crumb {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 4px 12px;
+  color: var(--text-2);
+  font: inherit;
+  font-size: var(--fs-sub);
+  cursor: pointer;
+}
+
+.mod-crumb:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.mod-crumb.current {
+  border-color: var(--accent);
+  color: var(--accent);
+  cursor: default;
+}
+
+.mod-slots {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.mod-slot {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.mod-slot summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  cursor: pointer;
+}
+
+.mod-slot summary:hover .mod-slot-name {
+  color: var(--accent);
+}
+
+.mod-slot-name {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.mod-slot .hint {
+  padding: 0 var(--sp-4) var(--sp-3);
+  margin: 0;
+}
+
+.mod-parts {
+  list-style: none;
+  margin: 0;
+  padding: 0 var(--sp-4) var(--sp-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.mod-part {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  border-top: 1px solid var(--border);
+  padding-top: var(--sp-2);
+}
+
+.mod-part img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border-radius: var(--radius-sm);
+  flex: none;
+}
+
+.mod-part-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.mod-part-name {
+  overflow-wrap: anywhere;
+}
+
+.mod-part-stats,
+.mod-part-buy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  font-size: var(--fs-sub);
+}
+
+.mod-trader {
+  color: var(--text-2);
+}
+
+.mod-drill {
+  flex: none;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-3);
+  color: var(--text-2);
+  font: inherit;
+  font-size: var(--fs-sub);
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.mod-drill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  /* 폰: 드릴 버튼을 아랫줄 전체 폭으로 — 좁은 행에서 터치 면적 확보 */
+  .mod-part {
+    flex-wrap: wrap;
+  }
+
+  .mod-drill {
+    width: 100%;
+    margin-left: 52px; /* 아이콘 폭만큼 들여 정렬 */
+    width: calc(100% - 52px);
+  }
+}
+
+/* ============================================================
    모바일 반응형
    ============================================================ */
 @media (max-width: 800px) {

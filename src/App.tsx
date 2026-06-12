@@ -5,6 +5,7 @@ import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
 import { Hero } from './features/Hero'
 import { MapsTab } from './features/MapsTab'
+import { ModdingTab } from './features/ModdingTab'
 import { MoversTab } from './features/MoversTab'
 import { PrepTab } from './features/PrepTab'
 import { QuestsTab } from './features/QuestsTab'
@@ -22,6 +23,7 @@ const TABS = [
   { key: 'ammo', label: '탄약 비교', eyebrow: 'AMMO CHART', Comp: AmmoTab },
   { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
   { key: 'prep', label: '준비물', eyebrow: 'RAID CHECKLIST', Comp: PrepTab },
+  { key: 'modding', label: '모딩', eyebrow: 'MOD WORKSHOP', Comp: ModdingTab },
   { key: 'maps', label: '맵', eyebrow: 'MAP INTEL', Comp: MapsTab },
 ] as const
 
