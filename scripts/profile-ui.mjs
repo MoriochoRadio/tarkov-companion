@@ -236,6 +236,45 @@ await page.evaluate(() =>
 await new Promise((r) => setTimeout(r, 200))
 console.log(`7.41) 퀘스트 체크 → 가방 합산 반영: ${Date.now() - t25}ms`)
 
+// --- Phase 26: 맵 뷰어 ---
+
+await measure(
+  '7.42) 맵 보기 토글 → SVG 지도 로드 (lazy)',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('button')]
+        .find((b) => b.textContent.includes('맵 보기'))
+        .click(),
+    ),
+  '.mapview-svg svg',
+)
+
+// 줌 연사 — transform만 갱신되는지 (메인 스레드 응답 확인)
+const t26 = Date.now()
+await page.evaluate(() => {
+  const mv = document.querySelector('.mapview')
+  const r = mv.getBoundingClientRect()
+  for (let i = 0; i < 20; i++) {
+    mv.dispatchEvent(
+      new WheelEvent('wheel', {
+        deltaY: -40,
+        clientX: r.left + r.width / 2,
+        clientY: r.top + r.height / 2,
+        bubbles: true,
+        cancelable: true,
+      }),
+    )
+  }
+})
+const zoomRaf = await page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const s = performance.now()
+      requestAnimationFrame(() => resolve(Math.round(performance.now() - s)))
+    }),
+)
+console.log(`7.43) 휠 줌 20회 연사: ${Date.now() - t26}ms (rAF 응답 ${zoomRaf}ms)`)
+
 // --- Phase 23: 해금 탭 ---
 
 await measure(

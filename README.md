@@ -60,12 +60,14 @@ main에 push하면 GitHub Actions가 자동으로 빌드·배포합니다.
 - 신규 영상: YouTube 채널 공개 RSS (노잼망겜, 유우양, Pestily, LVNDMARK) — 제목·링크만 수록하며 각 영상의 권리는 해당 채널에 있습니다
 - 공식 소식: Steam 뉴스 공개 RSS
 - 브리핑 요약 생성: [GitHub Models](https://docs.github.com/en/github-models)
+- 맵 지도 SVG: [The Hideout 커뮤니티 — tarkov-dev-svg-maps](https://github.com/the-hideout/tarkov-dev-svg-maps) ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) · 좌표 변환 메타: [the-hideout/tarkov-dev](https://github.com/the-hideout/tarkov-dev) maps.json (MIT) — 상세는 [`public/maps/LICENSE.md`](public/maps/LICENSE.md). **본 사이트는 광고·후원·유료 기능이 없는 비상업 팬 프로젝트로 NC(비상업) 조건을 준수하며, 이 에셋을 사용하는 동안에는 상업화하지 않습니다.** 퀘스트 마커는 런타임 오버레이로만 그려 지도 파생 파일을 만들지 않습니다
 
 ## 면책
 
 - 본 프로젝트는 팬이 만든 **비공식** 도구로, Battlestate Games와 아무런 관련이 없으며 어떠한 제휴·승인·후원 관계도 없습니다. Escape from Tarkov™ 및 관련 상표·게임 데이터·이미지의 모든 권리는 Battlestate Games Limited 등 각 권리자에게 있습니다.
 - **일일 브리핑은 AI가 자동 생성한 요약입니다.** 부정확하거나 오래된 정보가 포함될 수 있으며, 정확한 내용은 각 항목의 원문 출처를 확인하세요. 본 사이트의 정보(시세·공략 포함)를 활용한 게임 내 판단과 그 결과는 이용자 본인의 책임입니다.
 - 시세 데이터는 tarkov.dev가 제공하는 시점 기준이며 실제 게임 내 가격과 차이가 있을 수 있습니다.
+- 맵 지도와 퀘스트 마커 좌표는 커뮤니티 제작 데이터 기준이라 게임 패치에 따라 실제 위치와 다를 수 있습니다. 일부 목표는 API에 좌표가 없어 마커로 표시되지 않습니다(화면에 명시).
 - 권리자(Battlestate Games 또는 콘텐츠 원작자)의 요청이 있을 경우 해당 콘텐츠를 즉시 수정·삭제하겠습니다. 문의: GitHub Issues
 
 ## 라이선스

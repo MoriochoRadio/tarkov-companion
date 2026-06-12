@@ -25,6 +25,8 @@ export interface QuestObjective {
   questItem?: { id: string; nameKo: string; nameEn: string } // 숨기기/회수 대상
   targetNames?: string[] // shoot: 처치 대상
   useItems?: QuestItemRef[] // useItem: 사용할 아이템 (신호탄 등)
+  // 맵 마커용 (Phase 26) — zones 중심점 + 퀘스트 아이템 스폰 후보 (게임 월드 좌표)
+  locations?: { mapId: string; x: number; z: number }[]
 }
 
 export interface QuestReward {
@@ -67,11 +69,12 @@ const QUERY = `{
     objectives {
       id type description optional
       maps { id name }
-      ... on TaskObjectiveItem { items { id name iconLink image512pxLink } count foundInRaid }
-      ... on TaskObjectiveMark { markerItem { id name iconLink image512pxLink } }
-      ... on TaskObjectiveQuestItem { questItem { id name } count }
-      ... on TaskObjectiveShoot { targetNames count }
-      ... on TaskObjectiveUseItem { useAny { id name iconLink image512pxLink } count }
+      ... on TaskObjectiveItem { items { id name iconLink image512pxLink } count foundInRaid zones { map { id } position { x z } } }
+      ... on TaskObjectiveMark { markerItem { id name iconLink image512pxLink } zones { map { id } position { x z } } }
+      ... on TaskObjectiveQuestItem { questItem { id name } count zones { map { id } position { x z } } possibleLocations { map { id } positions { x z } } }
+      ... on TaskObjectiveShoot { targetNames count zones { map { id } position { x z } } }
+      ... on TaskObjectiveUseItem { useAny { id name iconLink image512pxLink } count zones { map { id } position { x z } } }
+      ... on TaskObjectiveBasic { zones { map { id } position { x z } } }
     }
     finishRewards {
       items { item { id name iconLink image512pxLink } count }
@@ -115,6 +118,10 @@ interface RawKoTask {
     questItem?: { id: string; name: string } | null
     targetNames?: (string | null)[] | null
     useAny?: RawItem[] | null
+    zones?: { map: { id: string } | null; position: { x: number; z: number } | null }[] | null
+    possibleLocations?:
+      | { map: { id: string } | null; positions: { x: number; z: number }[] | null }[]
+      | null
   }[]
   finishRewards: {
     items: { item: RawItem; count: number }[]
@@ -232,6 +239,22 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
           ? { targetNames: o.targetNames.filter((n): n is string => Boolean(n)) }
           : {}),
         ...(o.useAny?.length ? { useItems: o.useAny.map(ref) } : {}),
+        ...(() => {
+          // zones 중심점 + 스폰 후보를 합쳐 마커 좌표 목록으로 (맵 마커용)
+          const locs: { mapId: string; x: number; z: number }[] = []
+          for (const zn of o.zones ?? []) {
+            if (zn.map && zn.position) {
+              locs.push({ mapId: zn.map.id, x: zn.position.x, z: zn.position.z })
+            }
+          }
+          for (const pl of o.possibleLocations ?? []) {
+            if (!pl.map) continue
+            for (const p of pl.positions ?? []) {
+              locs.push({ mapId: pl.map.id, x: p.x, z: p.z })
+            }
+          }
+          return locs.length ? { locations: locs } : {}
+        })(),
       }
     }),
     rewards: {

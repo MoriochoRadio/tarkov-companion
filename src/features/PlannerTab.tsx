@@ -3,8 +3,14 @@ import { fetchMaps } from '../api/maps'
 import { biName, fetchQuests, type Quest, type QuestObjective } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
+import {
+  fetchMapMeta,
+  metaForNormalizedName,
+  type MapMeta,
+} from '../lib/mapProject'
 import { usePlannerPicks } from '../lib/plannerPicks'
 import { usePlayerLevel } from '../lib/playerLevel'
+import { MapViewer, type ViewMarker } from './MapViewer'
 import { TableSkeleton } from './Skeleton'
 
 // 맵 퀘스트 플래너 1단계 (Phase 25) — "한 레이드에 퀘스트 몰아 밀기".
@@ -44,6 +50,12 @@ const catOf = (o: QuestObjective): Cat => CAT_OF[o.type] ?? 'other'
 
 const onMap = (o: QuestObjective, mapId: string) =>
   o.maps.some((m) => m.id === mapId)
+
+// 퀘스트별 마커 색 — 다크 배경에서 구분되는 8색 순환
+const QUEST_COLORS = [
+  '#e8c66a', '#6ab7e8', '#7fd98c', '#e87f7f',
+  '#c89be8', '#e8a85f', '#62d9c8', '#e86ab4',
+]
 
 // ---------- 레이드 가방: 선택 퀘스트의 이 맵 목표에서 지참물·처치 합산 ----------
 
@@ -227,8 +239,15 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
   const [level, setLevel] = usePlayerLevel()
   const [activeOnly, setActiveOnly] = useState(false)
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
+  const [showMap, setShowMap] = useState(false)
   const { picks, toggle, clear } = usePlannerPicks()
   const { ids: activeIds } = useIdSet(ACTIVE_QUESTS_KEY)
+
+  // 맵 메타(투영·층 정의)는 맵 보기를 처음 켤 때만 로드 (lazy)
+  const metaState = useAsyncData(
+    () => (showMap ? fetchMapMeta() : Promise.resolve(null)),
+    [showMap],
+  )
 
   const quests = questsState.status === 'ready' ? questsState.data : []
 
@@ -304,6 +323,63 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
 
   const bag = useMemo(() => buildBag(selected), [selected])
 
+  // 퀘스트 → 마커 색 (선택 순서 기준 순환)
+  const questColor = useMemo(() => {
+    const m = new Map<string, string>()
+    selected.forEach(({ quest }, i) =>
+      m.set(quest.id, QUEST_COLORS[i % QUEST_COLORS.length]),
+    )
+    return m
+  }, [selected])
+
+  // 이 맵의 수록 SVG 메타 — 없으면(쇄빙선·연구소·미궁) 맵 보기 비활성
+  const mapMeta: MapMeta | null = useMemo(() => {
+    if (metaState.status !== 'ready' || !metaState.data) return null
+    return metaForNormalizedName(metaState.data, normalizedName)
+  }, [metaState, normalizedName])
+  // 메타 파일을 아직 안 받았어도 "버튼 활성 여부"는 알아야 함 — 별칭 포함
+  // 수록 목록은 정적이므로 normalizedName 기준 하드체크 대신 메타 로드 후 판별,
+  // 로드 전에는 활성으로 두고 로드 후 없으면 안내를 보여준다
+
+  // 마커: 체크한 퀘스트의 이 맵 목표 중 좌표 보유분
+  const markers: ViewMarker[] = useMemo(() => {
+    if (!mapId) return []
+    const out: ViewMarker[] = []
+    for (const { quest, objectives } of selected) {
+      const color = questColor.get(quest.id) ?? QUEST_COLORS[0]
+      for (const o of objectives) {
+        const cat = CATS.find((c) => c.key === catOf(o))!
+        for (const [i, loc] of (o.locations ?? []).entries()) {
+          if (loc.mapId !== mapId) continue
+          out.push({
+            key: `${o.id}-${i}`,
+            x: loc.x,
+            z: loc.z,
+            icon: cat.icon,
+            color,
+            questName: quest.displayName,
+            desc: o.description || cat.label,
+          })
+        }
+      }
+    }
+    return out
+  }, [selected, mapId, questColor])
+
+  // 좌표 미제공 목표 — 조용히 숨기지 않고 명시
+  const noCoordObjectives = useMemo(() => {
+    if (!mapId) return []
+    const out: { quest: Quest; o: QuestObjective }[] = []
+    for (const { quest, objectives } of selected) {
+      for (const o of objectives) {
+        if (!(o.locations ?? []).some((l) => l.mapId === mapId)) {
+          out.push({ quest, o })
+        }
+      }
+    }
+    return out
+  }, [selected, mapId])
+
   // 작전 브리핑: 선택 퀘스트의 목표를 유형별로 묶음
   const briefing = useMemo(() => {
     const byCat = new Map<Cat, { quest: Quest; o: QuestObjective }[]>()
@@ -354,6 +430,54 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
       )}
 
       {selectedMap && (
+        <>
+          <div className="toolbar">
+            <button
+              className={`btn-ext${showMap ? ' active' : ''}`}
+              onClick={() => setShowMap((v) => !v)}
+            >
+              🗺️ 맵 보기 {showMap ? '끄기' : ''}
+            </button>
+            {showMap && metaState.status === 'ready' && !mapMeta && (
+              <span className="hint" style={{ margin: 0 }}>
+                이 맵은 수록 지도가 없습니다 (신맵·연구소·미궁) — 가방 패널의
+                tarkov.dev 맵 링크를 이용하세요
+              </span>
+            )}
+          </div>
+          {showMap && metaState.status === 'loading' && (
+            <p className="hint">맵 메타 불러오는 중…</p>
+          )}
+          {showMap && mapMeta && (
+            <>
+              <MapViewer
+                meta={mapMeta}
+                svgUrl={`${import.meta.env.BASE_URL}maps/${mapMeta.svg}`}
+                markers={markers}
+              />
+              {noCoordObjectives.length > 0 && (
+                <details className="planner-nocoord">
+                  <summary>
+                    좌표 미제공 목표 {noCoordObjectives.length}개 — 마커로 못
+                    찍는 목표 (API에 좌표 없음)
+                  </summary>
+                  <ul className="planner-lines">
+                    {noCoordObjectives.map(({ quest, o }) => (
+                      <li key={o.id}>
+                        <span
+                          className="mapmark-dot"
+                          style={{ background: questColor.get(quest.id) }}
+                        />
+                        {CATS.find((c) => c.key === catOf(o))!.icon}{' '}
+                        {o.description || o.type}
+                        <span className="dim"> — {quest.nameKo}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
+            </>
+          )}
         <div className="tracker-split planner-split">
           <div className="tracker-left">
             <div className="toolbar">
@@ -395,6 +519,13 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
                       />
                       <span className="planner-quest-main">
                         <span className="planner-quest-name">
+                          {pickedIds.has(quest.id) && questColor.get(quest.id) && (
+                            <span
+                              className="mapmark-dot"
+                              style={{ background: questColor.get(quest.id) }}
+                              title="맵 마커 색"
+                            />
+                          )}
                           {quest.displayName}
                           {quest.kappaRequired && (
                             <span className="badge-kappa">κ</span>
@@ -456,6 +587,7 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
             />
           </aside>
         </div>
+        </>
       )}
     </div>
   )
