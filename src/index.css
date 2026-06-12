@@ -85,34 +85,6 @@ body {
 }
 
 /* ============================================================
-   질감 — 필름 그레인(PNG 타일 반복) + 비네트. 둘 다 고정 1장, 런타임 비용 0.
-   강도는 아주 약하게 — 텍스트 가독성 침해 금지
-   ============================================================ */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 139;
-  pointer-events: none;
-  background: radial-gradient(
-    ellipse at center,
-    transparent 58%,
-    rgba(5, 7, 9, 0.36) 100%
-  );
-}
-
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 140;
-  pointer-events: none;
-  background: url('./assets/grain.png') repeat;
-  background-size: 120px 120px;
-  opacity: 0.28; /* 아주 약하게 — 어두운 빈 화면에서도 노이즈가 도드라지면 안 됨 */
-}
-
-/* ============================================================
    마스트헤드 — 탭 진입을 알리는 화면급 디스플레이 타이포
    ============================================================ */
 .masthead {
