@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   fetchProfitData,
   type BarterInfo,
@@ -14,6 +14,9 @@ import { KeysView } from './KeysView'
 import { TableSkeleton } from './Skeleton'
 
 const PAGE_SIZE = 50
+// 데이터 도착 직후 첫 화면은 소량만 — 행마다 재료 아이콘이 여러 개라
+// 큰 레이아웃 패스 하나가 저사양에서 1초 이상으로 증폭되는 것을 실측으로 확인
+const FIRST_PAINT_ROWS = 14
 
 type Mode = 'craft' | 'barter' | 'keys'
 type CraftSort = 'perHour' | 'profit'
@@ -121,8 +124,18 @@ export function ProfitTab() {
   const [builtOnly, setBuiltOnly] = useState(false)
   const [craftSort, setCraftSort] = useState<CraftSort>('perHour')
   const [traderLevel, setTraderLevel] = useState('')
-  const [visible, setVisible] = useState(PAGE_SIZE)
+  const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
   const { ids: built } = useIdSet(HIDEOUT_BUILT_KEY)
+
+  // 첫 페인트 후 한 페이지 분량으로 확장 (2단계 렌더 — 퀘스트 탭과 동일 패턴)
+  useEffect(() => {
+    if (state.status === 'ready' && visible < PAGE_SIZE) {
+      const t = setTimeout(() => setVisible(PAGE_SIZE), 50)
+      return () => clearTimeout(t)
+    }
+    // visible은 의도적으로 제외 — 확장은 데이터 도착 후 1회만
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.status])
 
   const items = state.status === 'ready' ? state.data.items : null
 
