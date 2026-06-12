@@ -210,6 +210,32 @@ await page.evaluate(() => document.querySelector('.tk-level .tk-item')?.click())
 await new Promise((r) => setTimeout(r, 200))
 console.log(`7.38) 은신처 아이템 클릭 차감 반영: ${Date.now() - t24b}ms`)
 
+// --- Phase 25: 맵 퀘스트 플래너 ---
+
+await measure(
+  '7.39) 플래너 진입 → 맵 칩',
+  () => clickTab('퀘스트 도구', '플래너'),
+  '.planner-map',
+)
+
+await measure(
+  '7.40) 맵 선택(세관) → 퀘스트 목록 + 가방 패널',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.planner-map')]
+        .find((b) => b.textContent.includes('세관'))
+        .click(),
+    ),
+  '.planner-quest',
+)
+
+const t25 = Date.now()
+await page.evaluate(() =>
+  document.querySelector('.planner-pick input').click(),
+)
+await new Promise((r) => setTimeout(r, 200))
+console.log(`7.41) 퀘스트 체크 → 가방 합산 반영: ${Date.now() - t25}ms`)
+
 // --- Phase 23: 해금 탭 ---
 
 await measure(

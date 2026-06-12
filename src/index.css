@@ -4861,3 +4861,216 @@ summary:focus-visible {
   min-width: 1.4em;
   text-align: right;
 }
+
+/* ============================================================
+   맵 퀘스트 플래너 (Phase 25) — 맵 칩 + 체크 목록 + 레이드 가방
+   ============================================================ */
+.planner-maps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  margin-bottom: var(--sp-3);
+}
+
+.planner-map {
+  position: relative;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-2);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: var(--fs-sub);
+  padding: 6px 12px;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.planner-map:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.planner-map.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.planner-map-picked {
+  margin-left: 6px;
+  color: var(--accent);
+  font-size: 0.72rem;
+}
+
+.planner-quests {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.planner-quest {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-3);
+}
+
+.planner-pick {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.planner-pick input {
+  margin-top: 3px;
+  accent-color: var(--accent);
+}
+
+.planner-quest-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.planner-quest-name {
+  font-weight: 600;
+}
+
+.planner-quest-meta {
+  font-size: var(--fs-sub);
+}
+
+.planner-detail {
+  flex: none;
+  white-space: nowrap;
+}
+
+/* --- 작전 브리핑 --- */
+.planner-briefing {
+  margin-top: var(--sp-5);
+}
+
+.planner-briefing h3 {
+  margin: 0 0 var(--sp-2);
+  font-size: 1rem;
+}
+
+.planner-cat {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-3);
+  margin-bottom: var(--sp-2);
+}
+
+.planner-cat h4 {
+  margin: 0 0 var(--sp-1);
+  font-size: var(--fs-body);
+}
+
+.planner-lines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(--fs-body);
+}
+
+/* --- 레이드 가방 패널 --- */
+.planner-bag {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+
+.planner-bag > summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: var(--sp-2) var(--sp-3);
+  list-style: none;
+}
+
+.planner-bag > summary::-webkit-details-marker {
+  display: none;
+}
+
+.planner-bag[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.planner-bag-body {
+  padding: var(--sp-2) var(--sp-3) var(--sp-3);
+}
+
+.planner-bag-body h4 {
+  margin: var(--sp-2) 0 var(--sp-1);
+  font-size: var(--fs-sub);
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.planner-carry {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.planner-carry li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.planner-carry img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border-radius: 4px;
+}
+
+.planner-carry .num {
+  margin-left: auto;
+}
+
+.planner-etc {
+  margin: var(--sp-2) 0 0;
+}
+
+.planner-bag-actions {
+  display: flex;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+}
+
+/* 모바일: 가방이 목록 위로 + 상단 고정 (접기 가능) — 레이드 중 폰 확인 시나리오.
+   sticky 기준 top은 2단 탭바 높이 아래 */
+@media (max-width: 860px) {
+  .planner-bag-col {
+    order: -1;
+    position: sticky;
+    top: 84px; /* 모바일 2단 탭바 높이(83px 실측) 바로 아래 */
+    z-index: 5;
+  }
+
+  .planner-bag {
+    background: var(--bg);
+    max-height: 46vh;
+    overflow-y: auto;
+  }
+}

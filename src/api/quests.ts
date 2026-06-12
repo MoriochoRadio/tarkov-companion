@@ -16,9 +16,15 @@ export interface QuestObjective {
   type: string
   description: string // 한국어 (일부 미번역은 영어 그대로 옴)
   optional: boolean
+  maps: { id: string; name: string }[] // 목표가 묶인 맵 (없으면 장소 무관)
   items?: QuestItemRef[]
   count?: number
   foundInRaid?: boolean
+  // 맵 퀘스트 플래너용 (Phase 25) — 지참물·처치 요약 재료
+  markerItem?: QuestItemRef // mark: 설치할 마커 (MS2000 등)
+  questItem?: { id: string; nameKo: string; nameEn: string } // 숨기기/회수 대상
+  targetNames?: string[] // shoot: 처치 대상
+  useItems?: QuestItemRef[] // useItem: 사용할 아이템 (신호탄 등)
 }
 
 export interface QuestReward {
@@ -60,7 +66,12 @@ const QUERY = `{
     taskRequirements { task { id } }
     objectives {
       id type description optional
+      maps { id name }
       ... on TaskObjectiveItem { items { id name iconLink image512pxLink } count foundInRaid }
+      ... on TaskObjectiveMark { markerItem { id name iconLink image512pxLink } }
+      ... on TaskObjectiveQuestItem { questItem { id name } count }
+      ... on TaskObjectiveShoot { targetNames count }
+      ... on TaskObjectiveUseItem { useAny { id name iconLink image512pxLink } count }
     }
     finishRewards {
       items { item { id name iconLink image512pxLink } count }
@@ -70,7 +81,13 @@ const QUERY = `{
   }
   en: tasks(lang: en) {
     id name
-    objectives { id ... on TaskObjectiveItem { items { id name } } }
+    objectives {
+      id
+      ... on TaskObjectiveItem { items { id name } }
+      ... on TaskObjectiveMark { markerItem { id name } }
+      ... on TaskObjectiveQuestItem { questItem { id name } }
+      ... on TaskObjectiveUseItem { useAny { id name } }
+    }
     finishRewards { items { item { id name } } offerUnlock { item { id name } } }
   }
 }`
@@ -90,9 +107,14 @@ interface RawKoTask {
     type: string
     description: string | null
     optional: boolean | null
+    maps: { id: string; name: string }[] | null
     items?: RawItem[]
     count?: number | null
     foundInRaid?: boolean | null
+    markerItem?: RawItem | null
+    questItem?: { id: string; name: string } | null
+    targetNames?: (string | null)[] | null
+    useAny?: RawItem[] | null
   }[]
   finishRewards: {
     items: { item: RawItem; count: number }[]
@@ -115,7 +137,13 @@ interface RawItem {
 interface RawEnTask {
   id: string
   name: string
-  objectives: { id: string; items?: { id: string; name: string }[] }[]
+  objectives: {
+    id: string
+    items?: { id: string; name: string }[]
+    markerItem?: { id: string; name: string } | null
+    questItem?: { id: string; name: string } | null
+    useAny?: { id: string; name: string }[] | null
+  }[]
   finishRewards: {
     items: { item: { id: string; name: string } }[]
     offerUnlock: { item: { id: string; name: string } }[]
@@ -142,6 +170,9 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
     enTaskName.set(t.id, t.name)
     for (const o of t.objectives) {
       for (const i of o.items ?? []) enItemName.set(i.id, i.name)
+      if (o.markerItem) enItemName.set(o.markerItem.id, o.markerItem.name)
+      if (o.questItem) enItemName.set(o.questItem.id, o.questItem.name)
+      for (const i of o.useAny ?? []) enItemName.set(i.id, i.name)
     }
     for (const r of t.finishRewards?.items ?? []) {
       enItemName.set(r.item.id, r.item.name)
@@ -170,25 +201,39 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
       .map((r) => r.task?.id)
       .filter((id): id is string => Boolean(id)),
     unlocks: [],
-    objectives: t.objectives.map((o) => ({
-      id: o.id,
-      type: o.type,
-      description: (o.description ?? '').trim(),
-      optional: o.optional ?? false,
-      ...(o.items?.length
-        ? {
-            items: o.items.map((i) => ({
-              id: i.id,
-              nameKo: i.name.trim(),
-              nameEn: (enItemName.get(i.id) ?? i.name).trim(),
-              iconLink: i.iconLink,
-              imageLink: i.image512pxLink,
-            })),
-          }
-        : {}),
-      ...(o.count != null ? { count: o.count } : {}),
-      ...(o.foundInRaid != null ? { foundInRaid: o.foundInRaid } : {}),
-    })),
+    objectives: t.objectives.map((o) => {
+      const ref = (i: RawItem): QuestItemRef => ({
+        id: i.id,
+        nameKo: i.name.trim(),
+        nameEn: (enItemName.get(i.id) ?? i.name).trim(),
+        iconLink: i.iconLink,
+        imageLink: i.image512pxLink,
+      })
+      return {
+        id: o.id,
+        type: o.type,
+        description: (o.description ?? '').trim(),
+        optional: o.optional ?? false,
+        maps: o.maps ?? [],
+        ...(o.items?.length ? { items: o.items.map(ref) } : {}),
+        ...(o.count != null ? { count: o.count } : {}),
+        ...(o.foundInRaid != null ? { foundInRaid: o.foundInRaid } : {}),
+        ...(o.markerItem ? { markerItem: ref(o.markerItem) } : {}),
+        ...(o.questItem
+          ? {
+              questItem: {
+                id: o.questItem.id,
+                nameKo: o.questItem.name.trim(),
+                nameEn: (enItemName.get(o.questItem.id) ?? o.questItem.name).trim(),
+              },
+            }
+          : {}),
+        ...(o.targetNames?.length
+          ? { targetNames: o.targetNames.filter((n): n is string => Boolean(n)) }
+          : {}),
+        ...(o.useAny?.length ? { useItems: o.useAny.map(ref) } : {}),
+      }
+    }),
     rewards: {
       items: (t.finishRewards?.items ?? []).map((r) => ({
         id: r.item.id,
