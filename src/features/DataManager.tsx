@@ -11,6 +11,7 @@ const DATA_KEYS = [
   'tc:hideout-built',
   'tc:my-level',
   'tc:price-alerts',
+  'tc:quest-item-marks',
 ] as const
 
 const KEY_LABELS: Record<string, string> = {
@@ -20,6 +21,7 @@ const KEY_LABELS: Record<string, string> = {
   'tc:hideout-built': '은신처 건설 상태',
   'tc:my-level': '내 레벨',
   'tc:price-alerts': '가격 알림',
+  'tc:quest-item-marks': '퀘스트 아이템 그리드 표시',
 }
 
 function exportData() {

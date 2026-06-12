@@ -3416,6 +3416,116 @@ summary:focus-visible {
   color: var(--text-3);
 }
 
+/* --- 퀘스트 아이템 그리드 (정크박스 스타일) --- */
+.qgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
+  gap: var(--sp-2);
+}
+
+.qtile {
+  position: relative;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 30%, #181f27 0%, var(--bg-inset) 80%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-2) 20px;
+  cursor: pointer;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+.qtile:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.qtile img {
+  max-width: 100%;
+  max-height: calc(100% - 4px);
+  object-fit: contain;
+}
+
+/* 수량 — 타일 하단 바 (인벤토리 스택 숫자 느낌) */
+.qtile-count {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1px 4px;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  border-top: 1px solid var(--border);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.qtile-fir {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+/* 모아둠 — 인게임 "확보됨" 느낌의 골드 빗금 + 살짝 가라앉음 */
+.qtile.stash img {
+  opacity: 0.5;
+}
+
+.qtile.stash {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
+
+.qtile.stash::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent 0 7px,
+    color-mix(in srgb, var(--accent) 28%, transparent) 7px 10px
+  );
+  pointer-events: none;
+}
+
+/* 완료 — 접힘 섹션 안에서 흐리게 + 체크 */
+.qtile.done {
+  opacity: 0.55;
+}
+
+.qtile.done::before {
+  content: '✓';
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  color: var(--up);
+  font-weight: 900;
+  z-index: 1;
+}
+
+/* 힌트 범례용 미니 빗금 견본 */
+.qtile-legend.stash {
+  display: inline-block;
+  padding: 0 6px;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--border));
+  border-radius: 4px;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent 0 5px,
+    color-mix(in srgb, var(--accent) 28%, transparent) 5px 7px
+  );
+}
+
 /* --- 가격 알림 (즐겨찾기) --- */
 .alert-btn {
   background: none;
