@@ -1,5 +1,10 @@
 // tarkov.dev 공개 GraphQL API (무료, 키 불필요)
 // 방문자 브라우저가 직접 호출 — 서버를 거치지 않음
+import {
+  DEFAULT_OFFER_RATE,
+  DEFAULT_REQUIREMENT_RATE,
+} from '../lib/fleaFee'
+
 const ENDPOINT = 'https://api.tarkov.dev/graphql'
 
 export interface TarkovItem {
@@ -8,10 +13,11 @@ export interface TarkovItem {
   shortName: string
   iconLink: string | null
   avg24hPrice: number | null
+  basePrice: number // 수수료 공식의 기준가
   changeLast48hPercent: number | null
   width: number
   height: number
-  types: string[] // 'keys', 'ammo', 'meds' 등 카테고리 태그
+  types: string[] // 'keys', 'ammo', 'noFlea' 등 카테고리 태그
 }
 
 export interface AmmoInfo {
@@ -49,21 +55,45 @@ async function gql<T>(query: string): Promise<T> {
   return json.data
 }
 
+// 플리마켓 세율(Ti/Tr) — 기본값은 1.0 기준 0.03이지만, 패치로 바뀔 수 있어
+// 아이템 응답에 끼워 실시간 값을 받아 둠 (추가 요청 없음).
+// 수수료 표시는 아이템 데이터가 있어야만 일어나므로 이 시점엔 항상 채워져 있음
+let fleaRates = {
+  offerRate: DEFAULT_OFFER_RATE,
+  requirementRate: DEFAULT_REQUIREMENT_RATE,
+}
+
+export function getFleaRates(): typeof fleaRates {
+  return fleaRates
+}
+
 // 전체 아이템(약 5,000개, 1.3MB)을 한 번만 받아서 세션 동안 재사용.
 // 검색·가성비·급등락이 전부 이 캐시를 공유하므로 API 호출은 1번이면 충분.
 let itemsCache: Promise<TarkovItem[]> | null = null
 
 export function fetchAllItems(): Promise<TarkovItem[]> {
-  itemsCache ??= gql<{ items: TarkovItem[] }>(
+  itemsCache ??= gql<{
+    items: TarkovItem[]
+    fleaMarket: { sellOfferFeeRate: number; sellRequirementFeeRate: number }
+  }>(
     `{
       items(lang: ko) {
         id name shortName iconLink
-        avg24hPrice changeLast48hPercent
+        avg24hPrice basePrice changeLast48hPercent
         width height types
       }
+      fleaMarket { sellOfferFeeRate sellRequirementFeeRate }
     }`,
   )
-    .then((d) => d.items)
+    .then((d) => {
+      if (d.fleaMarket?.sellOfferFeeRate > 0) {
+        fleaRates = {
+          offerRate: d.fleaMarket.sellOfferFeeRate,
+          requirementRate: d.fleaMarket.sellRequirementFeeRate,
+        }
+      }
+      return d.items
+    })
     .catch((err: unknown) => {
       itemsCache = null // 실패한 요청은 캐시하지 않고 다음에 재시도
       throw err

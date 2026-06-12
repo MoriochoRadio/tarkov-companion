@@ -2,14 +2,17 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   fetchAllItems,
   fetchPriceHistory,
+  getFleaRates,
   type PricePoint,
   type TarkovItem,
 } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
+import { fleaFee } from '../lib/fleaFee'
 import { consumePendingSearch } from '../lib/searchSeed'
 import { formatPercent, formatRub, percentClass } from '../lib/format'
 import { CountUp } from './CountUp'
+import { FeeCalc } from './FeeCalc'
 import { ItemCell } from './ItemRow'
 import { TableSkeleton } from './Skeleton'
 import { Sparkline } from './Sparkline'
@@ -19,6 +22,21 @@ const MAX_RESULTS = 50
 
 // 즐겨찾기 시세 카운트업은 세션당 1회만 — 검색을 지울 때마다 다시 차오르면 성가심
 let favCountedUp = false
+
+// 실수익 = 현재 시세로 팔았을 때 등록 수수료를 뺀 금액 (1개, 할인 없음 기준)
+function NetCell({ item }: { item: TarkovItem }) {
+  const price = item.avg24hPrice ?? 0
+  if (price <= 0 || item.basePrice <= 0 || item.types.includes('noFlea')) {
+    return <span className="dim">—</span>
+  }
+  const fee = fleaFee(item.basePrice, price, getFleaRates())
+  return (
+    <span className="net-cell">
+      {formatRub(price - fee)}
+      <span className="fee-sub dim">수수료 −{formatRub(fee)}</span>
+    </span>
+  )
+}
 
 // 히스토리 호출은 아이템당 1회라 무거움 → 즐겨찾기한 아이템에만 미니 차트 표시
 function HistoryCell({
@@ -53,6 +71,9 @@ function ItemsTable({
           <th className="star-col">★</th>
           <th>아이템</th>
           <th className="num">플리 평균가 (24h)</th>
+          <th className="num" title="현재 시세로 팔 때 등록 수수료를 뺀 금액">
+            실수익
+          </th>
           <th className="num">48시간 변동</th>
           <th>7일 추이</th>
         </tr>
@@ -84,6 +105,9 @@ function ItemsTable({
               ) : (
                 formatRub(item.avg24hPrice)
               )}
+            </td>
+            <td className="num">
+              <NetCell item={item} />
             </td>
             <td className={`num ${percentClass(item.changeLast48hPercent)}`}>
               {formatPercent(item.changeLast48hPercent)}
@@ -168,6 +192,7 @@ export function SearchTab() {
           autoFocus
         />
       </div>
+      <FeeCalc items={state.data} />
       {searching && results.length === 0 && (
         <p className="status">검색 결과 없음</p>
       )}
@@ -175,7 +200,8 @@ export function SearchTab() {
         <>
           <p className="hint">
             플리마켓 24시간 평균가 기준 · 최대 {MAX_RESULTS}개 표시 · ‘—’는 플리마켓
-            거래 불가 아이템 · ★를 누르면 즐겨찾기에 저장되고 7일 추이가 표시됨
+            거래 불가 아이템 · 실수익 = 시세로 팔 때 등록 수수료(1개, 할인 없음)를 뺀
+            금액 · ★를 누르면 즐겨찾기에 저장되고 7일 추이가 표시됨
           </p>
           <ItemsTable
             rows={results}

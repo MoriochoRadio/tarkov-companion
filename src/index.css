@@ -1866,6 +1866,132 @@ select:focus-visible {
 }
 
 /* ============================================================
+   플리 수수료 — 실수익 셀 + 계산기
+   ============================================================ */
+.net-cell {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.fee-sub {
+  font-size: var(--fs-label);
+  white-space: nowrap;
+}
+
+.fee-calc {
+  margin: var(--sp-3) 0 var(--sp-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+}
+
+.fee-calc summary {
+  cursor: pointer;
+  padding: var(--sp-3) var(--sp-4);
+  color: var(--text-2);
+  font-size: var(--fs-body);
+}
+
+.fee-calc summary:hover {
+  color: var(--accent);
+}
+
+.fee-calc-body {
+  padding: 0 var(--sp-4) var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.fee-calc-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.fee-calc-picks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.fee-calc-picks button {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  width: 100%;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-3);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fee-calc-picks button:hover {
+  border-color: var(--accent);
+}
+
+.fee-calc-picks img,
+.fee-calc-item img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex: none;
+}
+
+.fee-calc-picks .num {
+  margin-left: auto;
+}
+
+.fee-calc-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin: 0;
+}
+
+.fee-calc-price {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--text-2);
+  font-size: var(--fs-body);
+}
+
+.fee-calc-out {
+  display: flex;
+  gap: var(--sp-6);
+  margin: 0;
+}
+
+.fee-calc-out dt {
+  color: var(--text-3);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+}
+
+.fee-calc-out dd {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.fee-calc-out dd.metric {
+  color: var(--accent-bright);
+}
+
+/* ============================================================
    준비물 탭 — 체크리스트 카드. 레이드 중 폰으로 보는 시나리오가 1순위라
    +/− 버튼은 데스크톱·모바일 모두 손가락 크기(40px+)로 유지
    ============================================================ */
