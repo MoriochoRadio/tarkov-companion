@@ -95,6 +95,51 @@ await page.evaluate(() => {
 await new Promise((r) => setTimeout(r, 200))
 console.log(`5) 트레이더 필터 변경: ${Date.now() - t1}ms`)
 
+// --- Phase 12 추가 탭 ---
+
+await measure(
+  '6) 준비물 탭 진입 → 체크리스트 표시',
+  () =>
+    page.evaluate(() => {
+      const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
+        b.textContent.includes('준비물'),
+      )
+      btn.click()
+    }),
+  '.prep-row',
+)
+
+const t2 = Date.now()
+await page.evaluate(() =>
+  document.querySelector('.prep-step:not(:disabled)').click(),
+)
+await new Promise((r) => setTimeout(r, 200))
+console.log(`7) 체크리스트 +1 반영: ${Date.now() - t2}ms`)
+
+await measure(
+  '8) 모딩 탭 진입 → 무기 목록',
+  () =>
+    page.evaluate(() => {
+      const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
+        b.textContent.includes('모딩'),
+      )
+      btn.click()
+    }),
+  '.weapon-card',
+)
+
+await measure(
+  '9) 무기 선택 → 슬롯 목록 (lazy 조회)',
+  () => page.evaluate(() => document.querySelector('.weapon-card').click()),
+  '.mod-slot',
+)
+
+await measure(
+  '10) 슬롯 펼치기 → 부품 행',
+  () => page.evaluate(() => document.querySelector('.mod-slot summary').click()),
+  '.mod-part',
+)
+
 if (withProfile) {
   const { profile } = await cdp.send('Profiler.stop')
   const nodesById = new Map(profile.nodes.map((n) => [n.id, n]))
