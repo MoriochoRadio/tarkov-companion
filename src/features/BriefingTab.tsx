@@ -64,29 +64,49 @@ function TypewriterHeadline({ text, docKey }: { text: string; docKey: string }) 
   )
 }
 
-function ListItem({ item }: { item: BriefingItem }) {
-  return (
-    <li className="briefing-item">
-      <strong>
-        {item.title}
-        {item.isNew && <span className="badge-new">🆕 NEW</span>}
-      </strong>
-      {item.summary && <p>{item.summary}</p>}
-      {item.url && (
-        <a className="source-link" href={item.url} target="_blank" rel="noreferrer">
-          {item.source ?? '출처'} ↗
-        </a>
-      )}
-    </li>
-  )
-}
-
 function videoIdFrom(url?: string): string | null {
   if (!url) return null
   const m = url.match(
     /(?:youtube\.com\/watch\?[^#]*v=|youtu\.be\/|youtube\.com\/shorts\/)([\w-]{6,})/,
   )
   return m?.[1] ?? null
+}
+
+function ListItem({ item }: { item: BriefingItem }) {
+  // 링크가 영상이면 우측에 미리보기 썸네일 — 글 카드에도 비주얼 한 점
+  const vid = videoIdFrom(item.url)
+  return (
+    <li className={`briefing-item${vid ? ' has-thumb' : ''}`}>
+      <div className="briefing-item-body">
+        <strong>
+          {item.title}
+          {item.isNew && <span className="badge-new">🆕 NEW</span>}
+        </strong>
+        {item.summary && <p>{item.summary}</p>}
+        {item.url && (
+          <a className="source-link" href={item.url} target="_blank" rel="noreferrer">
+            {item.source ?? '출처'} ↗
+          </a>
+        )}
+      </div>
+      {vid && (
+        <a
+          className="briefing-item-thumb"
+          href={item.url}
+          target="_blank"
+          rel="noreferrer"
+          tabIndex={-1}
+          aria-hidden
+        >
+          <img
+            src={`https://i.ytimg.com/vi/${vid}/mqdefault.jpg`}
+            alt=""
+            loading="lazy"
+          />
+        </a>
+      )}
+    </li>
+  )
 }
 
 // 영상 섹션은 유튜브 썸네일 카드로 (id를 못 읽는 항목은 일반 목록으로 폴백)
@@ -99,27 +119,29 @@ function VideoGrid({ items }: { items: BriefingItem[] }) {
         <ul className="video-grid">
           {cards.map((item, i) => (
             <li key={i}>
+              {/* 풀블리드 썸네일 — 제목은 하단 그라데이션 위에 오버레이 */}
               <a
                 className="video-card"
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="video-thumb">
-                  <img
-                    src={`https://i.ytimg.com/vi/${videoIdFrom(item.url)}/hqdefault.jpg`}
-                    alt=""
-                    loading="lazy"
-                  />
-                  <span className="video-play" aria-hidden>
-                    ▶
+                <img
+                  className="video-bg"
+                  src={`https://i.ytimg.com/vi/${videoIdFrom(item.url)}/hqdefault.jpg`}
+                  alt=""
+                  loading="lazy"
+                />
+                <span className="video-play" aria-hidden>
+                  ▶
+                </span>
+                <span className="video-overlay">
+                  <span className="video-title">
+                    {item.title}
+                    {item.isNew && <span className="badge-new">🆕</span>}
                   </span>
+                  {item.source && <span className="video-src">{item.source}</span>}
                 </span>
-                <span className="video-title">
-                  {item.title}
-                  {item.isNew && <span className="badge-new">🆕</span>}
-                </span>
-                {item.source && <span className="video-src">{item.source}</span>}
               </a>
             </li>
           ))}
@@ -136,12 +158,23 @@ function VideoGrid({ items }: { items: BriefingItem[] }) {
   )
 }
 
-function Section({ section, index }: { section: BriefingSection; index: number }) {
+// 벤토 크기 패턴 — 일반 섹션을 큰 칸/작은 칸/와이드로 번갈아 배치 (6열 그리드 기준)
+const BENTO_PATTERN = ['bento-lg', 'bento-sm', 'bento-wide'] as const
+
+function Section({
+  section,
+  index,
+  bento,
+}: {
+  section: BriefingSection
+  index: number
+  bento: string
+}) {
   const isWarning = section.type === 'warning'
   const isVideos = section.type === 'videos'
   return (
     <section
-      className={`briefing-section${isWarning ? ' warning' : ''}${isVideos ? ' videos' : ''}`}
+      className={`briefing-section${isWarning ? ' warning' : ''}${isVideos ? ' videos' : ''}${bento ? ` ${bento}` : ''}`}
       // 카드 stagger 진입 — 늦어도 0.5초 안에 전부 등장
       style={{ animationDelay: `${Math.min(index * 60, 300)}ms` }}
     >
@@ -275,14 +308,21 @@ export function BriefingTab() {
           />
           {/* 주의사항을 항상 맨 위로 — 손해 보기 전에 봐야 하는 정보라서 */}
           <div className="briefing-grid">
-            {[...briefingState.data.sections]
-              .sort(
+            {(() => {
+              const sorted = [...briefingState.data.sections].sort(
                 (a, b) =>
                   Number(b.type === 'warning') - Number(a.type === 'warning'),
               )
-              .map((section, i) => (
-                <Section key={i} section={section} index={i} />
-              ))}
+              let regular = 0
+              return sorted.map((section, i) => {
+                const isFull =
+                  section.type === 'warning' || section.type === 'videos'
+                const bento = isFull
+                  ? ''
+                  : BENTO_PATTERN[regular++ % BENTO_PATTERN.length]
+                return <Section key={i} section={section} index={i} bento={bento} />
+              })
+            })()}
           </div>
         </article>
       )}

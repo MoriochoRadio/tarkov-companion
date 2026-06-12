@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { AmbientBackground } from './features/AmbientBackground'
+import { flushSync } from 'react-dom'
+import { AmbientBackground, pulseAmbient } from './features/AmbientBackground'
 import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
 import { Hero } from './features/Hero'
@@ -9,20 +10,50 @@ import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
 import { ValueTab } from './features/ValueTab'
-import { WeaponWidget } from './features/WeaponShowcase'
 import { setPendingSearch } from './lib/searchSeed'
 
+// eyebrow: 마스트헤드 위에 얹는 영문 모노 라벨 — 잡지 코너명처럼
 const TABS = [
-  { key: 'briefing', label: '오늘의 브리핑', Comp: BriefingTab },
-  { key: 'search', label: '아이템 검색', Comp: SearchTab },
-  { key: 'value', label: '가성비 랭킹', Comp: ValueTab },
-  { key: 'movers', label: '급등/급락', Comp: MoversTab },
-  { key: 'ammo', label: '탄약 비교', Comp: AmmoTab },
-  { key: 'quests', label: '퀘스트', Comp: QuestsTab },
-  { key: 'maps', label: '맵', Comp: MapsTab },
+  { key: 'briefing', label: '오늘의 브리핑', eyebrow: 'DAILY BRIEFING', Comp: BriefingTab },
+  { key: 'search', label: '아이템 검색', eyebrow: 'ITEM SEARCH', Comp: SearchTab },
+  { key: 'value', label: '가성비 랭킹', eyebrow: 'VALUE PER SLOT', Comp: ValueTab },
+  { key: 'movers', label: '급등/급락', eyebrow: 'MARKET MOVERS', Comp: MoversTab },
+  { key: 'ammo', label: '탄약 비교', eyebrow: 'AMMO CHART', Comp: AmmoTab },
+  { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
+  { key: 'maps', label: '맵', eyebrow: 'MAP INTEL', Comp: MapsTab },
 ] as const
 
 type TabKey = (typeof TABS)[number]['key']
+
+// 마스트헤드의 거대한 날짜 — 브리핑 탭 전용 (모노 숫자)
+function mastheadDate(): string {
+  const d = new Date()
+  const weekday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][d.getDay()]
+  const pad = (n: number) => String(n).padStart(2, '0')
+  return `${d.getFullYear()}.${pad(d.getMonth() + 1)}.${pad(d.getDate())} ${weekday}`
+}
+
+// 탭 진입을 알리는 화면급 디스플레이 타이포 — "인터랙티브 매거진"의 마스트헤드
+function Masthead({ tab, index }: { tab: (typeof TABS)[number]; index: number }) {
+  return (
+    <header className="masthead">
+      <p className="masthead-eyebrow">
+        <span className="masthead-index">{String(index + 1).padStart(2, '0')}</span>
+        <span className="masthead-rule" aria-hidden />
+        {tab.eyebrow}
+      </p>
+      <h2 className="masthead-title">
+        {tab.label}
+        <span className="masthead-dot" aria-hidden>
+          .
+        </span>
+      </h2>
+      {tab.key === 'briefing' && (
+        <p className="masthead-date">{mastheadDate()}</p>
+      )}
+    </header>
+  )
+}
 
 // 히어로 인트로는 "처음 온 사람"에게만 — 매일 쓰는 사람을 방해하지 않는 게 절대 원칙
 function shouldShowHero(): boolean {
@@ -58,10 +89,30 @@ export default function App() {
     return () => clearTimeout(t)
   }, [])
 
+  // 탭 전환 = 장면 전환: View Transitions로 화면이 와이프되고, 배경 레이더가 1회 펄스
+  const switchTab = (key: TabKey, before?: () => void) => {
+    const apply = () => {
+      before?.()
+      setActive(key)
+    }
+    if (key === active && !before) return
+    pulseAmbient()
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (!reduced && document.startViewTransition) {
+      // React 상태 갱신을 스냅샷 안에서 동기로 끝내야 전환이 잡힘
+      document.startViewTransition(() => {
+        flushSync(apply)
+      })
+    } else {
+      apply()
+    }
+  }
+
   const pickFromTicker = (name: string) => {
-    setPendingSearch(name)
-    setSearchNonce((n) => n + 1)
-    setActive('search')
+    switchTab('search', () => {
+      setPendingSearch(name)
+      setSearchNonce((n) => n + 1)
+    })
   }
 
   // 모바일에서 탭바가 잘려 있을 때 "오른쪽에 더 있음" 힌트 표시.
@@ -97,7 +148,11 @@ export default function App() {
     return () => window.removeEventListener('resize', place)
   }, [active])
 
-  const activeTab = TABS.find((tab) => tab.key === active) ?? TABS[0]
+  const activeIndex = Math.max(
+    0,
+    TABS.findIndex((tab) => tab.key === active),
+  )
+  const activeTab = TABS[activeIndex]
   const ActiveComp = activeTab.Comp
 
   return (
@@ -110,7 +165,6 @@ export default function App() {
             TARKOV<span className="logo-accent">&nbsp;COMPANION</span>
           </h1>
           <p className="tagline">Escape From Tarkov 한국어 시세·브리핑 대시보드</p>
-          <WeaponWidget />
         </header>
         {/* 로딩 전에도 같은 높이의 빈 바를 둬서 레이아웃 시프트 방지 */}
         {tickerOn ? (
@@ -124,7 +178,7 @@ export default function App() {
               <button
                 key={tab.key}
                 className={tab.key === active ? 'active' : ''}
-                onClick={() => setActive(tab.key)}
+                onClick={() => switchTab(tab.key)}
               >
                 {tab.label}
               </button>
@@ -138,6 +192,7 @@ export default function App() {
           )}
         </div>
         <main className="app-main">
+          <Masthead tab={activeTab} index={activeIndex} />
           <ActiveComp
             key={active === 'search' ? `search-${searchNonce}` : active}
           />

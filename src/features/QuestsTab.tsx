@@ -83,14 +83,28 @@ function QuestDetail({
         )}
       </div>
 
-      <h2 className="quest-title">
-        {quest.displayName}
-        {quest.kappaRequired && <span className="badge-kappa">κ 카파 필수</span>}
-      </h2>
-      <p className="hint">
-        {quest.trader.name} · {quest.map?.name ?? '맵 무관'} · 요구 레벨{' '}
-        {quest.minPlayerLevel}
-      </p>
+      {/* 트레이더 초상화 + 거대 타이틀 — 상세 진입의 첫인상 */}
+      <header className="quest-hero">
+        {quest.trader.imageLink && (
+          <img
+            className="quest-hero-portrait"
+            src={quest.trader.imageLink}
+            alt={quest.trader.name}
+            width={84}
+            height={84}
+          />
+        )}
+        <div className="quest-hero-text">
+          <p className="quest-hero-meta">
+            {quest.trader.name} · {quest.map?.name ?? '맵 무관'} · 요구 레벨{' '}
+            {quest.minPlayerLevel}
+          </p>
+          <h2 className="quest-title">
+            {quest.displayName}
+            {quest.kappaRequired && <span className="badge-kappa">κ 카파 필수</span>}
+          </h2>
+        </div>
+      </header>
 
       <div className="quest-actions">
         <button
@@ -399,7 +413,21 @@ export function QuestsTab() {
                 {q.displayName}
                 {q.kappaRequired && <span className="badge-kappa">κ</span>}
               </td>
-              <td data-label="트레이더">{q.trader.name}</td>
+              <td data-label="트레이더">
+                <span className="trader-cell">
+                  {q.trader.imageLink && (
+                    <img
+                      className="trader-avatar"
+                      src={q.trader.imageLink}
+                      alt=""
+                      width={22}
+                      height={22}
+                      loading="lazy"
+                    />
+                  )}
+                  {q.trader.name}
+                </span>
+              </td>
               <td className="dim" data-label="맵">{q.map?.name ?? '무관'}</td>
               <td className="num" data-label="레벨">{q.minPlayerLevel}</td>
             </tr>

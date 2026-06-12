@@ -25,12 +25,18 @@ interface Smoke {
   alpha: number
 }
 
+export interface HeroCanvasHandle {
+  stop: () => void
+  /** 탭 전환 등 한 번의 임팩트 — 레이더 링 1회 확산 + 입자 가속 후 감쇠 */
+  pulse: () => void
+}
+
 export function startHeroCanvas(
   canvas: HTMLCanvasElement,
   { staticFrame = false, ambient = false } = {},
-): () => void {
+): HeroCanvasHandle {
   const ctx = canvas.getContext('2d')
-  if (!ctx) return () => {}
+  if (!ctx) return { stop: () => {}, pulse: () => {} }
 
   // 모바일은 입자 수 자동 축소.
   // ambient(대시보드 상시 배경)는 절반 — 도구 조작에 끼어들면 안 되는 배경이라
@@ -46,6 +52,7 @@ export function startHeroCanvas(
   let last = performance.now()
   let sweep = -Math.PI / 2
   let grid: HTMLCanvasElement | null = null
+  let pulseStart = -1 // 펄스 시작 시각(ms) — 음수면 비활성
 
   // 연기: 큰 라디얼 그라데이션 블롭을 스프라이트로 1회 렌더
   const sprite = document.createElement('canvas')
@@ -169,6 +176,31 @@ export function startHeroCanvas(
     ctx!.stroke()
   }
 
+  const PULSE_MS = 1100
+
+  // 펄스 진행도 0~1 (끝났으면 -1)
+  function pulseProgress(now: number): number {
+    if (pulseStart < 0) return -1
+    const t = (now - pulseStart) / PULSE_MS
+    if (t >= 1) {
+      pulseStart = -1
+      return -1
+    }
+    return t
+  }
+
+  function drawPulseRing(t: number) {
+    const cx = w * 0.5
+    const cy = h * 0.42
+    const R = Math.min(w, h) * 0.46
+    const ease = 1 - (1 - t) * (1 - t) // ease-out
+    ctx!.strokeStyle = `rgba(${GOLD}, ${(0.4 * (1 - t)).toFixed(3)})`
+    ctx!.lineWidth = 1.5
+    ctx!.beginPath()
+    ctx!.arc(cx, cy, R * ease, 0, Math.PI * 2)
+    ctx!.stroke()
+  }
+
   function draw(dt: number, now: number) {
     ctx!.clearRect(0, 0, w, h)
     if (grid) ctx!.drawImage(grid, 0, 0, w, h)
@@ -185,15 +217,21 @@ export function startHeroCanvas(
     // 정적 모드(reduced-motion)에서는 움직이는 스윕 생략
     if (!staticFrame) drawSweep()
 
+    // 탭 전환 펄스 — 입자가 잠깐 빨라졌다 가라앉고, 골드 링이 1회 퍼짐
+    const pt = staticFrame ? -1 : pulseProgress(now)
+    const boost = pt < 0 ? 1 : 1 + 2.4 * (1 - pt) * (1 - pt)
+
     for (const p of ash) {
-      p.y -= p.vy * dt
-      p.x += Math.sin(p.phase + now / 1000) * p.sway * dt * 14
+      p.y -= p.vy * dt * boost
+      p.x += Math.sin(p.phase + now / 1000) * p.sway * dt * 14 * boost
       if (p.y < -8) spawnAsh(p, true)
       ctx!.globalAlpha = p.alpha
       ctx!.fillStyle = p.gold ? `rgb(${GOLD})` : `rgb(${ASH_GRAY})`
       ctx!.fillRect(p.x, p.y, p.r, p.r)
     }
     ctx!.globalAlpha = 1
+
+    if (pt >= 0) drawPulseRing(pt)
   }
 
   function frame(now: number) {
@@ -232,9 +270,15 @@ export function startHeroCanvas(
   }
   window.addEventListener('resize', onResize)
 
-  return () => {
-    cancelAnimationFrame(rafId)
-    document.removeEventListener('visibilitychange', onVisibility)
-    window.removeEventListener('resize', onResize)
+  return {
+    stop: () => {
+      cancelAnimationFrame(rafId)
+      document.removeEventListener('visibilitychange', onVisibility)
+      window.removeEventListener('resize', onResize)
+    },
+    pulse: () => {
+      if (staticFrame) return
+      pulseStart = performance.now()
+    },
   }
 }

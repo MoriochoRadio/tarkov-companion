@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { ViewerHandle } from '../lib/weaponViewer'
-import { WEAPON_CREDIT, WEAPONS } from '../lib/weapons'
+import { WEAPONS } from '../lib/weapons'
 
 // 3D 무기 쇼케이스 — three.js는 여기서만, 반드시 지연 dynamic import.
 // 첫 페인트 번들에는 이 파일(소량)만 들어가고 three(~170KB gz)는 별도 청크.
@@ -27,7 +27,7 @@ function WeaponStage({
   index: number
   interactive: boolean
   delay: number // three 로드를 미루는 시간(ms) — 첫 페인트와 경쟁 금지
-  variant: 'hero' | 'widget' | 'modal'
+  variant: 'hero'
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const viewerRef = useRef<ViewerHandle | null>(null)
@@ -108,76 +108,4 @@ export function HeroWeapon() {
   )
 }
 
-// 풀스크린 뷰어
-function WeaponModal({ onClose }: { onClose: () => void }) {
-  const [idx, setIdx] = useState(0)
-
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    window.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      window.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  return (
-    <div
-      className="weapon-modal"
-      role="dialog"
-      aria-label="3D 무기 뷰어"
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose()
-      }}
-    >
-      <button className="quest-back weapon-close" onClick={onClose}>
-        ✕ 닫기 (Esc)
-      </button>
-      <WeaponStage index={idx} interactive delay={0} variant="modal" />
-      <div className="weapon-controls">
-        <button
-          className="quest-back"
-          onClick={() => setIdx((i) => (i - 1 + WEAPONS.length) % WEAPONS.length)}
-          aria-label="이전 무기"
-        >
-          ◀
-        </button>
-        <span className="weapon-name">{WEAPONS[idx].name}</span>
-        <button
-          className="quest-back"
-          onClick={() => setIdx((i) => (i + 1) % WEAPONS.length)}
-          aria-label="다음 무기"
-        >
-          ▶
-        </button>
-      </div>
-      <p className="weapon-credit">
-        드래그로 회전 ·{' '}
-        <a href={WEAPON_CREDIT.url} target="_blank" rel="noreferrer">
-          {WEAPON_CREDIT.text}
-        </a>
-      </p>
-    </div>
-  )
-}
-
-// 대시보드 헤더 우측 — 작게 떠서 자동 회전, 클릭하면 풀스크린
-export function WeaponWidget() {
-  const [open, setOpen] = useState(false)
-  return (
-    <>
-      <button
-        className="weapon-widget"
-        onClick={() => setOpen(true)}
-        title="3D 무기 뷰어 열기"
-      >
-        <WeaponStage index={0} interactive={false} delay={3000} variant="widget" />
-      </button>
-      {open && <WeaponModal onClose={() => setOpen(false)} />}
-    </>
-  )
-}
+// 헤더 위젯·풀스크린 뷰어는 Phase 11에서 제거 — 3D는 히어로 인트로에서만

@@ -55,7 +55,7 @@ export function Hero({ onEnter }: { onEnter: () => void }) {
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
-    return startHeroCanvas(canvas, { staticFrame: reduced })
+    return startHeroCanvas(canvas, { staticFrame: reduced }).stop
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 

@@ -4,6 +4,7 @@ const ENDPOINT = 'https://api.tarkov.dev/graphql'
 export interface MapBoss {
   name: string
   spawnChance: number
+  portrait: string | null // tarkov.dev imagePortraitLink — 카드 배너용
 }
 
 export interface TarkovMap {
@@ -25,7 +26,10 @@ interface RawMap {
   normalizedName: string
   players: string | null
   raidDuration: number | null
-  bosses: { boss: { name: string }; spawnChance: number | null }[]
+  bosses: {
+    boss: { name: string; imagePortraitLink: string | null }
+    spawnChance: number | null
+  }[]
   accessKeys: { name: string }[]
   accessKeysMinPlayerLevel: number | null
   wiki: string | null
@@ -42,7 +46,7 @@ export function fetchMaps(): Promise<TarkovMap[]> {
       query: `{
         maps(lang: ko) {
           id name normalizedName players raidDuration
-          bosses { boss { name } spawnChance }
+          bosses { boss { name imagePortraitLink } spawnChance }
           accessKeys { name } accessKeysMinPlayerLevel
           wiki description
         }
@@ -66,6 +70,7 @@ export function fetchMaps(): Promise<TarkovMap[]> {
         bosses: m.bosses.map((b) => ({
           name: b.boss.name,
           spawnChance: b.spawnChance ?? 0,
+          portrait: b.boss.imagePortraitLink,
         })),
         accessKeys: m.accessKeys.map((k) => k.name),
         accessKeysMinPlayerLevel: m.accessKeysMinPlayerLevel,

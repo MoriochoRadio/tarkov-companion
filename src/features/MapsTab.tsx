@@ -15,6 +15,19 @@ function bossLabel(map: TarkovMap): string {
     .join(' · ')
 }
 
+// 배너에 올릴 보스 초상화 — 이름 기준 중복 제거, 최대 3명
+function bossPortraits(map: TarkovMap): { name: string; src: string }[] {
+  const seen = new Set<string>()
+  const out: { name: string; src: string }[] = []
+  for (const b of map.bosses) {
+    if (!b.portrait || seen.has(b.name)) continue
+    seen.add(b.name)
+    out.push({ name: b.name, src: b.portrait })
+    if (out.length >= 3) break
+  }
+  return out
+}
+
 function MapCard({
   map,
   links,
@@ -23,6 +36,7 @@ function MapCard({
   links: { label: string; url: string }[]
 }) {
   const tilt = useTilt<HTMLElement>()
+  const portraits = bossPortraits(map)
   return (
     <section
       className="map-card"
@@ -30,9 +44,18 @@ function MapCard({
       onMouseMove={tilt.onMove}
       onMouseLeave={tilt.onLeave}
     >
-      <h2>
-        {map.name} <span className="dim">{map.normalizedName}</span>
-      </h2>
+      {/* 보스 초상화 배너 + 초대형 맵 이름 — 이미지 출처는 아이템 아이콘과 동일(tarkov.dev) */}
+      <div className="map-banner">
+        {portraits.length > 0 && (
+          <div className="map-banner-bosses" aria-hidden>
+            {portraits.map((p) => (
+              <img key={p.name} src={p.src} alt="" loading="lazy" title={p.name} />
+            ))}
+          </div>
+        )}
+        <span className="map-code">{map.normalizedName}</span>
+        <h2 className="map-name">{map.name}</h2>
+      </div>
       <dl className="map-facts">
         <div>
           <dt>레이드</dt>
