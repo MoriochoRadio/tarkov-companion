@@ -2962,6 +2962,136 @@ select:focus-visible {
 }
 
 /* ============================================================
+   Phase 15 — 인터랙션 폴리시
+   원칙: transform/opacity만, 포인터·모션 환경 게이트, 그레인·비네트 금지 유지
+   ============================================================ */
+
+/* --- 커서 스포트라이트: 좌표는 lib/spotlight.ts가 --mx/--my로 공급 ---
+   셀렉터 목록은 spotlight.ts의 SELECTOR와 1:1 동기화할 것 */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .briefing-section,
+  .build-card,
+  .station-card,
+  .weapon-card,
+  .prep-row,
+  .trader-group,
+  .mod-slot,
+  .video-card,
+  .map-card {
+    position: relative;
+  }
+
+  .briefing-section::after,
+  .build-card::after,
+  .station-card::after,
+  .weapon-card::after,
+  .prep-row::after,
+  .trader-group::after,
+  .mod-slot::after,
+  .video-card::after,
+  .map-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      240px circle at var(--mx, 50%) var(--my, 50%),
+      color-mix(in srgb, var(--accent) 9%, transparent),
+      transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 240ms ease;
+    pointer-events: none;
+  }
+
+  .briefing-section:hover::after,
+  .build-card:hover::after,
+  .station-card:hover::after,
+  .weapon-card:hover::after,
+  .prep-row:hover::after,
+  .trader-group:hover::after,
+  .mod-slot:hover::after,
+  .video-card:hover::after,
+  .map-card:hover::after {
+    opacity: 1;
+  }
+}
+
+/* --- 버튼 마이크로 프레스: 누르는 손맛 — :active라 JS 0 --- */
+@media (prefers-reduced-motion: no-preference) {
+  .star-btn {
+    transition: transform 140ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .star-btn:active {
+    transform: scale(1.35);
+  }
+
+  /* 즐겨찾기/진행 중이 켜지는 순간 한 번 튀어오름 */
+  .star-btn.on {
+    animation: star-pop 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .prep-step:active:not(:disabled) {
+    transform: scale(0.88);
+  }
+
+  .mode-seg button:active,
+  .load-more:active,
+  .btn-ext:active {
+    transform: translateY(1px);
+  }
+}
+
+@keyframes star-pop {
+  0% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* --- 텍스트 선택·스크롤바·포커스: 브랜드 일관성 --- */
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+html {
+  scrollbar-color: var(--border-strong) var(--bg); /* Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 2px;
+}
+
+/* ============================================================
    모바일 반응형
    ============================================================ */
 @media (max-width: 800px) {

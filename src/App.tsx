@@ -13,6 +13,7 @@ import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
 import { ValueTab } from './features/ValueTab'
 import { setPendingSearch } from './lib/searchSeed'
+import { installSpotlight } from './lib/spotlight'
 
 // eyebrow: 마스트헤드 위에 얹는 영문 모노 라벨 — 잡지 코너명처럼
 const TABS = [
@@ -92,6 +93,9 @@ export default function App() {
     const t = setTimeout(() => setTickerOn(true), 1500)
     return () => clearTimeout(t)
   }, [])
+
+  // 카드 커서 스포트라이트 (데스크톱 + 모션 허용 환경 한정)
+  useEffect(() => installSpotlight(), [])
 
   // 탭 전환 = 장면 전환: View Transitions로 화면이 와이프되고, 배경 레이더가 1회 펄스
   const switchTab = (key: TabKey, before?: () => void) => {
