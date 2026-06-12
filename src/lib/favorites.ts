@@ -9,6 +9,8 @@ export const FAV_ITEMS_KEY = 'tc:fav-items'
 export const ACTIVE_QUESTS_KEY = 'tc:active-quests'
 // 은신처에서 "이미 지은 레벨" — id는 `${stationId}:${level}` 형식
 export const HIDEOUT_BUILT_KEY = 'tc:hideout-built'
+// 완료한 스토리 챕터 — id는 storyline.json의 slug
+export const STORY_DONE_KEY = 'tc:story-done'
 
 type Listener = () => void
 

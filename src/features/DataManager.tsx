@@ -17,6 +17,7 @@ const DATA_KEYS = [
   'tc:my-level',
   'tc:price-alerts',
   'tc:quest-item-marks',
+  'tc:story-done',
 ] as const
 
 const KEY_LABELS: Record<string, string> = {
@@ -27,6 +28,7 @@ const KEY_LABELS: Record<string, string> = {
   'tc:my-level': '내 레벨',
   'tc:price-alerts': '가격 알림',
   'tc:quest-item-marks': '퀘스트 아이템 그리드 표시',
+  'tc:story-done': '스토리 챕터 완료',
 }
 
 // "몇 개 저장돼 있나" — 키마다 저장 형태가 달라 형태별로 센다

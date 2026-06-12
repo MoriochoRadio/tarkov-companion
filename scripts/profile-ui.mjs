@@ -95,6 +95,25 @@ await page.evaluate(() => {
 await new Promise((r) => setTimeout(r, 200))
 console.log(`5) 트레이더 필터 변경: ${Date.now() - t1}ms`)
 
+// --- Phase 21: 스토리라인 모드 ---
+
+await measure(
+  '5.5) 퀘스트 스토리라인 모드 → 챕터 카드',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.mode-seg button')]
+        .find((b) => b.textContent.includes('스토리라인'))
+        .click(),
+    ),
+  '.story-card',
+)
+
+await measure(
+  '5.6) 챕터 목표 펼치기',
+  () => page.evaluate(() => document.querySelector('.story-foot .quest-link').click()),
+  '.story-objectives',
+)
+
 // --- Phase 12 추가 탭 ---
 
 await measure(
@@ -115,6 +134,30 @@ await page.evaluate(() =>
 )
 await new Promise((r) => setTimeout(r, 200))
 console.log(`7) 체크리스트 +1 반영: ${Date.now() - t2}ms`)
+
+// --- Phase 21: 은신처 건설 순서 ---
+
+await measure(
+  '7.2) 준비물 → 은신처 뷰',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.mode-seg button')]
+        .find((b) => b.textContent.includes('은신처'))
+        .click(),
+    ),
+  '.station-grid',
+)
+
+await measure(
+  '7.3) 은신처 → 건설 순서 (위상 정렬 + 아이콘 다수, 2단계 렌더)',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.mode-seg button')]
+        .find((b) => b.textContent.includes('건설 순서'))
+        .click(),
+    ),
+  '.bo-step',
+)
 
 await measure(
   '7.5) 돈벌이 탭 진입 → 수익 랭킹',

@@ -8,6 +8,7 @@ import { usePlayerLevel } from '../lib/playerLevel'
 import { consumePendingQuest } from '../lib/searchSeed'
 import { TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
+import { StorylineView } from './StorylineView'
 
 const PAGE_SIZE = 60
 // 데이터 도착 직후 첫 화면은 소량만 그려 단일 레이아웃 패스를 짧게 유지
@@ -258,8 +259,14 @@ function QuestDetail({
 
 // ---------- 목록 화면 ----------
 
+// 1.0부터 메인 스토리는 트레이더 의뢰와 별개인 "스토리 챕터" 시스템 —
+// tarkov.dev tasks(510개)는 전부 트레이더 의뢰라 1.0 기준 사이드퀘스트.
+// 스토리라인은 위키 기반 정적 데이터(StorylineView)로 구분해 보여준다.
+type QuestMode = 'side' | 'story'
+
 export function QuestsTab() {
   const state = useAsyncData(fetchQuests)
+  const [mode, setMode] = useState<QuestMode>('side')
   // 커맨드 팔레트에서 점프해 온 경우 상세를 바로 연다 (1회용 시드)
   const [selectedId, setSelectedId] = useState<string | null>(() =>
     consumePendingQuest(),
@@ -319,13 +326,44 @@ export function QuestsTab() {
     )
   }, [quests, trader, map, maxLevel, query, sortKey, activeOnly, activeIds])
 
+  const modeSeg = (
+    <div className="toolbar">
+      <nav className="mode-seg" aria-label="퀘스트 구분">
+        <button className={mode === 'side' ? 'active' : ''} onClick={() => setMode('side')}>
+          사이드퀘스트 (트레이더 의뢰)
+        </button>
+        <button className={mode === 'story' ? 'active' : ''} onClick={() => setMode('story')}>
+          스토리라인
+        </button>
+      </nav>
+    </div>
+  )
+
+  // 스토리라인은 위키 기반 경량 JSON — 3MB 퀘스트 응답을 기다릴 필요 없음
+  if (mode === 'story') {
+    return (
+      <div>
+        {modeSeg}
+        <StorylineView />
+      </div>
+    )
+  }
+
   if (state.status === 'loading') {
     return (
-      <TableSkeleton rows={10} label="퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)" />
+      <div>
+        {modeSeg}
+        <TableSkeleton rows={10} label="퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)" />
+      </div>
     )
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return (
+      <div>
+        {modeSeg}
+        <p className="status error">불러오기 실패: {state.message}</p>
+      </div>
+    )
   }
 
   const selected = selectedId ? byId.get(selectedId) : null
@@ -344,6 +382,7 @@ export function QuestsTab() {
 
   return (
     <div>
+      {modeSeg}
       <div className="toolbar">
         <input
           className="search-input"
