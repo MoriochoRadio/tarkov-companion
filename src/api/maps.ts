@@ -7,6 +7,11 @@ export interface MapBoss {
   portrait: string | null // tarkov.dev imagePortraitLink — 카드 배너용
 }
 
+export interface MapExtract {
+  name: string
+  faction: 'pmc' | 'scav' | 'shared'
+}
+
 export interface TarkovMap {
   id: string
   name: string
@@ -14,6 +19,7 @@ export interface TarkovMap {
   players: string | null
   raidDuration: number | null
   bosses: MapBoss[]
+  extracts: MapExtract[]
   accessKeys: string[]
   accessKeysMinPlayerLevel: number | null
   wiki: string | null
@@ -30,6 +36,7 @@ interface RawMap {
     boss: { name: string; imagePortraitLink: string | null }
     spawnChance: number | null
   }[]
+  extracts: { name: string; faction: string | null }[]
   accessKeys: { name: string }[]
   accessKeysMinPlayerLevel: number | null
   wiki: string | null
@@ -47,6 +54,7 @@ export function fetchMaps(): Promise<TarkovMap[]> {
         maps(lang: ko) {
           id name normalizedName players raidDuration
           bosses { boss { name imagePortraitLink } spawnChance }
+          extracts { name faction }
           accessKeys { name } accessKeysMinPlayerLevel
           wiki description
         }
@@ -71,6 +79,12 @@ export function fetchMaps(): Promise<TarkovMap[]> {
           name: b.boss.name,
           spawnChance: b.spawnChance ?? 0,
           portrait: b.boss.imagePortraitLink,
+        })),
+        extracts: m.extracts.map((e) => ({
+          name: e.name,
+          faction: (e.faction === 'pmc' || e.faction === 'scav'
+            ? e.faction
+            : 'shared') as MapExtract['faction'],
         })),
         accessKeys: m.accessKeys.map((k) => k.name),
         accessKeysMinPlayerLevel: m.accessKeysMinPlayerLevel,

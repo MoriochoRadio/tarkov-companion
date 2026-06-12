@@ -3369,6 +3369,53 @@ summary:focus-visible {
   }
 }
 
+/* --- 맵 카드: 탈출구 접이식 --- */
+.map-extracts {
+  margin: var(--sp-2) 0 var(--sp-3);
+}
+
+.map-extracts summary {
+  cursor: pointer;
+  color: var(--text-2);
+  font-size: var(--fs-sub);
+}
+
+.map-extracts summary:hover {
+  color: var(--accent);
+}
+
+.map-extract-group {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--fs-sub);
+  color: var(--text-2);
+  line-height: 1.7;
+}
+
+.extract-tag {
+  display: inline-block;
+  margin-right: var(--sp-2);
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: var(--fs-label);
+  font-weight: 700;
+}
+
+.extract-pmc {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.extract-shared {
+  background: color-mix(in srgb, var(--up) 70%, var(--bg-inset));
+  color: #14271a;
+}
+
+.extract-scav {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-strong);
+  color: var(--text-3);
+}
+
 /* --- 커맨드 팔레트 (Ctrl+K) --- */
 .app-header {
   position: relative;

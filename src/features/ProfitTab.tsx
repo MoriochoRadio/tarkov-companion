@@ -10,11 +10,12 @@ import { useAsyncData } from '../hooks/useAsyncData'
 import { HIDEOUT_BUILT_KEY, useIdSet } from '../lib/favorites'
 import { fleaFee } from '../lib/fleaFee'
 import { formatRub } from '../lib/format'
+import { KeysView } from './KeysView'
 import { TableSkeleton } from './Skeleton'
 
 const PAGE_SIZE = 50
 
-type Mode = 'craft' | 'barter'
+type Mode = 'craft' | 'barter' | 'keys'
 type CraftSort = 'perHour' | 'profit'
 
 function formatDuration(sec: number): string {
@@ -217,8 +218,14 @@ export function ProfitTab() {
           >
             트레이더 바터
           </button>
+          <button
+            className={mode === 'keys' ? 'active' : ''}
+            onClick={() => setMode('keys')}
+          >
+            열쇠 가성비
+          </button>
         </nav>
-        {mode === 'craft' ? (
+        {mode === 'keys' ? null : mode === 'craft' ? (
           <>
             <select
               value={station}
@@ -270,6 +277,8 @@ export function ProfitTab() {
           </select>
         )}
       </div>
+      {mode === 'keys' && <KeysView />}
+      {mode !== 'keys' && (
       <p className="hint">
         {mode === 'craft'
           ? '수익 = 산출물 플리 실수익(수수료 제외) − 재료 플리 시세 · 🔧 도구는 소모되지 않아 비용 제외 · "내 은신처" 토글은 준비물 탭의 "지었음" 체크 기준'
@@ -277,12 +286,14 @@ export function ProfitTab() {
         · 시세 없는 재료(도그태그·전용 아이템)가 낀 레시피는 제외 ·{' '}
         {total}개
       </p>
+      )}
       {builtOnly && total === 0 && mode === 'craft' && (
         <p className="hint">
           준비물 탭 → 은신처에서 지은 레벨을 “지었음”으로 표시하면 여기에 내가
           돌릴 수 있는 크래프트만 모입니다.
         </p>
       )}
+      {mode !== 'keys' && (
       <ul className="profit-list">
         {mode === 'craft'
           ? craftRows.slice(0, visible).map((row) => (
@@ -302,7 +313,8 @@ export function ProfitTab() {
               />
             ))}
       </ul>
-      {total > visible && (
+      )}
+      {mode !== 'keys' && total > visible && (
         <button className="load-more" onClick={() => setVisible((v) => v + PAGE_SIZE)}>
           더 보기 ({total - visible}개 남음)
         </button>

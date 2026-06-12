@@ -1,7 +1,36 @@
-import { fetchMapLinks, fetchMaps, type TarkovMap } from '../api/maps'
+import { fetchMapLinks, fetchMaps, type MapExtract, type TarkovMap } from '../api/maps'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { useTilt } from '../hooks/useTilt'
 import { TableSkeleton } from './Skeleton'
+
+const FACTION_LABELS: Record<MapExtract['faction'], string> = {
+  pmc: 'PMC 전용',
+  shared: '공용',
+  scav: '스캐브 전용',
+}
+
+// 탈출구 목록 — 진영별로 묶어 접이식으로 (카드 기본 높이를 지키기 위해)
+function ExtractList({ extracts }: { extracts: MapExtract[] }) {
+  if (extracts.length === 0) return null
+  const groups = (['pmc', 'shared', 'scav'] as const)
+    .map((f) => ({ f, list: extracts.filter((e) => e.faction === f) }))
+    .filter((g) => g.list.length > 0)
+  const pmcCount = extracts.filter((e) => e.faction !== 'scav').length
+  return (
+    <details className="map-extracts">
+      <summary>
+        🚪 탈출구 {extracts.length}개{' '}
+        <span className="dim">(PMC 이용 가능 {pmcCount})</span>
+      </summary>
+      {groups.map((g) => (
+        <p key={g.f} className="map-extract-group">
+          <span className={`extract-tag extract-${g.f}`}>{FACTION_LABELS[g.f]}</span>
+          {g.list.map((e) => e.name).join(' · ')}
+        </p>
+      ))}
+    </details>
+  )
+}
 
 function bossLabel(map: TarkovMap): string {
   if (map.bosses.length === 0) return '보스 없음'
@@ -80,6 +109,7 @@ function MapCard({
           </div>
         )}
       </dl>
+      <ExtractList extracts={map.extracts} />
       <div className="quest-actions">
         <a
           className="btn-ext"
