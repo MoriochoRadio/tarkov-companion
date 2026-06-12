@@ -38,17 +38,28 @@ function mastheadDate(): string {
   return `${d.getFullYear()}.${pad(d.getMonth() + 1)}.${pad(d.getDate())} ${weekday}`
 }
 
-// 탭 진입을 알리는 화면급 디스플레이 타이포 — "인터랙티브 매거진"의 마스트헤드
+// 탭 진입을 알리는 화면급 디스플레이 타이포 — "인터랙티브 매거진"의 마스트헤드.
+// 글자 단위 스태거 등장(키네틱 타이포) — App에서 key={active}로 리마운트되어
+// 탭을 바꿀 때마다 다시 재생됨. 스크린리더에는 통짜 라벨만 들림
 function Masthead({ tab, index }: { tab: (typeof TABS)[number]; index: number }) {
   return (
     <header className="masthead">
       <p className="masthead-eyebrow">
         <span className="masthead-index">{String(index + 1).padStart(2, '0')}</span>
         <span className="masthead-rule" aria-hidden />
-        {tab.eyebrow}
+        <span className="masthead-eyebrow-text">{tab.eyebrow}</span>
       </p>
-      <h2 className="masthead-title">
-        {tab.label}
+      <h2 className="masthead-title" aria-label={tab.label}>
+        <span className="masthead-kinetic" aria-hidden>
+          {[...tab.label].map((ch, i) => (
+            <span
+              key={i}
+              style={{ animationDelay: `${i * 30}ms` }}
+            >
+              {ch === ' ' ? ' ' : ch}
+            </span>
+          ))}
+        </span>
         <span className="masthead-dot" aria-hidden>
           .
         </span>
@@ -200,7 +211,10 @@ export default function App() {
           )}
         </div>
         <main className="app-main">
-          <Masthead tab={activeTab} index={activeIndex} />
+          {/* key로 리마운트 → 키네틱 타이포가 탭 전환마다 재생.
+              형제인 ActiveComp의 key(탭 키 그대로)와 겹치면 React 재조정이
+              깨져 옛 마스트헤드가 DOM에 남음 — 반드시 접두사로 구분 */}
+          <Masthead key={`mast-${active}`} tab={activeTab} index={activeIndex} />
           <ActiveComp
             key={active === 'search' ? `search-${searchNonce}` : active}
           />
