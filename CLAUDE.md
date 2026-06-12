@@ -18,6 +18,7 @@ React + TypeScript + Vite. 배포는 GitHub Actions → GitHub Pages.
 - UI 텍스트는 한국어 우선. tarkov.dev API 호출 시 `lang: ko` 사용
 - 커밋 메시지는 한국어
 - 사용자(저장소 주인)는 미숙한 1인 개발자 — 복잡한 결정을 했을 때는 커밋 메시지나 응답에 이유를 짧게 설명할 것
+- **GitHub Actions cron은 정각(0분) 금지** — 정각은 GitHub 혼잡 슬롯이라 스케줄 이벤트가 통째로 누락될 수 있음 (2026-06-12 브리핑 미발행 사고). 분은 17처럼 어중간한 값 사용
 
 ## 자주 쓰는 명령
 

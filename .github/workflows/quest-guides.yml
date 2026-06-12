@@ -1,9 +1,10 @@
-# 매일 02:00 UTC — 위키 퀘스트 가이드 30개씩 AI 요약 백필 (전체 ~510개, 2~3주 소요)
+# 매일 02:17 UTC(11:17 KST) — 위키 퀘스트 가이드 30개씩 AI 요약 백필 (전체 ~510개, 2~3주 소요)
 name: Quest Guides Backfill
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    # 정각(0분)은 GitHub 혼잡으로 스케줄 누락 위험 → 17분
+    - cron: '17 2 * * *'
   workflow_dispatch:
 
 permissions:

@@ -1,9 +1,10 @@
-# 매주 월요일 01:00 UTC(= KST 10시)에 지난 7일 브리핑을 종합한 주간 메타 리포트 생성
+# 매주 월요일 01:17 UTC(= KST 10:17)에 지난 7일 브리핑을 종합한 주간 메타 리포트 생성
 name: Weekly Report
 
 on:
   schedule:
-    - cron: '0 1 * * 1'
+    # 정각(0분)은 GitHub 혼잡으로 스케줄 누락 위험 → 17분
+    - cron: '17 1 * * 1'
   workflow_dispatch:
 
 permissions:

@@ -1,9 +1,10 @@
-# 매일 한국 시간 오전 9시(00:00 UTC)에 브리핑을 수집·생성·커밋하고 사이트를 재배포
+# 매일 한국 시간 오전 9시 17분(00:17 UTC)에 브리핑을 수집·생성·커밋하고 사이트를 재배포
 name: Daily Briefing
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 00:00 UTC = 09:00 KST
+    # 정각(0분)은 GitHub 혼잡으로 스케줄 이벤트가 통째로 누락될 수 있음 (2026-06-12 실제 누락)
+    - cron: '17 0 * * *' # 00:17 UTC = 09:17 KST
   workflow_dispatch: # Actions 탭에서 수동 실행 가능
 
 permissions:
