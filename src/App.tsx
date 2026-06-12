@@ -14,6 +14,7 @@ import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
 import { ValueTab } from './features/ValueTab'
+import { startAlertPoller } from './lib/alertPoller'
 import { setPendingQuest, setPendingSearch } from './lib/searchSeed'
 import { installSpotlight } from './lib/spotlight'
 
@@ -112,6 +113,9 @@ export default function App() {
 
   // 카드 커서 스포트라이트 (데스크톱 + 모션 허용 환경 한정)
   useEffect(() => installSpotlight(), [])
+
+  // 가격 알림 폴러 — 알림이 걸려 있을 때만 실제 요청 발생
+  useEffect(() => startAlertPoller(), [])
 
   // Ctrl/Cmd+K — 빠른 검색 팔레트
   useEffect(() => {

@@ -3416,6 +3416,50 @@ summary:focus-visible {
   color: var(--text-3);
 }
 
+/* --- 가격 알림 (즐겨찾기) --- */
+.alert-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+  color: var(--text-3);
+  font: inherit;
+  font-size: var(--fs-sub);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.alert-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.alert-btn.on {
+  color: var(--accent-bright);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.alert-btn.on.fired {
+  color: var(--up);
+}
+
+.alert-edit {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-1);
+}
+
+.alert-edit .level-input {
+  width: 110px;
+}
+
+.alert-edit .btn-ext {
+  padding: 4px 10px;
+  font-size: var(--fs-label);
+}
+
 /* --- 커맨드 팔레트 (Ctrl+K) --- */
 .app-header {
   position: relative;

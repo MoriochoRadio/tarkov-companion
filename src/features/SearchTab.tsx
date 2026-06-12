@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { usePriceAlerts } from '../lib/priceAlerts'
 import {
   fetchAllItems,
   fetchPriceHistory,
@@ -38,6 +39,86 @@ function NetCell({ item }: { item: TarkovItem }) {
   )
 }
 
+// 목표가 알림 셀 — 🔔 클릭으로 인라인 편집. 즐겨찾기 모아보기에서만 노출
+function AlertCell({ item }: { item: TarkovItem }) {
+  const { alerts, set } = usePriceAlerts()
+  const [editing, setEditing] = useState(false)
+  const [dir, setDir] = useState<'above' | 'below'>('above')
+  const [priceText, setPriceText] = useState('')
+  const alert = alerts[item.id]
+
+  const openEdit = () => {
+    setDir(alert?.dir ?? 'above')
+    setPriceText(String(alert?.price ?? item.avg24hPrice ?? ''))
+    setEditing(true)
+  }
+
+  const save = () => {
+    const price = Number(priceText)
+    if (!price || price <= 0) return
+    // 권한 요청은 사용자 클릭 안에서만 가능 — 저장 시점에 1회
+    if (typeof Notification !== 'undefined' && Notification.permission === 'default') {
+      void Notification.requestPermission()
+    }
+    set(item.id, { dir, price }) // fired 없이 저장 = (재)무장
+    setEditing(false)
+  }
+
+  if (editing) {
+    return (
+      <span className="alert-edit">
+        <select value={dir} onChange={(e) => setDir(e.target.value as 'above' | 'below')}>
+          <option value="above">이상</option>
+          <option value="below">이하</option>
+        </select>
+        <input
+          className="level-input"
+          type="number"
+          min="1"
+          placeholder="목표가"
+          value={priceText}
+          onChange={(e) => setPriceText(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && save()}
+        />
+        <button className="btn-ext" onClick={save}>
+          저장
+        </button>
+        {alert && (
+          <button
+            className="btn-ext"
+            onClick={() => {
+              set(item.id, null)
+              setEditing(false)
+            }}
+          >
+            끄기
+          </button>
+        )}
+        <button className="btn-ext" onClick={() => setEditing(false)} aria-label="취소">
+          ✕
+        </button>
+      </span>
+    )
+  }
+  if (alert) {
+    return (
+      <button
+        className={`alert-btn on${alert.fired ? ' fired' : ''}`}
+        onClick={openEdit}
+        title={alert.fired ? '알림 발동됨 — 클릭해서 재설정' : '클릭해서 수정'}
+      >
+        {alert.fired ? '✅' : '🔔'} {formatRub(alert.price)}{' '}
+        {alert.dir === 'above' ? '↑' : '↓'}
+      </button>
+    )
+  }
+  return (
+    <button className="alert-btn" onClick={openEdit} title="목표가 알림 설정">
+      🔔
+    </button>
+  )
+}
+
 // 히스토리 호출은 아이템당 1회라 무거움 → 즐겨찾기한 아이템에만 미니 차트 표시
 function HistoryCell({
   isFav,
@@ -57,12 +138,14 @@ function ItemsTable({
   onToggleFav,
   histories,
   countUp = false,
+  withAlerts = false,
 }: {
   rows: TarkovItem[]
   favIds: ReadonlySet<string>
   onToggleFav: (id: string) => void
   histories: Map<string, PricePoint[]> | null
   countUp?: boolean
+  withAlerts?: boolean // 즐겨찾기 모아보기 전용 — 목표가 알림 열
 }) {
   return (
     <table className="data-table">
@@ -76,6 +159,7 @@ function ItemsTable({
           </th>
           <th className="num">48시간 변동</th>
           <th>7일 추이</th>
+          {withAlerts && <th>가격 알림</th>}
         </tr>
       </thead>
       <tbody>
@@ -118,6 +202,11 @@ function ItemsTable({
                 points={histories?.get(item.id)}
               />
             </td>
+            {withAlerts && (
+              <td data-label="가격 알림">
+                <AlertCell item={item} />
+              </td>
+            )}
           </tr>
         ))}
       </tbody>
@@ -214,13 +303,18 @@ export function SearchTab() {
       {!searching && favorites.length > 0 && (
         <>
           <h2 className="fav-heading">★ 즐겨찾기 ({favorites.length})</h2>
-          <p className="hint">이 브라우저에 저장됨 · ★를 다시 누르면 해제</p>
+          <p className="hint">
+            이 브라우저에 저장됨 · ★를 다시 누르면 해제 · 🔔 목표가 알림 —
+            사이트가 열려 있는 동안 5분마다 시세를 확인해 브라우저 알림 (탭을
+            닫으면 멈춤, 발동 후엔 ✅ — 다시 저장하면 재무장)
+          </p>
           <ItemsTable
             rows={favorites}
             favIds={favIds}
             onToggleFav={toggleFav}
             histories={histories}
             countUp={!favCountedUp}
+            withAlerts
           />
         </>
       )}
