@@ -21,6 +21,7 @@ import { ProfitTab } from './features/ProfitTab'
 import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
+import { TrackerTab } from './features/TrackerTab'
 import { UnlocksTab } from './features/UnlocksTab'
 import { ValueTab } from './features/ValueTab'
 import { startAlertPoller } from './lib/alertPoller'
@@ -33,6 +34,7 @@ const TABS = [
   { key: 'briefing', label: '오늘의 브리핑', eyebrow: 'DAILY BRIEFING', Comp: BriefingTab },
   { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
   { key: 'prep', label: '준비물', eyebrow: 'RAID CHECKLIST', Comp: PrepTab },
+  { key: 'tracker', label: 'FIR 트래커', eyebrow: 'FIR TRACKER', Comp: TrackerTab },
   { key: 'unlocks', label: '해금', eyebrow: 'OFFER UNLOCKS', Comp: UnlocksTab },
   { key: 'search', label: '아이템 검색', eyebrow: 'ITEM SEARCH', Comp: SearchTab },
   { key: 'value', label: '가성비 랭킹', eyebrow: 'VALUE PER SLOT', Comp: ValueTab },
@@ -53,7 +55,7 @@ const GROUPS: readonly {
   tabs: readonly TabKey[]
 }[] = [
   { key: 'briefing', label: '브리핑', tabs: ['briefing'] },
-  { key: 'quest-tools', label: '퀘스트 도구', tabs: ['quests', 'prep', 'unlocks'] },
+  { key: 'quest-tools', label: '퀘스트 도구', tabs: ['quests', 'prep', 'tracker', 'unlocks'] },
   { key: 'market-tools', label: '시세 도구', tabs: ['search', 'value', 'movers', 'profit', 'ammo'] },
   { key: 'modding', label: '모딩', tabs: ['modding'] },
   { key: 'maps', label: '맵', tabs: ['maps'] },

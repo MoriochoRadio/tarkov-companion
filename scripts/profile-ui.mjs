@@ -175,6 +175,41 @@ await measure(
   '.bo-step',
 )
 
+// --- Phase 24: FIR 트래커 ---
+
+await measure(
+  '7.34) FIR 트래커 진입 → 퀘스트 트래커 + 정크박스',
+  () => clickTab('퀘스트 도구', 'FIR 트래커'),
+  '.junk-tile',
+)
+
+const t24a = Date.now()
+await page.evaluate(() => document.querySelector('.tk-item').click())
+await new Promise((r) => setTimeout(r, 200))
+console.log(`7.35) 퀘스트 아이템 클릭 차감 반영: ${Date.now() - t24a}ms`)
+
+await measure(
+  '7.36) 은신처 트래커 → 의존성 조직도',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.mode-seg button')]
+        .find((b) => b.textContent.includes('은신처'))
+        .click(),
+    ),
+  '.htree-node',
+)
+
+await measure(
+  '7.37) 스테이션 클릭 → 레벨 패널',
+  () => page.evaluate(() => document.querySelector('.htree-node').click()),
+  '.tk-level',
+)
+
+const t24b = Date.now()
+await page.evaluate(() => document.querySelector('.tk-level .tk-item')?.click())
+await new Promise((r) => setTimeout(r, 200))
+console.log(`7.38) 은신처 아이템 클릭 차감 반영: ${Date.now() - t24b}ms`)
+
 // --- Phase 23: 해금 탭 ---
 
 await measure(

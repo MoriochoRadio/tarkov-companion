@@ -10,6 +10,20 @@ import { TableSkeleton } from './Skeleton'
 
 export const builtKey = (stationId: string, level: number) => `${stationId}:${level}`
 
+// 인게임처럼 순차 건설 — 켜면 아래 레벨까지, 끄면 위 레벨까지 함께.
+// FIR 트래커(TrackerTab)와 공유 — 같은 tc:hideout-built 키를 같은 규칙으로 갱신
+export function cascadeBuilt(
+  set: (id: string, on: boolean) => void,
+  station: HideoutStation,
+  level: number,
+  on: boolean,
+) {
+  for (const lv of station.levels) {
+    if (on && lv.level <= level) set(builtKey(station.id, lv.level), true)
+    if (!on && lv.level >= level) set(builtKey(station.id, lv.level), false)
+  }
+}
+
 // 건설 순서 뷰 첫 페인트 행 수 — 행마다 아이템 아이콘이 많아 2단계 렌더 필수
 // (Phase 17 교훈: 아이콘 많은 목록은 무조건 2단계 렌더로 시작)
 const ORDER_FIRST_ROWS = 12
@@ -256,13 +270,8 @@ export function HideoutView() {
   )
   const selected = stations.find((s) => s.id === selectedId) ?? null
 
-  const onBuild = (station: HideoutStation, level: number, on: boolean) => {
-    // 인게임처럼 순차 건설 — 켜면 아래 레벨까지, 끄면 위 레벨까지 함께
-    for (const lv of station.levels) {
-      if (on && lv.level <= level) set(builtKey(station.id, lv.level), true)
-      if (!on && lv.level >= level) set(builtKey(station.id, lv.level), false)
-    }
-  }
+  const onBuild = (station: HideoutStation, level: number, on: boolean) =>
+    cascadeBuilt(set, station, level, on)
 
   return (
     <div>

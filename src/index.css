@@ -4471,3 +4471,393 @@ summary:focus-visible {
 .unlock-chain-final .unlock-chain-num {
   color: var(--accent);
 }
+
+/* ============================================================
+   FIR 트래커 (Phase 24) — 좌측 목록 ↔ 우측 정크박스 분할.
+   모바일은 상/하 스택 (좌측 먼저)
+   ============================================================ */
+.tracker-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 400px);
+  gap: var(--sp-4);
+  align-items: start;
+}
+
+/* 차감이 실시간으로 보이도록 우측 패널은 스크롤을 따라옴 (데스크톱) */
+.tracker-right {
+  position: sticky;
+  top: 96px;
+  max-height: calc(100vh - 112px);
+  overflow-y: auto;
+}
+
+@media (max-width: 860px) {
+  .tracker-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tracker-right {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+/* --- 상인 선택 줄 --- */
+.tk-traders {
+  display: flex;
+  gap: var(--sp-1);
+  overflow-x: auto;
+  padding-bottom: var(--sp-2);
+  margin-bottom: var(--sp-3);
+  scrollbar-width: thin;
+}
+
+.tk-trader {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-2);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: var(--fs-sub);
+  padding: 6px 12px 6px 6px;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.tk-trader img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.tk-trader:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.tk-trader.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.tk-story-glyph {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-inset);
+  border-radius: 4px;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+
+/* --- 좌측 퀘스트 목록 --- */
+.tk-quests {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.tk-quest {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-2) var(--sp-3);
+}
+
+.tk-quest-head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  margin: 0 0 var(--sp-2);
+}
+
+.tk-quest-name {
+  font-weight: 600;
+}
+
+.tk-item {
+  cursor: pointer;
+}
+
+.tk-item:active {
+  transform: translateY(1px);
+}
+
+.tk-currency {
+  cursor: default;
+  opacity: 0.85;
+}
+
+/* --- 정크박스 그리드 --- */
+.junkbox-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-2);
+}
+
+.junkbox-head h3 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.junk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+  gap: var(--sp-1);
+}
+
+.junk-tile {
+  position: relative;
+  display: block;
+}
+
+.junk-hit {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 30%, #181f27 0%, var(--bg-inset) 80%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  cursor: pointer;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+.junk-hit:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.junk-hit img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* 남은 수량 — 우하단 작은 뱃지 (인벤토리 스택 숫자 느낌) */
+.junk-count {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  border: 1px solid var(--border);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* 되돌리기(−1) — 보유가 있을 때만 좌상단에 등장 */
+.junk-minus {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  color: var(--text-2);
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0;
+}
+
+.junk-minus:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.junk-tile.full .junk-hit {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.junk-tile.full .junk-hit:hover {
+  border-color: var(--border);
+  transform: none;
+}
+
+.junk-tile.full .junk-count {
+  color: var(--ok, #7fbf7f);
+}
+
+/* --- 은신처 조직도 트리 --- */
+.htree {
+  position: relative;
+}
+
+.htree-edges {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.htree-edges path {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 1;
+  opacity: 0.4;
+  transition: opacity 120ms ease, stroke 120ms ease;
+}
+
+.htree-edges path.on {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  opacity: 0.95;
+}
+
+.htree-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-5);
+}
+
+.htree-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 96px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  padding: var(--sp-2) 4px;
+  transition: border-color 120ms ease;
+}
+
+.htree-node img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.htree-node:hover {
+  border-color: var(--border-strong);
+}
+
+.htree-node.active {
+  border-color: var(--accent);
+}
+
+.htree-node.done {
+  opacity: 0.6;
+}
+
+.htree-name {
+  font-size: 0.7rem;
+  line-height: 1.25;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.htree-progress {
+  font-size: 0.7rem;
+  color: var(--text-2);
+}
+
+.htree-fir {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 700;
+}
+
+/* --- 스테이션 레벨 패널 --- */
+.tk-station-panel {
+  margin-top: var(--sp-4);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-3);
+}
+
+.tk-level {
+  padding: var(--sp-2) 0;
+  border-top: 1px solid var(--border);
+}
+
+.tk-level:first-of-type {
+  border-top: none;
+}
+
+.tk-level.built {
+  opacity: 0.55;
+}
+
+.tk-level-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-2);
+}
+
+.tk-level-head .bo-toggle {
+  margin-left: auto;
+}
+
+/* --- 스토리라인 패널 --- */
+.tk-story-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.tk-story-list li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-3);
+}
+
+.tk-story-list li.done {
+  opacity: 0.6;
+}
+
+.tk-story-order {
+  color: var(--accent);
+  min-width: 1.4em;
+  text-align: right;
+}
