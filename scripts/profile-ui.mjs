@@ -40,6 +40,34 @@ if (withProfile) {
   await cdp.send('Profiler.start')
 }
 
+// Phase 23 그룹 내비: 그룹 탭 클릭 → (서브 탭이 있으면) 서브 탭 클릭.
+// 그룹 전환은 View Transition이라 서브 탭 등장이 비동기 — waitForFunction 필수
+async function clickGroup(text) {
+  await page.evaluate((t) => {
+    ;[...document.querySelectorAll('.group-tabs button')]
+      .find((b) => b.textContent.includes(t))
+      .click()
+  }, text)
+}
+
+async function clickTab(groupText, subText) {
+  await clickGroup(groupText)
+  if (!subText) return
+  await page.waitForFunction(
+    (t) =>
+      [...document.querySelectorAll('.sub-tabs button')].some((b) =>
+        b.textContent.includes(t),
+      ),
+    {},
+    subText,
+  )
+  await page.evaluate((t) => {
+    ;[...document.querySelectorAll('.sub-tabs button')]
+      .find((b) => b.textContent.includes(t))
+      .click()
+  }, subText)
+}
+
 async function measure(label, action, waitSelector) {
   const t0 = Date.now()
   await action()
@@ -56,14 +84,8 @@ async function measure(label, action, waitSelector) {
 }
 
 await measure(
-  '1) 퀘스트 탭 진입 → 목록 표시',
-  () =>
-    page.evaluate(() => {
-      const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
-        b.textContent.includes('퀘스트'),
-      )
-      btn.click()
-    }),
+  '1) 퀘스트 그룹 진입 → 목록 표시',
+  () => clickGroup('퀘스트 도구'),
   '.quest-row',
 )
 
@@ -118,13 +140,7 @@ await measure(
 
 await measure(
   '6) 준비물 탭 진입 → 체크리스트 표시',
-  () =>
-    page.evaluate(() => {
-      const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
-        b.textContent.includes('준비물'),
-      )
-      btn.click()
-    }),
+  () => clickTab('퀘스트 도구', '준비물'),
   '.prep-row',
 )
 
@@ -159,27 +175,35 @@ await measure(
   '.bo-step',
 )
 
+// --- Phase 23: 해금 탭 ---
+
+await measure(
+  '7.4) 해금 탭 진입 → 아이템 타일 그리드',
+  () => clickTab('퀘스트 도구', '해금'),
+  '.unlock-card',
+)
+
+await measure(
+  '7.45) 해금 아이템 클릭 → 선행 체인',
+  () => page.evaluate(() => document.querySelector('.unlock-card').click()),
+  '.unlock-chain-list',
+)
+
+await measure(
+  '7.46) 체인 퀘스트 클릭 → 퀘스트 상세로 점프',
+  () => page.evaluate(() => document.querySelector('.unlock-chain-list .quest-link').click()),
+  '.quest-hero',
+)
+
 await measure(
   '7.5) 돈벌이 탭 진입 → 수익 랭킹',
-  () =>
-    page.evaluate(() => {
-      const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
-        b.textContent.includes('돈벌이'),
-      )
-      btn.click()
-    }),
+  () => clickTab('시세 도구', '돈벌이'),
   '.profit-row',
 )
 
 await measure(
   '8) 모딩 탭 진입 → 추천 빌드 카드',
-  () =>
-    page.evaluate(() => {
-      const btn = [...document.querySelectorAll('.tabs button')].find((b) =>
-        b.textContent.includes('모딩'),
-      )
-      btn.click()
-    }),
+  () => clickGroup('모딩'),
   '.build-card',
 )
 

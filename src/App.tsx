@@ -1,4 +1,11 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type ComponentType,
+  type RefObject,
+} from 'react'
 import { flushSync } from 'react-dom'
 import { AmbientBackground, pulseAmbient } from './features/AmbientBackground'
 import { AmmoTab } from './features/AmmoTab'
@@ -14,26 +21,66 @@ import { ProfitTab } from './features/ProfitTab'
 import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
+import { UnlocksTab } from './features/UnlocksTab'
 import { ValueTab } from './features/ValueTab'
 import { startAlertPoller } from './lib/alertPoller'
 import { setPendingQuest, setPendingSearch } from './lib/searchSeed'
 import { installSpotlight } from './lib/spotlight'
 
-// eyebrow: 마스트헤드 위에 얹는 영문 모노 라벨 — 잡지 코너명처럼
+// eyebrow: 마스트헤드 위에 얹는 영문 모노 라벨 — 잡지 코너명처럼.
+// 순서는 그룹 내비(GROUPS) 순서와 맞춤 — 마스트헤드 번호가 그룹 흐름대로 매겨지게
 const TABS = [
   { key: 'briefing', label: '오늘의 브리핑', eyebrow: 'DAILY BRIEFING', Comp: BriefingTab },
+  { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
+  { key: 'prep', label: '준비물', eyebrow: 'RAID CHECKLIST', Comp: PrepTab },
+  { key: 'unlocks', label: '해금', eyebrow: 'OFFER UNLOCKS', Comp: UnlocksTab },
   { key: 'search', label: '아이템 검색', eyebrow: 'ITEM SEARCH', Comp: SearchTab },
   { key: 'value', label: '가성비 랭킹', eyebrow: 'VALUE PER SLOT', Comp: ValueTab },
   { key: 'movers', label: '급등/급락', eyebrow: 'MARKET MOVERS', Comp: MoversTab },
   { key: 'profit', label: '돈벌이', eyebrow: 'PROFIT LAB', Comp: ProfitTab },
   { key: 'ammo', label: '탄약 비교', eyebrow: 'AMMO CHART', Comp: AmmoTab },
-  { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
-  { key: 'prep', label: '준비물', eyebrow: 'RAID CHECKLIST', Comp: PrepTab },
   { key: 'modding', label: '모딩', eyebrow: 'MOD WORKSHOP', Comp: ModdingTab },
   { key: 'maps', label: '맵', eyebrow: 'MAP INTEL', Comp: MapsTab },
 ] as const
 
 type TabKey = (typeof TABS)[number]['key']
+
+// 탭 11개를 도구 성격대로 묶은 2단 내비 — 기능 삭제 없이 재배치(Phase 23).
+// 그룹에 탭이 하나뿐이면 서브 탭 줄은 숨긴다 (그룹 탭 자체가 목적지)
+const GROUPS: readonly {
+  key: string
+  label: string
+  tabs: readonly TabKey[]
+}[] = [
+  { key: 'briefing', label: '브리핑', tabs: ['briefing'] },
+  { key: 'quest-tools', label: '퀘스트 도구', tabs: ['quests', 'prep', 'unlocks'] },
+  { key: 'market-tools', label: '시세 도구', tabs: ['search', 'value', 'movers', 'profit', 'ammo'] },
+  { key: 'modding', label: '모딩', tabs: ['modding'] },
+  { key: 'maps', label: '맵', tabs: ['maps'] },
+]
+
+const groupOf = (key: TabKey) =>
+  GROUPS.find((g) => g.tabs.includes(key)) ?? GROUPS[0]
+
+// 가로 스크롤 내비가 잘려 있을 때 "오른쪽에 더 있음" 힌트 — 그룹/서브 두 줄이 공유.
+// dep: 줄의 내용물이 바뀌는 키 (서브 탭 줄은 그룹이 바뀌면 폭이 달라짐)
+function useMoreRight(ref: RefObject<HTMLElement | null>, dep: string): boolean {
+  const [more, setMore] = useState(false)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const update = () =>
+      setMore(el.scrollWidth - el.clientWidth - el.scrollLeft > 8)
+    update()
+    el.addEventListener('scroll', update, { passive: true })
+    window.addEventListener('resize', update)
+    return () => {
+      el.removeEventListener('scroll', update)
+      window.removeEventListener('resize', update)
+    }
+  }, [ref, dep])
+  return more
+}
 
 // 마스트헤드의 거대한 날짜 — 브리핑 탭 전용 (모노 숫자)
 function mastheadDate(): string {
@@ -136,8 +183,12 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey)
   }, [])
 
+  // 그룹을 다시 눌렀을 때 마지막에 보던 서브 탭으로 복귀 (세션 한정 — 저장 안 함)
+  const lastSubRef = useRef<Record<string, TabKey>>({})
+
   // 탭 전환 = 장면 전환: View Transitions로 화면이 와이프되고, 배경 레이더가 1회 펄스
   const switchTab = (key: TabKey, before?: () => void) => {
+    lastSubRef.current[groupOf(key).key] = key
     const apply = () => {
       before?.()
       setActive(key)
@@ -169,25 +220,15 @@ export default function App() {
     })
   }
 
-  // 모바일에서 탭바가 잘려 있을 때 "오른쪽에 더 있음" 힌트 표시.
-  // 끝까지 스크롤하면 숨김 — 스크롤 위치는 리렌더 없이 이벤트로만 추적
-  const tabsRef = useRef<HTMLElement>(null)
-  const [moreRight, setMoreRight] = useState(false)
-  useEffect(() => {
-    const el = tabsRef.current
-    if (!el) return
-    const update = () =>
-      setMoreRight(el.scrollWidth - el.clientWidth - el.scrollLeft > 8)
-    update()
-    el.addEventListener('scroll', update, { passive: true })
-    window.addEventListener('resize', update)
-    return () => {
-      el.removeEventListener('scroll', update)
-      window.removeEventListener('resize', update)
-    }
-  }, [])
+  const activeGroup = groupOf(active)
 
-  // 활성 탭 밑줄을 슬라이딩 인디케이터로 — translateX/scaleX만 써서 레이아웃 비용 0
+  // 두 줄 다 가로 스크롤 가능 — 잘려 있으면 "오른쪽에 더 있음" 힌트
+  const tabsRef = useRef<HTMLElement>(null)
+  const subRef = useRef<HTMLElement>(null)
+  const moreRight = useMoreRight(tabsRef, 'groups')
+  const subMoreRight = useMoreRight(subRef, activeGroup.key)
+
+  // 활성 그룹 밑줄을 슬라이딩 인디케이터로 — translateX/scaleX만 써서 레이아웃 비용 0
   const indicatorRef = useRef<HTMLSpanElement>(null)
   useLayoutEffect(() => {
     const nav = tabsRef.current
@@ -207,7 +248,12 @@ export default function App() {
     TABS.findIndex((tab) => tab.key === active),
   )
   const activeTab = TABS[activeIndex]
-  const ActiveComp = activeTab.Comp
+  // onQuest를 일괄 전달하기 위한 캐스트 — 현재 소비자는 해금 탭뿐이고,
+  // 나머지 탭은 props를 선언하지 않아 무시함 (런타임 무해)
+  const ActiveComp = activeTab.Comp as ComponentType<{
+    onQuest?: (id: string) => void
+  }>
+  const tabLabel = (key: TabKey) => TABS.find((t) => t.key === key)?.label ?? key
 
   return (
     <>
@@ -237,22 +283,50 @@ export default function App() {
           <div className="ticker" aria-hidden />
         )}
         <div className="tabs-wrap">
-          <nav className="tabs" ref={tabsRef}>
-            {TABS.map((tab) => (
-              <button
-                key={tab.key}
-                className={tab.key === active ? 'active' : ''}
-                onClick={() => switchTab(tab.key)}
+          <div className="nav-row">
+            <nav className="tabs group-tabs" ref={tabsRef} aria-label="도구 그룹">
+              {GROUPS.map((g) => (
+                <button
+                  key={g.key}
+                  className={g.key === activeGroup.key ? 'active' : ''}
+                  onClick={() =>
+                    switchTab(lastSubRef.current[g.key] ?? g.tabs[0])
+                  }
+                >
+                  {g.label}
+                </button>
+              ))}
+              <span className="tab-indicator" ref={indicatorRef} aria-hidden />
+            </nav>
+            {moreRight && (
+              <span className="tabs-more" aria-hidden>
+                ›
+              </span>
+            )}
+          </div>
+          {activeGroup.tabs.length > 1 && (
+            <div className="nav-row">
+              <nav
+                className="sub-tabs"
+                ref={subRef}
+                aria-label={`${activeGroup.label} 탭`}
               >
-                {tab.label}
-              </button>
-            ))}
-            <span className="tab-indicator" ref={indicatorRef} aria-hidden />
-          </nav>
-          {moreRight && (
-            <span className="tabs-more" aria-hidden>
-              ›
-            </span>
+                {activeGroup.tabs.map((key) => (
+                  <button
+                    key={key}
+                    className={key === active ? 'active' : ''}
+                    onClick={() => switchTab(key)}
+                  >
+                    {tabLabel(key)}
+                  </button>
+                ))}
+              </nav>
+              {subMoreRight && (
+                <span className="tabs-more" aria-hidden>
+                  ›
+                </span>
+              )}
+            </div>
           )}
         </div>
         <main className="app-main">
@@ -268,6 +342,7 @@ export default function App() {
                   ? `quests-${questNonce}`
                   : active
             }
+            onQuest={pickQuest}
           />
         </main>
         <footer className="app-footer">

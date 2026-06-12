@@ -831,6 +831,49 @@ body {
   /* 밑줄은 .tab-indicator가 그림 (슬라이딩 모션) */
 }
 
+/* Phase 23 그룹 내비 — 그룹 줄(.tabs 재사용)과 서브 줄이 각자 스크롤·힌트를 가짐 */
+.nav-row {
+  position: relative;
+}
+
+/* 서브 탭: 그룹 안의 페이지들 — 그룹 밑줄 탭과 위계가 구분되는 칩 스타일 */
+.sub-tabs {
+  display: flex;
+  gap: var(--sp-1);
+  padding: var(--sp-2) 0 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.sub-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.sub-tabs button {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-2);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 5px 12px;
+  white-space: nowrap;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+
+.sub-tabs button:hover {
+  color: var(--accent-bright);
+  border-color: var(--border-strong);
+}
+
+.sub-tabs button.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
 /* ============================================================
    카드·테이블
    ============================================================ */
@@ -4314,4 +4357,117 @@ summary:focus-visible {
     max-width: 100%;
     height: auto;
   }
+}
+
+/* ============================================================
+   해금 탭 (Phase 23) — 아이템 타일 그리드 + 선행 퀘스트 체인
+   ============================================================ */
+.unlock-grid {
+  list-style: none;
+  margin: var(--sp-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--sp-2);
+}
+
+.unlock-card {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: var(--sp-2);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  padding: var(--sp-2) var(--sp-3);
+  transition: border-color 120ms ease;
+}
+
+.unlock-card:hover {
+  border-color: var(--accent);
+}
+
+.unlock-card img {
+  grid-row: 1 / span 2;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.unlock-card-name {
+  font-size: var(--fs-sub);
+  line-height: 1.35;
+}
+
+.unlock-card-meta {
+  font-size: 0.78rem;
+}
+
+/* 폴백("해금 불필요") 타일은 클릭 대상이 아님 */
+.unlock-card-static {
+  cursor: default;
+}
+
+.unlock-card-static:hover {
+  border-color: var(--border);
+}
+
+.unlock-fallback {
+  margin-top: var(--sp-3);
+}
+
+.unlock-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.unlock-hero img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+}
+
+.unlock-chain-list {
+  list-style: none;
+  margin: var(--sp-2) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.unlock-chain-list li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-1);
+  flex-wrap: wrap;
+}
+
+.unlock-chain-num {
+  min-width: 1.8em;
+  text-align: right;
+  color: var(--text-2);
+}
+
+/* 체인 마지막 = 해금 퀘스트 — 골드로 강조 */
+.unlock-chain-final .quest-link {
+  color: var(--accent-bright);
+  font-weight: 700;
+}
+
+.unlock-chain-final .unlock-chain-num {
+  color: var(--accent);
 }

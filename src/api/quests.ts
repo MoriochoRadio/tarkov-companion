@@ -26,6 +26,13 @@ export interface QuestReward {
   standing: { trader: string; standing: number }[]
 }
 
+// 퀘스트 완료 보상 중 "트레이더 오퍼 해금" — 해금 탭의 역인덱스 재료
+export interface OfferUnlock {
+  item: QuestItemRef
+  trader: { id: string; name: string }
+  level: number // 트레이더 로열티 레벨 (LL)
+}
+
 export interface Quest {
   id: string
   nameKo: string
@@ -42,6 +49,7 @@ export interface Quest {
   unlocks: string[] // 후행 퀘스트 id (requires의 역방향, 클라이언트 계산)
   objectives: QuestObjective[]
   rewards: QuestReward
+  unlockOffers: OfferUnlock[]
 }
 
 const QUERY = `{
@@ -57,12 +65,13 @@ const QUERY = `{
     finishRewards {
       items { item { id name iconLink image512pxLink } count }
       traderStanding { trader { name } standing }
+      offerUnlock { level trader { id name } item { id name iconLink image512pxLink } }
     }
   }
   en: tasks(lang: en) {
     id name
     objectives { id ... on TaskObjectiveItem { items { id name } } }
-    finishRewards { items { item { id name } } }
+    finishRewards { items { item { id name } } offerUnlock { item { id name } } }
   }
 }`
 
@@ -88,6 +97,11 @@ interface RawKoTask {
   finishRewards: {
     items: { item: RawItem; count: number }[]
     traderStanding: { trader: { name: string }; standing: number }[]
+    offerUnlock: {
+      level: number
+      trader: { id: string; name: string }
+      item: RawItem
+    }[]
   } | null
 }
 
@@ -102,7 +116,22 @@ interface RawEnTask {
   id: string
   name: string
   objectives: { id: string; items?: { id: string; name: string }[] }[]
-  finishRewards: { items: { item: { id: string; name: string } }[] } | null
+  finishRewards: {
+    items: { item: { id: string; name: string } }[]
+    offerUnlock: { item: { id: string; name: string } }[]
+  } | null
+}
+
+type RawOffer = NonNullable<RawKoTask['finishRewards']>['offerUnlock'][number]
+
+function dedupeOffers(offers: RawOffer[]): RawOffer[] {
+  const seen = new Set<string>()
+  return offers.filter((o) => {
+    const key = `${o.item.id}|${o.trader.id}|${o.level}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
 }
 
 function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
@@ -116,6 +145,9 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
     }
     for (const r of t.finishRewards?.items ?? []) {
       enItemName.set(r.item.id, r.item.name)
+    }
+    for (const o of t.finishRewards?.offerUnlock ?? []) {
+      enItemName.set(o.item.id, o.item.name)
     }
   }
 
@@ -171,6 +203,19 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
         standing: s.standing,
       })),
     },
+    // 일부 아이템명에 후행 공백이 있어 trim 필수, API가 같은 오퍼를 태스크 안에
+    // 두 번 주는 경우가 있어(Gunsmith Part 4 등 5건 실측) 중복 제거도 필수
+    unlockOffers: dedupeOffers(t.finishRewards?.offerUnlock ?? []).map((o) => ({
+      level: o.level,
+      trader: o.trader,
+      item: {
+        id: o.item.id,
+        nameKo: o.item.name.trim(),
+        nameEn: (enItemName.get(o.item.id) ?? o.item.name).trim(),
+        iconLink: o.item.iconLink,
+        imageLink: o.item.image512pxLink,
+      },
+    })),
     }
   })
 
