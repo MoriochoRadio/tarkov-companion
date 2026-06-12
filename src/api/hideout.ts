@@ -24,7 +24,8 @@ export interface HideoutItemRef {
 export interface HideoutLevel {
   level: number
   constructionTime: number // 초
-  items: { item: HideoutItemRef; count: number; isCurrency: boolean }[]
+  // fir: 1.0부터 은신처 요구도 일부는 레이드 획득(FIR)만 인정됨
+  items: { item: HideoutItemRef; count: number; isCurrency: boolean; fir: boolean }[]
   stationRequirements: { stationId: string; name: string; level: number }[]
   skillRequirements: { name: string; level: number }[]
   traderRequirements: { name: string; level: number }[]
@@ -44,6 +45,7 @@ export interface HideoutRequirement {
   level: number
   item: HideoutItemRef
   count: number
+  fir: boolean
 }
 
 const QUERY = `{
@@ -51,7 +53,7 @@ const QUERY = `{
     id name imageLink
     levels {
       level constructionTime
-      itemRequirements { item { id name iconLink } count }
+      itemRequirements { item { id name iconLink } count attributes { type value } }
       stationLevelRequirements { station { id name } level }
       skillRequirements { name level }
       traderRequirements { trader { name } level }
@@ -73,6 +75,7 @@ interface RawStation {
     itemRequirements: {
       item: { id: string; name: string; iconLink?: string | null }
       count: number
+      attributes?: { type: string; value: string | null }[] | null
     }[]
     stationLevelRequirements?: { station: { id: string; name: string }; level: number }[]
     skillRequirements?: { name: string; level: number }[]
@@ -105,6 +108,9 @@ function merge(ko: RawStation[], en: RawStation[]): HideoutStation[] {
           },
           count: r.count,
           isCurrency: CURRENCY_IDS.has(r.item.id),
+          fir: (r.attributes ?? []).some(
+            (a) => a.type === 'foundInRaid' && a.value === 'true',
+          ),
         })),
         stationRequirements: (lv.stationLevelRequirements ?? []).map((r) => ({
           stationId: r.station.id,
@@ -162,6 +168,7 @@ export async function fetchHideoutRequirements(): Promise<HideoutRequirement[]> 
           level: lv.level,
           item: r.item,
           count: r.count,
+          fir: r.fir,
         })
       }
     }

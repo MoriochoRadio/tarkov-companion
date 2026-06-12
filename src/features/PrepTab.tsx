@@ -39,12 +39,14 @@ interface PrepRow {
   needs: PrepNeed[]
 }
 
-// 화면용: 필터 적용 후 남은 출처와 합계
+// 화면용: 필터 적용 후 남은 출처와 합계.
+// FIR은 퀘스트/은신처 양쪽에 있을 수 있어(1.0) 출처별로 따로 센다
 interface PrepView extends PrepRow {
   total: number
-  firTotal: number
-  questTotal: number
-  hideoutTotal: number
+  questFir: number
+  questNorm: number
+  hideoutFir: number
+  hideoutNorm: number
 }
 
 function buildRows(
@@ -95,7 +97,7 @@ function buildRows(
       kind: 'hideout',
       label: `${h.stationName} ${h.level}레벨`,
       count: h.count,
-      fir: false,
+      fir: h.fir, // 1.0부터 은신처 요구도 일부는 FIR만 인정
       minLevel: 0,
       questId: null,
       stationKey: `${h.stationId}:${h.level}`,
@@ -127,14 +129,17 @@ function PrepRowView({
         <span className="prep-name">
           <span className="prep-title">{biName(view.nameKo, view.nameEn)}</span>
           <span className="prep-chips">
-            {view.firTotal > 0 && (
-              <span className="badge-fir">FIR {view.firTotal}</span>
+            {view.questFir > 0 && (
+              <span className="badge-fir">퀘 FIR {view.questFir}</span>
             )}
-            {view.questTotal - view.firTotal > 0 && (
-              <span className="prep-chip">퀘스트 {view.questTotal - view.firTotal}</span>
+            {view.questNorm > 0 && (
+              <span className="prep-chip">퀘스트 {view.questNorm}</span>
             )}
-            {view.hideoutTotal > 0 && (
-              <span className="prep-chip">은신처 {view.hideoutTotal}</span>
+            {view.hideoutFir > 0 && (
+              <span className="badge-fir">은신처 FIR {view.hideoutFir}</span>
+            )}
+            {view.hideoutNorm > 0 && (
+              <span className="prep-chip">은신처 {view.hideoutNorm}</span>
             )}
           </span>
         </span>
@@ -272,16 +277,21 @@ function PrepChecklist() {
       if (firOnly) needs = needs.filter((n) => n.fir)
       if (needs.length === 0) continue
       let total = 0
-      let firTotal = 0
-      let questTotal = 0
-      let hideoutTotal = 0
+      let questFir = 0
+      let questNorm = 0
+      let hideoutFir = 0
+      let hideoutNorm = 0
       for (const n of needs) {
         total += n.count
-        if (n.fir) firTotal += n.count
-        if (n.kind === 'quest') questTotal += n.count
-        else hideoutTotal += n.count
+        if (n.kind === 'quest') {
+          if (n.fir) questFir += n.count
+          else questNorm += n.count
+        } else {
+          if (n.fir) hideoutFir += n.count
+          else hideoutNorm += n.count
+        }
       }
-      out.push({ ...r, needs, total, firTotal, questTotal, hideoutTotal })
+      out.push({ ...r, needs, total, questFir, questNorm, hideoutFir, hideoutNorm })
     }
     out.sort((a, b) =>
       sortKey === 'count'
@@ -383,11 +393,11 @@ function PrepChecklist() {
         </label>
       </div>
       <p className="hint">
-        레이드에서 버리거나 팔면 안 되는 아이템 — 퀘스트 제출(FIR = 레이드 획득
-        체크 필수) + 은신처 건설 수요 집계 · +/−로 모은 개수를 기록 (이 브라우저에
-        저장) · 은신처 뷰에서 “지었음” 표시한 레벨 몫은 자동 제외 · “여러 아이템
-        중 하나” 선택형 목표와 화폐는 제외 · 내 레벨을 입력하면 그 레벨에 받을 수
-        있는 퀘스트만 집계
+        레이드에서 버리거나 팔면 안 되는 아이템 — 퀘스트 제출 + 은신처 건설 수요
+        집계 · FIR = 레이드 획득(체크 표시)만 인정, 1.0부터 은신처 일부 요구에도
+        적용 · +/−로 모은 개수를 기록 (이 브라우저에 저장) · 은신처 뷰에서
+        “지었음” 표시한 레벨 몫은 자동 제외 · “여러 아이템 중 하나” 선택형 목표와
+        화폐는 제외 · 내 레벨을 입력하면 그 레벨에 받을 수 있는 퀘스트만 집계
       </p>
 
       <div className="prep-summary">

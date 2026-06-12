@@ -75,6 +75,7 @@ function LevelBlock({
             <span className="num">
               {r.isCurrency ? `₽ ${formatNumber(r.count)}` : `× ${r.count}`}
             </span>
+            {r.fir && <span className="badge-fir">FIR</span>}
             {!r.isCurrency && (counts[r.item.id] ?? 0) > 0 && (
               <span className="num hideout-have">보유 {counts[r.item.id]}</span>
             )}
@@ -120,8 +121,10 @@ export function HideoutView() {
   return (
     <div>
       <p className="hint">
-        스테이션을 누르면 레벨별 요구 아이템·선행 조건 · “지었음”으로 표시한
-        레벨은 통합 체크리스트 집계에서 빠집니다 · 건설 진행:{' '}
+        스테이션을 누르면 레벨별 요구 아이템·선행 조건 ·{' '}
+        <span className="badge-fir">FIR</span> = 레이드에서 직접 획득(체크 표시)한
+        것만 인정 — 1.0부터 은신처도 일부 적용 · “지었음”으로 표시한 레벨은 통합
+        체크리스트 집계에서 빠집니다 · 건설 진행:{' '}
         <span className="num">
           {builtCount}/{totalLevels}
         </span>{' '}
