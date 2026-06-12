@@ -4,6 +4,7 @@ import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quest
 import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
+import { usePlayerLevel } from '../lib/playerLevel'
 import { TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 
@@ -261,7 +262,8 @@ export function QuestsTab() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [trader, setTrader] = useState('')
   const [map, setMap] = useState('')
-  const [maxLevel, setMaxLevel] = useState('') // "내 레벨" — 이 레벨로 받을 수 있는 퀘스트만
+  // "내 레벨" — 준비물 탭과 공유·localStorage 유지 (이 레벨로 받을 수 있는 퀘스트만)
+  const [maxLevel, setMaxLevel] = usePlayerLevel()
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('level')
   const [activeOnly, setActiveOnly] = useState(false)

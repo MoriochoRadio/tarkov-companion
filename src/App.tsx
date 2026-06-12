@@ -6,6 +6,7 @@ import { BriefingTab } from './features/BriefingTab'
 import { Hero } from './features/Hero'
 import { MapsTab } from './features/MapsTab'
 import { MoversTab } from './features/MoversTab'
+import { PrepTab } from './features/PrepTab'
 import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
@@ -20,6 +21,7 @@ const TABS = [
   { key: 'movers', label: '급등/급락', eyebrow: 'MARKET MOVERS', Comp: MoversTab },
   { key: 'ammo', label: '탄약 비교', eyebrow: 'AMMO CHART', Comp: AmmoTab },
   { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
+  { key: 'prep', label: '준비물', eyebrow: 'RAID CHECKLIST', Comp: PrepTab },
   { key: 'maps', label: '맵', eyebrow: 'MAP INTEL', Comp: MapsTab },
 ] as const
 

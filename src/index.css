@@ -1866,6 +1866,211 @@ select:focus-visible {
 }
 
 /* ============================================================
+   준비물 탭 — 체크리스트 카드. 레이드 중 폰으로 보는 시나리오가 1순위라
+   +/− 버튼은 데스크톱·모바일 모두 손가락 크기(40px+)로 유지
+   ============================================================ */
+.prep-summary {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  margin: var(--sp-3) 0 var(--sp-4);
+}
+
+.prep-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prep-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--sp-2) var(--sp-4);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-3) var(--sp-4) calc(var(--sp-3) + 3px);
+  margin-bottom: var(--sp-3);
+  overflow: hidden; /* 하단 진행 바를 모서리 안에 가둠 */
+}
+
+.prep-row.done {
+  opacity: 0.72;
+}
+
+.prep-main {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-width: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.prep-main img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background: var(--bg-inset);
+  border-radius: var(--radius-sm);
+  flex: none;
+}
+
+.prep-name {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.prep-title {
+  overflow-wrap: anywhere;
+}
+
+.prep-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+}
+
+.prep-chip {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.prep-arrow {
+  color: var(--text-3);
+  flex: none;
+}
+
+.prep-counter {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.prep-step {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-inset);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.prep-step:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.prep-step:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.prep-progress-num {
+  min-width: 52px;
+  text-align: center;
+}
+
+/* 행 하단에 깔리는 진행 바 — width %만 변해 레이아웃 비용 없음 */
+.prep-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--bg-inset);
+}
+
+.prep-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+/* 상단 전체 진행률용 — 행 내부가 아니라 일반 플로우에 놓이는 큰 바 */
+.prep-bar.prep-bar-lg {
+  position: static;
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.prep-needs {
+  grid-column: 1 / -1;
+  list-style: none;
+  margin: 0;
+  padding: var(--sp-2) 0 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  font-size: var(--fs-sub);
+  color: var(--text-2);
+}
+
+.prep-kind {
+  display: inline-block;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  padding: 0 6px;
+  margin-right: var(--sp-2);
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-3);
+}
+
+.prep-kind.quest {
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--border-strong));
+  color: var(--accent);
+}
+
+.prep-done {
+  margin-top: var(--sp-5);
+}
+
+.prep-done summary {
+  cursor: pointer;
+  color: var(--text-3);
+  font-size: var(--fs-body);
+  margin-bottom: var(--sp-3);
+}
+
+.prep-done summary:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  /* 폰: 이름 줄 전체 폭 + 카운터를 아랫줄로 — 한 손 조작 동선 */
+  .prep-row {
+    grid-template-columns: 1fr;
+  }
+
+  .prep-counter {
+    justify-content: flex-end;
+  }
+}
+
+/* ============================================================
    모바일 반응형
    ============================================================ */
 @media (max-width: 800px) {
