@@ -3,6 +3,7 @@ import { flushSync } from 'react-dom'
 import { AmbientBackground, pulseAmbient } from './features/AmbientBackground'
 import { AmmoTab } from './features/AmmoTab'
 import { BriefingTab } from './features/BriefingTab'
+import { CommandPalette } from './features/CommandPalette'
 import { Hero } from './features/Hero'
 import { MapsTab } from './features/MapsTab'
 import { ModdingTab } from './features/ModdingTab'
@@ -13,7 +14,7 @@ import { QuestsTab } from './features/QuestsTab'
 import { SearchTab } from './features/SearchTab'
 import { TickerBar } from './features/TickerBar'
 import { ValueTab } from './features/ValueTab'
-import { setPendingSearch } from './lib/searchSeed'
+import { setPendingQuest, setPendingSearch } from './lib/searchSeed'
 import { installSpotlight } from './lib/spotlight'
 
 // eyebrow: 마스트헤드 위에 얹는 영문 모노 라벨 — 잡지 코너명처럼
@@ -90,8 +91,10 @@ export default function App() {
   const [showHero, setShowHero] = useState(shouldShowHero)
   // 검색 탭에 이미 있을 때도 티커 클릭이 반영되도록 리마운트용 논스
   const [searchNonce, setSearchNonce] = useState(0)
+  const [questNonce, setQuestNonce] = useState(0)
   // 티커(아이템 1.3MB)는 첫 페인트와 경쟁하지 않게 잠깐 늦게 켬
   const [tickerOn, setTickerOn] = useState(false)
+  const [paletteOpen, setPaletteOpen] = useState(false)
 
   const enterDashboard = () => {
     try {
@@ -109,6 +112,18 @@ export default function App() {
 
   // 카드 커서 스포트라이트 (데스크톱 + 모션 허용 환경 한정)
   useEffect(() => installSpotlight(), [])
+
+  // Ctrl/Cmd+K — 빠른 검색 팔레트
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault()
+        setPaletteOpen((v) => !v)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
 
   // 탭 전환 = 장면 전환: View Transitions로 화면이 와이프되고, 배경 레이더가 1회 펄스
   const switchTab = (key: TabKey, before?: () => void) => {
@@ -133,6 +148,13 @@ export default function App() {
     switchTab('search', () => {
       setPendingSearch(name)
       setSearchNonce((n) => n + 1)
+    })
+  }
+
+  const pickQuest = (id: string) => {
+    switchTab('quests', () => {
+      setPendingQuest(id)
+      setQuestNonce((n) => n + 1)
     })
   }
 
@@ -188,6 +210,14 @@ export default function App() {
             TARKOV<span className="logo-accent">&nbsp;COMPANION</span>
           </h1>
           <p className="tagline">Escape From Tarkov 한국어 시세·브리핑 대시보드</p>
+          <button
+            className="palette-btn"
+            onClick={() => setPaletteOpen(true)}
+            aria-label="빠른 검색 열기"
+          >
+            <span aria-hidden>⌕</span> 빠른 검색
+            <kbd>Ctrl K</kbd>
+          </button>
         </header>
         {/* 로딩 전에도 같은 높이의 빈 바를 둬서 레이아웃 시프트 방지 */}
         {tickerOn ? (
@@ -220,7 +250,13 @@ export default function App() {
               깨져 옛 마스트헤드가 DOM에 남음 — 반드시 접두사로 구분 */}
           <Masthead key={`mast-${active}`} tab={activeTab} index={activeIndex} />
           <ActiveComp
-            key={active === 'search' ? `search-${searchNonce}` : active}
+            key={
+              active === 'search'
+                ? `search-${searchNonce}`
+                : active === 'quests'
+                  ? `quests-${questNonce}`
+                  : active
+            }
           />
         </main>
         <footer className="app-footer">
@@ -243,6 +279,15 @@ export default function App() {
           </a>
         </footer>
       </div>
+      {paletteOpen && (
+        <CommandPalette
+          tabs={TABS}
+          onTab={(key) => switchTab(key as TabKey)}
+          onItem={pickFromTicker}
+          onQuest={pickQuest}
+          onClose={() => setPaletteOpen(false)}
+        />
+      )}
     </>
   )
 }

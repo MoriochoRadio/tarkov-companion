@@ -5,6 +5,7 @@ import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
 import { usePlayerLevel } from '../lib/playerLevel'
+import { consumePendingQuest } from '../lib/searchSeed'
 import { TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 
@@ -259,7 +260,10 @@ function QuestDetail({
 
 export function QuestsTab() {
   const state = useAsyncData(fetchQuests)
-  const [selectedId, setSelectedId] = useState<string | null>(null)
+  // 커맨드 팔레트에서 점프해 온 경우 상세를 바로 연다 (1회용 시드)
+  const [selectedId, setSelectedId] = useState<string | null>(() =>
+    consumePendingQuest(),
+  )
   const [trader, setTrader] = useState('')
   const [map, setMap] = useState('')
   // "내 레벨" — 준비물 탭과 공유·localStorage 유지 (이 레벨로 받을 수 있는 퀘스트만)
