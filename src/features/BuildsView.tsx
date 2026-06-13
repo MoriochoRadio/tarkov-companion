@@ -3,6 +3,7 @@ import {
   CATEGORY_LABELS,
   fetchBuildItems,
   fetchBuilds,
+  slotOrder,
   type BuildCategory,
   type BuildDef,
   type BuildItemInfo,
@@ -12,30 +13,33 @@ import { useAsyncData } from '../hooks/useAsyncData'
 import { formatRub } from '../lib/format'
 import { TableSkeleton } from './Skeleton'
 
-// 빌드 티어 기준 입수처: 티어 이하 트레이더 현금 오퍼 최저가 → 없으면 플리 시세
-function buyInfo(item: BuildItemInfo, tier: number) {
-  let best: BuildItemInfo['offers'][number] | null = null
+const collator = new Intl.Collator('ko')
+
+// 부품 1개의 입수 가격 — 티어 내 트레이더 현금 최저가 / 티어 밖 최저 트레이더 / 플리
+function pricing(item: BuildItemInfo, tier: number) {
+  let traderInTier: BuildItemInfo['offers'][number] | null = null
+  let traderAny: BuildItemInfo['offers'][number] | null = null
   for (const o of item.offers) {
-    if (o.traderLevel <= tier && (!best || o.priceRUB < best.priceRUB)) best = o
-  }
-  if (best) {
-    return {
-      label: `${best.trader} LL${best.traderLevel}${best.questLocked ? ' ⚿' : ''}`,
-      price: best.priceRUB,
+    if (!traderAny || o.priceRUB < traderAny.priceRUB) traderAny = o
+    if (o.traderLevel <= tier && (!traderInTier || o.priceRUB < traderInTier.priceRUB)) {
+      traderInTier = o
     }
   }
-  if (item.fleaPrice && item.fleaPrice > 0) {
-    return { label: '플리마켓', price: item.fleaPrice }
-  }
-  return null
+  const flea = item.fleaPrice && item.fleaPrice > 0 ? item.fleaPrice : null
+  // 이 티어에서 실제 살 수 있는 최저가 (트레이더 현금 vs 플리)
+  const t = traderInTier?.priceRUB ?? Infinity
+  const f = flea ?? Infinity
+  const buyable = Math.min(t, f)
+  return { traderInTier, traderAny, flea, buyable: buyable === Infinity ? null : buyable }
 }
 
 interface BuildView {
   def: BuildDef
   weapon: BuildItemInfo
-  parts: BuildItemInfo[]
-  cost: number | null
-  costPartial: boolean // 일부 부품 시세 없음 — 합계가 실제보다 낮음
+  parts: BuildItemInfo[] // 슬롯 순서로 정렬됨
+  traderCost: number | null // 트레이더(티어 내)만으로
+  cheapCost: number | null // 플리 포함 최저가
+  partial: boolean // 일부 부품 시세/구매처 없음 — 합계가 실제보다 낮음
   ergoBase: number | null
   ergo: number | null
   recoilBase: number | null
@@ -65,7 +69,6 @@ function Delta({
   )
 }
 
-// 인게임 풍 스탯 바 — 에르고는 높을수록, 반동은 낮을수록 길게(좋게) 표시
 function StatBar({ pct }: { pct: number }) {
   return (
     <span className="stat-bar" aria-hidden>
@@ -103,17 +106,50 @@ function AmmoRecs({ caliber }: { caliber: string }) {
   )
 }
 
+// 부품 줄의 "어디서 사는 게 싼지" — 트레이더(티어 내) vs 플리, 싼 쪽 골드 강조
+function PartBuy({ item, tier }: { item: BuildItemInfo; tier: number }) {
+  const { traderInTier, traderAny, flea } = pricing(item, tier)
+  const tPrice = traderInTier?.priceRUB ?? null
+  const cheapFlea = flea != null && (tPrice == null || flea < tPrice)
+  const cheapTrader = tPrice != null && (flea == null || tPrice <= flea)
+  return (
+    <span className="build-buy2 num">
+      {traderInTier ? (
+        <span className={`build-buy-opt${cheapTrader ? ' cheap' : ''}`}>
+          {traderInTier.trader} LL{traderInTier.traderLevel}
+          {traderInTier.questLocked && <span title="퀘스트 해금"> ⚿</span>}{' '}
+          {formatRub(traderInTier.priceRUB)}
+        </span>
+      ) : traderAny ? (
+        <span className="build-buy-opt dim" title={`이 티어 위 — ${traderAny.trader} LL${traderAny.traderLevel}`}>
+          {traderAny.trader} LL{traderAny.traderLevel}
+          {traderAny.questLocked && ' ⚿'} {formatRub(traderAny.priceRUB)}
+        </span>
+      ) : null}
+      {flea != null && (
+        <span className={`build-buy-opt${cheapFlea ? ' cheap' : ''}`}>
+          플리 {formatRub(flea)}
+        </span>
+      )}
+      {!traderInTier && !traderAny && flea == null && (
+        <span className="dim">시세 없음 (레이드 파밍/물물교환)</span>
+      )}
+    </span>
+  )
+}
+
 function BuildCard({
   view,
   expanded,
   onToggle,
+  onItem,
 }: {
   view: BuildView
   expanded: boolean
   onToggle: () => void
+  onItem?: (name: string) => void
 }) {
   const { def, weapon, parts } = view
-  const rows = [weapon, ...parts]
   const banner = weapon.presetImageLink ?? weapon.imageLink
   return (
     <article className={`build-card${expanded ? ' open' : ''}`}>
@@ -129,6 +165,15 @@ function BuildCard({
         <span className="build-body">
           <span className="build-name">{def.name}</span>
           <span className="build-weapon dim">{weapon.displayName}</span>
+          {def.tags && def.tags.length > 0 && (
+            <span className="build-tags">
+              {def.tags.map((t) => (
+                <span key={t} className="build-tag">
+                  {t}
+                </span>
+              ))}
+            </span>
+          )}
           <span className="build-strip">
             {parts.map(
               (p) =>
@@ -139,9 +184,14 @@ function BuildCard({
           </span>
           <span className="build-stats num">
             <span>
-              <em>총비용</em>
-              {view.cost != null ? formatRub(view.cost) : '—'}
-              {view.costPartial && <span className="dim">+α</span>}
+              <em>트레이더</em>
+              {view.traderCost != null ? formatRub(view.traderCost) : '—'}
+              {view.partial && <span className="dim">+α</span>}
+            </span>
+            <span>
+              <em>플리 포함</em>
+              {view.cheapCost != null ? formatRub(view.cheapCost) : '—'}
+              {view.partial && <span className="dim">+α</span>}
             </span>
             <span>
               <em>에르고</em>
@@ -173,48 +223,56 @@ function BuildCard({
               <dd>{view.weight.toFixed(2)}kg</dd>
             </div>
           </dl>
+          {/* 인게임 모딩 창처럼 슬롯 순서대로 — 무기부터 위→아래로 조립 */}
           <ul className="build-detail-list">
-            {rows.map((item, i) => {
-              const buy = buyInfo(item, def.tier)
+            {[weapon, ...parts].map((item, i) => {
+              const slot =
+                i === 0
+                  ? '무기'
+                  : item.slotKo ?? item.slotEn ?? '부품'
+              const slotEn = i === 0 ? null : item.slotEn
               return (
-                <li key={item.id}>
-                  {item.iconLink && <img src={item.iconLink} alt="" loading="lazy" />}
-                  <span className="build-detail-name">
-                    {item.displayName}
-                    {i === 0 && <span className="prep-chip">무기</span>}
-                    <span className="build-detail-stats num">
-                      {item.ergonomics != null && item.ergonomics !== 0 && i > 0 && (
-                        <span className={item.ergonomics > 0 ? 'stat-up' : 'down'}>
-                          에르고 {item.ergonomics > 0 ? '+' : ''}
-                          {item.ergonomics}
+                <li key={item.id} className="build-detail-row">
+                  <button
+                    className="build-part-link"
+                    onClick={() => onItem?.(item.searchName)}
+                    title={`${item.displayName} — 아이템 검색(시세·구매처)`}
+                  >
+                    {item.iconLink && <img src={item.iconLink} alt="" loading="lazy" />}
+                    <span className="build-part-text">
+                      <span className="build-slot-label">
+                        {slot}
+                        {slotEn && slotEn !== slot && <span className="dim"> ({slotEn})</span>}
+                      </span>
+                      <span className="build-detail-name">
+                        {item.displayName}
+                        <span className="build-detail-stats num">
+                          {item.ergonomics != null && item.ergonomics !== 0 && i > 0 && (
+                            <span className={item.ergonomics > 0 ? 'stat-up' : 'down'}>
+                              에르고 {item.ergonomics > 0 ? '+' : ''}
+                              {item.ergonomics}
+                            </span>
+                          )}
+                          {item.recoilModifier != null && item.recoilModifier !== 0 && (
+                            <span className={item.recoilModifier < 0 ? 'stat-up' : 'down'}>
+                              반동 {item.recoilModifier > 0 ? '+' : ''}
+                              {Math.round(item.recoilModifier * 100)}%
+                            </span>
+                          )}
                         </span>
-                      )}
-                      {item.recoilModifier != null && item.recoilModifier !== 0 && (
-                        <span className={item.recoilModifier < 0 ? 'stat-up' : 'down'}>
-                          반동 {item.recoilModifier > 0 ? '+' : ''}
-                          {Math.round(item.recoilModifier * 100)}%
-                        </span>
-                      )}
+                      </span>
                     </span>
-                  </span>
-                  <span className="build-detail-buy">
-                    {buy ? (
-                      <>
-                        <span className="dim">{buy.label}</span>
-                        <span className="num">{formatRub(buy.price)}</span>
-                      </>
-                    ) : (
-                      <span className="dim">시세 없음 (레이드 파밍/물물교환)</span>
-                    )}
-                  </span>
+                  </button>
+                  <PartBuy item={item} tier={def.tier} />
                 </li>
               )
             })}
           </ul>
           {weapon.caliber && <AmmoRecs caliber={weapon.caliber} />}
           <p className="hint build-fineprint">
-            배너 이미지는 기본 프리셋 기준(부품 구성과 다를 수 있음) · 에르고/반동은
-            부품 보정 단순 합산 근사치
+            슬롯 순서·라벨은 부품 분류 기준(게임 실제 슬롯과 약간 다를 수 있음) · 배너는
+            기본 프리셋 기준 · 에르고/반동은 부품 보정 단순 합산 근사치 · 부품을 누르면
+            아이템 검색으로 이동
             {def.source && (
               <>
                 {' · '}
@@ -230,7 +288,7 @@ function BuildCard({
   )
 }
 
-export function BuildsView() {
+export function BuildsView({ onItem }: { onItem?: (name: string) => void }) {
   const state = useAsyncData(async () => {
     const builds = await fetchBuilds()
     const items = await fetchBuildItems(builds.flatMap((b) => [b.weapon, ...b.parts]))
@@ -238,7 +296,16 @@ export function BuildsView() {
   })
   const [category, setCategory] = useState<'' | BuildCategory>('')
   const [tier, setTier] = useState('') // "내 트레이더 LL" — 이 레벨 이하 빌드만
+  const [tag, setTag] = useState('')
   const [expandedId, setExpandedId] = useState<string | null>(null)
+
+  // 모든 빌드의 태그 모음 (필터 옵션)
+  const allTags = useMemo(() => {
+    if (state.status !== 'ready') return []
+    const s = new Set<string>()
+    for (const b of state.data.builds) for (const t of b.tags ?? []) s.add(t)
+    return [...s].sort(collator.compare)
+  }, [state])
 
   const views = useMemo(() => {
     if (state.status !== 'ready') return []
@@ -248,26 +315,36 @@ export function BuildsView() {
     for (const def of builds) {
       if (category && def.category !== category) continue
       if (maxTier != null && def.tier > maxTier) continue
+      if (tag && !(def.tags ?? []).includes(tag)) continue
       const weapon = items.get(def.weapon)
       if (!weapon) continue // API에서 사라진 무기 — 카드 자체를 숨김
       const parts = def.parts
         .map((id) => items.get(id))
         .filter((p): p is BuildItemInfo => Boolean(p))
+        .sort(
+          (a, b) =>
+            slotOrder(a.slotNorm) - slotOrder(b.slotNorm) ||
+            collator.compare(a.displayName, b.displayName),
+        )
 
-      let cost = 0
-      let costPartial = parts.length < def.parts.length
+      let traderCost = 0
+      let cheapCost = 0
+      let partial = parts.length < def.parts.length
       for (const item of [weapon, ...parts]) {
-        const buy = buyInfo(item, def.tier)
-        if (buy) cost += buy.price
-        else costPartial = true
+        const pr = pricing(item, def.tier)
+        if (pr.traderInTier) traderCost += pr.traderInTier.priceRUB
+        else partial = true
+        if (pr.buyable != null) cheapCost += pr.buyable
+        else partial = true
       }
       const recoilSum = parts.reduce((s, p) => s + (p.recoilModifier ?? 0), 0)
       out.push({
         def,
         weapon,
         parts,
-        cost,
-        costPartial,
+        traderCost: partial && traderCost === 0 ? null : traderCost,
+        cheapCost: cheapCost || null,
+        partial,
         ergoBase: weapon.ergonomics,
         ergo:
           weapon.ergonomics != null
@@ -286,9 +363,9 @@ export function BuildsView() {
       })
     }
     return out.sort(
-      (a, b) => a.def.tier - b.def.tier || (a.cost ?? Infinity) - (b.cost ?? Infinity),
+      (a, b) => a.def.tier - b.def.tier || (a.cheapCost ?? Infinity) - (b.cheapCost ?? Infinity),
     )
-  }, [state, category, tier])
+  }, [state, category, tier, tag])
 
   if (state.status === 'loading') {
     return <TableSkeleton rows={6} label="추천 빌드 불러오는 중…" />
@@ -316,11 +393,22 @@ export function BuildsView() {
             </option>
           ))}
         </select>
+        {allTags.length > 0 && (
+          <select value={tag} onChange={(e) => setTag(e.target.value)}>
+            <option value="">전체 용도</option>
+            {allTags.map((t) => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+        )}
       </div>
       <p className="hint">
-        카드를 누르면 부품별 가격·스탯 보정·추천 탄약 · 총비용 = 실시간 시세
-        합산(티어 내 트레이더 현금가 우선, 없으면 플리) · ⚿ = 퀘스트 해금 ·
-        빌드는 참고용이며 패치로 부품·시세가 바뀔 수 있습니다
+        카드를 누르면 인게임 모딩 창처럼 슬롯 순서대로 부품·구매처 표시 · 부품별로
+        트레이더(티어 내 현금) vs 플리 중 <span className="stat-up">싼 쪽을 강조</span> ·
+        총비용은 “트레이더만” / “플리 포함” 두 가지 · ⚿ = 퀘스트 해금 · 부품을 누르면
+        아이템 검색으로 이동 · 패치로 부품·시세가 바뀔 수 있습니다
       </p>
       {views.length === 0 && <p className="hint">조건에 맞는 빌드가 없습니다.</p>}
       <div className="build-grid">
@@ -330,6 +418,7 @@ export function BuildsView() {
             view={v}
             expanded={expandedId === v.def.id}
             onToggle={() => setExpandedId(expandedId === v.def.id ? null : v.def.id)}
+            onItem={onItem}
           />
         ))}
       </div>

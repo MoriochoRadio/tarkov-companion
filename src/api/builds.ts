@@ -15,6 +15,46 @@ export const CATEGORY_LABELS: Record<BuildCategory, string> = {
   sniper: '저격',
 }
 
+// 인게임 조립 순서 근사 — 부품 category(normalizedName) 기준 정렬 키.
+// 총열→가스블록→총열덮개→총구→장전손잡이→손잡이/개머리판→광학→탄창 순.
+// 목록에 없는 분류는 뒤로. 무기 본체는 BuildsView에서 항상 맨 위로 별도 처리.
+const SLOT_ORDER: string[] = [
+  'barrel',
+  'gas-block',
+  'handguard',
+  'comb-muzzle-device',
+  'muzzle-device',
+  'muzzle-brake-compensator',
+  'flashhider',
+  'silencer',
+  'charging-handle',
+  'receiver',
+  'upper-receiver',
+  'pistol-grip',
+  'stock',
+  'foregrip',
+  'bipod',
+  'mount',
+  'scope-mount',
+  'scope',
+  'assault-scope',
+  'special-scope',
+  'reflex-sight',
+  'compact-reflex-sight',
+  'night-vision',
+  'tactical-combo-device',
+  'flashlight',
+  'laser-target-pointer',
+  'magazine',
+  'auxiliary-parts',
+]
+
+export function slotOrder(normalizedName: string | null): number {
+  if (!normalizedName) return 90
+  const i = SLOT_ORDER.indexOf(normalizedName)
+  return i === -1 ? 89 : i
+}
+
 export interface BuildDef {
   id: string
   weapon: string
@@ -23,6 +63,7 @@ export interface BuildDef {
   tier: 1 | 2 | 3 | 4
   parts: string[]
   desc: string
+  tags?: string[] // 용도 태그 (근거리/원거리/풀모드/예산형/퀘스트 등) — 필터·칩
   source?: string
 }
 
@@ -45,7 +86,11 @@ export function fetchBuilds(): Promise<BuildDef[]> {
 export interface BuildItemInfo {
   id: string
   displayName: string
+  searchName: string // 한국어명 — 아이템 검색 이동용
   shortName: string
+  slotKo: string | null // 부품 분류 = 슬롯 라벨 (총열·총구·조준경…)
+  slotEn: string | null
+  slotNorm: string | null // category.normalizedName — 슬롯 정렬 키
   iconLink: string | null
   imageLink: string | null // 512px — 무기 카드 배너용
   presetImageLink: string | null // 기본 프리셋(조립 상태) 이미지 — 배너에 우선 사용
@@ -73,6 +118,7 @@ interface RawBuildItem {
   image512pxLink: string | null
   weight: number | null
   avg24hPrice: number | null
+  category: { name: string; normalizedName: string } | null
   properties: {
     ergonomics?: number | null
     recoilModifier?: number | null
@@ -103,6 +149,7 @@ export function fetchBuildItems(ids: string[]): Promise<Map<string, BuildItemInf
     const query = `{
       ko: items(ids: [${idList}], lang: ko) {
         id name shortName iconLink image512pxLink weight avg24hPrice
+        category { name normalizedName }
         properties {
           ... on ItemPropertiesWeapon {
             ergonomics recoilVertical recoilHorizontal fireRate caliber
@@ -118,7 +165,7 @@ export function fetchBuildItems(ids: string[]): Promise<Map<string, BuildItemInf
           vendor { ... on TraderOffer { trader { name } minTraderLevel taskUnlock { id } } }
         }
       }
-      en: items(ids: [${idList}]) { id name }
+      en: items(ids: [${idList}]) { id name category { name } }
     }`
     const res = await fetch(ENDPOINT, {
       method: 'POST',
@@ -127,20 +174,28 @@ export function fetchBuildItems(ids: string[]): Promise<Map<string, BuildItemInf
     })
     if (!res.ok) throw new Error(`tarkov.dev API 응답 오류 (HTTP ${res.status})`)
     const json = (await res.json()) as {
-      data?: { ko: RawBuildItem[]; en: { id: string; name: string }[] }
+      data?: {
+        ko: RawBuildItem[]
+        en: { id: string; name: string; category: { name: string } | null }[]
+      }
       errors?: { message: string }[]
     }
     if (json.errors?.length) throw new Error(`tarkov.dev API 오류: ${json.errors[0].message}`)
     if (!json.data) throw new Error('tarkov.dev API가 데이터를 반환하지 않음')
 
     const enName = new Map(json.data.en.map((i) => [i.id, i.name]))
+    const enCat = new Map(json.data.en.map((i) => [i.id, i.category?.name ?? null]))
     return new Map(
       json.data.ko.map((i) => [
         i.id,
         {
           id: i.id,
           displayName: biName(i.name.trim(), (enName.get(i.id) ?? i.name).trim()),
+          searchName: i.name.trim(),
           shortName: i.shortName,
+          slotKo: i.category?.name ?? null,
+          slotEn: enCat.get(i.id) ?? i.category?.name ?? null,
+          slotNorm: i.category?.normalizedName ?? null,
           iconLink: i.iconLink,
           imageLink: i.image512pxLink,
           presetImageLink: i.properties?.defaultPreset?.image512pxLink ?? null,

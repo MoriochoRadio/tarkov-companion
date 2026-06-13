@@ -329,7 +329,7 @@ function PartsBrowser() {
 
 // ---------- 탭 본체 ----------
 
-export function ModdingTab() {
+export function ModdingTab({ onItem }: { onItem?: (name: string) => void }) {
   // 친구 피드백: 부품 백과보다 "레벨별 추천 빌드"가 먼저 — 브라우저는 토글로 강등
   const [mode, setMode] = useState<'builds' | 'browser'>('builds')
 
@@ -363,7 +363,7 @@ export function ModdingTab() {
           에서
         </p>
       </div>
-      {mode === 'builds' ? <BuildsView /> : <PartsBrowser />}
+      {mode === 'builds' ? <BuildsView onItem={onItem} /> : <PartsBrowser />}
     </div>
   )
 }
