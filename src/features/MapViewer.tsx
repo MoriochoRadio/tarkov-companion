@@ -7,6 +7,15 @@ import { makeProjector, type MapMeta } from '../lib/mapProject'
 // SVG는 우리 저장소 수록본(public/maps, CC BY-NC-SA 4.0 — LICENSE.md)이며
 // 마커는 런타임 오버레이로만 그려 파생 파일을 만들지 않는다.
 
+// 마커 팝오버의 "필요 열쇠" 칩 — 표시명(biName)과 검색어(한국어명)를 미리 담아
+// MapViewer가 quests API를 모르게 한다 (Phase 28)
+export interface MarkerKey {
+  id: string
+  label: string // "한국어 (English)"
+  search: string // 아이템 검색으로 보낼 이름
+  iconLink: string | null
+}
+
 export interface ViewMarker {
   key: string
   x: number
@@ -15,6 +24,8 @@ export interface ViewMarker {
   color: string // 퀘스트별 색
   questName: string
   desc: string
+  // 잠긴 목표의 필요 열쇠 — [[Key]] 그룹 배열(그룹 간 AND, 그룹 내 OR). 없으면 숨김
+  keys?: MarkerKey[][]
 }
 
 const ZOOM_MIN_FACTOR = 0.5 // 초기 핏 대비
@@ -40,10 +51,12 @@ export function MapViewer({
   meta,
   svgUrl,
   markers,
+  onItem,
 }: {
   meta: MapMeta
   svgUrl: string
   markers: ViewMarker[]
+  onItem?: (name: string) => void // 열쇠 클릭 → 아이템 검색으로 이동
 }) {
   const wrapRef = useRef<HTMLDivElement>(null)
   const layerRef = useRef<HTMLDivElement>(null)
@@ -306,6 +319,35 @@ export function MapViewer({
             <p className="mapmark-pop-desc">
               {pop.m.icon} {pop.m.desc}
             </p>
+            {pop.m.keys && pop.m.keys.length > 0 && (
+              <div className="mapmark-pop-keys">
+                <span className="mapmark-keys-label">🔑 필요 열쇠</span>
+                <span className="mapmark-keys-groups">
+                  {pop.m.keys.map((group, gi) => (
+                    <span key={gi} className="mapmark-key-group">
+                      {gi > 0 && (
+                        <span className="mapmark-key-and" title="모두 필요">
+                          +
+                        </span>
+                      )}
+                      {group.map((k, ki) => (
+                        <span key={k.id} className="mapmark-key-wrap">
+                          {ki > 0 && <span className="mapmark-key-or">또는</span>}
+                          <button
+                            className="mapmark-key"
+                            onClick={() => onItem?.(k.search)}
+                            title={`${k.label} — 아이템 검색(시세·구매처)`}
+                          >
+                            {k.iconLink && <img src={k.iconLink} alt="" loading="lazy" />}
+                            <span>{k.label}</span>
+                          </button>
+                        </span>
+                      ))}
+                    </span>
+                  ))}
+                </span>
+              </div>
+            )}
             <button className="mapmark-pop-close" onClick={() => setPop(null)} aria-label="닫기">
               ×
             </button>

@@ -11,6 +11,16 @@ export interface QuestItemRef {
   imageLink: string | null // 512px — 라이트박스용
 }
 
+// 목표가 잠긴 방/구역이면 필요한 열쇠 (Phase 28). 구조는 [[Key]] — 그룹 배열:
+// 그룹 간 AND(모두 필요), 그룹 내 OR(아무거나). 실측: 단일 그룹·단일 키가 대부분,
+// "219호 또는 220호"(그룹 내 복수=OR), "바깥문 + 안쪽문"(그룹 복수=AND) 사례 존재
+export interface QuestKeyRef {
+  id: string
+  nameKo: string
+  nameEn: string
+  iconLink: string | null
+}
+
 export interface QuestObjective {
   id: string
   type: string
@@ -20,6 +30,7 @@ export interface QuestObjective {
   items?: QuestItemRef[]
   count?: number
   foundInRaid?: boolean
+  requiredKeys?: QuestKeyRef[][] // 잠긴 목표의 필요 열쇠 (그룹 배열)
   // 맵 퀘스트 플래너용 (Phase 25) — 지참물·처치 요약 재료
   markerItem?: QuestItemRef // mark: 설치할 마커 (MS2000 등)
   questItem?: { id: string; nameKo: string; nameEn: string } // 숨기기/회수 대상
@@ -69,12 +80,12 @@ const QUERY = `{
     objectives {
       id type description optional
       maps { id name }
-      ... on TaskObjectiveItem { items { id name iconLink image512pxLink } count foundInRaid zones { map { id } position { x z } } }
-      ... on TaskObjectiveMark { markerItem { id name iconLink image512pxLink } zones { map { id } position { x z } } }
-      ... on TaskObjectiveQuestItem { questItem { id name } count zones { map { id } position { x z } } possibleLocations { map { id } positions { x z } } }
+      ... on TaskObjectiveItem { items { id name iconLink image512pxLink } count foundInRaid zones { map { id } position { x z } } requiredKeys { id name iconLink } }
+      ... on TaskObjectiveMark { markerItem { id name iconLink image512pxLink } zones { map { id } position { x z } } requiredKeys { id name iconLink } }
+      ... on TaskObjectiveQuestItem { questItem { id name } count zones { map { id } position { x z } } possibleLocations { map { id } positions { x z } } requiredKeys { id name iconLink } }
       ... on TaskObjectiveShoot { targetNames count zones { map { id } position { x z } } }
       ... on TaskObjectiveUseItem { useAny { id name iconLink image512pxLink } count zones { map { id } position { x z } } }
-      ... on TaskObjectiveBasic { zones { map { id } position { x z } } }
+      ... on TaskObjectiveBasic { zones { map { id } position { x z } } requiredKeys { id name iconLink } }
     }
     finishRewards {
       items { item { id name iconLink image512pxLink } count }
@@ -86,10 +97,11 @@ const QUERY = `{
     id name
     objectives {
       id
-      ... on TaskObjectiveItem { items { id name } }
-      ... on TaskObjectiveMark { markerItem { id name } }
-      ... on TaskObjectiveQuestItem { questItem { id name } }
+      ... on TaskObjectiveItem { items { id name } requiredKeys { id name } }
+      ... on TaskObjectiveMark { markerItem { id name } requiredKeys { id name } }
+      ... on TaskObjectiveQuestItem { questItem { id name } requiredKeys { id name } }
       ... on TaskObjectiveUseItem { useAny { id name } }
+      ... on TaskObjectiveBasic { requiredKeys { id name } }
     }
     finishRewards { items { item { id name } } offerUnlock { item { id name } } }
   }
@@ -118,6 +130,7 @@ interface RawKoTask {
     questItem?: { id: string; name: string } | null
     targetNames?: (string | null)[] | null
     useAny?: RawItem[] | null
+    requiredKeys?: { id: string; name: string; iconLink: string | null }[][] | null
     zones?: { map: { id: string } | null; position: { x: number; z: number } | null }[] | null
     possibleLocations?:
       | { map: { id: string } | null; positions: { x: number; z: number }[] | null }[]
@@ -150,6 +163,7 @@ interface RawEnTask {
     markerItem?: { id: string; name: string } | null
     questItem?: { id: string; name: string } | null
     useAny?: { id: string; name: string }[] | null
+    requiredKeys?: { id: string; name: string }[][] | null
   }[]
   finishRewards: {
     items: { item: { id: string; name: string } }[]
@@ -180,6 +194,8 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
       if (o.markerItem) enItemName.set(o.markerItem.id, o.markerItem.name)
       if (o.questItem) enItemName.set(o.questItem.id, o.questItem.name)
       for (const i of o.useAny ?? []) enItemName.set(i.id, i.name)
+      for (const grp of o.requiredKeys ?? [])
+        for (const k of grp) enItemName.set(k.id, k.name)
     }
     for (const r of t.finishRewards?.items ?? []) {
       enItemName.set(r.item.id, r.item.name)
@@ -239,6 +255,18 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
           ? { targetNames: o.targetNames.filter((n): n is string => Boolean(n)) }
           : {}),
         ...(o.useAny?.length ? { useItems: o.useAny.map(ref) } : {}),
+        ...(o.requiredKeys?.length
+          ? {
+              requiredKeys: o.requiredKeys.map((grp) =>
+                grp.map((k) => ({
+                  id: k.id,
+                  nameKo: k.name.trim(),
+                  nameEn: (enItemName.get(k.id) ?? k.name).trim(),
+                  iconLink: k.iconLink,
+                })),
+              ),
+            }
+          : {}),
         ...(() => {
           // zones 중심점 + 스폰 후보를 합쳐 마커 좌표 목록으로 (맵 마커용)
           const locs: { mapId: string; x: number; z: number }[] = []

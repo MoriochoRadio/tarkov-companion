@@ -254,6 +254,7 @@ export default function App() {
   // 나머지 탭은 props를 선언하지 않아 무시함 (런타임 무해)
   const ActiveComp = activeTab.Comp as ComponentType<{
     onQuest?: (id: string) => void
+    onItem?: (name: string) => void
   }>
   const tabLabel = (key: TabKey) => TABS.find((t) => t.key === key)?.label ?? key
 
@@ -345,6 +346,7 @@ export default function App() {
                   : active
             }
             onQuest={pickQuest}
+            onItem={pickFromTicker}
           />
         </main>
         <footer className="app-footer">

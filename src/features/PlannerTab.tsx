@@ -231,7 +231,13 @@ function BagPanel({
 
 // ---------- 본체 ----------
 
-export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
+export function PlannerTab({
+  onQuest,
+  onItem,
+}: {
+  onQuest?: (id: string) => void
+  onItem?: (name: string) => void
+}) {
   const questsState = useAsyncData(fetchQuests)
   const mapsState = useAsyncData(fetchMaps) // normalizedName(딥링크)용 — 맵 탭과 캐시 공유
   const [mapId, setMapId] = useState<string | null>(null)
@@ -349,6 +355,15 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
       const color = questColor.get(quest.id) ?? QUEST_COLORS[0]
       for (const o of objectives) {
         const cat = CATS.find((c) => c.key === catOf(o))!
+        // 잠긴 목표면 필요 열쇠를 칩으로 (한/영 표시명 + 검색어 미리 가공)
+        const keys = o.requiredKeys?.map((grp) =>
+          grp.map((k) => ({
+            id: k.id,
+            label: biName(k.nameKo, k.nameEn),
+            search: k.nameKo,
+            iconLink: k.iconLink,
+          })),
+        )
         for (const [i, loc] of (o.locations ?? []).entries()) {
           if (loc.mapId !== mapId) continue
           out.push({
@@ -359,6 +374,7 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
             color,
             questName: quest.displayName,
             desc: o.description || cat.label,
+            ...(keys?.length ? { keys } : {}),
           })
         }
       }
@@ -454,6 +470,7 @@ export function PlannerTab({ onQuest }: { onQuest?: (id: string) => void }) {
                 meta={mapMeta}
                 svgUrl={`${import.meta.env.BASE_URL}maps/${mapMeta.svg}`}
                 markers={markers}
+                onItem={onItem}
               />
               {noCoordObjectives.length > 0 && (
                 <details className="planner-nocoord">

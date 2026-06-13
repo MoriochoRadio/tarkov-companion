@@ -5552,6 +5552,69 @@ summary:focus-visible {
   color: var(--text-2);
 }
 
+/* 필요 열쇠 줄 (Phase 28) — 아이콘+한/영, 클릭 시 아이템 검색. 그룹 내 "또는", 그룹 간 "+" */
+.mapmark-pop-keys {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mapmark-keys-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-2);
+}
+
+.mapmark-keys-groups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.mapmark-key-group,
+.mapmark-key-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mapmark-key-or,
+.mapmark-key-and {
+  font-size: 0.68rem;
+  color: var(--text-3, var(--text-2));
+}
+
+.mapmark-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  max-width: 100%;
+  padding: 2px 5px 2px 3px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.74rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.mapmark-key:hover {
+  border-color: var(--accent);
+}
+
+.mapmark-key img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex: none;
+}
+
 .mapmark-pop-close {
   position: absolute;
   top: 4px;
