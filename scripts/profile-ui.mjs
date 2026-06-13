@@ -342,6 +342,52 @@ const zoomRaf = await page.evaluate(
 )
 console.log(`7.43) 휠 줌 20회 연사: ${Date.now() - t26}ms (rAF 응답 ${zoomRaf}ms)`)
 
+// 줌 정지 → commit(벡터 재래스터) 메인스레드 블로킹 (CLAUDE.md: 1초 금지)
+await new Promise((r) => setTimeout(r, 260)) // 디바운스(150ms) 후 commit 발생
+const commitRaf = await page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const s = performance.now()
+      requestAnimationFrame(() => resolve(Math.round(performance.now() - s)))
+    }),
+)
+const commitW = await page.evaluate(() => document.querySelector('.mapview-layer')?.style.width)
+console.log(`7.44) 세관 줌 정지 commit(재래스터): rAF ${commitRaf}ms · layer ${commitW}`)
+
+// 큰 SVG(해안선 304K) 고배율 재래스터 비용 — 최악 케이스
+await page.evaluate(() =>
+  [...document.querySelectorAll('.planner-map')]
+    .find((b) => b.textContent.includes('해안선'))
+    ?.click(),
+)
+await page.waitForSelector('.mapview-svg svg', { timeout: 30_000 })
+await new Promise((r) => setTimeout(r, 900))
+await page.evaluate(() => {
+  const mv = document.querySelector('.mapview')
+  const r = mv.getBoundingClientRect()
+  for (let i = 0; i < 24; i++) {
+    mv.dispatchEvent(
+      new WheelEvent('wheel', {
+        deltaY: -60,
+        clientX: r.left + r.width / 2,
+        clientY: r.top + r.height / 2,
+        bubbles: true,
+        cancelable: true,
+      }),
+    )
+  }
+})
+await new Promise((r) => setTimeout(r, 280))
+const bigRaf = await page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const s = performance.now()
+      requestAnimationFrame(() => resolve(Math.round(performance.now() - s)))
+    }),
+)
+const bigW = await page.evaluate(() => document.querySelector('.mapview-layer')?.style.width)
+console.log(`7.45) 해안선(304K) 고배율 commit 재래스터: rAF ${bigRaf}ms · layer ${bigW}`)
+
 // --- Phase 23: 해금 탭 ---
 
 await measure(

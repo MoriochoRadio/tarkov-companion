@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { makeProjector, type MapMeta } from '../lib/mapProject'
 
 // 맵 뷰어 (Phase 26) — SVG 지도 + 퀘스트 목표 마커 오버레이.
@@ -74,15 +74,48 @@ export function MapViewer({
 
   const proj = useMemo(() => makeProjector(meta), [meta])
 
+  // --- 줌 화질: "보여주기 배율(view.s)"과 "SVG에 실제 반영된 배율(baseScale)" 분리 ---
+  // SVG는 will-change/transform 합성 레이어라 기본 크기로 한 번 비트맵으로 굽고 확대 시
+  // 그 텍스처만 늘린다 → 벡터인데도 고배율에서 뭉개짐. 줌이 멈추면 그 배율을 SVG 실제
+  // 렌더 크기(레이어 px)에 반영해 브라우저가 벡터를 그 해상도로 다시 그리게 한다.
+  // 제스처 중에는 transform scale(s/baseScale)로 차이만 compositor가 확대(부드러움 유지).
+  const dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1
+  // 재래스터 텍스처 메모리 상한(~96MB) — 이 이상 필요한 배율은 compositor scale로 폴백.
+  // rect이 작아(최대 ~345px) 대부분 맵은 최대 줌까지 상한에 안 걸려 완전히 또렷.
+  const baseScaleCap = useMemo(() => {
+    const texPx = proj.rect.w * proj.rect.h * dpr * dpr
+    return texPx > 0 ? Math.max(1, Math.sqrt(24_000_000 / texPx)) : ZOOM_MAX
+  }, [proj, dpr])
+
+  const [baseScale, setBaseScale] = useState(1)
+  const baseRef = useRef(1)
+  const commitTimer = useRef<number | null>(null)
+
   // --- 팬·줌 상태: ref + 직접 스타일 갱신 (리렌더 금지) ---
   const view = useRef({ x: 0, y: 0, s: 1, fit: 1 })
   const apply = () => {
     const l = layerRef.current
     if (!l) return
     const v = view.current
-    l.style.transform = `translate3d(${v.x}px, ${v.y}px, 0) scale(${v.s})`
-    l.style.setProperty('--inv', String(1 / v.s))
+    const b = baseRef.current
+    // 레이어는 rect*baseScale px 크기 → 거기서 차이(s/baseScale)만 합성 확대
+    l.style.transform = `translate3d(${v.x}px, ${v.y}px, 0) scale(${v.s / b})`
+    l.style.setProperty('--inv', String(b / v.s))
   }
+
+  // 줌 정지(디바운스) → 현재 배율을 SVG 실제 해상도에 반영(벡터 재래스터). 팬은 트리거 안 함
+  const commit = () => {
+    const target = Math.min(view.current.s, baseScaleCap)
+    if (Math.abs(target - baseRef.current) / baseRef.current > 0.05) {
+      baseRef.current = target
+      setBaseScale(target) // 레이어 크기·마커 위치 재계산 → useLayoutEffect에서 transform 동기
+    }
+  }
+  const scheduleCommit = () => {
+    if (commitTimer.current != null) clearTimeout(commitTimer.current)
+    commitTimer.current = window.setTimeout(commit, 150)
+  }
+
   const clampZoom = (s: number) =>
     Math.min(ZOOM_MAX, Math.max(view.current.fit * ZOOM_MIN_FACTOR, s))
   const zoomAt = (cx: number, cy: number, factor: number) => {
@@ -94,6 +127,7 @@ export function MapViewer({
     v.s = ns
     setPop(null)
     apply()
+    scheduleCommit()
   }
   const fitView = () => {
     const wrap = wrapRef.current
@@ -107,8 +141,24 @@ export function MapViewer({
       s,
       fit: s,
     }
+    // 초기/리사이즈는 즉시 그 배율로 재래스터 (디바운스 없이 또렷하게 시작)
+    baseRef.current = Math.min(s, baseScaleCap)
+    setBaseScale(baseRef.current)
     apply()
   }
+
+  // baseScale 변경(commit) → baseRef 동기 + transform 재적용. 레이어 크기·마커는 이미
+  // 새 baseScale로 렌더됐고, 같은 페인트 전에 transform을 맞춰 재래스터 전후 튐 없음
+  useLayoutEffect(() => {
+    baseRef.current = baseScale
+    apply()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [baseScale])
+
+  // 언마운트 시 디바운스 타이머 정리
+  useEffect(() => () => {
+    if (commitTimer.current != null) clearTimeout(commitTimer.current)
+  }, [])
 
   // SVG 로드 + 주입 — 맵 보기를 켰을 때만 (lazy)
   useEffect(() => {
@@ -276,7 +326,7 @@ export function MapViewer({
         <div
           className="mapview-layer"
           ref={layerRef}
-          style={{ width: proj.rect.w, height: proj.rect.h }}
+          style={{ width: proj.rect.w * baseScale, height: proj.rect.h * baseScale }}
         >
           <div className="mapview-svg" ref={svgHostRef} aria-hidden />
           {svgState === 'ready' &&
@@ -287,8 +337,8 @@ export function MapViewer({
                   key={m.key}
                   className="mapmark"
                   style={{
-                    left: px - proj.rect.minX,
-                    top: py - proj.rect.minY,
+                    left: (px - proj.rect.minX) * baseScale,
+                    top: (py - proj.rect.minY) * baseScale,
                     borderColor: m.color,
                   }}
                   onClick={(e) => onMarkerClick(m, e)}
