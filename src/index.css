@@ -2999,9 +2999,12 @@ select:focus-visible {
   letter-spacing: 0.06em;
 }
 
+/* 스탯 4개(트레이더·플리·에르고·수직반동) — 좁은 카드에서 가로로 다 안 들어가
+   마지막이 overflow:hidden에 잘리던 문제 → 줄바꿈 허용(좁으면 2줄, 넓으면 한 줄) */
 .build-stats {
   display: flex;
-  gap: var(--sp-5);
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-4);
   font-size: var(--fs-body);
 }
 
@@ -3009,7 +3012,8 @@ select:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  min-width: 76px;
+  flex: 1 0 auto;
+  min-width: 72px;
 }
 
 .build-stats em {
