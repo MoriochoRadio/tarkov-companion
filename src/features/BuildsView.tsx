@@ -194,11 +194,17 @@ function BuildDiagram({
   const containerRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLDivElement>(null)
   const zoneRefs = useRef(new Map<BuildZone, HTMLDivElement>())
+  const pathRefs = useRef(new Map<BuildZone, SVGPathElement>())
   const [lines, setLines] = useState<{ z: BuildZone; d: string }[]>([])
   const [size, setSize] = useState({ w: 0, h: 0 })
-  const [hover, setHover] = useState<BuildZone | null>(null)
   const [narrow, setNarrow] = useState(false) // 컨테이너 폭 기반 폴백 (뷰포트 아님)
   const [nonce, setNonce] = useState(0) // 무기 이미지 로드 후 연결선 재측정
+
+  // 강조는 React 상태(리렌더) 대신 명령형 클래스 토글 — 호버마다 리렌더하면
+  // 깜빡거림. 색만 바꾸고 크기는 안 건드린다 (연결선 두께 변화 없음)
+  const setZoneOn = (z: BuildZone, on: boolean) => {
+    pathRefs.current.get(z)?.classList.toggle('on', on)
+  }
 
   // 연결선: 구역 박스 중심 → 무기 이미지의 구역 anchor. 좁은 화면이면 그리지 않음
   useLayoutEffect(() => {
@@ -243,9 +249,9 @@ function BuildDiagram({
         if (el) zoneRefs.current.set(z, el)
         else zoneRefs.current.delete(z)
       }}
-      className={`bd-zone${hover === z ? ' on' : ''}`}
-      onMouseEnter={() => setHover(z)}
-      onMouseLeave={() => setHover(null)}
+      className="bd-zone"
+      onMouseEnter={() => setZoneOn(z, true)}
+      onMouseLeave={() => setZoneOn(z, false)}
     >
       <span className="bd-zone-label">{BUILD_ZONES[z].label}</span>
       {items.map((p, i) => {
@@ -255,8 +261,8 @@ function BuildDiagram({
             key={`${p.id}-${i}`}
             className="bd-callout"
             onClick={() => onItem?.(p.searchName)}
-            onFocus={() => setHover(z)}
-            onBlur={() => setHover(null)}
+            onFocus={() => setZoneOn(z, true)}
+            onBlur={() => setZoneOn(z, false)}
             title={`${p.displayName} — 아이템 검색`}
           >
             {p.iconLink && <img src={p.iconLink} alt="" loading="lazy" />}
@@ -297,7 +303,14 @@ function BuildDiagram({
     <div className={`build-diagram${narrow ? ' narrow' : ''}`} ref={containerRef}>
       <svg className="build-diagram-lines" width={size.w} height={size.h} aria-hidden>
         {lines.map((l) => (
-          <path key={l.z} d={l.d} className={hover === l.z ? 'on' : ''} />
+          <path
+            key={l.z}
+            ref={(el) => {
+              if (el) pathRefs.current.set(l.z, el)
+              else pathRefs.current.delete(l.z)
+            }}
+            d={l.d}
+          />
         ))}
       </svg>
       <div className="bd-image" ref={imageRef}>
