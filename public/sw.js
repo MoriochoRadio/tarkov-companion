@@ -23,7 +23,9 @@ const FONT_HOSTS = ['cdn.jsdelivr.net', 'fonts.googleapis.com', 'fonts.gstatic.c
 // 페이지 첫 로드는 SW 활성화 전에 끝나므로, 여기서 받아두지 않으면
 // 첫 방문 직후 오프라인 전환 시 번들이 없어 빈 화면이 됨
 async function precacheShell() {
-  const res = await fetch(BASE)
+  // HTML은 HTTP 캐시를 우회해 항상 최신을 받는다 (GitHub Pages가 HTML에 max-age=600을
+  // 줘서, 캐시를 거치면 배포 후 최대 10분간 옛 index.html→옛 번들이 잡힘)
+  const res = await fetch(BASE, { cache: 'reload' })
   const shell = await caches.open(SHELL)
   await shell.put(BASE, res.clone())
   const html = await res.text()
@@ -53,11 +55,12 @@ self.addEventListener('activate', (event) => {
   )
 })
 
-// 네트워크 우선: 성공하면 캐시 갱신, 실패하면 캐시 (그것도 없으면 fallbackUrl)
-async function networkFirst(request, cacheName, fallbackUrl) {
+// 네트워크 우선: 성공하면 캐시 갱신, 실패하면 캐시 (그것도 없으면 fallbackUrl).
+// init로 HTML 요청에 { cache: 'reload' }를 넘겨 HTTP 캐시를 우회할 수 있다
+async function networkFirst(request, cacheName, fallbackUrl, init) {
   const cache = await caches.open(cacheName)
   try {
-    const res = await fetch(request)
+    const res = await fetch(request, init)
     if (res.ok) cache.put(request, res.clone())
     return res
   } catch (err) {
@@ -86,9 +89,10 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(request.url)
 
-  // 페이지 이동 — 항상 최신을 시도하고, 오프라인이면 캐시된 셸
+  // 페이지 이동 — HTTP 캐시를 우회해 항상 최신 HTML(→최신 번들), 오프라인이면 캐시된 셸.
+  // 이 우회가 없으면 배포 후에도 max-age(10분) 동안 옛 화면이 보일 수 있다
   if (request.mode === 'navigate') {
-    event.respondWith(networkFirst(request, SHELL, BASE))
+    event.respondWith(networkFirst(request, SHELL, BASE, { cache: 'reload' }))
     return
   }
 
