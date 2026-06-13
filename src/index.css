@@ -2893,7 +2893,11 @@ select:focus-visible {
 .build-card:hover,
 .build-card.open {
   border-color: var(--accent);
-  /* 펼치면 전체 폭으로 — 콜아웃 다이어그램이 무기 좌우로 펼쳐질 공간 확보 */
+}
+
+/* 전체 폭 확장은 "클릭해서 펼친" 카드에만 — 호버에 걸면 마우스만 올려도 카드가
+   커지고(무기 확대) 레이아웃이 출렁여 깜빡임 루프가 생긴다 (실측 버그) */
+.build-card.open {
   grid-column: 1 / -1;
 }
 
