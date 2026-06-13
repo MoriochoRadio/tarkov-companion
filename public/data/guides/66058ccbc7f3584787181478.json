@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "taskId": "66058ccbc7f3584787181478",
+  "nameKo": "Against the Conscience - Part 1 [PVP ZONE]",
+  "nameEn": "Against the Conscience - Part 1 [PVP ZONE]",
+  "steps": [
+    "세관(Customs) 맵의 3층 기숙사(Three-story dorms) 건물로 이동한다.",
+    "기숙사 2층으로 올라가 209호와 211호 사이에 위치한 방을 찾는다.",
+    "이 방은 Dorm overseer key(기숙사 관리자 열쇠)가 있어야만 입장할 수 있다. 열쇠를 반드시 준비한다.",
+    "문을 열고 방 안으로 들어간다.",
+    "방 뒤쪽에 있는 시체에 접근하여 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/94/DormOverseerKeyMap.png/revision/latest/scale-to-width-down/640?cb=20250828000820",
+      "caption": "3층 기숙사 지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/DormOverseerKeyDoor.png/revision/latest/scale-to-width-down/640?cb=20250828001310",
+      "caption": "방 입구 문"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Against_the_Conscience_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

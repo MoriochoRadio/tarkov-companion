@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "taskId": "5a27b87686f77460de0252a8",
+  "nameKo": "인도주의적 보급품",
+  "nameEn": "Humanitarian Supplies",
+  "steps": [
+    "인도주의적 보급품(Humanitarian Supplies) 퀘스트를 시작하기 전에 MRE 식량 팩(MRE ration pack) 5개를 준비한다. MRE 식량 팩은 플리마켓에서 구매할 수 있으며, 레이드 내에서 획득할 필요는 없다.",
+    "퀘스트 진행에 필요한 MS2000 마커(MS2000 Marker) 2개를 준비한다. 이 아이템은 UN 트럭에 배치해야 하며, 배치 시 플레이어 인벤토리에서 사라진다.",
+    "퀘스트 중 적 스캐브(Scav)를 제거하기 위해 UNTAR 헬멧(UNTAR helmet)과 MF-UNTAR 방탄복(MF-UNTAR body armor)을 착용한다. 필요한 만큼 준비하며, 이 아이템들은 레이드 내에서 획득하는 것이 아니라 퀘스트 수행 시 착용하는 장비다.",
+    "첫 번째 UN 트럭은 해안선(Shoreline) 맵의 헬스 리조트(Health Resort) 북쪽, 테니스 코트 옆에 위치해 있다. 해당 위치로 이동하여 트럭을 찾는다.",
+    "두 번째 UN 트럭은 해안선 남쪽 주요 도로를 따라 있는 건설 현장(construction site)에 있으며, 크레인 근처에 위치해 있다. 이곳으로 이동해 두 번째 트럭을 찾는다.",
+    "각 UN 트럭에 MS2000 마커를 배치한다. 마커를 배치하면 인벤토리에서 해당 아이템이 사라진다.",
+    "MRE 식량 팩 5개를 준비한 상태에서 두 UN 트럭에 각각 배치된 MS2000 마커가 활성화된 것을 확인한다.",
+    "퀘스트 목표 중 하나인 적 스캐브를 제거하기 위해 UNTAR 헬멧과 MF-UNTAR 방탄복을 착용한 상태로 해안선 맵에서 스캐브를 사살한다.",
+    "모든 조건을 충족한 후 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Humanitarian_Supplies_Map.png/revision/latest/scale-to-width-down/640?cb=20240601184350",
+      "caption": "트럭 위치가 표시된 지도."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2d/Secondshorelineuntruck.png/revision/latest/scale-to-width-down/640?cb=20230628004511",
+      "caption": "첫 번째 UN 트럭은 헬스 리조트 북쪽, 테니스 코트 옆에 위치해 있다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/Firstshorelineuntruck.png/revision/latest/scale-to-width-down/640?cb=20230628004914",
+      "caption": "두 번째 UN 트럭은 남쪽 주요 도로의 건설 현장, 크레인 근처에 위치해 있다."
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Humanitarian_Supplies",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

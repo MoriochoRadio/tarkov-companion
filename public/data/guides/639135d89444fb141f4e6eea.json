@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "taskId": "639135d89444fb141f4e6eea",
+  "nameKo": "인구조사",
+  "nameEn": "Population Census",
+  "steps": [
+    "타르코프 시내(Street of Tarkov) 내 주택관리국(Housing Department) 건물에 진입한다. 건물 뒷편에 입구가 있다.",
+    "1층 두 번째 사무실(오른쪽으로 들어가 두 번째 방) 안에서 선반의 왼쪽 아래 칸을 확인한다. 여기서 일기장을 찾을 수 있다.",
+    "1층 세 번째 사무실(오른쪽으로 들어가 세 번째 방) 내 책상 위, 램프가 있는 곳을 살펴본다. 일기장이 놓여있을 수 있다.",
+    "1층 계단 옆 접수처에 있는 카운터 뒤 선반을 확인한다. 이곳에서도 일기장이 스폰된다.",
+    "1층 복도 왼쪽 끝 마지막 사무실 내 오른쪽 책상 위를 조사한다. 이곳에 일기장이 있을 수 있다.",
+    "2층으로 올라가 왼쪽에 위치한 잠기지 않은 사무실에 진입한다. 책상 밑에 넘어져 있는 책장이 기대어 있는 부분을 자세히 살펴본다. 이곳에서 일기장을 찾을 수 있다.",
+    "일기장은 퀘스트 활성 상태에서만 등장하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "레이드 중 일기장을 획득한 후 반드시 안전하게 탈출해야 하며, 탈출하지 못하면 아이템을 잃게 된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/PopulationCensusMap.png/revision/latest/scale-to-width-down/640?cb=20230826235224",
+      "caption": "지도에 표시된 주택관리국"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/76/PopulationCensusBuilding.png/revision/latest/scale-to-width-down/640?cb=20230106233632",
+      "caption": "주택관리국 건물 뒷편 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ef/Hall1.png/revision/latest/scale-to-width-down/640?cb=20230101022247",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/Spawn1.png/revision/latest/scale-to-width-down/640?cb=20230107000612",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/59/PopulationCensusThirdOfficeRightLampDesk.png/revision/latest/scale-to-width-down/640?cb=20230106234925",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/Populationcensus3spawn.png/revision/latest/scale-to-width-down/640?cb=20230310232141",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/PopCenStaircase.png/revision/latest/scale-to-width-down/640?cb=20230101180602",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/80/PopCenDiary1.png/revision/latest/scale-to-width-down/640?cb=20230107000702",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b3/PopulationCensusLastOfficeLeftDeskSpawn.png/revision/latest/scale-to-width-down/640?cb=20230106234623",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/Spawn2.png/revision/latest/scale-to-width-down/640?cb=20230310232228",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f2/ArchiveRoomStaircase.png/revision/latest/scale-to-width-down/640?cb=20230102002856",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/08/PopulationCensusSecondFloorUnderFallenShelf.png/revision/latest/scale-to-width-down/640?cb=20230106235932",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Population_Census",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

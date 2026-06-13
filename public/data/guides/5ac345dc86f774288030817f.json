@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "5ac345dc86f774288030817f",
+  "nameKo": "채굴 - 파트 1",
+  "nameEn": "Farming - Part 1",
+  "steps": [
+    "공장(Factory) 맵에 진입한다.",
+    "공장 내부에서 깜빡이는 빨간 불빛이 있는 제어판(Control boards)을 찾는다. 총 2개의 제어판이 목표이다.",
+    "각 제어판을 수리하기 위해서는 Toolset 아이템이 필요하며, Toolset 2개를 준비해야 한다.",
+    "Toolset은 레이드 내에서 획득하는 아이템이며, 사용 시 인벤토리에서 사라진다.",
+    "수리는 한 번에 한 제어판씩 진행하는 것이 추천된다. 안전한 보관을 위해 Secure container Epsilon 또는 Secure container Theta를 사용하면 각 레이드마다 2개의 Toolset을 안전하게 보관할 수 있다.",
+    "첫 번째 제어판을 찾아 Toolset을 사용하여 수리한다.",
+    "두 번째 제어판도 동일하게 찾아 Toolset을 사용하여 수리한다."
+  ],
+  "tips": "Toolset은 레이드 내에서만 획득 가능하므로, 미리 준비하거나 레이드 중에 확보해야 한다. Secure container Epsilon 또는 Theta가 있으면 두 개의 Toolset을 안전하게 보관할 수 있어 수월하게 진행할 수 있다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/14/FarmingPart1Guide.jpg/revision/latest/scale-to-width-down/640?cb=20251019172713",
+      "caption": "지도에 표시된 제어판 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Blinky-2.png/revision/latest/scale-to-width-down/640?cb=20251019172614",
+      "caption": "첫 번째 제어판"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/Bilnky-1.png/revision/latest/scale-to-width-down/640?cb=20251019172844",
+      "caption": "두 번째 제어판"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Farming_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

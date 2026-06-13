@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "66058cd19f59e625462acc90",
+  "nameKo": "Decisions, Decisions [PVP ZONE]",
+  "nameEn": "Decisions, Decisions [PVP ZONE]",
+  "steps": [
+    "세관(Customs) 맵의 3층 기숙사 건물 2층으로 이동한다. 2층은 1층에서 계단을 이용해 올라갈 수 있다.",
+    "기숙사 2층에서 209호와 211호 사이에 위치한 방을 찾는다. 이 방은 'Dorm overseer key(기숙사 감독관 열쇠)'가 있어야 입장할 수 있다.",
+    "Dorm overseer key는 퀘스트 진행에 필수이며, 해당 열쇠 없이는 방에 들어갈 수 없다. 열쇠는 퀘스트 진행 중에만 획득 가능하며, 별도로 레이드 내에서 찾을 수 없다.",
+    "방 안으로 들어가면 옷장이 있는 곳 근처 바닥에 피가 고여 있는 곳에서 'Ref dirt'라는 퀘스트 아이템을 찾을 수 있다.",
+    "'Ref dirt' 아이템은 퀘스트가 활성화되어 있을 때만 획득 가능하며, 획득 시 자동으로 퀘스트 아이템 인벤토리에 들어간다.",
+    "획득한 'Ref dirt' 아이템을 가지고 반드시 안전하게 추출해야 한다. 만약 추출에 실패하면 아이템을 잃게 되고, 퀘스트도 실패 처리된다.",
+    "참고로 'Between Two Fires' 또는 'Surprise Gift' 퀘스트를 완료하면 이 퀘스트는 실패 처리되어 진행할 수 없으니 주의한다."
+  ],
+  "tips": "기숙사 2층 209호와 211호 사이 방은 Dorm overseer key 없이는 절대 들어갈 수 없으므로, 열쇠를 반드시 확보해야 한다. 'Ref dirt' 아이템은 퀘스트가 활성화된 상태에서만 획득 가능하므로, 퀘스트 시작 후 바로 방으로 이동하는 것이 좋다. 또한, 레이드 내에서 안전하게 추출하는 것을 최우선으로 하여 아이템 손실을 방지하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/94/DormOverseerKeyMap.png/revision/latest/scale-to-width-down/640?cb=20250828000820",
+      "caption": "3층 기숙사 지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/DormOverseerKeyDoor.png/revision/latest/scale-to-width-down/640?cb=20250828001310",
+      "caption": "방으로 들어가는 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/CompromisingInformationLocation.png/revision/latest/scale-to-width-down/640?cb=20250426092759",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Decisions%2C_Decisions",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "taskId": "59c93e8e86f7742a406989c4",
+  "nameKo": "돈으로 이어진 관계",
+  "nameEn": "Loyalty Buyout",
+  "steps": [
+    "프라퍼(Prapor)에게 1,000,000 루블을 준비한다. 이 금액은 퀘스트 완료를 위해 제출해야 하는 아이템이며, 레이드 내에서 획득할 필요는 없다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Loyalty_Buyout",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

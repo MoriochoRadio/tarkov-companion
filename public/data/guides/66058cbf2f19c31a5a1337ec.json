@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "taskId": "66058cbf2f19c31a5a1337ec",
+  "nameKo": "Create a Distraction - Part 2 [PVP ZONE]",
+  "nameEn": "Create a Distraction - Part 2 [PVP ZONE]",
+  "steps": [
+    "퀘스트 목표는 Kaban(카반) 또는 Kollontay(콜론타이)의 경비병 2명을 처치하는 것입니다. 단, 메인 보스 두 명은 절대 해치면 안 됩니다. 보스에게 피해를 입히면 퀘스트가 실패합니다.",
+    "Kaban이 위치한 LexOs 자동차 딜러십 구역 내부에는 클레이모어 지뢰가 다수 설치되어 있으니 매우 주의해야 합니다.",
+    "Kaban의 스폰 위치는 타르코프 시내(타르코프 시내 지도 참조)에서 확인할 수 있습니다. 해당 위치에서 경비병을 찾아 처치하세요.",
+    "Kollontay의 스폰 위치도 타르코프 시내 지도에 표시되어 있으니, 해당 위치에서 경비병을 찾아 처치하면 됩니다.",
+    "보스들을 건드리지 않도록 경비병만 정확히 타격하며, 주변에 설치된 클레이모어 지뢰에 주의하면서 움직이세요."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7a/KabanSpawnsStreets.png/revision/latest/scale-to-width-down/640?cb=20230826214042",
+      "caption": "타르코프 시내 지도에 표시된 Kaban의 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/LexOsClaymoreOverview.png/revision/latest/scale-to-width-down/640?cb=20250203160104",
+      "caption": "LexOs 단지 전체 개요"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c0/KollontaySpawnsStreets.png/revision/latest/scale-to-width-down/640?cb=20240629062229",
+      "caption": "타르코프 시내 지도에 표시된 Kollontay의 스폰 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Create_a_Distraction_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

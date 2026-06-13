@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "66058cc72cee99303f1ba069",
+  "nameKo": "To Great Heights! - Part 4 [PVP ZONE]",
+  "nameEn": "To Great Heights! - Part 4 [PVP ZONE]",
+  "steps": [
+    "퀘스트 완료를 위해 1,000,000 루블(Roubles)을 준비한다. 이 루블은 메인 게임 또는 아레나(Arena) 인벤토리에서 제출할 수 있다.",
+    "퀘스트 진행 중 6번의 경기 중 4번을 패배하면 퀘스트가 실패한다. 실패 시 다시 1,000,000 루블을 제출해야 재도전할 수 있다.",
+    "퀘스트는 PvP 존에서 진행되므로, 경기에서 승리할 수 있도록 전략을 세우고 팀원과 협력한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/To_Great_Heights!_-_Part_4",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

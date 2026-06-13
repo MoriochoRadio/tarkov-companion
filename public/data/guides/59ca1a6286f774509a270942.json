@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "59ca1a6286f774509a270942",
+  "nameKo": "악의 없음",
+  "nameEn": "No Offence",
+  "steps": [
+    "피스키퍼(Peacekeeper) 레벨 3 달성 후 그의 퀘스트 'Spa Tour - Part 2'를 완료하면 M67 수류탄 10개를 피스키커에게서 구매할 수 있습니다.",
+    "만약 피스키퍼 레벨 3이 아니라면, 피스키퍼 레벨 2에서 M67 수류탄을 1개당 지보 라이터(Zibbo lighter) 1개와 교환할 수 있습니다.",
+    "M67 수류탄 10개를 모두 준비한 뒤, 퀘스트 '악의 없음(No Offence)'의 제출 아이템으로 피스키커에게 전달하면 퀘스트가 완료됩니다."
+  ],
+  "tips": "M67 수류탄은 레이드 내에서 획득할 수 없으므로 반드시 피스키퍼를 통해 구매하거나 교환해야 합니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/No_Offence",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

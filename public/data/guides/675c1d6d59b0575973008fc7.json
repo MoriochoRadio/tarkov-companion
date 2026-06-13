@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "taskId": "675c1d6d59b0575973008fc7",
+  "nameKo": "Seizing the Initiative",
+  "nameEn": "Seizing the Initiative",
+  "steps": [
+    "레이드 시작 후 1분이 지나야 트랜싯(Transit) 이용이 가능하므로, 레이드 시작 후 1분을 기다린다.",
+    "세관(Customs) 맵에서 '스나이퍼 로드블록(Sniper Roadblock)' 근처로 이동한다. 스나이퍼 로드블록은 주요 도로에 설치된 검문소 형태의 차단 지점이다.",
+    "스나이퍼 로드블록 뒤쪽에 위치한 버스 안으로 들어간다. 이 버스 내부가 트랜싯 위치이다.",
+    "버스 내부에서 트랜싯을 찾아 퀘스트 목표를 완료한다."
+  ],
+  "tips": "트랜싯은 레이드 시작 후 1분이 지나야 활성화되므로, 너무 일찍 도착하면 이용할 수 없다. 스나이퍼 로드블록 주변은 적 Scav가 자주 출몰하므로 주의가 필요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f6/CustomsTransitToShorelineMap.png/revision/latest/scale-to-width-down/640?cb=20250115205654",
+      "caption": "지도에 표시된 트랜싯 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9d/Sniper_Roadblock.png/revision/latest/scale-to-width-down/640?cb=20250316144131",
+      "caption": "스나이퍼 로드블록"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/CustomsTransitToShoreline.png/revision/latest/scale-to-width-down/640?cb=20250316151507",
+      "caption": "트랜싯 내부"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Seizing_the_Initiative",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

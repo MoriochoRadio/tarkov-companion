@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "597a0f5686f774273b74f676",
+  "nameKo": "화학 - 파트 4",
+  "nameEn": "Chemical - Part 4",
+  "steps": [
+    "퀘스트 'Out of Curiosity' 또는 'Big Customer'를 완료하면 이 퀘스트는 실패 처리되며 진행할 수 없으니 주의한다.",
+    "퀘스트 진행에 필요한 MS2000 마커가 없다면 프라퍼(Prapor) 상인에게서 MS2000 Marker를 구매한다.",
+    "세관(Customs) 맵 내에 위치한 창고(warehouse)를 찾는다. 창고 위치는 지도에 표시되어 있으니 참고한다.",
+    "창고 내부에 있는 화학 차량(chemical van)을 찾는다. 창고 안에 차량이 주차되어 있으며, 차량 내부에 마커를 설치해야 한다.",
+    "MS2000 Marker를 차량 내부에 설치한다. 설치 후 30초 동안 생존해야 하며, 30초가 지나기 전에 죽으면 다시 마커를 설치해야 한다.",
+    "마커를 설치한 후에는 차량 근처에 있을 필요가 없으므로, 근처의 은신처를 찾아 30초 동안 기다린다.",
+    "30초가 지나면 마커 설치가 완료되어 퀘스트가 진행된다."
+  ],
+  "tips": "마커 설치 후 30초 동안은 안전한 장소에서 대기하는 것이 중요하다. 설치 직후 죽으면 다시 설치해야 하므로 주의한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ed/BigCustomerMap.jpg/revision/latest/scale-to-width-down/640?cb=20220129152928",
+      "caption": "지도에 표시된 창고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/64/Depot-building_customs.png/revision/latest/scale-to-width-down/640?cb=20250603195148",
+      "caption": "차량이 있는 창고 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/The_van_inside_the_depot-building.png/revision/latest/scale-to-width-down/640?cb=20250603195321",
+      "caption": "마커를 설치하는 차량"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_4",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

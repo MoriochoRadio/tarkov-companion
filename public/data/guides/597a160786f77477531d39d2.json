@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "597a160786f77477531d39d2",
+  "nameKo": "호기심으로부터",
+  "nameEn": "Out of Curiosity",
+  "steps": [
+    "퀘스트 'Chemical - Part 4' 또는 'Big Customer'를 완료하면 이 퀘스트 '호기심으로부터 (Out of Curiosity)'가 실패 처리되어 진행할 수 없으니 주의한다.",
+    "Prapor(프라퍼) 상인에게서 MS2000 마커를 1개 구매한다.",
+    "세관(Customs) 맵의 창고(warehouse) 위치를 확인한다. 창고는 지도에 표시되어 있으며, 내부에 차량이 있는 건물이다.",
+    "창고 내부에 있는 화학 밴(chemical van)을 찾아간다. 이 차량 내부에 MS2000 마커를 설치해야 한다.",
+    "MS2000 마커를 화학 밴 안에 설치한다.",
+    "마커 설치 후 30초 동안 생존해야 한다. 만약 30초 내에 사망하면 다시 밴에 마커를 설치해야 하므로, 마커 설치 후 근처에 숨을 수 있는 안전한 장소를 찾아 대기한다.",
+    "30초가 지나면 마커 설치가 완료되어 퀘스트 진행이 인정된다."
+  ],
+  "tips": "MS2000 마커는 프라퍼에게서 구매할 수 있으므로 레이드에서 찾을 필요는 없다. 마커 설치 후 바로 자리를 뜨지 말고, 30초 동안 안전하게 대기하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ed/BigCustomerMap.jpg/revision/latest/scale-to-width-down/640?cb=20220129152928",
+      "caption": "지도에 표시된 창고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/64/Depot-building_customs.png/revision/latest/scale-to-width-down/640?cb=20250603195148",
+      "caption": "차량이 있는 창고 건물 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/The_van_inside_the_depot-building.png/revision/latest/scale-to-width-down/640?cb=20250603195321",
+      "caption": "마커를 설치하는 차량"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Out_of_Curiosity",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

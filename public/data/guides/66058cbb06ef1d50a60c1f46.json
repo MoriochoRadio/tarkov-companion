@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "66058cbb06ef1d50a60c1f46",
+  "nameKo": "Surprise [PVP ZONE]",
+  "nameEn": "Surprise [PVP ZONE]",
+  "steps": [
+    "임무를 시작하기 전에 3개의 클래스 4 이상 방탄판(armor plate)을 준비해야 합니다. 방탄판은 레이드 내에서 획득(FIR)할 수 있으며, 6B13 커스텀 방탄판(등판)은 이 퀘스트에 적용되지 않으니 사용하지 마십시오.",
+    "준비한 클래스 4 이상 방탄판 3개를 퀘스트 진행 시 지정된 NPC에게 제출하면 임무가 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Surprise",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}

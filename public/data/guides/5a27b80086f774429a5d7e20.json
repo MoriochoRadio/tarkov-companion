@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "taskId": "5a27b80086f774429a5d7e20",
+  "nameKo": "매의 눈",
+  "nameEn": "Eagle Eye",
+  "steps": [
+    "해안선(Shoreline) 맵에서 두 대의 추락한 UAV 드론에서 각각 SAS 디스크 1개씩을 획득해야 한다.",
+    "첫 번째 UAV 드론은 밀수업자 기지(smuggler base) 근처에 위치해 있다. 해당 위치로 이동하여 드론을 찾는다.",
+    "두 번째 UAV 드론은 늪지 마을(swamp village)의 동쪽에 위치해 있다. 늪지 마을을 기준으로 동쪽 방향으로 이동해 드론을 찾는다.",
+    "각 UAV 드론의 측면 패널(side panels)을 열어야 한다. 패널을 열면 내부에서 SAS 디스크를 찾을 수 있다.",
+    "첫 번째 드론에서 SAS 디스크 #1을 획득한다. 이 아이템은 퀘스트 활성화 상태에서만 레이드 내에서 획득 가능하며, 획득 즉시 퀘스트 아이템 인벤토리로 이동한다.",
+    "두 번째 드론에서 SAS 디스크 #2를 획득한다. 이 아이템 역시 퀘스트 활성화 상태에서만 레이드 내에서 획득 가능하며, 획득 즉시 퀘스트 아이템 인벤토리로 이동한다.",
+    "두 디스크 모두 획득 후에는 반드시 안전하게 추출해야 한다. 추출에 실패할 경우 디스크를 잃게 된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/Eagle_Eye_Locations.png/revision/latest/scale-to-width-down/640?cb=20240116180139",
+      "caption": "지도에 표시된 드론 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c2/Firstshorelineuav.png/revision/latest/scale-to-width-down/640?cb=20231228222816",
+      "caption": "첫 번째 UAV는 밀수업자 기지 근처에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5d/Secondshorelineuav.png/revision/latest/scale-to-width-down/640?cb=20231228222352",
+      "caption": "두 번째 UAV는 늪지 마을 동쪽에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/68/Shorelineuavsidepanel.png/revision/latest/scale-to-width-down/640?cb=20231228222527",
+      "caption": "UAV 측면 패널 뒤에서 SAS 디스크를 찾을 수 있음. 패널을 열어 디스크를 획득"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/77/SAS_disk_in_drone.png/revision/latest/scale-to-width-down/640?cb=20231228222559",
+      "caption": "열린 패널과 디스크"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Eagle_Eye",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T17:38:59.749+09:00"
+}
