@@ -50,15 +50,16 @@ export function bucketOf(types: readonly string[] | undefined): BucketId {
   return 'other'
 }
 
-// 우측 정크박스 그리드의 분류 전환 탭 — 친구 3분류(장비/정크박스템/음식) + 기타.
-// 세부 7버킷은 그대로 두되(추후 정밀 분류용), 화면 탭은 이 4개로 접는다.
-// 의료·열쇠·무기·부품은 모두 '기타'로 — 친구안에 없는 분류라 한곳에 묶음.
-export type DisplayGroupId = 'gear' | 'barter' | 'food' | 'etc'
+// 우측 정크박스 그리드의 분류 전환 탭 — 친구 최종안 5분류.
+// 세부 7버킷은 그대로 두되(추후 정밀 분류용), 화면 탭은 이 5개로 접는다.
+// 의료는 독립 탭, 열쇠·무기·부품은 '기타'로 묶음.
+export type DisplayGroupId = 'gear' | 'barter' | 'food' | 'meds' | 'etc'
 
 export const DISPLAY_GROUPS: { id: DisplayGroupId; label: string }[] = [
   { id: 'gear', label: '장비' },
-  { id: 'barter', label: '정크박스템' },
+  { id: 'barter', label: '정크박스' },
   { id: 'food', label: '음식' },
+  { id: 'meds', label: '의료' },
   { id: 'etc', label: '기타' },
 ]
 
@@ -66,8 +67,8 @@ const TO_DISPLAY: Record<BucketId, DisplayGroupId> = {
   gear: 'gear',
   barter: 'barter',
   food: 'food',
+  meds: 'meds',
   keys: 'etc',
-  meds: 'etc',
   weapon: 'etc',
   other: 'etc',
 }

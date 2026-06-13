@@ -139,9 +139,9 @@ await measure(
 // --- Phase 28: FIR 통합 운영 페이지 (2분할 + 정크박스 그리드) ---
 
 await measure(
-  '6) FIR 탭 진입 → 운영 페이지 (좌 소스 + 우 정크박스)',
+  '6) FIR 탭 진입 → 운영 페이지 (좌 퀘스트 아코디언 + 우 정크박스)',
   () => clickTab('퀘스트 도구', 'FIR'),
-  '.fir-src-row',
+  '.fir-q-row',
 )
 
 const t2 = Date.now()
@@ -157,6 +157,24 @@ await page.evaluate(() =>
 )
 await new Promise((r) => setTimeout(r, 200))
 console.log(`7.1) 우측 스테퍼 +1 반영: ${Date.now() - t2b}ms`)
+
+// 정렬 안정성 검증 (Phase 27 버그수정): 스테퍼 조작 후 타일 순서가 불변이어야 함
+const orderBefore = await page.evaluate(() =>
+  [...document.querySelectorAll('.fir-tile-name')].map((e) => e.textContent),
+)
+await page.evaluate(() => {
+  const t = document.querySelectorAll('.fir-tile')[2] // 첫 타일이 아닌 것을 조작
+  t?.querySelector('.fir-stepper .fir-step:last-child:not(:disabled)')?.click()
+  t?.querySelector('.fir-stepper .fir-step:first-child:not(:disabled)')?.click()
+})
+await new Promise((r) => setTimeout(r, 150))
+const orderAfter = await page.evaluate(() =>
+  [...document.querySelectorAll('.fir-tile-name')].map((e) => e.textContent),
+)
+const stable = JSON.stringify(orderBefore) === JSON.stringify(orderAfter)
+console.log(
+  `7.12) 스테퍼 조작 후 타일 순서: ${stable ? 'OK (위치 유지)' : 'FAIL — 재정렬됨!'}`,
+)
 
 await measure(
   "7.15) 분류 전환 → '기타' (가장 큰 그리드, 2단계 렌더)",

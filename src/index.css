@@ -4994,6 +4994,82 @@ summary:focus-visible {
   font-size: var(--fs-sub);
 }
 
+/* 좌측 퀘스트 아코디언 — 상인 가로 선택(.tk-traders 재사용) 아래 레벨 오름차순 행 */
+.fir-q-list {
+  list-style: none;
+  margin: var(--sp-2) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 62vh;
+  overflow-y: auto;
+}
+
+.fir-q-row {
+  padding: 6px 8px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.fir-q-head {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+}
+
+.fir-q-name {
+  flex: 1;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--fs-sub);
+}
+
+/* 퀘스트별 필요 FIR 아이템 — 작은 아이콘 + ×수량 (스케치의 □ ×3, □ ×4) */
+.fir-q-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.fir-q-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.74rem;
+  color: var(--text-2);
+}
+
+.fir-q-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+/* 완료한 퀘스트 행 — 어둡게 + 빗금 (소스 행과 같은 표식) */
+.fir-q-row.done {
+  opacity: 0.5;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 7px,
+    color-mix(in srgb, var(--border-strong) 55%, transparent) 7px,
+    color-mix(in srgb, var(--border-strong) 55%, transparent) 9px
+  );
+}
+
+.fir-q-row.done .fir-q-name {
+  text-decoration: line-through;
+  text-decoration-color: var(--text-2);
+}
+
 /* --- 은신처 조직도 트리 --- */
 .htree {
   position: relative;

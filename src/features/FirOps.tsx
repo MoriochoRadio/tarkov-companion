@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   CURRENCY_IDS,
   fetchHideoutStations,
@@ -23,10 +23,12 @@ import {
 import { builtKey, cascadeBuilt } from './HideoutView'
 import { TableSkeleton } from './Skeleton'
 
-// FIR 통합 운영 페이지 (Phase 28) — 친구 최종 스케치.
-// 좌: 소스 패널(퀘스트/하이드아웃 행 + 완료 버튼). 우: 남은 FIR 아이템을
-// 분류별 정크박스 그리드 + "− 보유 +" 스테퍼. 좌측에서 퀘스트/스테이션을
-// "완료"하면 그 수요가 우측에서 실시간으로 빠진다. 수량은 클릭 누적이 아니라
+// FIR 통합 운영 페이지 (Phase 27 최종) — 친구 스케치.
+// 좌: 소스 패널. 퀘스트는 상인 가로 선택 → 그 상인 퀘스트가 레벨 오름차순
+// 아코디언으로 펼쳐지고, 각 퀘스트 행에 필요 FIR 아이콘(×수량) + "클리어함".
+// 하이드아웃은 스테이션 행 + "건축 완료". 완료 행은 어둡게 + 빗금.
+// 우: 남은 FIR을 분류별 정크박스 그리드 + "− 보유 +" 스테퍼. 좌측에서 완료를
+// 누르면 그 수요가 우측에서 실시간으로 빠진다. 수량은 클릭 누적이 아니라
 // 스테퍼로 직접 증감 (tc:prep-counts 공유 — 준비물/체크리스트와 같은 저장소).
 
 const FIRST_PAINT = 36 // 아이콘+스테퍼 타일 그리드 2단계 렌더 (Phase 17 교훈)
@@ -105,7 +107,12 @@ function FirTile({
   )
 }
 
-// ---------- 좌측: 소스 패널 ----------
+// ---------- 좌측: 퀘스트 소스 (상인 선택 + 아코디언) ----------
+
+interface TraderGroup {
+  trader: Quest['trader']
+  quests: { q: Quest; needs: { item: ItemRef; count: number }[] }[]
+}
 
 function QuestSource({
   quests,
@@ -116,61 +123,101 @@ function QuestSource({
   done: ReadonlySet<string>
   onToggle: (id: string) => void
 }) {
-  // FIR 제출 아이템이 있는 퀘스트만 — trader+레벨(진행 순서)로 정렬
-  const rows = useMemo(() => {
-    const out: { q: Quest; needCount: number }[] = []
+  // 상인별 FIR 제출 퀘스트 — 상인은 이름순, 퀘스트는 레벨 오름차순
+  const traders = useMemo(() => {
+    const byTrader = new Map<string, TraderGroup>()
     for (const q of quests) {
       const needs = questFirNeeds(q)
       if (needs.length === 0) continue
-      out.push({ q, needCount: needs.reduce((s, n) => s + n.count, 0) })
+      let g = byTrader.get(q.trader.id)
+      if (!g) {
+        g = { trader: q.trader, quests: [] }
+        byTrader.set(q.trader.id, g)
+      }
+      g.quests.push({ q, needs })
     }
-    out.sort(
-      (a, b) =>
-        collator.compare(a.q.trader.name, b.q.trader.name) ||
-        a.q.minPlayerLevel - b.q.minPlayerLevel ||
-        collator.compare(a.q.nameKo, b.q.nameKo),
-    )
-    return out
+    const out = [...byTrader.values()]
+    for (const g of out) {
+      g.quests.sort(
+        (a, b) =>
+          a.q.minPlayerLevel - b.q.minPlayerLevel ||
+          collator.compare(a.q.nameKo, b.q.nameKo),
+      )
+    }
+    return out.sort((a, b) => collator.compare(a.trader.name, b.trader.name))
   }, [quests])
 
-  let lastTrader = ''
+  const [sel, setSel] = useState<string | null>(null)
+  const selected = traders.find((t) => t.trader.id === sel) ?? traders[0] ?? null
+
   return (
-    <ul className="fir-src-list">
-      {rows.map(({ q, needCount }) => {
-        const isDone = done.has(q.id)
-        const head = q.trader.name !== lastTrader
-        lastTrader = q.trader.name
-        return (
-          <li key={q.id}>
-            {head && (
-              <p className="fir-src-trader">
-                {q.trader.imageLink && (
-                  <img src={q.trader.imageLink} alt="" width={22} height={22} loading="lazy" />
-                )}
-                {q.trader.name}
-              </p>
-            )}
-            <div className={`fir-src-row${isDone ? ' done' : ''}`}>
-              <span className="dim num fir-src-lv">Lv{q.minPlayerLevel}</span>
-              <span className="fir-src-name">
-                {q.displayName}
-                {q.kappaRequired && <span className="badge-kappa">κ</span>}
-                <span className="dim num fir-src-cnt"> · FIR {needCount}</span>
-              </span>
-              <button
-                className={`btn-ext fir-done-btn${isDone ? ' active' : ''}`}
-                onClick={() => onToggle(q.id)}
-              >
-                {isDone ? '✓ 클리어함 · 취소' : '클리어함'}
-              </button>
-            </div>
-          </li>
-        )
-      })}
-      {rows.length === 0 && <li className="hint">FIR 제출 퀘스트가 없습니다.</li>}
-    </ul>
+    <div>
+      <div className="tk-traders" role="tablist" aria-label="상인 선택">
+        {traders.map((g) => {
+          const remain = g.quests.filter((x) => !done.has(x.q.id)).length
+          return (
+            <button
+              key={g.trader.id}
+              role="tab"
+              aria-selected={selected?.trader.id === g.trader.id}
+              className={`tk-trader${
+                selected?.trader.id === g.trader.id ? ' active' : ''
+              }`}
+              onClick={() => setSel(g.trader.id)}
+            >
+              {g.trader.imageLink && (
+                <img src={g.trader.imageLink} alt="" width={40} height={40} loading="lazy" />
+              )}
+              <span>{g.trader.name}</span>
+              <span className="dim num">{remain}</span>
+            </button>
+          )
+        })}
+      </div>
+
+      {selected && (
+        <ul className="fir-q-list">
+          {selected.quests.map(({ q, needs }) => {
+            const isDone = done.has(q.id)
+            return (
+              <li key={q.id} className={`fir-q-row${isDone ? ' done' : ''}`}>
+                <div className="fir-q-head">
+                  <span className="dim num fir-src-lv">Lv{q.minPlayerLevel}</span>
+                  <span className="fir-q-name">
+                    {q.displayName}
+                    {q.kappaRequired && <span className="badge-kappa">κ</span>}
+                  </span>
+                  <button
+                    className={`btn-ext fir-done-btn${isDone ? ' active' : ''}`}
+                    onClick={() => onToggle(q.id)}
+                  >
+                    {isDone ? '✓ 클리어함 · 취소' : '클리어함'}
+                  </button>
+                </div>
+                <div className="fir-q-items">
+                  {needs.map((n, i) => (
+                    <span
+                      key={`${n.item.id}-${i}`}
+                      className="fir-q-item"
+                      title={`${biName(n.item.nameKo, n.item.nameEn)} ×${n.count}`}
+                    >
+                      {n.item.iconLink && (
+                        <img src={n.item.iconLink} alt="" loading="lazy" />
+                      )}
+                      <span className="num">×{n.count}</span>
+                    </span>
+                  ))}
+                </div>
+              </li>
+            )
+          })}
+        </ul>
+      )}
+    </div>
   )
 }
+
+// ---------- 좌측: 하이드아웃 소스 ----------
 
 function HideoutSource({
   stations,
@@ -193,7 +240,6 @@ function HideoutSource({
           built.has(builtKey(s.id, lv.level)),
         ).length
         const all = builtCount === total
-        // 안 지은 레벨에 FIR 요구가 있으면 배지
         const firLeft = s.levels.some(
           (lv) =>
             !built.has(builtKey(s.id, lv.level)) &&
@@ -253,7 +299,12 @@ export function FirOps() {
   const [cat, setCat] = useState<DisplayGroupId>('gear')
   const [visible, setVisible] = useState(FIRST_PAINT)
 
-  // 수요 도착/분류 전환 시 첫 페인트는 소량 → 전체 (저사양 큰 레이아웃 패스 분할)
+  // 정렬을 마운트 1회로 고정 — 스테퍼 +/−로 타일이 자리를 옮기지 않게 (버그수정).
+  // 처음 보는 아이템만 need 내림차순으로 인덱스를 부여하고 이후엔 그 순서를 유지.
+  // counts(보유)는 정렬 키에서 완전히 배제 → 수량 조작은 위치에 영향 없음.
+  const orderRef = useRef(new Map<string, number>())
+
+  // 우측 수요 도착/분류 전환 시 첫 페인트는 소량 → 전체 (큰 레이아웃 패스 분할)
   useEffect(() => {
     setVisible(FIRST_PAINT)
     if (state.status === 'ready') {
@@ -263,7 +314,7 @@ export function FirOps() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.status, cat])
 
-  // 우측 수요: 완료 안 한 퀘스트 + 안 지은 레벨의 FIR 요구 합산
+  // 우측 수요: 완료 안 한 퀘스트 + 안 지은 레벨의 FIR 요구 합산 (보유와 무관)
   const demand = useMemo(() => {
     if (state.status !== 'ready') return [] as DemandItem[]
     const m = new Map<string, DemandItem>()
@@ -290,14 +341,37 @@ export function FirOps() {
     return [...m.values()]
   }, [state, done, built])
 
+  // 고정 순서 적용 — demand가 바뀔 때(완료 토글)만 재계산, 보유 변경에는 불변
+  const ordered = useMemo(() => {
+    const fresh = demand.filter((d) => !orderRef.current.has(d.item.id))
+    if (fresh.length) {
+      fresh.sort(
+        (a, b) => b.need - a.need || collator.compare(a.item.nameKo, b.item.nameKo),
+      )
+      let n = orderRef.current.size
+      for (const d of fresh) orderRef.current.set(d.item.id, n++)
+    }
+    return [...demand].sort(
+      (a, b) =>
+        (orderRef.current.get(a.item.id) ?? 0) -
+        (orderRef.current.get(b.item.id) ?? 0),
+    )
+  }, [demand])
+
   // 분류별 남은 수량 합 (탭 배지)
   const groupRemain = useMemo(() => {
-    const out: Record<DisplayGroupId, number> = { gear: 0, barter: 0, food: 0, etc: 0 }
-    for (const d of demand) {
+    const out: Record<DisplayGroupId, number> = {
+      gear: 0,
+      barter: 0,
+      food: 0,
+      meds: 0,
+      etc: 0,
+    }
+    for (const d of ordered) {
       out[d.group] += Math.max(0, d.need - (counts[d.item.id] ?? 0))
     }
     return out
-  }, [demand, counts])
+  }, [ordered, counts])
 
   if (state.status === 'loading') {
     return (
@@ -308,15 +382,8 @@ export function FirOps() {
     return <p className="status error">불러오기 실패: {state.message}</p>
   }
 
-  const catItems = demand
-    .filter((d) => d.group === cat)
-    .sort(
-      (a, b) =>
-        Math.max(0, b.need - (counts[b.item.id] ?? 0)) -
-          Math.max(0, a.need - (counts[a.item.id] ?? 0)) ||
-        b.need - a.need ||
-        collator.compare(a.item.nameKo, b.item.nameKo),
-    )
+  // 고정 순서 그대로 분류만 필터 — 보유 기준 재정렬 없음 (위치 유지)
+  const catItems = ordered.filter((d) => d.group === cat)
   const shown = catItems.slice(0, visible)
 
   return (
@@ -325,8 +392,8 @@ export function FirOps() {
         좌측에서 퀘스트를 <strong>클리어함</strong> / 스테이션을{' '}
         <strong>건축 완료</strong>로 누르면 그 <span className="badge-fir">FIR</span>{' '}
         수요가 우측 정크박스에서 바로 빠집니다. 우측 수량은 클릭이 아니라{' '}
-        <strong>− 보유 +</strong> 스테퍼로 직접 조절 (준비물 탭과 같은 저장소).
-        부분 건축은 “은신처 조직도” 보조 보기에서 레벨별로 정밀 처리하세요.
+        <strong>− 보유 +</strong> 스테퍼로 직접 조절(준비물 탭과 같은 저장소) — 수량을
+        바꿔도 타일 위치는 고정됩니다. 부분 건축은 “트래커·조직도” 보조 보기에서 레벨별로.
       </p>
       <div className="fir-page">
         <section className="fir-left">
