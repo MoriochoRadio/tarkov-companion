@@ -185,6 +185,51 @@ function questNeeds(quest: Quest): TrackNeed[] {
     }))
 }
 
+// 좌측 목록의 아이템 칩 — 클릭하면 +1, 보유가 있으면 붙어있는 −1로 그 자리에서
+// 되돌린다. 우측 정크박스에서만 −1 되던 시절엔 오클릭 복구가 어려웠음(피드백 반영).
+function TrackChip({
+  item,
+  count,
+  fir,
+  got,
+  onAdd,
+}: {
+  item: JunkRef
+  count: number
+  fir: boolean
+  got: number
+  onAdd: (delta: number) => void
+}) {
+  const name = biName(item.nameKo, item.nameEn)
+  return (
+    <span className={`tk-chip-wrap${got > 0 ? ' has-minus' : ''}`}>
+      <button
+        className="item-chip tk-item"
+        onClick={() => onAdd(1)}
+        title={`${name} — 클릭하면 모은 개수 +1 (보유 ${got})`}
+      >
+        {item.iconLink && <img src={item.iconLink} alt="" loading="lazy" />}
+        <span>
+          {name}
+          <span className="num"> × {count}</span>
+        </span>
+        {fir && <span className="badge-fir">FIR</span>}
+        {got > 0 && <span className="num hideout-have">보유 {got}</span>}
+      </button>
+      {got > 0 && (
+        <button
+          className="tk-chip-minus"
+          onClick={() => onAdd(-1)}
+          aria-label={`${name} 모은 개수 하나 되돌리기 (−1)`}
+          title="하나 되돌리기 (−1)"
+        >
+          −
+        </button>
+      )}
+    </span>
+  )
+}
+
 // 스토리라인 선택 시 — 챕터엔 API 아이템 데이터가 없어 정크박스 집계 불가.
 // 구분 방식 선택 사유: 카파 필수 여부는 "수집가" 사이드 라인 표식이라 스토리
 // 구분이 아님 → Phase 21의 수동 큐레이션 파일(storyline.json)을 재사용
@@ -332,7 +377,8 @@ function QuestTracker() {
       </div>
       <p className="hint">
         상인을 고르고 퀘스트의 아이템을 클릭하면 모은 개수 +1 — 우측 정크박스의
-        남은 수량이 바로 줄어듭니다. 보유 개수는 준비물 탭 +/−와 같은 저장소
+        남은 수량이 바로 줄어듭니다. 잘못 눌렀으면 칩 오른쪽 −로 바로 되돌리세요.
+        보유 개수는 준비물 탭 +/−와 같은 저장소
         (계정 전체 기준) — 상인별 남은 수량은 보유분을 그 상인에 모두 쓴다고
         가정한 표시입니다.
       </p>
@@ -386,29 +432,16 @@ function QuestTracker() {
                     {quest.kappaRequired && <span className="badge-kappa">κ</span>}
                   </p>
                   <p className="chip-row">
-                    {needs.map((n, i) => {
-                      const got = counts[n.item.id] ?? 0
-                      return (
-                        <button
-                          key={`${n.item.id}-${i}`}
-                          className="item-chip tk-item"
-                          onClick={() => add(n.item.id, 1)}
-                          title={`${biName(n.item.nameKo, n.item.nameEn)} — 클릭하면 모은 개수 +1 (보유 ${got})`}
-                        >
-                          {n.item.iconLink && (
-                            <img src={n.item.iconLink} alt="" loading="lazy" />
-                          )}
-                          <span>
-                            {biName(n.item.nameKo, n.item.nameEn)}
-                            <span className="num"> × {n.count}</span>
-                          </span>
-                          {n.fir && <span className="badge-fir">FIR</span>}
-                          {got > 0 && (
-                            <span className="num hideout-have">보유 {got}</span>
-                          )}
-                        </button>
-                      )
-                    })}
+                    {needs.map((n, i) => (
+                      <TrackChip
+                        key={`${n.item.id}-${i}`}
+                        item={n.item}
+                        count={n.count}
+                        fir={n.fir}
+                        got={counts[n.item.id] ?? 0}
+                        onAdd={(d) => add(n.item.id, d)}
+                      />
+                    ))}
                   </p>
                 </li>
               ))}
@@ -721,26 +754,14 @@ function HideoutTracker() {
                             </span>
                           </span>
                         ) : (
-                          <button
+                          <TrackChip
                             key={`${r.item.id}-${i}`}
-                            className="item-chip tk-item"
-                            onClick={() => add(r.item.id, 1)}
-                            title={`${biName(r.item.nameKo, r.item.nameEn)} — 클릭하면 모은 개수 +1 (보유 ${counts[r.item.id] ?? 0})`}
-                          >
-                            {r.item.iconLink && (
-                              <img src={r.item.iconLink} alt="" loading="lazy" />
-                            )}
-                            <span>
-                              {r.item.nameKo}
-                              <span className="num"> × {r.count}</span>
-                            </span>
-                            {r.fir && <span className="badge-fir">FIR</span>}
-                            {(counts[r.item.id] ?? 0) > 0 && (
-                              <span className="num hideout-have">
-                                보유 {counts[r.item.id]}
-                              </span>
-                            )}
-                          </button>
+                            item={r.item}
+                            count={r.count}
+                            fir={r.fir}
+                            got={counts[r.item.id] ?? 0}
+                            onAdd={(d) => add(r.item.id, d)}
+                          />
                         ),
                       )}
                       {lv.items.length === 0 && (

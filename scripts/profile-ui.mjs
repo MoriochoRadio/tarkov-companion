@@ -136,79 +136,89 @@ await measure(
   '.story-objectives',
 )
 
-// --- Phase 12 추가 탭 ---
+// --- Phase 28: FIR 통합 운영 페이지 (2분할 + 정크박스 그리드) ---
 
 await measure(
-  '6) 준비물 탭 진입 → 체크리스트 표시',
-  () => clickTab('퀘스트 도구', '준비물'),
-  '.prep-row',
+  '6) FIR 탭 진입 → 운영 페이지 (좌 소스 + 우 정크박스)',
+  () => clickTab('퀘스트 도구', 'FIR'),
+  '.fir-src-row',
 )
 
 const t2 = Date.now()
+await page.evaluate(() => document.querySelector('.fir-done-btn')?.click())
+await new Promise((r) => setTimeout(r, 200))
+console.log(`7) 좌측 퀘스트 '클리어함' → 우측 수요 차감: ${Date.now() - t2}ms`)
+
+const t2b = Date.now()
 await page.evaluate(() =>
-  document.querySelector('.prep-step:not(:disabled)').click(),
+  document
+    .querySelector('.fir-tile .fir-stepper .fir-step:last-child:not(:disabled)')
+    ?.click(),
 )
 await new Promise((r) => setTimeout(r, 200))
-console.log(`7) 체크리스트 +1 반영: ${Date.now() - t2}ms`)
-
-// --- Phase 21: 은신처 건설 순서 ---
+console.log(`7.1) 우측 스테퍼 +1 반영: ${Date.now() - t2b}ms`)
 
 await measure(
-  '7.2) 준비물 → 은신처 뷰',
+  "7.15) 분류 전환 → '기타' (가장 큰 그리드, 2단계 렌더)",
   () =>
     page.evaluate(() =>
-      [...document.querySelectorAll('.mode-seg button')]
-        .find((b) => b.textContent.includes('은신처'))
+      [...document.querySelectorAll('.fir-cat-seg button')]
+        .find((b) => b.textContent.includes('기타'))
         .click(),
     ),
-  '.station-grid',
+  '.fir-tile',
 )
 
 await measure(
-  '7.3) 은신처 → 건설 순서 (위상 정렬 + 아이콘 다수, 2단계 렌더)',
+  '7.2) 좌측 소스 → 하이드아웃 행',
   () =>
     page.evaluate(() =>
-      [...document.querySelectorAll('.mode-seg button')]
-        .find((b) => b.textContent.includes('건설 순서'))
+      [...document.querySelectorAll('.fir-side-seg button')]
+        .find((b) => b.textContent.includes('하이드아웃'))
         .click(),
     ),
-  '.bo-step',
-)
-
-// --- Phase 24: FIR 트래커 ---
-
-await measure(
-  '7.34) FIR 트래커 진입 → 퀘스트 트래커 + 정크박스',
-  () => clickTab('퀘스트 도구', 'FIR 트래커'),
-  '.junk-tile',
+  '.fir-src-row',
 )
 
 const t24a = Date.now()
-await page.evaluate(() => document.querySelector('.tk-item').click())
+await page.evaluate(() => document.querySelector('.fir-done-btn')?.click())
 await new Promise((r) => setTimeout(r, 200))
-console.log(`7.35) 퀘스트 아이템 클릭 차감 반영: ${Date.now() - t24a}ms`)
+console.log(`7.25) 스테이션 '건축 완료' 캐스케이드 반영: ${Date.now() - t24a}ms`)
+
+// --- 보조 보기 (기능 삭제 없이 흡수) ---
 
 await measure(
-  '7.36) 은신처 트래커 → 의존성 조직도',
+  '7.3) 보조 보기 → 준비물 목록 (체크리스트)',
   () =>
     page.evaluate(() =>
       [...document.querySelectorAll('.mode-seg button')]
-        .find((b) => b.textContent.includes('은신처'))
+        .find((b) => b.textContent.includes('준비물 목록'))
+        .click(),
+    ),
+  '.prep-row',
+)
+
+await measure(
+  '7.36) 보조 보기 → 트래커·조직도 (정크박스)',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.mode-seg button')]
+        .find((b) => b.textContent.includes('트래커·조직도'))
+        .click(),
+    ),
+  '.junk-tile',
+)
+
+await measure(
+  '7.37) 트래커 → 은신처 의존성 조직도',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.fir-tab-tracker .mode-seg button, .mode-seg button')]
+        .find((b) => b.textContent.trim() === '은신처 (조직도)')
         .click(),
     ),
   '.htree-node',
 )
-
-await measure(
-  '7.37) 스테이션 클릭 → 레벨 패널',
-  () => page.evaluate(() => document.querySelector('.htree-node').click()),
-  '.tk-level',
-)
-
-const t24b = Date.now()
-await page.evaluate(() => document.querySelector('.tk-level .tk-item')?.click())
-await new Promise((r) => setTimeout(r, 200))
-console.log(`7.38) 은신처 아이템 클릭 차감 반영: ${Date.now() - t24b}ms`)
 
 // --- Phase 25: 맵 퀘스트 플래너 ---
 

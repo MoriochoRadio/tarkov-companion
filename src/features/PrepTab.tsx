@@ -20,7 +20,7 @@ type SortKey = 'count' | 'name'
 const collator = new Intl.Collator('ko')
 
 // 아이템 하나를 필요로 하는 출처 1건 (퀘스트 목표 또는 은신처 레벨)
-interface PrepNeed {
+export interface PrepNeed {
   kind: 'quest' | 'hideout'
   label: string
   count: number
@@ -30,7 +30,7 @@ interface PrepNeed {
   stationKey: string | null // `${stationId}:${level}` — "지었음" 제외용
 }
 
-interface PrepRow {
+export interface PrepRow {
   id: string
   nameKo: string
   nameEn: string
@@ -49,7 +49,7 @@ interface PrepView extends PrepRow {
   hideoutNorm: number
 }
 
-function buildRows(
+export function buildRows(
   quests: Awaited<ReturnType<typeof fetchQuests>>,
   hideout: Awaited<ReturnType<typeof fetchHideoutRequirements>>,
 ): PrepRow[] {

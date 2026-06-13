@@ -7,6 +7,10 @@ import { useSyncExternalStore } from 'react'
 
 export const FAV_ITEMS_KEY = 'tc:fav-items'
 export const ACTIVE_QUESTS_KEY = 'tc:active-quests'
+// FIR 통합 페이지(Phase 28)에서 "클리어한 퀘스트" — id는 퀘스트 id.
+// active-quests(★ 진행 중 필터)와는 별개의 "완료" 개념: 완료 처리하면 그
+// 퀘스트의 FIR 수요가 정크박스 집계에서 빠진다 (은신처의 hideout-built와 대칭)
+export const DONE_QUESTS_KEY = 'tc:done-quests'
 // 은신처에서 "이미 지은 레벨" — id는 `${stationId}:${level}` 형식
 export const HIDEOUT_BUILT_KEY = 'tc:hideout-built'
 // 완료한 스토리 챕터 — id는 storyline.json의 slug
