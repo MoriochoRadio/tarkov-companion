@@ -1294,6 +1294,18 @@ select:focus-visible {
   text-wrap: balance;
 }
 
+/* 오늘 브리핑 미생성 안내 — 장애가 아니라 "대기 중"임을 부드럽게 알리는 톤 */
+.briefing-stale {
+  margin: 0 0 var(--sp-4);
+  padding: var(--sp-2) var(--sp-3);
+  border: 1px solid color-mix(in srgb, var(--warn) 40%, var(--border));
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--warn) 8%, var(--bg-raised));
+  color: var(--text-2);
+  font-size: var(--fs-sub);
+  line-height: 1.5;
+}
+
 .briefing-section {
   background: var(--bg-raised);
   border: 1px solid var(--border);

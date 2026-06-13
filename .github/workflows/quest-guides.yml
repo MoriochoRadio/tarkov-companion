@@ -3,8 +3,11 @@ name: Quest Guides Backfill
 
 on:
   schedule:
-    # 정각(0분)은 GitHub 혼잡으로 스케줄 누락 위험 → 17분
-    - cron: '17 2 * * *'
+    # schedule 누락이 잦아(2026-06 daily 연속 누락) 주 실행 + 백업을 다중 등록.
+    # 이 워크플로우는 "아직 가이드 없는 퀘스트"만 골라 처리하고 끝나면 즉시 종료하므로,
+    # 둘 다 떠도 중복 생성이 없다(백로그를 더 빨리 소진할 뿐) → 별도 guard 불필요. 정각은 회피.
+    - cron: '17 2 * * *' # 02:17 UTC = 11:17 KST (주 실행)
+    - cron: '37 5 * * *' # 05:37 UTC = 14:37 KST (백업)
   workflow_dispatch:
 
 permissions:

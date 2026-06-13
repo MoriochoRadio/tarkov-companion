@@ -26,6 +26,12 @@ function formatDate(date: string): string {
   return `${date} (${weekday})`
 }
 
+// 브리핑 파일은 KST 날짜로 명명되므로(collect-briefing.mjs), 방문자 로컬 타임존과
+// 무관하게 KST 기준 오늘을 구해 "최신 = 오늘"인지 판정한다
+function kstToday(): string {
+  return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10)
+}
+
 // 헤드라인 타이프라이터 — 같은 문서는 세션 중 1회만 (날짜를 오가도 다시 안 침)
 const typedOnce = new Set<string>()
 
@@ -247,8 +253,18 @@ export function BriefingTab() {
   const newer =
     cursor > 0 ? (`${prefix}${kindDates[cursor - 1]}` as DocKey) : null
 
+  // schedule 누락으로 오늘 브리핑이 아직 안 생긴 경우 — 빈 화면으로 오해하지 않게 안내.
+  // 백업 cron이 오전 중 따라잡으면 자동으로 사라진다.
+  const briefingStale = dailyDates[0] != null && dailyDates[0] !== kstToday()
+
   return (
     <div>
+      {briefingStale && (
+        <p className="briefing-stale" role="status">
+          오늘 브리핑이 아직 생성되지 않았습니다 — 자동 갱신 대기 중입니다. 아래는 가장 최근
+          브리핑입니다.
+        </p>
+      )}
       <div className="toolbar">
         <select
           value={key ?? ''}

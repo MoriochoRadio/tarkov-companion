@@ -3,8 +3,10 @@ name: Weekly Report
 
 on:
   schedule:
-    # 정각(0분)은 GitHub 혼잡으로 스케줄 누락 위험 → 17분
-    - cron: '17 1 * * 1'
+    # schedule은 누락이 잦아(2026-06 daily 연속 누락) 주 실행 + 백업을 다중 등록.
+    # 둘 다 떠도 guard 스텝이 이번 주 파일이 있으면 건너뛴다(멱등). 정각(0분)은 회피.
+    - cron: '17 1 * * 1' # 01:17 UTC = 10:17 KST 월 (주 실행)
+    - cron: '42 4 * * 1' # 04:42 UTC = 13:42 KST 월 (백업)
   workflow_dispatch:
 
 permissions:
@@ -21,17 +23,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # 백업 cron 멱등화: 이번 주(오늘 KST 날짜) 리포트 파일이 이미 있으면 건너뛴다.
+      # generate-weekly.mjs도 매번 generatedAt을 새로 찍어 덮어쓰므로 guard가 없으면 재배포가 반복된다.
+      - name: 이번 주 리포트 존재 여부 확인
+        id: guard
+        run: |
+          TODAY=$(TZ=Asia/Seoul date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "public/data/weekly/$TODAY.json" ]; then
+            echo "이미 $TODAY 주간 리포트 존재 → 백업 cron 건너뜀"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-node@v4
+        if: steps.guard.outputs.skip != 'true'
         with:
           node-version: 22
 
       - name: 주간 리포트 생성
+        if: steps.guard.outputs.skip != 'true'
         run: node scripts/generate-weekly.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 커밋 & 푸시
         id: commit
+        if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -51,7 +70,7 @@ jobs:
 
       # GITHUB_TOKEN push는 push 트리거를 발화시키지 않으므로 배포를 명시적으로 dispatch
       - name: Pages 재배포 트리거
-        if: steps.commit.outputs.pushed == 'true'
+        if: steps.guard.outputs.skip != 'true' && steps.commit.outputs.pushed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main --repo "$GITHUB_REPOSITORY"

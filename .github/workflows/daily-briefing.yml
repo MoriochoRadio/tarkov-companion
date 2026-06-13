@@ -3,8 +3,13 @@ name: Daily Briefing
 
 on:
   schedule:
-    # 정각(0분)은 GitHub 혼잡으로 스케줄 이벤트가 통째로 누락될 수 있음 (2026-06-12 실제 누락)
-    - cron: '17 0 * * *' # 00:17 UTC = 09:17 KST
+    # GitHub schedule 트리거는 누락·지연이 잦다(2026-06-12, 2026-06-13 연속 누락 — schedule 이벤트 0건).
+    # 정각(0분)은 혼잡 슬롯이라 통째로 누락될 수 있어 회피하지만, 그것만으로는 부족해
+    # 시각을 분산한 cron을 다중 등록한다. 아침에 하나라도 성공하면 그날 파일이 생기고,
+    # 이후 cron은 아래 guard 스텝에서 건너뛴다(멱등) → 중복 커밋·재배포 없음.
+    - cron: '17 0 * * *' # 00:17 UTC = 09:17 KST (주 실행)
+    - cron: '32 1 * * *' # 01:32 UTC = 10:32 KST (백업 1)
+    - cron: '47 2 * * *' # 02:47 UTC = 11:47 KST (백업 2)
   workflow_dispatch: # Actions 탭에서 수동 실행 가능
 
 permissions:
@@ -21,20 +26,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # 백업 cron 멱등화: 오늘(KST) 브리핑 파일이 이미 있으면 이후 단계를 전부 건너뛴다.
+      # generate-briefing.mjs는 매번 generatedAt을 새로 찍어 무조건 덮어쓰므로, 이 guard가
+      # 없으면 백업 cron이 아침 브리핑을 다시 AI 호출해 덮어쓰고 매번 재배포한다.
+      # 수동 실행(workflow_dispatch)은 강제 재생성이 목적이라 건너뛰지 않는다.
+      - name: 오늘 브리핑 존재 여부 확인
+        id: guard
+        run: |
+          TODAY=$(TZ=Asia/Seoul date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "public/data/briefings/$TODAY.json" ]; then
+            echo "이미 $TODAY 브리핑 존재 → 백업 cron 건너뜀"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-node@v4
+        if: steps.guard.outputs.skip != 'true'
         with:
           node-version: 22
 
       - name: 소스 수집 (위키 체인지로그 + Reddit RSS)
+        if: steps.guard.outputs.skip != 'true'
         run: node scripts/collect-briefing.mjs
 
       - name: 브리핑 생성 (GitHub Models 요약, 실패 시 링크 목록 폴백)
+        if: steps.guard.outputs.skip != 'true'
         run: node scripts/generate-briefing.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 커밋 & 푸시
         id: commit
+        if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,7 +77,7 @@ jobs:
       # GITHUB_TOKEN으로 push한 커밋은 push 트리거 워크플로우를 실행시키지 않으므로
       # (GitHub의 재귀 방지 정책) 배포를 명시적으로 dispatch해야 사이트에 반영됨
       - name: Pages 재배포 트리거
-        if: steps.commit.outputs.pushed == 'true'
+        if: steps.guard.outputs.skip != 'true' && steps.commit.outputs.pushed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main --repo "$GITHUB_REPOSITORY"
