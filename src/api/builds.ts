@@ -55,6 +55,81 @@ export function slotOrder(normalizedName: string | null): number {
   return i === -1 ? 89 : i
 }
 
+// 콜아웃 다이어그램(Phase 32) — 부품 분류(slotNorm)를 무기 그림 주변 "구역"으로 근사.
+// tarkov.dev엔 장착 좌표가 없어 분류 기반 근사이며, 게임 실제 위치와 다를 수 있다.
+// 무기는 가로(총구 좌측·개머리판 우측) 기준: 앞=left, 윗레일=top, 아래=bottom, 뒤=right.
+// anchor = 무기 이미지 위 연결선 도착점(가로%, 세로%).
+export type BuildZone =
+  | 'muzzle'
+  | 'barrel'
+  | 'gas'
+  | 'handguard'
+  | 'optic'
+  | 'tactical'
+  | 'grip'
+  | 'mag'
+  | 'stock'
+  | 'body'
+  | 'etc'
+
+export interface BuildZoneDef {
+  region: 'top' | 'left' | 'right' | 'bottom'
+  order: number
+  anchor: [number, number]
+  label: string
+}
+
+export const BUILD_ZONES: Record<BuildZone, BuildZoneDef> = {
+  optic: { region: 'top', order: 0, anchor: [52, 34], label: '조준·광학' },
+  muzzle: { region: 'left', order: 0, anchor: [14, 50], label: '총구' },
+  barrel: { region: 'left', order: 1, anchor: [30, 52], label: '총열' },
+  gas: { region: 'left', order: 2, anchor: [37, 44], label: '가스블록' },
+  handguard: { region: 'left', order: 3, anchor: [44, 53], label: '핸드가드' },
+  stock: { region: 'right', order: 0, anchor: [85, 50], label: '개머리판' },
+  body: { region: 'right', order: 1, anchor: [55, 48], label: '리시버·기타' },
+  etc: { region: 'right', order: 2, anchor: [62, 52], label: '기타' },
+  tactical: { region: 'bottom', order: 0, anchor: [40, 62], label: '택티컬' },
+  grip: { region: 'bottom', order: 1, anchor: [60, 64], label: '손잡이' },
+  mag: { region: 'bottom', order: 2, anchor: [55, 66], label: '탄창' },
+}
+
+const SLOT_ZONE: Record<string, BuildZone> = {
+  'comb-muzzle-device': 'muzzle',
+  'muzzle-device': 'muzzle',
+  'muzzle-brake-compensator': 'muzzle',
+  flashhider: 'muzzle',
+  silencer: 'muzzle',
+  barrel: 'barrel',
+  'gas-block': 'gas',
+  handguard: 'handguard',
+  scope: 'optic',
+  'assault-scope': 'optic',
+  'special-scope': 'optic',
+  'reflex-sight': 'optic',
+  'compact-reflex-sight': 'optic',
+  'night-vision': 'optic',
+  'scope-mount': 'optic',
+  mount: 'optic',
+  'tactical-combo-device': 'tactical',
+  flashlight: 'tactical',
+  'laser-target-pointer': 'tactical',
+  'pistol-grip': 'grip',
+  magazine: 'mag',
+  stock: 'stock',
+  'charging-handle': 'body',
+  receiver: 'body',
+  'upper-receiver': 'body',
+  foregrip: 'body',
+  bipod: 'body',
+  'auxiliary-parts': 'body',
+}
+
+// 매핑 안 되는 분류는 '기타'로 모아 표시 (누락 금지)
+export function zoneFor(slotNorm: string | null): BuildZone {
+  if (!slotNorm) return 'etc'
+  return SLOT_ZONE[slotNorm] ?? 'etc'
+}
+
 export interface BuildDef {
   id: string
   weapon: string

@@ -2893,6 +2893,8 @@ select:focus-visible {
 .build-card:hover,
 .build-card.open {
   border-color: var(--accent);
+  /* 펼치면 전체 폭으로 — 콜아웃 다이어그램이 무기 좌우로 펼쳐질 공간 확보 */
+  grid-column: 1 / -1;
 }
 
 .build-head {
@@ -3193,6 +3195,216 @@ select:focus-visible {
   border-radius: 999px;
   font-size: var(--fs-label);
   color: var(--text-2);
+}
+
+/* === 콜아웃 다이어그램 (Phase 32) — 무기 그림 + 구역별 부품 콜아웃 + 연결선 === */
+.build-diagram {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr);
+  grid-template-areas:
+    'top    top    top'
+    'left   image  right'
+    'bottom bottom bottom';
+  gap: var(--sp-2);
+  align-items: center;
+  margin-bottom: var(--sp-3);
+}
+
+.build-diagram-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.build-diagram-lines path {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+  opacity: 0.45;
+  transition: stroke 120ms ease, opacity 120ms ease;
+}
+
+.build-diagram-lines path.on {
+  stroke: var(--accent);
+  opacity: 1;
+  stroke-width: 2;
+}
+
+.bd-image {
+  grid-area: image;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bd-image img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.bd-region {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.bd-top {
+  grid-area: top;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bd-bottom {
+  grid-area: bottom;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bd-left {
+  grid-area: left;
+  flex-direction: column;
+}
+
+.bd-right {
+  grid-area: right;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bd-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 210px;
+}
+
+/* 구역 헤더는 데스크톱에선 콜아웃이 슬롯명을 이미 보여줘 숨김 — 모바일 폴백에서만 */
+.bd-zone-label {
+  display: none;
+  font-size: var(--fs-label);
+  font-weight: 700;
+  color: var(--text-3);
+}
+
+.bd-callout {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.bd-callout:hover,
+.bd-zone.on .bd-callout {
+  border-color: var(--accent);
+}
+
+.bd-callout img {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  object-fit: contain;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.bd-co-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 1px;
+}
+
+.bd-co-slot {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  color: var(--text-3);
+}
+
+.bd-co-name {
+  font-size: var(--fs-label);
+  max-width: 14ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bd-co-stats {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 0.66rem;
+}
+
+.bd-co-price {
+  flex: none;
+  margin-left: auto;
+  padding-left: 4px;
+  font-size: var(--fs-label);
+  font-weight: 700;
+  color: var(--accent-bright);
+}
+
+/* 좁은 컨테이너 폴백(.narrow, JS가 컨테이너 폭<560px일 때 부여) — 이미지 위 +
+   구역 헤더 스택, 연결선 숨김, 가로 오버플로 0 */
+.build-diagram.narrow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.build-diagram.narrow .build-diagram-lines {
+  display: none;
+}
+
+.build-diagram.narrow .bd-image {
+  order: -1;
+}
+
+.build-diagram.narrow .bd-image img {
+  max-height: 150px;
+}
+
+.build-diagram.narrow .bd-region {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.build-diagram.narrow .bd-zone {
+  max-width: none;
+}
+
+.build-diagram.narrow .bd-zone-label {
+  display: block;
+}
+
+.build-diagram.narrow .bd-callout {
+  width: 100%;
+}
+
+.build-diagram.narrow .bd-co-text {
+  flex: 1;
+}
+
+.build-diagram.narrow .bd-co-name {
+  max-width: none;
+  white-space: normal;
 }
 
 .build-ammo h4 {

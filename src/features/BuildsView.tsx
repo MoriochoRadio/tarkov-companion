@@ -1,12 +1,15 @@
-import { useMemo, useState } from 'react'
+import { useLayoutEffect, useMemo, useRef, useState } from 'react'
 import {
+  BUILD_ZONES,
   CATEGORY_LABELS,
   fetchBuildItems,
   fetchBuilds,
   slotOrder,
+  zoneFor,
   type BuildCategory,
   type BuildDef,
   type BuildItemInfo,
+  type BuildZone,
 } from '../api/builds'
 import { fetchAmmo } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
@@ -138,6 +141,181 @@ function PartBuy({ item, tier }: { item: BuildItemInfo; tier: number }) {
   )
 }
 
+// 콜아웃용 최저가 1개 (트레이더 티어 내 vs 플리 중 싼 쪽)
+function cheapest(item: BuildItemInfo, tier: number) {
+  const { traderInTier, flea } = pricing(item, tier)
+  const t = traderInTier?.priceRUB ?? Infinity
+  const f = flea ?? Infinity
+  if (t === Infinity && f === Infinity) return null
+  if (t <= f) {
+    return { price: traderInTier!.priceRUB, locked: traderInTier!.questLocked }
+  }
+  return { price: flea!, locked: false }
+}
+
+const REGIONS = ['top', 'left', 'right', 'bottom'] as const
+
+// 인게임 모딩 창 풍 콜아웃 다이어그램 — 무기 그림 가운데, 부품을 구역별로 주변 배치 +
+// 연결선. tarkov.dev에 장착 좌표가 없어 분류(slotNorm) 기반 구역 근사. 좁은 화면(<560px)
+// 에선 CSS로 이미지 위 + 구역 헤더 스택 폴백(연결선 숨김). 펼친 카드에서만 마운트됨.
+function BuildDiagram({
+  weapon,
+  parts,
+  tier,
+  onItem,
+}: {
+  weapon: BuildItemInfo
+  parts: BuildItemInfo[]
+  tier: number
+  onItem?: (name: string) => void
+}) {
+  const banner = weapon.presetImageLink ?? weapon.imageLink
+
+  // 부품을 구역별로 묶고 구역을 region/order로 정렬
+  const grouped = useMemo(() => {
+    const byZone = new Map<BuildZone, BuildItemInfo[]>()
+    for (const p of parts) {
+      const z = zoneFor(p.slotNorm)
+      const a = byZone.get(z) ?? []
+      a.push(p)
+      byZone.set(z, a)
+    }
+    const out: Record<(typeof REGIONS)[number], { z: BuildZone; items: BuildItemInfo[] }[]> = {
+      top: [],
+      left: [],
+      right: [],
+      bottom: [],
+    }
+    for (const [z, items] of byZone) out[BUILD_ZONES[z].region].push({ z, items })
+    for (const r of REGIONS) out[r].sort((a, b) => BUILD_ZONES[a.z].order - BUILD_ZONES[b.z].order)
+    return out
+  }, [parts])
+
+  const containerRef = useRef<HTMLDivElement>(null)
+  const imageRef = useRef<HTMLDivElement>(null)
+  const zoneRefs = useRef(new Map<BuildZone, HTMLDivElement>())
+  const [lines, setLines] = useState<{ z: BuildZone; d: string }[]>([])
+  const [size, setSize] = useState({ w: 0, h: 0 })
+  const [hover, setHover] = useState<BuildZone | null>(null)
+  const [narrow, setNarrow] = useState(false) // 컨테이너 폭 기반 폴백 (뷰포트 아님)
+  const [nonce, setNonce] = useState(0) // 무기 이미지 로드 후 연결선 재측정
+
+  // 연결선: 구역 박스 중심 → 무기 이미지의 구역 anchor. 좁은 화면이면 그리지 않음
+  useLayoutEffect(() => {
+    const measure = () => {
+      const c = containerRef.current
+      const img = imageRef.current
+      if (!c || !img) return
+      const cr = c.getBoundingClientRect()
+      const isNarrow = cr.width < 560
+      setNarrow(isNarrow)
+      if (isNarrow) {
+        setLines([])
+        return
+      }
+      setSize({ w: cr.width, h: cr.height })
+      const ir = img.getBoundingClientRect()
+      const next: { z: BuildZone; d: string }[] = []
+      for (const r of REGIONS) {
+        for (const { z } of grouped[r]) {
+          const el = zoneRefs.current.get(z)
+          if (!el) continue
+          const zr = el.getBoundingClientRect()
+          const def = BUILD_ZONES[z]
+          const ax = ir.left - cr.left + (def.anchor[0] / 100) * ir.width
+          const ay = ir.top - cr.top + (def.anchor[1] / 100) * ir.height
+          const zx = zr.left - cr.left + zr.width / 2
+          const zy = zr.top - cr.top + zr.height / 2
+          next.push({ z, d: `M ${zx} ${zy} L ${ax} ${ay}` })
+        }
+      }
+      setLines(next)
+    }
+    measure()
+    window.addEventListener('resize', measure)
+    return () => window.removeEventListener('resize', measure)
+  }, [grouped, nonce])
+
+  const renderZone = ({ z, items }: { z: BuildZone; items: BuildItemInfo[] }) => (
+    <div
+      key={z}
+      ref={(el) => {
+        if (el) zoneRefs.current.set(z, el)
+        else zoneRefs.current.delete(z)
+      }}
+      className={`bd-zone${hover === z ? ' on' : ''}`}
+      onMouseEnter={() => setHover(z)}
+      onMouseLeave={() => setHover(null)}
+    >
+      <span className="bd-zone-label">{BUILD_ZONES[z].label}</span>
+      {items.map((p, i) => {
+        const cheap = cheapest(p, tier)
+        return (
+          <button
+            key={`${p.id}-${i}`}
+            className="bd-callout"
+            onClick={() => onItem?.(p.searchName)}
+            onFocus={() => setHover(z)}
+            onBlur={() => setHover(null)}
+            title={`${p.displayName} — 아이템 검색`}
+          >
+            {p.iconLink && <img src={p.iconLink} alt="" loading="lazy" />}
+            <span className="bd-co-text">
+              <span className="bd-co-slot">
+                {p.slotKo}
+                {p.slotEn && p.slotEn !== p.slotKo && <span className="dim"> ({p.slotEn})</span>}
+              </span>
+              <span className="bd-co-name">{p.displayName}</span>
+              <span className="bd-co-stats num">
+                {p.ergonomics != null && p.ergonomics !== 0 && (
+                  <span className={p.ergonomics > 0 ? 'stat-up' : 'down'}>
+                    에르고 {p.ergonomics > 0 ? '+' : ''}
+                    {p.ergonomics}
+                  </span>
+                )}
+                {p.recoilModifier != null && p.recoilModifier !== 0 && (
+                  <span className={p.recoilModifier < 0 ? 'stat-up' : 'down'}>
+                    반동 {p.recoilModifier > 0 ? '+' : ''}
+                    {Math.round(p.recoilModifier * 100)}%
+                  </span>
+                )}
+              </span>
+            </span>
+            {cheap && (
+              <span className="bd-co-price num">
+                {formatRub(cheap.price)}
+                {cheap.locked && ' ⚿'}
+              </span>
+            )}
+          </button>
+        )
+      })}
+    </div>
+  )
+
+  return (
+    <div className={`build-diagram${narrow ? ' narrow' : ''}`} ref={containerRef}>
+      <svg className="build-diagram-lines" width={size.w} height={size.h} aria-hidden>
+        {lines.map((l) => (
+          <path key={l.z} d={l.d} className={hover === l.z ? 'on' : ''} />
+        ))}
+      </svg>
+      <div className="bd-image" ref={imageRef}>
+        {banner && (
+          <img src={banner} alt="" loading="lazy" onLoad={() => setNonce((n) => n + 1)} />
+        )}
+      </div>
+      {REGIONS.map((r) =>
+        grouped[r].length > 0 ? (
+          <div key={r} className={`bd-region bd-${r}`}>
+            {grouped[r].map(renderZone)}
+          </div>
+        ) : null,
+      )}
+    </div>
+  )
+}
+
 function BuildCard({
   view,
   expanded,
@@ -209,6 +387,8 @@ function BuildCard({
       </button>
       {expanded && (
         <div className="build-detail">
+          {/* 한눈 파악용 콜아웃 다이어그램 — 정확한 구매 정보는 아래 목록 */}
+          <BuildDiagram weapon={weapon} parts={parts} tier={def.tier} onItem={onItem} />
           <dl className="build-spec num">
             <div>
               <dt>수평반동</dt>
