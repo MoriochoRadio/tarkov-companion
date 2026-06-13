@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "taskId": "66058cb22cee99303f1ba067",
+  "nameKo": "Easy Money - Part 1 [PVP ZONE]",
+  "nameEn": "Easy Money - Part 1 [PVP ZONE]",
+  "steps": [
+    "스키어(Skier) LL1 레벨 달성 후 인게임 우편으로 아레나 광고 포스터(Arena advertisement poster) 3장을 받는다. 포스터는 직접 보안 컨테이너에 넣을 수 없으므로 문서 케이스(Documents case)나 S I C C 조직 파우치(SICC organizational pouch)에 넣어야 사망 시에도 잃지 않는다.",
+    "세관(Customs) 맵에 위치한 스캐브 기지(Scav base) 건물(ZB-013 추출 지점)을 찾아간다. 스캐브 기지는 맵 내 별도로 표시된 곳으로, 여러 대의 장착 무기가 설치되어 있는 건물이다.",
+    "스캐브 기지 1층으로 진입한다. 1층에는 총 5개의 침대가 있으며, 이 중 한 곳에 포스터를 보관해야 한다.",
+    "1층 침대 위치는 크게 중간 방과 남쪽 방으로 나뉜다. 중간 방과 남쪽 방 각각에 침대가 배치되어 있으니, 지도와 현장 상황에 따라 편리한 침대를 선택한다.",
+    "포스터를 문서 케이스 또는 S I C C 파우치에서 꺼내 침대 근처에 스태시(stash)한다. 반드시 침대 근처에 놓아야 퀘스트가 완료된다.",
+    "포스터를 스태시한 후, 안전하게 탈출하여 퀘스트 완료를 위해 다음 단계로 진행한다."
+  ],
+  "tips": "포스터는 직접 보안 컨테이너에 넣을 수 없으므로, 반드시 문서 케이스나 S I C C 파우치에 넣어야 한다. 사망 시 포스터를 잃지 않으려면 이 점을 꼭 기억하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5a/EasyMoneyPart1CustomsMap1.png/revision/latest/scale-to-width-down/640?cb=20240609000352",
+      "caption": "지도에 표시된 스캐브 기지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b9/ZB-013_Building.png/revision/latest/scale-to-width-down/640?cb=20250723205637",
+      "caption": "스캐브 기지 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/02/EasyMoneyPart1CustomsMap2.png/revision/latest?cb=20240609000157",
+      "caption": "1층 침대 위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/EasyMoneyPart1CustomsBeds1.png/revision/latest/scale-to-width-down/640?cb=20240609001106",
+      "caption": "중간 방 침대들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/EasyMoneyPart1CustomsBeds2.png/revision/latest/scale-to-width-down/640?cb=20240609000651",
+      "caption": "남쪽 방 침대들"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Easy_Money_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

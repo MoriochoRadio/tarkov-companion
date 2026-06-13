@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "taskId": "5969f9e986f7741dde183a50",
+  "nameKo": "약사",
+  "nameEn": "Pharmacist",
+  "steps": [
+    "세관(Customs) 맵의 2층짜리 기숙사 건물을 찾는다. 해당 건물은 지도에 표시되어 있으며, 1층에 있는 114호실을 목표로 한다.",
+    "114호실에 들어가기 위해서는 Dorm room 114 key(기숙사 114호 열쇠)가 반드시 필요하다. 이 열쇠 없이는 방에 들어갈 수 없다.",
+    "114호실에 들어가면 방 안에 있는 금고를 찾아야 한다. 금고 안에 퀘스트 아이템인 Carbon case(카본 케이스)가 들어 있다.",
+    "Carbon case는 퀘스트가 활성화된 상태에서만 방 안 금고에서 획득할 수 있다. 획득 즉시 퀘스트 아이템 인벤토리에 자동으로 들어가며, 레이드에서 추출하지 못하면 아이템을 잃게 된다.",
+    "Carbon case를 획득한 후에는 반드시 안전하게 레이드에서 추출해야 한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ab/Pharmacist_Customs.png/revision/latest/scale-to-width-down/640?cb=20250712184929",
+      "caption": "지도에 표시된 2층 기숙사와 114호실 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7a/Carbon_Case_Location.png/revision/latest/scale-to-width-down/640?cb=20230607221153",
+      "caption": "금고 위에 놓인 카본 케이스"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Pharmacist",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

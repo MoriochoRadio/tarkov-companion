@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "5a27d2af86f7744e1115b323",
+  "nameKo": "서쪽에서 온 친구 - 파트 2",
+  "nameEn": "Friend From the West - Part 2",
+  "steps": [
+    "피스키퍼(Peacekeeper)에게서 5,000달러(Dollars)를 루블(Roubles)로 구매한다.",
+    "퀘스트 목표인 5,000달러를 준비한 뒤, 퀘스트 의뢰자에게 전달한다."
+  ],
+  "tips": "5,000달러는 레이드에서 획득할 필요 없이 피스키퍼 상점에서 루블로 바로 구매할 수 있으므로, 레이드 위험을 줄이고 빠르게 퀘스트를 완료할 수 있다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Friend_From_the_West_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

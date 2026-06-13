@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "66058cbd9f59e625462acc8e",
+  "nameKo": "Create a Distraction - Part 1 [PVP ZONE]",
+  "nameEn": "Create a Distraction - Part 1 [PVP ZONE]",
+  "steps": [
+    "TP-200 TNT 벽돌 3개를 준비한다. 이 아이템은 퀘스트 필수 아이템이며, 레이드 내에서 획득해야 한다.",
+    "그라운드 제로(Ground Zero) 맵으로 이동한다.",
+    "\"올리브(Olive)\" 레스토랑을 찾는다. 지도에 표시된 위치를 참고하면 쉽게 찾을 수 있다.",
+    "레스토랑 내부로 들어가 2층으로 올라간다.",
+    "2층에 있는 지정된 장소에 TP-200 TNT 벽돌 3개를 모두 설치한다."
+  ],
+  "tips": "TP-200 TNT 벽돌은 레이드 내에서만 획득 가능하므로, 미리 충분히 확보하는 것이 중요하다. 그라운드 제로 맵 내 올리브 레스토랑은 건물 외관이 독특하므로 위치 파악이 용이하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c1/Distraction1MapGuide.png/revision/latest/scale-to-width-down/640?cb=20250409210024",
+      "caption": "지도에 표시된 레스토랑 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Distraction1RestaurantGuide.png/revision/latest/scale-to-width-down/640?cb=20250410194806",
+      "caption": "\"올리브\" 레스토랑"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/80/Distraction1LocationGuide.png/revision/latest/scale-to-width-down/640?cb=20250409205337",
+      "caption": "2층에 설치할 장소"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Create_a_Distraction_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

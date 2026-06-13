@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "taskId": "5ede55112c95834b583f052a",
+  "nameKo": "벙커 - 파트 1",
+  "nameEn": "The Bunker - Part 1",
+  "steps": [
+    "리저브(Reserve) 지하 벙커 시스템 중앙에 위치한 컨트롤 룸(Control Room)을 찾아야 합니다.",
+    "벙커 내부로 진입한 후, 원하는 계단을 이용해 지하로 내려갑니다. 컨트롤 룸은 벙커 지하 중앙에 위치해 있으므로, 어느 계단을 사용해도 접근 가능합니다.",
+    "컨트롤 룸에 도착하면 퀘스트 목표를 완료해야 합니다. 두 가지 목표는 반드시 같은 레이드 내에서 모두 완료해야 합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Bunker_pt1.png/revision/latest/scale-to-width-down/640?cb=20230528221709",
+      "caption": "지하 벙커 지도에 표시된 컨트롤 룸"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b5/Bunker_Part_1_Guide_1.png/revision/latest/scale-to-width-down/640?cb=20230528222357",
+      "caption": "컨트롤 룸 내부 모습"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Bunker_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

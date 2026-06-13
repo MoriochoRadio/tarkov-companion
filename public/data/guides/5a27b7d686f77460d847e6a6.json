@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "5a27b7d686f77460d847e6a6",
+  "nameKo": "고철",
+  "nameEn": "Scrap Metal",
+  "steps": [
+    "고철(Scrap Metal) 퀘스트는 MS2000 마커 3개를 각각 다른 탱크에 설치하는 임무입니다. 마커는 인벤토리에서 설치 시 사라지므로 신중히 사용해야 합니다.",
+    "첫 번째 탱크는 해안선(Shoreline) 리조트 북쪽, 강가 근처 벙커 옆에 위치해 있습니다. 벙커를 기준으로 강가 방향으로 이동하여 탱크를 찾으세요.",
+    "두 번째 탱크는 터널 추출구(Tunnel extraction)에서 마을을 통과하는 도로 위에 있습니다. 터널 추출구에서 마을 쪽으로 도로를 따라 이동하면 탱크를 발견할 수 있습니다.",
+    "세 번째 탱크는 발전소(Power Station)와 기상 관측소(Weather Station) 사이 다리에 위치해 있습니다. 흙길을 따라 이동하면 다리 위에 있는 탱크를 찾을 수 있습니다.",
+    "각 탱크에 MS2000 마커를 설치한 후, 설치 후 일정 시간 생존해야 하며, 모든 마커를 한 번의 레이드에서 설치할 필요는 없습니다. 각 마커 설치 후 생존 시간을 채우고 추출한 뒤, 다음 레이드에서 나머지 마커를 설치해도 됩니다."
+  ],
+  "tips": "MS2000 마커는 레이드 내에서만 사용 가능하며, 설치 시 인벤토리에서 사라집니다. 따라서 마커를 잃지 않도록 주의하고, 각 탱크 위치를 미리 숙지해 빠르게 이동하는 것이 중요합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/41/Scrap_Metal_Locations.png/revision/latest/scale-to-width-down/640?cb=20260608022841",
+      "caption": "지도에 표시된 탱크 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bd/Secondtankshoreline.png/revision/latest/scale-to-width-down/640?cb=20190804015724",
+      "caption": "첫 번째 탱크는 리조트 북쪽 벙커 옆 강가에 위치해 있습니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/Firsttankshoreline.png/revision/latest/scale-to-width-down/640?cb=20190804020512",
+      "caption": "두 번째 탱크는 터널 추출구에서 마을을 통과하는 도로 위에 있습니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/47/Thirdtankshoreline.png/revision/latest/scale-to-width-down/640?cb=20190804015014",
+      "caption": "세 번째 탱크는 발전소와 기상 관측소 사이 다리에 위치해 있습니다. 흙길을 따라 찾을 수 있습니다."
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Scrap_Metal",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5a27c99a86f7747d2c6bdd8e",
+  "nameKo": "서쪽에서 온 친구 - 파트 1",
+  "nameEn": "Friend From the West - Part 1",
+  "steps": [
+    "USEC 도그태그(개인 신분 확인표) 7개를 모아야 합니다.",
+    "도그태그는 죽은 USEC PMC(플레이어 또는 AI 적)의 시체에서 획득할 수 있습니다. 반드시 직접 처치할 필요는 없으며, 다른 플레이어가 처치한 시체에서도 획득 가능합니다.",
+    "도그태그를 모두 모은 후 퀘스트를 완료하기 위해 지정된 NPC에게 제출합니다."
+  ],
+  "tips": "USEC PMC는 세관, 공장, 인터체인지 등 여러 맵에서 발견할 수 있으므로, 다양한 맵을 탐색하며 사망한 USEC PMC 시체를 찾아 도그태그를 수집하는 것이 효율적입니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Friend_From_the_West_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

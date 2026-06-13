@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "66058cb7c7f3584787181476",
+  "nameKo": "Balancing - Part 1 [PVP ZONE]",
+  "nameEn": "Balancing - Part 1 [PVP ZONE]",
+  "steps": [
+    "스테이어 AUG 돌격소총을 준비한다. AUG A1 또는 AUG A3 모델 모두 사용 가능하다.",
+    "어느 맵에서든 상관없이 스캐브(Scav) 적을 찾아서 사냥한다.",
+    "스캐브 5명을 스테이어 AUG로 처치한다."
+  ],
+  "tips": "스테이어 AUG는 프리마켓이나 트레이더 메카닉(Mechanic)에게서 구매할 수 있다. 스캐브는 모든 맵에서 출현하므로 자신이 익숙한 맵에서 진행하는 것이 좋다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Balancing_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

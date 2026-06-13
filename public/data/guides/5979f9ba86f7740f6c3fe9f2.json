@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "taskId": "5979f9ba86f7740f6c3fe9f2",
+  "nameKo": "화학 - 파트 1",
+  "nameEn": "Chemical - Part 1",
+  "steps": [
+    "세관(Customs) 서쪽에 위치한 기차 객차로 이동한다. 지도에서 기차 객차 위치를 확인할 수 있다.",
+    "기차 객차 내부에는 세 곳의 아이템 스폰 지점이 있다. 첫 번째 스폰은 객차 북서쪽 모서리에 있는 벽돌 팔레트 아래이다.",
+    "두 번째 스폰은 객차 남동쪽 모서리에 있는 팔레트 아래이다.",
+    "세 번째 스폰은 객차 북동쪽 모서리 벽과 팔레트 사이 공간에 위치한다.",
+    "이 세 곳 중 한 곳에서 Secure Folder 0013(보안 폴더 0013)을 찾아 획득한다. 이 아이템은 퀘스트 활성화 시에만 레이드 내에서 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "Secure Folder 0013을 획득한 후에는 반드시 성공적으로 레이드에서 탈출해야 한다. 탈출에 실패하면 아이템을 잃게 된다.",
+    "퀘스트 완료를 위해 Dorm room 220 key(기숙사 220호 열쇠) 1개를 준비하여 제출한다. 이 열쇠는 퀘스트 제출용 아이템이며, 레이드 내에서 획득할 필요는 없다."
+  ],
+  "tips": "Secure Folder 0013은 퀘스트가 활성화된 상태에서만 레이드 내에서 스폰되므로, 퀘스트를 수락한 후에만 찾을 수 있다. 기차 객차 내부는 적들이 자주 출몰하는 장소이므로 주의하며 탐색하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/69/Chemical1_Traincar_Map.png/revision/latest/scale-to-width-down/640?cb=20220810130725",
+      "caption": "지도에 표시된 기차 객차 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fc/Chemical1Traincar.png/revision/latest/scale-to-width-down/640?cb=20230330233012",
+      "caption": "기차 객차 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/04/Chem1West2.png/revision/latest/scale-to-width-down/640?cb=20230117175619",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/Chem1West.png/revision/latest/scale-to-width-down/640?cb=20230310210538",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/68/Chem1East3.png/revision/latest/scale-to-width-down/640?cb=20230310211458",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/Chem1East1.png/revision/latest/scale-to-width-down/640?cb=20230310211314",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/Chem1East2.png/revision/latest/scale-to-width-down/640?cb=20230117180030",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9c/Docs_0013-Location.png/revision/latest/scale-to-width-down/640?cb=20230310210558",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

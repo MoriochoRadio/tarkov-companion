@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "66058cb5ae4719735349b9e8",
+  "nameKo": "Easy Money - Part 2 [PVP ZONE]",
+  "nameEn": "Easy Money - Part 2 [PVP ZONE]",
+  "steps": [
+    "레이드 내에서 음식 아이템 5개를 수집합니다. 음식 아이템은 다양한 음식 종류가 가능하며, 레이드 중에 획득해야 합니다(FIR).",
+    "음료 아이템 5개를 수집합니다. 음료 아이템 역시 종류에 제한 없이 레이드에서 직접 획득해야 합니다(FIR).",
+    "수집한 음식 5개와 음료 5개를 퀘스트 담당자에게 제출하여 퀘스트를 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Easy_Money_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

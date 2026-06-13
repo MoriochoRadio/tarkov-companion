@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5c0d190cd09282029f5390d8",
+  "nameKo": "척탄병",
+  "nameEn": "Grenadier",
+  "steps": [
+    "PMC(플레이어 캐릭터) 5명을 수류탄으로 처치해야 합니다.",
+    "언더배럴 수류탄 발사기, 수류탄 발사기, 로켓 발사기는 사용할 수 없습니다.",
+    "수류탄을 직접 던져서 적을 처치하는 방식으로 진행하세요."
+  ],
+  "tips": "수류탄 투척 연습을 충분히 하여 정확도를 높이는 것이 중요합니다. 적이 몰려있는 곳이나 좁은 공간에서 수류탄을 활용하면 효과적입니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Grenadier",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

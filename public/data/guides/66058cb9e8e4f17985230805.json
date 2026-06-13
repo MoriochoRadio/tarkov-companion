@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "taskId": "66058cb9e8e4f17985230805",
+  "nameKo": "Balancing - Part 2 [PVP ZONE]",
+  "nameEn": "Balancing - Part 2 [PVP ZONE]",
+  "steps": [
+    "PMC(PMC 플레이어)를 처치할 때 반드시 PACA 소프트 아머, PACA 소프트 아머 (라이벌 에디션), 또는 DRD 바디 아머 중 하나를 착용해야 합니다.",
+    "필요한 만큼 위 아머를 착용한 상태에서 PMC를 사냥하여 퀘스트 조건을 달성하세요."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/DRD_body_armor.png/revision/latest?cb=20240103163643",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Balancing_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "5979f8bb86f7743ec214c7a6",
+  "nameKo": "폴리킴의 방랑자",
+  "nameEn": "Polikhim Hobo",
+  "steps": [
+    "세관(Customs) 맵에 진입한다.",
+    "맵 내에서 스캐브(Scav) 적을 찾아 사냥한다.",
+    "총 25명의 스캐브를 처치한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Polikhim_Hobo",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

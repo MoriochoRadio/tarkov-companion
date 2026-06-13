@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "taskId": "675c15fbf7da9792a4059871",
+  "nameKo": "Provide Viewership",
+  "nameEn": "Provide Viewership",
+  "steps": [
+    "프리퀘스트 준비: 메카닉(Mechanic) LL1 레벨에서 WI-FI 카메라 4개를 구매한다.",
+    "세관(Customs) 맵 내 산업 단지(Industrial plant) 위치로 이동한다. 지도에 표시된 산업 단지 위치를 참고한다.",
+    "1층 차고(Garage)로 들어가 트럭 앞에 쌓여 있는 드럼통 더미 근처에 첫 번째 카메라(카메라 4)를 설치한다.",
+    "차고에서 북쪽 건물(Northern building)으로 이동한다. 카메라 4 설치 지점에서 북쪽 건물로 가는 경로를 따라간다.",
+    "북쪽 건물 내 벽돌 팔레트(brick pallets) 근처에 두 번째 카메라(카메라 2)를 설치한다.",
+    "북쪽 건물 2층으로 올라가 계단 옆에 있는 3층으로 올라가는 계단을 찾는다.",
+    "3층으로 올라가 계단에서 가장 먼 쪽에 있는 파란색 드럼통 3개 옆에 세 번째 카메라(카메라 1)를 설치한다.",
+    "북쪽 건물 2층에서 남쪽 건물(Southern building)으로 연결되는 복도(커넥터)를 찾는다. 계단 옆에 위치해 있다.",
+    "커넥터를 지나 남쪽 건물로 들어가 왼쪽에 있는 배관 파이프 근처에 네 번째 카메라(카메라 3)를 설치한다.",
+    "4대의 WI-FI 카메라 설치를 완료했으면 산업 단지 내부에서 적 15명을 처치한다. 적은 산업 단지 내 어디서든 상관없다."
+  ],
+  "tips": "WI-FI 카라는 메카닉 LL1에서 구매 가능하므로 미리 준비해야 하며, 산업 단지 내 적들은 주로 건물 내부에 있으니 건물 내부를 꼼꼼히 수색하며 적을 처치하는 것이 효율적이다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/Provide_Viewership_map.png/revision/latest/scale-to-width-down/640?cb=20260404152652",
+      "caption": "지도에 표시된 산업 단지 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2a/Provide_Viewership_building.png/revision/latest/scale-to-width-down/640?cb=20250323133453",
+      "caption": "산업 단지 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/94/Provide_Viewership_spot_4.png/revision/latest/scale-to-width-down/640?cb=20251005213538",
+      "caption": "카메라 4: 트럭 앞 드럼통 더미가 있는 차고 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/Provide_Viewership_4_to_2.png/revision/latest/scale-to-width-down/640?cb=20251012201933",
+      "caption": "카메라 4 지점에서 카메라 2 지점으로 가는 경로"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Provide_Viewership_spot_2.png/revision/latest/scale-to-width-down/640?cb=20251005220142",
+      "caption": "카메라 2: 북쪽 건물 내 벽돌 팔레트 근처"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b1/Provide_Viewership_spot_1_way.png/revision/latest/scale-to-width-down/640?cb=20251005220501",
+      "caption": "2층에 있는 3층으로 올라가는 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/72/Provide_Viewership_spot_1.png/revision/latest/scale-to-width-down/640?cb=20251005220710",
+      "caption": "카메라 1: 계단에서 가장 먼 쪽에 있는 파란 드럼통 3개 옆"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/Provide_Viewership_spot_3_way.png/revision/latest/scale-to-width-down/640?cb=20251005221152",
+      "caption": "북쪽 건물 2층 계단 옆에 있는 남쪽 건물 연결 통로(커넥터)"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2a/Provide_Viewership_spot_3.png/revision/latest/scale-to-width-down/640?cb=20251005221720",
+      "caption": "커넥터를 지나 남쪽 건물에 들어가 왼쪽 배관 파이프 근처에 설치된 카메라 3"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Provide_Viewership",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "5a27b7a786f774579c3eb376",
+  "nameKo": "Tigr 사파리",
+  "nameEn": "Tigr Safari",
+  "steps": [
+    "MS2000 마커 3개를 준비한다. 이 아이템은 프라퍼(Prapor)나 래그맨(Ragman)에게서 구매할 수 있다.",
+    "세관(Customs) 맵에서 Tigr 장갑차 3대를 찾아야 한다. 각 차량의 위치는 지도에 표시되어 있으니 참고한다.",
+    "첫 번째 Tigr 차량 위치로 이동한다. 도착하면 MS2000 마커를 차량에 설치한다. 설치 후에는 타이머가 끝날 때까지 생존해야 하며, 만약 사망하면 마커를 다시 설치해야 한다.",
+    "두 번째 Tigr 차량 위치로 이동하여 같은 방식으로 MS2000 마커를 설치하고 생존한다.",
+    "세 번째 Tigr 차량 위치로 이동하여 MS2000 마커를 설치하고 타이머가 끝날 때까지 생존한다."
+  ],
+  "tips": "MS2000 마커는 설치 후 일정 시간이 지나야 완료되므로, 설치 후 안전한 장소로 이동하거나 주변을 경계하며 생존하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/41/Markedcustoms.jpg/revision/latest/scale-to-width-down/640?cb=20240610014140",
+      "caption": "지도에 표시된 차량 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/TigerSafari2.png/revision/latest/scale-to-width-down/640?cb=20180703173300",
+      "caption": "첫 번째 Tigr 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3d/TigerSafari3.png/revision/latest/scale-to-width-down/640?cb=20180703173303",
+      "caption": "두 번째 Tigr 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/32/TigerSafari1.png/revision/latest/scale-to-width-down/640?cb=20180703173257",
+      "caption": "세 번째 Tigr 차량"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Tigr_Safari",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

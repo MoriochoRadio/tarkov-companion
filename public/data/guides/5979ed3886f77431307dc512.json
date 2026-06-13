@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "taskId": "5979ed3886f77431307dc512",
+  "nameKo": "USB에는 무엇이 들어 있을까?",
+  "nameEn": "What’s on the Flash Drive?",
+  "steps": [
+    "세관(Customs) 2층 기숙사 110호 침대 위에서 Secure Flash Drive(보안 USB)를 찾으세요.",
+    "삼림(Woods) 목재 캠프 근처 텐트에서 최대 2개의 Secure Flash Drive를 획득할 수 있습니다. 텐트 위치는 지도에서 확인하세요.",
+    "세관(Customs) 2층 기숙사 근처 캠프 사이트에서도 최대 2개의 Secure Flash Drive가 스폰됩니다. 캠프 위치는 지도에서 확인하세요.",
+    "인터체인지(Interchange) 맵 내 OLI, IDEA, Goshan 사무실에 있는 여러 컴퓨터 전면에 Secure Flash Drive가 꽂혀 있을 수 있습니다. 컴퓨터를 확인하여 USB를 획득하세요.",
+    "레이드 내 스캐브(Scav)들의 주머니와 가방, 죽은 스캐브, 공용 자금 보관함(Common fund stash), 플라스틱 캐리어, 금고, 서랍, 지상 은닉처(Ground caches), 매장된 통 은닉처(Buried barrel caches), 공중 투하물(Airdrops)에서도 Secure Flash Drive를 찾을 수 있습니다.",
+    "Hideout(은신처) 내 정보센터(Intelligence center) 레벨 1에서 Secure Flash Drive 2개를 제작할 수 있습니다.",
+    "퀘스트 'The Huntsman Path - Evil Watchman' 완료 보상으로 Secure Flash Drive 2개를 받을 수 있습니다.",
+    "획득한 Secure Flash Drive 2개를 퀘스트 아이템으로 제출하여 퀘스트를 완료하세요."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/USB_Tent_Location.png/revision/latest/scale-to-width-down/640?cb=20210219105528",
+      "caption": "지도에 표시된 텐트 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/USB_Location.png/revision/latest/scale-to-width-down/640?cb=20171125201307",
+      "caption": "텐트 내부의 플래시 드라이브"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/47/CustomsTentFlashDriveMap.png/revision/latest/scale-to-width-down/640?cb=20221114212912",
+      "caption": "지도에 표시된 캠프 사이트 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/Usb_campsite_customs.jpg/revision/latest/scale-to-width-down/640?cb=20200611150015",
+      "caption": "캠프 사이트 내 플래시 드라이브"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/16/SecureFlashDriveSpawn.png/revision/latest/scale-to-width-down/640?cb=20200405022644",
+      "caption": "침대 위의 플래시 드라이브"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/Drive-in-PC.png/revision/latest/scale-to-width-down/640?cb=20180322170709",
+      "caption": "컴퓨터에 꽂힌 플래시 드라이브"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/What%E2%80%99s_on_the_Flash_Drive%3F",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

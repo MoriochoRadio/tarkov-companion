@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "taskId": "59675ea386f77414b32bded2",
+  "nameKo": "행복배달부 팻아저씨 - 파트 1",
+  "nameEn": "Postman Pat - Part 1",
+  "steps": [
+    "공장(Factory) 맵의 메인 플로어에 위치한 벙커에서 메신저 시체를 찾는다. 벙커 위치를 찾기 쉽게 벙커 벽 위에 '1986' 숫자가 페인트로 표시되어 있다.",
+    "벙커 안에서 시체 옆 바닥에 놓인 봉인된 편지(Sealed letter)를 획득한다. 이 아이템은 퀘스트가 활성화된 상태에서만 레이드 내에서 획득할 수 있으며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "편지를 획득한 후 반드시 레이드에서 탈출해야 하며, 탈출하지 못하면 편지를 잃게 된다.",
+    "획득한 봉인된 편지를 퀘스트 '행복배달부 팻아저씨 - 파트 2(Postman Pat - Part 2)' 진행을 위해 테라피스트(Therapist)에게 전달한다."
+  ],
+  "tips": "편지는 퀘스트 활성화 시에만 벙커에서 획득 가능하므로, 퀘스트를 수락한 상태에서만 해당 벙커를 방문해야 한다. 벙커 위치는 공장 맵 내 '1986' 숫자가 적힌 벽을 찾아 쉽게 확인할 수 있다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2f/Postman_Pat_Letter.png/revision/latest?cb=20221012072643",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b1/PostmanPat1_Factory.png/revision/latest/scale-to-width-down/640?cb=20240824191833",
+      "caption": "지도에 표시된 벙커 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/PostmanPatLocation.png/revision/latest/scale-to-width-down/640?cb=20240824174819",
+      "caption": "목표 벙커, 벙커 위 벽에 적힌 '1986'"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a6/Postman_Pat_Letter_Location.png/revision/latest/scale-to-width-down/640?cb=20240827160828",
+      "caption": "바닥에 놓인 편지"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Postman_Pat_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "639872f9decada40426d3447",
+  "nameKo": "건스미스 - 파트 4",
+  "nameEn": "Gunsmith - Part 4",
+  "steps": [
+    "OP-SKS 소총을 준비한다. 이 소총은 다음 사양을 충족해야 한다: 내구도 60 이상, 인체공학 35 이상, 반동 350 이하, 조준 거리 600 이상, 무게 6kg 이하, 탄창 용량 최소 20발, 그리고 소음기가 장착되어야 한다."
+  ],
+  "tips": "OP-SKS는 레이드 내에서 획득하거나, 플리마켓에서 구매할 수 있다. 사양을 맞추기 위해 부품을 교체하거나 업그레이드하는 것이 필요하다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_4",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

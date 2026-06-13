@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "5ae3267986f7742a413592fe",
+  "nameKo": "건스미스 - 파트 5",
+  "nameEn": "Gunsmith - Part 5",
+  "steps": [
+    "M870 산탄총을 준비한다. 내구도(Durability)가 60 이상이어야 하며, 반동(Recoil)은 500 이하로 맞춘다.",
+    "인체공학(Ergonomics)이 60 이상인 상태로 세팅한다.",
+    "NcSTAR Tactical Blue Laser와 같은 전술 장비(Tactical device)를 장착한다.",
+    "어떤 전방 그립(Foregrip)이라도 상관없으니 장착한다.",
+    "M870 Magpul MOE 핸드가드를 반드시 장착한다."
+  ],
+  "tips": "M870 Magpul MOE 핸드가드는 메카닉(Mechanic) 트레이더에서 구매할 수 있다. 전술 장비와 전방 그립은 다양한 옵션이 있으니 자신의 플레이 스타일에 맞게 선택하자.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_5",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

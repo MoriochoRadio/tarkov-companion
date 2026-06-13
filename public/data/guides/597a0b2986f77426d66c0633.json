@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "597a0b2986f77426d66c0633",
+  "nameKo": "화학 - 파트 2",
+  "nameEn": "Chemical - Part 2",
+  "steps": [
+    "스키어(Skier)에게서 '화학 - 파트 2(Chemical - Part 2)' 퀘스트를 수락하면, 우편으로 세관(Customs) 맵의 3층 기숙사(Dorms) 2층 220호실(Dorm room 220) 열쇠를 받습니다.",
+    "세관 맵으로 이동하여 3층 기숙사 건물을 찾습니다. 기숙사 건물은 3층짜리이며, 2층에 220호실이 있습니다.",
+    "기숙사 2층으로 올라가 220호실 문을 열쇠로 열고 입장합니다.",
+    "220호실 내부에서 책상 위에 있는 노트북(Laptop)을 찾습니다. 노트북에 '슬라이더키 보안 플래시 드라이브(Sliderkey Secure Flash drive)'가 꽂혀 있습니다. 이 플래시 드라이브를 획득합니다.",
+    "같은 방 안 금속 선반(Metal shelf)에서 바인더 사이에 끼워진 'TG 로고가 찍힌 밀봉 편지(Sealed letter with a TG logo)'를 찾아 획득합니다.",
+    "획득한 플래시 드라이브와 밀봉 편지는 퀘스트 아이템으로 자동 등록되며, 레이드 종료 전 반드시 추출해야 아이템을 잃지 않습니다.",
+    "퀘스트 아이템 2개(슬라이더키 플래시 드라이브, 밀봉 편지)를 가지고 지정된 추출 지점으로 이동하여 안전하게 레이드를 종료합니다."
+  ],
+  "tips": "밀봉 편지와 플래시 드라이브는 퀘스트 활성화 상태에서만 220호실에서 획득할 수 있습니다. 레이드 중 아이템을 잃지 않도록 주의하며, 기숙사 220호실은 항상 잠겨 있으니 반드시 스키어에게서 받은 열쇠를 사용해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b9/Chemical2Map.png/revision/latest/scale-to-width-down/640?cb=20220810132208",
+      "caption": "3층 기숙사와 220호실이 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/Sliderkey_Location.png/revision/latest/scale-to-width-down/640?cb=20250712192637",
+      "caption": "노트북에 꽂혀 있는 플래시 드라이브"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/25/Sealed_Letter_Location.png/revision/latest/scale-to-width-down/640?cb=20250712193001",
+      "caption": "바인더 사이에 끼워진 밀봉 편지"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

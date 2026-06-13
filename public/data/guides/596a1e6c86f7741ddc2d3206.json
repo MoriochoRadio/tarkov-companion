@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "taskId": "596a1e6c86f7741ddc2d3206",
+  "nameKo": "식량보급",
+  "nameEn": "General Wares",
+  "steps": [
+    "식량보급(General Wares) 퀘스트는 통조림 소고기 스튜(Can of beef stew, 작은 크기) 15개를 제출하는 임무입니다.",
+    "통조림 소고기는 레이드 내에서 획득할 수 있으며, 직접 획득하거나 은신처(Hideout) 내 영양 단위(Nutrition unit) 레벨 1에서 제작할 수 있습니다.",
+    "인터체인지(Interchange) 맵 내 쇼핑몰에서 많은 양의 통조림 소고기를 찾을 수 있는데, 특히 '고샨(Goshan)' 슈퍼마켓 선반에 다량 비치되어 있습니다. 다만, 이곳은 많은 플레이어가 통조림이나 계산대를 노리기 때문에 매우 위험하므로 주의가 필요합니다.",
+    "리저브(Reserve) 맵에서는 탱크 옆에 위치한 배급 상자(Ration supply crate)에서 통조림 소고기를 자주 발견할 수 있습니다. 그러나 리저브 역시 플레이어 밀집 지역으로 위험하니 신중히 접근해야 합니다.",
+    "삼림(Woods) 맵에서는 스캐브 벙커 옆 캠프 내 배급 상자와 주변에서 통조림 및 기타 식량 아이템을 다수 획득할 수 있습니다. 더 남쪽에 위치한 USEC 캠프도 식량 아이템 획득에 좋은 장소입니다.",
+    "은신처 내 영양 단위 레벨 1에서 통조림 소고기를 제작할 수 있으니, 제작을 통해 퀘스트 아이템을 확보하는 것도 좋은 방법입니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/89/NewKIBALocation1.png/revision/latest/scale-to-width-down/640?cb=20241201171539",
+      "caption": "고샨(Goshan) 슈퍼마켓"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/Location_of_a_ration_supply_crate.png/revision/latest/scale-to-width-down/640?cb=20191231053711",
+      "caption": "리저브(Reserve) 맵 탱크 옆 배급 상자 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/General_Wares",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

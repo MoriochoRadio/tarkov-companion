@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "596a218586f77420d232807c",
+  "nameKo": "자동차 수리",
+  "nameEn": "Car Repair",
+  "steps": [
+    "자동차 수리(Car Repair) 퀘스트를 위해서는 총 4개의 자동차 배터리(Car battery)와 8개의 점화 플러그(Spark plug)를 수집해야 합니다.",
+    "자동차 배터리와 점화 플러그는 모두 레이드 획득(FIR)이 가능하며, 작업대(Workbench) 레벨 2 이상에서 제작도 가능합니다.",
+    "인터체인지(Interchange) 맵에서 퀘스트 아이템을 수집하기 가장 좋습니다.",
+    "인터체인지 내 홈 인프루브먼트 스토어인 OLI 매장 선반에서 자동차 배터리와 점화 플러그가 자주 출현합니다.",
+    "또한, 인터체인지의 고샨(Goshan) 식료품점에서는 큰 화재 현장 남쪽에 위치한 매장 선반에서 자동차 배터리가 자주 출현합니다.",
+    "점화 플러그는 서랍장에서도 자주 발견되며, 리저브(Reserve) 맵의 나이트(Knight) 건물, 퀸(Queen) 건물, 그리고 지하 사무실 구역에 위치한 여러 서랍장에서 수집하기 좋습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Car_Repair",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

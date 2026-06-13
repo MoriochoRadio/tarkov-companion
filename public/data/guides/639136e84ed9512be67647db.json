@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "taskId": "639136e84ed9512be67647db",
+  "nameKo": "Cease Fire!",
+  "nameEn": "Cease Fire!",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov) 맵에서 'Klimov Street' 추출 지점으로 이동한다.",
+    "추출 지점 근처에 있는 신호탄 구역(signal flare area)에 진입하면 화면 우측 하단에 알림이 뜬다.",
+    "신호탄 구역 안에서 녹색 신호탄을 하늘로 쏘아야 추출이 열린다. 신호탄이 일정 높이 이상 올라가지 않으면 추출이 열리지 않는다.",
+    "녹색 신호탄은 Jaeger(예거)에게서 게임 내 우편으로 받을 수 있는 휴대용 RSP-30 녹색 신호탄이나, 신호 권총(signal pistol)에서 발사하는 26x75mm 녹색 신호탄 탄환을 사용할 수 있다.",
+    "휴대용 RSP-30 신호탄을 사용할 경우, 너무 많이 위로 쏘면 신호탄이 뒤로 떨어지므로 적절히 위쪽을 조준하여 쏘아야 한다.",
+    "추가 신호탄이 필요하면 Jaeger(예거) 상점에서 구매할 수 있다.",
+    "추출 시 'run through' 상태가 되지 않으려면, 레이드 내에서 적을 처치하거나 아이템을 습득하여 최소 200 경험치(EXP)를 획득하거나, 최소 7분 이상 레이드에 머문 후 추출해야 한다.",
+    "신호탄이 정상적으로 발사되어 추출이 열리면, 'survived' 상태로 'Klimov Street' 추출 지점에서 안전하게 탈출한다."
+  ],
+  "tips": "신호탄을 쏠 때 시야를 잘 조절하여 신호탄이 뒤로 떨어지지 않도록 주의하고, 경험치 획득이나 체류 시간 조건을 반드시 충족시켜야 추출이 정상적으로 인정된다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/KlimovStreetSignalAreaNote.png/revision/latest?cb=20260330220637",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7f/FlareSuccessNote.png/revision/latest?cb=20260603210733",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/CeaseFireMap.png/revision/latest/scale-to-width-down/640?cb=20251004222804",
+      "caption": "지도에 표시된 추출 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1a/KlimovStreetExtraction.png/revision/latest/scale-to-width-down/640?cb=20251004210542",
+      "caption": "추출 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/KlimovStreetSignalArea.png/revision/latest/scale-to-width-down/640?cb=20251004215250",
+      "caption": "신호탄 구역 및 추출 구역 지도"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Cease_Fire!",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}

@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "taskId": "669fa399033a3ce9870338a8",
+  "nameKo": "소유자",
+  "nameEn": "Possessor",
+  "steps": [
+    "공장(Factory) 맵으로 이동한다.",
+    "공장 내부 지붕 근처에 추락한 헬리콥터를 찾는다. 헬리콥터는 붉은 빛을 발산하고 있어 지상에서 쉽게 식별할 수 있다.",
+    "헬리콥터 내부로 진입한다. 조종석은 헬리콥터 아래쪽에 위치해 있으며, 조종석 내부 조종사 좌석 바로 아래에 로그북(Pilot logbook)이 있다.",
+    "로그북을 획득한다. 이 아이템은 퀘스트 활성 상태에서만 레이드 내에서 획득 가능하며, 획득 시 자동으로 퀘스트 아이템 인벤토리로 이동한다.",
+    "로그북을 가지고 레이드에서 반드시 탈출해야 한다. 만약 로그북을 들고 탈출에 실패하면 아이템을 잃게 된다.",
+    "획득한 로그북을 퀘스트 담당자에게 전달하여 퀘스트를 완료한다."
+  ],
+  "tips": "로그북은 퀘스트 활성화 상태에서만 레이드 내에서 획득 가능하므로, 퀘스트를 받지 않은 상태에서는 찾을 수 없다. 헬리콥터는 공장 맵 지붕 근처 높은 곳에 위치해 있어 접근 시 낙하 피해에 주의해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f6/Possessor_Map.jpg/revision/latest/scale-to-width-down/640?cb=20240919101245",
+      "caption": "지도에 표시된 헬리콥터 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/Possessor_Location_3.png/revision/latest/scale-to-width-down/640?cb=20240830175738",
+      "caption": "붉은 빛을 발산하는 지상에서 본 헬리콥터"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8d/Possessor_Location_1.png/revision/latest/scale-to-width-down/640?cb=20240827190135",
+      "caption": "헬리콥터가 매달려 있는 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Possessor_Location_2.png/revision/latest/scale-to-width-down/640?cb=20250729221948",
+      "caption": "조종사 좌석 아래에 있는 로그북"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Possessor",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-13T15:32:37.043+09:00"
+}
