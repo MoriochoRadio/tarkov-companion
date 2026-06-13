@@ -1,0 +1,84 @@
+{
+  "date": "2026-06-13",
+  "generatedAt": "2026-06-13T13:01:27.454+09:00",
+  "headline": "Rogues 적 발견 시간 증가와 Black Division AI 개선, 주말 XP 보너스 시작",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "적 AI 행동 변화 및 Wedge 보스 함정 강화",
+      "items": [
+        {
+          "title": "Rogues 적 발견 시간 및 Black Division 행동 개선",
+          "summary": "Rogues가 적을 발견하는 시간이 증가해 플레이어가 더 안전하게 움직일 수 있으며, Black Division 병사들은 엔진룸에서 플레이어를 향해 더 고르게 퍼져 움직이고 수류탄을 더 자주 사용해 전투 시 주의가 필요합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "블랙 디비전 엔진룸 AI 버그 수정",
+          "summary": "블랙 디비전 병사들이 엔진룸에서 움직이지 않던 문제와 Knight 보스가 문을 통해 갑판에 진입하던 버그가 수정되어 AI 행동이 정상화되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Wedge 보스의 가스 수류탄 함정 강화",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치해 플레이어의 접근을 방해하므로, 전투 시 함정에 각별히 주의해야 합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "게임 내 경제 및 이벤트 소식",
+      "items": [
+        {
+          "title": "주말 XP 보너스 활성화!",
+          "summary": "이번 주말 Icebreaker 레이드에서 획득하는 XP가 25% 증가하며, PvP와 PvE 모두에 적용됩니다. 보너스는 6월 15일 오전 11시 BST까지 유지되어 경험치 획득을 극대화할 수 있습니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/559155780967727820",
+          "source": "Steam 뉴스",
+          "isNew": true
+        },
+        {
+          "title": "TarCoin이란 무엇인가?",
+          "summary": "TarCoin은 Expansion Hub 내에서만 사용되는 새로운 게임 내 화폐로, 최근 레이드에서 등장하기 시작했습니다. TarkovTV에서 자세히 소개되어 앞으로 경제 시스템에 중요한 역할을 할 것으로 기대됩니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/717907577518686302",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "장비 호환성 이슈 토론",
+      "items": [
+        {
+          "title": "Comtac VI (Ranger Green)와 (Coyote Brown) 차이점 및 FASTMT & Respirator 호환 문제",
+          "summary": "Comtac VI Ranger Green 모델은 Respirator와 호환되지만, 동일 설명의 Coyote Brown 모델은 작동하지 않는 문제를 다루며, 색상 외 기능 차이 여부를 검증해 장비 선택에 참고할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u3woas/discussion_comtav_vi_ranger_green_vs_coyote_brown/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상 모음",
+      "items": [
+        {
+          "title": "쇄빙선 왜 새로운 날먹이 안나오는거야",
+          "url": "https://www.youtube.com/watch?v=uvagX2Qp2a4",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - CHILL PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=guCOOZyn4sI",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "It was just UNFAIR at this point.. - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=vZ6gUNsxg7s",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
