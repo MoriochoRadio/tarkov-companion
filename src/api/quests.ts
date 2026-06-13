@@ -315,14 +315,52 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
     }
   })
 
-  // 후행 퀘스트 = requires의 역방향
-  const byId = new Map(quests.map((q) => [q.id, q]))
+  // 게임모드·이벤트로 같은 (영어명+상인) 퀘스트가 여러 id로 중복돼 옴
+  // (실측: 래그맨 "New Beginning"이 4 id, "Make Amends" 3 id 등 — 좌측 목록 중복 +
+  // 우측 FIR 집계 N배 과다의 원인). 대표 1개로 접고 후행 링크를 대표 기준으로 계산.
+  return dedupeTasks(quests)
+}
+
+// (영어명+상인) 기준 중복 제거 — 대표는 목표가 가장 많은 것(동률이면 id 작은 것).
+// requires는 대표 id로 재매핑하고 unlocks(후행)는 대표 집합에서 다시 계산.
+function dedupeTasks(quests: Quest[]): Quest[] {
+  const groups = new Map<string, Quest[]>()
   for (const q of quests) {
-    for (const reqId of q.requires) {
-      byId.get(reqId)?.unlocks.push(q.id)
-    }
+    const key = `${q.nameEn || q.id} ${q.trader.id}`
+    const arr = groups.get(key)
+    if (arr) arr.push(q)
+    else groups.set(key, [q])
   }
-  return quests
+  const repOf = new Map<string, string>() // 원래 id → 대표 id
+  const reps: Quest[] = []
+  for (const arr of groups.values()) {
+    const rep = arr.reduce((a, b) =>
+      b.objectives.length !== a.objectives.length
+        ? b.objectives.length > a.objectives.length
+          ? b
+          : a
+        : b.id < a.id
+          ? b
+          : a,
+    )
+    reps.push(rep)
+    for (const q of arr) repOf.set(q.id, rep.id)
+  }
+  // requires를 대표 id로 재매핑 + 자기참조·중복 제거
+  for (const q of reps) {
+    q.requires = [
+      ...new Set(
+        q.requires.map((id) => repOf.get(id) ?? id).filter((id) => id !== q.id),
+      ),
+    ]
+  }
+  // 후행 = requires 역방향 (대표 집합 기준 재계산)
+  const byId = new Map(reps.map((q) => [q.id, q]))
+  for (const q of reps) q.unlocks = []
+  for (const q of reps) {
+    for (const reqId of q.requires) byId.get(reqId)?.unlocks.push(q.id)
+  }
+  return reps
 }
 
 let questsCache: Promise<Quest[]> | null = null

@@ -144,6 +144,23 @@ await measure(
   '.fir-q-row',
 )
 
+// 무거운 상인(래그맨 — 피규어 등 아이템 많은 퀘스트) 전환 = 아코디언 최대 부하
+const t6a = Date.now()
+await page.evaluate(() => {
+  const b = [...document.querySelectorAll('.tk-trader')].find((x) =>
+    x.textContent.includes('래그맨'),
+  )
+  b?.click()
+})
+const heavyRaf = await page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const s = performance.now()
+      requestAnimationFrame(() => resolve(Math.round(performance.now() - s)))
+    }),
+)
+console.log(`6.1) 무거운 상인(래그맨) 선택: ${Date.now() - t6a}ms (rAF 응답 ${heavyRaf}ms)`)
+
 const t2 = Date.now()
 await page.evaluate(() => document.querySelector('.fir-done-btn')?.click())
 await new Promise((r) => setTimeout(r, 200))
@@ -187,6 +204,22 @@ await measure(
   '.fir-tile',
 )
 
+// 좌측 퀘스트 아이템 스테퍼 → 우측 그리드 동기화(같은 저장소) 확인
+const qGotBefore = await page.evaluate(
+  () => document.querySelector('.fir-q-got')?.textContent,
+)
+const t2c = Date.now()
+await page.evaluate(() =>
+  document.querySelector('.fir-q-step .fir-step-sm:last-child')?.click(),
+)
+await new Promise((r) => setTimeout(r, 150))
+const qGotAfter = await page.evaluate(
+  () => document.querySelector('.fir-q-got')?.textContent,
+)
+console.log(
+  `7.13) 퀘스트 아이템 스테퍼 +1: ${Date.now() - t2c}ms (보유 ${qGotBefore}→${qGotAfter})`,
+)
+
 await measure(
   '7.2) 좌측 소스 → 하이드아웃 행',
   () =>
@@ -196,6 +229,12 @@ await measure(
         .click(),
     ),
   '.fir-src-row',
+)
+
+await measure(
+  '7.22) 스테이션 펼침 → 레벨별 요구 아이템 상세',
+  () => page.evaluate(() => document.querySelector('.fir-station-toggle')?.click()),
+  '.fir-level',
 )
 
 const t24a = Date.now()

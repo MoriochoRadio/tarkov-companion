@@ -32,6 +32,7 @@ import { TableSkeleton } from './Skeleton'
 // 스테퍼로 직접 증감 (tc:prep-counts 공유 — 준비물/체크리스트와 같은 저장소).
 
 const FIRST_PAINT = 36 // 아이콘+스테퍼 타일 그리드 2단계 렌더 (Phase 17 교훈)
+const QUEST_FIRST_PAINT = 8 // 좌측 퀘스트 아코디언도 상인 전환마다 2단계
 const collator = new Intl.Collator('ko')
 
 interface ItemRef {
@@ -118,10 +119,14 @@ function QuestSource({
   quests,
   done,
   onToggle,
+  counts,
+  add,
 }: {
   quests: Quest[]
   done: ReadonlySet<string>
   onToggle: (id: string) => void
+  counts: Readonly<Record<string, number>>
+  add: (id: string, delta: number) => void
 }) {
   // 상인별 FIR 제출 퀘스트 — 상인은 이름순, 퀘스트는 레벨 오름차순
   const traders = useMemo(() => {
@@ -150,6 +155,16 @@ function QuestSource({
   const [sel, setSel] = useState<string | null>(null)
   const selected = traders.find((t) => t.trader.id === sel) ?? traders[0] ?? null
 
+  // 상인 전환마다 퀘스트 목록을 소량 → 전체 2단계로 (아이템 스테퍼가 많아 큰
+  // 레이아웃 패스 1개가 저사양에서 프리즈로 증폭되는 걸 방지 — CLAUDE.md 기준)
+  const selId = selected?.trader.id ?? null
+  const [qVisible, setQVisible] = useState(QUEST_FIRST_PAINT)
+  useEffect(() => {
+    setQVisible(QUEST_FIRST_PAINT)
+    const t = setTimeout(() => setQVisible(Infinity), 60)
+    return () => clearTimeout(t)
+  }, [selId])
+
   return (
     <div>
       <div className="tk-traders" role="tablist" aria-label="상인 선택">
@@ -177,7 +192,7 @@ function QuestSource({
 
       {selected && (
         <ul className="fir-q-list">
-          {selected.quests.map(({ q, needs }) => {
+          {selected.quests.slice(0, qVisible).map(({ q, needs }) => {
             const isDone = done.has(q.id)
             return (
               <li key={q.id} className={`fir-q-row${isDone ? ' done' : ''}`}>
@@ -195,18 +210,42 @@ function QuestSource({
                   </button>
                 </div>
                 <div className="fir-q-items">
-                  {needs.map((n, i) => (
-                    <span
-                      key={`${n.item.id}-${i}`}
-                      className="fir-q-item"
-                      title={`${biName(n.item.nameKo, n.item.nameEn)} ×${n.count}`}
-                    >
-                      {n.item.iconLink && (
-                        <img src={n.item.iconLink} alt="" loading="lazy" />
-                      )}
-                      <span className="num">×{n.count}</span>
-                    </span>
-                  ))}
+                  {needs.map((n, i) => {
+                    const got = counts[n.item.id] ?? 0
+                    const name = biName(n.item.nameKo, n.item.nameEn)
+                    return (
+                      <span
+                        key={`${n.item.id}-${i}`}
+                        className={`fir-q-item${got >= n.count ? ' enough' : ''}`}
+                        title={`${name} — 필요 ×${n.count}, 보유 ${got}`}
+                      >
+                        {n.item.iconLink && (
+                          <img src={n.item.iconLink} alt="" loading="lazy" />
+                        )}
+                        <span className="fir-q-item-name">{name}</span>
+                        <span className="num fir-q-need">×{n.count}</span>
+                        {/* 보유 스테퍼 — 우측 정크박스 그리드와 같은 저장소 실시간 공유 */}
+                        <span className="fir-q-step">
+                          <button
+                            className="fir-step-sm"
+                            disabled={got === 0}
+                            onClick={() => add(n.item.id, -1)}
+                            aria-label={`${name} 보유 −1`}
+                          >
+                            −
+                          </button>
+                          <span className="num fir-q-got">{got}</span>
+                          <button
+                            className="fir-step-sm"
+                            onClick={() => add(n.item.id, 1)}
+                            aria-label={`${name} 보유 +1`}
+                          >
+                            +
+                          </button>
+                        </span>
+                      </span>
+                    )
+                  })}
                 </div>
               </li>
             )
@@ -232,6 +271,15 @@ function HideoutSource({
     () => [...stations].sort((a, b) => collator.compare(a.name, b.name)),
     [stations],
   )
+  // 스테이션 펼침(레벨별 상세) — 기본 접힘
+  const [open, setOpen] = useState<ReadonlySet<string>>(new Set())
+  const toggleOpen = (id: string) => {
+    const next = new Set(open)
+    if (next.has(id)) next.delete(id)
+    else next.add(id)
+    setOpen(next)
+  }
+
   return (
     <ul className="fir-src-list">
       {rows.map((s) => {
@@ -245,6 +293,7 @@ function HideoutSource({
             !built.has(builtKey(s.id, lv.level)) &&
             lv.items.some((r) => r.fir && !r.isCurrency),
         )
+        const isOpen = open.has(s.id)
         const toggleAll = () => {
           if (all) cascadeBuilt(setBuilt, s, s.levels[0].level, false)
           else cascadeBuilt(setBuilt, s, s.levels[s.levels.length - 1].level, true)
@@ -252,14 +301,23 @@ function HideoutSource({
         return (
           <li key={s.id}>
             <div className={`fir-src-row${all ? ' done' : ''}`}>
-              {s.imageLink && (
-                <img className="fir-src-ico" src={s.imageLink} alt="" width={26} height={26} loading="lazy" />
-              )}
-              <span className="fir-src-name">
-                {s.name}
-                <span className="dim num fir-src-cnt"> · {builtCount}/{total}레벨</span>
-                {firLeft && <span className="badge-fir">FIR</span>}
-              </span>
+              <button
+                className="fir-station-toggle"
+                onClick={() => toggleOpen(s.id)}
+                aria-expanded={isOpen}
+              >
+                {s.imageLink && (
+                  <img className="fir-src-ico" src={s.imageLink} alt="" width={26} height={26} loading="lazy" />
+                )}
+                <span className="fir-src-name">
+                  {s.name}
+                  <span className="dim num fir-src-cnt"> · {builtCount}/{total}레벨</span>
+                  {firLeft && <span className="badge-fir">FIR</span>}
+                </span>
+                <span className="fir-chevron" aria-hidden>
+                  {isOpen ? '▾' : '▸'}
+                </span>
+              </button>
               <button
                 className={`btn-ext fir-done-btn${all ? ' active' : ''}`}
                 onClick={toggleAll}
@@ -267,6 +325,46 @@ function HideoutSource({
                 {all ? '✓ 건축 완료 · 취소' : '건축 완료'}
               </button>
             </div>
+            {isOpen && (
+              <div className="fir-levels">
+                {s.levels.map((lv) => {
+                  const lvBuilt = built.has(builtKey(s.id, lv.level))
+                  const items = lv.items.filter((r) => !r.isCurrency)
+                  return (
+                    <div
+                      key={lv.level}
+                      className={`fir-level${lvBuilt ? ' built' : ''}`}
+                    >
+                      <span className="fir-level-h">
+                        <strong>{lv.level}레벨</strong>
+                        {lvBuilt && <span className="dim"> ✓ 건축됨</span>}
+                      </span>
+                      <span className="fir-level-items">
+                        {items.map((r, i) => (
+                          <span
+                            key={`${r.item.id}-${i}`}
+                            className="fir-lv-item"
+                            title={biName(r.item.nameKo, r.item.nameEn)}
+                          >
+                            {r.item.iconLink && (
+                              <img src={r.item.iconLink} alt="" loading="lazy" />
+                            )}
+                            <span className="fir-lv-name">
+                              {biName(r.item.nameKo, r.item.nameEn)}
+                            </span>
+                            <span className="num">×{r.count}</span>
+                            {r.fir && <span className="badge-fir">FIR</span>}
+                          </span>
+                        ))}
+                        {items.length === 0 && (
+                          <span className="dim">아이템 요구 없음 (화폐만)</span>
+                        )}
+                      </span>
+                    </div>
+                  )
+                })}
+              </div>
+            )}
           </li>
         )
       })}
@@ -412,7 +510,13 @@ export function FirOps() {
             </button>
           </nav>
           {side === 'quest' ? (
-            <QuestSource quests={state.data.quests} done={done} onToggle={toggleDone} />
+            <QuestSource
+              quests={state.data.quests}
+              done={done}
+              onToggle={toggleDone}
+              counts={counts}
+              add={add}
+            />
           ) : (
             <HideoutSource
               stations={state.data.stations}

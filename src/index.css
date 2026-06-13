@@ -5028,29 +5028,175 @@ summary:focus-visible {
   font-size: var(--fs-sub);
 }
 
-/* 퀘스트별 필요 FIR 아이템 — 작은 아이콘 + ×수량 (스케치의 □ ×3, □ ×4) */
+/* 퀘스트별 필요 FIR 아이템 — 아이콘 + 한/영 + ×수량 + 보유 스테퍼(우측 그리드와 동기) */
 .fir-q-items {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  flex-direction: column;
+  gap: 3px;
   margin-top: 5px;
 }
 
 .fir-q-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 6px;
   font-size: 0.74rem;
   color: var(--text-2);
 }
 
 .fir-q-item img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
+  flex: none;
   object-fit: contain;
   background: var(--bg-raised);
   border: 1px solid var(--border);
   border-radius: 4px;
+}
+
+.fir-q-item-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fir-q-need {
+  flex: none;
+  color: var(--text-2);
+}
+
+.fir-q-item.enough {
+  opacity: 0.5;
+}
+
+.fir-q-item.enough .fir-q-item-name {
+  text-decoration: line-through;
+}
+
+.fir-q-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+}
+
+.fir-step-sm {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0;
+}
+
+.fir-step-sm:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.fir-step-sm:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.fir-q-got {
+  min-width: 1.4em;
+  text-align: center;
+}
+
+/* 하이드아웃 스테이션 펼침 — 레벨별 요구 아이템 상세 */
+.fir-station-toggle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+}
+
+.fir-chevron {
+  flex: none;
+  color: var(--text-2);
+  font-size: 0.8rem;
+}
+
+.fir-levels {
+  margin: 4px 0 2px;
+  padding-left: 8px;
+  border-left: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fir-level {
+  padding: 4px 6px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+/* 이미 지은 레벨 — 어둡게 + 빗금 (기존 완료 상태 연동) */
+.fir-level.built {
+  opacity: 0.5;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 7px,
+    color-mix(in srgb, var(--border-strong) 55%, transparent) 7px,
+    color-mix(in srgb, var(--border-strong) 55%, transparent) 9px
+  );
+}
+
+.fir-level-h {
+  display: block;
+  font-size: var(--fs-sub);
+  margin-bottom: 3px;
+}
+
+.fir-level-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fir-lv-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.72rem;
+  color: var(--text-2);
+}
+
+.fir-lv-item img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.fir-lv-name {
+  max-width: 13ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* 완료한 퀘스트 행 — 어둡게 + 빗금 (소스 행과 같은 표식) */
