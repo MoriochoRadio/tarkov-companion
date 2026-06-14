@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-14",
+  "generatedAt": "2026-06-14T14:05:51.696+09:00",
+  "headline": "주말 XP 보너스와 함께 블랙 디비전 AI 개선 및 Wedge 보스 함정 강화 주의",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "블랙 디비전 AI 및 Wedge 보스 함정 주의",
+      "items": [
+        {
+          "title": "블랙 디비전 AI 개선 및 버그 수정",
+          "summary": "블랙 디비전 병사들이 엔진룸에서 플레이어를 향해 더 고르게 퍼져 움직이며 수류탄 사용 빈도가 증가했습니다. 또한 엔진룸에서 움직이지 않던 AI 버그와 Knight 보스의 갑판 진입 문제도 수정되어 전투 패턴이 정상화되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "Wedge 보스의 가스 수류탄 트립와이어 강화",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치하여 전투 시 함정에 주의가 필요합니다. 접근 경로를 신중히 선택해야 피해를 줄일 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "주요 게임 소식",
+      "items": [
+        {
+          "title": "주말 XP 보너스 활성화",
+          "summary": "6월 15일 오전 11시까지 Icebreaker 레이드에서 획득하는 XP가 25% 증가합니다. PvP와 PvE 모두에 적용되어 경험치 획득을 극대화할 수 있습니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/559155780967727820",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "퀘스트 및 아이템 획득 팁",
+      "items": [
+        {
+          "title": "Icebreaker 퀘스트 중 M855A1 탄약 수급 경험",
+          "summary": "Icebreaker 퀘스트 진행 시 12,000발의 M855A1 탄약을 레이드 내에서 모두 소모하며 획득하는 구체적인 방법을 공유해, 탄약 수급에 어려움을 겪는 플레이어에게 실질적인 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u4m09d/mag_drills_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "5.11 Tactical Rush 100 백팩 획득 방법 문의",
+          "summary": "5.11 Tactical Rush 100 백팩의 현재 획득 가능 여부와 획득 위치 및 방법에 대한 정보를 찾는 플레이어에게 참고가 되는 글입니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u4qwua/loot_511_tatical_rush_100/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "커뮤니티 이슈",
+      "items": [
+        {
+          "title": "Comtac VI (Ranger Green)와 (Coyote Brown) 차이점 및 호환 문제",
+          "summary": "Comtac VI Ranger Green 모델은 Respirator와 호환되지만, 동일 설명의 Coyote Brown 모델은 작동하지 않는 문제를 다뤄 장비 선택 시 색상별 호환성 차이를 고려할 수 있습니다.",
+          "source": "커뮤니티"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "추천 영상",
+      "items": [
+        {
+          "title": "쇄빙선 빌드 거의 완성 되어감",
+          "url": "https://www.youtube.com/watch?v=U0P0wJPt8R8",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "쇄빙선 날먹런이 안나오니 내가 만든다!",
+          "url": "https://www.youtube.com/watch?v=mhXHLm7K4bE",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - CHILL PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=IYHg9k6GDjM",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "The PKM is all you need to OWN dorms - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=UnXb8mwkJtQ",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
