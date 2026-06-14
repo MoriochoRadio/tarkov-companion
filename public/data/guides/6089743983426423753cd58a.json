@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "6089743983426423753cd58a",
+  "nameKo": "안전한 통로",
+  "nameEn": "Safe Corridor",
+  "steps": [
+    "리저브(Reserve) 맵의 지하 창고와 그 창고로 내려가는 경사로에서 Scav 10명을 처치해야 합니다.",
+    "목표 창고는 맵의 북서쪽에 위치하며, \"Д\" 표시가 되어 있습니다.",
+    "지하 창고로 내려가는 경사로는 창고 입구 주변에 있으니, 입구를 찾아 내려가세요.",
+    "의도적으로 적에게 태그를 당하거나 저주를 받아서 해당 지역에 Scav들이 몰리도록 유도하는 방법도 도움이 됩니다.",
+    "창고 내부와 경사로 주변에서 Scav들을 찾아 처치하며 퀘스트 목표를 달성하세요."
+  ],
+  "tips": "Scav들이 많이 몰리는 지점은 창고 입구와 경사로 주변이므로, 이 지역을 집중적으로 탐색하는 것이 효율적입니다. 의도적인 태그나 저주를 활용해 Scav들을 유인하면 퀘스트 진행이 수월해집니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/Reserv_guide.jpg/revision/latest/scale-to-width-down/640?cb=20230624234929",
+      "caption": "맵에 표시된 \"Д\" 창고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/41/ReserveQuestWarehouse.png/revision/latest/scale-to-width-down/640?cb=20251107232525",
+      "caption": "\"Д\" 창고 입구 게이트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/Safe_corridor.png/revision/latest/scale-to-width-down/640?cb=20250225134933",
+      "caption": "창고 내부 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/Safe_corridor_map.png/revision/latest?cb=20260404131701",
+      "caption": "맵에 표시된 처치 구역"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Safe_Corridor",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

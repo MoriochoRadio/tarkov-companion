@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "taskId": "67a0964e972c11a3f507731b",
+  "nameKo": "Needle in a Haystack",
+  "nameEn": "Needle in a Haystack",
+  "steps": [
+    "그라운드 제로(Ground Zero) 맵에서 TerraGroup 건물 앞 마당 공원에 위치한 목표물을 찾으세요.",
+    "인터체인지(Interchange) 맵에서는 쇼핑몰 정문 앞과 IDEA 매장 앞 내부에 위치한 목표물을 찾아야 합니다. 쇼핑몰 외부의 카트 트랙과 놀이터 주변도 주의 깊게 살펴보세요.",
+    "타르코프 시내(Streets of Tarkov) 맵에서는 Concordia 빌딩의 안뜰에 위치한 목표물을 찾아야 합니다. 빌딩 내 놀이터 주변을 집중적으로 탐색하세요.",
+    "해안선(Shoreline) 맵에서는 건강 리조트(Health Resort) 동쪽 날개 뒤편과 남쪽 주요 도로를 따라 있는 건설 현장에 목표물이 있습니다. 놀이터와 건설 현장 주변을 꼼꼼히 확인하세요."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/Needle_in_a_Haystack_Ground_Zero_Map.png/revision/latest/scale-to-width-down/640?cb=20250327191131",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/Needle_in_a_Haystack_Ground_Zero_Courtyard.png/revision/latest/scale-to-width-down/640?cb=20250328155850",
+      "caption": "마당 공원"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Needle_in_a_Haystack_Interchange_Map.png/revision/latest/scale-to-width-down/640?cb=20250327184439",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/Needle_in_a_Haystack_Interchange_Track.png/revision/latest/scale-to-width-down/640?cb=20250328160348",
+      "caption": "카트 트랙"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0a/Needle_in_a_Haystack_Interchange_Playground.png/revision/latest/scale-to-width-down/640?cb=20250328160458",
+      "caption": "놀이터"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Needle_in_a_Haystack_Streets_of_Tarkov_Map.png/revision/latest/scale-to-width-down/640?cb=20250327185716",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ec/Needle_in_a_Haystack_Streets_of_Tarkov_Playground.png/revision/latest/scale-to-width-down/640?cb=20250328160954",
+      "caption": "놀이터"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Needle_in_a_Haystack_Shoreline_Map.png/revision/latest/scale-to-width-down/640?cb=20250327184449",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c8/Needle_in_a_Haystack_Shoreline_Playground.png/revision/latest/scale-to-width-down/640?cb=20250328161410",
+      "caption": "놀이터"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/72/Needle_in_a_Haystack_Shoreline_Construction.png/revision/latest/scale-to-width-down/640?cb=20250328161528",
+      "caption": "건설 현장"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Needle_in_a_Haystack",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "5ac244eb86f7741356335af1",
+  "nameKo": "건스미스 - 파트 7",
+  "nameEn": "Gunsmith - Part 7",
+  "steps": [
+    "M4A1 소총을 준비한다. 이 무기는 다음 사양을 충족해야 한다: 내구도 60 이상, 인체공학 37 이상, 반동 300 이하, 조준 거리 800 이상, 무게 3.8kg 이하, 탄창 용량 최소 60발, 그리고 소음기가 장착되어야 한다."
+  ],
+  "tips": "M4A1은 세관, 삼림, 해안선 등 여러 맵에서 레이드 획득(FIR)하거나, 플리마켓에서 구매할 수 있다. 사양을 맞추기 위해 부품을 교체하거나 개조하는 것이 필요하다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_7",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

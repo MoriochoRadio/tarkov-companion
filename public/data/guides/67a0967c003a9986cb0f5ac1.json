@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "67a0967c003a9986cb0f5ac1",
+  "nameKo": "Sensory Analysis - Part 1",
+  "nameEn": "Sensory Analysis - Part 1",
+  "steps": [
+    "레이드 내에서 'Bottle of Fierce Hatchling moonshine' (강렬한 병아리 밀주) 1개를 준비한다. 이 아이템은 레이드 획득(FIR) 불가능하며, 래그맨(Ragman)에게서 게임 내 우편으로 받을 수 있다.",
+    "래그맨(Ragman)에게 받은 'Bottle of Fierce Hatchling moonshine'을 BTR 드라이버에게 전달한다.",
+    "두 번째 목표를 위해 삼림(Woods) 또는 타르코프 시내(Streets of Tarkov)에서 스캐브(Scav)를 사살한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Sensory_Analysis_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

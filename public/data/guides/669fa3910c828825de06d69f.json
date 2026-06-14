@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "taskId": "669fa3910c828825de06d69f",
+  "nameKo": "A Healthy Alternative",
+  "nameEn": "A Healthy Alternative",
+  "steps": [
+    "이 퀘스트는 'One Less Loose End' 퀘스트를 완료하면 더 이상 진행할 수 없습니다.",
+    "퀘스트 아이템인 '랩 저널(Lab journal)'을 찾아야 하며, 이 아이템은 퀘스트가 활성화된 상태에서만 획득할 수 있습니다.",
+    "랩 저널을 획득하면 자동으로 퀘스트 아이템 인벤토리로 이동하며, 이 아이템을 들고 추출하지 못하면 잃게 됩니다.",
+    "랩 저널은 공장(Factory) 맵의 2층에 위치한 실험실(Laboratory)에서만 발견할 수 있습니다.",
+    "실험실 입구는 공장 2층에 있으며, 입구를 통해 실험실 내부로 진입합니다.",
+    "실험실 내부에는 두 개의 방이 있으며, 여러 위치에서 랩 저널이 스폰됩니다.",
+    "첫 번째 방에서는 트롤리(trolley) 위에서 랩 저널을 찾을 수 있습니다.",
+    "첫 번째 방 내 유리장 옆 서랍장(chest of drawers) 위에서도 랩 저널이 스폰됩니다.",
+    "두 번째 방에서는 오른쪽 산업용 선반(industiral shelf) 하단 칸막이에서 랩 저널을 획득할 수 있습니다.",
+    "두 번째 방 바닥에 있는 작은 냉장고(small fridge) 안에서도 랩 저널이 스폰됩니다.",
+    "두 번째 방 오른쪽 책상(desk) 위에서도 랩 저널을 찾을 수 있습니다.",
+    "랩 저널을 획득한 후 반드시 안전하게 추출해야 퀘스트 완료가 가능합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b1/One_Less_Loose_End_Factory_Map.png/revision/latest/scale-to-width-down/640?cb=20240827010137",
+      "caption": "지도에 표시된 실험실 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/One_Less_Loose_End_Factory_Lab.png/revision/latest/scale-to-width-down/640?cb=20240827010253",
+      "caption": "실험실 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/One_Less_Loose_End_Factory_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20240827010745",
+      "caption": "스폰 #1: 첫 번째 방의 트롤리 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8f/One_Less_Loose_End_Factory_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20240827010621",
+      "caption": "스폰 #2: 첫 번째 방 유리장 옆 서랍장 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/One_Less_Loose_End_Factory_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20240827010855",
+      "caption": "스폰 #3: 두 번째 방 오른쪽 산업용 선반 하단 칸막이"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cc/One_Less_Loose_End_Factory_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20240827011107",
+      "caption": "스폰 #4: 두 번째 방 바닥의 작은 냉장고 안"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d8/One_Less_Loose_End_Factory_Spawn_5.png/revision/latest/scale-to-width-down/640?cb=20240827011513",
+      "caption": "스폰 #5: 두 번째 방 오른쪽 책상 위"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/A_Healthy_Alternative",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

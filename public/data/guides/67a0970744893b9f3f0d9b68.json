@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "67a0970744893b9f3f0d9b68",
+  "nameKo": "Offensive Reconnaissance",
+  "nameEn": "Offensive Reconnaissance",
+  "steps": [
+    "해안선(Shoreline)에서 시작하여 건강 리조트(Health Resort) 서쪽 날개로 이동합니다. 리조트의 서쪽 날개는 맵의 북서쪽에 위치해 있습니다.",
+    "서쪽 날개에 도착하면 지하로 내려갑니다. 지하로 내려가는 계단은 리조트 내부에 있습니다.",
+    "지하에 도착하면, Labrys 접근 키카드(Labrys access keycard)가 필요합니다. 이 키카드를 사용하여 통행로(Transit)로 가는 문을 엽니다.",
+    "통행로로 가는 문은 Knossos LLC 시설 키(Knossos LLC facility key)로 잠겨 있습니다. 이 키를 사용하여 문을 엽니다.",
+    "문을 열고 통행로로 들어가면, 미궁(The Labyrinth)으로 이동할 수 있습니다."
+  ],
+  "tips": "레이드에서 살아남을 필요는 없습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Vitamins1_Shoreline_outdoor_map.png/revision/latest/scale-to-width-down/640?cb=20241020215322",
+      "caption": "건강 리조트 서쪽 날개 위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/be/The_Labyrinth_Transit_Map.png/revision/latest/scale-to-width-down/640?cb=20250328020348",
+      "caption": "서쪽 날개 지하의 통행로 위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/The_Labyrinth_Transit_Door.png/revision/latest/scale-to-width-down/640?cb=20251012162826",
+      "caption": "통행로로 가는 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/The_Labyrinth_Transit.png/revision/latest/scale-to-width-down/640?cb=20251012163024",
+      "caption": "통행로"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Offensive_Reconnaissance",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

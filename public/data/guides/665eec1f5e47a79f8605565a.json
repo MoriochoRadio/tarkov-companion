@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "665eec1f5e47a79f8605565a",
+  "nameKo": "Thirsty - Breadwinner",
+  "nameEn": "Thirsty - Breadwinner",
+  "steps": [
+    "인터체인지(Interchange) 맵에서 스캐브(Scav) 캐릭터를 사용해 OLI 상점을 방문한다.",
+    "OLI 상점 내부 선반에서 프로판 탱크(Propane tank, 5L)를 찾아 2개 획득한다.",
+    "획득한 프로판 탱크 2개를 퀘스트 아이템으로 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Thirsty_-_Breadwinner",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

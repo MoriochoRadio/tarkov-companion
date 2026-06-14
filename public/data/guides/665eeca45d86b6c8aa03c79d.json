@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "665eeca45d86b6c8aa03c79d",
+  "nameKo": "Thirsty - Echo",
+  "nameEn": "Thirsty - Echo",
+  "steps": [
+    "해안선(Shoreline) 맵의 건강 리조트(Health resort) 서쪽 날개(West wing) 지하로 이동한다.",
+    "서쪽 날개 지하에 있는 수영장 근처 방으로 들어간다. 이 방은 여러 개의 배터드 다이어리(Battered diary) 스폰 지점이 있다.",
+    "방에 들어서면 바로 왼쪽에 있는 쓰레기통 옆 바닥에서 첫 번째 배터드 다이어리를 찾는다.",
+    "냉장고 안쪽 왼쪽 서랍을 열어 두 번째 배터드 다이어리를 획득한다.",
+    "파란색 사물함에 부착된 빨간 상자 안에서 세 번째 배터드 다이어리를 찾아낸다.",
+    "배터드 다이어리를 획득하면 퀘스트 아이템 인벤토리로 자동 이동하며, 반드시 아이템을 들고 탈출해야 한다. 탈출 실패 시 아이템을 잃게 된다."
+  ],
+  "tips": "퀘스트가 활성화되어 있을 때만 배터드 다이어리가 스폰되므로, 퀘스트를 수락한 후에만 해당 아이템을 획득할 수 있다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Vitamins1_Shoreline_outdoor_map.png/revision/latest/scale-to-width-down/640?cb=20241020215322",
+      "caption": "지도에 표시된 건강 리조트 서쪽 날개 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/ThirstyEchoMap.png/revision/latest/scale-to-width-down/640?cb=20250720122810",
+      "caption": "서쪽 날개 지하 지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/ThirstyEchoRoom.png/revision/latest/scale-to-width-down/640?cb=20240710155945",
+      "caption": "해당 방 내부 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/87/ThirstyEchoLocation1.png/revision/latest/scale-to-width-down/640?cb=20250720122318",
+      "caption": "입장 후 바로 왼쪽 쓰레기통 옆 바닥에 첫 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fd/ThirstyEchoLocation2.png/revision/latest/scale-to-width-down/640?cb=20250720122048",
+      "caption": "냉장고 왼쪽 서랍 안에 두 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/79/ThirstyEchoLocation3.png/revision/latest/scale-to-width-down/640?cb=20250720121534",
+      "caption": "파란 사물함에 부착된 빨간 상자 안에 세 번째 스폰 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Thirsty_-_Echo",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

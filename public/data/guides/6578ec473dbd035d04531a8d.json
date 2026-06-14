@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "taskId": "6578ec473dbd035d04531a8d",
+  "nameKo": "Steady Signal",
+  "nameEn": "Steady Signal",
+  "steps": [
+    "MS2000 마커 5개를 준비한다. 이 아이템은 레이드 내에서 획득할 수 없으며, 반드시 인벤토리에 미리 확보해야 한다.",
+    "삼림(Woods) 맵으로 진입한다.",
+    "첫 번째 기상 관측소는 삼림 북서쪽에 위치해 있다. 지도 상의 위치를 참고하여 해당 기상 관측소에 도착한다.",
+    "기상 관측소 1에 MS2000 마커를 설치한다. 설치 시 인벤토리에서 마커가 소모된다.",
+    "두 번째 기상 관측소는 삼림 북동쪽에 위치해 있다. 지도 상의 위치를 참고하여 해당 기상 관측소에 도착한다.",
+    "기상 관측소 2에 MS2000 마커를 설치한다.",
+    "세 번째 기상 관측소는 삼림 남동쪽에 위치해 있다. 지도 상의 위치를 참고하여 해당 기상 관측소에 도착한다.",
+    "기상 관측소 3에 MS2000 마커를 설치한다.",
+    "네 번째 기상 관측소는 삼림 남서쪽에 위치해 있다. 지도 상의 위치를 참고하여 해당 기상 관측소에 도착한다.",
+    "기상 관측소 4에 MS2000 마커를 설치한다.",
+    "다섯 번째 기상 관측소는 삼림 중앙부 근처에 위치해 있다. 지도 상의 위치를 참고하여 해당 기상 관측소에 도착한다.",
+    "기상 관측소 5에 MS2000 마커를 설치한다.",
+    "모든 기상 관측소에 MS2000 마커를 설치하면 퀘스트가 완료된다."
+  ],
+  "tips": "MS2000 마커는 레이드 내에서 획득할 수 없으므로, 퀘스트 시작 전에 반드시 준비해야 한다. 기상 관측소 위치는 삼림 맵 내에 고정되어 있으니, 지도에 표시된 위치를 참고하여 빠르게 이동하는 것이 좋다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/02/Steady_Signal_Map.png/revision/latest/scale-to-width-down/640?cb=20231231230238",
+      "caption": "지도에 표시된 기상 관측소 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/56/Steady_Signal_1.png/revision/latest/scale-to-width-down/640?cb=20231231230533",
+      "caption": "기상 관측소 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/48/Steady_Signal_2.png/revision/latest/scale-to-width-down/640?cb=20231231230840",
+      "caption": "기상 관측소 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/Steady_Signal_3.png/revision/latest/scale-to-width-down/640?cb=20231231230710",
+      "caption": "기상 관측소 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/Steady_Signal_4.png/revision/latest/scale-to-width-down/640?cb=20231231231031",
+      "caption": "기상 관측소 4"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Steady_Signal_5.png/revision/latest/scale-to-width-down/640?cb=20231231231208",
+      "caption": "기상 관측소 5"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Steady_Signal",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

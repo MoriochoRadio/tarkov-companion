@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "taskId": "6179aff8f57fb279792c60a1",
+  "nameKo": "인구과잉",
+  "nameEn": "Overpopulation",
+  "steps": [
+    "등대(Lighthouse) 맵에 진입한다.",
+    "등대 주변과 코티지(cottages) 사이 지역을 중심으로 이동한다.",
+    "해당 지역에서 스캐브(Scav) 적들을 찾아 12명을 처치한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/OverpopulationMap.png/revision/latest/scale-to-width-down/640?cb=20211219214543",
+      "caption": "대략적인 퀘스트 지역 표시"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Overpopulation",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

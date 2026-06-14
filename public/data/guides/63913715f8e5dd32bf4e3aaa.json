@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "63913715f8e5dd32bf4e3aaa",
+  "nameKo": "Broadcast - Part 2",
+  "nameEn": "Broadcast - Part 2",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov) 맵에서 피의 방송(Bloody Broadcast)의 위치를 찾아야 합니다.",
+    "목표 위치는 프리모르스키 애비뉴(Primorsky ave)에 있는 스파르자(Sparja) 상점 내부입니다.",
+    "맵에서 스파르자 상점 위치를 확인한 후, 해당 상점으로 이동합니다.",
+    "스파르자 상점 외부에서 정문을 통해 입장합니다.",
+    "입구에서 내부를 살펴보면 방송 장비가 설치된 위치를 확인할 수 있습니다.",
+    "방송 위치에 도착하면 퀘스트 목표를 완료할 수 있습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/BroadCast2Map.png/revision/latest/scale-to-width-down/640?cb=20230826210938",
+      "caption": "맵에 표시된 스파르자 상점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/30/SparjaStoreOutside.png/revision/latest/scale-to-width-down/640?cb=20230101141826",
+      "caption": "스파르자 상점 외부 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/38/BroadCast2CamLoc.png/revision/latest/scale-to-width-down/640?cb=20230108171415",
+      "caption": "정문에서 본 방송 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/75/BroadCast2Cam.png/revision/latest/scale-to-width-down/640?cb=20230108171413",
+      "caption": "방송 위치 내부 모습"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "67a096ed77dd677f600804ba",
+  "nameKo": "Sensory Analysis - Part 2",
+  "nameEn": "Sensory Analysis - Part 2",
+  "steps": [
+    "프리퀘스트 'Sensory Analysis - Part 1' 완료 후 진행할 수 있습니다.",
+    "프리퀘스트 완료 후, BTR 드라이버에게 'Bottle of Fierce Hatchling moonshine' 한 병을 전달해야 합니다.",
+    "Bottle of Fierce Hatchling moonshine은 레이드 획득(FIR)으로만 입수 가능하며, 트레이더 구매는 불가능합니다.",
+    "BTR 드라이버에게 술을 건네며 건강 리조트(Health Resort) 아래에 있는 시설과 그 시설에 접근할 수 있는 키카드에 대해 문의합니다.",
+    "이후 BTR 드라이버가 제공하는 정보를 바탕으로 다음 퀘스트 단계를 진행할 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Sensory_Analysis_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

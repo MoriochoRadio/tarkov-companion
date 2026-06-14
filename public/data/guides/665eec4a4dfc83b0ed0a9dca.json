@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "taskId": "665eec4a4dfc83b0ed0a9dca",
+  "nameKo": "Thirsty - Delivery",
+  "nameEn": "Thirsty - Delivery",
+  "steps": [
+    "스키어(Skier)로부터 게임 내 우편으로 받은 2개의 프로판 탱크(5L)를 준비한다.",
+    "첫 번째 프로판 탱크를 삼림(Woods) 맵에서 스캐브 벙커(Scav bunker)에 숨긴다. 벙커 위치는 삼림 지도에 표시된 곳이며, 벙커 내부에 안전하게 보관할 수 있는 장소가 있다.",
+    "두 번째 프로판 탱크는 세관(Customs) 맵 내 상점(Store)의 뒷방에 숨긴다. 상점 위치는 세관 지도에 표시되어 있으며, 상점 내부를 찾아 뒷방으로 이동해 탱크를 보관한다."
+  ],
+  "tips": "프로판 탱크는 스키어가 우편으로 보내주므로 별도로 레이드에서 획득할 필요가 없으며, 각 맵의 지정된 장소에 정확히 숨겨야 퀘스트가 완료된다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/28/ThirstyDeliveryWoodsMap.png/revision/latest/scale-to-width-down/640?cb=20240710151841",
+      "caption": "삼림 맵에 표시된 스캐브 벙커 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a3/ThirstyDeliveryWoodsLocation.png/revision/latest/scale-to-width-down/640?cb=20240710152844",
+      "caption": "벙커 내부에 프로판 탱크를 숨기는 장소"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2f/ThirstyDeliveryCustomsMap.png/revision/latest/scale-to-width-down/640?cb=20240710151448",
+      "caption": "세관 맵에 표시된 상점 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/ThirstyDeliveryCustomsStore.png/revision/latest/scale-to-width-down/640?cb=20250726212715",
+      "caption": "세관 내 상점 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bf/ThirstyDeliveryCustomsLocation.png/revision/latest/scale-to-width-down/640?cb=20240710152126",
+      "caption": "상점 뒷방에 프로판 탱크를 숨기는 장소"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Thirsty_-_Delivery",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "taskId": "669fa38fad7f1eac2607ed46",
+  "nameKo": "One Less Loose End",
+  "nameEn": "One Less Loose End",
+  "steps": [
+    "공장(Factory) 맵으로 이동하여 2층에 위치한 연구소(Laboratory)를 찾는다. 연구소는 공장 내부에 있으며, 지도에 표시된 위치를 참고한다.",
+    "연구소 입구를 통해 내부로 진입한다. 연구소는 두 개의 방으로 나뉘어 있으며, 일지(Lab journal)는 두 방 곳곳에 여러 스폰 지점이 있다.",
+    "첫 번째 방에서는 트롤리(trolley) 위에서 일지를 찾을 수 있다.",
+    "첫 번째 방 내 유리 진열장 옆 서랍장(chest of drawers) 위에서도 일지가 스폰된다.",
+    "두 번째 방으로 이동하여 오른쪽 산업용 선반(industrial shelf) 하단 칸에서 일지를 찾는다.",
+    "두 번째 방 바닥에 있는 작은 냉장고(small fridge) 안에서도 일지가 스폰된다.",
+    "두 번째 방 오른쪽 책상(desk) 위에서도 일지를 획득할 수 있다.",
+    "일지를 획득하면, 삼림(Woods) 맵으로 이동한다.",
+    "삼림 동쪽에 위치한 오래된 제재소(old sawmill) 내 집을 찾아간다. 지도에 표시된 집 위치를 참고한다.",
+    "해당 집 내부에 일지를 은닉(stash)한다. 은닉 장소는 집 내부 특정 위치로, 지도에 표시된 은닉 지점을 참고한다."
+  ],
+  "tips": "일지는 퀘스트가 활성화되어 있을 때만 레이드 내에서 스폰되며, 획득 시 자동으로 퀘스트 아이템 인벤토리로 이동한다. 추출하지 못하고 죽거나 추출 실패 시 일지를 잃으니 주의한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b1/One_Less_Loose_End_Factory_Map.png/revision/latest/scale-to-width-down/640?cb=20240827010137",
+      "caption": "지도에 표시된 연구소 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/One_Less_Loose_End_Factory_Lab.png/revision/latest/scale-to-width-down/640?cb=20240827010253",
+      "caption": "연구소 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/One_Less_Loose_End_Factory_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20240827010745",
+      "caption": "스폰 #1: 첫 번째 방 트롤리 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8f/One_Less_Loose_End_Factory_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20240827010621",
+      "caption": "스폰 #2: 첫 번째 방 유리 진열장 옆 서랍장 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/One_Less_Loose_End_Factory_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20240827010855",
+      "caption": "스폰 #3: 두 번째 방 오른쪽 산업용 선반 하단 칸"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cc/One_Less_Loose_End_Factory_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20240827011107",
+      "caption": "스폰 #4: 두 번째 방 바닥 작은 냉장고 안"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d8/One_Less_Loose_End_Factory_Spawn_5.png/revision/latest/scale-to-width-down/640?cb=20240827011513",
+      "caption": "스폰 #5: 두 번째 방 오른쪽 책상 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/84/One_Less_Loose_End_Woods_Map.png/revision/latest/scale-to-width-down/640?cb=20240827002204",
+      "caption": "지도에 표시된 집 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e4/One_Less_Loose_End_Woods_Building.png/revision/latest/scale-to-width-down/640?cb=20240827001857",
+      "caption": "목표 집"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/One_Less_Loose_End_Woods_Stashing_Spot.png/revision/latest/scale-to-width-down/640?cb=20240827001907",
+      "caption": "은닉 장소"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/One_Less_Loose_End",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

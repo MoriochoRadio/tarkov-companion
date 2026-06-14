@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "665eeca92f7aedcc900b0437",
+  "nameKo": "Thirsty - Secrets",
+  "nameEn": "Thirsty - Secrets",
+  "steps": [
+    "퀘스트 'Thirsty - Secrets'는 아드레날린 주사기(Adrenaline injector) 2개, OLOLO 멀티비타민 병(Bottle of OLOLO Multivitamins) 4개, 식염수 병(Bottle of saline solution) 3개를 제출하는 임무입니다.",
+    "각 아이템은 레이드 중 획득(FIR)해야 하며, 플리마켓이나 트레이더 구매는 불가능합니다.",
+    "아드레날린 주사기는 주로 의료품 상자나 의료 관련 적 NPC가 드랍하는 경우가 많으므로, 의료품이 많이 나오는 맵에서 탐색하세요.",
+    "OLOLO 멀티비타민 병은 주로 약국, 의료품 상자, 혹은 의료 관련 적 NPC가 드랍하는 경우가 많으니 약국이나 의료시설이 있는 맵에서 집중적으로 찾아보세요.",
+    "식염수 병은 의료품 상자나 의료 관련 적 NPC 드랍에서 획득할 수 있으며, 의료품이 잘 나오는 맵에서 탐색하는 것이 효율적입니다.",
+    "아이템을 모두 모은 후, 퀘스트를 제공한 NPC에게 제출하여 완료하세요."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Thirsty_-_Secrets",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

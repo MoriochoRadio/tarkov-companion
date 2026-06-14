@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "taskId": "67a0970f05d1611ed90be75d",
+  "nameKo": "Hypotheses Testing",
+  "nameEn": "Hypotheses Testing",
+  "steps": [
+    "미궁(The Labyrinth)으로 이동합니다. 이 지역은 복잡한 구조로 되어 있으니 주의가 필요합니다.",
+    "미궁 내부에서 프로토타입 무기 지역을 찾아야 합니다. 이 지역은 미궁의 특정 구역에 위치해 있습니다.",
+    "프로토타입 무기 지역에 도착하면, 그곳에서 Labrys 연구 노트를 찾아야 합니다.",
+    "Labrys 연구 노트는 총 5개를 찾아야 하며, 이 노트는 레이드 획득(FIR)으로만 수집할 수 있습니다.",
+    "연구 노트를 모두 수집한 후, 해당 아이템을 테라피스트(Therapist)에게 전달합니다."
+  ],
+  "tips": "미궁 내부는 적이 많으니, 조심스럽게 이동하며 아이템을 수집하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5b/Labryrinth_missile_area_map.png/revision/latest/scale-to-width-down/640?cb=20260212011556",
+      "caption": "프로토타입 무기 지역이 표시된 지도"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hypotheses_Testing",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "67a096577e86e067eb045733",
+  "nameKo": "Hidden Layer",
+  "nameEn": "Hidden Layer",
+  "steps": [
+    "해안선(Shoreline) 맵의 건강 리조트(Health Resort) 서쪽 날개(West Wing) 지하에 위치한 Knossos LLC 시설의 문을 찾아야 합니다.",
+    "Knossos LLC 시설 문을 열기 위해서는 Knossos LLC 시설 열쇠가 반드시 필요합니다. 이 열쇠는 퀘스트 진행에 필수이며, 레이드 획득(FIR) 아이템이 아닙니다.",
+    "건강 리조트 서쪽 날개 위치는 지도에서 명확히 표시되어 있으니, 해당 위치를 기준으로 이동 경로를 계획하세요.",
+    "서쪽 날개 지하로 내려가서 표시된 전이(Transit) 위치를 찾으십시오. 이 전이 위치가 바로 Knossos LLC 시설 문이 있는 곳입니다.",
+    "Knossos LLC 시설 열쇠를 사용해 문을 열고 내부로 진입합니다. 이 문은 The Labyrinth(미궁)으로 가는 전이 통로 역할을 합니다.",
+    "퀘스트 목표는 문을 열고 위치를 확인하는 것이며, The Labyrinth으로의 전이는 필수 사항이 아닙니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Vitamins1_Shoreline_outdoor_map.png/revision/latest/scale-to-width-down/640?cb=20241020215322",
+      "caption": "건강 리조트 서쪽 날개 위치가 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/be/The_Labyrinth_Transit_Map.png/revision/latest/scale-to-width-down/640?cb=20250328020348",
+      "caption": "서쪽 날개 지하 전이 위치가 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/The_Labyrinth_Transit_Door.png/revision/latest/scale-to-width-down/640?cb=20251012162826",
+      "caption": "전이 문"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hidden_Layer",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

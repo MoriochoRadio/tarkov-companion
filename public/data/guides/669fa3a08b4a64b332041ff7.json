@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "taskId": "669fa3a08b4a64b332041ff7",
+  "nameKo": "Dragnet",
+  "nameEn": "Dragnet",
+  "steps": [
+    "공장(Factory) 맵의 TerraGroup 저장고 방에 화학 용기(Chemical container)가 있습니다. 이 방은 지하 터널에 위치하며, '카메라 벙커 문(Camera Bunker Door)' 스캐브 추출 지점 바로 옆에 있습니다.",
+    "TerraGroup 저장고 방에 들어가기 위해서는 TerraGroup 저장고 방 키카드(TerraGroup storage room keycard)가 반드시 필요합니다. 키카드는 퀘스트 진행에 필수입니다.",
+    "TerraGroup 저장고 방 문은 지하 터널 내에 있으며, 문 위치는 지도에 표시되어 있습니다.",
+    "방에 들어가면 화학 용기는 여러 위치에 스폰됩니다. 첫 번째 위치는 입구에서 오른쪽에 쌓여 있는 상자 위입니다.",
+    "두 번째 위치는 왼쪽 산업용 선반의 중간 칸막이 안쪽입니다.",
+    "세 번째 위치는 방 안에 있는 테이블 위입니다.",
+    "네 번째 위치는 입구에서 들어와 왼쪽 선반 위입니다.",
+    "퀘스트가 활성화되어 있을 때만 화학 용기를 획득할 수 있으며, 획득 시 아이템이 퀘스트 아이템 인벤토리로 자동 이동합니다.",
+    "화학 용기를 획득한 후에는 반드시 추출해야 하며, 추출에 실패하면 아이템을 잃게 됩니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/89/TerraGroup_storage_room_keycard_map.png/revision/latest/scale-to-width-down/640?cb=20240824194327",
+      "caption": "지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/TerraGroup_storage_room_keycard_door.png/revision/latest/scale-to-width-down/640?cb=20240822192018",
+      "caption": "방 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7b/Dragnet_spawn_location_1.png/revision/latest/scale-to-width-down/640?cb=20240827225824",
+      "caption": "첫 번째 스폰 위치: 입장 후 오른쪽 상자 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4f/Dragnet_spawn_location_4.png/revision/latest/scale-to-width-down/640?cb=20240827225838",
+      "caption": "두 번째 스폰 위치: 왼쪽 산업용 선반 중간 칸막이 안"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/02/Dragnet_spawn_location_2.png/revision/latest/scale-to-width-down/640?cb=20240827225848",
+      "caption": "세 번째 스폰 위치: 테이블 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/Dragnet_spawn_location_3.png/revision/latest/scale-to-width-down/640?cb=20240827225858",
+      "caption": "네 번째 스폰 위치: 입장 후 왼쪽 선반 위"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Dragnet",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

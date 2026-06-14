@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "taskId": "60896e28e4a85c72ef3fa301",
+  "nameKo": "병력",
+  "nameEn": "Disease History",
+  "steps": [
+    "리저브(Reserve) 맵의 병원 건물(White Bishop) 2층으로 이동한다. 병원 건물은 맵에 표시되어 있으며, 목표 위치로 가기 위해서는 건물 입구에서 2층으로 올라가는 계단을 이용해야 한다.",
+    "계단 아래쪽에서 2층으로 올라가는 입구를 찾는다. 계단은 병원 건물 내부에 있으며, 2층 객실로 향하는 복도 입구에 위치해 있다.",
+    "계단을 올라가 2층으로 진입한다. 2층 복도에 진입하면 두 개의 잠긴 객실이 목표 지점이다.",
+    "첫 번째 목표는 RB-KSM 방이다. RB-KSM 방은 2층 병원 건물 왼쪽 구획에 위치하며, 입장 후 왼쪽 캐비닛 안쪽 아래 칸에서 의료 기록지 #1(Medical record #1)을 찾을 수 있다. 이 방을 열기 위해서는 RB-KSM 키가 필요하다.",
+    "두 번째 목표는 RB-SMP 방이다. RB-SMP 방은 2층 병원 건물 오른쪽 구획에 위치하며, 입장 후 오른쪽 선반 사이 바닥에서 의료 기록지 #2(Medical record #2)를 찾을 수 있다. 이 방을 열기 위해서는 RB-SMP 키가 필요하다.",
+    "의료 기록지 #1과 #2는 퀘스트가 활성화되어 있을 때만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리에 자동으로 들어간다. 만약 이 아이템을 들고 추출에 실패하면 아이템을 잃게 되므로 주의한다."
+  ],
+  "tips": "RB-KSM 키와 RB-SMP 키는 레이드 내에서 획득할 수 없으며, 별도로 준비해야 한다. 병원 건물 내부는 적이 많으니 신중히 움직이고, 의료 기록지를 획득한 후 빠르게 추출하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/HospitalMap.jpeg/revision/latest/scale-to-width-down/640?cb=20230528233925",
+      "caption": "맵에 표시된 병원 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/Whitebishopstairs1.png/revision/latest/scale-to-width-down/640?cb=20230528231537",
+      "caption": "2층 목표 객실로 올라가는 계단 아래쪽"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/64/Whitebishopstairs2.png/revision/latest/scale-to-width-down/640?cb=20220326082415",
+      "caption": "2층 목표 객실로 올라가는 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a3/RB-KSM_door.png/revision/latest/scale-to-width-down/640?cb=20230528232135",
+      "caption": "RB-KSM 방 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/Disease_history_Journal_1.png/revision/latest/scale-to-width-down/640?cb=20230528232209",
+      "caption": "의료 기록지 #1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6e/RB-SMP_door.png/revision/latest/scale-to-width-down/640?cb=20230528232533",
+      "caption": "RB-SMP 방 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Disease_history_Journal_2.png/revision/latest/scale-to-width-down/640?cb=20230528233008",
+      "caption": "의료 기록지 #2"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Disease_History",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}

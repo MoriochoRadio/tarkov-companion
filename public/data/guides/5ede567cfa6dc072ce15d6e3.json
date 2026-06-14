@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "taskId": "5ede567cfa6dc072ce15d6e3",
+  "nameKo": "벙커 - 파트 2",
+  "nameEn": "The Bunker - Part 2",
+  "steps": [
+    "리저브(Reserve) 맵의 지하 벙커 시스템에 위치한 밀폐형(hermetic) 문들을 찾아 방문해야 합니다.",
+    "서브태스크 2, 3, 4에서는 각각 한 개씩만 찾아 방문하면 되며, 총 5개의 문을 방문해야 합니다.",
+    "모든 밀폐형 문 방문은 한 번의 레이드 내에서 완료해야 합니다.",
+    "밀폐형 문은 지하 벙커 내에 위치해 있으며, 지하 벙커 지도를 참고하여 문 위치를 확인하세요.",
+    "밀폐형 문의 외관은 이미지에 표시된 것과 같으니, 이를 기준으로 문을 식별할 수 있습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/Bunker_pt2.png/revision/latest/scale-to-width-down/640?cb=20200704024601",
+      "caption": "지하 지도에 표시된 위치들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8d/HermeticDoorExample.png/revision/latest/scale-to-width-down/640?cb=20211210221454",
+      "caption": "밀폐형 문의 외관"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Bunker_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T20:43:18.105+09:00"
+}
