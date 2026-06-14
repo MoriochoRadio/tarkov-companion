@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "5a27bbf886f774333a418eeb",
+  "nameKo": "청부살인 - 파트 2",
+  "nameEn": "Wet Job - Part 2",
+  "steps": [
+    "레이드 시작 후 해안선(Shoreline) 맵 내 섬(Island) 위치로 이동한다. 섬 위치는 지도에 표시되어 있으니 참고한다.",
+    "섬에 도착하면 어부의 집(Fishermen's House)을 찾는다. 어부의 집은 섬 내에 위치해 있으며, 집 안에는 무기 상자가 있다.",
+    "어부의 집 옆에 있는 낚시 테이블(Fishing Table)을 찾는다.",
+    "인벤토리에 있는 MS2000 마커(MS2000 Marker)를 낚시 테이블에 사용하여 표시한다. 이때 MS2000 마커는 퀘스트 진행에 반드시 필요하며, 사용 시 인벤토리에서 사라진다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/37/WetJob2IslandMap.png/revision/latest/scale-to-width-down/640?cb=20260212220125",
+      "caption": "지도에 표시된 섬 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bd/The_house_on_the_island_with_the_weapon_box_in_it.png/revision/latest/scale-to-width-down/640?cb=20250926200923",
+      "caption": "집 옆에 있는 낚시 테이블"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

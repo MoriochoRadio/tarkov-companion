@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "taskId": "5a27bc1586f7741f6d40fa2f",
+  "nameKo": "청부살인 - 파트 3",
+  "nameEn": "Wet Job - Part 3",
+  "steps": [
+    "해안선(Shoreline) 맵에서 아르템(Artyom)의 노란색 차량을 찾아야 합니다.",
+    "차량은 해안선을 따라 이어진 주요 도로에 위치해 있으며, 노란색 버스와 경찰차 옆에 있습니다.",
+    "맵에서 노란색 차량 위치를 확인하고, 해당 위치로 이동하세요."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d7/Wet_job_part_3.png/revision/latest/scale-to-width-down/640?cb=20240322204944",
+      "caption": "맵에 표시된 차량 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/25/WetJobPart3QuestLocation.png/revision/latest/scale-to-width-down/640?cb=20230625001608",
+      "caption": "목표 차량"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

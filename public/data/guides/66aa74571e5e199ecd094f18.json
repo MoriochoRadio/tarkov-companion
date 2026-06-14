@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "taskId": "66aa74571e5e199ecd094f18",
+  "nameKo": "Secrets of Polikhim",
+  "nameEn": "Secrets of Polikhim",
+  "steps": [
+    "세관(Customs) 맵 내 실험실 건물 2층에 위치한 여러 장소에서 정밀 도구 케이스(Case with precision tools)를 찾는다. 실험실 내부 저장실에 들어가면 왼쪽 바닥(1번 위치)과 나무 상자 사이 바닥(2번 위치)에서 획득 가능하다.",
+    "실험 구역에서는 남서쪽 구석 바닥(3번 위치)과 의자 위(4번 위치), 북서쪽 구석 바닥(5번 위치), 북동쪽 구석 바닥(6번 위치)에서 정밀 도구 케이스가 스폰된다.",
+    "정밀 도구 케이스는 퀘스트 활성화 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다. 만약 이 아이템을 들고 추출에 실패하면 아이템을 잃게 되므로 주의한다.",
+    "세관 맵의 구 가스 스테이션(Old Gas Station) 추출 지점 옆에 위치한 전이 구간(Transit)을 통해 공장(Factory) 맵으로 이동한다. 이 전이는 레이드 시작 1분 후부터 이용 가능하다.",
+    "공장 맵 내 실험실 아래층에 위치한 저장실(Storage room)로 이동한다. 저장실 입구 문을 찾아 들어가야 하며, 정확한 위치는 지도에 표시되어 있다.",
+    "저장실 내부 지정된 장소에 정밀 도구 케이스를 안전하게 보관한다. 이 장소는 퀘스트 완료를 위해 반드시 찾아야 하는 위치이다."
+  ],
+  "tips": "정밀 도구 케이스는 퀘스트 활성화 상태에서만 획득 가능하므로, 퀘스트 시작 전에 미리 찾으려 하지 말고 반드시 퀘스트 진행 중에만 획득해야 한다. 또한, 아이템을 획득한 후에는 추출 실패로 인한 손실을 방지하기 위해 신속히 추출하는 것이 중요하다. 세관에서 공장으로 이동하는 전이는 레이드 시작 1분 후에만 열리므로, 시간을 잘 계산해 움직여야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1b/MarathonSecretsOfPolikhimCustomsMap.png/revision/latest/scale-to-width-down/640?cb=20240829224052",
+      "caption": "지도에 표시된 실험실"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/MarathonSecretsOfPolikhimCustoms1.png/revision/latest/scale-to-width-down/640?cb=20240829223528",
+      "caption": "1: 저장실 입구에 들어가 왼쪽 바닥에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/14/MarathonSecretsOfPolikhimCustoms2.png/revision/latest/scale-to-width-down/640?cb=20240829223538",
+      "caption": "2: 저장실 내 나무 상자 사이 바닥에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/14/MarathonSecretsOfPolikhimCustoms3.png/revision/latest/scale-to-width-down/640?cb=20240829223540",
+      "caption": "3: 실험 구역 남서쪽 구석 바닥에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/10/MarathonSecretsOfPolikhimCustoms4.png/revision/latest/scale-to-width-down/640?cb=20240829223542",
+      "caption": "4: 실험 구역 남서쪽 구석 의자 위에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e8/MarathonSecretsOfPolikhimCustoms5.png/revision/latest/scale-to-width-down/640?cb=20240829223544",
+      "caption": "5: 실험 구역 북서쪽 구석 바닥에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2d/MarathonSecretsOfPolikhimCustoms6.png/revision/latest/scale-to-width-down/640?cb=20240829223545",
+      "caption": "6: 실험 구역 북동쪽 구석 바닥에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/37/CustomsTransitToFactoryMap.png/revision/latest/scale-to-width-down/640?cb=20240828230751",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8b/CustomsTransitToFactory.png/revision/latest/scale-to-width-down/640?cb=20250316150605",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/MarathonSecretsOfPolikhimFactoryMap.jpg/revision/latest/scale-to-width-down/640?cb=20240829225620",
+      "caption": "지도에 표시된 저장실"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a8/MarathonSecretsOfPolikhimFactory1.png/revision/latest/scale-to-width-down/640?cb=20240829225139",
+      "caption": "저장실 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/88/MarathonSecretsOfPolikhimFactory2.png/revision/latest/scale-to-width-down/640?cb=20240829225227",
+      "caption": "아이템 보관 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Secrets_of_Polikhim",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

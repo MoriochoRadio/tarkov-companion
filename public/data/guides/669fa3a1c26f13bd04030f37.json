@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "669fa3a1c26f13bd04030f37",
+  "nameKo": "Capacity Check",
+  "nameEn": "Capacity Check",
+  "steps": [
+    "공장(Factory) 맵에 진입한다.",
+    "공장 내부 천장에 설치된 레일(rafter) 위로 점프하여 올라간다. 레일은 믹서(reactor mixer) 상단에 접근하기 위한 경로이다.",
+    "첫 번째 믹서 상단에 도달하면, 수리할 부위가 표시된 부분을 확인한다.",
+    "Toolset(공구 세트) 1개를 사용하여 첫 번째 믹서 수리를 시작한다. 수리는 40초가 소요되며, 수리 완료 시 Toolset 1개가 소모된다.",
+    "수리가 완료되면, 다음 믹서로 이동하기 위해 다시 레일 위를 이동한다.",
+    "두 번째 믹서 상단에 도달하여 표시된 수리 부위를 확인한다.",
+    "Toolset 1개를 사용하여 두 번째 믹서 수리를 진행한다. 이 역시 40초가 소요되고 Toolset 1개가 소모된다.",
+    "수리가 완료되면, 세 번째 믹서로 이동한다.",
+    "세 번째 믹서 상단에 도달하여 수리할 부위를 확인한다.",
+    "마지막 Toolset 1개를 사용하여 세 번째 믹서를 수리한다. 40초간 수리하며 Toolset 1개가 소모된다.",
+    "모든 믹서 수리가 완료되면 퀘스트가 완료된다."
+  ],
+  "tips": "Toolset은 퀘스트 진행에 반드시 필요한 아이템으로, 수리 시마다 1개씩 소모되므로 총 3개를 준비해야 한다. Toolset은 레이드 내에서 획득하거나 거래소에서 구매할 수 있다. 믹서 상단에 올라가기 위해서는 공장 내 천장 레일을 이용해야 하며, 점프 난이도가 있으니 주의하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ab/CapacityCheckMap.jpg/revision/latest/scale-to-width-down/640?cb=20240827234521",
+      "caption": "맵에 표시된 믹서 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b2/CapacityCheckLocation.png/revision/latest/scale-to-width-down/640?cb=20240827234028",
+      "caption": "수리할 부위가 표시된 믹서"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Capacity_Check",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

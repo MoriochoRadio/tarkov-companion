@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "taskId": "60896888e4a85c72ef3fa300",
+  "nameKo": "군사기밀",
+  "nameEn": "Classified Technologies",
+  "steps": [
+    "D2 추출 지점으로 가기 위해 반드시 지나야 하는 지하 작업장에 진입한다.",
+    "녹슨 분해된 파이프 뒤쪽을 주의 깊게 살펴본다. 이곳에 퀘스트 아이템인 T-90M 지휘관 제어판(T-90M Commander Control Panel) 패키지가 숨겨져 있다.",
+    "패키지를 발견하면 반드시 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 즉시 퀘스트 아이템 인벤토리에 자동으로 들어간다. 사망 시 아이템은 사라지므로 주의한다.",
+    "패키지를 획득한 후에는 지하 작업장에서 D2 추출 지점으로 빠져나가야 한다.",
+    "추출에 성공하면 피스키퍼(Peacekeeper)에게 패키지를 전달하여 퀘스트를 완료한다."
+  ],
+  "tips": "패키지는 퀘스트가 활성화되어 있을 때만 레이드 내에서 발견할 수 있으므로, 퀘스트 시작 전에 미리 확인할 필요가 있다. 사망 시 아이템이 사라지므로 최대한 안전하게 움직여야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/ClassifiedTechnologiesLocationMap.png/revision/latest/scale-to-width-down/640?cb=20211123152438",
+      "caption": "위치가 표시된 지하 작업장 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/00/Experience_Exchange_-_Package_Location.png/revision/latest/scale-to-width-down/640?cb=20240709160835",
+      "caption": "T-90M 지휘관 제어판 패키지 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Classified_Technologies",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

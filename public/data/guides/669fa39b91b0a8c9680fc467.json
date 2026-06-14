@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "669fa39b91b0a8c9680fc467",
+  "nameKo": "Black Swan",
+  "nameEn": "Black Swan",
+  "steps": [
+    "공장(Factory) 지하 터널에 위치한 3개의 열교환기(heat exchangers)를 찾아야 합니다.",
+    "퀘스트 아이템인 MS2000 마커 3개를 준비합니다. 이 아이템은 열교환기에 부착할 때 인벤토리에서 사라집니다.",
+    "첫 번째 열교환기는 'Camera Bunker Door' 스캐브 추출 지점 맞은편에 있습니다. 위치를 정확히 찾아가서 MS2000 마커를 부착하세요.",
+    "두 번째 열교환기는 지하 터널 내 다른 위치에 있으며, 지도에 표시된 위치를 참고하여 찾아가야 합니다.",
+    "세 번째 열교환기도 마찬가지로 지하 터널 내에 있으며, 지도상의 표시를 따라 찾아가 MS2000 마커를 부착합니다."
+  ],
+  "tips": "열교환기 위치는 공장 지하 터널 내에 분포되어 있으니, 지도를 미리 확인하고 이동 경로를 계획하는 것이 좋습니다. MS2000 마커는 반드시 3개 모두 사용해야 하며, 부착 시 인벤토리에서 사라지므로 잃어버리지 않도록 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/ff/Black_Swan_Map.jpg/revision/latest/scale-to-width-down/640?cb=20240919211753",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/HeatExchangers1.png/revision/latest/scale-to-width-down/640?cb=20240827200728",
+      "caption": "\"Camera Bunker Door\" 스캐브 추출 지점 맞은편의 첫 번째 열교환기"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/HeatExchangers2.png/revision/latest/scale-to-width-down/640?cb=20240827200737",
+      "caption": "두 번째 열교환기"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/HeatExchangers3.png/revision/latest/scale-to-width-down/640?cb=20240827200745",
+      "caption": "세 번째 열교환기"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Black_Swan",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

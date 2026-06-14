@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "taskId": "66aba85403e0ee3101042877",
+  "nameKo": "Beneath The Streets",
+  "nameEn": "Beneath The Streets",
+  "steps": [
+    "세관(타르코프 시내)에서 The Lab(연구소)로 이동하기 위해 Klimova 16A 건물 앞에 있는 우주비행사 그림이 그려진 지하 입구로 이동한다. 이 구역에 들어가기 위해서는 TerraGroup Labs 출입용 키카드가 필요하다. 레이드 시작 후 1분이 지나야 이 구간의 트랜싯(이동 통로)을 이용할 수 있다.",
+    "연구소 2층에 있는 '행거 게이트(Hangar Gate)' 추출 지점 근처로 이동하여 컨트롤 룸을 정찰한다.",
+    "컨트롤 룸 바로 아래 1층에 위치한 서버 룸을 정찰한다.",
+    "연구소 1층의 주요 작업 구역에 위치한 노란색 위험 돔(hazard dome)을 정찰한다.",
+    "연구소에서 타르코프 시내로 돌아갈 때는 주황색 돔 근처에 있는 당구대가 있는 사무실 옆의 트랜싯을 이용한다. 이 구간 역시 레이드 시작 후 1분이 지나야 이용할 수 있다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/75/StreetsTransitToLabsMap.png/revision/latest/scale-to-width-down/640?cb=20240828224823",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/StreetsTransitToLabsUpstairs.png/revision/latest/scale-to-width-down/640?cb=20240824233945",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/StreetsTransitToLabsDownstairs.png/revision/latest/scale-to-width-down/640?cb=20240824233942",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2d/LabsControlRoomMap.png/revision/latest/scale-to-width-down/640?cb=20240828222837",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5f/LabsControlRoom.png/revision/latest/scale-to-width-down/640?cb=20240828222354",
+      "caption": "컨트롤 룸"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/37/LabsServerRoomMap.png/revision/latest/scale-to-width-down/640?cb=20240828223423",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/LabsServerRoom.png/revision/latest/scale-to-width-down/640?cb=20240828221953",
+      "caption": "서버 룸"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Quality_Standard_Yellow_Dome_Map.png/revision/latest/scale-to-width-down/640?cb=20240708010501",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5a/Quality_Standard_Yellow_Dome.png/revision/latest/scale-to-width-down/640?cb=20250209193105",
+      "caption": "돔"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/TheLabTranistToStreetsOfTarkovMap.png/revision/latest/scale-to-width-down/640?cb=20240828224204",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/TheLabTranistToStreetsOfTarkov.png/revision/latest/scale-to-width-down/640?cb=20240822204510",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Beneath_The_Streets",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

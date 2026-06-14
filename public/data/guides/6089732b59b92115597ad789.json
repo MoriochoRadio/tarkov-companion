@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "taskId": "6089732b59b92115597ad789",
+  "nameKo": "남는 물건",
+  "nameEn": "Surplus Goods",
+  "steps": [
+    "리저브(Reserve) 맵의 수리 센터(Repair Center, 일명 화이트 나이트) 내 두 개의 차고 건물 중 더 큰 차고 건물로 이동한다.",
+    "차고 건물 내 RB-ST 문을 열기 위해 RB-ST 키가 반드시 필요하다. 이 키는 별도로 구해야 하며, 퀘스트 진행에 필수적이다.",
+    "RB-ST 키로 문을 열고 내부로 진입한다. 문은 잠겨 있으므로 키 없이는 진입 불가능하다.",
+    "방 안 왼쪽 뒤편에 위치한 나무 상자 더미를 찾는다.",
+    "나무 상자 더미 중 MBT 통합 내비게이션 시스템(MBT Integrated Navigation System)이 들어있는 상자를 찾아 획득한다.",
+    "이 아이템은 퀘스트 활성화 상태에서만 발견 가능하며, 획득 시 퀘스트 아이템 인벤토리에 자동으로 들어간다.",
+    "획득한 MBT 통합 내비게이션 시스템을 가지고 안전하게 추출 지점까지 이동하여 퀘스트를 완료한다. 추출 실패 시 아이템을 잃게 되므로 주의한다."
+  ],
+  "tips": "RB-ST 키는 퀘스트 진행에 필수이므로 미리 준비하거나 구매해두는 것이 좋다. MBT 통합 내비게이션 시스템은 퀘스트 활성화 중에만 획득 가능하므로, 퀘스트 시작 전에 미리 찾아도 아이템이 없을 수 있다. 추출 시 적의 공격에 대비해 안전한 경로를 선택하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/16/MBT_NC_tarkov_quest_item_small.png/revision/latest?cb=20221012074313",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e8/SurplusGoodsGarageMap.jpg/revision/latest/scale-to-width-down/640?cb=20230605002547",
+      "caption": "지도에 표시된 차고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/60/SurplusGoodsGarage.png/revision/latest/scale-to-width-down/640?cb=20260424184251",
+      "caption": "목표 차고 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/RB-ST_door_inside.png/revision/latest/scale-to-width-down/640?cb=20250716002241",
+      "caption": "잠긴 RB-ST 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/Surplus_goods_1.png/revision/latest/scale-to-width-down/640?cb=20230528235305",
+      "caption": "나무 상자 더미"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/07/Surplus_goods_2.png/revision/latest/scale-to-width-down/640?cb=20230528235342",
+      "caption": "목표 상자"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9d/Surplusitem.png/revision/latest/scale-to-width-down/640?cb=20230528235416",
+      "caption": "상자 안에 있는 아이템 클로즈업"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Surplus_Goods",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

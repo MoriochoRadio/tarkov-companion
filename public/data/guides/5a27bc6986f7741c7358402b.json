@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "taskId": "5a27bc6986f7741c7358402b",
+  "nameKo": "청부살인 - 파트 5",
+  "nameEn": "Wet Job - Part 5",
+  "steps": [
+    "해안선(Shoreline) 맵의 헬스 리조트(Health Resort) 동쪽 별관 동 крыло, 328호실을 찾는다. 이 방은 헬스 리조트 동쪽 별관 328호실 열쇠(Health Resort east wing room 328 key)가 있어야만 입장할 수 있다.",
+    "328호실에 들어가면 TV 아래 탁자 위에 PC가 있다. PC 위에 하드 드라이브(Working hard drive)가 놓여 있으니 찾아서 획득한다.",
+    "하드 드라이브는 퀘스트 활성 상태에서만 레이드 내에서 획득 가능하며, 획득 시 자동으로 퀘스트 아이템 인벤토리로 이동한다.",
+    "획득한 하드 드라이브를 반드시 레이드에서 추출할 때까지 보유해야 하며, 만약 심기(plant)하지 않고 추출에 실패하면 아이템을 잃게 된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWing.jpg/revision/latest/scale-to-width-down/640?cb=20240520225533",
+      "caption": "지도에 표시된 헬스 리조트 동쪽 별관 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/Placement_of_the_quest_item.png/revision/latest/scale-to-width-down/640?cb=20260323224653",
+      "caption": "TV 아래 탁자 위에 있는 PC"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/Pick_up_item.png/revision/latest/scale-to-width-down/640?cb=20260323224428",
+      "caption": "PC 위에 놓인 하드 드라이브"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_5",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5d25e2ee86f77443e35162ea",
+  "nameKo": "사냥꾼의 길 - 삼림의 보호자",
+  "nameEn": "The Huntsman Path - Woods Keeper",
+  "steps": [
+    "레이드 내에서 Shturman을 찾아 처치한다.",
+    "Shturman의 시체에서 Shturman의 은신처 열쇠(Shturman's stash key)를 획득한다.",
+    "획득한 Shturman's stash key를 퀘스트 제출 아이템으로 사용한다."
+  ],
+  "tips": "Shturman은 삼림(Woods) 맵에서 등장하는 적으로, 그의 은신처 열쇠는 반드시 레이드 내에서 직접 획득해야 하므로 신중하게 움직여야 한다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Woods_Keeper",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "669fa395c4c5c04798002497",
+  "nameKo": "Exit Here",
+  "nameEn": "Exit Here",
+  "steps": [
+    "공장(Factory) 맵에서 '안뜰 문(Courtyard Gate)' 추출 지점을 찾아야 합니다. 지도에서 해당 위치가 표시되어 있으니 미리 확인하세요.",
+    "레이드에 진입한 후, 최소 7분 이상 생존하거나 적을 처치하거나 아이템을 획득하여 최소 200 경험치(EXP)를 얻어야 합니다. 이는 'Run Through' 상태가 아닌 'Survived' 상태로 추출하기 위함입니다.",
+    "'Run Through' 상태로 추출하면 퀘스트가 완료되지 않으므로 반드시 위 조건을 충족해야 합니다.",
+    "레이드에서 생존 상태로 '안뜰 문(Courtyard Gate)' 추출 지점으로 이동해 추출합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/59/Exit_Here_Map.jpg/revision/latest/scale-to-width-down/640?cb=20240826230032",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/86/Factory_Courtyard_Gate.png/revision/latest/scale-to-width-down/640?cb=20240820181816",
+      "caption": "추출 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Exit_Here",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

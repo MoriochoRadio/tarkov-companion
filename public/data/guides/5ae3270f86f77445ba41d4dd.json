@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "5ae3270f86f77445ba41d4dd",
+  "nameKo": "건스미스 - 파트 6",
+  "nameEn": "Gunsmith - Part 6",
+  "steps": [
+    "AKM 소총을 준비한다. 소총은 내구도 60 이상이어야 하며, 반동은 400 이하, 인체공학 지수는 25 이상이어야 한다.",
+    "조준 사거리가 800 이상인 상태여야 한다. 이는 조준경이나 기타 부착물을 통해 달성할 수 있다.",
+    "소음기가 장착되어 있어야 한다. 소음기는 AKM에 맞는 것으로 준비한다.",
+    "Fortis Shift 전술용 포어그립을 장착한다. 이 부품은 별도로 구입하거나 레이드에서 획득해야 한다.",
+    "AK 7.62x39 Magpul PMAG 30 GEN M3 30발 탄창(검정색)을 장착한다. 이 탄창 역시 트레이더 구매 또는 레이드 획득이 가능하다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_6",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

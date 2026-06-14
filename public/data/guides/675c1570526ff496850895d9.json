@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "taskId": "675c1570526ff496850895d9",
+  "nameKo": "Passion for Ergonomics",
+  "nameEn": "Passion for Ergonomics",
+  "steps": [
+    "세관(Customs) 지역의 차고 단지 내 차고 #11을 찾아간다. 차고 #11은 세관 지도에 표시된 위치에 있다.",
+    "차고 #11 내부로 들어가 여러 위치를 탐색한다. 이 퀘스트는 맞춤형 도구 세트(Box with upgraded tools)를 찾는 것이 목표이다.",
+    "첫 번째 스폰 위치는 차고 안 차량 밑이다. 차량 아래를 자세히 살펴 도구 상자가 있는지 확인한다.",
+    "두 번째 스폰 위치는 선반 아래 바닥이다. 선반 근처 바닥을 꼼꼼히 탐색한다.",
+    "세 번째 스폰 위치는 차량 뒤쪽 바닥이다. 차량 뒤를 살펴 도구 상자가 있는지 확인한다.",
+    "네 번째 스폰 위치는 차량 앞쪽 바닥이다. 차량 앞쪽 바닥을 확인하여 도구 상자를 찾는다.",
+    "맞춤형 도구 세트는 퀘스트가 활성화된 상태에서만 등장하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "도구 상자를 획득한 후 반드시 안전하게 추출해야 한다. 추출에 실패하면 아이템을 잃게 된다.",
+    "퀘스트 완료를 위해 맞춤형 도구 세트를 프라퍼(Prapor)에게 전달한다."
+  ],
+  "tips": "도구 상자는 여러 위치에 스폰되므로 차고 내부를 꼼꼼히 탐색하는 것이 중요하다. 차량 주변과 선반 아래를 특히 주의 깊게 살펴보자. 퀘스트가 활성화된 상태에서만 아이템이 등장하므로, 퀘스트 수락 후에만 탐색을 시작해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/Passion_for_Ergonomics_Map.png/revision/latest/scale-to-width-down/640?cb=20241229214303",
+      "caption": "지도에 표시된 차고 #11 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/37/Passion_for_Ergonomics_Garage.png/revision/latest/scale-to-width-down/640?cb=20250325014346",
+      "caption": "차고 내부 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/95/Passion_for_Ergonomics_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20241229214437",
+      "caption": "차량 밑 첫 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/Passion_for_Ergonomics_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20241229214558",
+      "caption": "선반 아래 바닥 두 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b8/Passion_for_Ergonomics_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20241229215054",
+      "caption": "차량 뒤쪽 바닥 세 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c2/Passion_for_Ergonomics_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20241229214905",
+      "caption": "차량 앞쪽 바닥 네 번째 스폰 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Passion_for_Ergonomics",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

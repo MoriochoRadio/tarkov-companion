@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "60c0c018f7afb4354815096a",
+  "nameKo": "사냥꾼의 길 - 공장장",
+  "nameEn": "The Huntsman Path - Factory Chief",
+  "steps": [
+    "공장(Factory) 맵에서 태길라(Tagilla)를 찾아 처치해야 합니다. 태길라는 공장 내의 보스 몬스터로, 일반 태길라(Shadow of Tagilla)가 아닌 본래의 태길라를 대상으로 합니다.",
+    "태길라를 처치한 후, 그의 모자(BOSS cap 또는 뿔 달린 모자)를 레이드 내에서 획득해야 합니다. 이 모자는 반드시 레이드에서 직접 찾아야 하며, 트레이더 구매나 플리마켓 거래로는 대체할 수 없습니다.",
+    "획득한 태길라의 모자를 퀘스트 아이템으로 제출하여 퀘스트를 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Factory_Chief",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

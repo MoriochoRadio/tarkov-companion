@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "5d6fbc2886f77449d825f9d3",
+  "nameKo": "교관",
+  "nameEn": "Mentor",
+  "steps": [
+    "스키어(Skier)에게 루블로 50,000 유로(Euros)를 구매한다.",
+    "스키어에게 50,000 유로를 전달하여 퀘스트를 완료한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Mentor",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

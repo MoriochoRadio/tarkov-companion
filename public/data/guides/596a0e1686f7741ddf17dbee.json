@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "taskId": "596a0e1686f7741ddf17dbee",
+  "nameKo": "보급 계획",
+  "nameEn": "Supply Plans",
+  "steps": [
+    "Kind of Sabotage 퀘스트를 완료하면 Supply Plans 퀘스트를 진행할 수 없으니 주의한다.",
+    "Supply Plans 퀘스트 아이템인 Secure Folder 0052를 획득해야 한다. 이 아이템은 퀘스트가 활성화되어 있을 때만 레이드 내에서 찾을 수 있다.",
+    "레이드에서 Woods(삼림) 맵으로 진입한다.",
+    "삼림 맵 내 Lumber Camp(목재 캠프) 지역으로 이동한다.",
+    "목재 캠프 내에 있는 목조 오두막 중 3번 오두막(#3)을 찾는다.",
+    "3번 오두막 내부로 들어가 침대 밑을 확인한다.",
+    "침대 밑에서 Secure Folder 0052 문서 아이템을 획득한다. 이 아이템은 획득 즉시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "문서를 획득한 후 반드시 안전하게 추출해야 한다. 추출에 실패하면 문서를 잃게 되므로 주의한다."
+  ],
+  "tips": "Secure Folder 0052는 퀘스트가 활성화되어 있을 때만 레이드 내에서 등장하므로, 퀘스트 진행 전에 반드시 활성화 상태인지 확인한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/SupplyPlansMap.png/revision/latest/scale-to-width-down/640?cb=20220213235621",
+      "caption": "오두막 위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/Cabins_in_the_lumber_yard.png/revision/latest/scale-to-width-down/640?cb=20230618180634",
+      "caption": "목재 캠프 내 오두막들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3f/Docs_0052_Location.png/revision/latest/scale-to-width-down/640?cb=20230618180804",
+      "caption": "3번 오두막 침대 밑에 있는 문서"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Supply_Plans",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

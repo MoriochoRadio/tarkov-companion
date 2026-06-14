@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "669fa39ee749756c920d02c8",
+  "nameKo": "All Is Revealed",
+  "nameEn": "All Is Revealed",
+  "steps": [
+    "공장(Factory) 맵으로 이동한다.",
+    "맵 내에 위치한 탱크 컨테이너 #28을 찾는다. (위치가 지도에 표시되어 있으니 참고할 것)",
+    "탱크 컨테이너 #28에 접근하여 내부로 들어간다.",
+    "탱크 컨테이너 내부에서 화학 샘플을 채취할 수 있는 지점을 찾는다.",
+    "화학 샘플(Chemical sample) 1개를 채취한다. 이 아이템은 퀘스트 활성화 상태에서만 획득 가능하며, 획득 즉시 퀘스트 아이템 인벤토리로 이동한다.",
+    "샘플을 획득한 후 반드시 추출해야 하며, 추출에 실패할 경우 샘플을 잃게 된다."
+  ],
+  "tips": "탱크 컨테이너 내부는 좁고 적이 숨어있을 수 있으니 주의하며 움직일 것. 샘플 획득 후 빠르게 안전하게 추출하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/All_Is_Revealed_Map.jpg/revision/latest/scale-to-width-down/640?cb=20240827214129",
+      "caption": "지도에 표시된 탱크 컨테이너 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/All_Is_Revealed_Tank_Container_28.png/revision/latest/scale-to-width-down/640?cb=20240827213526",
+      "caption": "탱크 컨테이너 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/All_Is_Revealed_Sample.png/revision/latest/scale-to-width-down/640?cb=20240827213619",
+      "caption": "탱크 컨테이너 내부에서 샘플 채취 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/All_Is_Revealed",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

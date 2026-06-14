@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "taskId": "6179b4d1bca27a099552e04e",
+  "nameKo": "개정 작업 - 등대",
+  "nameEn": "Revision - Lighthouse",
+  "steps": [
+    "등대(Lighthouse) 맵에서 MS2000 마커 4개를 준비한다. MS2000 마커는 퀘스트 진행에 반드시 필요하며, 레이드 내에서 획득할 수 없다.",
+    "첫 번째 차량은 등대 맵 내의 수도 처리장(Water Treatment Plant) 근처에 위치한 BRDM 차량이다. BRDM 차량은 수도 처리장 서쪽 해안가에 있으며, 차량에 MS2000 마커를 설치하면 인벤토리에서 해당 마커가 사라진다.",
+    "두 번째 BRDM 차량 역시 수도 처리장에 위치해 있으며, 첫 번째 BRDM 차량보다 북쪽에 있다. 이 차량에도 MS2000 마커를 설치한다.",
+    "세 번째 차량은 등대 반도(Lighthouse Peninsula)로 가는 도로에 위치한 스트라이커(Stryker) 차량이다. 도로를 따라 이동하며 차량을 찾아 MS2000 마커를 설치한다.",
+    "네 번째 차량은 파란 샬레(Blue Chalet)로 가는 도로에 위치한 또 다른 스트라이커 차량이다. 이 차량에도 MS2000 마커를 설치한다."
+  ],
+  "tips": "MS2000 마커는 퀘스트 아이템으로, 반드시 4개 모두 차량에 설치해야 퀘스트가 완료된다. 차량 위치는 지도와 이미지로 정확히 확인할 수 있으니, 이동 경로를 미리 숙지하는 것이 좋다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/Revision2Map.png/revision/latest/scale-to-width-down/640?cb=20251109121149",
+      "caption": "지도에 표시된 차량 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/Revision2BRDMWestWater.png/revision/latest/scale-to-width-down/640?cb=20251109122139",
+      "caption": "수도 처리장에 있는 첫 번째 BRDM 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Revision2BRDMNorthWater.png/revision/latest/scale-to-width-down/640?cb=20251109122411",
+      "caption": "수도 처리장에 있는 두 번째 BRDM 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0b/Revision2StrykerLighthouse.png/revision/latest/scale-to-width-down/640?cb=20251109121805",
+      "caption": "등대 반도 지역으로 가는 도로에 있는 첫 번째 스트라이커 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1b/Revision2StrykerUphill.png/revision/latest/scale-to-width-down/640?cb=20251109121942",
+      "caption": "파란 샬레로 가는 도로에 있는 두 번째 스트라이커 차량"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Revision_-_Lighthouse",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

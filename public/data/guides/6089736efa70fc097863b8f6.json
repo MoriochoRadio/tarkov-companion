@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "6089736efa70fc097863b8f6",
+  "nameKo": "뒷문",
+  "nameEn": "Back Door",
+  "steps": [
+    "리저브(Reserve) 맵에서 \"D-2\" 추출 지점으로 이동한다. 지도에서 D-2 추출 지점과 전원 레버 위치를 미리 확인해두는 것이 좋다.",
+    "지하 벙커 시스템의 지휘부(command part)로 내려가 전원 레버를 작동시킨다. 이 레버를 작동하면 벙커 지휘부에 스캐브 레이더(Scav Raiders)가 출현할 수 있으니 주의한다.",
+    "전원을 켠 후, D-2 추출 지점에 있는 미끄럼문 옆 벽에 부착된 버튼을 누른다. 이 버튼을 누르면 출구가 열리게 된다.",
+    "퀘스트 완료를 위해서는 반드시 '생존(Survived)' 상태로 레이드에서 탈출해야 한다. '통과(Run Through)' 상태로는 퀘스트가 완료되지 않는다.",
+    "'통과' 상태를 피하려면 레이드 내에서 최소 7분 이상 머무르거나, 레이드 중 적 처치나 아이템 획득 등으로 최소 200 경험치(EXP)를 획득해야 한다.",
+    "버튼을 누른 후, 출구를 통해 레이드에서 탈출한다."
+  ],
+  "tips": "전원 레버를 작동할 때 스캐브 레이더가 출현하므로, 주변을 충분히 경계하고 준비한 후 작동하는 것이 안전하다. 또한, 퀘스트 완료를 위해서는 반드시 '생존' 상태로 탈출해야 하므로, 탈출 직전까지 전투를 피하거나 경험치를 충분히 쌓는 것을 권장한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/BackDoorD2Marked.png/revision/latest/scale-to-width-down/640?cb=20230618212640",
+      "caption": "지도에 표시된 D-2 추출 지점과 전원 레버 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cb/D2_Switch.png/revision/latest/scale-to-width-down/640?cb=20230427012803",
+      "caption": "D-2 전원 레버와 추출 지점 벽에 있는 버튼"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/79/D2_Extract.png/revision/latest/scale-to-width-down/640?cb=20260607201034",
+      "caption": "벽에 부착된 버튼이 있는 D-2 추출 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Back_Door",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}

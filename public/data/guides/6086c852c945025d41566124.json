@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "taskId": "6086c852c945025d41566124",
+  "nameKo": "개정 작업 - 리저브",
+  "nameEn": "Revision - Reserve",
+  "steps": [
+    "리저브(Reserve) 맵에서 퀘스트 목표 차량 7대를 찾는다: BMP-2 차량 4대, LAV III 차량 2대, T-90 전차 1대.",
+    "BMP-2 차량 4대 중 3대는 MS2000 마커 5개를 사용해 표시해야 하며, LAV III 차량 2대 중 1대도 마커로 표시해야 한다.",
+    "첫 번째 BMP-2 차량은 'Scav Lands' 협동 탈출 지점 근처에 위치해 있다. 이 차량에 MS2000 마커를 설치한다. 마커를 설치하면 인벤토리에서 마커가 사라진다.",
+    "두 번째 BMP-2 차량은 'White Knight' 건물 내부에 있다. 이 차량에도 MS2000 마커를 설치한다.",
+    "세 번째 BMP-2 차량은 RB-ST 방 안에 잠겨 있다. 이 방을 열기 위해 RB-ST 키가 필요하다. RB-ST 키를 준비한 후 문을 열고 차량에 MS2000 마커를 설치한다.",
+    "네 번째 BMP-2 차량은 'Checkpoint Fence' Scav 탈출 지점 옆에 위치해 있다. 이 차량에도 MS2000 마커를 설치한다.",
+    "첫 번째 LAV III 차량은 창고 'Д'의 옥상에 있다. 이 창고는 'Bunker Hermetic Door' 탈출 지점이 있는 곳이다. 이 차량에 MS2000 마커를 설치한다.",
+    "두 번째 LAV III 차량은 'Scav Lands' 협동 탈출 지점 근처에 위치해 있으며, 마커 설치는 필요 없다.",
+    "T-90 전차는 'Scav Lands' 협동 탈출 지점 근처에 있다. 전차를 찾기만 하면 된다."
+  ],
+  "tips": "MS2000 마커는 플레이어 인벤토리에서 사용 시 사라지므로, 마커를 충분히 준비하고 차량 위치를 정확히 파악한 후 설치하는 것이 중요하다. RB-ST 키는 레이드 내에서 획득하거나 거래소에서 구매해야 하며, RB-ST 방은 BMP-2 차량이 있는 유일한 잠긴 방이므로 반드시 키를 준비해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/Revision_location.png/revision/latest/scale-to-width-down/640?cb=20220816182946",
+      "caption": "지도에 표시된 목표 차량 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/Revision_5.png/revision/latest/scale-to-width-down/640?cb=20241019184549",
+      "caption": "\"Scav Lands\" 협동 탈출 지점 근처 첫 번째 표시해야 할 BMP-2 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/Revision_2.png/revision/latest/scale-to-width-down/640?cb=20241019184924",
+      "caption": "\"White Knight\" 건물 내 두 번째 표시해야 할 BMP-2 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1d/Revision_1.png/revision/latest/scale-to-width-down/640?cb=20241019185234",
+      "caption": "RB-ST 방"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/26/Revision_3.png/revision/latest/scale-to-width-down/640?cb=20241019183453",
+      "caption": "\"Checkpoint Fence\" Scav 탈출 지점 옆 네 번째 표시해야 할 BMP-2 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d7/Revision_4.png/revision/latest/scale-to-width-down/640?cb=20241019184746",
+      "caption": "\"Bunker Hermetic Door\" 탈출 지점이 있는 창고 'Д' 옥상에 위치한 첫 번째 표시해야 할 LAV III 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/Revision_6.png/revision/latest/scale-to-width-down/640?cb=20241019183904",
+      "caption": "\"Scav Lands\" 협동 탈출 지점 근처 두 번째 찾아야 할 LAV III 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/Revision_7.png/revision/latest/scale-to-width-down/640?cb=20241019183758",
+      "caption": "\"Scav Lands\" 협동 탈출 지점 근처 찾아야 할 T-90 전차"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Revision_-_Reserve",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T17:54:34.127+09:00"
+}
