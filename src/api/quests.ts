@@ -59,7 +59,7 @@ export interface Quest {
   displayName: string // "한국어명 (English)" — 병합 시 1회 계산
   searchKey: string // 소문자 ko+en — 검색 필터용 사전 계산
   trader: { id: string; name: string; imageLink: string | null }
-  map: { id: string; name: string; normalizedName: string } | null
+  map: { id: string; name: string; normalizedName: string; wiki: string | null } | null
   minPlayerLevel: number
   experience: number
   kappaRequired: boolean
@@ -75,7 +75,7 @@ const QUERY = `{
   ko: tasks(lang: ko) {
     id name minPlayerLevel experience kappaRequired wikiLink
     trader { id name imageLink }
-    map { id name normalizedName }
+    map { id name normalizedName wiki }
     taskRequirements { task { id } }
     objectives {
       id type description optional
@@ -115,7 +115,7 @@ interface RawKoTask {
   kappaRequired: boolean | null
   wikiLink: string | null
   trader: { id: string; name: string; imageLink: string | null }
-  map: { id: string; name: string; normalizedName: string } | null
+  map: { id: string; name: string; normalizedName: string; wiki: string | null } | null
   taskRequirements: { task: { id: string } | null }[]
   objectives: {
     id: string

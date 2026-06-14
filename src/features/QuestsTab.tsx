@@ -126,6 +126,11 @@ function QuestDetail({
             🗺️ 맵에서 위치 보기 ({quest.map.name})
           </a>
         )}
+        {quest.map?.wiki && (
+          <a className="btn-ext" href={quest.map.wiki} target="_blank" rel="noreferrer">
+            📖 {quest.map.name} 위치 위키
+          </a>
+        )}
         <a
           className="btn-ext"
           href={`https://www.youtube.com/results?search_query=${encodeURIComponent(
@@ -477,13 +482,28 @@ export function QuestsTab() {
           {shown.map((q) => (
             <tr key={q.id} className="quest-row" onClick={() => setSelectedId(q.id)}>
               <td>
-                <StarButton
-                  on={activeIds.has(q.id)}
-                  onToggle={() => toggleActive(q.id)}
-                  label="진행 중"
-                />
-                {q.displayName}
-                {q.kappaRequired && <span className="badge-kappa">κ</span>}
+                <div className="quest-name-cell">
+                  <StarButton
+                    on={activeIds.has(q.id)}
+                    onToggle={() => toggleActive(q.id)}
+                    label="진행 중"
+                  />
+                  <span className="quest-name-text">{q.displayName}</span>
+                  {q.kappaRequired && <span className="badge-kappa">κ</span>}
+                  {q.wikiLink && (
+                    // 상세로 들어가지 않고 행에서 바로 위키 공략으로 (행 클릭과 분리)
+                    <a
+                      className="wiki-mini"
+                      href={q.wikiLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      title="위키에서 공략 보기"
+                    >
+                      위키 ↗
+                    </a>
+                  )}
+                </div>
               </td>
               <td data-label="트레이더">
                 <span className="trader-cell">

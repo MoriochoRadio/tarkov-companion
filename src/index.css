@@ -1698,6 +1698,40 @@ select:focus-visible {
   cursor: pointer;
 }
 
+/* 퀘스트 행 이름 칸 — 이름은 말줄임, 작은 위키 링크는 오른쪽 끝에 항상 노출 */
+.quest-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.quest-name-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.wiki-mini {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 1px 7px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-3);
+  font-size: var(--fs-label);
+  line-height: 1.6;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+
+.wiki-mini:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 /* 퀘스트 상세 빅 헤더 — 트레이더 초상화 + 거대 타이틀 */
 .quest-hero {
   display: flex;
