@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "taskId": "64f731ab83cfca080a361e42",
+  "nameKo": "Pets Won't Need It - Part 1",
+  "nameEn": "Pets Won't Need It - Part 1",
+  "steps": [
+    "세관(Street of Tarkov) 맵 내에서 수의 클리닉(Vet clinic) 위치를 지도에서 확인한다.",
+    "수의 클리닉 외부로 이동한다. 건물 외관을 확인하며 접근한다.",
+    "수의 클리닉 정문으로 들어간다.",
+    "건물 내부 계단을 이용해 2층으로 올라간다.",
+    "2층에서 우리(pen) 구역으로 들어가면 해당 목표가 완료 처리된다.",
+    "같은 레이드 내에서 어린이 폴리클리닉(Children's polyclinic)으로 이동한다. 폴리클리닉 위치는 지도에 표시되어 있다.",
+    "폴리클리닉 외부로 접근한다.",
+    "폴리클리닉 내부로 들어가 계단을 올라간다.",
+    "2층에서 왼쪽 문을 열고 들어간다.",
+    "복도를 따라 걸어가 두 번째 문을 통과한다.",
+    "잠긴 문을 만나면 X-ray room key(엑스레이 방 열쇠)를 사용해 문을 열고 엑스레이 기술자 방(X-ray technician's room)으로 들어간다."
+  ],
+  "tips": "X-ray room key는 퀘스트 진행에 반드시 필요하며, 해당 열쇠는 레이드 내에서 획득해야 한다. 수의 클리닉과 엑스레이 기술자 방은 반드시 같은 레이드에서 방문해야 퀘스트가 완료된다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/StreetsOfTarkovVetClinic.png/revision/latest/scale-to-width-down/640?cb=20230922230153",
+      "caption": "지도에 표시된 수의 클리닉 위치."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6b/VetClinic1.png/revision/latest/scale-to-width-down/640?cb=20230925001236",
+      "caption": "수의 클리닉 외부 모습."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/VetClinic2.png/revision/latest/scale-to-width-down/640?cb=20230925001346",
+      "caption": "수의 클리닉 정문."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/76/VetClinic3.png/revision/latest/scale-to-width-down/640?cb=20230925001513",
+      "caption": "2층으로 올라가는 계단."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/92/VetClinic4.png/revision/latest/scale-to-width-down/640?cb=20230925002007",
+      "caption": "목표 완료를 위한 우리 구역 입장."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/56/X-ray_key_room_onmap.png/revision/latest/scale-to-width-down/640?cb=20230827014643",
+      "caption": "지도에 표시된 폴리클리닉 위치."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f6/X-ray_clinic_outside.png/revision/latest/scale-to-width-down/640?cb=20230813160337",
+      "caption": "폴리클리닉 외부 모습."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/87/X-ray_key_upstairs.png/revision/latest/scale-to-width-down/640?cb=20241015230354",
+      "caption": "계단을 올라가 왼쪽 문을 연다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/X-ray_key_path1.png/revision/latest/scale-to-width-down/640?cb=20241015230742",
+      "caption": "복도를 따라 두 번째 문을 통과한다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/X-ray_key_locked_door.png/revision/latest/scale-to-width-down/640?cb=20241015230917",
+      "caption": "엑스레이 기술자 방으로 들어가는 잠긴 문."
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Pets_Won't_Need_It_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

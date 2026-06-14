@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "taskId": "5a27bb5986f7741dfb660900",
+  "nameKo": "화물 X - 파트 3",
+  "nameEn": "Cargo X - Part 3",
+  "steps": [
+    "해안선(Shoreline) 건강 리조트의 서쪽 날개 지하에 위치한 수영장으로 가야 합니다.",
+    "중앙 계단에서 수영장으로 가는 길을 따라 이동합니다.",
+    "수영장 근처의 벽에 있는 구멍을 찾아 cargo를 확인합니다."
+  ],
+  "tips": "수영장에 도착하기 전에 주변 적들을 조심하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/ShorelineCargoXPt3.png/revision/latest/scale-to-width-down/640?cb=20260323002730",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e4/CargoXPt3_Guide.png/revision/latest/scale-to-width-down/640?cb=20190429125029",
+      "caption": "중앙 계단에서 수영장으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/CargoXPt3Hole.png/revision/latest/scale-to-width-down/640?cb=20260323001637",
+      "caption": "벽의 구멍에 있는 화물"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

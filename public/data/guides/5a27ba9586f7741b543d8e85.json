@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5a27ba9586f7741b543d8e85",
+  "nameKo": "스파 관광 - 파트 6",
+  "nameEn": "Spa Tour - Part 6",
+  "steps": [
+    "스파 관광 - 파트 6 퀘스트를 시작합니다.",
+    "8,000 달러를 준비합니다. 이 아이템은 Peacekeeper(피스키퍼)에게 Roubles(루블)로 구매할 수 있습니다.",
+    "퀘스트 목표인 8,000 달러를 전달합니다."
+  ],
+  "tips": "달러는 레이드 획득(FIR)이 필요하지 않습니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_6",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

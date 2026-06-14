@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "taskId": "5a0327ba86f77456b9154236",
+  "nameKo": "스파 관광 - 파트 3",
+  "nameEn": "Spa Tour - Part 3",
+  "steps": [
+    "Oli (올리) — 인터체인지의 ULTRA 쇼핑몰 남쪽 상점에서 2개의 골판지 호스를 찾습니다. 호스는 올리의 선반에 있습니다.",
+    "Oli의 물류실과 인접한 방에서도 골판지 호스를 찾을 수 있습니다.",
+    "해안선의 마을에 있는 일반 상점에서 2개의 Clin 창문 세정제와 2개의 Ox 표백제를 찾습니다. 이 상점은 맵의 남서쪽 모서리에 위치해 있습니다.",
+    "일반 상점은 핑크색으로 표시된 곳입니다.",
+    "일반 상점의 정면에서 사진을 찍어 확인합니다.",
+    "세관의 '크랙 하우스' 또는 '의료 건물'의 정보실에서도 Clin 창문 세정제와 Ox 표백제를 찾을 수 있습니다.",
+    "크랙 하우스의 위치를 확인합니다.",
+    "크랙 하우스의 정면 사진을 찍어 확인합니다.",
+    "정보실의 사진을 찍어 확인합니다.",
+    "WD-40 100ml는 타르코프 전역의 공구 상자에서 찾을 수 있습니다."
+  ],
+  "tips": "골판지 호스는 올리에서 자주 발견되므로, 이곳을 먼저 탐색하는 것이 좋습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/Oli_shelve_2.png/revision/latest/scale-to-width-down/640?cb=20210118083150",
+      "caption": "골판지 호스를 찾을 수 있는 선반입니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/Oli_shelve_1.png/revision/latest/scale-to-width-down/640?cb=20210118082120",
+      "caption": "골판지 호스를 찾을 수 있는 선반입니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/63/Shoreline_map_general_store.png/revision/latest/scale-to-width-down/640?cb=20210119134742",
+      "caption": "일반 상점이 핑크색으로 표시되어 있습니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/General_store.png/revision/latest/scale-to-width-down/640?cb=20210118091409",
+      "caption": "일반 상점의 정면입니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/Wiper_pic.png/revision/latest/scale-to-width-down/640?cb=20210204225145",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fb/Customs_crack_shack.png/revision/latest/scale-to-width-down/640?cb=20210119135136",
+      "caption": "크랙 하우스 위치입니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/Crack_Shack.png/revision/latest/scale-to-width-down/640?cb=20210118093752",
+      "caption": "크랙 하우스의 정면입니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/Intel_room.png/revision/latest/scale-to-width-down/640?cb=20210118094621",
+      "caption": "정보실입니다."
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "taskId": "5a0449d586f77474e66227b7",
+  "nameKo": "스파 관광 - 파트 5",
+  "nameEn": "Spa Tour - Part 5",
+  "steps": [
+    "해안선(Shoreline)에서 시작합니다.",
+    "헬스 리조트(Health Resort) 북쪽에 위치한 벙커로 이동합니다. 벙커는 바위 통로 근처에 있습니다.",
+    "벙커 내부로 들어가서 의자 위에 놓인 '헬스 리조트 폐쇄 구역 키(Key to the closed premises of the Health Resort)'를 찾아줍니다. 이 키는 퀘스트가 활성화된 상태에서만 생성됩니다.",
+    "키를 획득한 후, 반드시 추출 지점으로 이동합니다.",
+    "추출 지점에 도착하면, 키를 평화주의자(Peacekeeper)에게 제출합니다.",
+    "만약 키를 획득한 후에 죽게 되면, 다시 벙커로 가서 키를 다시 찾아야 합니다."
+  ],
+  "tips": "퀘스트를 완료하기 위해서는 반드시 키를 추출하기 전에 안전하게 살아남아야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/PremisesOfSanatoriumKey.png/revision/latest?cb=20221012074100",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/93/SpaTour5BunkerMap.jpg/revision/latest/scale-to-width-down/640?cb=20250510094434",
+      "caption": "지도에 표시된 벙커"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/The_bunker_by_rock_passage.png/revision/latest/scale-to-width-down/640?cb=20250509065057",
+      "caption": "헬스 리조트 북쪽의 벙커"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Sanatorium_Key_Location.png/revision/latest/scale-to-width-down/640?cb=20260303194039",
+      "caption": "의자 위에 놓인 키"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_5",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

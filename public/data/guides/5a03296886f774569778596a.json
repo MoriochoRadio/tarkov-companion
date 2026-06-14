@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "taskId": "5a03296886f774569778596a",
+  "nameKo": "스파 관광 - 파트 4",
+  "nameEn": "Spa Tour - Part 4",
+  "steps": [
+    "해안선(Shoreline) 지역의 건강 리조트(Health Resort)로 가세요.",
+    "리조트의 동쪽 날개(East Wing) 2층에 있는 220호실로 가세요. 이 방은 항상 열려 있습니다.",
+    "220호실에서 발전기(generators)를 찾습니다.",
+    "이제 서쪽 날개(West Wing)로 이동하세요. 2층에 있는 219호실로 가야 합니다.",
+    "219호실에 들어가려면 건강 리조트 서쪽 날개 219호실 열쇠(Health Resort west wing room 219 key)가 필요합니다.",
+    "219호실에 들어가지 않고도 발전기를 찾을 수 있습니다. 220호실의 공동 발코니(joint balcony)에서 219호실을 바라보면 됩니다.",
+    "발코니에서 219호실을 바라보며 발전기를 확인하세요.",
+    "두 개의 방에서 발전기를 모두 찾은 후, 같은 레이드에서 탈출해야 합니다.",
+    "만약 한 방만 찾고 레이드를 나가면 퀘스트가 초기화됩니다."
+  ],
+  "tips": "발전기를 찾기 위해 두 방을 반드시 같은 레이드에서 찾아야 하므로 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d8/San.219.png/revision/latest?cb=20220707214939",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3d/220EastGens.png/revision/latest/scale-to-width-down/640?cb=20230122120012",
+      "caption": "220호실 동쪽에 있는 발전기"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/219WestGens.png/revision/latest/scale-to-width-down/640?cb=20230122120211",
+      "caption": "219호실 서쪽에 있는 발전기"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/220WestBalcony219.png/revision/latest/scale-to-width-down/640?cb=20230122120016",
+      "caption": "공동 발코니에서 219호실을 바라보는 모습"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_4",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

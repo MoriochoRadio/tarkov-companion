@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "taskId": "669fa394e0c9f9fafa082897",
+  "nameKo": "Forklift Certified",
+  "nameEn": "Forklift Certified",
+  "steps": [
+    "공장(Factory) 맵의 메인 플로어에서 총 12대의 지게차(forklift)를 찾아야 한다.",
+    "첫 번째 지게차는 'Gate 3' 추출 지점 맞은편에 위치해 있다. 추출 지점 바로 앞을 확인하자.",
+    "두 번째와 세 번째 지게차는 'Gate 1' 근처에 있다. Gate 1 주변을 꼼꼼히 살펴서 두 대를 모두 찾는다.",
+    "네 번째 지게차는 'Gate 0' 추출 지점 맞은편에 있다. Gate 0 추출 지점 앞을 주의 깊게 확인한다.",
+    "다섯 번째, 여섯 번째, 아홉 번째, 그리고 열한 번째 지게차는 실험실(laboratory) 옆에 밀집해 있다. 실험실 주변을 천천히 탐색하며 네 대를 모두 찾는다.",
+    "일곱 번째 지게차는 사무실(offices) 옆에 위치해 있다. 사무실 건물 주변을 확인해 지게차를 찾는다.",
+    "여덟 번째 지게차는 '1986'이라는 글자가 적힌 곳 바로 아래에 있다. 해당 표지판 근처를 집중적으로 살펴본다.",
+    "열 번째 지게차는 'Gate 2' 추출 지점 옆에 위치해 있다. Gate 2 추출 지점 주변을 확인한다.",
+    "열두 번째 지게차는 'Gate 3' 추출 지점 내부에 있다. Gate 3 추출 지점 안쪽까지 들어가서 지게차를 찾아야 한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e8/Forklift_Certified_Map.png/revision/latest/scale-to-width-down/640?cb=20240827183402",
+      "caption": "지게차 위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/14/FirstForklift.png/revision/latest/scale-to-width-down/640?cb=20240827180758",
+      "caption": "\"Gate 3\" 추출 지점 맞은편 첫 번째 지게차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/SecondForklift.png/revision/latest/scale-to-width-down/640?cb=20240827180758",
+      "caption": "Gate 1에 위치한 두 번째와 세 번째 지게차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/FourthForklift.png/revision/latest/scale-to-width-down/640?cb=20240827180806",
+      "caption": "\"Gate 0\" 추출 지점 맞은편 네 번째 지게차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5f/56911Forklifts.png/revision/latest/scale-to-width-down/640?cb=20240827180812",
+      "caption": "실험실 옆에 있는 다섯 번째, 여섯 번째, 아홉 번째, 열한 번째 지게차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bf/SeventhForklift.png/revision/latest/scale-to-width-down/640?cb=20240827180827",
+      "caption": "사무실 옆에 위치한 일곱 번째 지게차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/EigthForklift.png/revision/latest/scale-to-width-down/640?cb=20240827180828",
+      "caption": "\"1986\" 글자 아래에 있는 여덟 번째 지게차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f0/TenthForklift.png/revision/latest/scale-to-width-down/640?cb=20240827180834",
+      "caption": "Gate 2 옆에 위치한 열 번째 지게차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/TwelthForklift.png/revision/latest/scale-to-width-down/640?cb=20240827180840",
+      "caption": "\"Gate 3\" 추출 지점 내부에 있는 열두 번째 지게차"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Forklift_Certified",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

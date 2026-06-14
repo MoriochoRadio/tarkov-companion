@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "61958c366726521dd96828ec",
+  "nameKo": "화물 X - 파트 4",
+  "nameEn": "Cargo X - Part 4",
+  "steps": [
+    "MS2000 마커 1개를 준비한다. 이 아이템은 화물에 부착해야 하며, 부착 시 인벤토리에서 사라진다.",
+    "등대(Lighthouse) 맵의 서쪽 해안가로 이동한다.",
+    "회색 컨테이너 옆에 위치한 나무 상자를 찾는다. 이 상자가 퀘스트 대상 화물이다.",
+    "준비한 MS2000 마커를 나무 상자에 부착한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3f/CargoX4Map.png/revision/latest/scale-to-width-down/640?cb=20230903140714",
+      "caption": "지도에 표시된 화물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/97/CargoX4Cargo.png/revision/latest/scale-to-width-down/640?cb=20211219181310",
+      "caption": "회색 컨테이너 옆에 있는 화물"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_4",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

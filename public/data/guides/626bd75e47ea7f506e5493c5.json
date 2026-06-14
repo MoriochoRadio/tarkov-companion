@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "taskId": "626bd75e47ea7f506e5493c5",
+  "nameKo": "방송 - 파트 1",
+  "nameEn": "Broadcast - Part 1",
+  "steps": [
+    "메카닉(Mechanic) 레벨 1을 달성한 후 그의 퀘스트 'Signal - Part 3'를 수락하면 시그널 재머(Signal Jammer)를 메카닉 상점에서 구매할 수 있습니다.",
+    "등대(Lighthouse) 맵 북쪽에 위치한 정수장(water treatment plant) 지역으로 이동합니다.",
+    "정수장 지역 내 사무실 건물 1번(Office Building #1)을 찾습니다. 지도에 표시된 건물 위치를 참고하세요.",
+    "사무실 건물 1번의 1층으로 들어갑니다.",
+    "녹음 스튜디오(Recording Studio)는 건물 1층의 북동쪽 코너에 위치해 있습니다.",
+    "녹음 스튜디오에 들어가기 위해서는 수술실 열쇠(Operating room key)가 필요합니다. 이 열쇠는 퀘스트 진행에 반드시 필요하며, 별도로 획득 방법은 명시되어 있지 않습니다.",
+    "수술실 열쇠를 사용해 녹음 스튜디오 문을 열고 내부로 진입합니다.",
+    "녹음 스튜디오 내부에 시그널 재머(Signal Jammer)를 설치합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/OperatingRoomMap.png/revision/latest/scale-to-width-down/640?cb=20250425204420",
+      "caption": "지도에 표시된 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/10/OfficeBuilding1.png/revision/latest/scale-to-width-down/640?cb=20250425205505",
+      "caption": "정수장 내 사무실 건물 1번"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/OperatingRoom.png/revision/latest/scale-to-width-down/640?cb=20220807231245",
+      "caption": "스튜디오는 북동쪽 코너에 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/OperatingRoomClose.png/revision/latest/scale-to-width-down/640?cb=20220807231525",
+      "caption": "방 내부"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

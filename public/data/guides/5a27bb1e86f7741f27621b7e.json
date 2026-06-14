@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "5a27bb1e86f7741f27621b7e",
+  "nameKo": "화물 X - 파트 1",
+  "nameEn": "Cargo X - Part 1",
+  "steps": [
+    "해안선(Shoreline)으로 가서 건강 리조트(Health Resort)로 향합니다.",
+    "리조트에 도착하면 동쪽 날개(east wing)로 들어갑니다.",
+    "동쪽 날개 306호에 들어가기 위해 건강 리조트 동쪽 날개 306호 열쇠(Health Resort east wing room 306 key)를 사용합니다. 또는 308호 열쇠(Health Resort east wing room 308 key)를 사용하여 발코니를 통해 306호로 접근할 수 있습니다.",
+    "306호에 들어가면 의자 위에 Toughbook 강화 노트북(Toughbook reinforced laptop)이 있습니다.",
+    "노트북을 주워서 퀘스트 아이템 인벤토리에 추가합니다.",
+    "노트북을 가지고 안전하게 추출 지점으로 이동합니다.",
+    "추출 지점에 도착하면 노트북을 안전하게 추출합니다."
+  ],
+  "tips": "노트북은 퀘스트가 활성화되어 있을 때만 찾을 수 있으며, 추출하지 못하면 잃게 됩니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/75/San306East.png/revision/latest?cb=20220707220637",
+      "caption": "건강 리조트 동쪽 날개 위치가 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWing.jpg/revision/latest/scale-to-width-down/640?cb=20240520225533",
+      "caption": "의자 위에 있는 노트북"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Cargo_X_Pt_1_Laptop_Location.png/revision/latest/scale-to-width-down/640?cb=20260322212155",
+      "caption": "The laptop on the chair"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

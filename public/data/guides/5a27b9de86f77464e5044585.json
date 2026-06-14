@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "taskId": "5a27b9de86f77464e5044585",
+  "nameKo": "광신도 - 파트 1",
+  "nameEn": "The Cult - Part 1",
+  "steps": [
+    "해안선의 늪지대에 위치한 폐허가 된 집으로 가야 합니다. 먼저 교회를 찾아야 합니다.",
+    "교회를 찾은 후, 교회에서 시작되는 피의 흔적을 따라가세요.",
+    "피의 흔적을 따라가면, 폐허가 된 집에 도착하게 됩니다.",
+    "폐허가 된 집 안으로 들어가면, 정보원을 찾을 수 있습니다."
+  ],
+  "tips": "피의 흔적을 따라가는 동안 적의 공격에 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/CultPart1Map.png/revision/latest/scale-to-width-down/640?cb=20240707221508",
+      "caption": "지도에 표시된 교회와 집"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/Shorelinechurch.png/revision/latest/scale-to-width-down/640?cb=20240707222542",
+      "caption": "배경에 폐허가 된 집이 있는 교회"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d8/Shorelinebloodtrail.png/revision/latest/scale-to-width-down/640?cb=20230518160706",
+      "caption": "피의 흔적의 시작"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/Shorelineinformanthouse.png/revision/latest/scale-to-width-down/640?cb=20230518161211",
+      "caption": "찾고 있는 집"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2e/Shorelineinformant.png/revision/latest/scale-to-width-down/640?cb=20230518161816",
+      "caption": "집 안에 있는 정보원"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Cult_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

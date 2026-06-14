@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "5a27bb3d86f77411ea361a21",
+  "nameKo": "화물 X - 파트 2",
+  "nameEn": "Cargo X - Part 2",
+  "steps": [
+    "해안선(Shoreline) 지역의 건강 리조트(Health Resort)로 이동합니다.",
+    "리조트의 동쪽 날개(East Wing)로 들어갑니다.",
+    "동쪽 날개 1층에 있는 108호실(Room 108)로 가야 합니다. 이 방은 파란색 드럼통 위에 위치한 안전 폴더(Secure Folder 0013)가 있습니다.",
+    "방에 들어가면 파란색 드럼통 위에 안전 폴더가 놓여 있는 것을 확인할 수 있습니다.",
+    "안전 폴더를 주워서 인벤토리에 추가합니다. 이 아이템은 퀘스트가 활성화된 상태에서만 찾을 수 있습니다.",
+    "폴더를 주운 후, 안전하게 탈출 지점으로 이동합니다.",
+    "탈출 지점에 도착하면 폴더를 가지고 탈출합니다. 만약 이 아이템을 가지고 탈출하지 못하면 잃게 됩니다."
+  ],
+  "tips": "폴더는 반드시 레이드 획득(FIR) 상태여야 하며, 퀘스트가 활성화된 상태에서만 찾을 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWing.jpg/revision/latest/scale-to-width-down/640?cb=20240520225533",
+      "caption": "리조트 동쪽 날개 위치가 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/CargoXPt2_FolderMap.png/revision/latest/scale-to-width-down/640?cb=20250518053731",
+      "caption": "동쪽 날개 108호실 위치가 방 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/Inside_Room_108_in_East_wing_of_the_Resort.png/revision/latest/scale-to-width-down/640?cb=20250518133048",
+      "caption": "드럼통 위에 있는 폴더"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

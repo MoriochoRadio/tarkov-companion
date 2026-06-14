@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "5a03173786f77451cb427172",
+  "nameKo": "스파 관광 - 파트 2",
+  "nameEn": "Spa Tour - Part 2",
+  "steps": [
+    "세관(Shoreline)에서 시작하여, 남쪽으로 이동하여 샌토리움(Sanatorium)으로 향합니다.",
+    "샌토리움에 도착하면, 남쪽 면에서 헬리콥터를 찾습니다. 헬리콥터는 샌토리움의 남쪽에 위치해 있습니다.",
+    "헬리콥터에 도착하면, MS2000 마커(MS2000 Marker) 2개를 사용하여 헬리콥터에 마킹합니다. 마킹을 완료하면 해당 아이템은 플레이어의 인벤토리에서 제거됩니다.",
+    "헬리콥터 마킹을 완료한 후, 안전한 도로(safe road)로 이동합니다. 안전한 도로는 헬리콥터의 동쪽에 위치해 있습니다.",
+    "안전한 도로에 도착하면, 두 번째 MS2000 마커를 사용하여 해당 위치에 마킹합니다."
+  ],
+  "tips": "MS2000 마커는 프라퍼(Prapor)에게 구매할 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/SpaTourP2Mapped.png/revision/latest/scale-to-width-down/640?cb=20220211215259",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/98/Firstshorelineheli.png/revision/latest/scale-to-width-down/640?cb=20230628004615",
+      "caption": "헬리콥터는 샌토리움의 남쪽에 위치해 있습니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Secondshorelineheli.png/revision/latest/scale-to-width-down/640?cb=20180125222405",
+      "caption": "안전한 도로는 헬리콥터의 동쪽에 위치해 있습니다."
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "5ac3475486f7741d6224abd3",
+  "nameKo": "나쁜 습관",
+  "nameEn": "Bad Habit",
+  "steps": [
+    "말보로 담배(Malboro Cigarettes) 5개를 수집한다. 말보로 담배는 레이드 중에 묻힌 통(Buried barrel caches), 죽은 스캡(Dead Scavs), 지상 은닉처(Ground caches), 재킷 주머니(Jackets), 플라스틱 여행가방(Plastic suitcases), 배급 상자(Ration supply crates), 스포츠 가방(Sport bags) 등에서 흔히 발견할 수 있다.",
+    "스트라이크 담배(Strike Cigarettes) 5개를 수집한다. 말보로 담배와 마찬가지로 위에 언급한 장소들에서 쉽게 찾을 수 있다.",
+    "윌스턴 담배(Wilston cigarettes) 5개를 수집한다. 윌스턴 담배는 위 장소에서 발견 가능하며, 추가로 은신처(Hideout) 내 영양 단위(Nutrition Unit) 레벨 2에서 제작할 수도 있다.",
+    "수집한 말보로, 스트라이크, 윌스턴 담배 각 5개씩을 퀘스트 담당자에게 제출한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Cigred.png/revision/latest?cb=20250110174655",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Bad_Habit",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-14T15:57:47.512+09:00"
+}
