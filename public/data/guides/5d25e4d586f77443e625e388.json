@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "taskId": "5d25e4d586f77443e625e388",
+  "nameKo": "리저브",
+  "nameEn": "Reserve",
+  "steps": [
+    "리저브(Reserve) 맵에서 북서쪽에 위치한 지하 저장 창고 \"Д\"에 진입한다.",
+    "창고 내부에 들어가면 경사로 중 하나를 따라 내려간다.",
+    "내려간 후 오른쪽에 있는 식품 저장 케이지(food storage cages)로 이동한다.",
+    "식품 저장 케이지는 내부에 나무 상자(wooden crates)가 있어 쉽게 식별할 수 있다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/Reserv_guide.jpg/revision/latest/scale-to-width-down/640?cb=20230624234929",
+      "caption": "지도에 표시된 창고 \"Д\""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/41/ReserveQuestWarehouse.png/revision/latest/scale-to-width-down/640?cb=20251107232525",
+      "caption": "창고 \"Д\""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/Reservquest2.png/revision/latest/scale-to-width-down/640?cb=20201015063545",
+      "caption": "나무 상자가 있는 식품 저장 케이지"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Reserve_(quest)",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "taskId": "639135a7e705511c8a4a1b78",
+  "nameKo": "Ballet Lover",
+  "nameEn": "Ballet Lover",
+  "steps": [
+    "타르코프 시내(Street of Tarkov)에 위치한 Primorsky 48 아파트 건물 4층에 있는 10호 아파트를 찾아야 합니다.",
+    "10호 아파트는 인접한 Primorsky 46 아파트 건물의 계단에서 연결된 스카이브리지(skybridge)를 통해 접근할 수 있습니다.",
+    "스카이브리지 입장에는 Primorsky 46-48 스카이브리지 키(Primorsky 46-48 skybridge key)가 반드시 필요합니다. 이 키는 퀘스트 필수 아이템이며, 레이드 내에서 획득해야 합니다(플리마켓이나 트레이더 구매 불가).",
+    "Primorsky 46 아파트 계단으로 가는 길은 여러 경로가 있으니, 다음 사진들을 참고하여 안전하게 이동하세요: Primorsky 46 계단으로 가는 길 1, 2, 3번 경로.",
+    "Primorsky 46 계단에 도착하면, 최상층에 있는 스카이브리지 입구 문을 키로 열고 스카이브리지로 진입합니다.",
+    "스카이브리지를 건너 Primorsky 48 아파트 건물 쪽으로 이동하면, 10호 아파트 입구 문이 보입니다.",
+    "10호 아파트 문은 내부에서 부수고 나올 수 있으니, 출구 확보를 위해 문을 부술 준비를 하세요.",
+    "아파트 내부에 진입하면, 퀘스트 목표를 완료할 수 있습니다."
+  ],
+  "tips": "Primorsky 46-48 스카이브리지 키는 레이드 내에서만 획득 가능하므로, 키를 미리 확보하지 않으면 퀘스트 진행이 불가능합니다. 스카이브리지 입구 문과 아파트 문 주변에 적들이 있을 수 있으니 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/Apartment10Map.png/revision/latest/scale-to-width-down/640?cb=20230825214825",
+      "caption": "지도에 표시된 10호 아파트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Apartment10Outside.png/revision/latest/scale-to-width-down/640?cb=20230108161221",
+      "caption": "외부에서 본 10호 아파트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/UnderpassKeyMap.png/revision/latest/scale-to-width-down/640?cb=20230825214519",
+      "caption": "지도에 표시된 스카이브리지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/UnderpassKeyUnderpass.png/revision/latest/scale-to-width-down/640?cb=20230108161937",
+      "caption": "지상에서 본 스카이브리지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1b/UnderpassKeyWay1.png/revision/latest/scale-to-width-down/640?cb=20230102205921",
+      "caption": "Primorsky 46 계단으로 가는 길 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/UnderpassKeyWay2.png/revision/latest/scale-to-width-down/640?cb=20230102205914",
+      "caption": "Primorsky 46 계단으로 가는 길 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/UnderpassKeyWay3.png/revision/latest/scale-to-width-down/640?cb=20230102205906",
+      "caption": "Primorsky 46 계단으로 가는 길 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/UnderpassKeyWay4.png/revision/latest/scale-to-width-down/640?cb=20230102205319",
+      "caption": "Primorsky 46 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/UnderpassKeyStairsDoor.png/revision/latest/scale-to-width-down/640?cb=20230102204749",
+      "caption": "최상층 스카이브리지 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/53/UnderpassKeyUnderpassLockedDoor.png/revision/latest/scale-to-width-down/640?cb=20230102204853",
+      "caption": "열 수 있는 스카이브리지 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/UnderpassKeyDoor.png/revision/latest/scale-to-width-down/640?cb=20230102204654",
+      "caption": "Primorsky 48 아파트 10호 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4f/Apartment10Living.png/revision/latest/scale-to-width-down/640?cb=20230102212732",
+      "caption": "발레마이스터 아파트 내부"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Ballet_Lover",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

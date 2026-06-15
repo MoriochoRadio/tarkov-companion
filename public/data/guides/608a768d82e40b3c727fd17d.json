@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "608a768d82e40b3c727fd17d",
+  "nameKo": "해충 구제",
+  "nameEn": "Pest Control",
+  "steps": [
+    "퀘스트 목표는 검은색과 흰색 체스말 모양 막사 건물(black and white pawn barrack buildings) 내부 또는 인근에서 스캐브(Scav) 10명을 처치하는 것입니다.",
+    "스캐브가 몰리는 구역은 해당 막사 건물 주변으로, 지도에 표시된 구역을 참고하세요.",
+    "스캐브를 쉽게 유인하기 위해 일부러 적에게 공격당하거나 저주받는 상태가 되는 것도 도움이 됩니다.",
+    "레이드 시작 후 해당 막사 건물 주변으로 이동하여 스캐브를 찾아 처치하세요.",
+    "스캐브 10명을 처치하면 퀘스트가 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Pest_Control",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

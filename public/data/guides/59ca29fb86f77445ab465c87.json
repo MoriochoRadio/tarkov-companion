@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "taskId": "59ca29fb86f77445ab465c87",
+  "nameKo": "퍼니셔 - 파트 5",
+  "nameEn": "The Punisher - Part 5",
+  "steps": [
+    "퍼니셔 - 파트 5(The Punisher - Part 5) 퀘스트는 특정 무기와 방어구를 제출하는 임무입니다.",
+    "제출할 방어구는 6B47 Ratnik-BSh 헬멧(올리브 드랩 Olive Drab 또는 EMR 커버) 중 하나를 착용해야 하며, 킬을 위해 반드시 착용 상태여야 합니다. 단, 현재 EMR 북극형(Arctic variant)은 퀘스트에 사용할 수 없습니다.",
+    "또한 PACA 소프트 아머 또는 PACA 소프트 아머(라이벌 에디션 Rivals Edition)를 착용해야 하며, 강화된 PACA(주황색 배경)는 사용할 수 없습니다. DRD 바디 아머도 퀘스트에 사용할 수 없습니다.",
+    "무기 제출 조건은 다음과 같습니다. 제출할 무기는 사용 가능한 상태여야 하며, 아이콘이 빨간색이면 필수 부품이 없어서 제출할 수 없습니다.",
+    "제출 가능한 무기는 M4A1 1개, PM 권총 또는 PM(t) 권총 2개, AK-74 계열( AK-74, AK-74M, AK-74N, AKS-74, AKS-74N) 중 1개입니다.",
+    "M4A1 무기는 레이드 중 획득(FIR)해야 하며, 퀘스트 보상으로 받은 무기도 사용 가능합니다.",
+    "PM 권총과 PM(t) 권총은 스캐브(Scav)가 사용하는 무기이며, 레이드 획득이 필요합니다.",
+    "AK-74M과 AK-74N은 은신처(히든 플레이스)의 작업대에서 제작할 수 있으므로, 제작하거나 레이드에서 획득하여 제출할 수 있습니다.",
+    "무기와 방어구는 모두 킬을 위해 착용하거나 제출할 때 상태가 양호해야 하므로, 아이템 상태를 반드시 확인하세요."
+  ],
+  "tips": "퀘스트 제출용 무기와 방어구는 반드시 사용 가능한 상태여야 하므로, 부품이 빠지거나 손상된 아이템은 제출할 수 없습니다. EMR 북극형 헬멧과 DRD 바디 아머, 강화된 PACA 아머는 퀘스트에 사용할 수 없으니 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/6bhelmetcamo.png/revision/latest?cb=20250110180836",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_5",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

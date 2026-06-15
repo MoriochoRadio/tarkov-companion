@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "639282134ed9512be67647ed",
+  "nameKo": "도로 폐쇄",
+  "nameEn": "Road Closed",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov) 맵에서 퀘스트 목표인 화물 호송대와 매복 지점을 찾아야 합니다.",
+    "화물 호송대는 LexOs 자동차 매장과 Pinewood 호텔 사이에 위치해 있습니다.",
+    "매복 지점은 자동차 매장 뒤쪽에 있는 AGS-30 유탄발사기가 설치된 녹색 컨테이너에서부터 자동차 매장의 북동쪽 부분까지 이어지는 구역입니다.",
+    "LexOs 자동차 매장 구내는 클레이모어 지뢰가 다수 설치되어 있으니 매우 주의해야 합니다.",
+    "맵에서 클레이모어 설치 위치를 확인하고, 신중하게 이동하며 화물 호송대와 매복 지점을 탐색하세요."
+  ],
+  "tips": "LexOs 자동차 매장 내부는 클레이모어가 많으므로, 이동 시 천천히 주변을 살피고 함정을 조심하세요. 매복 지점은 자동차 매장 뒤쪽 녹색 컨테이너 주변부터 북동쪽까지 넓게 퍼져 있으니, 여러 방향에서 접근할 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/StreetsConvoyMap.png/revision/latest/scale-to-width-down/640?cb=20230826232413",
+      "caption": "클레이모어가 표시된 화물 호송대와 매복 지점 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/LexOsClaymoreOverview.png/revision/latest/scale-to-width-down/640?cb=20250203160104",
+      "caption": "LexOs 자동차 매장 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/78/StreetsConvoy.png/revision/latest/scale-to-width-down/640?cb=20230109012737",
+      "caption": "화물 호송대"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/68/StreetsConvoyAmbushSpot.png/revision/latest/scale-to-width-down/640?cb=20230109014619",
+      "caption": "매복 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Road_Closed",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

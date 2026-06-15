@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "taskId": "673f5a4976553f78350bdac1",
+  "nameKo": "Hot Wheels - Let's Try Again",
+  "nameEn": "Hot Wheels - Let's Try Again",
+  "steps": [
+    "수리 센터(Repair Center, 화이트 나이트 White Knight) 내 두 개의 차고 건물 중 더 큰 차고 건물로 이동한다.",
+    "차고 내부를 탐색하여 BTR 바퀴를 찾는다.",
+    "퀘스트 아이템인 MS2000 마커(MS2000 Marker)를 인벤토리에서 꺼낸다.",
+    "찾은 BTR 바퀴에 MS2000 마커를 사용하여 바퀴를 표시한다. 이때 마커 아이템은 인벤토리에서 사라진다."
+  ],
+  "tips": "BTR 바퀴는 수리 센터 내 큰 차고 건물에만 있으므로 다른 장소를 수색할 필요가 없다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/HotWheelsMap.png/revision/latest/scale-to-width-down/640?cb=20250116191920",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/60/SurplusGoodsGarage.png/revision/latest/scale-to-width-down/640?cb=20260424184251",
+      "caption": "차고 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bb/HotWheelsLocation.png/revision/latest/scale-to-width-down/640?cb=20250116191523",
+      "caption": "차고 내 BTR 바퀴"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hot_Wheels_-_Let's_Try_Again",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

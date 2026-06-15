@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "taskId": "673f61a066e6a521aa04b62b",
+  "nameKo": "Order From Outside",
+  "nameEn": "Order From Outside",
+  "steps": [
+    "Reserve(리저브) 맵의 공역 통제 센터(Airspace Control Center, White King) 1층에 있는 창고 방에서 KOSA UAV 전자 교란 장치를 찾아야 합니다. 이 방은 동쪽 출입구로 들어가면 오른쪽에 위치해 있습니다.",
+    "창고 방 안에는 KOSA UAV 전자 교란 장치가 여러 위치에 스폰됩니다. 첫 번째 위치는 방 뒤쪽 왼쪽 구석, 초록색 상자 뒤입니다.",
+    "두 번째 위치는 방 안 테이블 아래입니다.",
+    "세 번째 위치는 방 뒤쪽 오른쪽 구석의 초록색 상자 안입니다.",
+    "이 장비는 퀘스트가 활성화된 상태에서만 찾을 수 있으며, 획득 시 자동으로 퀘스트 아이템 인벤토리에 들어갑니다. 레이드 탈출 전에 이 아이템을 잃으면 퀘스트 실패 처리됩니다.",
+    "장비를 획득한 후에는 Woods(삼림) 맵 북쪽의 황폐한 마을 남쪽에 위치한 무덤지대에 이 장비를 은닉(스태시)해야 합니다.",
+    "무덤지대는 삼림 맵 북쪽에 있으며, 지도에 표시된 위치를 참고하면 쉽게 찾을 수 있습니다."
+  ],
+  "tips": "Battery Change from the BTR Driver 퀘스트를 완료하면 이 퀘스트가 자동으로 실패하니 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/Airspace_Control_Center_Map.jpg/revision/latest/scale-to-width-down/640?cb=20250120232611",
+      "caption": "지도에 표시된 공역 통제 센터 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/Order_From_Outside_Room_Map.png/revision/latest?cb=20250121095652",
+      "caption": "지도에 표시된 창고 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8f/Order_From_Outside_Door.png/revision/latest/scale-to-width-down/640?cb=20250121094609",
+      "caption": "동쪽에서 들어갈 때 방 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/Order_From_Outside_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250121095845",
+      "caption": "초록색 상자 뒤쪽 왼쪽 구석에 위치한 첫 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/Order_From_Outside_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250121100116",
+      "caption": "테이블 아래에 위치한 두 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bf/Order_From_Outside_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250121100108",
+      "caption": "초록색 상자 안 뒤쪽 오른쪽 구석에 위치한 세 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Protect_the_Sky_Map.png/revision/latest/scale-to-width-down/640?cb=20250119203611",
+      "caption": "지도에 표시된 무덤지대 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Order_From_Outside_Stashing_Location.png/revision/latest/scale-to-width-down/640?cb=20250323135706",
+      "caption": "무덤지대 전경"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Order_From_Outside",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

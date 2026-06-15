@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "taskId": "639136d68ba6894d155e77cf",
+  "nameKo": "안전한 통로",
+  "nameEn": "Green Corridor",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에서 퀘스트를 진행한다.",
+    "화물 호송대(cargo convoy)는 LexOs 자동차 딜러십(LexOs car dealership)과 파인우드 호텔(Pinewood hotel) 사이에 위치해 있다.",
+    "LexOs 자동차 딜러십 구역은 클레이모어 지뢰(Claymores)가 다수 설치되어 있으니 매우 조심해야 한다.",
+    "Ambush spot(매복 지점)은 자동차 딜러십 뒤쪽에 있는 AGS-30 유탄발사기가 설치된 녹색 컨테이너에서 시작해 자동차 딜러십의 북동쪽 부분까지 이어지는 구역이다.",
+    "먼저 화물 호송대를 찾아서 위치를 확인한다.",
+    "그 후, LexOs 자동차 딜러십 뒤쪽의 녹색 컨테이너가 있는 매복 지점으로 이동한다.",
+    "매복 지점과 화물 호송대 주변에 설치된 클레이모어 지뢰를 주의하며 이동한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/StreetsConvoyMap.png/revision/latest/scale-to-width-down/640?cb=20230826232413",
+      "caption": "클레이모어 지뢰가 표시된 화물 호송대와 매복 지점 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/LexOsClaymoreOverview.png/revision/latest/scale-to-width-down/640?cb=20250203160104",
+      "caption": "LexOs 단지 개요"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/78/StreetsConvoy.png/revision/latest/scale-to-width-down/640?cb=20230109012737",
+      "caption": "화물 호송대"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/68/StreetsConvoyAmbushSpot.png/revision/latest/scale-to-width-down/640?cb=20230109014619",
+      "caption": "매복 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Green_Corridor",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

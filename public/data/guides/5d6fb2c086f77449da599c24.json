@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5d6fb2c086f77449da599c24",
+  "nameKo": "하루에 사과 한 개가 의사를 멀리하게 해준다",
+  "nameEn": "An Apple a Day Keeps the Doctor Away",
+  "steps": [
+    "프라퍼(Prapor)에게서 '하루에 사과 한 개가 의사를 멀리하게 해준다(An Apple a Day Keeps the Doctor Away)' 퀘스트를 수락한다.",
+    "퀘스트 목표는 400,000 루블(Roubles)을 프라퍼에게 전달하는 것이다.",
+    "400,000 루블은 레이드 중 획득하거나, 플리마켓에서 구매할 수 있다.",
+    "루블을 준비한 후 프라퍼에게 돌아가서 퀘스트를 완료한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/An_Apple_a_Day_Keeps_the_Doctor_Away",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

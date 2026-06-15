@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "taskId": "63a511ea30d85e10e375b045",
+  "nameKo": "Broadcast - Part 3",
+  "nameEn": "Broadcast - Part 3",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov) 맵에서 Malevicha 거리의 '도스토예프스키(Dostoevski)' 레스토랑 위치를 찾는다. 지도에서 해당 레스토랑이 표시된 곳을 참고한다.",
+    "'도스토예프스키' 레스토랑에 진입한다. 레스토랑 내부 구조를 파악하며 방송 위치를 찾는다.",
+    "레스토랑 내부에서 방송 장비가 설치된 위치를 찾아 방송을 확인한다. 방송 위치는 레스토랑 내부에 명확히 표시되어 있으니 주변을 주의 깊게 살핀다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/Broadcast3Map.png/revision/latest/scale-to-width-down/640?cb=20230826212317",
+      "caption": "지도에 표시된 레스토랑 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Broadcast_part_3%2C1.png/revision/latest/scale-to-width-down/640?cb=20230109021829",
+      "caption": "도스토예프스키 레스토랑"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/Broadcast_part_3%2C2.png/revision/latest/scale-to-width-down/640?cb=20230109021823",
+      "caption": "방송 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

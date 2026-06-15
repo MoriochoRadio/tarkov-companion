@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "5ae327c886f7745c7b3f2f3f",
+  "nameKo": "건스미스 - 파트 10",
+  "nameEn": "Gunsmith - Part 10",
+  "steps": [
+    "AK-105을 준비한다. 이 총은 내구도 60 이상이어야 하며, 반동은 500 이하, 인체공학 지수는 21 이상이어야 한다.",
+    "조준 거리(sighting range)는 800 이상이어야 하며, 무게는 4.8kg 이하로 맞춘다.",
+    "소음기(사일렌서)를 반드시 장착한다.",
+    "탄창은 AK-74 5.45x39 6L31 60발 탄창을 사용해야 한다.",
+    "퀘스트 설명에는 8칸 슬롯 장착을 요구하지만, 현재는 10칸 슬롯 장착도 허용된다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_10",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

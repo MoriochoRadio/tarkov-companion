@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "673f629c5b555b53460cf827",
+  "nameKo": "Building Foundations",
+  "nameEn": "Building Foundations",
+  "steps": [
+    "래그맨(Ragman), 프라퍼(Prapor), 피스키퍼(Peacekeeper)에게 각각 탄약과 흰색 바라클라바(Balaclava (White))를 제외한 아이템 50개씩 판매해야 한다.",
+    "판매 횟수가 바로 업데이트되지 않을 수 있으므로, 판매 후에는 레이드 준비를 하고 즉시 취소하거나 게임을 재시작하여 프로필을 새로 고침한다."
+  ],
+  "tips": "판매할 아이템은 레이드에서 획득하거나 플리마켓에서 구매할 수 있으며, 탄약과 흰색 바라클라바는 판매 카운트에 포함되지 않으니 주의한다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Building_Foundations",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

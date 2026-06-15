@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "6193850f60b34236ee0483de",
+  "nameKo": "긴 도로",
+  "nameEn": "Long Road",
+  "steps": [
+    "등대(Lighthouse) 맵에 진입한다.",
+    "맵 내 주요 도로를 따라 이동하며 스캐브(Scav) 4명을 처치해야 한다.",
+    "스캐브들은 주요 도로 주변에 분포해 있으므로 도로를 따라 주의 깊게 탐색한다.",
+    "스캐브를 4명 모두 처치하면 퀘스트가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/72/LongRoadMap.png/revision/latest/scale-to-width-down/640?cb=20211219191954",
+      "caption": "퀘스트 진행 구역 대략 표시"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Long_Road",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "673f348dd3346c21670217e7",
+  "nameKo": "Shipping Delay - Part 1",
+  "nameEn": "Shipping Delay - Part 1",
+  "steps": [
+    "삼림(Woods) 맵 북서쪽에 위치한 기차 창고 건물에 가야 합니다. 이 창고는 BTR 운전사 택시 서비스를 이용해야만 접근할 수 있습니다.",
+    "기차 창고 내부에는 프라퍼(Prapor)의 소포가 두 군데 중 한 곳에 스폰됩니다. 첫 번째 위치는 침대 옆 탁자 아래입니다.",
+    "두 번째 위치는 창고 뒤쪽 사무실 내 책상 위입니다.",
+    "소포를 획득하면 퀘스트 아이템 인벤토리에 자동으로 들어가며, 이 아이템은 퀘스트가 활성화되어 있을 때만 레이드 내에서 획득할 수 있습니다.",
+    "획득한 소포를 가지고 창고를 빠져나와야 하며, 창고를 나갈 때는 서쪽에 있는 기차 위를 걸어서 나갈 수 있습니다.",
+    "기차 위를 걸을 때는 중앙을 유지하여 저격수나 지뢰에 맞지 않도록 주의해야 합니다.",
+    "소포를 들고 레이드에서 무사히 탈출해야 퀘스트가 완료됩니다. 탈출하지 못하면 소포를 잃게 됩니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/A_Helping_Hand_Building_Map.png/revision/latest/scale-to-width-down/640?cb=20250115231915",
+      "caption": "지도에 표시된 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/A_Helping_Hand_Building.png/revision/latest/scale-to-width-down/640?cb=20250325002847",
+      "caption": "목표 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/77/A_Helping_Hand_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250115232153",
+      "caption": "침대 옆 탁자 아래 첫 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f9/A_Helping_Hand_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250115232421",
+      "caption": "창고 뒤쪽 사무실 내 책상 위 두 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/WoodsTrainDepotExit.png/revision/latest/scale-to-width-down/640?cb=20250403233648",
+      "caption": "기차로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/WoodsTrainDepotExit2.png/revision/latest/scale-to-width-down/640?cb=20250403234347",
+      "caption": "기차"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Shipping_Delay_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

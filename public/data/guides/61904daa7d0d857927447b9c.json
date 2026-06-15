@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "61904daa7d0d857927447b9c",
+  "nameKo": "은둔자",
+  "nameEn": "The Hermit",
+  "steps": [
+    "동쪽 섬에 위치한 마을로 이동한다. 이 마을은 등대(Lighthouse) 맵에 있다.",
+    "마을 내에서 예거(Jaeger)의 친구들이 숨겨둔 은신처를 찾는다. 은신처는 마을 내 특정 건물 문 아래에 위치해 있다.",
+    "은신처 문 아래에서 봉인된 편지(Sealed letter)를 찾는다. 이 아이템은 퀘스트가 활성화된 상태에서만 레이드 내에서 획득할 수 있으며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "봉인된 편지를 획득한 후, 반드시 편지를 가지고 안전하게 추출해야 한다. 만약 편지를 가지고 추출에 실패하면 아이템을 잃게 된다.",
+    "퀘스트 완료를 위해서는 봉인된 편지를 들고 추출해야 하므로, 추출 지점까지 안전하게 이동한다."
+  ],
+  "tips": "은신처 위치는 등대 맵 내 동쪽 섬 마을에 있으며, 문 아래에 편지가 숨겨져 있어 주변을 꼼꼼히 살펴야 한다. 편지를 획득한 후에는 적의 공격을 피하며 안전하게 추출하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0a/Lighthouse_The_Hermit.png/revision/latest/scale-to-width-down/640?cb=20211219153342",
+      "caption": "지도에 표시된 은신처 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dd/Hermit_spawn.png/revision/latest/scale-to-width-down/640?cb=20211219153333",
+      "caption": "편지가 있는 은신처 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/Letter_beneath_door_of_stash.png/revision/latest/scale-to-width-down/640?cb=20220102093050",
+      "caption": "은신처 문 아래에 있는 편지 클로즈업"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Hermit",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

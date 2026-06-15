@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "taskId": "5d25e48d86f77408251c4bfb",
+  "nameKo": "수상한 사업",
+  "nameEn": "Shady Business",
+  "steps": [
+    "레이드 내에서 스캐브(Scav)의 주머니와 가방, 죽은 스캐브 시체에서 Secure Flash Drive(보안 플래시 드라이브)를 찾는다.",
+    "공통 자금 보관함(Common fund stash), 플라스틱 여행가방, 금고, 서랍, 지상 은닉처(Ground caches), 매장된 통 은닉처(Buried barrel caches), 그리고 에어드롭(Airdrops)에서도 Secure Flash Drive를 획득할 수 있다.",
+    "삼림(Woods) 맵의 목재 캠프 근처 텐트에는 최대 2개의 Secure Flash Drive가 고정 스폰된다. 텐트 위치는 지도에 표시되어 있으니 참고한다.",
+    "세관(Customs) 맵의 2층 기숙사 근처 캠프 사이트에도 최대 2개의 Secure Flash Drive가 고정 스폰된다. 캠프 위치 역시 지도에 표시되어 있다.",
+    "세관(Customs) 2층 기숙사 110호 침대 위에서 Secure Flash Drive를 찾을 수 있다.",
+    "인터체인지(Interchange) 맵의 OLI, IDEA, Goshan 사무실 내 여러 컴퓨터 앞에 Secure Flash Drive가 꽂혀 있는 경우가 많으니 컴퓨터를 확인한다.",
+    "Secure Flash Drive는 은신처(히든아웃) 내 정보 센터(Intelligence center) 레벨 1에서 제작할 수도 있지만, 퀘스트 제출용으로는 레이드 획득(FIR)한 아이템이 필요하다.",
+    "퀘스트 제출용 Secure Flash Drive 3개를 모은 후 퀘스트에 제출한다.",
+    "추가로, 퀘스트 'The Huntsman Path - Evil Watchman' 보상으로 Secure Flash Drive 2개를 받을 수 있다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/USB_Tent_Location.png/revision/latest/scale-to-width-down/640?cb=20210219105528",
+      "caption": "지도에 표시된 텐트 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/USB_Location.png/revision/latest/scale-to-width-down/640?cb=20171125201307",
+      "caption": "텐트 안에 있는 플래시 드라이브들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/47/CustomsTentFlashDriveMap.png/revision/latest/scale-to-width-down/640?cb=20221114212912",
+      "caption": "지도에 표시된 캠프 사이트 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/Usb_campsite_customs.jpg/revision/latest/scale-to-width-down/640?cb=20200611150015",
+      "caption": "캠프 사이트에 있는 플래시 드라이브들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/16/SecureFlashDriveSpawn.png/revision/latest/scale-to-width-down/640?cb=20200405022644",
+      "caption": "침대 위에 있는 플래시 드라이브"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/Drive-in-PC.png/revision/latest/scale-to-width-down/640?cb=20180322170709",
+      "caption": "컴퓨터에 꽂혀 있는 플래시 드라이브"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Shady_Business",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

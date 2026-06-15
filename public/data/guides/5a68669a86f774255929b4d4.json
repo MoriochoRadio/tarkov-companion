@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "taskId": "5a68669a86f774255929b4d4",
+  "nameKo": "의료 개인 정보 보호 - 파트 5",
+  "nameEn": "Health Care Privacy - Part 5",
+  "steps": [
+    "공장(Factory) 맵의 3층에 위치한 'Breach Room'(침입 방)을 찾아야 합니다. 이 방은 사무실(office)과 잠긴 방 사이에 위치해 있습니다.",
+    "밤 시간에 공장 맵에 진입하여 준비한 Gunpowder \"Kite\" 화약 3개를 침입 방 내부에 설치합니다.",
+    "각 Gunpowder \"Kite\"를 설치하는 데는 30초가 소요되며, 총 3개 설치 시 90초가 걸립니다.",
+    "설치 중에는 침입 방 문을 닫는 것이 좋습니다. 왜냐하면 스카브(Scav)들이 복도를 주기적으로 돌아다니기 때문입니다.",
+    "저항을 최소화하고 안전하게 퀘스트를 완료하려면, 아이템 설치 시 함께 방어해줄 스쿼드를 데려가는 것을 권장합니다.",
+    "퀘스트 완료를 위해 반드시 성공적으로 탈출할 필요는 없습니다."
+  ],
+  "tips": "Gunpowder \"Kite\"는 레이드 획득(FIR) 아이템으로, 플리마켓이나 트레이더 구매는 불가능합니다. 밤 시간에만 설치가 가능하므로, 시간대를 잘 맞춰서 공장 맵에 진입하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/00/HCPP5.png/revision/latest/scale-to-width-down/640?cb=20240824191113",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/The_breach_room.png/revision/latest/scale-to-width-down/640?cb=20240821223335",
+      "caption": "Gunpowder \"Kite\"를 설치하는 '침입 방'의 문"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_5",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

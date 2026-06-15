@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "taskId": "5a68661a86f774500f48afb0",
+  "nameKo": "의료 개인 정보 보호 - 파트 1",
+  "nameEn": "Health Care Privacy - Part 1",
+  "steps": [
+    "프라퍼(Prapor) LL1 레벨에서 MS2000 마커 3개를 구매한다.",
+    "세관(Customs) 맵에서 두 대의 구급차를 찾아야 한다. 이 두 구급차는 '터널(Tunnel)' 추출 지점 근처에 위치해 있다.",
+    "터널 추출 지점 근처에 있는 첫 번째 구급차 위치로 이동한다. (지도 상에 표시된 위치 참고)",
+    "터널 추출 지점 근처에 있는 두 번째 구급차 위치로 이동한다. (지도 상에 표시된 위치 참고)",
+    "세관 맵 내 헬리콥터 근처의 보건 휴양지(Health Resort)로 이동한다.",
+    "보건 휴양지 근처에 위치한 세 번째 구급차를 찾는다."
+  ],
+  "tips": "MS2000 마커는 프라퍼 LL1에서 구매할 수 있으므로 레이드 내에서 찾지 않아도 된다. 구급차 위치는 세관 맵 내 터널 추출 지점과 헬리콥터 근처 보건 휴양지에 명확히 표시되어 있어 위치 찾기가 수월하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/56/HCPP1.png/revision/latest/scale-to-width-down/640?cb=20220214001524",
+      "caption": "지도에 표시된 구급차 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/Ambulance2.png/revision/latest/scale-to-width-down/640?cb=20180624224725",
+      "caption": "터널 추출 지점에 있는 구급차 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/57/Ambulance1.png/revision/latest/scale-to-width-down/640?cb=20180624224723",
+      "caption": "터널 추출 지점에 있는 구급차 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/Ambulance3.png/revision/latest/scale-to-width-down/640?cb=20180624224729",
+      "caption": "보건 휴양지에 있는 구급차 3"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "taskId": "669fa3a3ad7f1eac2607ed48",
+  "nameKo": "Health Care Privacy - Part 6",
+  "nameEn": "Health Care Privacy - Part 6",
+  "steps": [
+    "공장(Factory) 맵에서 'Med Tent Gate' 추출 지점으로 이동한다. 이 출구는 공장 비상구 열쇠(Factory emergency exit key)가 있어야만 들어갈 수 있다.",
+    "비상구 열쇠를 사용해 'Med Tent Gate' 출구 문을 열고 안으로 진입한다.",
+    "안에 있는 죽은 작업자(Dead worker)를 찾는다. 위치는 퀘스트 지도에 표시된 곳과 일치한다.",
+    "죽은 작업자의 몸에서 혈액 샘플(Blood sample)을 채취한다. 샘플 채취 위치는 몸 위에 표시된 지점이다.",
+    "혈액 샘플은 퀘스트 활성 상태에서만 획득 가능하며, 획득 시 자동으로 퀘스트 아이템 인벤토리에 들어간다.",
+    "혈액 샘플을 획득한 후 반드시 안전하게 추출해야 하며, 추출에 실패하면 샘플을 잃게 된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/59/HealthCarePrivacyPart6Map.jpg/revision/latest/scale-to-width-down/640?cb=20240828000632",
+      "caption": "지도에 표시된 죽은 작업자 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/Blood1.png/revision/latest/scale-to-width-down/640?cb=20240827235909",
+      "caption": "시체에서 혈액 샘플 채취 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_6",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

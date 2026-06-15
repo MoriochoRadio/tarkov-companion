@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "taskId": "673f2cd5d3346c2167020484",
+  "nameKo": "Shipping Delay - Part 2",
+  "nameEn": "Shipping Delay - Part 2",
+  "steps": [
+    "세관(Woods) 맵 내 기차 기지(Train Depot)에 지정된 세 곳을 정찰해야 한다. 기차 기지는 BTR 운전사의 택시 서비스를 이용해야만 접근할 수 있다.",
+    "기차 기지 내 첫 번째 위치는 창고(Warehouse)이다. 창고 위치는 지도에 표시되어 있으니 참고한다.",
+    "두 번째 위치는 사무실(Office)이다. 사무실 역시 지도에 표시되어 있으며, 내부를 정찰한다.",
+    "세 번째 위치는 차고(Garages)이다. 차고 위치도 지도에 표시되어 있으니 찾아가 정찰한다.",
+    "정찰을 모두 완료한 후에는 반드시 ‘도움의 손길(A Helping Hand)’ 퀘스트도 완료해야 이 퀘스트를 제출할 수 있다.",
+    "기차 기지에서 나갈 때는 서쪽에 있는 기차 위를 걸어서 나가는 방법도 있다. 기차 위를 걸을 때는 중앙을 유지하여 저격수의 공격이나 지뢰 피해를 피하는 것이 중요하다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/39/Shipping_Delay_Part_2_location.png/revision/latest/scale-to-width-down/640?cb=20250116182223",
+      "caption": "지도에 표시된 위치들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Warehouse_Depot_Woods.png/revision/latest/scale-to-width-down/640?cb=20250325002754",
+      "caption": "1. 창고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/A_Helping_Hand_Building.png/revision/latest/scale-to-width-down/640?cb=20250325002847",
+      "caption": "2. 사무실"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/Garages_Depot_Woods.png/revision/latest/scale-to-width-down/640?cb=20250325002646",
+      "caption": "3. 차고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/WoodsTrainDepotExit.png/revision/latest/scale-to-width-down/640?cb=20250403233648",
+      "caption": "기차로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/WoodsTrainDepotExit2.png/revision/latest/scale-to-width-down/640?cb=20250403234347",
+      "caption": "기차"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Shipping_Delay_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

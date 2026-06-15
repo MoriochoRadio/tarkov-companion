@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "5a68663e86f774501078f78a",
+  "nameKo": "의료 개인 정보 보호 - 파트 2",
+  "nameEn": "Health Care Privacy - Part 2",
+  "steps": [
+    "세관(Shoreline) 맵의 리조트(Health Resort) 서쪽 동(서윙, west wing) 306호실을 열기 위해서는 Health Resort west wing room 306 key가 필요하다. 이 열쇠는 퀘스트 진행에 필수적이다.",
+    "서쪽 동 306호실은 창문턱에 Secure Folder 0060이 놓여 있는 방이다. 방 안으로 들어가 창문턱을 확인하여 Secure Folder 0060을 획득한다.",
+    "Secure Folder 0060은 퀘스트 아이템으로, 퀘스트가 활성화되어 있을 때만 획득할 수 있다. 획득 시 자동으로 퀘스트 아이템 인벤토리에 들어가며, 레이드에서 Secure Folder 0060을 가지고 탈출하지 못하면 아이템을 잃게 된다.",
+    "Secure Folder 0060을 획득한 후에는 안전하게 탈출하여 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/Inside_West_wing_room_306.png/revision/latest/scale-to-width-down/640?cb=20181227013136",
+      "caption": "창문턱에 놓인 폴더 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/HealthCarePrivacyPart2Docs.png/revision/latest/scale-to-width-down/640?cb=20181227013308",
+      "caption": "폴더"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

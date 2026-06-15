@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "taskId": "5a68665c86f774255929b4c7",
+  "nameKo": "의료 개인 정보 보호 - 파트 3",
+  "nameEn": "Health Care Privacy - Part 3",
+  "steps": [
+    "삼림(Woods) 맵의 동쪽 호수 옆 해안가에 위치한 미니밴을 찾는다. 미니밴 위치는 지도에 표시되어 있어 쉽게 찾을 수 있다.",
+    "미니밴의 오른쪽 미닫이문에서 혈액 샘플(Blood sample)을 채취한다. 혈액 샘플은 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동된다.",
+    "혈액 샘플을 획득한 후, 반드시 안전하게 추출해야 한다. 추출에 실패하면 혈액 샘플을 잃게 되므로 주의한다."
+  ],
+  "tips": "혈액 샘플은 퀘스트가 활성화된 상태에서만 레이드 내에서 획득할 수 있으므로, 퀘스트 진행 중일 때만 미니밴에서 채취 가능하다. 추출 실패 시 아이템을 잃으니 안전한 경로로 빠르게 탈출할 것을 권장한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/WoodsVanLocation.png/revision/latest/scale-to-width-down/640?cb=20230618182653",
+      "caption": "지도에 표시된 미니밴 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/The_car_by_the_lake.png/revision/latest/scale-to-width-down/640?cb=20230618183141",
+      "caption": "호숫가에 있는 미니밴"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/The_blood_sample.png/revision/latest/scale-to-width-down/640?cb=20230618183303",
+      "caption": "혈액 샘플 채취 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}

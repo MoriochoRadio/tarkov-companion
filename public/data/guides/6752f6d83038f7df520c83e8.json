@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "taskId": "6752f6d83038f7df520c83e8",
+  "nameKo": "A Helping Hand",
+  "nameEn": "A Helping Hand",
+  "steps": [
+    "세관 맵이 아닌 삼림(Woods) 맵에서 진행하는 퀘스트입니다.",
+    "퀘스트 목표는 프라퍼(Prapor)의 소포(Package for Prapor)를 찾는 것입니다. 이 소포는 레이드 중에만 획득 가능하며, 퀘스트가 활성화되어 있을 때만 나타납니다.",
+    "소포는 삼림 북서쪽에 위치한 기차 창고(Train Depot)의 건물 두 곳 중 한 곳에서 발견할 수 있습니다. 창고는 BTR 운전수 택시 서비스(BTR Driver's taxi service)를 통해서만 접근할 수 있습니다.",
+    "기차 창고 건물은 맵에 표시된 위치에 있으며, 건물 외관은 이미지로 확인할 수 있습니다.",
+    "첫 번째 소포 스폰 위치는 침대 옆 탁자 아래입니다. 이곳을 꼼꼼히 확인하세요.",
+    "두 번째 소포 스폰 위치는 건물 뒤쪽 사무실의 책상 위입니다. 이곳도 반드시 확인해야 합니다.",
+    "소포를 획득하면 아이템이 자동으로 퀘스트 아이템 인벤토리로 이동합니다. 만약 소포를 들고 추출에 실패하면 소포를 잃게 되니 주의하세요.",
+    "소포를 획득한 후에는 프라퍼의 다른 퀘스트인 'Shipping Delay - Part 1' 진행 중인 프라퍼에게 소포를 전달해야 합니다.",
+    "기차 창고에서 나갈 때는 서쪽에 있는 기차 위를 걸어서 나갈 수도 있습니다. 이때는 기차 중앙을 따라 이동하여 저격수나 지뢰에 맞지 않도록 조심해야 합니다."
+  ],
+  "tips": "소포는 퀘스트가 활성화되어 있을 때만 레이드에서 나타나므로, 퀘스트를 수락한 상태에서만 삼림 맵을 방문하세요. 또한, 소포를 획득한 뒤에는 안전하게 추출하는 데 집중해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/A_Helping_Hand_Building_Map.png/revision/latest/scale-to-width-down/640?cb=20250115231915",
+      "caption": "맵에 표시된 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/A_Helping_Hand_Building.png/revision/latest/scale-to-width-down/640?cb=20250325002847",
+      "caption": "목표 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/77/A_Helping_Hand_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250115232153",
+      "caption": "침대 옆 탁자 아래 첫 번째 소포 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f9/A_Helping_Hand_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250115232421",
+      "caption": "건물 뒤쪽 사무실 책상 위 두 번째 소포 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/WoodsTrainDepotExit.png/revision/latest/scale-to-width-down/640?cb=20250403233648",
+      "caption": "기차로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/WoodsTrainDepotExit2.png/revision/latest/scale-to-width-down/640?cb=20250403234347",
+      "caption": "기차"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/A_Helping_Hand",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T00:31:33.351+09:00"
+}
