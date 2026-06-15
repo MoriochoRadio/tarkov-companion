@@ -1,0 +1,98 @@
+{
+  "date": "2026-06-15",
+  "generatedAt": "2026-06-15T15:38:05.918+09:00",
+  "period": {
+    "from": "2026-06-11",
+    "to": "2026-06-14"
+  },
+  "headline": "이번 주를 관통하는 한 줄 정리",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "적 AI 및 전투 위험 변화",
+      "items": [
+        {
+          "title": "적 발견 시간 증가 및 Black Division AI 개선",
+          "summary": "Rogues의 적 발견 시간이 증가하고, Black Division 병사들은 엔진룸에서 더 고르게 퍼져 움직이며 수류탄 사용 빈도가 높아졌습니다. 전투 시 AI 행동 변화에 주의가 필요합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Wedge 보스의 가스 수류탄 함정 강화",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치하여 전투 시 함정에 각별히 주의해야 합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "게임 내 경제 변화 및 이벤트 소식",
+      "items": [
+        {
+          "title": "TarCoin이란 무엇인가?",
+          "summary": "TarCoin은 Expansion Hub 내에서만 사용 가능한 새로운 게임 내 화폐로, 앞으로 게임 내 경제 시스템에 중요한 역할을 할 예정입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/717907577518686302",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "주말 XP 보너스 활성화!",
+          "summary": "이번 주말 Icebreaker 레이드에서 획득하는 XP가 25% 증가하며, PvP와 PvE 모두에 적용됩니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/559155780967727820",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "개발자 답변 및 커뮤니티 토론",
+      "items": [
+        {
+          "title": "개발자 Domontovich와 Nik의 엔진룸 너프 관련 답변",
+          "summary": "개발자들이 엔진룸 너프 의도와 플레이어가 느끼는 문제점을 설명하며, 투척 수류탄 대처법에 대한 의견을 공유했습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u23zgy/discussion_domontovich_and_niks_responses_to_the/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Comtac VI (Ranger Green)와 (Coyote Brown) 차이점 및 호환 문제",
+          "summary": "Comtac VI Ranger Green 모델은 Respirator와 호환되지만, Coyote Brown 모델은 작동하지 않는 문제를 다루며 장비 선택에 참고할 수 있습니다.",
+          "source": "커뮤니티"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "퀘스트 공략 및 아이템 획득 팁",
+      "items": [
+        {
+          "title": "Icebreaker 퀘스트 공략 영상 (러시아식) 3부",
+          "summary": "Icebreaker 퀘스트를 효율적으로 완료하는 방법을 담은 영상으로, 도전 과제 달성에 실질적인 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u27pt2/video_how_to_complete_ice_breaker_in_tarkov_the/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "5.11 Tactical Rush 100 백팩 획득 방법 문의",
+          "summary": "5.11 Tactical Rush 100 백팩의 현재 획득 가능 여부와 획득 위치 및 방법에 대한 정보를 찾는 플레이어에게 참고가 되는 글입니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u4qwua/loot_511_tatical_rush_100/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상 모음",
+      "items": [
+        {
+          "title": "쇄빙선 얏호~ 새로운 날먹 맛떼루용~",
+          "url": "https://www.youtube.com/watch?v=7IpIsivkgWE",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - CHILL PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=Ai6shdvqTQ4",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
