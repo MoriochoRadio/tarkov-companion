@@ -1,0 +1,78 @@
+{
+  "date": "2026-06-16",
+  "generatedAt": "2026-06-16T01:46:28.059+09:00",
+  "headline": "블랙 디비전 AI 개선과 Wedge 보스 함정 강화 유지, Icebreaker 주말 XP 보너스 연장",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "블랙 디비전 AI 및 Wedge 보스 함정 강화",
+      "items": [
+        {
+          "title": "블랙 디비전 엔진룸 AI 행동 개선 및 버그 수정",
+          "summary": "블랙 디비전 병사들이 엔진룸에서 플레이어를 향해 더 고르게 분산되어 움직이며, 수류탄 사용 빈도가 증가해 전투가 더 치열해졌습니다. 또한 엔진룸에서 이동하지 않고 정지하는 버그가 수정되어 더 적극적으로 움직입니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "Wedge 보스의 가스 수류탄 트립와이어 함정 강화",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치하여 플레이어의 접근을 방해하므로, 접근 경로를 신중히 선택해 피해를 줄여야 합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "주말 XP 보너스 연장",
+      "items": [
+        {
+          "title": "Icebreaker 레이드 XP 25% 증가",
+          "summary": "이번 주말부터 6월 15일 오전 11시 BST까지 Icebreaker 맵에서 레이드로 획득하는 XP가 PvP와 PvE 모두에 대해 25% 증가하여 경험치 획득을 극대화할 수 있습니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/559155780967727820",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "커뮤니티 공략 및 정보",
+      "items": [
+        {
+          "title": "주요 퀘스트 난이도와 장비 제한에 대한 신규 플레이어 불만",
+          "summary": "신규 플레이어가 특정 퀘스트에서 제한된 탄창과 고가 총기를 사용해야 하는 점을 비판하며, 퀘스트 설계가 비현실적이라는 의견을 제시해 퀘스트 난이도 조정 필요성을 시사합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u5yrdl/discussion_new_player_here_whoever_designed_these/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "키 아이템 정리 및 보관 팁",
+          "summary": "플레이어가 수집한 다양한 키 중 어떤 키를 보관하고 어떤 키를 버려야 하는지에 대한 구체적인 조언을 공유해 인벤토리 관리에 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u64o40/keys_i_dont_know_what_i_have_loot/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "추천 영상 모음",
+      "items": [
+        {
+          "title": "쇄빙선 빌드 완성 했는줄 알았는데 더 깍아야 될듯",
+          "url": "https://www.youtube.com/watch?v=sBmZotFUaD8",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Hunting players on Customs with Summit1G - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=BMbg96u3l_o",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - CHILL PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=W2e4gRgK3kw",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
