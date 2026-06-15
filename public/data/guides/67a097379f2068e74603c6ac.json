@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "taskId": "67a097379f2068e74603c6ac",
+  "nameKo": "Indisputable Authority",
+  "nameEn": "Indisputable Authority",
+  "steps": [
+    "연구소(The Labyrinth) 내부로 진입한다. 연구소는 매우 위험한 지역이므로 충분한 준비와 장비를 갖추는 것이 중요하다.",
+    "Shadow of Tagilla를 찾는다. Shadow of Tagilla는 연구소 내에서 매우 강력한 보스 몬스터로, 특정 위치에 고정되어 있지 않고 맵 내를 이동할 수 있다. 신중하게 움직이며 위치를 파악한다.",
+    "Shadow of Tagilla를 처치한다. 강력한 무기와 방어구를 사용하여 전투에 임하고, 주변 환경을 활용해 생존 확률을 높인다.",
+    "연구소 내부에서 Scav 6명을 처치한다. Scav들은 일반 적 NPC로, 연구소 곳곳에 흩어져 있으므로 탐색하며 제거한다.",
+    "퀘스트 완료를 위해 Shadow of Tagilla와 Scav 6명을 모두 처치했는지 확인한다.",
+    "퀘스트 완료 후 안전하게 연구소에서 탈출한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b5/ShadowOfTagilla.png/revision/latest?cb=20250401145409",
+      "caption": "Shadow of Tagilla"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Indisputable_Authority",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

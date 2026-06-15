@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "5ae4493d86f7744b8e15aa8f",
+  "nameKo": "데이터베이스 - 파트 2",
+  "nameEn": "Database - Part 2",
+  "steps": [
+    "인터체인지(Interchange) 맵의 ULTRA 쇼핑몰 1층에 위치한 OLI 물류부 사무실로 이동한다.",
+    "사무실 입장에는 OLI 물류부 사무실 열쇠(OLI logistics department office key)가 반드시 필요하다.",
+    "ULTRA 쇼핑몰 내부에서 OLI 사무실 입구를 찾아 들어간다. 입구는 OLI 전면 사무실(OLI front offices) 쪽에 위치해 있다.",
+    "사무실 내부에서 원하는 문(OLI logistics department office door)을 찾아 열고 들어간다.",
+    "사무실 안 왼쪽 선반에서 OLI 화물 경로 문서(OLI cargo route documents)를 획득한다. 이 문서는 퀘스트 활성 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리에 자동으로 들어간다.",
+    "퀘스트 아이템을 획득한 후 반드시 안전하게 추출해야 하며, 추출에 실패하면 아이템을 잃게 된다."
+  ],
+  "tips": "OLI 물류부 사무실 열쇠는 퀘스트 진행을 위해 반드시 소지해야 하며, 열쇠는 별도로 구해야 한다. 문서 획득 후에는 최대한 빠르게 안전한 추출 경로를 확보하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/LogOfficeKey.png/revision/latest?cb=20220707183218",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/OLI_Cargo_Route_Docs.png/revision/latest?cb=20221012072135",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2f/Interchange_Database_part_2_Guide.png/revision/latest/scale-to-width-down/640?cb=20180703135645",
+      "caption": "지도에 표시된 사무실 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/Oli_Offices.png/revision/latest/scale-to-width-down/640?cb=20250922191719",
+      "caption": "OLI 전면 사무실 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/Oli_Logistics_Door.png/revision/latest/scale-to-width-down/640?cb=20250922191813",
+      "caption": "원하는 사무실 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ef/Database_Part_2_Guide.png/revision/latest/scale-to-width-down/640?cb=20250922191936",
+      "caption": "왼쪽 선반에 있는 문서"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

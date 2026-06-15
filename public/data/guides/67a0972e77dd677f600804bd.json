@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "taskId": "67a0972e77dd677f600804bd",
+  "nameKo": "This Tape Sucks",
+  "nameEn": "This Tape Sucks",
+  "steps": [
+    "미궁(The Labyrinth) 내부에 있는 고문실을 찾아야 합니다. 고문실 위치는 미궁 지도에 표시되어 있으며, 정확한 위치를 확인한 후 해당 방으로 이동하세요.",
+    "고문실 주변에는 비디오테이프(Slaughter videotape)가 여러 위치에 스폰됩니다. 이 테이프를 찾아야 하므로 아래 위치들을 차례로 확인하세요.",
+    "첫 번째 위치는 고문실 문 아래입니다. 문 바로 아래쪽 바닥을 자세히 살펴 비디오테이프가 있는지 확인하세요.",
+    "두 번째 위치는 고문실 맞은편 벽 안쪽입니다. 방을 마주보고 있는 벽 쪽을 꼼꼼히 조사해 비디오테이프를 찾으세요.",
+    "세 번째 위치는 고문실 맞은편 아치 아래 바닥에 누워있는 죽은 스캐브(Scav)의 손에 있습니다. 단, 이 시체는 항상 스폰되지 않으니 시체가 없더라도 주변을 잘 살펴 비디오테이프가 있는지 확인하세요.",
+    "네 번째 위치는 고문실 맞은편 아치 옆에 있는 피 묻은 통 위입니다. 이 통 위를 자세히 조사해 비디오테이프를 획득하세요.",
+    "비디오테이프는 퀘스트 활성화 상태에서만 획득할 수 있으며, 획득 시 자동으로 퀘스트 아이템 인벤토리에 들어갑니다.",
+    "획득한 비디오테이프를 가지고 레이드에서 반드시 탈출해야 합니다. 만약 탈출에 실패하면 비디오테이프를 잃게 되므로 주의하세요."
+  ],
+  "tips": "비디오테이프가 스폰되는 위치가 다양하므로 고문실 주변을 꼼꼼히 탐색하는 것이 중요합니다. 특히 죽은 스캐브 시체가 항상 존재하지 않으니 시체가 없더라도 주변을 잘 살펴보세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Labryrinth_torture_room_map.png/revision/latest/scale-to-width-down/640?cb=20250329225017",
+      "caption": "지도에 표시된 고문실 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/Labryrinth_torture_room.png/revision/latest/scale-to-width-down/640?cb=20250329231728",
+      "caption": "고문실 내부 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/This_Tape_Sucks_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250329231540",
+      "caption": "스폰 1: 문 아래"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/This_Tape_Sucks_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250329232158",
+      "caption": "스폰 2: 고문실 맞은편 벽 안쪽"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ec/This_Tape_Sucks_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250329234847",
+      "caption": "스폰 3: 고문실 맞은편 아치 아래 바닥에 누워있는 죽은 스캐브의 손<br/>'''참고:''' 시체는 항상 스폰되지 않지만 테이프는 존재할 수 있음"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/This_Tape_Sucks_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250329233135",
+      "caption": "스폰 4: 고문실 맞은편 아치 옆 피 묻은 통 위"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/This_Tape_Sucks",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

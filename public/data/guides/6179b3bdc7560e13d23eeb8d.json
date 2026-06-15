@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "taskId": "6179b3bdc7560e13d23eeb8d",
+  "nameKo": "기업 기밀",
+  "nameEn": "Corporate Secrets",
+  "steps": [
+    "등대(Lighthouse) 북쪽에 위치한 정수장(Water Treatment Plant)으로 이동한다. 정수장 내에는 두 개의 주요 건물이 있으며, 각각에서 필요한 문서들을 찾아야 한다.",
+    "서쪽에 위치한 1번 건물(Building no. 1)으로 들어간다. 1층에서 계단을 올라 2층 왼쪽 사무실로 이동한다.",
+    "사무실 내 선반의 오른쪽 아래 파일 폴더 사이에서 '펌핑 스테이션 운영 보고서(Pumping station operation report)' 문서를 찾는다. 이 문서는 퀘스트 아이템으로, 발견 즉시 퀘스트 아이템 인벤토리로 이동한다.",
+    "다음으로, 정수장 북쪽에 위치한 2번 건물(Building no. 2)으로 이동한다. 2층 왼쪽 사무실로 올라간다.",
+    "사무실 내 책상 위 파일 정리함에서 '워터 펌프 운영 데이터(Water pump operation data)' 문서를 찾는다. 이 문서 역시 퀘스트 아이템이며, 발견 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "두 문서 모두 퀘스트 활성화 상태에서만 맵 내에서 발견 가능하며, 문서를 획득한 후 반드시 추출해야 한다. 추출하지 못하면 문서를 잃게 되므로 주의한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/CorporateSecretsMap.png/revision/latest/scale-to-width-down/640?cb=20250503235013",
+      "caption": "지도에 표시된 건물들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/CorporateSecretsOfficeBuilding1.png/revision/latest/scale-to-width-down/640?cb=20230521164837",
+      "caption": "1번 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8a/CorporateSecretsOffice1.png/revision/latest/scale-to-width-down/640?cb=20230521165005",
+      "caption": "사무실 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b7/Reportclose.png/revision/latest/scale-to-width-down/640?cb=20230521170137",
+      "caption": "선반 오른쪽 아래 파일 폴더 사이의 문서"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/CorporateSecretsOfficeBuilding2.png/revision/latest/scale-to-width-down/640?cb=20230521165546",
+      "caption": "2번 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/CorporateSecretsOffice2.png/revision/latest/scale-to-width-down/640?cb=20230521165734",
+      "caption": "사무실 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/Data.png/revision/latest/scale-to-width-down/640?cb=20230521165851",
+      "caption": "책상 위 파일 정리함의 문서"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Corporate_Secrets",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

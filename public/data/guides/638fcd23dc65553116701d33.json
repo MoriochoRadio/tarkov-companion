@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "taskId": "638fcd23dc65553116701d33",
+  "nameKo": "Audit",
+  "nameEn": "Audit",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 \"ФИНАНС\" (\"FINANCE\") 건물을 찾는다. 지도에서 해당 건물 위치를 확인한다.",
+    "건물 내부로 진입하여 2층으로 올라간다. 2층으로 올라가는 계단은 건물 내부에 있다.",
+    "2층에 도착하면 오른쪽 첫 번째 사무실을 찾는다. 이 사무실이 회계사 노트(Accountant's notes)가 있는 장소이다.",
+    "사무실 바닥에 놓여있는 빨간색 파일 폴더를 찾는다. 이 파일 폴더 안에 회계사 노트가 들어있는 일기가 숨겨져 있다.",
+    "회계사 노트를 획득한다. 이 아이템은 퀘스트가 활성화된 상태에서만 레이드 내에서 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "획득한 회계사 노트를 가지고 레이드에서 반드시 탈출해야 한다. 만약 탈출하지 못하면 아이템을 잃게 된다."
+  ],
+  "tips": "회계사 노트는 퀘스트가 활성화된 상태에서만 레이드 내에서 획득할 수 있으므로, 퀘스트를 수락한 후에만 해당 건물로 진입하는 것이 중요하다. 또한, 탈출하지 못하면 아이템을 잃으니 안전한 탈출 경로를 미리 계획하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/33/Accountants_notes.png/revision/latest?cb=20230126080224",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c6/FinancialInstitutionMap.png/revision/latest/scale-to-width-down/640?cb=20230826230849",
+      "caption": "지도에 표시된 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dd/FinancialInstitutionBuilding.png/revision/latest/scale-to-width-down/640?cb=20250831125335",
+      "caption": "해당 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5d/FinancialInstitutionOfficeStairs.png/revision/latest/scale-to-width-down/640?cb=20250831130716",
+      "caption": "2층으로 올라가는 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Audit2ndFloorOffice.png/revision/latest/scale-to-width-down/640?cb=20250831130842",
+      "caption": "목표 사무실"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/AuditFolderLocation.png/revision/latest/scale-to-width-down/640?cb=20250831131116",
+      "caption": "목표 파일 폴더"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/12/Audit_5.png/revision/latest/scale-to-width-down/640?cb=20250831131251",
+      "caption": "파일 폴더 안의 일기"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Audit",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

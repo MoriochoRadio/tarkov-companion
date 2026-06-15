@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "taskId": "608974af4b05530f55550c21",
+  "nameKo": "재고 확인",
+  "nameEn": "Inventory Check",
+  "steps": [
+    "리저브(Reserve) 맵에 진입하여 동일한 레이드에서 모든 목표 지점을 방문하고 성공적으로 탈출해야 합니다.",
+    "동부 병영(Eastern Barracks)인 블랙 폰(Black Pawn) 건물로 이동합니다. 이 건물은 리저브 맵 내에 위치해 있으며, 목표는 1층부터 4층까지 여러 방을 방문하는 것입니다.",
+    "블랙 폰 4층에 있는 첫 번째 무기고(First Arsenal Room)를 방문합니다. 이 방은 블랙 비숍(Black Bishop, 학교 건물) 쪽으로 향한 측면에 위치한 격자문(grate door)이 있으며, 이 문은 항상 열려 있습니다.",
+    "블랙 폰 3층에 있는 근무실(Duty Room)으로 이동합니다. 이 방은 RB-OB 키가 필요한 잠긴 문으로, 블랙 비숍 쪽 측면에 위치해 있습니다. RB-OB 키를 반드시 준비해야 합니다.",
+    "블랙 폰 2층에 있는 두 번째 무기고(Second Arsenal Room)로 이동합니다. 이 방은 RB-ORB3 키가 필요한 잠긴 격자문으로, 블랙 비숍 쪽 측면에 위치해 있습니다. RB-ORB3 키를 반드시 준비해야 합니다.",
+    "북쪽 계단(Northern staircase)을 이용해 각 층으로 이동하며 위 목표 방들을 차례로 방문합니다.",
+    "남부 병영(Southern Barracks)인 화이트 폰(White Pawn) 건물로 이동합니다. 이 건물 역시 리저브 맵 내에 위치해 있습니다.",
+    "화이트 폰 4층에 있는 첫 번째 무기고(First Arsenal Room)로 이동합니다. 이 방은 RB-ORB1 키가 필요한 잠긴 격자문으로, 블랙 폰 쪽 측면에 위치해 있습니다. RB-ORB1 키를 반드시 준비해야 합니다.",
+    "화이트 폰 2층에 있는 두 번째 무기고(Second Arsenal Room)로 이동합니다. 이 방은 RB-ORB2 키가 필요한 잠긴 격자문으로, 블랙 폰 쪽 측면에 위치해 있습니다. RB-ORB2 키를 반드시 준비해야 합니다.",
+    "각 키(RB-ORB1, RB-ORB2, RB-ORB3, RB-OB)는 모두 필수이며, 각 방을 열기 위해 반드시 소지해야 합니다.",
+    "모든 목표 방을 방문한 후, 레이드에서 성공적으로 탈출해야 퀘스트가 완료됩니다."
+  ],
+  "tips": "RB-ORB1, RB-ORB2, RB-ORB3, RB-OB 키는 레이드 내에서 직접 획득하거나, 거래소(플리마켓)에서 구매할 수 있습니다. 리저브 맵은 적들이 많고 복잡하므로, 충분한 준비와 팀원과의 협력이 필요합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/InventoryCheck.png/revision/latest/scale-to-width-down/640?cb=20210728184833",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/Black_pawn_objstaircase.png/revision/latest/scale-to-width-down/640?cb=20220402090852",
+      "caption": "북쪽 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/30/Reserve_-_RB-ORB3_key_-_door.png/revision/latest/scale-to-width-down/640?cb=20220402091321",
+      "caption": "RB-ORB3 키 사용 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/97/RB-OB_door1.png/revision/latest/scale-to-width-down/640?cb=20220402092324",
+      "caption": "RB-OB 키 사용 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/RB-ORBX_door.png/revision/latest/scale-to-width-down/640?cb=20220402091028",
+      "caption": "4층, 블랙 비숍 쪽 첫 번째 무기고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6a/Black_Pawn_Obj.png/revision/latest/scale-to-width-down/640?cb=20220402090809",
+      "caption": "외부에서 본 모든 목표 방"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/White_pawn.png/revision/latest/scale-to-width-down/640?cb=20220402091730",
+      "caption": "화이트 폰 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d2/Screenshot_2019-10-29_19.22.44.png/revision/latest/scale-to-width-down/640?cb=20220402092103",
+      "caption": "RB-ORB1 키 사용 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/RB-ORB2_door.png/revision/latest/scale-to-width-down/640?cb=20220402093112",
+      "caption": "RB-ORB2 키 사용 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8b/White_pawn_obj.png/revision/latest/scale-to-width-down/640?cb=20220402091003",
+      "caption": "외부에서 본 두 방"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Inventory_Check",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

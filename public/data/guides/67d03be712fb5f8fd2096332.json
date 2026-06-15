@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "67d03be712fb5f8fd2096332",
+  "nameKo": "Vacate the Premises",
+  "nameEn": "Vacate the Premises",
+  "steps": [
+    "미궁(The Labyrinth)에서 PMC 24명을 처치해야 합니다.",
+    "PvE 모드에서는 미궁에서 적 36명을 처치하는 것으로 목표가 변경됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Vacate_the_Premises",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

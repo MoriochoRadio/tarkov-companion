@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5ae4490786f7744ca822adcc",
+  "nameKo": "폼생폼사",
+  "nameEn": "Dressed to Kill",
+  "steps": [
+    "폼생폼사(Dressed to Kill) 퀘스트는 특정 모자 아이템을 수집하여 제출하는 임무입니다.",
+    "우샨카 귀덮개 모자(Ushanka ear flap hat) 2개를 레이드 내에서 획득해야 합니다. 이 아이템은 레이드에서만 얻을 수 있으며, 트레이더 구매는 불가능합니다.",
+    "카인다 카우보이 모자(Kinda cowboy hat) 2개도 레이드 내에서 획득해야 하며, 마찬가지로 레이드 획득(FIR)만 가능합니다.",
+    "획득한 모자 4개(우샨카 귀덮개 모자 2개, 카인다 카우보이 모자 2개)를 퀘스트 의뢰자에게 제출하여 퀘스트를 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Dressed_to_Kill",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

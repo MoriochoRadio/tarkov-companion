@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "taskId": "60896bca6ee58f38c417d4f2",
+  "nameKo": "배신자들을 위한 곳은 없다",
+  "nameEn": "No Place for Renegades",
+  "steps": [
+    "리저브(Reserve) 맵의 지하 벙커에서 퀘스트가 진행된다. 벙커 내부는 지하 지휘소로, 지하 벙커 지도를 참고하여 퀘스트 지역을 확인한다.",
+    "레이드 시작 시 지하 벙커 내에 스캐브 레이더(Scav Raiders) 5명이 스폰될 수 있으므로, 벙커 입구로 빠르게 진입하여 적들을 찾는다.",
+    "지하 벙커 내부는 좁고 복잡하므로, 조심스럽게 이동하며 스캐브 레이더를 하나씩 처치한다.",
+    "벙커 내 'D-2' 추출 스위치를 활성화하면 추가 스캐브 레이더가 등장할 수 있으니, 스위치를 찾아 활성화한다.",
+    "'D-2' 스위치는 벙커 내부 특정 위치에 있으며, 스위치를 작동시키면 추가 적들이 출현하므로 주변을 주의 깊게 살핀다.",
+    "스캐브 레이더 5명을 모두 처치하면 퀘스트가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/UndergroundCommandAreMap.png/revision/latest/scale-to-width-down/640?cb=20260404130340",
+      "caption": "지하 지도에 표시된 퀘스트 지역"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/No_Place_for_Renegades",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

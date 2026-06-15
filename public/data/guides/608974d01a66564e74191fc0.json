@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "608974d01a66564e74191fc0",
+  "nameKo": "연료 문제",
+  "nameEn": "A Fuel Matter",
+  "steps": [
+    "리저브(Reserve) 맵에 진입한다.",
+    "첫 번째 연료 탱크 그룹을 찾는다. 위치는 '하수구 맨홀(Sewer Manhole)' 추출 지점 근처이다. 이곳에서 MS2000 마커 2개 중 1개를 사용해 연료 탱크를 표시한다. 마커를 사용하면 인벤토리에서 해당 아이템이 사라진다.",
+    "두 번째 연료 탱크 그룹을 찾는다. 위치는 기차 기지(Train Depot) 근처이다. 이곳에서도 MS2000 마커 1개를 사용해 연료 탱크를 표시한다.",
+    "두 그룹의 연료 탱크에 모두 MS2000 마커를 사용해 표시를 완료했으면, 최소 7분 이상 레이드에 머무르거나 200 이상의 경험치를 획득해야 한다. 경험치는 적 처치나 아이템 획득으로 얻을 수 있다.",
+    "레이드에서 '생존(Survived)' 상태로 추출한다. 'Run Through' 상태로 추출하면 퀘스트가 완료되지 않으니 반드시 조건을 충족한 후 추출해야 한다."
+  ],
+  "tips": "연료 탱크 위치는 하수구 맨홀 추출 지점과 기차 기지 근처로, 미리 위치를 숙지하면 빠르게 찾을 수 있다. MS2000 마커는 퀘스트 시작 시 지급되며, 사용 시 인벤토리에서 사라지니 주의하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/97/1st_%26_2nd_Group_of_tankers.jpg/revision/latest/scale-to-width-down/640?cb=20240729150032",
+      "caption": "지도에 표시된 연료 탱크 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/Tarkovwiki1.png/revision/latest/scale-to-width-down/640?cb=20240729145003",
+      "caption": "\"하수구 맨홀\" 추출 지점 옆 첫 번째 연료 탱크 그룹"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/Tarkovwiki3e.png/revision/latest/scale-to-width-down/640?cb=20240729145235",
+      "caption": "기차 기지 옆 두 번째 연료 탱크 그룹"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/A_Fuel_Matter",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

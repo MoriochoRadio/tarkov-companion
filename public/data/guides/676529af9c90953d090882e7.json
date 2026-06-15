@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "676529af9c90953d090882e7",
+  "nameKo": "Gunsmith - Old Friend's Request",
+  "nameEn": "Gunsmith - Old Friend's Request",
+  "steps": [
+    "PP-19-01 Vityaz 소총을 제작하기 위해 다음 부품을 준비한다: 내구도 60 이상, 인체공학 49 이상, 반동 400 이하, 최소 30발 탄창, Aimpoint Micro T-1 조준경, Aimpoint Micro Spacer High, Zenit RK-6 전술 손잡이, AK Zenit RK-3 권총 손잡이(검정색), AK Zenit PT-3 \"Klassika\" 개머리판, L3Harris AN/PEQ-15 전술 장치(탄색), Zenit Klesch-2P 레이저 장착 손전등, PP-19-01 Vityaz 9x19 소음기.",
+    "T-5000M 저격총을 제작하기 위해 다음 부품을 준비한다: 내구도 60 이상, 인체공학 18 이상, 탄창, 소음기, Nightforce ATACR 7-35x56 34mm 라이플스코프, Harris S-BRM 6-9인치 바이포드.",
+    "Glock 17 권총을 제작하기 위해 다음 부품을 준비한다: 내구도 60 이상, Glock 9x19 Double Diamond 114mm 나사산 총열, Glock 9x19 Double Diamond 나사산 보호대, Glock Pachmayr 전술 그립 장갑, Zenit Klesch-2P 레이저 장착 손전등, Glock 9x19 Magpul PMAG GL9 21발 탄창.",
+    "각 부품은 레이드에서 획득하거나, 프리마켓 및 트레이더를 통해 구매할 수 있다. 부품별로 구체적인 획득처는 게임 내 시장을 참고한다.",
+    "각 무기를 제작할 때는 해당 부품이 모두 장착되어야 하며, 내구도와 인체공학 수치, 반동 제한 등 요구 조건을 반드시 충족해야 한다.",
+    "제작 완료 후, 퀘스트에 지정된 무기들을 인벤토리에 보관한 상태로 퀘스트를 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Old_Friend's_Request",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

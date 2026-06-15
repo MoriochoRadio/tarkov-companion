@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "66aa58245ab22944110db6e9",
+  "nameKo": "New Day, New Paths",
+  "nameEn": "New Day, New Paths",
+  "steps": [
+    "그라운드 제로(Ground Zero) 맵에서 미라 애비뉴(Mira Ave) 추출 지점 옆에 있는 교차로로 이동한다.",
+    "레이드 시작 후 1분이 지나야 교차로를 통한 이동이 가능하므로, 레이드 시작 후 1분을 기다린다.",
+    "교차로에서 Streets of Tarkov(타르코프 시내)로 이동한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/MarathonNewDayNewPathsGZMap.png/revision/latest/scale-to-width-down/640?cb=20240829202447",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/MarathonNewDayNewPathsGZ.png/revision/latest/scale-to-width-down/640?cb=20240829201929",
+      "caption": "교차로"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/Ground_Zero_to_Streets_of_Tarkov_Map.png/revision/latest/scale-to-width-down/640?cb=20240828225621",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/Ground_Zero_to_Street_of_Tarkov.png/revision/latest/scale-to-width-down/640?cb=20250708205955",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/New_Day%2C_New_Paths",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "taskId": "675c047fa46173572a0bd878",
+  "nameKo": "Shipment Tracking",
+  "nameEn": "Shipment Tracking",
+  "steps": [
+    "세관(Customs) 맵 내 보일러 건물(Boiler Building)을 찾는다. 보일러 건물은 맵 내에 별도로 표시되어 있으니 위치를 확인한다.",
+    "보일러 건물 2층에 위치한 회사 이사실(Company director's room)로 이동한다. 이사실 입장에는 회사 이사실 열쇠(Company director's room key)가 반드시 필요하다.",
+    "이사실에 들어가기 위해 계단을 이용해 2층으로 올라간다. 계단은 보일러 건물 내부에 있으며, 입구는 사진과 같이 문이 있다.",
+    "이사실 문을 열고 내부로 진입한다.",
+    "이사실 내부에는 여러 위치에 TerraGroup 출하 보고서(TerraGroup shipment report)가 스폰된다. 출하 보고서는 퀘스트 아이템이며, 퀘스트가 활성화된 상태에서만 획득 가능하다.",
+    "첫 번째 출하 보고서는 책장 위에 스폰된다.",
+    "두 번째 출하 보고서는 패키지 옆 바닥에 스폰된다.",
+    "세 번째 출하 보고서는 책상 옆 선반에 스폰된다.",
+    "네 번째 출하 보고서는 책상 아래에 스폰된다.",
+    "출하 보고서를 획득하면 퀘스트 아이템 인벤토리에 자동으로 들어가며, 추출 전에 아이템을 잃지 않도록 주의한다.",
+    "출하 보고서를 가지고 안전하게 추출하여 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/BoilerBuildingMap.png/revision/latest/scale-to-width-down/640?cb=20241229195259",
+      "caption": "맵에 표시된 보일러 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/BoilerBuilding.png/revision/latest/scale-to-width-down/640?cb=20250325011849",
+      "caption": "보일러 건물 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/CompanyDirectorsRoomCustomsStairs.png/revision/latest/scale-to-width-down/640?cb=20241229194730",
+      "caption": "이사실로 올라가는 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/CompanyDirectorsRoomCustomsDoor.png/revision/latest/scale-to-width-down/640?cb=20241229194625",
+      "caption": "이사실 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3d/ShipmentTrackingSpawn1.png/revision/latest/scale-to-width-down/640?cb=20250325011320",
+      "caption": "책장 위 첫 번째 출하 보고서 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/08/ShipmentTrackingSpawn2.png/revision/latest/scale-to-width-down/640?cb=20250325010422",
+      "caption": "패키지 옆 바닥 두 번째 출하 보고서 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e3/ShipmentTrackingSpawn3.png/revision/latest/scale-to-width-down/640?cb=20250325010825",
+      "caption": "책상 옆 선반 세 번째 출하 보고서 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9d/ShipmentTrackingSpawn4.png/revision/latest/scale-to-width-down/640?cb=20250325010525",
+      "caption": "책상 아래 네 번째 출하 보고서 스폰 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Shipment_Tracking",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

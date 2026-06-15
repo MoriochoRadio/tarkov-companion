@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "taskId": "59c50a9e86f7745fef66f4ff",
+  "nameKo": "퍼니셔 - 파트 1",
+  "nameEn": "The Punisher - Part 1",
+  "steps": [
+    "해안선(Shoreline) 맵에서 AKM 계열 무기를 사용하여 스캐브(Scav) 15명을 처치해야 합니다.",
+    "사용 가능한 무기는 AKM, AKMN, AKMS, AKMSN, AK-103, AK-104, VPO-136 중 하나를 선택할 수 있습니다.",
+    "해안선 맵 내 스캐브 출현 위치를 참고하여 이동 경로를 계획하세요. (첨부된 지도 이미지 참조)",
+    "스캐브는 해안선 전역에 분포하므로, 주요 스캐브 출현 지점에서 전투를 준비하세요.",
+    "AKM 계열 무기를 반드시 장착한 상태에서 스캐브를 처치해야 퀘스트가 진행됩니다.",
+    "스캐브 처치 시, 사망한 적이 스캐브인지 확인하여 킬 카운트에 포함시키세요.",
+    "15명의 스캐브를 모두 처치하면 퀘스트가 완료됩니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/Shoreline_Scavs.png/revision/latest/scale-to-width-down/640?cb=20250729091944",
+      "caption": "지도에 표시된 스캐브 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

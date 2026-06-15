@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "639135f286e646067c176a87",
+  "nameKo": "개정 작업 - 타르코프 시내",
+  "nameEn": "Revision - Streets of Tarkov",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov) 맵에서 MS2000 마커 3개를 사용해 차량 3대를 표시해야 합니다.",
+    "MS2000 마커는 퀘스트 아이템으로, 인벤토리에 있어야 하며, 차량에 마커를 설치하면 인벤토리에서 사라집니다.",
+    "첫 번째 차량은 지도에 표시된 위치의 LAV III 1입니다. 해당 위치로 이동해 차량을 찾으세요.",
+    "두 번째 차량은 Stryker입니다. 지도에 표시된 위치로 이동해 Stryker 차량을 찾고 마커를 설치하세요.",
+    "세 번째 차량은 LAV III 2입니다. 마지막 차량 위치로 이동해 MS2000 마커를 설치해 표시를 완료하세요."
+  ],
+  "tips": "차량 위치는 퀘스트 지도에 명확히 표시되어 있으니, 마커를 잃지 않도록 주의하며 차량을 빠르게 찾아 설치하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/RevisionStreetsMap.png/revision/latest/scale-to-width-down/640?cb=20231010132405",
+      "caption": "지도에 표시된 차량 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9b/RevisionStreetsStryker1.png/revision/latest/scale-to-width-down/640?cb=20230107221033",
+      "caption": "LAV III 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2e/RevisionStreetsStryker2.png/revision/latest/scale-to-width-down/640?cb=20230827002625",
+      "caption": "Stryker"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/be/RevisionStreetsStryker3.png/revision/latest/scale-to-width-down/640?cb=20230107221031",
+      "caption": "LAV III 2"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Revision_-_Streets_of_Tarkov",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

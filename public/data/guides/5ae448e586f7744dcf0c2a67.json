@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "5ae448e586f7744dcf0c2a67",
+  "nameKo": "매장 구경",
+  "nameEn": "Big Sale",
+  "steps": [
+    "레이드 내에서 ULTRA 쇼핑몰 1층에 있는 지정된 모든 상점에 들어가 생존하여 퀘스트를 완료한다.",
+    "ULTRA 쇼핑몰 1층에 위치한 상점들은 지도에 표시되어 있으니 이를 참고한다.",
+    "Avokado 상점에 들어간다.",
+    "Kostin 상점에 들어간다.",
+    "tRend 상점에 들어간다.",
+    "Dino clothes 상점에 들어간다.",
+    "Top brand 상점에 들어간다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5d/BigSaleMarked.jpg/revision/latest/scale-to-width-down/640?cb=20200326121242",
+      "caption": "지도에 표시된 상점들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Avokado.png/revision/latest/scale-to-width-down/640?cb=20210112012725",
+      "caption": "Avokado 상점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bc/Kostin.png/revision/latest/scale-to-width-down/640?cb=20220328095606",
+      "caption": "Kostin 상점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ef/Trend.png/revision/latest/scale-to-width-down/640?cb=20210104163818",
+      "caption": "tRend 상점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ef/Dinoclothes.png/revision/latest/scale-to-width-down/640?cb=20220328095518",
+      "caption": "Dino clothes 상점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4e/Topbrand.png/revision/latest/scale-to-width-down/640?cb=20210112012728",
+      "caption": "Top brand 상점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Big_Sale",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

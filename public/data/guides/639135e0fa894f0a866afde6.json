@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "taskId": "639135e0fa894f0a866afde6",
+  "nameKo": "도시 약품",
+  "nameEn": "Urban Medicine",
+  "steps": [
+    "세관(Interchange) 맵 내 타르코프 시내(Streets of Tarkov)에 위치한 LexOs 자동차 정비소의 차고지(garage)를 찾는다. 차고지는 지도에 표시되어 있으며, LexOs 단지 전체는 클레이모어 지뢰가 곳곳에 설치되어 있으니 주의한다.",
+    "차고지 내부로 진입한 후, 차고 내 여러 위치에서 화학 샘플 용기(chemical container with samples)를 찾는다. 이 아이템은 퀘스트 활성화 시에만 등장하며, 획득 즉시 퀘스트 아이템 인벤토리로 이동한다. 추출 실패 시 아이템을 잃게 되므로 안전한 추출을 목표로 한다.",
+    "첫 번째 샘플 용기는 차고 왼쪽 첫 번째 침대 밑에서 찾을 수 있다.",
+    "두 번째, 세 번째, 네 번째 샘플 용기는 차고 왼쪽 첫 번째 선반의 위쪽과 아래쪽 칸막이, 그리고 그 옆 시체 아래에서 발견할 수 있다.",
+    "다섯 번째 샘플 용기는 차고 왼쪽 두 번째 선반 옆에 위치한다.",
+    "여섯 번째 샘플 용기는 차고 뒤쪽에 있는 트롤리(손수레) 밑에서 찾을 수 있다.",
+    "일곱 번째와 여덟 번째 샘플 용기는 오른쪽 침대 밑, 장기 운반 상자(organ transport box) 옆에 있다.",
+    "아홉 번째 샘플 용기는 차고 뒤쪽 오른쪽 구석, 주황색과 검은색 상자 사이에 위치한다.",
+    "열 번째 샘플 용기는 차고 뒤쪽 오른쪽 구석, 상자 뒤에서 발견할 수 있다."
+  ],
+  "tips": "LexOs 자동차 정비소 단지 내에는 클레이모어 지뢰가 다수 설치되어 있으므로, 진입 시 매우 조심해야 한다. 샘플 용기는 퀘스트가 활성화된 상태에서만 등장하며, 획득 후 반드시 안전하게 추출해야 아이템을 잃지 않는다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/Chemical_container_with_samples.png/revision/latest?cb=20230126080214",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7b/UrbanMedicineMap.png/revision/latest/scale-to-width-down/640?cb=20230827003910",
+      "caption": "지도에 표시된 차고지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/LexOsClaymoreOverview.png/revision/latest/scale-to-width-down/640?cb=20250203160104",
+      "caption": "LexOs 단지 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8a/UrbanMedicineGarage.png/revision/latest/scale-to-width-down/640?cb=20250805234123",
+      "caption": "차고지 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/01/UrbanMedicineThirdBedSpawn.png/revision/latest/scale-to-width-down/640?cb=20250831134850",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Urban_Medicine_5.png/revision/latest/scale-to-width-down/640?cb=20250831133719",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/UrbanMedicineFifthSixthShelfSpawn.png/revision/latest/scale-to-width-down/640?cb=20230108134404",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/80/Urban.png/revision/latest/scale-to-width-down/640?cb=20250831134018",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/UrbanMedicine_Spawn06.png/revision/latest/scale-to-width-down/640?cb=20250831133942",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Urban_Medicine_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250831133556",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d2/UrbanMedicineFourthShelfSpawn.png/revision/latest/scale-to-width-down/640?cb=20250831135201",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/UrbanMedicineSpawn05_02.png/revision/latest/scale-to-width-down/640?cb=20250831133510",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Urban_Medicine",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

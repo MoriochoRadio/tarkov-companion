@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "67a09761e720611a6a01f288",
+  "nameKo": "Keeper's Word",
+  "nameEn": "Keeper's Word",
+  "steps": [
+    "미궁(The Labyrinth) 내부에서 3개의 지정된 위치에 컬티스트 나이프(Cultist knife) 3개를 각각 은닉해야 한다.",
+    "첫 번째 위치는 미궁 내 미노타우르스 신전(Minotaur shrine)에 있다. 신전 내부를 찾아 컬티스트 나이프 1개를 은닉한다.",
+    "두 번째 위치도 미노타우르스 신전 내에 있다. 신전의 다른 지점에 컬티스트 나이프 1개를 은닉한다.",
+    "세 번째 위치는 시체실(corpse room)이다. 시체실 문을 열기 위해서는 시체실 열쇠(Corpse room key)가 반드시 필요하다.",
+    "시체실 문을 시체실 열쇠로 열고, 내부에 컬티스트 나이프 1개를 은닉한다."
+  ],
+  "tips": "컬티스트 나이프는 퀘스트 진행을 위해 반드시 3개 모두 은닉해야 하며, 시체실 열쇠는 미궁 내부 시체실 출입에 필수이므로 미리 준비해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2f/Keepers_Word_map.png/revision/latest/scale-to-width-down/640?cb=20250330000504",
+      "caption": "지도에 표시된 은닉 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b3/Keepers_Word_location_1.png/revision/latest/scale-to-width-down/640?cb=20250330000605",
+      "caption": "미노타우르스 신전 내 첫 번째 은닉 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3c/Keepers_Word_location_2.png/revision/latest/scale-to-width-down/640?cb=20250330000651",
+      "caption": "미노타우르스 신전 내 두 번째 은닉 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/68/Keepers_Word_location_3.png/revision/latest/scale-to-width-down/640?cb=20250330001135",
+      "caption": "시체실 내 세 번째 은닉 위치. 시체실 열쇠 필요"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Keeper's_Word",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "taskId": "5ae3277186f7745973054106",
+  "nameKo": "건스미스 - 파트 8",
+  "nameEn": "Gunsmith - Part 8",
+  "steps": [
+    "AKS-74N의 내구도를 60으로 맞춘다.",
+    "반동이 275 이하가 되도록 조립한다.",
+    "인체공학 지수를 52 이상으로 설정한다.",
+    "탄창은 10개 이하로 제한한다.",
+    "AK Zenit B-30 핸드가드와 B-31S 상단 핸드가드 레일을 장착한다.",
+    "Zenit RK-0 전술용 포어그립을 부착한다.",
+    "AK-12 5.45x39 30발 탄창을 사용한다.",
+    "Zenit Klesch-2IKS 적외선 조명기와 레이저를 장착한다.",
+    "AK Zenit DTK-1 7.62x39/5.45x39 소염기를 장착한다.",
+    "AK Zenit RK-3 권총 그립(검정색)을 사용한다.",
+    "AKS-74 또는 AKS-74U Zenit PT Lock과 AK Zenit PT-3 \"Klassika\" 개머리판을 장착한다.",
+    "AK Zenit B-33 먼지 덮개를 장착하여 완성한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_8",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

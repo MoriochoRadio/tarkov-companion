@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "taskId": "675c085d59b0575973005f52",
+  "nameKo": "Break the Deal",
+  "nameEn": "Break the Deal",
+  "steps": [
+    "퀘스트를 수락하면 게임 내 우편으로 필요한 4가지 아이템 세트를 받게 됩니다: Lobaev Arms DVL-10 7.62x51 볼트액션 저격소총 1개, DVL-10 7.62x51 10발 탄창 1개, ELCAN SpecterDR 1x/4x 스코프 1개, 그리고 7.62x51mm NATO 탄약 팩 1개.",
+    "DVL-10 저격소총은 기능이 작동하지 않아도 되므로 완전히 분해하여 보관할 수 있습니다. 만약 DVL-10을 1차 또는 2차 무기로 장착하고 있다면, 보관 시 먼저 사용됩니다.",
+    "세관(Customs) 맵의 산업 플랜트(industrial plant) 비계(scaffolding) 위치로 이동합니다. 지도에 표시된 위치를 참고하세요.",
+    "ELCAN SpecterDR 스코프는 2층, 가장 먼 구석에 있는 상자 위에 보관합니다.",
+    "DVL-10 탄창은 3층, 부서진 상자 안에 보관합니다.",
+    "62x51mm NATO 탄약 팩은 4층, 계단 옆에 쌓여 있는 상자들 위에 보관합니다.",
+    "DVL-10 저격소총 본체는 4층, 가장 먼 구석에 있는 상자 위에 보관합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/DVL-10_Urbana.png/revision/latest?cb=20221102140103",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/59/Dvlmag.png/revision/latest?cb=20230718144822",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ce/7.62x51mm_NATO_ammo_pack.png/revision/latest?cb=20250103022109",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/Provide_Viewership_map.png/revision/latest/scale-to-width-down/640?cb=20260404152652",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/56/Break_the_Deal_building.png/revision/latest/scale-to-width-down/640?cb=20250323133259",
+      "caption": "산업 플랜트 비계"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/Break_the_Deal_spot_1.png/revision/latest/scale-to-width-down/640?cb=20250428203439",
+      "caption": "SpecterDR 스코프 위치: 2층, 가장 먼 구석 상자 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6e/Break_the_Deal_spot_2.png/revision/latest/scale-to-width-down/640?cb=20250428203627",
+      "caption": "DVL-10 탄창 위치: 3층, 부서진 상자 안"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Break_the_Deal_spot_3.png/revision/latest/scale-to-width-down/640?cb=20250428203900",
+      "caption": "탄약 팩 위치: 4층, 계단 옆 쌓인 상자 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a3/Break_the_Deal_spot_4.png/revision/latest/scale-to-width-down/640?cb=20250428204111",
+      "caption": "DVL-10 저격소총 위치: 4층, 가장 먼 구석 상자 위"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Break_the_Deal",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

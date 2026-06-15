@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "taskId": "675c04f4db8807b75d0f38e8",
+  "nameKo": "Closer to the People",
+  "nameEn": "Closer to the People",
+  "steps": [
+    "세관(Customs) 맵에 있는 보일러 건물(Boiler Building) 1층 탈의실(Locker Room)에서 배달팀의 배송 보고서(Delivery crew report)를 찾아야 합니다.",
+    "보일러 건물은 세관 맵 내에 위치해 있으며, 지도에서 위치를 확인할 수 있습니다.",
+    "보일러 건물 입구에서 탈의실로 들어가는 문을 찾으세요.",
+    "탈의실 내부에는 여러 개의 스폰 지점이 있습니다. 첫 번째는 벽에 부착된 공구 캐비닛 안에 있습니다.",
+    "두 번째는 중간 줄에 있는 완전히 열린 락커 아래 바닥에 있습니다.",
+    "세 번째는 세면대 옆에 있는 락커 안에 있습니다.",
+    "네 번째는 선반 옆 바닥에 있습니다.",
+    "배송 보고서 아이템은 퀘스트가 활성화된 상태에서만 발견할 수 있으며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동됩니다.",
+    "이 아이템을 가지고 추출하지 못하면 아이템을 잃게 되므로 주의해야 합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/BoilerBuildingMap.png/revision/latest/scale-to-width-down/640?cb=20241229195259",
+      "caption": "지도에 표시된 보일러 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/BoilerBuilding.png/revision/latest/scale-to-width-down/640?cb=20250325011849",
+      "caption": "보일러 건물 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/BoilerBuildingLockerRoom.png/revision/latest/scale-to-width-down/640?cb=20250826195715",
+      "caption": "탈의실 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/32/Closer_to_the_People_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250826200249",
+      "caption": "벽에 부착된 공구 캐비닛 안 첫 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/76/Closer_to_the_People_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250826200553",
+      "caption": "중간 줄에 있는 완전히 열린 락커 아래 바닥 두 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/Closer_to_the_People_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250826200754",
+      "caption": "세면대 옆 락커 안 세 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/Closer_to_the_People_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250826201148",
+      "caption": "선반 옆 바닥 네 번째 스폰 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Closer_to_the_People",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

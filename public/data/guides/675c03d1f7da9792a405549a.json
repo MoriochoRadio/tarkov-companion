@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "taskId": "675c03d1f7da9792a405549a",
+  "nameKo": "Abandoned Cargo",
+  "nameEn": "Abandoned Cargo",
+  "steps": [
+    "세관(Customs) 맵에서 MS2000 마커 7개를 준비한다. 이 아이템은 플레이어 인벤토리에서 사용 시 사라지며, 화물 팔레트에 부착해야 한다.",
+    "붉은 세관 통제 창고(Red customs control warehouse)로 이동한다. 창고 서쪽에 위치한 화물 1번 팔레트를 찾는다. 여기서 MS2000 마커를 사용해 표시한다.",
+    "창고 17(Warehouse 17)으로 이동한다. 창고 17은 세관 맵 내에 위치하며, 남쪽 입구를 통해 진입할 수 있다.",
+    "창고 17 1층에서 화물 7번 팔레트를 찾는다. 이곳에 MS2000 마커를 부착한다.",
+    "창고 17 2층으로 올라간다. 벽화 뒤 계단 구간에서 화물 3번 팔레트를 찾을 수 있다. MS2000 마커를 사용해 표시한다.",
+    "창고 17 3층 또는 크레인 구역에서 화물 6번 팔레트를 찾는다. 이곳에도 MS2000 마커를 부착한다.",
+    "보일러 건물(Boiler building)로 이동한다. 세관 맵 내에 위치해 있으며, 굴뚝과 샤워장 근처에 화물들이 분포해 있다.",
+    "보일러 건물 북쪽 외부에서 화물 5번 팔레트를 찾는다. MS2000 마커를 사용해 표시한다.",
+    "보일러 건물 내부 샤워장 옆에서 화물 2번 팔레트를 찾는다. 마커를 부착한다.",
+    "보일러 건물 내 굴뚝 옆 드럼통 근처에서 화물 4번 팔레트를 찾는다. MS2000 마커를 부착해 표시한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/Abandoned_Cargo_Map.png/revision/latest/scale-to-width-down/640?cb=20250201215631",
+      "caption": "지도에 표시된 화물 1 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Abandoned_Cargo_1.png/revision/latest/scale-to-width-down/640?cb=20250428201456",
+      "caption": "창고 서쪽에 위치한 화물 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/Warehouse17Map.png/revision/latest/scale-to-width-down/640?cb=20241229223041",
+      "caption": "지도에 표시된 창고 17 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/Warehouse17.png/revision/latest/scale-to-width-down/640?cb=20250325012213",
+      "caption": "창고 17 남쪽 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ef/Abandoned_Cargo_7.png/revision/latest/scale-to-width-down/640?cb=20250908231648",
+      "caption": "1층에 위치한 화물 7"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f7/Abandoned_Cargo_3.png/revision/latest/scale-to-width-down/640?cb=20250908231754",
+      "caption": "벽화 뒤 계단에 위치한 2층의 화물 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/60/Abandoned_Cargo_6.png/revision/latest/scale-to-width-down/640?cb=20250908232014",
+      "caption": "3층 크레인 구역에 위치한 화물 6"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/BoilerBuildingMap.png/revision/latest/scale-to-width-down/640?cb=20241229195259",
+      "caption": "지도에 표시된 보일러 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/BoilerBuilding.png/revision/latest/scale-to-width-down/640?cb=20250325011849",
+      "caption": "보일러 건물 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1a/Abandoned_Cargo_5.png/revision/latest/scale-to-width-down/640?cb=20250428201616",
+      "caption": "건물 북쪽 외부에 위치한 화물 5"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/Abandoned_Cargo_2.png/revision/latest/scale-to-width-down/640?cb=20250908232411",
+      "caption": "샤워장 옆에 위치한 화물 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5c/Abandoned_Cargo_4.png/revision/latest/scale-to-width-down/640?cb=20250908232804",
+      "caption": "굴뚝 옆 드럼통 근처에 위치한 화물 4"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Abandoned_Cargo",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "6179ad56c760af5ad2053587",
+  "nameKo": "해변으로 떠난 휴가",
+  "nameEn": "Seaside Vacation",
+  "steps": [
+    "해안선(Shoreline) 맵의 해변가에 위치한 서쪽 집 중 하나를 찾는다. 이 집은 해변 바로 옆에 있으며, 지도에 표시된 집이다.",
+    "집 2층으로 올라간다. 2층은 작은 다리를 건너 왼쪽 첫 번째 방이다.",
+    "방 안에서 창문 쪽 침대 밑을 확인한다. 그곳에 서류가방(briefcase)이 숨겨져 있다.",
+    "서류가방을 획득한다. 이 아이템은 퀘스트 활성화 상태에서만 레이드 내에서 발견할 수 있으며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "서류가방을 가지고 레이드에서 안전하게 탈출한다. 탈출하지 못하면 아이템을 잃게 되므로 주의한다."
+  ],
+  "tips": "만약 BEAR 진영이거나 BEAR 플레이어와 함께 그룹으로 해변가를 걷거나 부두 옆 다른 집, 또는 정수장 근처에 접근하면, 로그(Rogues)가 고정 무기로 공격할 수 있다. 따라서 신속히 들어가서 나오는 것이 좋다. USEC 진영이면서 지난 3번의 레이드에서 로그를 공격한 적이 있으면 로그에게 적대적으로 인식되어 공격받을 수 있다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/SeasideVacationMap.png/revision/latest/scale-to-width-down/640?cb=20211219151340",
+      "caption": "지도에 표시된 집"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/SeasideVacationHouse.png/revision/latest/scale-to-width-down/640?cb=20240312095756",
+      "caption": "목표 집"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5f/SeasideVacationRoom.png/revision/latest/scale-to-width-down/640?cb=20211219151338",
+      "caption": "작은 다리를 건너 왼쪽 첫 번째 방"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4e/SeasideVacationClose.png/revision/latest/scale-to-width-down/640?cb=20220102005852",
+      "caption": "서류가방은 창문 쪽 침대 밑에 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Seaside_Vacation",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

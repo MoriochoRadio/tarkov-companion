@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "taskId": "5ae448f286f77448d73c0131",
+  "nameKo": "전쟁의 피 - 파트 1",
+  "nameEn": "The Blood of War - Part 1",
+  "steps": [
+    "인터체인지(Interchange) 맵에서 MS2000 마커 4개를 준비한다. MS2000 마커는 퀘스트 필수 아이템이며, 레이드 내에서 획득할 수 없다.",
+    "첫 번째 연료 탱커 트럭은 고샨(Goshan) 상점 뒤에 위치해 있다. 고샨 건물 뒤쪽을 찾아가서 탱커 트럭을 발견한 후 MS2000 마커를 사용해 표시한다. 마커를 사용하면 인벤토리에서 사라진다.",
+    "두 번째 연료 탱커 트럭은 고속도로 서쪽, '강으로 가는 길(Path to River)' 추출 지점 근처 지역에 있다. 이 위치로 이동해 탱커 트럭을 찾아 MS2000 마커를 사용해 표시한다.",
+    "세 번째 연료 탱커 트럭은 발전소(Power Station)에 있다. 발전소 내부 또는 주변을 탐색해 탱커 트럭을 찾은 후 MS2000 마커를 사용해 표시한다.",
+    "네 번째 연료 탱커 트럭은 트레일러 파크(Trailer Park) 남쪽에 위치해 있다. 트레일러 파크 남쪽 지역으로 이동해 탱커 트럭을 찾아 MS2000 마커로 표시한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/The_Blood_of_War_Part_1_Map.jpg/revision/latest/scale-to-width-down/640?cb=20251201203051",
+      "caption": "연료 탱커 트럭 위치가 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Bloodofwartanker.png/revision/latest/scale-to-width-down/640?cb=20240729133245",
+      "caption": "고샨 상점 뒤에 있는 탱커 트럭 #1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/be/Bloodofwartanker2.png/revision/latest/scale-to-width-down/640?cb=20251117022443",
+      "caption": "\"강으로 가는 길(Path to River)\" 추출 지점 근처 고속도로 서쪽에 있는 탱커 트럭 #2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f5/Bloodofwartanker3.png/revision/latest/scale-to-width-down/640?cb=20240729133714",
+      "caption": "발전소에 있는 탱커 트럭 #3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/Bloodofwartanker4.png/revision/latest/scale-to-width-down/640?cb=20251201203208",
+      "caption": "트레일러 파크 남쪽에 있는 탱커 트럭 #4"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

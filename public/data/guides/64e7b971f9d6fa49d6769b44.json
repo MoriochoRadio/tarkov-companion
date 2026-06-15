@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "64e7b971f9d6fa49d6769b44",
+  "nameKo": "The Huntsman Path - Big Game",
+  "nameEn": "The Huntsman Path - Big Game",
+  "steps": [
+    "세관(Customs) 또는 리저브(Reserve) 등에서 Kaban과 그의 경호원 Basmach, Gus를 찾아 처치한다.",
+    "Kaban의 경호원 5명을 추가로 처치한다."
+  ],
+  "tips": "Kaban과 그의 경호원들은 특정 맵에서만 등장하므로, 출현 위치를 미리 파악하고 팀원과 협력하여 신중하게 접근하는 것이 좋다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Big_Game",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

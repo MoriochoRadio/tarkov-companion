@@ -1,0 +1,72 @@
+{
+  "version": 2,
+  "taskId": "64f3176921045e77405d63b5",
+  "nameKo": "Ambulances Again",
+  "nameEn": "Ambulances Again",
+  "steps": [
+    "세관(Interchange) 맵에서 'Ambulances Again' 퀘스트를 시작하면, 타르코프 시내(Streets of Tarkov)에서 구급차 조수석 발판에 있는 구급대원의 스마트폰(Paramedic's GPhone X)을 찾아야 합니다. 이 아이템은 퀘스트 활성화 상태에서만 레이드 내에서 획득할 수 있으며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동합니다. 추출 시 이 아이템을 소지하고 있어야 하며, 추출 실패 시 아이템을 잃게 됩니다.",
+    "스마트폰은 타르코프 시내 내 8곳의 구급차 중 한 곳에 무작위로 스폰됩니다. 아래 위치 중 한 곳에서 찾아야 합니다.",
+    "첫 번째 위치: Cardinal 아파트 단지 남쪽에 있는 구급차 조수석 발판, 'President restaurant' 간판 아래에서 찾을 수 있습니다.",
+    "두 번째 위치: Klimova 거리 18번지에 있는 구급차 조수석 발판, 'Basement Descent' 스캐브 추출 지점 근처입니다.",
+    "세 번째 위치: Pinewood 호텔 남쪽에 있는 구급차 뒤쪽 바닥에서 찾을 수 있습니다.",
+    "네 번째 위치: Chekannaya 거리 15번지에 있는 구급차 조수석 좌석, Sparja 상점 맞은편입니다.",
+    "다섯 번째 위치: Primorsky 대로에 있는 구급차 조수석 발판, LexOs 자동차 딜러점 맞은편입니다.",
+    "여섯 번째 위치: Concordia 아파트 단지 놀이터에 있는 구급차 오른쪽 바닥에서 찾을 수 있습니다.",
+    "일곱 번째 위치: 'Crash Site' 추출 지점 구급차 조수석 문 바로 밖 바닥에 있습니다. 이 위치는 추출 구역 내에 있으니 주의하세요.",
+    "여덟 번째 위치: Razvedchikov 거리 남쪽의 적재 구역에 있는 구급차 뒤쪽에서 찾을 수 있습니다.",
+    "스마트폰을 획득한 후에는 반드시 'Primorsky Ave Taxi V-Ex' 추출 지점으로 이동하여 스마트폰을 소지한 상태로 추출해야 퀘스트가 완료됩니다. 스마트폰을 획득한 레이드와 추출하는 레이드가 반드시 같을 필요는 없습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/69/Ambulances-streets.png/revision/latest/scale-to-width-down/640?cb=20230927155312",
+      "caption": "지도에 표시된 구급차 위치들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/39/Ambulances_Again_7.png/revision/latest/scale-to-width-down/640?cb=20230925180928",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/Ambulances_Again_7_Location.png/revision/latest/scale-to-width-down/640?cb=20230925181209",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5a/Ambulances_Again_4.png/revision/latest/scale-to-width-down/640?cb=20230925173628",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3f/Ambulances_Again_4_Location.png/revision/latest/scale-to-width-down/640?cb=20230925173803",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/59/Ambulances_Again_1.png/revision/latest/scale-to-width-down/640?cb=20230925170218",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/84/Ambulances_Again_1.1.png/revision/latest/scale-to-width-down/640?cb=20230925170347",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a8/Ambulances_Again_3.png/revision/latest/scale-to-width-down/640?cb=20230925172038",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/Ambulances_Again_3_Location.png/revision/latest/scale-to-width-down/640?cb=20250414215541",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/Ambulances_Again_2.png/revision/latest/scale-to-width-down/640?cb=20230925170809",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ef/Ambulances_Again_2.1.png/revision/latest/scale-to-width-down/640?cb=20230925171051",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/48/Ambulances_Again_5.png/revision/latest/scale-to-width-down/640?cb=20230925174508",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Ambulances_Again",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "taskId": "639135b04ed9512be67647d7",
+  "nameKo": "소련공산당에 영광을 - 파트 1",
+  "nameEn": "Glory to CPSU - Part 1",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 Chekannaya 15 아파트 건물을 찾는다. 지도에서 아파트 건물 위치를 확인할 수 있다.",
+    "아파트 건물 입구는 벽에 표시되어 있으니 이를 통해 건물 안으로 진입한다.",
+    "아파트 건물 내에서 서쪽 계단(Western Staircase)으로 이동한다. 건물 지도에 서쪽 계단 위치가 표시되어 있으며, 계단으로 가는 경로는 세 장의 사진으로 자세히 안내되어 있다.",
+    "서쪽 계단을 따라 3층으로 올라간다. 3층 복도에 위치한 5호실(cell #5) 바닥에 구멍이 뚫려 있는 것을 확인한다.",
+    "5호실 바닥의 구멍을 통해 2층으로 내려간다. 이 구멍을 통해서만 2층에 있는 목표 아파트에 접근할 수 있다.",
+    "2층 복도에 도착하면, 목표 아파트 위치가 표시되어 있으니 해당 아파트를 찾는다.",
+    "목표 아파트에 진입하여 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Chekannaya15Map.png/revision/latest/scale-to-width-down/640?cb=20230826220245",
+      "caption": "지도에 표시된 아파트 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/Chekannaya15ApartmentBuilding.png/revision/latest/scale-to-width-down/640?cb=20230102195416",
+      "caption": "입구가 벽에 표시된 아파트 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fc/WesternStaircaseMap.png/revision/latest?cb=20240729161305",
+      "caption": "건물 지도에 표시된 서쪽 계단 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/WesternStaircaseWay1.png/revision/latest/scale-to-width-down/640?cb=20230108164530",
+      "caption": "서쪽 계단으로 가는 길 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/WesternStaircaseWay2.png/revision/latest/scale-to-width-down/640?cb=20230108164528",
+      "caption": "서쪽 계단으로 가는 길 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/WesternStaircaseWay3.png/revision/latest/scale-to-width-down/640?cb=20230108165133",
+      "caption": "서쪽 계단으로 가는 길 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6f/Chekannaya15ApartmentBuildingWesternStairs.png/revision/latest/scale-to-width-down/640?cb=20230108165324",
+      "caption": "서쪽 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cc/Chek15TFHallway.png/revision/latest/scale-to-width-down/640?cb=20230128224646",
+      "caption": "5호실 바닥의 구멍이 표시된 3층 복도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/db/CPSUHallway.png/revision/latest/scale-to-width-down/640?cb=20230128225222",
+      "caption": "아파트가 표시된 2층 복도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/CPSUApartment.png/revision/latest/scale-to-width-down/640?cb=20230108163743",
+      "caption": "목표 아파트"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Glory_to_CPSU_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "65802b627b44fa5e14638899",
+  "nameKo": "Nothing Fishy About This",
+  "nameEn": "Nothing Fishy About This",
+  "steps": [
+    "레이드에서 해안선(Shoreline) 맵으로 진입한다.",
+    "맵의 동쪽 늪지대 마을 근처를 탐색한다. 이 지역은 늪지와 연못이 많은 곳이다.",
+    "늪지 마을 동쪽에 위치한 연못을 찾는다. 연못 안에 래그맨(Ragman)의 잃어버린 SUV가 침수되어 있다.",
+    "연못 안에 있는 SUV를 찾아서 확인한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/Nothing_Fishy_About_This_Map.png/revision/latest/scale-to-width-down/640?cb=20250922194606",
+      "caption": "지도에 표시된 SUV 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/31/Nothing_Fishy_About_This_Location.png/revision/latest/scale-to-width-down/640?cb=20250922193313",
+      "caption": "연못 속에 있는 SUV"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Nothing_Fishy_About_This",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T16:39:44.905+09:00"
+}
