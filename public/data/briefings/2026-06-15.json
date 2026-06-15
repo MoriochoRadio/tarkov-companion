@@ -1,0 +1,71 @@
+{
+  "date": "2026-06-15",
+  "generatedAt": "2026-06-15T14:27:18.728+09:00",
+  "headline": "주말 XP 보너스와 함께 블랙 디비전 AI 개선 및 Wedge 보스 함정 강화 유지",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "블랙 디비전 AI 및 Wedge 보스 함정 강화 주의",
+      "items": [
+        {
+          "title": "블랙 디비전 AI 행동 개선 및 엔진룸 버그 수정",
+          "summary": "블랙 디비전 병사들이 엔진룸에서 플레이어를 향해 더 고르게 퍼져 움직이며 수류탄 사용 빈도가 증가했습니다. 또한 엔진룸 내 이동하지 않던 버그와 Knight 보스의 갑판 진입 문제도 수정되어 전투 패턴이 정상화되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Wedge 보스의 가스 수류탄 트립와이어 증가",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치하여 플레이어의 접근을 방해하므로, 접근 경로를 신중히 선택해 피해를 줄여야 합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "주말 XP 보너스 활성화",
+      "items": [
+        {
+          "title": "Icebreaker 레이드 XP 25% 증가",
+          "summary": "6월 15일 오전 11시까지 Icebreaker 레이드에서 획득하는 XP가 PvP와 PvE 모두에 대해 25% 증가하여 경험치 획득을 극대화할 수 있습니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/559155780967727820",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "유용한 게임 플레이 정보",
+      "items": [
+        {
+          "title": "가벼운 M4A1 총기 빌드 소개",
+          "summary": "무게 1,981그램(장전 시 2,535그램)으로 게임 내 가장 가벼운 M4A1 빌드를 구체적인 구성과 수치로 제시하여, 실험적인 총기 세팅에 참고할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u5imy0/discussion_the_new_lightest_m4a1_in_the_game_sub/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "추천 영상",
+      "items": [
+        {
+          "title": "쇄빙선 빌드 거의 완성 되어감",
+          "url": "https://www.youtube.com/watch?v=U0P0wJPt8R8",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - CHILL PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=W2e4gRgK3kw",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Going to ICEBREAKER with Summit1G and HutchMF - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=FpSLrfpdV68",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
