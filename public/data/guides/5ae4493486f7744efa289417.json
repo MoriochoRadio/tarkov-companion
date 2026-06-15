@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "taskId": "5ae4493486f7744efa289417",
+  "nameKo": "데이터베이스 - 파트 1",
+  "nameEn": "Database - Part 1",
+  "steps": [
+    "IDEA 화물 명세서 획득: 인터체인지(Interchange) 맵의 IDEA 사무실 입구로 이동한다. 메인 입구 바로 왼쪽에 위치해 있다. 사무실 안으로 들어가 벽에 수직으로 배치된 중앙 책상 중 하나에서 문서를 찾는다.",
+    "Goshan 화물 명세서 획득: Goshan 상점 북쪽의 작은 복도로 이동한다. Goshan 입구에서 계산대가 있는 정면에서 들어가면 왼쪽 방향이다. 복도 안 컴퓨터실을 찾아 책상 위에 있는 명세서를 획득한다.",
+    "OLI 화물 명세서 획득: OLI 상점 메인 입구로 들어가 오른쪽으로 방향을 틀어 상점 뒤쪽으로 이동한다. 큐브 형태의 책상이 있는 곳을 찾는다. 책상 위에 명세서가 놓여 있으며, 책상 위에는 표지판이 있다.",
+    "각 명세서는 퀘스트가 활성화된 상태에서만 레이드 내에서 획득 가능하며, 획득 즉시 퀘스트 아이템 인벤토리로 이동한다.",
+    "획득한 명세서들은 다음 레이드에 진입하기 전에 반드시 제출해야 한다. 사망 시 퀘스트 아이템 인벤토리가 초기화되어 아이템을 잃게 된다."
+  ],
+  "tips": "IDEA, Goshan, OLI 화물 명세서는 각각 인터체인지 맵 내 특정 위치에서만 획득 가능하며, 명세서 획득 후 사망하지 않고 반드시 추출해야 퀘스트 진행이 가능하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1a/GOSHAN_Manifest.png/revision/latest?cb=20221012071958",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/03/OLI_Manifest.png/revision/latest?cb=20221012072228",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4f/IDEA_Manifest.png/revision/latest?cb=20221012072043",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9c/Interchange_Database_part_1_Guide.png/revision/latest/scale-to-width-down/640?cb=20220619112706",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ad/IDEA_Manifest_1_Outside.png/revision/latest/scale-to-width-down/640?cb=20180928134859",
+      "caption": "메인 입구 아래에 위치한 IDEA 사무실 입구 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/17/IDEA_Manifest_2_inside.png/revision/latest/scale-to-width-down/640?cb=20180928134833",
+      "caption": "명세서가 위치한 컴퓨터실 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5d/Database_Part_1_Guide_%283%29.png/revision/latest/scale-to-width-down/640?cb=20180514113448",
+      "caption": "IDEA 컴퓨터실 내 책상 위에 있는 IDEA 명세서"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/Database_Part_1_Guide_%282%29.png/revision/latest/scale-to-width-down/640?cb=20180514113443",
+      "caption": "북쪽 Goshan 컴퓨터실 내 책상 위에 있는 Goshan 명세서"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/Oli_Manifest2.png/revision/latest/scale-to-width-down/640?cb=20180928134813",
+      "caption": "OLI 상점 메인 입구 에스컬레이터 상단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/Oli_Manifest1.png/revision/latest/scale-to-width-down/640?cb=20180928134930",
+      "caption": "큐브형 책상이 위치한 OLI 상점 내부 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bd/Database_Part_1_Guide_%281%29.png/revision/latest/scale-to-width-down/640?cb=20180520174013",
+      "caption": "OLI 서쪽 정보 부스 내 책상 위에 있는 OLI 명세서"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

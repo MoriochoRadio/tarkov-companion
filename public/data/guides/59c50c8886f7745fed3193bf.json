@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "59c50c8886f7745fed3193bf",
+  "nameKo": "퍼니셔 - 파트 2",
+  "nameEn": "The Punisher - Part 2",
+  "steps": [
+    "Suppressor(소음기)가 장착된 무기를 준비한다. 소음기 없는 무기는 퀘스트에 반영되지 않는다.",
+    "리저브(Reserve) 맵으로 진입한다.",
+    "리저브 맵에서 스카브(Scav) 적을 12명 처치한다. 처치는 반드시 소음기 장착 무기로 해야 한다.",
+    "레이드 중 리저브 맵에서 하프 마스크(lower half-mask) 아이템을 7개 획득한다. 하프 마스크는 주로 스카브가 착용하고 있으며, 스카브 처치 후 획득하거나 맵 곳곳에서 발견할 수 있다.",
+    "획득한 하프 마스크 7개를 퀘스트에 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

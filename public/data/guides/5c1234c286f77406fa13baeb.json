@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5c1234c286f77406fa13baeb",
+  "nameKo": "준비작업",
+  "nameEn": "Setup",
+  "steps": [
+    "퀘스트 진행을 위해 반드시 다음 중 하나의 우샨카 모자(Ushanka ear flap hat, Domontovich ushanka hat, New Year ushanka hat)를 착용해야 합니다.",
+    "퀘스트 진행을 위해 반드시 다음 중 하나의 조끼(Scav Vest, Tac-Kek JayPC plate carrier (Black), Tac-Kek JayPC plate carrier (OD Green))를 착용해야 합니다.",
+    "MP 시리즈 샷건 중 하나를 사용해야 하며, 가능한 무기는 MP-18 7.62x54R 단발 소총, MP-43-1C 12게이지 더블 배럴 샷건, MP-43 톱질된 더블 배럴 샷건, MP-133 12게이지 펌프 액션 샷건, MP-153 12게이지 반자동 샷건, MP-155 12게이지 반자동 샷건입니다.",
+    "위 조건을 모두 충족한 상태에서 PMC 적을 8명 처치해야 합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Setup",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

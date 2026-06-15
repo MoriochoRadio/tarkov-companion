@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "6179acbdc760af5ad2053585",
+  "nameKo": "쉬운 일 - 파트 2",
+  "nameEn": "Easy Job - Part 2",
+  "steps": [
+    "라이트하우스(Lighthouse) 맵의 수도 처리장(Water Treatment Plant) 특정 구역 내에서 적 10명을 처치해야 합니다.",
+    "처치 대상은 로그(Rogues), 스캡(Scavs), PMC 중에서 가능합니다.",
+    "킬 카운트는 반드시 지정된 수도 처리장 구역 내에서 이루어져야 하며, 구역 밖에서의 처치는 목표 달성에 포함되지 않습니다.",
+    "지정 구역은 퀘스트 지도(EasyJob2Map.png)에 표시되어 있으니, 반드시 해당 구역을 확인하고 이동하세요."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/EasyJob2Map.png/revision/latest/scale-to-width-down/640?cb=20250324160605",
+      "caption": "퀘스트 처치 구역이 지도에 표시됨"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

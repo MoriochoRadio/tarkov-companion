@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "taskId": "5a27ba1c86f77461ea5a3c56",
+  "nameKo": "광신도 - 파트 2",
+  "nameEn": "The Cult - Part 2",
+  "steps": [
+    "MS2000 마커 4개를 준비한다. 마커는 프라퍼(Prapor)에게 구매할 수 있다.",
+    "세관(Customs)으로 이동하여 3층 기숙사 314호를 찾는다. 이 방은 3층짜리 기숙사 건물 끝 복도에 위치하며, 문에는 촛불과 여러 표식이 있어 쉽게 식별할 수 있다.",
+    "기숙사 314호 문을 열기 위해 Dorm room 314 marked key가 필요하다. 이 열쇠를 준비한 후 문을 열고 방 안으로 들어간다.",
+    "314호 방 안에 MS2000 마커를 설치한다. 설치 시 인벤토리에서 마커가 사라진다.",
+    "삼림(Woods)으로 이동한다. 첫 번째 의식 장소는 톱밥 공장 서쪽, 검문소 근처 숲에 있다. 검문소 바리케이드에 서서 남쪽 큰 바위를 바라보면 의식 장소를 쉽게 찾을 수 있다.",
+    "그 위치에 MS2000 마커를 설치한다.",
+    "삼림 북쪽의 폐허가 된 마을로 이동한다. 교회 북쪽 뒷마당에 위치한 집 주변에 두 번째 의식 장소가 있다.",
+    "그 위치에 MS2000 마커를 설치한다.",
+    "해안선(Shoreline)으로 이동하여 건강 리조트(Health Resort) 동쪽 별관 3층 321호, 즉 돼지 방으로 간다. 문에는 촛불과 여러 표식이 있어 쉽게 식별할 수 있다.",
+    "방 안에는 여러 마리 도살된 돼지와 돼지 머리를 쓴 죽은 스카브(Dead Scav)가 있다. 욕조 주변이 MS2000 마커를 설치할 위치이다.",
+    "욕조 주변에 MS2000 마커를 설치한다."
+  ],
+  "tips": "의식 장소들은 모두 희귀하고 가치 있는 전리품이 있는 곳이므로, 진입 시 주의가 필요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5f/TheCultPart2DormsMap.png/revision/latest/scale-to-width-down/640?cb=20230311024204",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/84/Marked_Room_Door.png/revision/latest/scale-to-width-down/640?cb=20260416031530",
+      "caption": "표식이 있는 방의 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fb/Customsritualsite.png/revision/latest/scale-to-width-down/640?cb=20251112014507",
+      "caption": "마커를 설치해야 하는 방 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/53/WoodsRitualSpotMapMarked.png/revision/latest/scale-to-width-down/640?cb=20210115145037",
+      "caption": "지도에 표시된 위치 (하단)"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/CheckPointViewToMarkedCircle.png/revision/latest/scale-to-width-down/640?cb=20190910195221",
+      "caption": "검문소에서 의식 장소를 바라본 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/MarkedCircleViewToCheckpoint.png/revision/latest/scale-to-width-down/640?cb=20190910195340",
+      "caption": "의식 장소에서 검문소를 바라본 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/82/Cultists_ritual_place.png/revision/latest/scale-to-width-down/640?cb=20231112222223",
+      "caption": "표식이 있는 원"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/The_second_ritual_spot_in_the_Woods.png/revision/latest/scale-to-width-down/640?cb=20231112222030",
+      "caption": "폐허가 된 마을의 두 번째 의식 장소"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWing.jpg/revision/latest/scale-to-width-down/640?cb=20240520225533",
+      "caption": "지도에 표시된 건강 리조트 동쪽 별관 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWingMarkedRoom.png/revision/latest/scale-to-width-down/640?cb=20190910191931",
+      "caption": "동쪽 별관 지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/Shorelineritualsite.png/revision/latest/scale-to-width-down/640?cb=20260611205250",
+      "caption": "마커를 설치해야 하는 의식 장소"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Cult_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

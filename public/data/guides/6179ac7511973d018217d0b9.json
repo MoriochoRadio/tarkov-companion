@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "6179ac7511973d018217d0b9",
+  "nameKo": "쉬운 일 - 파트 1",
+  "nameEn": "Easy Job - Part 1",
+  "steps": [
+    "레이드 내 북쪽에 위치한 물 처리장(Water Treatment Plant)의 분지 중 한 곳으로 이동한다.",
+    "물 처리장 내 분지에 착륙해 있는 헬리콥터를 찾는다.",
+    "인벤토리에서 MS2000 마커(MS2000 Marker)를 꺼내 헬리콥터에 설치한다. 설치 시 마커 아이템은 인벤토리에서 사라진다."
+  ],
+  "tips": "MS2000 마커는 퀘스트 진행에 필수 아이템이며, 헬리콥터 위치는 물 처리장 내 분지 중 하나이므로 정확한 위치 파악이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/EasyJobHeliMap.png/revision/latest/scale-to-width-down/640?cb=20250504000524",
+      "caption": "지도에 표시된 헬리콥터 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/16/EasyJobHeliPic.png/revision/latest/scale-to-width-down/640?cb=20211219130116",
+      "caption": "목표 헬리콥터"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

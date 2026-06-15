@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "taskId": "66ab970848ddbe9d4a0c49a8",
+  "nameKo": "Special Comms",
+  "nameEn": "Special Comms",
+  "steps": [
+    "세관 맵에서 시작하여, 'RUAF Gate' 추출 지점 근처의 바위에 도착합니다. 이곳에 Bulbex cable cutter와 Military cable을 각각 2개씩 숨겨야 합니다.",
+    "Bulbex cable cutter와 Military cable을 숨긴 후, 세관에서 리저브로 이동하기 위해 전이 지점을 찾습니다. 전이는 레이드 시작 1분 후에만 가능합니다.",
+    "리저브에 도착하면, 동쪽 창고 위의 모래주머니 위치로 이동합니다. 이곳은 'Д' (Bunker Hermetic Door)로 표시된 위치입니다.",
+    "모래주머니 위치에 도착하면, Bulbex cable cutter와 Military cable을 각각 2개씩 숨깁니다."
+  ],
+  "tips": "전이 지점은 레이드 시작 후 1분이 지나야 활성화되므로, 시간을 잘 확인하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/02/Bulbex_cable_cutter_icon1.png/revision/latest?cb=20250811122140",
+      "caption": "위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/73/MarathonSpecialCommsWoodsMap.png/revision/latest/scale-to-width-down/640?cb=20240829212829",
+      "caption": "숨기는 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/MarathonSpecialCommsWoods.png/revision/latest/scale-to-width-down/640?cb=20240829212517",
+      "caption": "위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/19/WoodsTransitToReserve.png/revision/latest/scale-to-width-down/640?cb=20241103134445",
+      "caption": "숨기는 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/47/WoodsTransitToReserve2.png/revision/latest/scale-to-width-down/640?cb=20241103130858",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/MarathonSpecialCommsReserveMap.png/revision/latest/scale-to-width-down/640?cb=20240829213943",
+      "caption": "Location marked on map"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/ff/MarathonSpecialCommsReserve.png/revision/latest/scale-to-width-down/640?cb=20240829213710",
+      "caption": "Stashing location"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Special_Comms",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

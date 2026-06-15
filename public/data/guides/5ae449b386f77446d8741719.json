@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "5ae449b386f77446d8741719",
+  "nameKo": "감사표시",
+  "nameEn": "Gratitude",
+  "steps": [
+    "세관(세관) 맵의 삼림(Woods) 지역에 있는 제재소(sawmill) 부두로 이동한다. 부두 위치는 지도에 표시된 곳을 참고한다.",
+    "퀘스트에 필요한 4가지 아이템을 준비한다. 아이템은 고스트 바라클라바(Ghost balaclava) 1개, 녹색 쉐마그(Shemagh (Green)) 1개, 레이벤치 힙스터 리저브 선글라스(RayBench Hipster Reserve sunglasses) 1개, 라운드 프레임 선글라스(Round frame sunglasses) 1개다. 주의할 점은 쉐마그의 탄(tan) 색상과 라운드 프레임 선글라스의 색상 변형은 사용할 수 없다.",
+    "제재소 부두에 도착하면, 배럴(통) 근처에 아이템을 하나씩 숨긴다. 각 아이템을 숨기는 데는 약 20초가 소요된다.",
+    "첫 번째로 고스트 바라클라바를 배럴 근처에 숨긴다.",
+    "두 번째로 녹색 쉐마그를 같은 위치에 숨긴다.",
+    "세 번째로 레이벤치 힙스터 리저브 선글라스를 배럴 근처에 숨긴다.",
+    "마지막으로 라운드 프레임 선글라스를 배럴 근처에 숨겨 퀘스트를 완료한다."
+  ],
+  "tips": "아이템은 반드시 지정된 색상과 종류만 사용할 수 있으니, 색상과 변형을 꼭 확인해야 한다. 각 아이템을 숨길 때 주변을 잘 살피고, 다른 플레이어의 공격에 대비하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/Gratitudemap.png/revision/latest/scale-to-width-down/640?cb=20250917232953",
+      "caption": "지도에 표시된 부두 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/04/GratitudeLocation.png/revision/latest/scale-to-width-down/640?cb=20250917234407",
+      "caption": "제재소의 부두 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/79/GrattitudeBarrels.png/revision/latest/scale-to-width-down/640?cb=20250917234618",
+      "caption": "배럴 근처에 아이템을 숨기는 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gratitude",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}

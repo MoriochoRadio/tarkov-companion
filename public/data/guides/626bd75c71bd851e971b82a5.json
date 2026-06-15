@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "taskId": "626bd75c71bd851e971b82a5",
+  "nameKo": "정찰",
+  "nameEn": "Reconnaissance",
+  "steps": [
+    "등대(Lighthouse) 맵의 북쪽에 위치한 정수장(water treatment plant) 지역으로 이동한다.",
+    "정수장 지역 내 세 개의 사무실 건물을 찾는다. 이 건물들은 지도에 표시된 위치에 있으며, 각각 외부 계단을 통해 옥상에 접근할 수 있다.",
+    "첫 번째 사무실 건물의 외부 계단을 이용해 옥상으로 올라간다. 옥상에 올라간 후 건물 외부 사다리 근처까지 접근하여 퀘스트 진행을 완료한다.",
+    "두 번째 사무실 건물로 이동하여 동일하게 외부 계단을 통해 옥상에 올라간다. 옥상에서 외부 사다리 근처에 위치해 퀘스트 진행을 완료한다.",
+    "세 번째 사무실 건물로 이동하여 외부 계단을 이용해 옥상에 올라간다. 옥상에서 외부 사다리 근처에 접근하여 퀘스트 진행을 완료한다.",
+    "세 개의 사무실 건물 옥상을 모두 한 번의 레이드 내에서 방문해야 퀘스트가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/80/StairsMap.png/revision/latest/scale-to-width-down/640?cb=20250503235538",
+      "caption": "지도에 표시된 건물과 계단 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4f/Stairs1.png/revision/latest/scale-to-width-down/640?cb=20220702233514",
+      "caption": "사무실 건물 #1 외부 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/Stairs2.png/revision/latest/scale-to-width-down/640?cb=20220702233516",
+      "caption": "사무실 건물 #2 외부 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/Stairs3.png/revision/latest/scale-to-width-down/640?cb=20220702233518",
+      "caption": "사무실 건물 #3 외부 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/OutsideLadder.png/revision/latest/scale-to-width-down/640?cb=20220717220233",
+      "caption": "사다리 모습"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Reconnaissance",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-15T20:32:14.565+09:00"
+}
