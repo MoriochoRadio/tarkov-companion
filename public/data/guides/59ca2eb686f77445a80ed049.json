@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "59ca2eb686f77445a80ed049",
+  "nameKo": "퍼니셔 - 파트 6",
+  "nameEn": "The Punisher - Part 6",
+  "steps": [
+    "SVDS 7.62x54R 저격소총을 사용하여 PMCs를 처치합니다. 필요한 만큼의 소총을 준비하세요.",
+    "USEC 도그태그 7개를 확보합니다. 이 도그태그는 퀘스트 제출 아이템입니다.",
+    "BEAR 도그태그 7개를 확보합니다. 이 도그태그 역시 퀘스트 제출 아이템입니다."
+  ],
+  "tips": "SVDS 저격소총은 적의 사망자에게서 획득할 수 있으며, PMCs를 처치하는 데 유용합니다. 도그태그는 적을 처치한 후 그들의 인벤토리에서 찾을 수 있습니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_6",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

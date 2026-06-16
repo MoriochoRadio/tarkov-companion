@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "taskId": "5edaba7c0c502106f869bc02",
+  "nameKo": "동료들 - 파트 2",
+  "nameEn": "Colleagues - Part 2",
+  "steps": [
+    "해안선(Shoreline)에서 퀘스트를 시작합니다.",
+    "사무실 건물(Office building)로 가기 위해 부두(pier) 쪽으로 이동합니다.",
+    "부두에 도착하면 사무실 건물의 2층으로 올라갑니다.",
+    "사무실 건물의 2층에서 옷장 위에 있는 수술 키트(Surgery kit marked with a blue symbol)를 찾습니다.",
+    "수술 키트를 획득한 후, 서쪽 지역에 있는 빌라(villa)로 이동합니다.",
+    "빌라에 도착하면, 뒷문(back door)을 열기 위해 Cottage back door key를 사용합니다.",
+    "뒷문을 통해 빌라 내부로 들어갑니다.",
+    "2층으로 올라가서 왼쪽 방으로 들어갑니다.",
+    "테이블 위에 있는 화분(potted plant) 안에서 마킹된 안과계측기(Marked Ophthalmoscope)를 찾습니다.",
+    "마킹된 안과계측기를 획득한 후, 퀘스트를 완료하기 위해 안전하게 탈출합니다."
+  ],
+  "tips": "수술 키트와 마킹된 안과계측기는 퀘스트가 활성화된 상태에서만 획득할 수 있으니 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/Cottage_Shoreline_key.png/revision/latest?cb=20230115110847",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d2/PierOfficeBuildingShorelineMap.png/revision/latest/scale-to-width-down/640?cb=20250119160210",
+      "caption": "지도에 표시된 사무실 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/PierOfficeBuilding.png/revision/latest/scale-to-width-down/640?cb=20241020205819",
+      "caption": "원하는 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9b/Surgery_kit.png/revision/latest/scale-to-width-down/640?cb=20241020210548",
+      "caption": "옷장 위에 있는 수술 키트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c4/LockedVillaShorelineMap.png/revision/latest/scale-to-width-down/640?cb=20211210205502",
+      "caption": "지도에 표시된 원하는 빌라"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bc/ShorelineLockedVillaBackEntrance.png/revision/latest/scale-to-width-down/640?cb=20241020210838",
+      "caption": "뒷문이 있는 뒤쪽에서 본 원하는 빌라"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Ophtalmoscope.png/revision/latest/scale-to-width-down/640?cb=20241020211143",
+      "caption": "화분 안에 있는 안과계측기"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Colleagues_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

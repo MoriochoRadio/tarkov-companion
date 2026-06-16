@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "taskId": "6744aca8d3346c216702c583",
+  "nameKo": "Discombobulate",
+  "nameEn": "Discombobulate",
+  "steps": [
+    "VOG-25 Khattabka 수제 수류탄 3개를 준비한다. 이 아이템은 레이드 중 획득(FIR)해야 하며, 트레이더 구매는 불가능하다.",
+    "퀘스트 수락과 동시에 같은 레이드에서 진행할 수 있다.",
+    "삼림(Woods) 맵으로 진입한다.",
+    "첫 번째 수류탄은 제재소(sawmill) 지역에 있는 RPG 탄약 상자에 숨긴다. 숨기는데 15초가 소요된다.",
+    "두 번째 수류탄은 USEC 검문소(USEC checkpoint) 지역의 RPG 탄약 상자에 숨긴다. 역시 15초가 걸린다.",
+    "세 번째 수류탄은 'Junction' BTR 정류장 근처의 RPG 탄약 상자에 숨긴다. 마찬가지로 15초가 필요하다.",
+    "각 위치는 지도에 표시되어 있으며, 정확한 장소를 찾아가서 수류탄을 숨겨야 한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Discombobulate_Map.png/revision/latest/scale-to-width-down/640?cb=20250119223044",
+      "caption": "지도에 표시된 숨기는 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/Discombobulate_Spot_1.png/revision/latest/scale-to-width-down/640?cb=20250325003406",
+      "caption": "제재소에 있는 숨기는 위치 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5e/Discombobulate_Spot_2.png/revision/latest/scale-to-width-down/640?cb=20250325003546",
+      "caption": "USEC 검문소에 있는 숨기는 위치 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/81/Discombobulate_Spot_3.png/revision/latest/scale-to-width-down/640?cb=20250325003700",
+      "caption": "\"Junction\" BTR 정류장에 있는 숨기는 위치 3"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Discombobulate",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

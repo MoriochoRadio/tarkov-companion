@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "6740a3f4eca8acb2d2055159",
+  "nameKo": "Stick in the Wheel",
+  "nameEn": "Stick in the Wheel",
+  "steps": [
+    "레이드 내 원하는 맵에서 적 NPC 또는 플레이어를 총 30명 처치한다.",
+    "처치 대상은 특정 위치에 제한되지 않으므로 세관, 삼림, 해안선, 인터체인지, 리저브, 등대, 공장, 타르코프 시내, 그라운드 제로, 연구소, 미궁 등 모든 지역에서 진행 가능하다.",
+    "적 처치 시 반드시 사망 판정이 나야 하며, 처치한 적은 스캐빈 또는 스커브(SCAV) NPC, 보통 적 AI, 또는 플레이어 캐릭터가 포함될 수 있다.",
+    "퀘스트 진행 상황은 자동으로 기록되므로 별도의 아이템 제출이나 추가 행동은 필요 없다.",
+    "30명 처치 후 퀘스트 완료를 위해 퀘스트 수락 NPC에게 돌아가 보상을 받는다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Stick_in_the_Wheel",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

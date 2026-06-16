@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "taskId": "674492b6909d2013670a347a",
+  "nameKo": "Ask for Directions",
+  "nameEn": "Ask for Directions",
+  "steps": [
+    "MS2000 마커 4개를 준비한다. 이 아이템은 레이드 내에서 획득할 수 없으며, 퀘스트 진행 시 반드시 필요하다.",
+    "등대(Lighthouse) 맵으로 이동한다.",
+    "등대 맵 내 파란색(북쪽) 샬레(Chalet) 위쪽에 위치한 절벽 경로를 찾는다.",
+    "절벽 경로의 4개 지정된 지점에 MS2000 마커를 각각 설치한다. 마커를 설치하면 인벤토리에서 해당 아이템이 사라진다.",
+    "각 마커 설치 위치는 아래 이미지와 같다: 첫 번째 마커 위치, 두 번째 마커 위치, 세 번째 마커 위치, 네 번째 마커 위치.",
+    "마커 설치를 모두 완료하면 퀘스트가 완료된다."
+  ],
+  "tips": "마커 설치 위치는 절벽 경로 위쪽으로, 파란색 샬레 바로 위에 있으므로 해당 지형을 잘 파악하고 이동하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/Ask_for_Directions_Map.png/revision/latest/scale-to-width-down/640?cb=20250119183011",
+      "caption": "지도에 표시된 마커 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d1/Ask_for_Directions_Plant_1.png/revision/latest/scale-to-width-down/640?cb=20250119181557",
+      "caption": "마커 위치 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2f/Ask_for_Directions_Plant_2.png/revision/latest/scale-to-width-down/640?cb=20250119181558",
+      "caption": "마커 위치 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b9/Ask_for_Directions_Plant_3.png/revision/latest/scale-to-width-down/640?cb=20250119181559",
+      "caption": "마커 위치 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Ask_for_Directions_Plant_4.png/revision/latest/scale-to-width-down/640?cb=20250119181601",
+      "caption": "마커 위치 4"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Ask_for_Directions",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

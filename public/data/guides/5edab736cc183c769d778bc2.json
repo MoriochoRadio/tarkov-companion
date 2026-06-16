@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "5edab736cc183c769d778bc2",
+  "nameKo": "동료들 - 파트 1",
+  "nameEn": "Colleagues - Part 1",
+  "steps": [
+    "해안선(Shoreline)에서 시작합니다. 세 명의 시체를 찾아야 하며, 모든 시체는 흰색 수의로 덮여 있습니다.",
+    "첫 번째 시체는 리조트 앞 헬리콥터의 꼬리 아래에 있습니다. 헬리콥터는 리조트 건물의 정면에 위치해 있습니다.",
+    "두 번째 시체는 잠긴 오두막의 뒷마당에 있습니다. 오두막은 리조트에서 멀지 않은 곳에 위치해 있으며, 잠금 해제를 위해 열쇠가 필요할 수 있습니다.",
+    "세 번째 시체는 부두에 있는 사무실 건물 앞에 있습니다. 이 위치는 부두의 끝쪽에 있으며, 사무실 건물은 쉽게 찾을 수 있습니다.",
+    "세 명의 시체를 모두 찾은 후에는 같은 레이드에서 탈출해야 합니다. 레이드 중에 시체를 일부만 찾고 탈출하면 퀘스트가 리셋됩니다."
+  ],
+  "tips": "모든 시체를 찾기 위해서는 한 번의 레이드에서 모든 위치를 방문해야 하므로, 미리 경로를 계획하는 것이 좋습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0b/Shoreline_Colleagues-1.png/revision/latest/scale-to-width-down/640?cb=20220214002157",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/2020-0.png/revision/latest/scale-to-width-down/640?cb=20241215161617",
+      "caption": "리조트 앞 헬리콥터의 꼬리 아래"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/18-39.png/revision/latest/scale-to-width-down/640?cb=20241215161440",
+      "caption": "잠긴 오두막의 뒷마당"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/53/17-11.png/revision/latest/scale-to-width-down/640?cb=20241215161803",
+      "caption": "부두에 있는 사무실 건물 앞"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Colleagues_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "taskId": "6745fdddd3346c216702e0bf",
+  "nameKo": "Simple Side Job",
+  "nameEn": "Simple Side Job",
+  "steps": [
+    "레저브(Reserve) 맵의 병원 건물(White Bishop) 옥상에서 Lightkeeper의 케이스를 획득해야 합니다. 케이스는 여러 위치에 스폰되며, 다음 위치에서 찾을 수 있습니다: 병원 옥상 바닥에 북쪽을 향해 놓여 있는 곳, 원형 모래주머니 요새 안, 북쪽을 향해 놓여 있는 탁자 위, 그리고 동쪽을 향해 놓여 있는 바닥입니다.",
+    "케이스를 획득하면, 이 아이템은 퀘스트 아이템 인벤토리로 자동 이동하며, 만약 이 아이템을 들고 추출에 실패하면 아이템을 잃게 됩니다. 또한, 'Protect the Sky from the BTR Driver' 퀘스트를 완료하면 이 퀘스트는 자동으로 실패하니 주의해야 합니다.",
+    "다음으로 삼림(Woods) 맵의 Scav 하우스에 케이스를 보관해야 합니다. 이 하우스는 맵 남서쪽의 'Outskirts' 추출 지점 근처에 위치해 있습니다.",
+    "Scav 하우스에 케이스를 안전하게 보관하면 퀘스트가 완료됩니다."
+  ],
+  "tips": "퀘스트가 활성화된 상태에서만 케이스가 스폰되므로, 퀘스트를 수락한 후에만 병원 옥상에서 케이스를 찾으세요. 케이스를 들고 있을 때는 사망하거나 추출 실패 시 아이템을 잃으니 신중하게 행동해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/HospitalMap.jpeg/revision/latest/scale-to-width-down/640?cb=20230528233925",
+      "caption": "지도에 표시된 병원 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/Simple_Side_Job_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250309174227",
+      "caption": "북쪽을 향해 바닥에 놓인 첫 번째 케이스 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/Simple_Side_Job_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250309174520",
+      "caption": "원형 모래주머니 요새 안 두 번째 케이스 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/Simple_Side_Job_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250309174426",
+      "caption": "북쪽을 향해 탁자 위에 놓인 세 번째 케이스 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/Simple_Side_Job_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250309174454",
+      "caption": "동쪽을 향해 바닥에 놓인 네 번째 케이스 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/Simple_Side_Job_Woods_Map.png/revision/latest/scale-to-width-down/640?cb=20250119134058",
+      "caption": "지도에 표시된 Scav 하우스 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/08/Scav_House.png/revision/latest/scale-to-width-down/640?cb=20250406094526",
+      "caption": "Scav 하우스 전경"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Simple_Side_Job",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

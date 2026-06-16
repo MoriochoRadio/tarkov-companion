@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "taskId": "6740a15566e6a521aa051b15",
+  "nameKo": "Forge a Friendship",
+  "nameEn": "Forge a Friendship",
+  "steps": [
+    "해안선(Shoreline) 맵의 부두에 위치한 사무실 건물에서 프라퍼(Prapor)의 화물을 찾아야 합니다. 해당 건물은 지도에 표시되어 있으니 위치를 확인하세요.",
+    "사무실 건물 1층 왼쪽 방의 탁자 위에서 첫 번째 화물 스폰 지점을 확인합니다.",
+    "1층 카운터 뒤 바닥에서 두 번째 화물 스폰 지점을 찾습니다.",
+    "1층 건물 오른쪽에 있는 창고 방 안의 나무 상자 위에서 세 번째 화물 스폰 지점을 탐색합니다.",
+    "사무실 건물 2층 왼쪽에 있는 옷장 뒤에서 네 번째 화물 스폰 지점을 확인합니다.",
+    "2층 건물 오른쪽에 있는 책상 밑에서 다섯 번째 화물 스폰 지점을 찾습니다.",
+    "프라퍼의 화물(Cargo for Prapor)은 퀘스트가 활성화된 상태에서만 레이드 중에 획득할 수 있으며, 획득 즉시 퀘스트 아이템 인벤토리로 이동합니다.",
+    "화물을 획득한 후에는 반드시 안전하게 탈출해야 하며, 탈출하지 못하면 아이템을 잃게 됩니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d2/PierOfficeBuildingShorelineMap.png/revision/latest/scale-to-width-down/640?cb=20250119160210",
+      "caption": "지도에 표시된 사무실 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/PierOfficeBuilding.png/revision/latest/scale-to-width-down/640?cb=20241020205819",
+      "caption": "목표 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/97/Forge_a_Friendship_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250119160731",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/Forge_a_Friendship_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250119160826",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/Forge_a_Friendship_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250119161148",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/08/Forge_a_Friendship_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250119161627",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Forge_a_Friendship_Spawn_5.png/revision/latest/scale-to-width-down/640?cb=20250119161640",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Forge_a_Friendship",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

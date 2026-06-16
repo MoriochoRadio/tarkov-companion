@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "taskId": "67460662d0fbbc74ca0f7229",
+  "nameKo": "Choose Your Friends Wisely",
+  "nameEn": "Choose Your Friends Wisely",
+  "steps": [
+    "세관(Customs)에서 시작하여, 레이드 시작 후 1분이 지나면 군사 기지 CP 추출 지점 근처로 이동합니다.",
+    "군사 기지 CP 추출 지점에서 레저브(Reserve)로 이동합니다.",
+    "레저브에 도착하면, 기차 야드 북서쪽의 맵 경계로 이동하여 삼림(Woods)으로 전환합니다.",
+    "삼림에 도착하면, 등대(Lighthouse)로 가는 경로를 찾습니다.",
+    "등대에 도착하면, 5명의 PMC를 처치하고 추출 지점으로 이동합니다."
+  ],
+  "tips": "각 구간에서 PMC를 처치하는 것을 잊지 마세요. 또한, 각 전환 지점에서 적의 출현에 주의해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/10/CustomsTransitToReserveMap.png/revision/latest/scale-to-width-down/640?cb=20250119195021",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/CustomsTransitToReserve.png/revision/latest/scale-to-width-down/640?cb=20250316151200",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a3/ReserveTransitToWoodsMap.png/revision/latest/scale-to-width-down/640?cb=20250101212400",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/ReserveTransitToWoods.png/revision/latest/scale-to-width-down/640?cb=20250323134420",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/WoodsTransitToLighthouseMap.jpg/revision/latest/scale-to-width-down/640?cb=20250119194457",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c1/WoodsTransitToLighthouse.png/revision/latest/scale-to-width-down/640?cb=20250323135011",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Choose_Your_Friends_Wisely",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

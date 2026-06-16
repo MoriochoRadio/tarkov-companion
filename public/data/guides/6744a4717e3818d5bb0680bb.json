@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "6744a4717e3818d5bb0680bb",
+  "nameKo": "Stabilize Business",
+  "nameEn": "Stabilize Business",
+  "steps": [
+    "그라운드 제로(Ground Zero) 맵에서 한 번의 레이드 동안 스카브(Scav) 7명을 처치해야 합니다.",
+    "스카브들은 맵 전역에 흩어져 있으므로, 신중하게 이동하며 적을 찾아 사격하세요.",
+    "7명을 모두 처치한 후 생존하여 레이드에서 탈출해야 퀘스트가 완료됩니다."
+  ],
+  "tips": "그라운드 제로는 좁고 복잡한 실내 구역이 많으니, 소음에 주의하고 적의 위치를 파악하며 움직이세요. 스카브가 많이 출현하는 구역을 미리 파악해 두면 효율적으로 처치할 수 있습니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Stabilize_Business",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

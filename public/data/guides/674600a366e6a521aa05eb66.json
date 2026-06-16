@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "taskId": "674600a366e6a521aa05eb66",
+  "nameKo": "Route Deviation",
+  "nameEn": "Route Deviation",
+  "steps": [
+    "MS2000 마커 6개를 준비한다. 이 아이템은 플레이어 인벤토리에서 제거되므로 신중히 사용해야 한다.",
+    "Collapsed Crane 위치로 이동한다. 콘크리트 믹서기 옆에 있는 캐빈에서 MS2000 마커를 설치한다.",
+    "Old Scav Checkpoint 위치로 이동한다. \"Golden World\" 상점 앞 코너에서 MS2000 마커를 설치한다.",
+    "Pinewood Hotel 위치로 이동한다. 기둥 중 하나 옆 쓰레기 봉투 근처에서 MS2000 마커를 설치한다.",
+    "City Center 위치로 이동한다. Primorsky 49 빌딩 모퉁이에 있는 신호등에서 MS2000 마커를 설치한다.",
+    "Tram 위치로 이동한다. 식당 앞 바리케이드에서 MS2000 마커를 설치한다.",
+    "Rodina Cinema 위치로 이동한다. 계단 아래 컨테이너에서 MS2000 마커를 설치한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/38/BTR_stops_map.png/revision/latest/scale-to-width-down/640?cb=20240305125746",
+      "caption": "지도에 표시된 정류장"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Route_Deviation_Collapsed_Crane.png/revision/latest/scale-to-width-down/640?cb=20250502204251",
+      "caption": "무너진 크레인: 콘크리트 믹서기 옆 캐빈"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/56/Route_Deviation_Old_Scav_Checkpoint.png/revision/latest/scale-to-width-down/640?cb=20250502204519",
+      "caption": "오래된 스캐브 검문소: \"Golden World\" 상점 앞 코너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c1/Route_Deviation_Pinewood_Hotel.png/revision/latest/scale-to-width-down/640?cb=20250502205410",
+      "caption": "파인우드 호텔: 기둥 옆 쓰레기 봉투"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/Route_Deviation_City_Center.png/revision/latest/scale-to-width-down/640?cb=20250502205727",
+      "caption": "시티 센터: Primorsky 49 빌딩 모퉁이 신호등"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a3/Route_Deviation_Tram.png/revision/latest/scale-to-width-down/640?cb=20250502205944",
+      "caption": "트램: 식당 앞 바리케이드"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/47/Route_Deviation_Rodina_Cinema.png/revision/latest/scale-to-width-down/640?cb=20250502210228",
+      "caption": "로디나 시네마: 계단 아래 컨테이너"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Route_Deviation",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

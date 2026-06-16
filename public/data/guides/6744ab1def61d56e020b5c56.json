@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "taskId": "6744ab1def61d56e020b5c56",
+  "nameKo": "Protect the Sky",
+  "nameEn": "Protect the Sky",
+  "steps": [
+    "이 퀘스트는 Lightkeeper(등대지기)의 Simple Side Job 퀘스트와 연관되어 있으며, 이 퀘스트를 먼저 완료하면 Simple Side Job 퀘스트가 자동 실패하니 주의하세요.",
+    "퀘스트를 수락한 후 다음 Woods(삼림) 레이드에서만 KOSA UAV 전자 교란 장치가 등장합니다.",
+    "Woods 맵 북쪽의 낡은 마을(dilapidated village) 남쪽에 위치한 무덤지대(gravesite)에서 여러 스폰 지점이 있습니다.",
+    "무덤지대 위치는 지도에 표시되어 있으니 참고하세요.",
+    "첫 번째 스폰 지점은 들것(stretchers) 옆에 있습니다.",
+    "두 번째 스폰 지점은 보급 상자(supply crate) 안에 있습니다.",
+    "세 번째 스폰 지점은 보급 상자 옆에 위치해 있습니다.",
+    "네 번째 스폰 지점은 호수 쪽 덤불(bushes) 안에 있습니다.",
+    "다섯 번째 스폰 지점은 녹색 상자(green crate) 안에 있습니다.",
+    "이 아이템은 퀘스트 아이템 인벤토리로 자동 이동하며, 아이템을 들고 탈출하지 못하면 아이템을 잃게 됩니다.",
+    "아이템을 획득한 후 지정된 탈출 지점으로 안전하게 이동해 아이템을 제출하면 퀘스트가 완료됩니다."
+  ],
+  "tips": "퀘스트 수락 후 다음 Woods 레이드에서만 아이템이 스폰되므로, 퀘스트를 수락한 상태에서 레이드에 진입하세요. 아이템을 획득하면 반드시 탈출해야 하며, 사망하거나 탈출 실패 시 아이템을 잃게 되니 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Protect_the_Sky_Map.png/revision/latest/scale-to-width-down/640?cb=20250119203611",
+      "caption": "지도에 표시된 무덤지대 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/Protect_the_Sky_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250406103649",
+      "caption": "들것 옆 첫 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bb/Protect_the_Sky_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250406104233",
+      "caption": "보급 상자 안 두 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5d/Protect_the_Sky_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250406104057",
+      "caption": "보급 상자 옆 세 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/Protect_the_Sky_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250406104140",
+      "caption": "호수 쪽 덤불 안 네 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f2/Protect_the_Sky_Spawn_5.png/revision/latest/scale-to-width-down/640?cb=20250406104335",
+      "caption": "녹색 상자 안 다섯 번째 스폰 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Protect_the_Sky",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

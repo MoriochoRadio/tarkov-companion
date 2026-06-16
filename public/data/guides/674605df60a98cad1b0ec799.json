@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "taskId": "674605df60a98cad1b0ec799",
+  "nameKo": "Killer Argument",
+  "nameEn": "Killer Argument",
+  "steps": [
+    "삼림(Woods) 지역 남서쪽 외곽에 위치한 '외곽(Outskirts)' 추출 지점 근처에 있는 스캐브 하우스(Scav house)를 찾는다.",
+    "스캐브 하우스는 여러 위치에 Lightkeeper's case가 스폰될 수 있으니 주의 깊게 주변을 탐색한다.",
+    "스캐브 하우스 내부에서 Lightkeeper's case가 스폰될 수 있는 첫 번째 위치를 확인한다.",
+    "하우스 내 Utyos 기관총 옆에서 두 번째 스폰 위치를 탐색한다.",
+    "하우스 옆 도로에 있는 넘어져 있는 테이블 근처에서 세 번째 스폰 위치를 확인한다.",
+    "하우스 동쪽에 위치한 원형 요새화 구조물 근처에서 네 번째 스폰 위치를 찾는다.",
+    "하우스 옆 도로에 있는 금속 바리케이드 아래에서 다섯 번째 스폰 위치를 탐색한다.",
+    "Lightkeeper's case를 획득하면 해당 아이템은 퀘스트 아이템 인벤토리로 자동 이동하며, 퀘스트가 활성화된 상태에서만 레이드 내에서 획득할 수 있다.",
+    "획득한 Lightkeeper's case를 가지고 반드시 안전하게 추출해야 하며, 추출에 실패할 경우 아이템을 잃게 된다."
+  ],
+  "tips": "Lightkeeper's case는 퀘스트 활성화 시에만 레이드 내에서 등장하므로, 퀘스트를 수락한 상태에서만 스캐브 하우스를 집중적으로 탐색하는 것이 효율적이다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/Simple_Side_Job_Woods_Map.png/revision/latest/scale-to-width-down/640?cb=20250119134058",
+      "caption": "지도에 표시된 스캐브 하우스 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/08/Scav_House.png/revision/latest/scale-to-width-down/640?cb=20250406094526",
+      "caption": "스캐브 하우스 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cb/Killer_Argument_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250406093544",
+      "caption": "하우스 내부 첫 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d1/Killer_Argument_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250406093427",
+      "caption": "하우스 내 Utyos 기관총 옆 두 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fc/Killer_Argument_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250406093029",
+      "caption": "하우스 옆 도로에 있는 넘어져 있는 테이블 근처 세 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/Killer_Argument_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250406093125",
+      "caption": "하우스 동쪽 원형 요새화 구조물 근처 네 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/Killer_Argument_Spawn_5.png/revision/latest/scale-to-width-down/640?cb=20250406093256",
+      "caption": "하우스 옆 도로 금속 바리케이드 아래 다섯 번째 스폰 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Killer_Argument",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

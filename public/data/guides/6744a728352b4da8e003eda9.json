@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "6744a728352b4da8e003eda9",
+  "nameKo": "Battery Change",
+  "nameEn": "Battery Change",
+  "steps": [
+    "퀘스트를 수락하기 전에 6-STEN-140-M 군용 배터리를 이미 가지고 있다면, 퀘스트 수락 후 '찾기(Find)' 목표가 활성화되도록 배터리를 다른 인벤토리 슬롯으로 옮겨야 한다.",
+    "퀘스트 목표는 6-STEN-140-M 군용 배터리 1개를 BTR 운전자에게 전달하는 것이다.",
+    "배터리는 레이드 내에서 획득할 수 없으며, 반드시 퀘스트 시작 전에 미리 준비해두어야 한다.",
+    "퀘스트 완료 시 Lightkeeper(등대지기)의 'Order From Outside' 퀘스트가 자동으로 실패하므로, 두 퀘스트를 동시에 진행하지 않도록 주의한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Battery_Change",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

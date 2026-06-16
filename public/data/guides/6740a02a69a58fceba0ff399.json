@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "6740a02a69a58fceba0ff399",
+  "nameKo": "Natural Exchange",
+  "nameEn": "Natural Exchange",
+  "steps": [
+    "Metal fuel tank(금속 연료통) 2개를 준비한다. 내구도는 상관없으며, 레이드 중 획득(FIR)하거나 플리마켓에서 구매할 수 있다.",
+    "해안선(Shoreline) 맵의 밀수업자 기지에 진입한다.",
+    "밀수업자 기지 내 창고 두 곳에 금속 연료통을 각각 1개씩 숨겨야 한다.",
+    "첫 번째 금속 연료통은 남쪽 창고 내부에 숨긴다. 남쪽 창고 위치는 지도에 표시되어 있으며, 창고 내부 적절한 장소에 연료통을 놓는다.",
+    "두 번째 금속 연료통은 북쪽 창고 내부에 숨긴다. 북쪽 창고 위치도 지도에 표시되어 있으며, 내부 적절한 장소에 연료통을 놓는다.",
+    "두 창고에 각각 금속 연료통 1개씩을 성공적으로 숨기면 퀘스트가 완료된다."
+  ],
+  "tips": "금속 연료통은 무겁고 부피가 크므로 이동 시 주의하고, 밀수업자 기지 내 적의 위치를 미리 파악해 안전하게 이동하는 것이 좋다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/NaturalExchangeMap.png/revision/latest/scale-to-width-down/640?cb=20250116210827",
+      "caption": "지도에 표시된 창고 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1d/NaturalExchangePlacement1.png/revision/latest/scale-to-width-down/640?cb=20250116210148",
+      "caption": "남쪽 창고 내부 첫 번째 숨김 장소"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/NaturalExchangePlacement2.png/revision/latest/scale-to-width-down/640?cb=20250116210321",
+      "caption": "북쪽 창고 내부 두 번째 숨김 장소"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Natural_Exchange",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

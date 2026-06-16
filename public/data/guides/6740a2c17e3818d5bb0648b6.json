@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "6740a2c17e3818d5bb0648b6",
+  "nameKo": "Half-Empty",
+  "nameEn": "Half-Empty",
+  "steps": [
+    "프라퍼(Prapor)로부터 게임 내 우편을 통해 제공받는 RSP-30 반응 신호탄(특수 노란색)을 준비한다. 이 신호탄은 특별 보급품 호출에 사용되며, 보급품에는 퀘스트에 필요한 여러 아이템이 포함되어 있다.",
+    "특수 보급품 호출 후, 보급품이 떨어지는 위치로 이동하여 다음 군용 전자 부품들을 획득한다: 이리듐 군용 열영상 모듈(Iridium military thermal vision module), 군용 COFDM 무선 신호 송신기(Military COFDM Wireless Signal Transmitter), 군용 케이블(Military cable), 군용 회로기판(Military circuit board), 군용 자이로타코미터(Military gyrotachometer), 군용 전원 필터(Military power filter), 버텍스 프로그래머블 프로세서(Virtex programmable processor).",
+    "또한, PC 부품 아이템들도 수집해야 한다. 다음 아이템들을 획득한다: 전선 다발(Bundle of wires), CPU 팬(CPU fan), DVD 드라이브(DVD drive), 손상된 하드 드라이브(Damaged hard drive), 전자 부품(Electronic components), 그래픽 카드(Graphics card), PC CPU(PC CPU), 전원 코드(Power cord), 전원 공급 장치(Power supply unit), 인쇄 회로 기판(Printed circuit board), RAM 스틱(RAM stick).",
+    "이 아이템들은 모두 특수 보급품에서 획득 가능하며, 보급품 위치는 신호탄 사용 후 나타나는 낙하 지점을 확인하여 접근한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Half-Empty",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

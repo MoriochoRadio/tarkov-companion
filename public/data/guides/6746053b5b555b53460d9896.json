@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "6746053b5b555b53460d9896",
+  "nameKo": "Key Partner",
+  "nameEn": "Key Partner",
+  "steps": [
+    "피스키퍼(Peacekeeper)에게 탄약을 제외한 아이템 75개를 판매해야 합니다.",
+    "판매할 아이템은 어떤 종류든 상관없으며, 중복된 아이템도 포함됩니다.",
+    "판매 후 판매량이 즉시 갱신되지 않을 수 있으니, 갱신이 되지 않는 경우 게임을 재시작하여 확인하세요."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Key_Partner",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

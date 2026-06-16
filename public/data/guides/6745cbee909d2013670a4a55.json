@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "taskId": "6745cbee909d2013670a4a55",
+  "nameKo": "The Price of Independence",
+  "nameEn": "The Price of Independence",
+  "steps": [
+    "세관(Customs) 산업 단지 북쪽 건물 3층 사무실에서 'Incriminating letter(혐의 편지)'를 찾는다. 사무실은 3층 복도 끝에 위치하며, 편지는 여러 위치 중 하나에 스폰된다. 첫 번째 위치는 입구에서 왼쪽 스위치 박스 뒤, 두 번째는 중앙 퓨즈 박스(엎드려야 함), 세 번째는 넘어져 있는 책상 옆에 떠 있는 상태, 네 번째는 책상 바로 옆 선반, 다섯 번째는 책상 위이다. 이 편지는 퀘스트 활성화 상태에서만 레이드 내에서 획득 가능하며, 획득 즉시 퀘스트 아이템 인벤토리로 이동한다. 추출하지 못하고 사망 시 아이템을 잃는다.",
+    "산업 단지에서 추출 후, 세관에서 리저브(Reserve)로 이동한다. 리저브 내 군사 본부(Black Bishop) 건물 3층으로 가서 서쪽 벽면에 있는 부서진 상자 근처에 'Incriminating letter'를 숨긴다.",
+    "리저브 군사 본부에서 추출 후, 리저브 북서쪽 기차 야드 인근 맵 경계 지점에서 우측으로 이동하여 삼림(Woods)으로 진입한다.",
+    "삼림에서 적 스캐브(Scav) 3명을 처치한다. 처치 대상은 특정 위치 제한 없이 삼림 내 어느 곳에서든 가능하다.",
+    "삼림에서 추출 후, 삼림 북서쪽 경계 지점에서 등대(Lighthouse)로 이동한다.",
+    "등대 맵 내 기차역과 부두 두 곳에서 노란색 신호탄을 발사해야 한다. 신호탄은 RSP-30 반응성 신호탄(노란색) 2발 또는 ZiD SP-81 26x75 신호 권총 1개와 26x75mm 신호탄(노란색) 2발 중 하나를 사용한다. 신호탄은 반드시 지정된 지역에서 하늘로 쏘아 올려야 하며, 높이 충분히 올라가지 않으면 퀘스트가 완료되지 않는다. RSP-30 신호탄을 사용할 경우 너무 많이 위로 쏘면 뒤로 떨어지니 적절히 조준해야 한다.",
+    "퀘스트 진행 중 총 10명의 스캐브를 처치해야 한다. 사망하거나 모든 목표를 완료하기 전에 추출하면, 'Incriminating letter'를 제외한 모든 진행 상황이 초기화된다.",
+    "모든 목표를 완료한 후, 등대에서 추출하여 퀘스트를 완료한다."
+  ],
+  "tips": "Incriminating letter는 퀘스트 활성화 상태에서만 레이드 내에서 획득 가능하므로, 먼저 퀘스트를 수락한 후에만 찾을 수 있다. 편지 위치가 여러 곳에 스폰되므로, 사무실 내 꼼꼼히 탐색할 것. 신호탄은 반드시 지정된 장소에서 하늘로 쏘아 올려야 하며, 높이가 부족하면 목표가 완료되지 않으니 주의한다. 스캐브 처치는 퀘스트 전반에 걸쳐 진행해야 하며, 중간에 죽거나 추출하면 진행 상황이 초기화되므로 신중히 플레이할 것.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/Provide_Viewership_map.png/revision/latest/scale-to-width-down/640?cb=20260404152652",
+      "caption": "지도에 표시된 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2a/Provide_Viewership_building.png/revision/latest/scale-to-width-down/640?cb=20250323133453",
+      "caption": "산업 단지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/TPoI_Letter_Office.png/revision/latest/scale-to-width-down/640?cb=20250331195006",
+      "caption": "3층 사무실 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/97/TPoI_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250331195128",
+      "caption": "입장 후 왼쪽 스위치 박스 뒤 첫 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/TPoI_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250331195517",
+      "caption": "중앙 퓨즈 박스 두 번째 스폰 위치 (엎드려야 함)"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/TPoI_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250331200014",
+      "caption": "넘어진 책상 옆에 떠 있는 세 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3f/TPoI_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250331200254",
+      "caption": "책상 바로 옆 선반의 네 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/ff/TPoI_Spawn_5.png/revision/latest/scale-to-width-down/640?cb=20250331200112",
+      "caption": "책상 위 다섯 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/10/CustomsTransitToReserveMap.png/revision/latest/scale-to-width-down/640?cb=20250119195021",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/CustomsTransitToReserve.png/revision/latest/scale-to-width-down/640?cb=20250316151200",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/03/TPoI_Letter_Map_Reserve.jpg/revision/latest/scale-to-width-down/640?cb=20250118101937",
+      "caption": "지도에 표시된 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/78/TPoI_Reserve_Stashing_Location.png/revision/latest/scale-to-width-down/640?cb=20250119233046",
+      "caption": "숨긴 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Price_of_Independence",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

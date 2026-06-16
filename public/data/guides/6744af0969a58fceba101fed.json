@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "taskId": "6744af0969a58fceba101fed",
+  "nameKo": "The Price of Independence",
+  "nameEn": "The Price of Independence",
+  "steps": [
+    "세관(Customs) 산업 단지 북쪽 건물 3층 사무실에서 'Incriminating letter(혐의 편지)'를 찾는다. 사무실 문은 3층에 위치하며, 편지는 여러 위치 중 한 곳에 스폰된다. 첫 번째 위치는 입구에서 왼쪽 스위치 박스 뒤, 두 번째는 중앙 퓨즈 박스(엎드려야 찾을 수 있음), 세 번째는 넘어져 있는 책상 옆에 떠 있는 상태, 네 번째는 책상 바로 옆 선반, 다섯 번째는 책상 위이다. 이 편지는 퀘스트 활성화 시에만 레이드 내에서 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다. 추출하지 못하면 아이템을 잃게 된다.",
+    "세관에서 레저브(Reserve)로 이동한다. 이동 경로는 군사 기지 CP 추출 지점 옆에 위치한 통로를 이용한다.",
+    "레저브 군사 본부(Black Bishop) 3층 서쪽 파손된 상자 근처에 'Incriminating letter'를 숨긴다.",
+    "레저브에서 삼림(Woods)으로 이동한다. 이동 경로는 기차 야적장 북서쪽 지도 경계 지점이다.",
+    "삼림에서 목표물 3명을 처치한다. 처치 대상은 특정 인물이 아니며, 아무 3명이나 처치하면 된다.",
+    "삼림에서 등대(Lighthouse)로 이동한다. 이동 경로는 삼림과 등대 경계 지점이다.",
+    "등대 맵 내 지정된 두 구역(기차역과 부두)에서 노란색 신호탄을 발사한다. 신호탄은 RSP-30 반응 신호탄(노란색) 2발 또는 ZiD SP-81 26x75 신호 권총 1개와 26x75mm 신호탄(노란색) 2발 중 하나를 사용한다. 신호탄은 반드시 하늘 높이 쏘아야 하며, 너무 낮게 쏘면 퀘스트 목표가 완료되지 않는다. RSP-30 신호탄을 사용할 경우 위쪽을 향해 쏘되 너무 많이 뒤로 젖히면 뒤에 떨어지므로 주의한다.",
+    "퀘스트 진행 중 총 10명의 스캐브(Scav)를 처치해야 한다.",
+    "모든 목표를 완료하기 전에 사망하거나 추출하면, 'Incriminating letter'를 제외한 모든 진행 상황이 초기화된다."
+  ],
+  "tips": "편지는 3층 사무실 내 여러 위치 중 한 곳에 랜덤으로 스폰되므로, 입구부터 꼼꼼히 확인하는 것이 좋다. 신호탄은 반드시 지정된 지역에서 하늘 높이 쏘아야 하며, 낮게 쏘면 목표가 완료되지 않으니 주의한다. 스캐브 10명 처치는 삼림이나 이동 경로에서 자연스럽게 달성할 수 있다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/Provide_Viewership_map.png/revision/latest/scale-to-width-down/640?cb=20260404152652",
+      "caption": "지도에 표시된 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2a/Provide_Viewership_building.png/revision/latest/scale-to-width-down/640?cb=20250323133453",
+      "caption": "산업 단지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/TPoI_Letter_Office.png/revision/latest/scale-to-width-down/640?cb=20250331195006",
+      "caption": "3층 사무실 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/97/TPoI_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250331195128",
+      "caption": "입장 후 왼쪽 스위치 박스 뒤 첫 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/TPoI_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250331195517",
+      "caption": "중앙 퓨즈 박스 두 번째 스폰 위치 (엎드려야 함)"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/TPoI_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250331200014",
+      "caption": "넘어진 책상 옆에 떠 있는 세 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3f/TPoI_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250331200254",
+      "caption": "책상 바로 옆 선반 네 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/ff/TPoI_Spawn_5.png/revision/latest/scale-to-width-down/640?cb=20250331200112",
+      "caption": "책상 위 다섯 번째 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/10/CustomsTransitToReserveMap.png/revision/latest/scale-to-width-down/640?cb=20250119195021",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/CustomsTransitToReserve.png/revision/latest/scale-to-width-down/640?cb=20250316151200",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/03/TPoI_Letter_Map_Reserve.jpg/revision/latest/scale-to-width-down/640?cb=20250118101937",
+      "caption": "지도에 표시된 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/78/TPoI_Reserve_Stashing_Location.png/revision/latest/scale-to-width-down/640?cb=20250119233046",
+      "caption": "숨긴 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Price_of_Independence",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}

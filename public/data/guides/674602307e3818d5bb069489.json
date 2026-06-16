@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "taskId": "674602307e3818d5bb069489",
+  "nameKo": "Hindsight 20/20",
+  "nameEn": "Hindsight 20/20",
+  "steps": [
+    "삼림(Woods) 맵에서 산 아래에 위치한 벙커를 찾아야 합니다. 벙커 입구는 지도에 표시된 곳에 있으며, 산의 남쪽 기슭 근처에 위치해 있습니다.",
+    "벙커 입구에 도착하면 입구를 통해 내부로 진입합니다. 입구는 좁고 어두우며, 주변 지형지물을 잘 확인하며 접근해야 합니다.",
+    "벙커 내부 복도에 있는 의자에 러시아제 장갑 관통 탄약 팩(Russian armor-piercing ammo pack) 1개를 보관합니다. 이때 탄약 팩은 플레이어 인벤토리에서 사라집니다.",
+    "복도에 있는 휴대용 스토브가 놓인 탁자 위에 러시아제 장갑 관통 탄약 팩 1개를 추가로 보관합니다.",
+    "벙커 내부 오른쪽 뒤에 위치한 침대가 있는 방에 있는 의자에도 러시아제 장갑 관통 탄약 팩 1개를 보관합니다.",
+    "이렇게 총 3개의 러시아제 장갑 관통 탄약 팩을 벙커 내부 세 군데에 각각 보관해야 퀘스트가 완료됩니다.",
+    "러시아제 장갑 관통 탄약 팩은 퀘스트 진행에 필수이며, 인벤토리에 보관한 상태에서 벙커 내 지정 위치에 놓아야 합니다.",
+    "사용 가능한 탄약 팩 종류는 5.45x39mm 7N40, BP gs, BS gs, BT gs, PP gs, PPBS gs Igolnik 탄약 팩과 7.62x39mm BP gzh, PP gzh, 7.62x54mm R BS, BT gzh, 9x19mm PBP, 9x21mm 7N42, 7U4, BT, 9x39mm BP, BP gs, PAB-9 gs, SP-6 gs, 12.7x55mm PS12B 탄약 팩 등 다양합니다.",
+    "탄약 팩은 레이드 중 획득하거나 플리마켓 및 트레이더를 통해 구매할 수 있습니다."
+  ],
+  "tips": "벙커 입구는 산 아래에 숨겨져 있어 찾기 어려우므로, 지도에 표시된 위치를 정확히 확인하고 주변 지형을 주의 깊게 살펴야 합니다. 벙커 내부는 어둡고 좁으니 조명 장비를 준비하는 것이 좋습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/Hindsight_Bunker_Map.png/revision/latest/scale-to-width-down/640?cb=20250119153302",
+      "caption": "지도에 표시된 벙커 입구 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/Hindsight_Bunker_Entrance.png/revision/latest/scale-to-width-down/640?cb=20250325004015",
+      "caption": "벙커 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/Hindsight_1st.png/revision/latest/scale-to-width-down/640?cb=20250119154001",
+      "caption": "복도에 있는 의자에 보관하는 위치 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/Hindsight_2nd.png/revision/latest/scale-to-width-down/640?cb=20250119153950",
+      "caption": "복도에 있는 휴대용 스토브가 놓인 탁자에 보관하는 위치 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/Hindsight_3rd.png/revision/latest/scale-to-width-down/640?cb=20250119153944",
+      "caption": "침대가 있는 방 오른쪽 뒤 의자에 보관하는 위치 3"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hindsight_20%2F20",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T16:43:46.043+09:00"
+}
