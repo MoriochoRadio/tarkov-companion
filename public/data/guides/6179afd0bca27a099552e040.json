@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "6179afd0bca27a099552e040",
+  "nameKo": "통신 두절",
+  "nameEn": "Lost Contact",
+  "steps": [
+    "해안선(Shoreline) 맵의 남동쪽에 위치한 샬레(chalet)로 가야 합니다.",
+    "샬레에 도착하면 테니스 코트가 있는 곳으로 이동합니다.",
+    "테니스 코트에서 잃어버린 그룹의 시체를 찾습니다."
+  ],
+  "tips": "테니스 코트는 샬레의 일부로, 주변에 적이 있을 수 있으니 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/LostContactMap.png/revision/latest/scale-to-width-down/640?cb=20260127182820",
+      "caption": "지도에 표시된 테니스 코트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8f/LostContactDeadBodies.png/revision/latest/scale-to-width-down/640?cb=20211219182827",
+      "caption": "잃어버린 그룹의 시체"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Lost_Contact",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

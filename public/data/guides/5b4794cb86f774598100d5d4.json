@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "taskId": "5b4794cb86f774598100d5d4",
+  "nameKo": "무기 대여 - 파트 1",
+  "nameEn": "Lend-Lease - Part 1",
+  "steps": [
+    "삼림(Woods) 맵에서 첫 번째 모터 컨트롤러(Motor Controller #1)는 제재소(sawmill) 서쪽에 위치한 USEC 검문소 근처의 검은색 SUV 차량 중앙 콘솔에서 찾을 수 있습니다. 해당 위치는 지도에 표시되어 있습니다.",
+    "삼림 맵 제재소에서는 파란색 픽업트럭 뒤쪽에 열린 무기 상자 안에서 첫 번째 자이로스코프(Single-axis Fiber Optic Gyroscope #1)를 획득할 수 있습니다. 이 위치도 지도에 표시되어 있습니다.",
+    "해안선(Shoreline) 맵에서는 두 번째 모터 컨트롤러(Motor Controller #2)를 레이더 타워 서쪽에 있는 나무 상자 안에서 찾을 수 있습니다. 상자 위치는 지도에 표시되어 있습니다.",
+    "해안선 맵 헬스 리조트(Health Resort) 동쪽 별관 306호 또는 308호 발코니에 있는 패키지에서 세 번째 모터 컨트롤러(Motor Controller #3)를 획득해야 합니다. 이 방들은 각각 'Health Resort east wing room 306 key' 또는 'Health Resort east wing room 308 key' 중 하나가 있어야 접근 가능합니다.",
+    "해안선 헬스 리조트 서쪽 별관 216호 락커 안에서 두 번째 자이로스코프(Single-axis Fiber Optic Gyroscope #2)를 찾을 수 있습니다. 이 방은 'Health Resort west wing room 216 key'가 있어야 들어갈 수 있습니다.",
+    "퀘스트 진행 중에만 등장하는 아이템인 모터 컨트롤러 3종과 자이로스코프 2종은 획득 시 퀘스트 아이템 인벤토리에 자동으로 들어가며, 해당 아이템을 가지고 추출하지 못하면 아이템을 잃게 됩니다.",
+    "퀘스트 완료를 위해서는 헬스 리조트 동쪽 별관 306호 키 또는 308호 키 중 하나만 있으면 되며, 서쪽 별관 216호 키도 반드시 필요합니다.",
+    "각 아이템은 레이드에서만 획득 가능하며, 퀘스트가 활성화되어 있을 때만 등장합니다."
+  ],
+  "tips": "퀘스트 아이템들은 퀘스트 활성화 상태에서만 맵에 등장하며, 획득 후 반드시 안전하게 추출해야 아이템을 잃지 않습니다. 헬스 리조트 별관 키들은 프리마켓에서 구매할 수 없으니, 레이드에서 직접 획득하거나 다른 플레이어와 거래해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/75/San306East.png/revision/latest?cb=20220707220637",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/94/MotorController.png/revision/latest?cb=20240830225452",
+      "caption": "원하는 검은색 SUV 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/95/MotorController2.png/revision/latest?cb=20240830225455",
+      "caption": "콘솔 위의 컨트롤러"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/ff/MotorController3.png/revision/latest?cb=20240830225501",
+      "caption": "원하는 파란색 픽업트럭"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a6/Gyroscope_icon2.png/revision/latest?cb=20240830225509",
+      "caption": "상자 안의 자이로스코프"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/Woods_Land_Lease.png/revision/latest/scale-to-width-down/640?cb=20250805215450",
+      "caption": "지도에 표시된 상자 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/LandLease_MotorCont1.png/revision/latest/scale-to-width-down/640?cb=20250805213958",
+      "caption": "원하는 나무 상자"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0d/Controller-Woods.png/revision/latest/scale-to-width-down/640?cb=20250805214041",
+      "caption": "배경에 레이더 타워가 보이는 상자"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/Lend_Lease_Woods_Gyroscope_pickup.png/revision/latest/scale-to-width-down/640?cb=20250805214726",
+      "caption": "상자 안의 컨트롤러"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/LandLease_Gyroscope.png/revision/latest/scale-to-width-down/640?cb=20250805214811",
+      "caption": "지도에 표시된 헬스 리조트 동쪽 별관 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/68/Map_Shorline_Motor_Controller2.png/revision/latest/scale-to-width-down/640?cb=20240116181200",
+      "caption": "원하는 패키지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/98/LandLease_Box_Neon.png/revision/latest/scale-to-width-down/640?cb=20250805221756",
+      "caption": "패키지 안의 컨트롤러"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Lend-Lease_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

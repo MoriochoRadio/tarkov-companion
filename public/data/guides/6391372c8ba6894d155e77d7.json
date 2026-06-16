@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "taskId": "6391372c8ba6894d155e77d7",
+  "nameKo": "Broadcast - Part 4",
+  "nameEn": "Broadcast - Part 4",
+  "steps": [
+    "타르코프 시내에서 북쪽에 위치한 버려진 공장 건물로 이동합니다.",
+    "공장 건물의 3층으로 올라갑니다. 이때, 'Abandoned factory marked key' (버려진 공장 마킹된 열쇠)가 필요합니다.",
+    "3층에 도착하면 마킹된 방을 찾습니다. 이 방은 북쪽 건물의 마킹된 방입니다.",
+    "마킹된 방의 문을 열고 안으로 들어갑니다.",
+    "방 안에서 cultist의 회의 장소를 확인합니다."
+  ],
+  "tips": "방에 들어가기 전에 주변을 잘 살펴보세요. 적이 있을 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/AbandonedFactoryNorthernBuilding.png/revision/latest/scale-to-width-down/640?cb=20230825212659",
+      "caption": "북쪽 건물의 마킹된 방 위치가 지도에 표시되어 있습니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/FactoryMarkedRoomOutside.png/revision/latest/scale-to-width-down/640?cb=20230101013209",
+      "caption": "건물의 마킹된 방과 지하 입구가 표시되어 있습니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/MarkedRoomFromStairsView.png/revision/latest/scale-to-width-down/640?cb=20230109024505",
+      "caption": "2층 계단에서 마킹된 방을 바라본 모습입니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/FactoryMarkedRoomDoor.png/revision/latest/scale-to-width-down/640?cb=20221231233111",
+      "caption": "마킹된 방의 문입니다."
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7a/FactoryMarkedRoomInside2.png/revision/latest/scale-to-width-down/640?cb=20221230200922",
+      "caption": "마킹된 방 내부 모습입니다."
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_4",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

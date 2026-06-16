@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "6179b3a12153c15e937d52bc",
+  "nameKo": "에너지 위기",
+  "nameEn": "Energy Crisis",
+  "steps": [
+    "라이트하우스(Lighthouse) 맵에 진입한다.",
+    "MS2000 마커 4개를 준비한다. 이 아이템은 레이드 내에서 획득할 수 없으며, 퀘스트 시작 시 지급된다.",
+    "북쪽 화물 야드(Northern Freight Yard)의 북동쪽에 위치한 연료 탱크 그룹으로 이동한다. 이 위치는 지도 상에 표시되어 있다.",
+    "연료 탱크 그룹에 MS2000 마커 1개를 설치한다. 설치 시 인벤토리에서 해당 아이템이 사라진다.",
+    "북쪽 화물 야드의 동쪽, 철로 옆에 위치한 첫 번째 탱커 트럭으로 이동한다.",
+    "첫 번째 탱커 트럭에 MS2000 마커 1개를 설치한다.",
+    "수처리 시설(Water Treatment Plant)의 동쪽 벽면에 위치한 두 번째 탱커 트럭으로 이동한다.",
+    "두 번째 탱커 트럭에 MS2000 마커 1개를 설치한다.",
+    "수처리 시설의 남쪽 입구 옆에 위치한 세 번째 탱커 트럭으로 이동한다.",
+    "세 번째 탱커 트럭에 MS2000 마커 1개를 설치한다.",
+    "모든 연료 탱크와 탱커 트럭에 마커 설치가 완료되면 퀘스트가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/78/EnergyCrisisMap.png/revision/latest/scale-to-width-down/640?cb=20250504002017",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8a/EnergyCrisisTrainyardTanks.png/revision/latest/scale-to-width-down/640?cb=20211220200551",
+      "caption": "연료 탱크는 북쪽 화물 야드의 북동쪽에 위치함"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/EnergyCrisisTrainyardTruck.png/revision/latest/scale-to-width-down/640?cb=20211220200513",
+      "caption": "첫 번째 트럭은 북쪽 화물 야드의 동쪽, 철로 옆에 위치함"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/68/EnergyCrisisEastWaterplantTruck.png/revision/latest/scale-to-width-down/640?cb=20211220200735",
+      "caption": "두 번째 트럭은 수처리 시설의 동쪽 벽면에 위치함"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/EnergyCrisisOppositeWaterplantTruck.png/revision/latest/scale-to-width-down/640?cb=20211220200631",
+      "caption": "세 번째 트럭은 수처리 시설의 남쪽 입구 옆에 위치함"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Energy_Crisis",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

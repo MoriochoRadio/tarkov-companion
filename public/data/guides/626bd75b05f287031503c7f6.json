@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "626bd75b05f287031503c7f6",
+  "nameKo": "마약 밀매",
+  "nameEn": "Drug Trafficking",
+  "steps": [
+    "세관의 북쪽 기차 야드에 있는 컨테이너 지역으로 이동합니다.",
+    "컨테이너 지역에 도착하면, 여러 개의 쌓인 컨테이너 그룹을 찾습니다.",
+    "컨테이너 그룹의 입구를 찾아 들어갑니다. 입구는 왼쪽에 위치해 있습니다.",
+    "안으로 들어가면 마약 실험실이 있습니다.",
+    "마약 실험실 안에서 WI-FI 카메라를 설치합니다."
+  ],
+  "tips": "WI-FI 카메라는 메카닉(Mechanic) LL1에서 구매할 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8a/DrugLabMap.png/revision/latest/scale-to-width-down/640?cb=20220702194731",
+      "caption": "지도에 표시된 마약 실험실 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/ContainerGroup.png/revision/latest/scale-to-width-down/640?cb=20220702195854",
+      "caption": "입구가 표시된 컨테이너 그룹"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/InsideLab.png/revision/latest/scale-to-width-down/640?cb=20220702195856",
+      "caption": "왼쪽에 입구가 있는 실험실 내부"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Drug_Trafficking",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

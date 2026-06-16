@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "taskId": "63a9ae24009ffc6a551631a5",
+  "nameKo": "세계 최고의 직업",
+  "nameEn": "Best Job in the World",
+  "steps": [
+    "AK-74 시리즈 무기 중 하나를 준비한다. 사용할 수 있는 무기는 AK-74, AK-74M, AK-74N, AKS-74, AKS-74N, SAG AK(단, SAG AK Short 제외)이다.",
+    "레이저 거리 100m 이상에서 적대적 대상 30명을 사살해야 하므로, 사격 거리를 확보할 수 있는 위치를 선정한다.",
+    "추천 위치는 리저브(Reserve) 맵의 돔(Dome) 지역이다. 이곳에서는 맵 주변의 Scav(스캐브) 스폰 지점을 잘 관찰할 수 있다.",
+    "사격 시 소음이 크면 원치 않는 적의 주의를 끌 수 있으므로, 소음기(서프레서)를 반드시 장착하는 것을 권장한다.",
+    "AI Scav들은 죽은 시체를 수색하고 약탈하는 경향이 있다. 이 순간에는 잠시 움직이지 않으므로, 이때 머리 부위를 정확히 사격하여 쉽게 처치할 수 있다.",
+    "개활지에서 적을 사살하면 시체가 미끼 역할을 하여 AI 또는 플레이어가 시체를 약탈하러 오게 된다. 이를 통해 추가 킬을 얻거나 사격할 관심 지역을 확보할 수 있다.",
+    "정확도를 높이기 위해 고배율 가변 스코프를 사용하고, 적에게 노출을 줄이기 위해 발광탄이 없는 비추적탄(non-tracer ammunition)을 사용하는 것이 좋다.",
+    "위 조건을 충족하며 적대적 대상 30명을 사격 거리 100m 이상에서 처치하면 퀘스트가 완료된다."
+  ],
+  "tips": "리저브 돔 지역 외에도 시야가 넓고 적 스폰 지점이 많은 고지대에서 사격하는 것이 유리하다. 소음기와 비추적탄 조합은 적에게 위치 노출을 최소화하여 생존률을 높인다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ce/WorstJob.jpg/revision/latest/scale-to-width-down/640?cb=20240324151357",
+      "caption": "빨간 사각형은 PMC와 Scav가 자주 이동하는 구역을 표시함"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Best_Job_in_the_World",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

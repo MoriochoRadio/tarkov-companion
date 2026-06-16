@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "taskId": "66d9cbb67b491f9d5304f6e6",
+  "nameKo": "Is This a Reference?",
+  "nameEn": "Is This a Reference?",
+  "steps": [
+    "WI-FI 카메라 27개를 타르코프의 여러 맵에 설치해야 합니다. 카메라는 메카닉(LL1)에게 교환하거나, 'Informed Means Armed' 퀘스트 수락 후 메카닉(LL1)에게 구매할 수 있습니다.",
+    "공장(Factory) 사무실 지역 3층 잠긴 방에는 공장 비상구 열쇠가 필요합니다. 이 열쇠는 퀘스트 진행에 필수이며, 해당 방에 WI-FI 카메라를 설치해야 합니다.",
+    "타르코프 시내(Streets of Tarkov) - 불에 탄 소녀의 병실: 어린이 종합병원 2층에 위치합니다. 문을 열고 내부에 카메라를 설치하세요.",
+    "타르코프 시내 - 정말 무서운 벽 구멍: Chekannaya st. 13 건물 입구 오른쪽 욕실에 설치합니다.",
+    "타르코프 시내 - 철조망 시체: Chekannaya st. 13 건물 내 표시된 방 근처에 설치합니다. 입구는 미스터리 키로 열 수 있습니다.",
+    "타르코프 시내 - 양서류 피자 애호가 은신처: 'Sewer River' 추출 지점 내부에 있습니다. 대부분의 설치 위치가 추출 구역 내에 있으니 좌측 벽 근처에 머무르면 추출하지 않고 설치 가능합니다.",
+    "그라운드 제로(Ground Zero) - 한 열혈남이 싸운 고층 건물: Nakatani 빌딩 리셉션 데스크 뒤에 설치합니다.",
+    "그라운드 제로 - 프로그래머를 위한 농담이 있는 컴퓨터: Fusion 빌딩 1층 남쪽에 위치한 Kyshperski 사무실 내 숲 배경의 유리 방에 설치하세요.",
+    "그라운드 제로 - 큰 검은 의자들에 둘러싸인 작은 의자: Tarbank 빌딩 3층(5번 표시) 회의실에 설치합니다.",
+    "등대(Lighthouse) - 불길한 환영 표지판: 북쪽 주요 도로를 따라 건설 노동자 캐빈 옆에 설치하세요.",
+    "등대 - 불을 지핀 휴식 장소: 해안가 바로 서쪽에 위치한 서쪽 주택 동쪽에 설치합니다.",
+    "등대 - 친구 윌슨: 해안가 바로 서쪽에 위치한 서쪽 주택 근처에 설치하세요.",
+    "등대 - 천재 과학자의 자리: 해당 위치에 WI-FI 카메라를 설치합니다.",
+    "리저브(Reserve) - 두 개의 의자 수수께끼: 기차 창고 근처 감시탑 옆에 설치합니다.",
+    "리저브 - 모든 탱크 운전사의 첫 비디오 게임: 의료 건물(White Bishop) 남쪽 벽에 설치하세요.",
+    "리저브 - 징집병들이 매우 중요한 임무를 수행한 장소: 병영의 행진 광장 남서쪽 구석에 설치합니다.",
+    "세관(Customs) - 양동이 머리 악당: 창고 #6 2층 남쪽 욕실 내부에 설치하세요.",
+    "세관 - Anvil 3-4 승무원 처형 장소: 창고 #6 2층 북쪽에 설치합니다.",
+    "세관 - 모든 인디 개발자의 최악의 악몽: 3층 기숙사 212호실에 설치하세요.",
+    "공장(Factory) - 하늘로 가는 계단: 'Gate 3' 추출 지점 내부에 설치합니다.",
+    "공장 - 음모론자의 방: 사무실 지역 3층 잠긴 방에 설치하며, 공장 비상구 열쇠가 필요합니다.",
+    "공장 - 소방관이 행복해지기 위해 책을 태운 방: 사무실 지역 1층에 설치하세요.",
+    "공장 - 위험한 러시아 초콜릿 미녀: 'Gate 0' 추출 지점 옆 탈의실에 설치합니다.",
+    "공장 - 밸브 기술자들이 세 번째 프로젝트를 끝내지 못한 장소: 지하 탱크 컨테이너 옆에 설치하세요.",
+    "공장 - 모든 전략 게임의 어머니: 연구소 2층 두 번째 방에 설치합니다.",
+    "공장 - 누군가 마법 학교로 이동할 거라 생각한 장소: Gate 2 옆에 설치하세요.",
+    "삼림(Woods) - 불타는 차에 앉은 곰: 북쪽 낡은 마을 남쪽, 전력선 아래에 설치합니다.",
+    "해안선(Shoreline) - 거꾸로 된 의자: 서쪽 마을 동쪽에 위치한 1번 집 내부 방에 설치하며, 문은 강제로 열어야 합니다.",
+    "해안선 - 외롭지 않은 욕실: 부두 사무실 건물 욕실에 설치하세요."
+  ],
+  "tips": "WI-FI 카메라는 메카닉 LL1 레벨 1에서 교환하거나, 'Informed Means Armed' 퀘스트 수락 후 구매할 수 있으니 미리 준비하세요. 공장 사무실 3층 잠긴 방은 공장 비상구 열쇠가 반드시 필요하므로, 열쇠를 확보하지 않으면 설치가 불가능합니다. 설치 위치 중 일부는 추출 구역 내에 있어 주의가 필요하며, 문을 강제로 열어야 하는 장소도 있으니 적절한 도구를 준비하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1a/ITARBurnedGirlMap.png/revision/latest/scale-to-width-down/640?cb=20240928212712",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f6/X-ray_clinic_outside.png/revision/latest/scale-to-width-down/640?cb=20230813160337",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/87/X-ray_key_upstairs.png/revision/latest/scale-to-width-down/640?cb=20241015230354",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7c/ITARBurnedGirlDoor.png/revision/latest/scale-to-width-down/640?cb=20240928212402",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/ITARBurnedGirl.png/revision/latest/scale-to-width-down/640?cb=20240928212341",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/ITARScaryHoleMap.png/revision/latest/scale-to-width-down/640?cb=20240928210540",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cc/Mysterious_key_building_entrance.png/revision/latest/scale-to-width-down/640?cb=20241015235936",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/98/ITARScaryHole.png/revision/latest/scale-to-width-down/640?cb=20240928205554",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1d/ITARWireBodyMap.png/revision/latest/scale-to-width-down/640?cb=20240928211250",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/Mysterious_key_path1.png/revision/latest/scale-to-width-down/640?cb=20241015235309",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a3/Mysterious_key_path2.png/revision/latest/scale-to-width-down/640?cb=20241015235209",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/Mysterious_key_path3.png/revision/latest/scale-to-width-down/640?cb=20241015234645",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Is_This_a_Reference%3F",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

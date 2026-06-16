@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "5ae4498786f7744bde357695",
+  "nameKo": "성공을 위한 열쇠",
+  "nameEn": "The Key to Success",
+  "steps": [
+    "인터체인지(Interchange) 쇼핑몰 2층에 위치한 'МУЗЕЙ ИСТОРИИ' (Museum of History) 상점으로 가세요. 이 상점은 2층 맵에서 표시된 곳입니다.",
+    "상점 안으로 들어가 바닥에 쌓여 있는 책 더미를 찾습니다. 여기서 첫 번째 책인 'Clothes design handbook - Part 1'을 찾을 수 있습니다.",
+    "첫 번째 책을 주워서 퀘스트 아이템 인벤토리에 추가합니다. 이 책은 퀘스트가 활성화된 상태에서만 찾을 수 있으며, 레이드에서 추출하지 못하면 잃게 됩니다.",
+    "이제 1층으로 내려가세요.",
+    "1층에 있는 서점으로 가서, 중간 선반의 가장 아래쪽 칸을 확인합니다. 여기서 두 번째 책인 'Clothes design handbook - Part 2'를 찾을 수 있습니다.",
+    "두 번째 책을 주워서 퀘스트 아이템 인벤토리에 추가합니다. 이 책도 마찬가지로 퀘스트가 활성화된 상태에서만 찾을 수 있으며, 레이드에서 추출하지 못하면 잃게 됩니다."
+  ],
+  "tips": "두 책 모두 레이드에서 획득해야 하며, 퀘스트가 활성화된 상태에서만 찾을 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b7/The_key_to_success_Marked.png/revision/latest/scale-to-width-down/640?cb=20251221203000",
+      "caption": "2층 맵에 표시된 상점 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/The_key_to_success_Book1Store.png/revision/latest/scale-to-width-down/640?cb=20240213031155",
+      "caption": "첫 번째 책이 있는 상점, 화살표는 책 더미를 가리킴"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/The_key_to_success_Book2.png/revision/latest/scale-to-width-down/640?cb=20240213031415",
+      "caption": "첫 번째 책 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a5/The_key_to_success_Marked2.png/revision/latest/scale-to-width-down/640?cb=20251221203341",
+      "caption": "1층 맵에 표시된 상점 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/The_key_to_success_Book2Store.png/revision/latest/scale-to-width-down/640?cb=20240213030245",
+      "caption": "두 번째 책이 있는 상점, 화살표는 중간 선반을 가리킴"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4f/The_key_to_success_Book1.png/revision/latest/scale-to-width-down/640?cb=20240213030518",
+      "caption": "두 번째 책 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Key_to_Success",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

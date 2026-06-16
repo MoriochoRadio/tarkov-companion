@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "taskId": "639135e8c115f907b14700aa",
+  "nameKo": "Surveillance",
+  "nameEn": "Surveillance",
+  "steps": [
+    "세관(Interchange) 맵의 타르코프 시내(Streets of Tarkov)에 위치한 콘코르디아(Concordia) 건물 지하 주차장으로 이동한다.",
+    "콘코르디아 건물 지하 주차장 입구는 1번 집(House No. 1) 계단을 통해 들어갈 수 있다. 1번 집 계단으로 내려가자.",
+    "계단 근처에 있는 문을 열어 지하 주차장으로 진입한다. 이 문을 열기 위해서는 콘코르디아 보안실 열쇠(Concordia security room key)가 필요하다.",
+    "지하 주차장 내 보안실(Security Room) 문을 찾아 열쇠로 문을 연다.",
+    "보안실 내부에는 하드 드라이브(Working hard drive)가 여러 위치에 스폰된다. 다음 위치를 확인한다:",
+    "첫 번째 위치: 코너 책상 왼쪽 아래 컴퓨터 안.",
+    "두 번째 위치: 코너 책상 오른쪽에 있는 책상과 서랍 사이.",
+    "세 번째 위치: 방 뒤쪽 왼쪽 안전금고 위 피자 박스 안.",
+    "네 번째 위치: 코너 책상 오른쪽 아래 수납 공간 안.",
+    "퀘스트 활성화 상태에서만 하드 드라이브를 획득할 수 있으며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "하드 드라이브를 획득한 후 반드시 안전하게 추출해야 하며, 추출 실패 시 아이템을 잃게 된다."
+  ],
+  "tips": "콘코르디아 보안실 열쇠는 퀘스트 진행에 반드시 필요하므로 미리 준비해야 한다. 보안실 내부는 적이 있을 수 있으니 주의하며 탐색하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/SecurityRoomKeyMap.png/revision/latest/scale-to-width-down/640?cb=20230826224901",
+      "caption": "지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b9/ConcordiaBuilding.png/revision/latest/scale-to-width-down/640?cb=20250810210903",
+      "caption": "콘코르디아 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/ConcordiaEntranceNr1.png/revision/latest/scale-to-width-down/640?cb=20230101165655",
+      "caption": "1번 집 계단을 통한 주차장 진입 경로"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/HouseNr1Staircase.png/revision/latest/scale-to-width-down/640?cb=20230101185354",
+      "caption": "계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9c/SecurityRoomKeyStaircaseDoor.png/revision/latest/scale-to-width-down/640?cb=20250810193317",
+      "caption": "계단 근처 문 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d8/SecurityRoomKeyDoor.png/revision/latest/scale-to-width-down/640?cb=20230101145041",
+      "caption": "보안실 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/HDDonPC.png/revision/latest/scale-to-width-down/640?cb=20230310225641",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/03/HDDUnderDesk2.png/revision/latest/scale-to-width-down/640?cb=20230310225901",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/HDDPizzaBox.png/revision/latest/scale-to-width-down/640?cb=20230310225953",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a5/HDDUnderDesk.png/revision/latest/scale-to-width-down/640?cb=20230310230029",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Surveillance",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

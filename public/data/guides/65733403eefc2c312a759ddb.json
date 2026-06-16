@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "taskId": "65733403eefc2c312a759ddb",
+  "nameKo": "Developer's Secrets - Part 1",
+  "nameEn": "Developer's Secrets - Part 1",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov) 내 즈메이스키 골목(Zmeisky alley) 6번지에 위치한 IT 회사 사무실 건물을 찾는다.",
+    "건물 남쪽 끝에 위치한 잠긴 '협상실(Negotiation room)'에 들어가기 위해 '협상실 열쇠(Negotiation room key)'를 준비한다. 이 열쇠는 필수 아이템이며, 레이드 내 획득(FIR)은 불가능하다.",
+    "협상실 열쇠를 사용해 협상실 문을 열고 내부로 진입한다.",
+    "협상실 내부에서 IT 회사의 성공 비밀을 밝혀내는 임무를 수행한다."
+  ],
+  "tips": "협상실 열쇠는 퀘스트 진행에 반드시 필요하므로, 미리 확보해 두어야 하며, 해당 열쇠는 레이드 내에서 찾을 수 없으니 주의한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ec/Developer%27s_Secrets_-_Part_1_Map.png/revision/latest/scale-to-width-down/640?cb=20240101010526",
+      "caption": "지도에 표시된 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/Developer%27s_Secrets_-_Part_1_Building.png/revision/latest/scale-to-width-down/640?cb=20240101010056",
+      "caption": "해당 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/Developer%27s_Secrets_-_Part_1_Room.png/revision/latest/scale-to-width-down/640?cb=20240101010938",
+      "caption": "협상실 내부"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Developer's_Secrets_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

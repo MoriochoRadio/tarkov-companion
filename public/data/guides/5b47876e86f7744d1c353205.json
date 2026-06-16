@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "5b47876e86f7744d1c353205",
+  "nameKo": "전쟁의 피 - 파트 2",
+  "nameEn": "The Blood of War - Part 2",
+  "steps": [
+    "연료 컨디셔너(Fuel conditioner) 4개를 준비한다. 이 아이템은 레이드 획득(FIR)만 가능하며, 플리마켓이나 트레이더 구매는 불가능하다.",
+    "연료 컨디셔너 4개를 모두 모은 후, 퀘스트를 제공한 NPC에게 전달한다."
+  ],
+  "tips": "연료 컨디셔너는 주로 특정 맵에서 차량이나 기계 주변에서 발견되는 경우가 많으니, 여러 맵을 탐색하며 수집하는 것이 좋다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

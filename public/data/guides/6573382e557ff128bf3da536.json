@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "taskId": "6573382e557ff128bf3da536",
+  "nameKo": "Developer's Secrets - Part 2",
+  "nameEn": "Developer's Secrets - Part 2",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)의 말레비차 거리(Malevicha street) 5번지 건물에 위치한 '하이브(Hive)' 후카 라운지에 진입해야 합니다.",
+    "'하이브' 후카 라운지에 들어가기 위해서는 반드시 '휴게실 열쇠(Relaxation room key)'가 필요합니다.",
+    "휴게실 열쇠는 퀘스트 진행에 필수 아이템이며, 별도의 획득 위치가 지정되어 있지 않으므로 미리 준비해야 합니다.",
+    "레이드 중 사망하여 추출하지 못하면 퀘스트 1부가 초기화되니 주의해야 합니다.",
+    "말레비차 거리 5번지 건물은 지도 상에 '하이브' 후카 라운지 위치가 표시된 곳으로 찾아가야 하며, 건물 내부에서 휴게실 열쇠를 사용해 문을 열고 진입합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/The_Hive_Map.png/revision/latest/scale-to-width-down/640?cb=20240101013953",
+      "caption": "지도에 표시된 하이브 후카 라운지 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/The_Hive_Door.png/revision/latest/scale-to-width-down/640?cb=20240101012650",
+      "caption": "후카 라운지 입구 문"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Developer's_Secrets_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

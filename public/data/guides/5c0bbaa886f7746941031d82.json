@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "taskId": "5c0bbaa886f7746941031d82",
+  "nameKo": "개소리",
+  "nameEn": "Bullshit",
+  "steps": [
+    "퀘스트를 시작하기 전에 가짜 정보가 담긴 플래시 드라이브(Flash drive with fake info)를 획득해야 합니다. 이 아이템은 세관(Customs) 동쪽에 위치한 메인 다리 위에 있는 파란색 불에 탄 차량의 조수석 문에서 찾을 수 있습니다.",
+    "플래시 드라이브를 획득하면 레이드에서 추출할 수 있으며, 다른 레이드에서 아이템을 심는 데 사용합니다. 이 아이템은 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동합니다. 만약 아이템을 심지 않고 추출에 실패하면 아이템을 잃게 됩니다.",
+    "퀘스트 진행 중에는 PMC만 처치할 수 있으며, 스캐브(Scav)나 스캐브 보스는 절대 처치하면 안 됩니다. 따라서 PMC를 조용히 처리할 수 있도록 소음기 장착 무기를 준비하는 것이 좋습니다.",
+    "스캐브를 일시적으로 무력화시키기 위해 섬광 수류탄(Stun grenades)을 사용할 수 있습니다. 또한 밤 시간에 퀘스트를 수행하면 스캐브가 플레이어를 발견하기 어려워져 유리합니다.",
+    "Roler Submariner 금손목시계(Roler Submariner gold wrist watch)는 반드시 안전 컨테이너에 넣어야 합니다. 죽을 경우 아이템을 잃지 않기 위함입니다.",
+    "스캐브가 많은 구간을 안전하게 통과하기 위해 친구와 함께 플레이하는 것도 추천합니다.",
+    "준비가 완료되면 세관의 3층짜리 기숙사(3-story dorms)로 이동해 3층으로 올라갑니다. 3층 중앙, 계단 맞은편에 있는 쓰레기 더미(trash pile)가 아이템을 심어야 하는 장소입니다.",
+    "퀘스트 아이템은 SV-98 7.62x54R 볼트액션 저격소총, Roler Submariner 금손목시계, 가짜 정보가 담긴 플래시 드라이브 총 3가지이며, 각각 심는 데 15초가 소요됩니다.",
+    "아이템은 한 레이드에서 모두 심을 필요 없으며, 순서도 자유롭게 심을 수 있습니다. 모든 아이템을 심으면 퀘스트가 완료됩니다.",
+    "퀘스트 완료 후에도 스캐브를 처치하면 퀘스트 실패가 되므로, 퀘스트를 제출할 때까지 스캐브를 죽이지 마십시오.",
+    "퀘스트는 생존 여부와 무관하게 완료되며, 죽어도 아이템을 심었다면 퀘스트를 완료할 수 있습니다."
+  ],
+  "tips": "스캐브가 많은 구간을 지나야 하므로 소음기 장착 무기와 섬광 수류탄을 준비하고, 가능하면 밤 시간에 도전하세요. Roler Submariner 금손목시계는 반드시 안전 컨테이너에 보관해 사망 시 손실을 방지하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/BullshitFlashDriveCarMap.png/revision/latest/scale-to-width-down/640?cb=20230618193155",
+      "caption": "지도에 표시된 차량 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2a/BullshitFlashDriveCar.png/revision/latest/scale-to-width-down/640?cb=20250828000249",
+      "caption": "플래시 드라이브가 들어있는 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/Bullshit_False_FD_Location.png/revision/latest/scale-to-width-down/640?cb=20250828000001",
+      "caption": "조수석 문에 있는 플래시 드라이브"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bf/Bullshit-Dropoff.png/revision/latest/scale-to-width-down/640?cb=20190103205251",
+      "caption": "아이템을 심어야 하는 쓰레기 더미"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Bullshit",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

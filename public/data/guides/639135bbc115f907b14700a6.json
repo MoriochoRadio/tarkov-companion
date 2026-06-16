@@ -1,0 +1,80 @@
+{
+  "version": 2,
+  "taskId": "639135bbc115f907b14700a6",
+  "nameKo": "Audiophile",
+  "nameEn": "Audiophile",
+  "steps": [
+    "세관(Primorsky) 46번지와 48번지 아파트 사이의 스카이브리지(하늘다리)를 이용하기 위해서는 Primorsky 46-48 스카이브리지 키가 필요합니다. 이 키는 48번지 아파트 10호 입구를 여는 데 필수입니다.",
+    "스카이브리지로 가려면 먼저 Primorsky 46번지 아파트 계단으로 이동하세요. 계단으로 가는 경로는 세 가지가 있으며, 각각 지도에 표시된 길을 따라가면 됩니다.",
+    "Primorsky 46번지 아파트 계단을 올라가 최상층에 있는 스카이브리지 입구 문을 열고 스카이브리지로 진입하세요. 스카이브리지 문은 잠겨 있으니 키로 반드시 열어야 합니다.",
+    "스카이브리지를 건너 Primorsky 48번지 아파트 10호 입구 문을 열고 내부로 들어갑니다.",
+    "아파트 10호 내부에는 음악실과 침실이 있습니다. 음악가 모임 장소는 음악실이며, 이곳에서 기타 피크(AG guitar pick)를 찾아야 합니다.",
+    "기타 피크는 음악실과 인접한 침실 여러 곳에 스폰됩니다. 아이템이 작고 위치가 어두우므로 손전등을 꼭 지참하세요.",
+    "음악실 내 첫 번째 스폰 위치는 입장 후 왼쪽 바닥에 쌓인 책 더미 위의 노란 책 위입니다. 엎드려서 찾아야 합니다.",
+    "두 번째 위치는 드럼 세트 옆 오른쪽 스피커 위입니다.",
+    "세 번째 위치는 드럼 세트 앞 바닥에 놓인 파란 컵 안입니다.",
+    "네 번째 위치는 작은 금속 선반 위 라디오 옆입니다.",
+    "다섯 번째 위치는 책상 위 연필 옆입니다.",
+    "여섯 번째 위치는 발코니 근처 큰 선반 안 상자 옆입니다.",
+    "침실 내 일곱 번째 위치는 입장 후 바닥에서 패키지와 오른쪽 벽 사이입니다.",
+    "여덟 번째 위치는 옷장 옆 오른쪽 선반에 놓인 고데기 옆입니다.",
+    "아홉 번째 위치는 침대 옆 왼쪽 협탁 아래 칸입니다.",
+    "열 번째 위치는 창문 옆 화장대 위입니다.",
+    "기타 피크는 퀘스트 활성화 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리에 자동으로 들어갑니다. 이 아이템을 들고 추출하지 못하면 잃게 되니 주의하세요.",
+    "아파트 10호 출구는 내부에서 문을 부수고 나갈 수 있습니다."
+  ],
+  "tips": "기타 피크가 매우 작고 어두운 곳에 있으므로 손전등을 반드시 준비하세요. 스카이브리지 키는 퀘스트 진행에 필수이며, 미리 준비하지 않으면 접근이 불가능합니다. 기타 피크는 퀘스트 활성화 시에만 획득 가능하므로, 퀘스트를 수락한 후 레이드에 진입하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/Apartment10Map.png/revision/latest/scale-to-width-down/640?cb=20230825214825",
+      "caption": "지도에 표시된 아파트 10호"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Apartment10Outside.png/revision/latest/scale-to-width-down/640?cb=20230108161221",
+      "caption": "외부에서 본 아파트 10호"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/UnderpassKeyMap.png/revision/latest/scale-to-width-down/640?cb=20230825214519",
+      "caption": "지도에 표시된 스카이브리지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/UnderpassKeyUnderpass.png/revision/latest/scale-to-width-down/640?cb=20230108161937",
+      "caption": "지상에서 본 스카이브리지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1b/UnderpassKeyWay1.png/revision/latest/scale-to-width-down/640?cb=20230102205921",
+      "caption": "Primorsky 46 아파트 계단으로 가는 길 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/UnderpassKeyWay2.png/revision/latest/scale-to-width-down/640?cb=20230102205914",
+      "caption": "Primorsky 46 아파트 계단으로 가는 길 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/UnderpassKeyWay3.png/revision/latest/scale-to-width-down/640?cb=20230102205906",
+      "caption": "Primorsky 46 아파트 계단으로 가는 길 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/UnderpassKeyWay4.png/revision/latest/scale-to-width-down/640?cb=20230102205319",
+      "caption": "Primorsky 46 아파트 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/UnderpassKeyStairsDoor.png/revision/latest/scale-to-width-down/640?cb=20230102204749",
+      "caption": "최상층 스카이브리지 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/53/UnderpassKeyUnderpassLockedDoor.png/revision/latest/scale-to-width-down/640?cb=20230102204853",
+      "caption": "열 수 있는 문이 있는 스카이브리지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/UnderpassKeyDoor.png/revision/latest/scale-to-width-down/640?cb=20230102204654",
+      "caption": "Primorsky 48 아파트 10호 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/07/MusicRoom.png/revision/latest/scale-to-width-down/640?cb=20230108190408",
+      "caption": "음악실 입구 문"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Audiophile",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

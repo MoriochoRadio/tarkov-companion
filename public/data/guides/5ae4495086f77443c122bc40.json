@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "5ae4495086f77443c122bc40",
+  "nameKo": "솜씨 좋은 바느질 - 파트 1",
+  "nameEn": "Sew it Good - Part 1",
+  "steps": [
+    "스키 모자(눈 구멍 뚫린) 1개를 획득해야 합니다. 이 아이템은 스캐브(Scav) NPC와 죽은 스캐브 시체에서만 등장합니다. 레이드 중에 스캐브를 사냥하거나 시체를 수색하여 입수하세요.",
+    "필그림 관광용 배낭(Pilgrim tourist backpack) 1개를 획득해야 합니다. 이 아이템 역시 스캐브 NPC와 죽은 스캐브 시체에서만 등장합니다. 레이드 중 스캐브를 사냥하거나 시체를 수색하여 입수하세요.",
+    "획득한 스키 모자와 필그림 관광용 배낭을 퀘스트 아이템으로 제출하면 됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Sew_it_Good_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

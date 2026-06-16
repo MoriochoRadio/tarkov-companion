@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "taskId": "63a9b229813bba58a50c9ee5",
+  "nameKo": "세계 최악의 직업",
+  "nameEn": "Worst Job in the World",
+  "steps": [
+    "AR-15 플랫폼 무기 중 하나를 준비한다. 선택 가능한 무기는 M4A1, ADAR 2-15, TX-15 DML, Radian Model 1, M16A1, M16A2이다.",
+    "Suppressor(소음기)를 장착하여 사격 시 소음을 줄인다. 이는 적의 불필요한 주의를 끌지 않기 위함이다.",
+    "레이저 조준기 대신 고배율 가변 스코프를 장착하여 원거리 사격 정확도를 높인다.",
+    "비추적탄(Non-tracer ammunition)을 사용하여 사격 위치를 노출하지 않는다.",
+    "리저브(Reserve) 맵의 돔(Dome) 지역으로 이동한다. 이곳은 맵 내 스캐브(Scav) 스폰 지역을 잘 관찰할 수 있는 위치이다.",
+    "돔 지역에서 100미터 이상 떨어진 거리에서 적을 조준한다.",
+    "적을 사격하여 총 30명의 적을 처치한다. 적은 PMC 또는 스캐브 모두 가능하다.",
+    "스캐브 AI는 사망한 시체를 탐색하고 약탈하는 경향이 있다. 시체를 약탈하는 동안 잠시 움직이지 않으므로 이때 머리 부위를 노려 사격하면 쉽게 처치할 수 있다.",
+    "개활지에서 적을 사격하면 시체가 미끼 역할을 하여 다른 AI나 플레이어가 약탈하러 오므로 추가 처치 기회가 생긴다.",
+    "사격 위치를 잘 선정하여 적들이 자주 이동하는 구역(빨간색 사각형 표시된 지역)을 노린다."
+  ],
+  "tips": "돔 지역에서 소음기 없이 사격하면 적들의 주의를 끌어 위험할 수 있으니 반드시 소음기를 사용하길 권장한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ce/WorstJob.jpg/revision/latest/scale-to-width-down/640?cb=20240324151357",
+      "caption": "빨간색 사각형은 PMC와 스캐브가 자주 이동하는 지역을 표시함"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Worst_Job_in_the_World",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}

@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "taskId": "5d4bec3486f7743cac246665",
+  "nameKo": "규제품목",
+  "nameEn": "Regulated Materials",
+  "steps": [
+    "레이드 중에 퀘스트 아이템을 획득해야 하므로, 반드시 레이드에 진입한다.",
+    "OFZ 30x165mm 포탄 5개를 수집한다. 이 아이템은 리저브(Reserve) 맵에서 탱크 위나 근처, 탁자나 선반, 탱크 뒤쪽 바닥에서 주로 발견된다.",
+    "OFZ 30x165mm 포탄은 등대(Lighthouse)와 리저브(Reserve) 맵에서 루즈 루트(Loose Loot) 형태로 자주 등장하며, 다른 맵의 컨테이너에서도 간혹 발견된다.",
+    "스캐브(Scav)의 배낭에서도 소량의 확률로 발견될 수 있으니 주의 깊게 탐색한다.",
+    "6-STEN-140-M 군용 배터리 1개를 수집한다. 이 아이템은 4x2 슬롯 크기의 검정색/갈색 상자 모양이며, 주로 리저브(Reserve) 맵의 탱크 위나 탱크 근처에서 발견된다.",
+    "OFZ 30x165mm 포탄과 6-STEN-140-M 군용 배터리는 모두 은신처(Hideout)의 스캐브 케이스(Scav Case)에서도 획득 가능하므로, 은신처를 활용할 수 있다.",
+    "퀘스트 제출 아이템이므로, 모두 레이드 획득(FIR) 아이템임을 명심한다.",
+    "모든 아이템을 수집한 후 퀘스트를 완료하기 위해 지정된 NPC에게 제출한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/OFZ_30x160mm_shell_location_on_Reserve.png/revision/latest/scale-to-width-down/640?cb=20191229065258",
+      "caption": "리저브(Reserve) 맵의 탱크 위에 놓인 OFZ 30x165mm 포탄"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/Location_of_a_6-STEN-140-M_military_battery.png/revision/latest/scale-to-width-down/640?cb=20191228151853",
+      "caption": "리저브(Reserve) 맵의 탱크 옆에 놓인 6-STEN-140-M 군용 배터리"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Regulated_Materials",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T23:32:22.724+09:00"
+}
