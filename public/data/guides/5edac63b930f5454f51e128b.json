@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "5edac63b930f5454f51e128b",
+  "nameKo": "테라그룹 직원",
+  "nameEn": "TerraGroup Employee",
+  "steps": [
+    "연구소(The Lab) 2층에 위치한 Sanitar(사니타르) 방으로 이동한다. 이 방은 실험실 블록(G22) 맞은편에 있다.",
+    "Sanitar 방에 입장하기 위해서는 파란색 표시가 있는 키카드(Keycard with a blue marking)가 반드시 필요하다.",
+    "키카드를 사용해 Sanitar 방 문을 열고 들어간다.",
+    "방에 들어가면 왼쪽 책상 위에 노트북이 있으며, 그 노트북에 파란색 테이프로 표시된 플래시 드라이브(Flash drive marked with blue tape)가 꽂혀 있다.",
+    "플래시 드라이브를 획득한다. 이 아이템은 퀘스트 활성 상태에서만 획득 가능하며, 획득 시 자동으로 퀘스트 아이템 인벤토리에 들어간다.",
+    "플래시 드라이브를 들고 레이드에서 반드시 안전하게 탈출해야 한다. 탈출하지 못하면 아이템을 잃게 된다."
+  ],
+  "tips": "파란색 키카드는 연구소 내 특정 위치에서 획득하거나 트레이더를 통해 얻을 수 있으니 미리 준비하는 것이 좋다. 플래시 드라이브는 퀘스트가 활성화되어 있을 때만 나타나므로, 퀘스트 진행 전에는 찾을 수 없다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/95/TheLabSanitarsRoom.png/revision/latest/scale-to-width-down/640?cb=20231017122116",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/85/SanitarsRoom.png/revision/latest/scale-to-width-down/640?cb=20230423175903",
+      "caption": "Sanitar 방의 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/88/Marked_with_tape_flash_drive-position.png/revision/latest/scale-to-width-down/640?cb=20230423180340",
+      "caption": "노트북에 꽂힌 플래시 드라이브"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/TerraGroup_Employee",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

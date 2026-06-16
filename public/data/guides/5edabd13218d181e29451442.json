@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "taskId": "5edabd13218d181e29451442",
+  "nameKo": "조작된 게임",
+  "nameEn": "Rigged Game",
+  "steps": [
+    "MS2000 마커 3개를 준비한다. 이 아이템은 레이드 획득(FIR)으로만 얻을 수 있으며, 트레이더 판매는 불가능하다.",
+    "해안선(Shoreline) 맵으로 이동한다.",
+    "첫 번째 의료 컨테이너는 리조트(resort) 구역에 있는 구급차(ambulance) 옆에 위치한다. 구급차 바로 옆에서 MS2000 마커를 숨긴다.",
+    "두 번째 의료 컨테이너는 잠긴 코티지(locked cottage)의 뒷마당(backyard)에 있다. 코티지 뒷마당에서 MS2000 마커를 숨긴다.",
+    "세 번째 의료 컨테이너는 부두(pier)에 있는 사무실 건물(office building) 앞에 있다. 사무실 건물 앞에서 MS2000 마커를 숨긴다.",
+    "MS2000 마커는 세 곳 어디에나 순서와 상관없이, 여러 번의 레이드에 걸쳐 나누어 숨겨도 된다."
+  ],
+  "tips": "MS2000 마커는 레이드에서만 획득 가능하므로, 여러 번 레이드를 돌며 충분히 확보하는 것이 중요하다. 각 컨테이너 위치는 산이터(Sanitar)의 치료 장소 근처에 있으니, Anesthesia 퀘스트 지도를 참고하면 찾기 쉽다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/AnesthesiaxRiggedGameMap.png/revision/latest/scale-to-width-down/640?cb=20241215164140",
+      "caption": "지도에 표시된 컨테이너 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/AnesthesiaxRiggedGameLocation1.png/revision/latest/scale-to-width-down/640?cb=20241215162518",
+      "caption": "#1: 리조트 구역 구급차 옆"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/AnesthesiaxRiggedGameLocation2.png/revision/latest/scale-to-width-down/640?cb=20241215162708",
+      "caption": "#2: 잠긴 코티지 뒷마당"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b5/AnesthesiaxRiggedGameLocation3.png/revision/latest/scale-to-width-down/640?cb=20241215162843",
+      "caption": "#3: 부두 사무실 건물 앞"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Rigged_Game",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "6179ad0a6e9dd54ac275e3f2",
+  "nameKo": "사냥꾼의 길 - 버림받은 자들",
+  "nameEn": "The Huntsman Path - Outcasts",
+  "steps": [
+    "임의의 맵에서 Rogue(로그) 적 10명을 처치해야 합니다.",
+    "Rogue는 일반 Scav와 달리 더 강력하고 공격적인 적 NPC입니다.",
+    "Rogue는 주로 Reserve(리저브), Woods(삼림), Shoreline(해안선) 등 특정 지역에서 자주 출현합니다.",
+    "레이드 중 Rogue를 발견하면 신속하게 교전하여 10명을 처치하세요."
+  ],
+  "tips": "Rogue는 일반 Scav보다 체력과 공격력이 높으므로 충분한 무기와 방어구를 준비하는 것이 좋습니다. 또한, Rogue가 자주 출몰하는 리저브 맵에서 플레이하면 퀘스트 완료가 수월합니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Outcasts",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

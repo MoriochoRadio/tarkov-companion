@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "5b478d0f86f7744d190d91b5",
+  "nameKo": "미니버스",
+  "nameEn": "Minibus",
+  "steps": [
+    "인터체인지(Interchange) 맵에서 MS2000 마커 3개를 준비한다. MS2000 마커는 퀘스트 아이템으로, 레이드 내에서 획득할 수 없다.",
+    "첫 번째 미니버스는 몰(Mall) 남서쪽 컨테이너 야적장에 위치해 있다. 야적장에 도착하면 노란색 미니버스를 찾아 MS2000 마커를 사용해 표시한다. 마커를 설치하면 인벤토리에서 사라진다.",
+    "두 번째 미니버스는 서쪽 주차장(Western Parking Garage)에 있다. 주차장 B 구역에서 C 구역으로 넘어가는 지점, 막혀있는 내리막 램프(Down-ramp) 근처에서 미니버스를 찾는다. 이 위치에서 미니버스에 MS2000 마커를 설치한다.",
+    "세 번째 미니버스도 서쪽 주차장 C 구역에 있다. 이 미니버스는 '세이프룸 탈출구(Saferoom Exfil)' 바로 옆에 있으며, 서쪽 주차장과 동쪽 주차장을 연결하는 벽에 난 구멍 근처에 위치해 있다. 이 미니버스에도 MS2000 마커를 설치한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ab/InterchangeMinibusLocations.jpg/revision/latest/scale-to-width-down/640?cb=20220822002650",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ee/Minibus1.png/revision/latest/scale-to-width-down/640?cb=20260413014252",
+      "caption": "컨테이너 야적장의 미니버스 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/09/Minibus2.png/revision/latest/scale-to-width-down/640?cb=20220821234047",
+      "caption": "막혀있는 내리막 램프 근처의 미니버스 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/77/Minibus3.png/revision/latest/scale-to-width-down/640?cb=20220821235315",
+      "caption": "'세이프룸 탈출구' 맞은편의 미니버스 3"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Minibus",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

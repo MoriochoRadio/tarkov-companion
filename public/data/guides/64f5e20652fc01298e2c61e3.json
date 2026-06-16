@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "taskId": "64f5e20652fc01298e2c61e3",
+  "nameKo": "Beyond the Red Meat - Part 1",
+  "nameEn": "Beyond the Red Meat - Part 1",
+  "steps": [
+    "세관(Street of Tarkov) 맵 내 벨루가(Beluga) 레스토랑으로 이동한다. 레스토랑은 건물 내 여러 층에 걸쳐 있으며, 여러 위치에 셰프의 일기(Chef's diary)가 스폰된다.",
+    "첫 번째 위치: 2층에 있는 타월 사이에 숨겨진 타원형 바(oval bar) 안 선반에서 셰프의 일기를 찾는다.",
+    "두 번째 위치: 3층 바 아래 선반에서 셰프의 일기를 확인한다.",
+    "세 번째 위치: 3층 주방 내 싱크대 네 개 근처 캐비닛 안에서 셰프의 일기를 찾는다.",
+    "네 번째 위치: 3층 레스토랑 감독실(restaurant director's room) 안 조명이 켜진 선반에서 셰프의 일기를 획득한다. 이 방은 벨루가 레스토랑 감독 키(Beluga restaurant director key)로 잠금 해제할 수 있다.",
+    "셰프의 일기는 퀘스트 활성화 상태에서만 스폰되며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다. 만약 이 아이템을 들고 추출에 실패하면 아이템을 잃게 되므로 주의한다."
+  ],
+  "tips": "벨루가 레스토랑 감독 키는 일부 셰프의 일기 스폰 위치에서만 필요하며, 퀘스트 완료에 반드시 필요한 것은 아니다. 셰프의 일기는 레이드 내에서만 획득 가능하므로, 신중히 움직여 추출까지 안전하게 완료해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Beluga_restaurant_map.png/revision/latest/scale-to-width-down/640?cb=20230826210551",
+      "caption": "지도에 표시된 벨루가 레스토랑 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/BeyondTheRedMeatSpawn0201.png/revision/latest/scale-to-width-down/640?cb=20230925003430",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4e/BeyondTheRedMeatSpawn0202.png/revision/latest/scale-to-width-down/640?cb=20230925003019",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2a/Beyond_the_Red_Meat_Part_1_3rd_spawn_far.png/revision/latest/scale-to-width-down/640?cb=20230925010747",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/77/Beyond_the_Red_Meat_Part_1_3rd_spawn.png/revision/latest/scale-to-width-down/640?cb=20230925010832",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7b/BeyondTheRedMeatSpawn0101.png/revision/latest/scale-to-width-down/640?cb=20230925003937",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/BeyondTheRedMeatSpawn0102.png/revision/latest/scale-to-width-down/640?cb=20230925004055",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8d/The_Red_Meat_Part_1_4th_spawn_far.png/revision/latest/scale-to-width-down/640?cb=20230925011323",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/The_Red_Meat_Part_1_4th_spawn_close.png/revision/latest/scale-to-width-down/640?cb=20230925011419",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Beyond_the_Red_Meat_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

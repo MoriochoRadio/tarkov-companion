@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "taskId": "5f04886a3937dc337a6b8238",
+  "nameKo": "화학자의 옷장",
+  "nameEn": "Chemistry Closet",
+  "steps": [
+    "해안선(Shoreline)에 위치한 건강 리조트(Health Resort) 동쪽 날개(East wing) 1층 110호실을 찾아야 합니다.",
+    "110호실 문을 열기 위해서는 파란색 테이프가 붙은 건강 리조트 사무실 열쇠(Health Resort office key with a blue tape)가 필요합니다.",
+    "열쇠를 구한 후, 건강 리조트 동쪽 날개 1층 110호실 문을 열고 안으로 들어갑니다.",
+    "방 안에 들어가면 퀘스트 목표가 완료됩니다.",
+    "목표 완료 후에는 해안선(Shoreline)에서 반드시 탈출해야 합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWing.jpg/revision/latest/scale-to-width-down/640?cb=20240520225533",
+      "caption": "건강 리조트 동쪽 날개 위치가 지도에 표시됨"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Chemistry_Closet",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

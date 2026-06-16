@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "64e7b9bffd30422ed03dad38",
+  "nameKo": "헌병대 - 지역 순찰",
+  "nameEn": "Gendarmerie - District Patrol",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 카디널 아파트 단지(Cardinal apartment complex)로 이동한다.",
+    "아파트 단지 내에서 돌격소총(Assault rifles)이나 돌격 카빈(Assault carbines)만을 사용하여 적을 사격한다.",
+    "카디널 아파트 단지 내의 지정된 킬 존(Kill area)에서 총 30명의 적을 처치해야 한다.",
+    "적 처치 시 사용하는 무기는 반드시 돌격소총이나 돌격 카빈이어야 하며, 다른 무기 사용 시 퀘스트 진행이 인정되지 않는다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gendarmerie_-_District_Patrol",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

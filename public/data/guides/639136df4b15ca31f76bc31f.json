@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "639136df4b15ca31f76bc31f",
+  "nameKo": "The Huntsman Path - Administrator",
+  "nameEn": "The Huntsman Path - Administrator",
+  "steps": [
+    "세관(Street of Tarkov)의 파인우드 호텔(Pinewood hotel) 주변 지역에서 스캐브(Scav) 또는 PMC를 총 20명 처치한다.",
+    "파인우드 호텔 안뜰(courtyard) 구역으로 이동한다. 안뜰은 호텔 건물 중앙에 위치한 야외 공간이다.",
+    "안뜰에 들어가서 노란색 신호탄을 하늘로 쏜다. 신호탄은 반드시 일정 높이 이상 올라가야 퀘스트가 완료된다.",
+    "신호탄은 두 가지 방법 중 하나를 사용한다. 첫 번째는 프라퍼(Prapor) 레벨 1에서 구매 가능한 휴대용 RSP-30 노란색 신호탄을 사용하는 방법이다. 이 경우 신호탄을 위쪽으로 겨냥하되 너무 높게 조준하면 뒤쪽에 떨어질 수 있으니 적절한 각도를 유지한다.",
+    "두 번째 방법은 예거(Jaeger) 레벨 1에서 구매 가능한 ZiD SP-81 26x75 신호 권총과 26x75mm 노란색 신호탄 카트리지를 사용하는 것이다. 신호 권총에 카트리지를 장전하여 안뜰에서 하늘로 발사한다."
+  ],
+  "tips": "신호탄이 일정 높이 이상 올라가지 않으면 퀘스트가 완료되지 않으므로, 반드시 안뜰 내부에서 하늘을 향해 정확히 쏘아야 한다. 휴대용 RSP-30 신호탄은 각도 조절에 주의하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/TheHuntsmanPathAdministratorMap.png/revision/latest/scale-to-width-down/640?cb=20230827012222",
+      "caption": "지도에 표시된 처치 및 신호탄 발사 구역"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/26/PineWoodHotel.png/revision/latest/scale-to-width-down/640?cb=20230107211844",
+      "caption": "파인우드 호텔"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9d/PineWoodHotelCourtyard.png/revision/latest/scale-to-width-down/640?cb=20230107211842",
+      "caption": "호텔 안뜰"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Administrator",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

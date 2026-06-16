@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "taskId": "675c3582f6ddc329a90f9c6d",
+  "nameKo": "Private Club",
+  "nameEn": "Private Club",
+  "steps": [
+    "세관(Customs) 맵 내 창고 17(Warehouse 17)을 찾는다. 창고 17은 맵 내 남쪽에 위치해 있으며, 남쪽 입구로 진입할 수 있다.",
+    "창고 17 남쪽 입구로 들어가 내부로 진입한다.",
+    "창고 17 2층에 위치한 특정 방으로 이동한다. 2층 방으로 올라가는 길은 남쪽 입구에서 내부 계단을 이용해 올라가면 된다.",
+    "2층 방 입구에 도착하면 문을 열고 방 안으로 들어간다.",
+    "방 안에는 여러 스폰 지점이 있는데, 첫 번째 스폰 지점은 문 옆 선반 아래 바닥에 위치한다.",
+    "두 번째 스폰 지점은 방 안 테이블 아래 바닥에 있다.",
+    "세 번째 스폰 지점은 테이블 위에 있다.",
+    "네 번째 스폰 지점은 책상 위 TV 뒤에 숨겨져 있다.",
+    "이 중 어느 위치에서든 스키어(Skier)의 지갑(Skier's wallet)을 찾아 획득한다. 이 아이템은 퀘스트 활성 상태일 때만 방에 스폰되며, 획득 즉시 퀘스트 아이템 인벤토리로 이동한다.",
+    "스키어의 지갑을 획득한 후 반드시 안전하게 추출해야 한다. 만약 지갑을 들고 추출에 실패하면 아이템을 잃게 된다."
+  ],
+  "tips": "스키어의 지갑은 퀘스트가 활성화되어 있을 때만 방 안에 스폰되므로, 퀘스트를 받기 전에는 찾을 수 없다. 방 안에는 여러 스폰 지점이 있으니 꼼꼼히 확인하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/Warehouse17Map.png/revision/latest/scale-to-width-down/640?cb=20241229223041",
+      "caption": "맵에 표시된 창고 17 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/Warehouse17.png/revision/latest/scale-to-width-down/640?cb=20250325012213",
+      "caption": "창고 17 남쪽 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/95/Private_Club_Way.png/revision/latest/scale-to-width-down/640?cb=20250902105100",
+      "caption": "2층 방으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/Private_Club_Door.png/revision/latest/scale-to-width-down/640?cb=20250902105603",
+      "caption": "방 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Private_Club_Spawn_1.png/revision/latest/scale-to-width-down/640?cb=20250325004733",
+      "caption": "문 옆 선반 아래 바닥에 첫 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4d/Private_Club_Spawn_2.png/revision/latest/scale-to-width-down/640?cb=20250325005507",
+      "caption": "테이블 아래 바닥에 두 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9d/Private_Club_Spawn_3.png/revision/latest/scale-to-width-down/640?cb=20250325005245",
+      "caption": "테이블 위에 세 번째 스폰 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8b/Private_Club_Spawn_4.png/revision/latest/scale-to-width-down/640?cb=20250325004857",
+      "caption": "책상 위 TV 뒤에 네 번째 스폰 지점"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Private_Club",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

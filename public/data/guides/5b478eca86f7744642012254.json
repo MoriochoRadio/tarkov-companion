@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "taskId": "5b478eca86f7744642012254",
+  "nameKo": "비타민 - 파트 1",
+  "nameEn": "Vitamins - Part 1",
+  "steps": [
+    "세관(Shoreline) 맵의 건강 리조트(Health Resort) 서쪽 동(서관)으로 이동한다. 서관 1층 112호실에 들어가기 위해서는 건강 리조트 서쪽 동 112호실 열쇠(Health Resort west wing office room 112 key)가 필요하다. 이 열쇠를 사용해 112호실 문을 열고 들어간다.",
+    "112호실 안에 있는 냉장고(fridge)를 찾는다. 냉장고 안에 첫 번째 화학 용기(Chemical container #1)가 있다. 이 아이템은 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다. 레이드에서 추출하지 못하면 아이템을 잃으니 주의한다.",
+    "인터체인지(Interchange) 맵으로 이동하여 1층에 있는 EMERCOM 의료 부대(EMERCOM medical unit) 건물로 간다. 이곳에 들어가기 위해서는 EMERCOM 의료 부대 열쇠(EMERCOM medical unit key)가 필요하다. 열쇠를 사용해 출입문을 열고 내부로 진입한다.",
+    "EMERCOM 의료 부대 내부의 벽으로 막힌 구역(walled off area)에서 둥근 깡통(round tin)을 찾는다. 이 깡통 안에 두 번째 화학 용기(Chemical container #2)가 들어있다. 이 아이템 역시 퀘스트 활성 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다. 추출 실패 시 아이템을 잃는다.",
+    "같은 인터체인지 맵 1층에 위치한 'Mantis' 상점으로 이동한다. 상점 뒤쪽 구석에 둥근 깡통(round tin)이 있다. 이 깡통 안에서 세 번째 화학 용기(Chemical container #3)를 획득할 수 있다. 이 아이템도 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다. 추출 실패 시 아이템을 잃는다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Vitamins1_Shoreline_outdoor_map.png/revision/latest/scale-to-width-down/640?cb=20241020215322",
+      "caption": "지도에 표시된 건강 리조트 서쪽 동 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/Vitamins1_Shoreline_Indoor_map.png/revision/latest/scale-to-width-down/640?cb=20180722140230",
+      "caption": "건강 리조트 지도에 표시된 서쪽 동 112호실 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Vitamins_Room2.png/revision/latest/scale-to-width-down/640?cb=20241020220124",
+      "caption": "목표 냉장고"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/50/Vitamins1_112_room_container2.png/revision/latest/scale-to-width-down/640?cb=20241020220251",
+      "caption": "냉장고 안의 화학 용기"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/Vitamins1_Interchange1_floor_rmap.png/revision/latest/scale-to-width-down/640?cb=20241020221453",
+      "caption": "1층 지도에 표시된 EMERCOM 부대와 Mantis 상점 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/63/Emercom_outside.png/revision/latest/scale-to-width-down/640?cb=20240606035735",
+      "caption": "EMERCOM 의료 부대 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Vitamins1_Emercom_container.png/revision/latest/scale-to-width-down/640?cb=20241020214347",
+      "caption": "목표 둥근 깡통"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/Vitamins1_Emercom_container2.png/revision/latest/scale-to-width-down/640?cb=20241020214428",
+      "caption": "둥근 깡통 안의 화학 용기"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bb/Vitamins1_MantisStoreContainer.jpg/revision/latest/scale-to-width-down/640?cb=20241020213719",
+      "caption": "목표 둥근 깡통"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/Vitamins1_MantisStoreContainer_Closeup.jpg/revision/latest/scale-to-width-down/640?cb=20241020213342",
+      "caption": "둥근 깡통 안의 화학 용기"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Vitamins_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

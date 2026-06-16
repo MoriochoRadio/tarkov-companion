@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "taskId": "639872fc93ae507d5858c3a6",
+  "nameKo": "건스미스 - 파트 11",
+  "nameEn": "Gunsmith - Part 11",
+  "steps": [
+    "KRISS Vector 9x19 무기의 내구도를 60 이상으로 유지한다.",
+    "인체공학 수치를 48 이상으로 맞춘다.",
+    "반동 수치를 240 이하로 조절한다.",
+    "조준 거리를 300 이상 확보한다.",
+    "소음기를 장착한다.",
+    "KRISS Vector Mk.5 모듈러 레일을 장착한다.",
+    "Tactical Dynamics Skeletonized 포어그립을 장착한다.",
+    "Glock 9x19 \"Big Stick\" 33발 탄창을 장착한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_11",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

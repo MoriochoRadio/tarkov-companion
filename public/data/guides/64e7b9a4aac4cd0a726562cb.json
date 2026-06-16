@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "64e7b9a4aac4cd0a726562cb",
+  "nameKo": "헌병대 - 표 검사",
+  "nameEn": "Gendarmerie - Tickets, Please",
+  "steps": [
+    "세관(Street of Tarkov) 내 로디나 시네마(Rodina cinema) 위치를 확인한다. 퀘스트 지도에 킬 지역이 표시되어 있으니 이를 참고한다.",
+    "SMG(서브머신건)를 준비한다. 퀘스트 조건상 SMG를 사용해야 하므로, 인벤토리에서 SMG를 장착하거나 구매한다.",
+    "로디나 시네마 내부로 진입한다. 시네마는 세관 맵 내 주요 건물 중 하나로, 내부에 다수의 적들이 출현한다.",
+    "시네마 내에서 SMG를 사용하여 적 25명을 처치한다. 적은 AI 적 또는 플레이어일 수 있으며, 반드시 SMG로 처치해야 한다.",
+    "적 처치 수가 25명에 도달하면 퀘스트가 완료된다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gendarmerie_-_Tickets%2C_Please",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

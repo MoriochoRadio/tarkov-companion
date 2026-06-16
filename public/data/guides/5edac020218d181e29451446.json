@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "taskId": "5edac020218d181e29451446",
+  "nameKo": "견본",
+  "nameEn": "Samples",
+  "steps": [
+    "세관에서 퀘스트를 시작한 후, 견본(Samples) 퀘스트에 필요한 모든 자극제(stimulants)를 모아야 합니다.",
+    "가장 빠른 방법은 연구소(The Lab)에서 파란색 표시가 된 키카드(Keycard with a blue marking)를 사용하는 것입니다. 이 키카드를 사용하면 연구소 내 여러 자극제 아이템을 쉽게 획득할 수 있습니다.",
+    "대안으로, 산이터(Sanitar)를 사냥할 수 있지만, 산이터가 반드시 자극제를 가지고 있는 것은 아니므로 확실한 방법은 아닙니다.",
+    "또 다른 대안으로는 등대(Lighthouse)에 있는 두 개의 샬레(chalets) 또는 로그 베이스(rogue base)를 방문하는 것입니다. 이 장소들은 여러 자극제가 스폰되며, 별도의 키가 필요하지 않습니다.",
+    "퀘스트에 제출해야 하는 자극제 아이템들은 다음과 같습니다:",
+    "- 치료사(Therapist)의 '위기(Crisis)' 퀘스트 완료 후 은신처(Hideout) 내 의료 스테이션(Medstation) 레벨 2에서 제작 가능",
+    "- 은신처의 컬티스트 서클(Cultist Circle)에서 특별 희생(special sacrifice)을 통해 획득 가능",
+    "- 동료들(Colleagues) 퀘스트 3부 완료 보상으로 획득 가능",
+    "- 은신처 의료 스테이션(Medstation) 레벨 2에서 제작 가능",
+    "- 동료들(Colleagues) 퀘스트 2부 완료 보상으로 획득 가능",
+    "- 동료들(Colleagues) 퀘스트 3부 완료 보상으로 획득 가능",
+    "모든 자극제는 레이드 획득(FIR)이 가능하며, 일부는 은신처에서 제작하거나 특정 퀘스트 보상으로 받을 수 있습니다.",
+    "모든 자극제를 모은 후, 퀘스트에 제출하여 완료할 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Samples",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

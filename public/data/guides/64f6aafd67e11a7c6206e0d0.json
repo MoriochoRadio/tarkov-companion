@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "taskId": "64f6aafd67e11a7c6206e0d0",
+  "nameKo": "Beyond the Red Meat - Part 2",
+  "nameEn": "Beyond the Red Meat - Part 2",
+  "steps": [
+    "세관(Interchange)의 타르코프 시내(Streets of Tarkov) 맵에서 비밀 부품(Secret component)을 찾아야 합니다. 비밀 부품은 두 개 건물 내 여러 위치에 스폰됩니다.",
+    "테라그룹 시큐리티 포스트(TerraGroup security post) 건물에 들어가면, 정문으로 들어와 바로 오른쪽으로 돌고 복도 끝에서 왼쪽으로 꺾습니다. 복도 뒤쪽 왼쪽 구석에 있는 책상, 전화기 옆에서 비밀 부품을 찾을 수 있습니다.",
+    "테라그룹 시큐리티 포스트 내 미팅룸(TerraGroup meeting room)에도 비밀 부품 스폰 위치가 있습니다. 건물에 들어와 미팅룸 문을 열고 바로 왼쪽 선반의 뒤쪽 오른쪽에 비밀 부품이 있습니다. 미팅룸은 테라그룹 미팅룸 열쇠(TerraGroup meeting room key)로 잠금 해제할 수 있습니다.",
+    "테라그룹 오피스(TerraGroup office) 건물에 들어가면 왼쪽으로 돌고, 뒤쪽 왼쪽 구석에 있는 책상에 있는 파일 정리함(file organizer) 안에서 비밀 부품을 찾습니다.",
+    "테라그룹 오피스의 가장 뒤쪽 칸막이 사무실(backmost cubicle) 내 책상 뒤쪽 오른쪽에 비밀 부품이 있습니다.",
+    "테라그룹 오피스의 뒤쪽 오른쪽에 위치한 미팅룸 안에는 말린 청사진(rolled up blueprint) 속에 비밀 부품이 숨겨져 있습니다.",
+    "비밀 부품은 퀘스트가 활성화된 상태에서만 레이드 내에서 획득할 수 있으며, 획득 즉시 퀘스트 아이템 인벤토리로 이동합니다. 비밀 부품을 들고 추출하지 못하면 아이템을 잃게 되니 주의해야 합니다.",
+    "테라그룹 미팅룸 열쇠는 미팅룸 잠금 해제에 필요하지만, 모든 비밀 부품 스폰 위치에 반드시 필요한 것은 아니므로 퀘스트 완료에 반드시 요구되는 것은 아닙니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a2/BeyondMeat2.png/revision/latest/scale-to-width-down/640?cb=20230922215909",
+      "caption": "지도에 표시된 건물 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/39/RedMeat2BuildingEntrance.png/revision/latest/scale-to-width-down/640?cb=20230925133359",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/88/TerraGroup_security_armory_Way_1.png/revision/latest/scale-to-width-down/640?cb=20230815003811",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/TerraGroup_security_armory_Way_2.png/revision/latest/scale-to-width-down/640?cb=20230815004339",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b8/Beyond_the_Red_Meat_Location_1.png/revision/latest/scale-to-width-down/640?cb=20230925135258",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/TerraGroup_MeetingRoom_LockedDoor.png/revision/latest/scale-to-width-down/640?cb=20230813223002",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/2023-09-07-14-30-_44.3%2C_1.7%2C_-59.4_0.1%2C_-0.2%2C_0.0%2C_1.0_6.51_%280%29.png/revision/latest/scale-to-width-down/640?cb=20230925134545",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Beyond_the_Red_Meat_Location_2_2.png/revision/latest/scale-to-width-down/640?cb=20230925134819",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Beyond_the_Red_Meat_2_31.png/revision/latest/scale-to-width-down/640?cb=20230925125734",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/Image_%2851%29.png/revision/latest/scale-to-width-down/640?cb=20230925130045",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9b/Image_%2852%29.png/revision/latest/scale-to-width-down/640?cb=20230925130124",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ee/Beyond_the_Red_Meat_2_42.png/revision/latest/scale-to-width-down/640?cb=20230925131204",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Beyond_the_Red_Meat_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

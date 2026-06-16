@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "6578eb36e5020875d64645cd",
+  "nameKo": "The Huntsman Path - Crooked Cop",
+  "nameEn": "The Huntsman Path - Crooked Cop",
+  "steps": [
+    "콜론타이(Kollontay)를 찾아 처치해야 합니다. 그는 특정 맵에서 등장하며, 위치는 레이드 내에서 직접 찾아야 합니다.",
+    "콜론타이의 경호원 4명도 함께 처치해야 합니다. 경호원들은 콜론타이 주변에 있으며, 모두 제거해야 퀘스트가 진행됩니다.",
+    "콜론타이가 소지한 PR-Taran 경찰봉(PR-Taran police baton)을 레이드에서 획득해야 합니다. 이 아이템은 콜론타이 사망 시 드랍되며, 반드시 레이드 내에서 직접 찾아야 합니다.",
+    "획득한 PR-Taran 경찰봉을 퀘스트 진행 NPC에게 제출하여 퀘스트를 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Crooked_Cop",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

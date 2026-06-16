@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "taskId": "64f5aac4b63b74469b6c14c2",
+  "nameKo": "소련공산당에 영광을 - 파트 2",
+  "nameEn": "Glory to CPSU - Part 2",
+  "steps": [
+    "세관(Street of Tarkov) 맵에 위치한 박물관 건물로 이동한다. 박물관은 지도에 표시된 건물이며, 외관을 확인하여 위치를 파악한다.",
+    "박물관 내부로 진입한 후, 계단으로 올라가 2층으로 이동한다. 계단은 입구에서 바로 보이는 위치에 있다.",
+    "2층에 도착하면, 여러 개의 방 중에서 일기장이 스폰되는 방으로 들어간다. 방 입구의 문을 확인하여 정확한 방임을 확인한다.",
+    "첫 번째 스폰 위치는 열린 주방 서랍 안이다. 서랍을 열어 일기장을 찾는다.",
+    "두 번째 스폰 위치는 의자 위에 놓인 테디 베어 뒤쪽이다. 테디 베어를 살펴보고 그 뒤를 확인한다.",
+    "세 번째 스폰 위치는 유리 진열장의 왼쪽 하단 칸막이 안이다. 유리 진열장을 열어 하단 칸막이를 확인한다.",
+    "네 번째 스폰 위치는 책장 하단 칸막이 안, 책 위에 놓여 있다. 책장을 열어 책 위를 자세히 살펴본다.",
+    "일기장을 획득하면, 인벤토리 내 퀘스트 아이템 슬롯으로 자동 이동한다. 이 아이템은 퀘스트가 활성화된 상태에서만 레이드 내에서 발견할 수 있다.",
+    "획득한 일기장을 들고 레이드에서 안전하게 탈출해야 한다. 탈출하지 못하면 일기장을 잃게 되므로 주의한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/StreetsOfTarkovMapCPSUPart2MarkedOnMap.png/revision/latest/scale-to-width-down/640?cb=20240705022801",
+      "caption": "지도에 표시된 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/64/CPSUPart2Outside.png/revision/latest/scale-to-width-down/640?cb=20250227013330",
+      "caption": "박물관 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c3/CPSUPart2Inside.png/revision/latest/scale-to-width-down/640?cb=20230925160026",
+      "caption": "계단으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/07/CPSUPart2RoomDoor.png/revision/latest/scale-to-width-down/640?cb=20230925160342",
+      "caption": "스폰 위치가 있는 방으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b0/JournalSpawn1.png/revision/latest/scale-to-width-down/640?cb=20230925160946",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/CPSU_Part_2.png/revision/latest/scale-to-width-down/640?cb=20230925163838",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/CPSU2_3rd_spawn.png/revision/latest/scale-to-width-down/640?cb=20230925162845",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/JournalSpawn2.png/revision/latest/scale-to-width-down/640?cb=20230925162126",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Glory_to_CPSU_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

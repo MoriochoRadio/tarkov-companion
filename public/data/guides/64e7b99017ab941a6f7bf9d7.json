@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "64e7b99017ab941a6f7bf9d7",
+  "nameKo": "헌병대 - 쇼핑몰 경비대",
+  "nameEn": "Gendarmerie - Mall Cop",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 스타일로베이트(StyloBate) 건물로 이동한다.",
+    "스타일로베이트 건물 내부에서 권총을 장착한다. 권총만 사용해야 하므로 다른 무기는 장비하지 않는다.",
+    "건물 내에서 적을 찾아 권총으로 15명을 처치한다. 적은 스타일로베이트 건물 내 여러 층과 방에 분포되어 있으니 건물 전체를 탐색하며 사격한다."
+  ],
+  "tips": "권총 사용 조건이 있으므로 권총 탄약과 예비 권총을 충분히 준비하는 것이 좋다. 스타일로베이트 건물은 좁고 복잡하므로 적의 위치를 잘 파악하고 조심스럽게 움직여야 한다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gendarmerie_-_Mall_Cop",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

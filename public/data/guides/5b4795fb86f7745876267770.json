@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "taskId": "5b4795fb86f7745876267770",
+  "nameKo": "떡밥 뿌리기",
+  "nameEn": "Chumming",
+  "steps": [
+    "금목걸이 9개를 준비한다. 금목걸이는 레이드 획득(FIR)으로만 입수 가능하며, 상점이나 트레이더 구매는 불가능하다.",
+    "인터체인지(Interchange) 1층에 있는 쇼핑몰 내 'Generic' 상점을 찾는다. 이 상점 내부에 있는 침대 옆에 금목걸이들을 배치해야 한다. 위치는 상점 내부 침대 위이며, 정확한 위치는 인터체인지 1층 지도에서 확인할 수 있다.",
+    "세관(Customs)의 3층 기숙사에 위치한 '주방(kitchen)'을 찾는다. 주방은 문이 없는 큰 방으로, 이곳에 있는 전자레인지 안에 금목걸이들을 넣어야 한다. 전자레인지는 기숙사 3층에 있으며, 위치는 기숙사 3층 지도에서 주방으로 표시된 곳이다.",
+    "삼림(Woods) 맵의 제재소 내 목재 야적장에 있는 나무 오두막 중 2번 오두막(중간 위치)을 찾는다. 이 오두막 내부에는 금고 근처에 책이 놓인 침대가 있는데, 이 침대 위에 금목걸이들을 배치해야 한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/ChummingsInterchange.png/revision/latest/scale-to-width-down/640?cb=20180812230027",
+      "caption": "상점 위치가 표시된 인터체인지 1층 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/47/ChummingBed.png/revision/latest/scale-to-width-down/640?cb=20260125231121",
+      "caption": "금목걸이를 배치해야 하는 침대"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c8/Dorm_3.png/revision/latest?cb=20181204124832",
+      "caption": "지도에 표시된 '주방' 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/00/Chumm_micro.png/revision/latest/scale-to-width-down/640?cb=20221206111916",
+      "caption": "목표 전자레인지"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4e/Chumm_micro2.png/revision/latest/scale-to-width-down/640?cb=20220916211212",
+      "caption": "열려 있는 전자레인지 안에 금목걸이를 배치해야 함"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Wood_Cabin_nr_2.jpg/revision/latest/scale-to-width-down/640?cb=20220130010245",
+      "caption": "지도에 표시된 오두막 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/Cabin2Woods.png/revision/latest/scale-to-width-down/640?cb=20230618181031",
+      "caption": "제재소 목재 야적장의 2번 오두막"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ab/Chumm_woods.png/revision/latest/scale-to-width-down/640?cb=20220822190941",
+      "caption": "금고 근처 책 옆 침대에 금목걸이를 배치해야 함"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Chumming",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

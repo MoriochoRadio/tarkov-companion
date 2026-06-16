@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "5edab4b1218d181e29451435",
+  "nameKo": "사냥꾼의 길 - 사디스트",
+  "nameEn": "The Huntsman Path - Sadist",
+  "steps": [
+    "먼저 '동료들 - 3부(Colleagues - Part 3)' 퀘스트를 완료하지 않아야 합니다. 해당 퀘스트를 완료하면 본 퀘스트 접근이 불가능해집니다.",
+    "사디스트(Sanitar)를 처치해야 합니다. 사디스트는 특정 맵에서 등장하는 보스 NPC입니다.",
+    "사디스트는 주로 Shoreline(해안선) 맵에서 출현합니다. 해안선의 의료 시설이나 주변 지역을 탐색하며 사디스트를 찾으세요.",
+    "사디스트는 강력한 적이므로 충분한 무장과 장비를 갖추고 접근해야 합니다.",
+    "사디스트를 처치한 후, 퀘스트가 자동으로 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Sadist",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

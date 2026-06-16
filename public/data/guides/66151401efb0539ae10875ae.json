@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "66151401efb0539ae10875ae",
+  "nameKo": "Drip-Out - Part 1",
+  "nameEn": "Drip-Out - Part 1",
+  "steps": [
+    "레이드에서 Scav Raider 100명을 처치해야 합니다. Scav Raider는 주로 세관, 삼림, 해안선, 리저브 등 다양한 맵에서 출현하며, 주로 적대적인 Scav로 등장합니다.",
+    "레이드에서 WARTECH 브랜드 장비 50개를 획득해야 합니다. WARTECH 브랜드 장비는 다음과 같습니다: WARTECH MK3 TV-104 체스트 리그 (멀티캠), WARTECH TV-109 + TV-106 체스트 리그 (A-TACS FG), WARTECH TV-115 플레이트 캐리어 (올리브 드랩), WARTECH TV-110 플레이트 캐리어 (코요테), WARTECH Berkut BB-102 백팩 (A-TACS FG).",
+    "획득한 WARTECH 장비는 반드시 레이드 획득(FIR) 상태여야 합니다. 즉, 상점 구매나 트레이더 거래가 아닌, 직접 레이드 내에서 획득한 아이템이어야 합니다.",
+    "Scav Raider 처치와 WARTECH 장비 획득을 완료한 후, 퀘스트를 수락한 트레이더에게 WARTECH 장비 50개를 제출하여 퀘스트를 완료합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1c/Mk3.PNG/revision/latest?cb=20230218202156",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Drip-Out_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}

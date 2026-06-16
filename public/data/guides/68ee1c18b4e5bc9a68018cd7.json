@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "68ee1c18b4e5bc9a68018cd7",
+  "nameKo": "No Questions Asked",
+  "nameEn": "No Questions Asked",
+  "steps": [
+    "세관(Customs) 맵에서 레이드 중 Red Rebel ice pick 아이템 2개를 획득한다. 이 아이템은 레이드 획득(FIR)만 가능하며, 트레이더 구매나 플리마켓에서 구할 수 없다.",
+    "획득한 Red Rebel ice pick 2개를 퀘스트 의뢰자에게 전달하여 퀘스트를 완료한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/No_Questions_Asked",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-16T19:27:36.425+09:00"
+}
