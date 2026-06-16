@@ -1,0 +1,67 @@
+{
+  "date": "2026-06-17",
+  "generatedAt": "2026-06-17T01:14:54.653+09:00",
+  "headline": "AI 개선 및 레이드 참가 불가 문제 수정, 주말 XP 보너스 연장",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "주의 사항",
+      "items": [
+        {
+          "title": "블랙 디비전 AI 행동 개선 및 버그 수정",
+          "summary": "블랙 디비전 병사들이 엔진룸에서 플레이어를 향해 더 고르게 분산되어 움직이며, 수류탄 사용 빈도가 증가해 전투가 더 치열해졌습니다. 또한 엔진룸에서 이동하지 않고 정지하는 버그가 수정되어 더 적극적으로 움직입니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Wedge 보스의 가스 수류탄 트립와이어 함정 강화",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치하여 플레이어의 접근을 방해하므로, 접근 경로를 신중히 선택해 피해를 줄여야 합니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45464_(10_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "최신 소식",
+      "items": [
+        {
+          "title": "Icebreaker 레이드 XP 25% 증가",
+          "summary": "이번 주말부터 6월 15일 오전 11시 BST까지 Icebreaker 맵에서 레이드로 획득하는 XP가 PvP와 PvE 모두에 대해 25% 증가하여 경험치 획득을 극대화할 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45581_(16_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "유용한 팁",
+      "items": [
+        {
+          "title": "주요 퀘스트 난이도와 장비 제한에 대한 신규 플레이어 불만",
+          "summary": "신규 플레이어가 특정 퀘스트에서 제한된 탄창과 고가 총기를 사용해야 하는 점을 비판하며, 퀘스트 설계가 비현실적이라는 의견을 제시해 퀘스트 난이도 조정 필요성을 시사합니다."
+        },
+        {
+          "title": "키 아이템 정리 및 보관 팁",
+          "summary": "플레이어가 수집한 다양한 키 중 어떤 키를 보관하고 어떤 키를 버려야 하는지에 대한 구체적인 조언을 공유해 인벤토리 관리에 도움을 줍니다."
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "최신 영상",
+      "items": [
+        {
+          "title": "Taking the MOST TOXIC Loadouts to Streets ft. Glorious E & HutchMF",
+          "url": "https://www.youtube.com/watch?v=MYdxNk7KJiE",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "CHECKING OUT NEW SEASON TEST SERVER",
+          "url": "https://www.youtube.com/watch?v=BpppyhxA3Zw",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
