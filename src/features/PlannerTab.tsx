@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { fetchMaps } from '../api/maps'
 import { biName, fetchQuests, type Quest, type QuestObjective } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
-import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
+import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import {
   fetchMapMeta,
   metaForNormalizedName,
@@ -15,6 +15,7 @@ import {
   usePlannerHidden,
 } from '../lib/plannerView'
 import { usePlayerLevel } from '../lib/playerLevel'
+import { DoneButton } from './DoneButton'
 import {
   MapViewer,
   type ExtractMarker,
@@ -261,6 +262,7 @@ export function PlannerTab({
   const { done, toggle: toggleDone } = usePlannerDone()
   const [showExtracts, setShowExtracts] = usePlannerExtracts()
   const { ids: activeIds } = useIdSet(ACTIVE_QUESTS_KEY)
+  const { ids: doneQuestIds, toggle: toggleQuestDone } = useIdSet(DONE_QUESTS_KEY)
   const mapRef = useRef<MapViewerHandle>(null) // 호버 포커스(좌측 리스트→마커 강조)
 
   // 맵 메타(투영·층 정의)는 맵 보기를 처음 켤 때만 로드 (lazy)
@@ -630,10 +632,11 @@ export function PlannerTab({
                 const cats = [...new Set(objectives.map(catOf))]
                 const picked = pickedIds.has(quest.id)
                 const markerHidden = hiddenIds.has(quest.id)
+                const questDone = doneQuestIds.has(quest.id)
                 return (
                   <li
                     key={quest.id}
-                    className="planner-quest"
+                    className={`planner-quest${questDone ? ' done' : ''}`}
                     // 호버/포커스 → 맵에서 이 퀘스트 마커만 또렷 (Phase 34, 리렌더 없음)
                     onMouseEnter={() => mapRef.current?.focusQuest(quest.id)}
                     onMouseLeave={() => mapRef.current?.focusQuest(null)}
@@ -687,6 +690,10 @@ export function PlannerTab({
                         </span>
                       </span>
                     </label>
+                    <DoneButton
+                      on={questDone}
+                      onToggle={() => toggleQuestDone(quest.id)}
+                    />
                     <button
                       className="quest-link planner-detail"
                       onClick={() => onQuest?.(quest.id)}

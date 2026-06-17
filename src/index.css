@@ -1029,6 +1029,43 @@ th.star-col {
   color: var(--accent);
 }
 
+/* ✓ 완료 토글 (퀘스트 완료, Phase 39) — ★ 진행 중(별)과 짝. 켜지면 초록 */
+.done-btn {
+  background: none;
+  border: none;
+  padding: 2px 6px;
+  line-height: 1;
+  font-size: 1rem;
+  color: var(--text-3);
+  cursor: pointer;
+  vertical-align: -1px;
+}
+
+.done-btn:hover,
+.done-btn.on {
+  color: #7fd98c;
+}
+
+/* 완료한 퀘스트 — 흐리게 + 취소선 (퀘스트·플래너·해금 체인 공용) */
+.quest-row.done,
+.planner-quest.done,
+.unlock-chain-list li.done {
+  opacity: 0.62;
+}
+
+.quest-row.done .quest-name-text,
+.planner-quest.done .planner-quest-name,
+.unlock-chain-list li.done .quest-link {
+  text-decoration: line-through;
+  color: var(--text-3);
+}
+
+/* 상세의 "완료" 액션 버튼 — 켜지면 초록 (★ active의 골드와 구분) */
+.btn-ext.btn-done.active {
+  border-color: #7fd98c;
+  color: #7fd98c;
+}
+
 .fav-heading {
   margin: 0 0 var(--sp-1);
   font-size: 1.05rem;

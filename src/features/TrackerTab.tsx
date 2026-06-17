@@ -9,6 +9,7 @@ import { fetchStoryline } from '../api/storyline'
 import { useAsyncData } from '../hooks/useAsyncData'
 import {
   ACTIVE_QUESTS_KEY,
+  DONE_QUESTS_KEY,
   HIDEOUT_BUILT_KEY,
   STORY_DONE_KEY,
   useIdSet,
@@ -274,6 +275,7 @@ function QuestTracker() {
   const [firOnly, setFirOnly] = useState(true)
   const [activeOnly, setActiveOnly] = useState(false)
   const { ids: activeIds } = useIdSet(ACTIVE_QUESTS_KEY)
+  const { ids: doneIds } = useIdSet(DONE_QUESTS_KEY)
   const { counts, add } = usePrepCounts()
 
   // 트레이더 → 제출 아이템이 있는 퀘스트 (레벨 오름차순)
@@ -287,6 +289,7 @@ function QuestTracker() {
     for (const quest of state.data) {
       if (level && quest.minPlayerLevel > lvl) continue
       if (activeOnly && !activeIds.has(quest.id)) continue
+      if (doneIds.has(quest.id)) continue // 완료한 퀘스트는 정크박스 집계에서 제외
       let needs = questNeeds(quest)
       if (firOnly) needs = needs.filter((n) => n.fir)
       if (needs.length === 0) continue
@@ -306,7 +309,7 @@ function QuestTracker() {
       )
     }
     return out.sort((a, b) => b.quests.length - a.quests.length)
-  }, [state, level, firOnly, activeOnly, activeIds])
+  }, [state, level, firOnly, activeOnly, activeIds, doneIds])
 
   const selected =
     groups.find((g) => g.trader.id === traderId) ?? groups[0] ?? null

@@ -2,10 +2,11 @@ import { useEffect, useMemo, useState } from 'react'
 import { fetchGuideStatus } from '../api/guides'
 import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
-import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
+import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { consumePendingQuest } from '../lib/searchSeed'
+import { DoneButton } from './DoneButton'
 import { TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 import { StorylineView } from './StorylineView'
@@ -57,6 +58,7 @@ function QuestDetail({
 }) {
   const [zoomed, setZoomed] = useState<QuestItemRef | null>(null)
   const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
+  const { ids: doneIds, toggle: toggleDone, set: setDone } = useIdSet(DONE_QUESTS_KEY)
   const guideState = useAsyncData(() => fetchGuideStatus(quest.id), [quest.id])
   const guide =
     guideState.status === 'ready' && typeof guideState.data === 'object'
@@ -71,6 +73,20 @@ function QuestDetail({
         {q.displayName}
       </button>
     )
+  }
+
+  // "선행 모두 완료" — 이 퀘스트와 모든 전이적 선행을 완료로 (논리상 선행은 이미 깬 것).
+  // 명시 버튼만 제공(행에서 자동 캐스케이드는 실수 위험). 해제는 개별 토글로.
+  const markChainDone = () => {
+    const seen = new Set<string>()
+    const visit = (id: string) => {
+      if (seen.has(id)) return
+      seen.add(id)
+      setDone(id, true)
+      const q = byId.get(id)
+      if (q) for (const r of q.requires) visit(r)
+    }
+    visit(quest.id)
   }
 
   return (
@@ -115,6 +131,13 @@ function QuestDetail({
           onClick={() => toggleActive(quest.id)}
         >
           {activeIds.has(quest.id) ? '★ 진행 중' : '☆ 진행 중으로 표시'}
+        </button>
+        <button
+          className={`btn-ext btn-done${doneIds.has(quest.id) ? ' active' : ''}`}
+          onClick={() => toggleDone(quest.id)}
+          title="완료 처리하면 통합 체크리스트 등에서 이 퀘스트 아이템이 빠집니다"
+        >
+          {doneIds.has(quest.id) ? '✓ 완료함 · 취소' : '○ 완료로 표시'}
         </button>
         {quest.map && (
           <a
@@ -261,6 +284,15 @@ function QuestDetail({
               <span className="dim">선행:</span> {quest.requires.map(questLink)}
             </p>
           )}
+          {quest.requires.length > 0 && (
+            <button
+              className="btn-ext btn-done"
+              onClick={markChainDone}
+              title="이 퀘스트와 모든 선행을 완료로 표시"
+            >
+              ✓ 여기까지 선행 모두 완료
+            </button>
+          )}
           {quest.unlocks.length > 0 && (
             <p>
               <span className="dim">후행:</span> {quest.unlocks.map(questLink)}
@@ -310,8 +342,10 @@ export function QuestsTab() {
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('level')
   const [activeOnly, setActiveOnly] = useState(false)
+  const [hideDone, setHideDone] = useState(false)
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
   const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
+  const { ids: doneIds, toggle: toggleDone } = useIdSet(DONE_QUESTS_KEY)
 
   // 첫 페인트가 끝나면 한 페이지 분량으로 확장 (2단계 렌더)
   useEffect(() => {
@@ -344,6 +378,7 @@ export function QuestsTab() {
     const result = quests.filter(
       (quest) =>
         (!activeOnly || activeIds.has(quest.id)) &&
+        (!hideDone || !doneIds.has(quest.id)) &&
         (!trader || quest.trader.id === trader) &&
         (!map || quest.map?.id === map) &&
         (!maxLevel || quest.minPlayerLevel <= level) &&
@@ -356,7 +391,7 @@ export function QuestsTab() {
         : collator.compare(a.trader.name, b.trader.name) ||
           a.minPlayerLevel - b.minPlayerLevel,
     )
-  }, [quests, trader, map, maxLevel, query, sortKey, activeOnly, activeIds])
+  }, [quests, trader, map, maxLevel, query, sortKey, activeOnly, activeIds, hideDone, doneIds])
 
   const modeSeg = (
     <div className="toolbar">
@@ -459,6 +494,14 @@ export function QuestsTab() {
           />
           ★ 진행 중만
         </label>
+        <label className="toggle">
+          <input
+            type="checkbox"
+            checked={hideDone}
+            onChange={(e) => { setHideDone(e.target.checked); setVisible(PAGE_SIZE) }}
+          />
+          ✓ 완료 숨기기
+        </label>
       </div>
       <p className="hint">
         {filtered.length}개 퀘스트 · 행을 클릭하면 상세 보기 · ☆를 누르면 진행 중
@@ -480,13 +523,21 @@ export function QuestsTab() {
         </thead>
         <tbody>
           {shown.map((q) => (
-            <tr key={q.id} className="quest-row" onClick={() => setSelectedId(q.id)}>
+            <tr
+              key={q.id}
+              className={`quest-row${doneIds.has(q.id) ? ' done' : ''}`}
+              onClick={() => setSelectedId(q.id)}
+            >
               <td>
                 <div className="quest-name-cell">
                   <StarButton
                     on={activeIds.has(q.id)}
                     onToggle={() => toggleActive(q.id)}
                     label="진행 중"
+                  />
+                  <DoneButton
+                    on={doneIds.has(q.id)}
+                    onToggle={() => toggleDone(q.id)}
                   />
                   <span className="quest-name-text">{q.displayName}</span>
                   {q.kappaRequired && <span className="badge-kappa">κ</span>}

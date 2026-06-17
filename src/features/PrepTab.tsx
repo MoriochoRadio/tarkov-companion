@@ -2,7 +2,12 @@ import { useEffect, useMemo, useState } from 'react'
 import { CURRENCY_IDS, fetchHideoutRequirements } from '../api/hideout'
 import { biName, fetchQuests } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
-import { ACTIVE_QUESTS_KEY, HIDEOUT_BUILT_KEY, useIdSet } from '../lib/favorites'
+import {
+  ACTIVE_QUESTS_KEY,
+  DONE_QUESTS_KEY,
+  HIDEOUT_BUILT_KEY,
+  useIdSet,
+} from '../lib/favorites'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
 import { TableSkeleton } from './Skeleton'
@@ -243,6 +248,7 @@ export function PrepChecklist({
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const { ids: activeIds } = useIdSet(ACTIVE_QUESTS_KEY)
+  const { ids: doneIds } = useIdSet(DONE_QUESTS_KEY)
   const { ids: builtLevels } = useIdSet(HIDEOUT_BUILT_KEY)
   const { counts, add } = usePrepCounts()
 
@@ -270,6 +276,8 @@ export function PrepChecklist({
       let needs = r.needs
       // 은신처 뷰에서 "지었음"으로 표시한 레벨의 몫은 더 모을 필요 없음
       needs = needs.filter((n) => !n.stationKey || !builtLevels.has(n.stationKey))
+      // 완료(✓)한 퀘스트의 제출 몫도 제외 — 어느 탭에서든 완료 처리하면 여기서 빠짐
+      needs = needs.filter((n) => n.questId == null || !doneIds.has(n.questId))
       if (source === 'quest') needs = needs.filter((n) => n.kind === 'quest')
       if (source === 'hideout') needs = needs.filter((n) => n.kind === 'hideout')
       // "진행 중만"은 퀘스트 기준 필터 — 은신처 몫은 같이 숨김 (지금 할 일 뷰)
@@ -304,7 +312,7 @@ export function PrepChecklist({
         : collator.compare(a.nameKo, b.nameKo),
     )
     return out
-  }, [allRows, query, level, source, firOnly, activeOnly, activeIds, builtLevels, sortKey])
+  }, [allRows, query, level, source, firOnly, activeOnly, activeIds, doneIds, builtLevels, sortKey])
 
   // 다 모은 아이템은 아래 접힘 섹션으로 — 진행 중 목록을 짧게 유지
   const { todo, doneRows, gotSum, needSum } = useMemo(() => {

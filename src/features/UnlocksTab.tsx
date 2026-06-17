@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
 import { fetchAllItems, type TarkovItem } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
+import { DoneButton } from './DoneButton'
 import { TableSkeleton } from './Skeleton'
 
 // 해금 탭 — "이 아이템 언제 살 수 있어?"의 역방향 답.
@@ -55,28 +57,37 @@ function ChainList({
 }) {
   const chain = buildChain(unlocking, byId)
   const maxLevel = Math.max(...chain.map((q) => q.minPlayerLevel))
+  const { ids: doneIds, toggle: toggleDone } = useIdSet(DONE_QUESTS_KEY)
+  const doneCount = chain.filter((q) => doneIds.has(q.id)).length
   return (
     <div className="unlock-chain">
       <p className="hint">
-        선행 포함 총 {chain.length}개 퀘스트 · 체인 최고 요구 레벨{' '}
-        <span className="num">{maxLevel}</span> · 퀘스트를 누르면 상세로 이동
+        선행 포함 총 {chain.length}개 퀘스트 · 완료{' '}
+        <span className="num">{doneCount}</span>/{chain.length} · 체인 최고 요구 레벨{' '}
+        <span className="num">{maxLevel}</span> · ○를 눌러 완료 체크, 이름을 누르면 상세
       </p>
       <ol className="unlock-chain-list">
-        {chain.map((q, i) => (
-          <li
-            key={q.id}
-            className={q.id === unlocking.id ? 'unlock-chain-final' : ''}
-          >
-            <span className="unlock-chain-num num">{i + 1}</span>
-            <button className="quest-link" onClick={() => onQuest?.(q.id)}>
-              {q.displayName}
-            </button>
-            <span className="dim">
-              {q.trader.name} · Lv {q.minPlayerLevel}
-              {q.id === unlocking.id && ' · 완료 시 해금'}
-            </span>
-          </li>
-        ))}
+        {chain.map((q, i) => {
+          const done = doneIds.has(q.id)
+          return (
+            <li
+              key={q.id}
+              className={`${q.id === unlocking.id ? 'unlock-chain-final' : ''}${
+                done ? ' done' : ''
+              }`}
+            >
+              <span className="unlock-chain-num num">{i + 1}</span>
+              <DoneButton on={done} onToggle={() => toggleDone(q.id)} />
+              <button className="quest-link" onClick={() => onQuest?.(q.id)}>
+                {q.displayName}
+              </button>
+              <span className="dim">
+                {q.trader.name} · Lv {q.minPlayerLevel}
+                {q.id === unlocking.id && ' · 완료 시 해금'}
+              </span>
+            </li>
+          )
+        })}
       </ol>
     </div>
   )

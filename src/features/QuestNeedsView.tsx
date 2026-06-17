@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { CURRENCY_IDS } from '../api/hideout'
 import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
-import { ACTIVE_QUESTS_KEY, useIdSet } from '../lib/favorites'
+import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { useQuestItemMarks } from '../lib/questItemMarks'
 import { TableSkeleton } from './Skeleton'
@@ -47,6 +47,7 @@ export function QuestNeedsView() {
   const [gridTrader, setGridTrader] = useState('')
   const [gridVisible, setGridVisible] = useState(GRID_FIRST_PAINT)
   const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
+  const { ids: doneIds } = useIdSet(DONE_QUESTS_KEY)
   const { marks, cycle } = useQuestItemMarks()
   // 트레이더 그룹은 펼친 것만 렌더 — 300개 퀘스트를 한 번에 그리지 않음
   const [openIds, setOpenIds] = useState<ReadonlySet<string>>(new Set())
@@ -66,6 +67,7 @@ export function QuestNeedsView() {
     for (const quest of state.data) {
       if (level && quest.minPlayerLevel > lvl) continue
       if (activeOnly && !activeIds.has(quest.id)) continue
+      if (doneIds.has(quest.id)) continue // 완료한 퀘스트는 "남은 것"에서 제외
       let items: NeedItem[] = quest.objectives
         .filter(
           (o) =>
@@ -93,7 +95,7 @@ export function QuestNeedsView() {
       g.quests.sort((a, b) => a.quest.minPlayerLevel - b.quest.minPlayerLevel)
     }
     return out.sort((a, b) => b.quests.length - a.quests.length)
-  }, [state, level, firOnly, activeOnly, activeIds])
+  }, [state, level, firOnly, activeOnly, activeIds, doneIds])
 
   // 그리드용: 트레이더(또는 계정 전체)의 필요 아이템을 아이템 단위로 합산
   const gridItems = useMemo(() => {
