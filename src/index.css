@@ -1066,6 +1066,23 @@ th.star-col {
   color: #7fd98c;
 }
 
+/* 퀘스트 상세 필요 아이템 — 보유 ± 카운터(통합 체크리스트와 공유, Phase 40) */
+.quest-item-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.quest-item-need {
+  color: var(--text-3);
+}
+
+.quest-item-need.met {
+  color: #7fd98c;
+}
+
 .fav-heading {
   margin: 0 0 var(--sp-1);
   font-size: 1.05rem;

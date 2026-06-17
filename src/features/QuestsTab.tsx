@@ -1,10 +1,18 @@
 import { useEffect, useMemo, useState } from 'react'
 import { fetchGuideStatus } from '../api/guides'
-import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
+import { CURRENCY_IDS } from '../api/hideout'
+import {
+  biName,
+  fetchQuests,
+  type Quest,
+  type QuestItemRef,
+  type QuestObjective,
+} from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
 import { usePlayerLevel } from '../lib/playerLevel'
+import { usePrepCounts } from '../lib/prepCounts'
 import { consumePendingQuest } from '../lib/searchSeed'
 import { DoneButton } from './DoneButton'
 import { TableSkeleton } from './Skeleton'
@@ -45,6 +53,16 @@ function ItemChip({
   )
 }
 
+// 통합 체크리스트(PrepChecklist.buildRows)가 추적하는 "단일 제출 아이템"
+// (giveItem/plantItem · 비화폐)만 카운터 대상 — 같은 prep-counts에 기록돼 동기화된다.
+// "여러 아이템 중 하나" 선택형은 특정 아이템을 지목할 수 없어 카운터 없음.
+function submitItem(o: QuestObjective): QuestItemRef | null {
+  if (o.type !== 'giveItem' && o.type !== 'plantItem') return null
+  if (o.items?.length !== 1) return null
+  if (CURRENCY_IDS.has(o.items[0].id)) return null
+  return o.items[0]
+}
+
 function QuestDetail({
   quest,
   byId,
@@ -59,6 +77,7 @@ function QuestDetail({
   const [zoomed, setZoomed] = useState<QuestItemRef | null>(null)
   const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
   const { ids: doneIds, toggle: toggleDone, set: setDone } = useIdSet(DONE_QUESTS_KEY)
+  const { counts, add } = usePrepCounts()
   const guideState = useAsyncData(() => fetchGuideStatus(quest.id), [quest.id])
   const guide =
     guideState.status === 'ready' && typeof guideState.data === 'object'
@@ -230,24 +249,61 @@ function QuestDetail({
       {itemObjectives.length > 0 && (
         <section className="briefing-section">
           <h2>📦 필요 아이템</h2>
+          <p className="hint" style={{ margin: '0 0 8px' }}>
+            ±로 모은 개수를 기록 — “내 진행”의 통합 체크리스트와 같은 저장소라 바로
+            반영됩니다 · <span className="badge-fir">FIR</span> = 레이드 획득만 인정
+          </p>
           <ul className="quest-objectives">
-            {itemObjectives.map((o) => (
-              <li key={o.id}>
-                <span className="chip-row">
-                  {(o.items ?? []).slice(0, MAX_OBJECTIVE_ITEMS).map((i) => (
-                    <ItemChip key={i.id} item={i} onZoom={setZoomed} />
-                  ))}
-                </span>
-                {(o.items?.length ?? 0) > MAX_OBJECTIVE_ITEMS && (
-                  <span className="dim">
-                    {' '}외 {(o.items?.length ?? 0) - MAX_OBJECTIVE_ITEMS}종 중
+            {itemObjectives.map((o) => {
+              const it = submitItem(o)
+              const reqCount = o.count ?? 1
+              const got = it ? counts[it.id] ?? 0 : 0
+              return (
+                <li key={o.id}>
+                  <span className="chip-row">
+                    {(o.items ?? []).slice(0, MAX_OBJECTIVE_ITEMS).map((i) => (
+                      <ItemChip key={i.id} item={i} onZoom={setZoomed} />
+                    ))}
                   </span>
-                )}
-                {o.count != null && <span className="num"> × {o.count}</span>}
-                {o.foundInRaid === true && <span className="badge-fir">FIR 필수</span>}
-                {o.foundInRaid === false && <span className="dim"> (FIR 불필요)</span>}
-              </li>
-            ))}
+                  {(o.items?.length ?? 0) > MAX_OBJECTIVE_ITEMS && (
+                    <span className="dim">
+                      {' '}외 {(o.items?.length ?? 0) - MAX_OBJECTIVE_ITEMS}종 중
+                    </span>
+                  )}
+                  {it ? (
+                    <span
+                      className="quest-item-track"
+                      title="보유 개수(통합 체크리스트와 공유) · 이 퀘스트 요구량"
+                    >
+                      <button
+                        className="prep-step"
+                        onClick={() => add(it.id, -1)}
+                        disabled={got === 0}
+                        aria-label="보유 빼기"
+                      >
+                        −
+                      </button>
+                      <span className="num">보유 {got}</span>
+                      <button
+                        className="prep-step"
+                        onClick={() => add(it.id, 1)}
+                        aria-label="보유 더하기"
+                      >
+                        +
+                      </button>
+                      <span className={`num quest-item-need${got >= reqCount ? ' met' : ''}`}>
+                        · 요구 ×{reqCount}
+                        {got >= reqCount ? ' ✓' : ''}
+                      </span>
+                    </span>
+                  ) : (
+                    o.count != null && <span className="num"> × {o.count}</span>
+                  )}
+                  {o.foundInRaid === true && <span className="badge-fir">FIR 필수</span>}
+                  {o.foundInRaid === false && <span className="dim"> (FIR 불필요)</span>}
+                </li>
+              )
+            })}
           </ul>
         </section>
       )}
