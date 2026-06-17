@@ -1,18 +1,17 @@
 import { useEffect, useMemo, useState } from 'react'
 import { fetchGuideStatus } from '../api/guides'
-import { CURRENCY_IDS } from '../api/hideout'
 import {
   biName,
   fetchQuests,
   type Quest,
   type QuestItemRef,
-  type QuestObjective,
 } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
+import { submitObjectiveItem } from '../lib/questNeeds'
 import { consumePendingQuest } from '../lib/searchSeed'
 import { DoneButton } from './DoneButton'
 import { TableSkeleton } from './Skeleton'
@@ -51,16 +50,6 @@ function ItemChip({
       <span>{biName(item.nameKo, item.nameEn)}</span>
     </button>
   )
-}
-
-// 통합 체크리스트(PrepChecklist.buildRows)가 추적하는 "단일 제출 아이템"
-// (giveItem/plantItem · 비화폐)만 카운터 대상 — 같은 prep-counts에 기록돼 동기화된다.
-// "여러 아이템 중 하나" 선택형은 특정 아이템을 지목할 수 없어 카운터 없음.
-function submitItem(o: QuestObjective): QuestItemRef | null {
-  if (o.type !== 'giveItem' && o.type !== 'plantItem') return null
-  if (o.items?.length !== 1) return null
-  if (CURRENCY_IDS.has(o.items[0].id)) return null
-  return o.items[0]
 }
 
 function QuestDetail({
@@ -255,7 +244,7 @@ function QuestDetail({
           </p>
           <ul className="quest-objectives">
             {itemObjectives.map((o) => {
-              const it = submitItem(o)
+              const it = submitObjectiveItem(o)
               const reqCount = o.count ?? 1
               const got = it ? counts[it.id] ?? 0 : 0
               return (

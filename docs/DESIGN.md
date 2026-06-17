@@ -412,6 +412,14 @@ Phase 39에서 `done-quests`가 일급이 됐으니 `requires`/`unlocks`(이미 
 - [x] **"▶ 받을 수 있는 것만" 필터**: `!done && prereqsMet` → 지금 시작 가능한 퀘스트만. 레벨 필터와 조합하면 "지금 실제로 할 수 있는 것". 완료를 체크할수록 후행이 풀림
 - [x] **검증**: 신규 계정 기준 — 행 배지(🔒 다수·▶ 0), 받을수있는것만 19개(잠김 0), **퀘스트 60개 완료 → 받을 수 있는 퀘스트 19→24개(+5) 언락** 실측(데스크톱/375px, `shoot-roadmap.mjs`). 빌드 통과, `profile-ui` 회귀 없음(최대 롱태스크 513ms<1초)
 
+### Phase 43 — 내부 정리: 퀘스트 수요 로직 통폐합 (완료)
+
+기능 사이클 마무리 후 빚 갚기. "퀘스트 단일 제출 아이템"(giveItem/plantItem·1개·비화폐) 추출이 **5곳에 거의 동일 복제**돼 있었음(PrepTab·QuestNeedsView·TrackerTab·FirOps·QuestsTab). 동작 변화 없이 한 곳으로.
+
+- [x] **공유 `src/lib/questNeeds.ts`**: `submitObjectiveItem(o)`(목표→제출 아이템|null) + `questSubmitNeeds(quest)`(`{item,count,fir}[]`). 5개 소비자가 이걸 사용 — PrepTab.buildRows·QuestNeedsView·TrackerTab.questNeeds·FirOps.questFirNeeds(중 `.filter(n=>n.fir)`)·QuestsTab 상세 카운터. 중복 필터 5벌 → 1벌, 각 파일의 `CURRENCY_IDS` import도 정리
+- [x] **동작 보존 검증(핵심)**: 리팩터라 결과가 **이전과 100% 동일**해야 함 — `shoot-done-quests` 통합 체크리스트 5681→5584개·229→211종(Phase 39와 동일), `shoot-roadmap` 19→24(Phase 42와 동일), FirOps 클리어함→수요차감·트래커·딥링크 정상. 빌드 통과, `profile-ui` 회귀 없음(최대 롱태스크 626ms<1초)
+- 남음(후속 가능): 은신처 집계(FirOps·TrackerTab·HideoutView가 stations 직접 순회) 통폐합은 출력 형태가 제각각이라 더 큰 작업 → 분리. 이번은 퀘스트 수요만(가장 명확한 5중 복제)
+
 ## 6. 환경 역할 분담
 
 | 작업 | 환경 |

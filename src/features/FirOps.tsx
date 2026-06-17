@@ -1,9 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import {
-  CURRENCY_IDS,
-  fetchHideoutStations,
-  type HideoutStation,
-} from '../api/hideout'
+import { fetchHideoutStations, type HideoutStation } from '../api/hideout'
 import { fetchItemTypes } from '../api/itemTypes'
 import { biName, fetchQuests, type Quest } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
@@ -14,6 +10,7 @@ import {
 } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
 import { usePrepCounts } from '../lib/prepCounts'
+import { questSubmitNeeds } from '../lib/questNeeds'
 import {
   bucketOf,
   DISPLAY_GROUPS,
@@ -42,17 +39,9 @@ interface ItemRef {
   iconLink: string | null
 }
 
-// 퀘스트의 FIR 제출/설치 단일 아이템 목표만 (화폐 제외) — 준비물 집계와 같은 규칙
+// 퀘스트의 FIR 제출/설치 단일 아이템 목표만 — 공유 questSubmitNeeds 중 FIR만 (Phase 43)
 function questFirNeeds(quest: Quest): { item: ItemRef; count: number }[] {
-  return quest.objectives
-    .filter(
-      (o) =>
-        (o.type === 'giveItem' || o.type === 'plantItem') &&
-        o.foundInRaid === true &&
-        o.items?.length === 1 &&
-        !CURRENCY_IDS.has(o.items[0].id),
-    )
-    .map((o) => ({ item: o.items![0], count: o.count ?? 1 }))
+  return questSubmitNeeds(quest).filter((n) => n.fir)
 }
 
 interface DemandItem {

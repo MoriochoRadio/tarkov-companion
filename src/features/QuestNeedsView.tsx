@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
-import { CURRENCY_IDS } from '../api/hideout'
 import { biName, fetchQuests, type Quest, type QuestItemRef } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { usePlayerLevel } from '../lib/playerLevel'
+import { questSubmitNeeds } from '../lib/questNeeds'
 import { useQuestItemMarks } from '../lib/questItemMarks'
 import { TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
@@ -68,18 +68,7 @@ export function QuestNeedsView() {
       if (level && quest.minPlayerLevel > lvl) continue
       if (activeOnly && !activeIds.has(quest.id)) continue
       if (doneIds.has(quest.id)) continue // 완료한 퀘스트는 "남은 것"에서 제외
-      let items: NeedItem[] = quest.objectives
-        .filter(
-          (o) =>
-            (o.type === 'giveItem' || o.type === 'plantItem') &&
-            o.items?.length === 1 &&
-            !CURRENCY_IDS.has(o.items[0].id),
-        )
-        .map((o) => ({
-          item: o.items![0],
-          count: o.count ?? 1,
-          fir: o.foundInRaid === true,
-        }))
+      let items: NeedItem[] = questSubmitNeeds(quest)
       if (firOnly) items = items.filter((n) => n.fir)
       if (items.length === 0) continue
       let group = byTrader.get(quest.trader.id)

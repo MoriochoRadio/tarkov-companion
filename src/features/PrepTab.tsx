@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { CURRENCY_IDS, fetchHideoutRequirements } from '../api/hideout'
+import { fetchHideoutRequirements } from '../api/hideout'
 import { craftBarterOutputIds, fetchProfitData } from '../api/profit'
 import { biName, fetchQuests } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
@@ -11,6 +11,7 @@ import {
 } from '../lib/favorites'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
+import { questSubmitNeeds } from '../lib/questNeeds'
 import { TableSkeleton } from './Skeleton'
 
 const PAGE_SIZE = 60
@@ -76,19 +77,14 @@ function buildRows(
     return r
   }
 
-  // 퀘스트: 제출(giveItem)·설치(plantItem)로 소모되는 단일 아이템 목표만.
-  // "여러 아이템 중 아무거나" 선택형 목표는 특정 아이템을 지목할 수 없어 제외.
-  // findItem은 같은 퀘스트의 giveItem과 짝이라 세면 이중 계산이 됨 → 제외
+  // 퀘스트 단일 제출 아이템 — 공유 questSubmitNeeds (Phase 43)
   for (const q of quests) {
-    for (const o of q.objectives) {
-      if (o.type !== 'giveItem' && o.type !== 'plantItem') continue
-      if (o.items?.length !== 1) continue
-      if (CURRENCY_IDS.has(o.items[0].id)) continue // 돈 제출형 퀘스트 제외
-      row(o.items[0]).needs.push({
+    for (const n of questSubmitNeeds(q)) {
+      row(n.item).needs.push({
         kind: 'quest',
         label: q.displayName,
-        count: o.count ?? 1,
-        fir: o.foundInRaid === true,
+        count: n.count,
+        fir: n.fir,
         minLevel: q.minPlayerLevel,
         questId: q.id,
         stationKey: null,

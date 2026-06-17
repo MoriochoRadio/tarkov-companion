@@ -1,9 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
-import {
-  CURRENCY_IDS,
-  fetchHideoutStations,
-  type HideoutStation,
-} from '../api/hideout'
+import { fetchHideoutStations, type HideoutStation } from '../api/hideout'
 import { biName, fetchQuests, type Quest } from '../api/quests'
 import { fetchStoryline } from '../api/storyline'
 import { useAsyncData } from '../hooks/useAsyncData'
@@ -17,6 +13,7 @@ import {
 import { formatNumber } from '../lib/format'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
+import { questSubmitNeeds } from '../lib/questNeeds'
 import { builtKey, cascadeBuilt } from './HideoutView'
 import { TableSkeleton } from './Skeleton'
 
@@ -171,19 +168,8 @@ interface TrackQuest {
 }
 
 function questNeeds(quest: Quest): TrackNeed[] {
-  // 준비물 탭과 같은 집계 규칙: 제출/설치 단일 아이템 목표만, 화폐 제외
-  return quest.objectives
-    .filter(
-      (o) =>
-        (o.type === 'giveItem' || o.type === 'plantItem') &&
-        o.items?.length === 1 &&
-        !CURRENCY_IDS.has(o.items[0].id),
-    )
-    .map((o) => ({
-      item: o.items![0],
-      count: o.count ?? 1,
-      fir: o.foundInRaid === true,
-    }))
+  // 제출/설치 단일 아이템 목표만(화폐 제외) — 공유 questSubmitNeeds 사용 (Phase 43)
+  return questSubmitNeeds(quest)
 }
 
 // 좌측 목록의 아이템 칩 — 클릭하면 +1, 보유가 있으면 붙어있는 −1로 그 자리에서
