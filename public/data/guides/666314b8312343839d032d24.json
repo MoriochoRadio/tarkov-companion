@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "taskId": "666314b8312343839d032d24",
+  "nameKo": "Airmail",
+  "nameEn": "Airmail",
+  "steps": [
+    "삼림(Woods) 동쪽에 위치한 오래된 제재소(Old Sawmill) 중앙에 위치한다.",
+    "프라퍼(Mechanic)로부터 게임 내 우편으로 받은 휴대용 RSP-30 적색 신호탄을 사용하거나, 레벨 3 이상의 래프터(Ref) 상점에서 구매 가능한 26x75mm 적색 신호탄 탄약을 신호권총(ZiD SP-81 26x75 Signal Pistol)에 장전한다.",
+    "휴대용 RSP-30 신호탄을 사용할 경우, 너무 많이 뒤로 젖히지 말고 적당히 위쪽을 향해 조준하여 발사한다. 신호탄이 뒤로 떨어지면 퀘스트가 완료되지 않는다.",
+    "26x75mm 신호탄 탄약을 사용할 경우, 신호권총에 장전 후 위쪽을 향해 쏘아 신호탄이 충분히 높은 고도에 도달하도록 한다.",
+    "신호탄이 일정 고도 이상으로 올라가야 퀘스트 목표가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c2/AirmailFlareMap.png/revision/latest/scale-to-width-down/640?cb=20240708222625",
+      "caption": "지도에 표시된 신호탄 발사 구역"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Airmail",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

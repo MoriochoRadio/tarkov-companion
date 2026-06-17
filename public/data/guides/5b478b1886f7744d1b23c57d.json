@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "taskId": "5b478b1886f7744d1b23c57d",
+  "nameKo": "퀵서비스",
+  "nameEn": "Hot Delivery",
+  "steps": [
+    "퀘스트 관련 아이템은 Peltor ComTac II 헤드셋(OD Green) 2개, 6B47 Ratnik-BSh 헬멧(Olive Drab) 2개, BNTI Gzhel-K 바디 아머 2개가 필요하다. 6B47 헬멧 중 EMR 커버 및 EMR 아틱 변형은 사용할 수 없다.",
+    "Peltor ComTac II 헤드셋과 6B47 Ratnik-BSh 헬멧은 모두 'Avokado' 상점 내부의 쓰레기 더미에 배치해야 한다. 정확한 위치는 상점 내 쓰레기 더미이며, 이미지 가이드의 위치를 참고한다.",
+    "'Avokado' 상점 내 쓰레기 더미 위치는 상점 내부이며, 헤드셋과 헬멧을 놓을 장소가 명확히 표시되어 있다. 반드시 해당 위치에 아이템을 놓아야 퀘스트가 진행된다.",
+    "BNTI Gzhel-K 바디 아머 2개는 쇼핑몰 외부, 'ULTRA' 상점 앞 무대 옆 쓰레기 더미에 배치해야 한다. 무대는 'ULTRA' 상점 정면에 위치한다.",
+    "바디 아머는 무대 옆 쓰레기 더미에 놓아야 하며, 무게를 줄이기 위해 아머 플레이트는 분리해도 무방하다. 정확한 위치는 이미지 가이드를 참고한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/93/HotdeliveryAvokadoMap.png/revision/latest/scale-to-width-down/640?cb=20240629201356",
+      "caption": "헤드셋과 헬멧 배치 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/Hot_delivery_comtac_6b47.png/revision/latest/scale-to-width-down/640?cb=20240629202831",
+      "caption": "여기에 헤드셋과 헬멧을 배치하세요"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f2/HotdeliveryStageMap.png/revision/latest/scale-to-width-down/640?cb=20240629201754",
+      "caption": "바디 아머 배치 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/72/Hot_delivery_Gzhel.png/revision/latest/scale-to-width-down/640?cb=20240629202551",
+      "caption": "여기에 바디 아머를 배치하세요"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hot_Delivery",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

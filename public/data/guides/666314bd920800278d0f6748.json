@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "taskId": "666314bd920800278d0f6748",
+  "nameKo": "시청자",
+  "nameEn": "Viewer",
+  "steps": [
+    "기계공(Mechanic) 레벨 1에서 WI-FI 카메라 3개를 구매한다.",
+    "삼림(Woods) 맵으로 이동하여 산에 있는 나무가 있는 바위 절벽에 WI-FI 카메라 1개를 설치한다. (지도에 위치가 표시되어 있으며, 주변 환경을 참고하여 정확한 장소를 찾아 설치한다.)",
+    "해안선(Shoreline) 맵으로 이동하여 부두 근처 등대 꼭대기에 WI-FI 카메라 1개를 설치한다. (등대 위치는 지도에 표시되어 있으며, 등대 내부를 찾아 설치한다.)",
+    "공장(Factory) 맵으로 이동하여 \"Gate 3\" 추출구 쪽 사무실 구역 계단 위, 부서진 의자 옆 벽에 WI-FI 카메라 1개를 설치한다. (현재는 야간에 완료할 수 없으니 주간에 진행해야 한다.)"
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d2/Viewer_Woodsmap.png/revision/latest/scale-to-width-down/640?cb=20240709004302",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2c/ViewerWoodsLocationOverview.png/revision/latest/scale-to-width-down/640?cb=20240709004727",
+      "caption": "설치 위치 주변 환경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/29/ViewerWoodsLocation.png/revision/latest/scale-to-width-down/640?cb=20240709003339",
+      "caption": "설치 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/57/The_TerraGroup_Trail_-_Part_19_Lighthouse_Map.jpg/revision/latest/scale-to-width-down/640?cb=20230802205828",
+      "caption": "지도에 표시된 등대 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/be/Lighthouse.png/revision/latest/scale-to-width-down/640?cb=20230321203427",
+      "caption": "등대"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/ViewerFactoryLocation.png/revision/latest/scale-to-width-down/640?cb=20240829224610",
+      "caption": "설치 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Viewer",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

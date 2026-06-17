@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "5d25e4b786f77408251c4bfc",
+  "nameKo": "낚시터",
+  "nameEn": "Fishing Place",
+  "steps": [
+    "테라그룹 연구소(TerraGroup Labs) 출입용 키카드 2개를 획득해야 합니다.",
+    "키카드를 얻는 가장 빠른 방법은 레이드 중에 스캐브 보스(Scav boss)를 처치하고 전리품을 획득하는 것입니다.",
+    "획득한 키카드 2개를 퀘스트에 제출하면 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Fishing_Place",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

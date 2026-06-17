@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "6574e0dedc0d635f633a5805",
+  "nameKo": "시범운용 - 파트 4",
+  "nameEn": "Test Drive - Part 4",
+  "steps": [
+    "RPD DS Arms Railed Handguard에 EKP-1S-03 조준경 대신 경사 레일에 장착된 콤팩트 리플렉스 사이트를 사용할 수 있습니다.",
+    "콤팩트 리플렉스 사이트를 RPD에 설치하면 퀘스트 목표 달성에 반영됩니다.",
+    "이 상태에서 적을 처치하면 퀘스트 진행이 인정됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Test_Drive_-_Part_4",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

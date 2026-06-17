@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "666314b696a9349baa021bac",
+  "nameKo": "Quality Standard",
+  "nameEn": "Quality Standard",
+  "steps": [
+    "연구소(The Lab) 맵에 진입한다.",
+    "연구소 1층의 주요 작업 구역(Main working area, O11)으로 이동한다.",
+    "주황색 돔(Orange dome) 내부를 찾는다.",
+    "돔 안에 있는 파란색 배럴 위를 확인한다.",
+    "파란색 배럴 위에 놓여 있는 LEDX Skin Transilluminator (US Version)를 획득한다. 이 아이템은 퀘스트가 활성화된 상태에서만 등장하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "획득한 LEDX Skin Transilluminator를 가지고 반드시 안전하게 추출해야 한다. 추출에 실패하면 아이템을 잃게 된다."
+  ],
+  "tips": "LEDX Skin Transilluminator는 퀘스트 활성화 시에만 등장하므로, 퀘스트를 수락한 후에만 연구소에서 찾을 수 있다. 연구소는 위험 지역이므로, 충분한 준비와 팀원과의 협력이 필요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Quality_Standard_Yellow_Dome_Map.png/revision/latest/scale-to-width-down/640?cb=20240708010501",
+      "caption": "지도에 표시된 돔 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5a/Quality_Standard_Yellow_Dome.png/revision/latest/scale-to-width-down/640?cb=20250209193105",
+      "caption": "돔 내부 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Quality_Standard_Yellow_Dome_Spawn.png/revision/latest/scale-to-width-down/640?cb=20250209193207",
+      "caption": "파란 배럴 위에 놓인 미국산 LEDX"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Quality_Standard",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

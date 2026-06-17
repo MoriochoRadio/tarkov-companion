@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "taskId": "5ae3280386f7742a41359364",
+  "nameKo": "건스미스 - 파트 15",
+  "nameEn": "Gunsmith - Part 15",
+  "steps": [
+    "AS VAL(AS VAL) 무기의 내구도를 60 이상으로 유지한다.",
+    "AS VAL의 인체공학 수치를 27 이상으로 맞춘다.",
+    "반동 수치를 220 이하로 조절한다.",
+    "탄창은 최소 30발 이상 수용 가능한 것을 장착한다.",
+    "AR-15 FAB Defense GL-SHOCK 개머리판을 장착한다.",
+    "L3Harris AN/PEQ-15 전술 장비(탄색)를 장착한다.",
+    "NSPU-M 3.5배 도브테일 야간 투시경을 장착한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_15",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

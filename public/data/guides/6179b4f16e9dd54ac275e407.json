@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "taskId": "6179b4f16e9dd54ac275e407",
+  "nameKo": "사라진 화물",
+  "nameEn": "Missing Cargo",
+  "steps": [
+    "등대(Lighthouse) 남동쪽 언덕에 추락한 헬리콥터 위치 확인. 지도에서 헬리콥터 위치를 찾아 접근한다.",
+    "등대 남동쪽 언덕에 위치한 샬레(Chalet)로 이동한다. 샬레는 헬리콥터에서 동쪽 방향에 있다.",
+    "샬레 1층에 진입한다. 입구로 들어가 오른쪽에 있는 책상으로 이동한다.",
+    "책상 위 검은색 파일 폴더 안에서 '도난당한 군사 문서(Stolen military documents)'를 찾는다. 이 문서는 퀘스트 활성화 상태에서만 발견 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "문서를 획득한 후 반드시 안전하게 추출해야 한다. 문서를 인벤토리에 넣지 않고 추출에 실패하면 문서를 잃게 된다.",
+    "퀘스트 아이템인 군사 문서를 가지고 안전하게 레이드에서 탈출한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f2/MissingCargoHeliMap.png/revision/latest/scale-to-width-down/640?cb=20211219194259",
+      "caption": "지도에 표시된 헬리콥터 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/19/MissingCargoHeli.png/revision/latest/scale-to-width-down/640?cb=20211219201909",
+      "caption": "목표 헬리콥터"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/MissingCargoChaletMap.png/revision/latest/scale-to-width-down/640?cb=20211219195011",
+      "caption": "지도에 표시된 샬레 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/MissingCargoChalet.png/revision/latest/scale-to-width-down/640?cb=20211219195937",
+      "caption": "샬레 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ce/MissingCargoDocuments.png/revision/latest/scale-to-width-down/640?cb=20211219201625",
+      "caption": "입구로 들어가 오른쪽 책상 위 검은 파일 폴더에 문서 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dd/MissingCargoMilitaryDocuments.jpg/revision/latest/scale-to-width-down/640?cb=20220811133505",
+      "caption": "파일 폴더 안에 있는 문서"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Missing_Cargo",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

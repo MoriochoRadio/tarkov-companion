@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "666314b0acf8442f8b0531a1",
+  "nameKo": "생지옥 - 파트 1",
+  "nameEn": "Hell on Earth - Part 1",
+  "steps": [
+    "Jaeger(예거) LL1 레벨에서 MP-43-1C 12게이지 더블배럴 샷건을 구매한다.",
+    "같은 곳에서 MP-43-1C 12게이지 510mm 짧은 총열을 구매한다.",
+    "구매한 510mm 총열을 MP-43-1C 샷건에 장착하여 개조한다.",
+    "개조한 MP-43-1C 12게이지 더블배럴 샷건을 프라퍼(Prapor)에게 제출한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5a/Mp43_510.png/revision/latest?cb=20230725234802",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hell_on_Earth_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

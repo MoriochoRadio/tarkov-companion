@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "taskId": "5d25e4ad86f77443e625e387",
+  "nameKo": "향수",
+  "nameEn": "Nostalgia",
+  "steps": [
+    "해안선(Shoreline) 맵의 건강 리조트(Health resort) 서쪽 동(West wing)으로 이동한다.",
+    "서쪽 동 3층 303호실로 간다. 이 방은 항상 잠겨 있지 않으므로 자유롭게 출입할 수 있다.",
+    "303호실 안에 있는 협탁(nightstand)의 아래 서랍을 찾는다.",
+    "서랍에서 예거(Jaeger)의 사진 앨범(Photo album)을 획득한다. 이 아이템은 퀘스트 활성 상태일 때만 맵에서 등장하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "사진 앨범을 가지고 레이드에서 반드시 탈출해야 한다. 탈출하지 못하면 아이템을 잃게 된다."
+  ],
+  "tips": "사진 앨범은 퀘스트가 활성화된 상태에서만 맵에 등장하므로, 퀘스트를 수락한 후에만 찾을 수 있다. 탈출 실패 시 아이템을 잃으니 주의해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4c/Photo_Album_ins.png/revision/latest?cb=20221012072359",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/Vitamins1_Shoreline_outdoor_map.png/revision/latest/scale-to-width-down/640?cb=20241020215322",
+      "caption": "건강 리조트 서쪽 동 위치가 지도에 표시됨"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/45/West_Wing_303_Door.png/revision/latest/scale-to-width-down/640?cb=20230926181015",
+      "caption": "서쪽 동 303호실 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/Jaeger_Photo_Album.png/revision/latest/scale-to-width-down/640?cb=20230926180834",
+      "caption": "아래 서랍 안에 있는 사진 앨범"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Nostalgia",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

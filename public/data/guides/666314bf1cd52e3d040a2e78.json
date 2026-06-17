@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "taskId": "666314bf1cd52e3d040a2e78",
+  "nameKo": "Serious Allegations",
+  "nameEn": "Serious Allegations",
+  "steps": [
+    "해안선(Shoreline) 맵에서 하드 드라이브(Hard drive)를 찾아야 합니다. 이 아이템은 퀘스트가 활성화된 상태에서만 등장하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동합니다. 추출하지 못하고 사망하면 아이템을 잃게 됩니다.",
+    "하드 드라이브는 총 13곳에 스폰되며, 크게 북서쪽 늪지 마을 내 5개 주택에서 9곳, 코티지 서쪽 주택 3곳, 그리고 남동쪽 바위 위 1곳에 위치합니다.",
+    "늪지 마을 주택 1번: 입구는 문 안쪽 벽 근처와 부서진 탁자 아래 두 곳에 하드 드라이브가 있습니다.",
+    "늪지 마을 주택 2번: 매트리스 왼쪽과 책장 아래 칸막이에서 하드 드라이브를 찾을 수 있습니다.",
+    "늪지 마을 주택 3번: 큰 팔레트 더미와 작은 팔레트 더미 사이 두 곳에 아이템이 있습니다.",
+    "늪지 마을 주택 4번: 팔레트 더미 안에 하드 드라이브가 하나 있습니다.",
+    "늪지 마을 주택 5번: 책장 왼쪽 바닥과 책장 아래 칸막이 두 곳에서 아이템을 획득할 수 있습니다.",
+    "코티지 서쪽 주택(주택 6번): 책장 아래 칸막이, 벽 기둥 옆 바닥, 창문 옆 팔레트 뒤 세 곳에 하드 드라이브가 있습니다.",
+    "남동쪽 바위: 파란 울타리 건설 구역 맞은편 도로 건너 바위 위에 하드 드라이브가 하나 있습니다.",
+    "퀘스트 아이템이기 때문에 반드시 퀘스트 활성화 상태에서만 획득 가능하며, 획득 후에는 안전하게 추출해야 아이템을 잃지 않습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bd/SeriousAllegations_map.png/revision/latest/scale-to-width-down/640?cb=20240706123319",
+      "caption": "지도에 표시된 주택 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/SeriousAl_house1.png/revision/latest/scale-to-width-down/640?cb=20240708022144",
+      "caption": "주택 1번 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/28/SA_house1-2.png/revision/latest/scale-to-width-down/640?cb=20240708023538",
+      "caption": "1: 문 안쪽 벽 근처 2: 부서진 탁자 아래"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/SeriousAl_house2.png/revision/latest/scale-to-width-down/640?cb=20240708022152",
+      "caption": "주택 2번 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/75/SA_house2.png/revision/latest/scale-to-width-down/640?cb=20240708023540",
+      "caption": "1: 매트리스 왼쪽 2: 책장 아래 칸막이"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/SeriousAl_house3.png/revision/latest/scale-to-width-down/640?cb=20240708022201",
+      "caption": "주택 3번 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/SA_house3.png/revision/latest/scale-to-width-down/640?cb=20240708023542",
+      "caption": "1: 큰 팔레트 더미 안 2: 작은 팔레트 더미 안"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/SeriousAl_house4.png/revision/latest/scale-to-width-down/640?cb=20240708022210",
+      "caption": "주택 4번 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/SA_house4.png/revision/latest/scale-to-width-down/640?cb=20240708023544",
+      "caption": "팔레트 더미 안"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d8/SeriousAl_house5.png/revision/latest/scale-to-width-down/640?cb=20240708022220",
+      "caption": "주택 5번 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/77/SA_house5.png/revision/latest/scale-to-width-down/640?cb=20240708023546",
+      "caption": "1: 책장 왼쪽 바닥 2: 책장 아래 칸막이"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c3/SeriousAl_house6.png/revision/latest/scale-to-width-down/640?cb=20240708022333",
+      "caption": "주택 6번 입구"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Serious_Allegations",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

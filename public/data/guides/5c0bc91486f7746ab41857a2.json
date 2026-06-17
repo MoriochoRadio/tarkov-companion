@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "5c0bc91486f7746ab41857a2",
+  "nameKo": "소음기 사용법",
+  "nameEn": "Silent Caliber",
+  "steps": [
+    "12/70 탄약을 사용하는 샷건을 준비한다. (예: 베레타 1301, 모스버그 590 등)",
+    "Saiga-12K 12게이지 자동 샷건(Redline 모델)은 이 퀘스트에 사용할 수 없으니 주의한다."
+  ],
+  "tips": "12/70 탄약을 사용하는 샷건이면 종류에 상관없이 퀘스트 진행 가능하다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Silent_Caliber",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

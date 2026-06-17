@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "5c1128e386f7746565181106",
+  "nameKo": "비료",
+  "nameEn": "Fertilizers",
+  "steps": [
+    "비료(Fertilizers) 퀘스트를 완료하려면 전선 번들(Bundle of wires) 5개와 커패시터(Capacitors) 5개를 준비해야 합니다.",
+    "전선 번들과 커패시터는 주로 인터체인지(Interchange) 맵의 PC 블록(PC blocks) 내 기술 상점들에서 찾을 수 있습니다. 대표적인 상점으로는 TechLight, Texho, Rasmussen이 있습니다.",
+    "이 아이템들은 레이드 획득(FIR)이 가능하며, 레이드 중 해당 상점들을 집중적으로 탐색하는 것이 좋습니다.",
+    "또한, 은신처(Hideout) 내 작업대(Workbench) 레벨 1에서 전선 번들과 커패시터를 직접 제작할 수 있으니, 제작이 가능한 경우 이를 활용하는 것도 좋은 방법입니다.",
+    "필요한 아이템 5개씩을 모두 확보한 후, 퀘스트를 진행하는 NPC에게 제출하면 완료할 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Fertilizers",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

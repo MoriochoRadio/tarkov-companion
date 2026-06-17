@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "6179b5b06e9dd54ac275e409",
+  "nameKo": "우리의 고향",
+  "nameEn": "Our Own Land",
+  "steps": [
+    "USEC 도그태그(USMC Dogtag) 20개를 수집한다. 도그태그는 레이드 중에 적 USEC PMC를 처치하거나, 레이드 내에서 획득할 수 있다.",
+    "수집한 USEC 도그태그 20개를 퀘스트 담당자에게 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Our_Own_Land",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

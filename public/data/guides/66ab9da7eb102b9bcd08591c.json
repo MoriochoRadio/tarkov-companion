@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "taskId": "66ab9da7eb102b9bcd08591c",
+  "nameKo": "Forester's Duty",
+  "nameEn": "Forester's Duty",
+  "steps": [
+    "레이드 시작 후 1분이 지나야 이동 통로가 활성화됩니다.",
+    "등대(Lighthouse) 맵에서 해안선(Shoreline) 맵으로 이동하는 경로인 'Path to Shoreline' 추출 지점으로 이동합니다.",
+    "이동 통로를 통해 해안선 맵으로 안전하게 탈출합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7c/LighthouseTransitToShoreline.png/revision/latest/scale-to-width-down/640?cb=20240919192543",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/48/LighthouseTransitToShoreline2.png/revision/latest/scale-to-width-down/640?cb=20240919193101",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Forester's_Duty",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "666314b2a9290f9e0806cca3",
+  "nameKo": "생지옥 - 파트 2",
+  "nameEn": "Hell on Earth - Part 2",
+  "steps": [
+    "MP-43-1C 12게이지 더블배럴 샷건 또는 MP-43 12게이지 소드오프 더블배럴 샷건을 준비한다. 두 총기 모두 어떤 구성이어도 무방하다.",
+    "맵 내에서 컬티스트(Cultists)를 찾아야 한다. 컬티스트는 특정 지역에 출현하는 적 NPC로, 주로 레이드 내 특정 구역에서 발견된다.",
+    "컬티스트 3명을 MP-43-1C 또는 MP-43 소드오프 샷건으로 처치한다. 처치 시 반드시 해당 총기를 사용해야 하며, 다른 무기로 처치하면 퀘스트가 진행되지 않는다.",
+    "컬티스트 처치 후 퀘스트 완료 조건을 충족했는지 확인한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hell_on_Earth_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

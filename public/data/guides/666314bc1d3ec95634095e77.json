@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "taskId": "666314bc1d3ec95634095e77",
+  "nameKo": "Minute of Fame",
+  "nameEn": "Minute of Fame",
+  "steps": [
+    "인터체인지(Interchange) 맵의 ULTRA 쇼핑몰 2층에 위치한 \"МУЗЕЙ ИСТОРИИ (Museum of History)\"라는 서점으로 이동한다.",
+    "서점 내부에는 여러 군데에 게임 잡지(Gaming magazine)가 스폰되며, 퀘스트 활성화 상태에서만 획득 가능하다. 잡지를 획득하면 퀘스트 아이템 인벤토리로 자동 이동한다. 추출 실패 시 아이템을 잃게 되니 주의한다.",
+    "첫 번째 스폰 위치는 당구대 위이다.",
+    "두 번째 스폰 위치는 남자 화장실 휴지통 안이다.",
+    "세 번째 스폰 위치는 밴드룸(Band room) 내 바닥, 뒤에서 두 번째 좌석 줄 근처이다.",
+    "네 번째 스폰 위치는 밴드룸 옆 책장 아래 바닥이다.",
+    "다섯 번째 스폰 위치는 기차 옆 원형 테이블 위이다.",
+    "여섯 번째와 일곱 번째 스폰 위치는 아케이드 게임기 근처 중앙 책장의 양쪽 면이다.",
+    "여덟 번째와 아홉 번째 스폰 위치는 화장실 근처 중앙 책장의 양쪽 면이다.",
+    "게임 잡지는 서점 내 여러 위치 중 한 곳에서만 획득하면 되며, 획득 후 반드시 안전하게 추출해야 한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/MinuteOfFame_MapGuide.png/revision/latest/scale-to-width-down/640?cb=20240707225351",
+      "caption": "지도에 표시된 서점 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b3/MinuteOfFameStore.png/revision/latest/scale-to-width-down/640?cb=20240709031748",
+      "caption": "서점 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/MinuteOfFame_Location3.png/revision/latest/scale-to-width-down/640?cb=20240707222407",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c1/MinuteOfFame_Location4.png/revision/latest/scale-to-width-down/640?cb=20240707222414",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fb/MinuteOfFame_Location2.png/revision/latest/scale-to-width-down/640?cb=20240707222401",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/32/MinuteOfFame_Location5.png/revision/latest/scale-to-width-down/640?cb=20240707222427",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/09/MinuteOfFame_Location7.png/revision/latest/scale-to-width-down/640?cb=20240707222455",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7a/MinuteOfFame_Location9.png/revision/latest/scale-to-width-down/640?cb=20240707223438",
+      "caption": "아케이드 게임기 쪽 책장 면"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4d/MinuteOfFame_Location8.png/revision/latest/scale-to-width-down/640?cb=20240707222446",
+      "caption": "반대쪽 면"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/MinuteOfFame_Location1.png/revision/latest/scale-to-width-down/640?cb=20240707222346",
+      "caption": "화장실 쪽 책장 면"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/MinuteOfFame_Location6.png/revision/latest/scale-to-width-down/640?cb=20240707222435",
+      "caption": "반대쪽 면"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Minute_of_Fame",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "taskId": "639872fe8871e1272b10ccf6",
+  "nameKo": "건스미스 - 파트 14",
+  "nameEn": "Gunsmith - Part 14",
+  "steps": [
+    "HK 416A5 소총을 준비한다. 이 무기는 다음과 같은 사양을 충족해야 한다: 내구도 80 이상, 인체공학 50 이상, 반동 310 이하, 무게 4kg 이하, 조준 거리 300 이상, 탄창 용량 30 이상.",
+    "소음기(Suppressor)로 SureFire SOCOM556-RC2 5.56x45를 장착한다.",
+    "포어그립(Foregrip)으로 Magpul RVG (FDE 색상)를 장착한다.",
+    "조준경(Sight)으로 EOTech EXPS3-0 홀로그램 사이트 (탄색)를 장착한다.",
+    "스톡(Stock)으로 AR-15 Magpul UBR GEN2 (FDE 색상)를 장착한다.",
+    "권총 손잡이(Pistol grip)로 AR-15 Magpul MOE (FDE 색상)를 장착한다.",
+    "전술 장치(Tactical device)로 L3Harris LA-5B/PEQ를 장착한다.",
+    "모든 부품이 정확히 장착되어 위 조건을 만족하는 HK 416A5를 완성한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_14",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

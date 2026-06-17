@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "666314c10aa5c7436c00908c",
+  "nameKo": "Camera, Action!",
+  "nameEn": "Camera, Action!",
+  "steps": [
+    "퀘스트 완료를 위해 다음 아이템들을 레이드에서 획득해야 합니다: SSD 드라이브, USB 어댑터, 휴대용 보조 배터리(Portable Powerbank), 충전식 배터리, PC CPU, 전자 부품, 전선 묶음(Bundle of wires), 커패시터, NIXXOR 렌즈, RAM 스틱, 작동하는 LCD, 전구(Light bulb).",
+    "각 아이템은 레이드 내 다양한 장소에서 획득할 수 있으며, 일부는 특정 상자나 전자기기에서 얻을 수 있습니다. 예를 들어, PC CPU와 RAM 스틱은 컴퓨터 부품 상자나 전자 장비에서 찾을 수 있고, NIXXOR 렌즈는 광학 장비나 카메라 부품 상자에서 획득 가능합니다.",
+    "휴대용 보조 배터리와 충전식 배터리는 전자기기나 배터리 상자에서 찾을 수 있으며, 전자 부품과 커패시터, 전선 묶음은 전자 부품 상자나 공구 상자에서 획득할 수 있습니다.",
+    "작동하는 LCD와 전구는 전자기기나 조명 장비 상자에서 얻을 수 있습니다.",
+    "모든 아이템은 레이드 획득(FIR) 조건이 있으므로, 상점 구매나 트레이더 거래로는 제출할 수 없습니다.",
+    "모든 아이템을 획득한 후 퀘스트 NPC에게 제출하여 퀘스트를 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Camera%2C_Action!",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "taskId": "666314c5a9290f9e0806cca5",
+  "nameKo": "Key to the City",
+  "nameEn": "Key to the City",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 박물관 건물로 이동한다. 건물 위치는 지도에 표시되어 있으며, 외관을 확인하여 박물관임을 확인할 수 있다.",
+    "박물관 1층에서 타르코프 시티 기념 열쇠(Tarkov City souvenir key)를 찾는다. 열쇠는 여러 진열장(display case)에 분포되어 있으니 모두 확인해야 한다.",
+    "1층 진열장 위치별 열쇠 획득 지점은 다음과 같다: 첫 번째 진열장 내부 앞쪽 가장자리 근처, 두 번째 진열장 내 각진 전시대 뒤, 세 번째 진열장 내부 왼쪽 구석, 네 번째 진열장 내 책 아래에 숨겨져 있다.",
+    "1층에서 열쇠를 찾지 못했거나 추가로 찾고 싶다면 2층으로 이동한다. 계단은 박물관 내부에 위치해 있으며, 계단으로 올라가는 길을 잘 확인한다.",
+    "2층 복도에 있는 낮은 장(lowboard) 위를 확인한다. 이곳에도 기념 열쇠가 있을 수 있다.",
+    "주방이 있는 방으로 들어가 책상 위를 살펴본다. 이 방은 2층에 위치하며, 주방 시설이 있는 방임을 확인할 수 있다.",
+    "침실에 있는 책장 중간 칸을 확인한다. 이곳 역시 기념 열쇠가 숨겨져 있을 수 있으니 꼼꼼히 살펴본다.",
+    "기념 열쇠는 퀘스트 활성화 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리에 자동으로 옮겨진다. 레이드 도중 추출하지 못하면 열쇠를 잃게 되므로 주의한다."
+  ],
+  "tips": "기념 열쇠는 박물관 내 여러 위치에 분산되어 있으므로 한 곳에서 찾지 못했다고 포기하지 말고, 1층과 2층 모든 지정된 위치를 꼼꼼히 확인하는 것이 중요하다. 또한, 퀘스트가 활성화된 상태에서만 열쇠를 획득할 수 있으니 퀘스트 진행 중임을 반드시 확인하고 레이드에서 추출까지 완료해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/StreetsOfTarkovMapCPSUPart2MarkedOnMap.png/revision/latest/scale-to-width-down/640?cb=20240705022801",
+      "caption": "지도에 표시된 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/64/CPSUPart2Outside.png/revision/latest/scale-to-width-down/640?cb=20250227013330",
+      "caption": "박물관 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/TarkovCitySouvenirKeyAllDisplayCases.png/revision/latest/scale-to-width-down/640?cb=20240707080119",
+      "caption": "1층 기념 열쇠 위치 표시"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/TarkovCitySouvenirKeyDisplayCase1.png/revision/latest/scale-to-width-down/640?cb=20240707080115",
+      "caption": "1: 진열장 내부 앞쪽 가장자리"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f9/TarkovCitySouvenirKeyBehindBook.png/revision/latest/scale-to-width-down/640?cb=20240707075218",
+      "caption": "2: 각진 전시대 뒤 진열장"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8b/TarkovCitySouvenirKeyExhibit.png/revision/latest/scale-to-width-down/640?cb=20240707075227",
+      "caption": "3: 내부 왼쪽 구석 진열장"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/da/TarkovCitySouvenirKeyDisplayCase4.png/revision/latest/scale-to-width-down/640?cb=20240707080117",
+      "caption": "4: 책 아래 진열장"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c3/CPSUPart2Inside.png/revision/latest/scale-to-width-down/640?cb=20230925160026",
+      "caption": "계단으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fd/TarkovCitySouvenirKeyShelf.png/revision/latest/scale-to-width-down/640?cb=20240707075207",
+      "caption": "복도에 있는 낮은 장 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/09/TarkovCitySouvenirKeyTable.png/revision/latest/scale-to-width-down/640?cb=20240707075150",
+      "caption": "주방이 있는 방 책상 위"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8d/TarkovCitySouvenirKeyBookShelf.png/revision/latest/scale-to-width-down/640?cb=20240707075158",
+      "caption": "침실 책장 중간 칸"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Key_to_the_City",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

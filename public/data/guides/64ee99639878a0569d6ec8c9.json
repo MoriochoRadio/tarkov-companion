@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "taskId": "64ee99639878a0569d6ec8c9",
+  "nameKo": "Broadcast - Part 5",
+  "nameEn": "Broadcast - Part 5",
+  "steps": [
+    "먼저, 타르코프 시내(Streets of Tarkov)의 Chekannaya 13번지 아파트 건물 1층에 있는 의식 장소(ritual spot)에 'Cultist knife(컬티스트 칼)'를 숨겨야 한다. 이 장소는 미스터리 룸 마킹 키(Mysterious room marked key)로 잠긴 방이다.",
+    "컬티스트 칼은 퀘스트 목표인 컬티스트 사제를 어느 맵에서든 처치하여 획득해야 한다.",
+    "Chekannaya 13 아파트 건물에 도착하면, 마당 쪽 창문을 통해 건물 안으로 진입한다.",
+    "건물 내부로 들어가면 복도로 진입한 후 왼쪽 두 번째 방으로 이동한다.",
+    "침실 안에서는 벽에 난 구멍을 통과한다.",
+    "구멍을 통과한 후에는 계단을 내려가 왼쪽에 있는 문을 연다.",
+    "문 앞에 도착하면 미스터리 룸 마킹 키를 사용해 문을 잠금 해제한다.",
+    "잠긴 문을 열고 들어가면 십자가 모양의 의식 장소가 나오며, 여기서 컬티스트 칼을 숨기면 퀘스트가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/33/Mysterious_marked_key_onmap.png/revision/latest/scale-to-width-down/640?cb=20230826234248",
+      "caption": "지도에 표시된 의식 장소 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cc/Mysterious_key_building_entrance.png/revision/latest/scale-to-width-down/640?cb=20241015235936",
+      "caption": "마당 쪽 창문을 통한 건물 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/Mysterious_key_path1.png/revision/latest/scale-to-width-down/640?cb=20241015235309",
+      "caption": "건물 안으로 들어가 복도에 진입 후 왼쪽 두 번째 방으로 이동"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a3/Mysterious_key_path2.png/revision/latest/scale-to-width-down/640?cb=20241015235209",
+      "caption": "침실 안에서 벽에 난 구멍을 통과"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/Mysterious_key_path3.png/revision/latest/scale-to-width-down/640?cb=20241015234645",
+      "caption": "구멍을 통과한 후 계단을 내려가 왼쪽 문을 열기"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/Mysterious_key_room_door.png/revision/latest/scale-to-width-down/640?cb=20241015234459",
+      "caption": "잠금 해제할 문 앞 도착"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/Mysterious_key_room.png/revision/latest/scale-to-width-down/640?cb=20260616232822",
+      "caption": "십자가 모양의 의식 장소에 아이템 숨기기"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_5",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}

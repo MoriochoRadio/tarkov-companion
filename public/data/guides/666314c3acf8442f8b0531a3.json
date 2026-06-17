@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "taskId": "666314c3acf8442f8b0531a3",
+  "nameKo": "Proper Comeback",
+  "nameEn": "Proper Comeback",
+  "steps": [
+    "골든 루스터(Golden rooster) 조각상 3개를 준비한다. 이 아이템은 퀘스트 진행에 필수이며, 레이드 내에서 획득해야 한다.",
+    "삼림(Woods) 맵으로 이동한다. 산 정상의 바위 절벽 옆 나무 근처에 골든 루스터 조각상을 설치한다. 설치 시간은 약 40초가 소요된다.",
+    "해안선(Shoreline) 맵으로 이동한다. 부두 근처 등대 꼭대기에 골든 루스터 조각상을 설치한다. 설치 시간은 약 40초가 소요된다.",
+    "공장(Factory) 맵으로 이동한다. 'Gate 3' 추출구 쪽 사무실 구역 계단 위에 골든 루스터 조각상을 설치한다. 설치 위치는 고양이 다리(catwalk) 문 반대편이다. 현재는 야간에는 퀘스트 완료가 불가능하니 주간에 진행해야 한다. 설치 시간은 약 40초가 소요된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d2/Viewer_Woodsmap.png/revision/latest/scale-to-width-down/640?cb=20240709004302",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2c/ViewerWoodsLocationOverview.png/revision/latest/scale-to-width-down/640?cb=20240709004727",
+      "caption": "설치 위치 주변"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/29/ViewerWoodsLocation.png/revision/latest/scale-to-width-down/640?cb=20240709003339",
+      "caption": "설치 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/57/The_TerraGroup_Trail_-_Part_19_Lighthouse_Map.jpg/revision/latest/scale-to-width-down/640?cb=20230802205828",
+      "caption": "지도에 표시된 등대 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/be/Lighthouse.png/revision/latest/scale-to-width-down/640?cb=20230321203427",
+      "caption": "등대"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/54/ViewerFactoryLocation.png/revision/latest/scale-to-width-down/640?cb=20240829224610",
+      "caption": "설치 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Proper_Comeback",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T16:28:05.051+09:00"
+}
