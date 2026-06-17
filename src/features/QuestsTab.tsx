@@ -399,9 +399,15 @@ export function QuestsTab() {
   const [sortKey, setSortKey] = useState<SortKey>('level')
   const [activeOnly, setActiveOnly] = useState(false)
   const [hideDone, setHideDone] = useState(false)
+  const [availOnly, setAvailOnly] = useState(false)
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
   const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
   const { ids: doneIds, toggle: toggleDone } = useIdSet(DONE_QUESTS_KEY)
+
+  // 진행 로드맵 — 선행 퀘스트가 모두 완료됐는지(받을 수 있는지). requires는
+  // dedupe 시 대표 id로 재매핑돼 done-quests(대표 id 기록)와 일관.
+  // (OR/실패 조건 같은 복합 선행은 단순화돼 있어 과한 제약일 수 있음 — 안내 문구로 명시)
+  const prereqsMet = (quest: Quest) => quest.requires.every((r) => doneIds.has(r))
 
   // 첫 페인트가 끝나면 한 페이지 분량으로 확장 (2단계 렌더)
   useEffect(() => {
@@ -435,6 +441,7 @@ export function QuestsTab() {
       (quest) =>
         (!activeOnly || activeIds.has(quest.id)) &&
         (!hideDone || !doneIds.has(quest.id)) &&
+        (!availOnly || (!doneIds.has(quest.id) && prereqsMet(quest))) &&
         (!trader || quest.trader.id === trader) &&
         (!map || quest.map?.id === map) &&
         (!maxLevel || quest.minPlayerLevel <= level) &&
@@ -447,7 +454,7 @@ export function QuestsTab() {
         : collator.compare(a.trader.name, b.trader.name) ||
           a.minPlayerLevel - b.minPlayerLevel,
     )
-  }, [quests, trader, map, maxLevel, query, sortKey, activeOnly, activeIds, hideDone, doneIds])
+  }, [quests, trader, map, maxLevel, query, sortKey, activeOnly, activeIds, hideDone, availOnly, doneIds])
 
   const modeSeg = (
     <div className="toolbar">
@@ -558,10 +565,20 @@ export function QuestsTab() {
           />
           ✓ 완료 숨기기
         </label>
+        <label className="toggle">
+          <input
+            type="checkbox"
+            checked={availOnly}
+            onChange={(e) => { setAvailOnly(e.target.checked); setVisible(PAGE_SIZE) }}
+          />
+          ▶ 받을 수 있는 것만
+        </label>
       </div>
       <p className="hint">
-        {filtered.length}개 퀘스트 · 행을 클릭하면 상세 보기 · ☆를 누르면 진행 중
-        표시 — 내 레벨 필터와 조합하면 “지금 할 일” 목록 · κ = 카파 필수
+        {filtered.length}개 퀘스트 · 행을 클릭하면 상세 보기 · ☆ 진행 중 · ○ 완료
+        체크(어디서든 공유) · <span className="quest-status avail">▶ 받을 수 있음</span>
+        = 선행 모두 완료 · <span className="quest-status locked">🔒 선행 N</span> = 남은
+        선행 수 · 완료를 체크할수록 로드맵이 풀립니다 · κ = 카파 필수
       </p>
       {activeOnly && filtered.length === 0 && (
         <p className="hint">
@@ -596,6 +613,21 @@ export function QuestsTab() {
                     onToggle={() => toggleDone(q.id)}
                   />
                   <span className="quest-name-text">{q.displayName}</span>
+                  {!doneIds.has(q.id) &&
+                    (prereqsMet(q)
+                      ? q.requires.length > 0 && (
+                          <span
+                            className="quest-status avail"
+                            title="받을 수 있음 — 선행 모두 완료"
+                          >
+                            ▶
+                          </span>
+                        )
+                      : (
+                          <span className="quest-status locked" title="선행 퀘스트가 남음">
+                            🔒 {q.requires.filter((r) => !doneIds.has(r)).length}
+                          </span>
+                        ))}
                   {q.kappaRequired && <span className="badge-kappa">κ</span>}
                   {q.wikiLink && (
                     // 상세로 들어가지 않고 행에서 바로 위키 공략으로 (행 클릭과 분리)

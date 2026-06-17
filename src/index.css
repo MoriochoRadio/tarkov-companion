@@ -1083,6 +1083,29 @@ th.star-col {
   color: #7fd98c;
 }
 
+/* 진행 로드맵 상태 배지 (Phase 42) — 받을 수 있음(초록) / 선행 잠김(회색) */
+.quest-status {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.quest-status.avail {
+  background: color-mix(in srgb, #7fd98c 22%, var(--bg-inset));
+  color: #7fd98c;
+}
+
+.quest-status.locked {
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  color: var(--text-3);
+}
+
 .fav-heading {
   margin: 0 0 var(--sp-1);
   font-size: 1.05rem;
