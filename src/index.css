@@ -2971,6 +2971,21 @@ select:focus-visible {
   font-weight: 700;
 }
 
+/* "내 진행" 탭은 뷰가 5개라 한 줄이 좁은 화면에서 잘림(.mode-seg는 overflow:hidden)
+   → 줄바꿈되는 칩 그룹으로 (Phase 38) */
+.mode-seg-wrap {
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.mode-seg-wrap button {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+
 .build-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

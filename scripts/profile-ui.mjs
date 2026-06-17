@@ -139,8 +139,20 @@ await measure(
 // --- Phase 28: FIR 통합 운영 페이지 (2분할 + 정크박스 그리드) ---
 
 await measure(
-  '6) FIR 탭 진입 → 운영 페이지 (좌 퀘스트 아코디언 + 우 정크박스)',
-  () => clickTab('퀘스트 도구', 'FIR'),
+  '6) 내 진행 탭 진입 → 통합 체크리스트 (딥링크 포함, 기본 전면)',
+  () => clickTab('퀘스트 도구', '내 진행'),
+  '.prep-row',
+)
+
+// FIR 운영(FirOps) 뷰로 전환 — 무거운 상인 아코디언/스테퍼 부하는 여기서 측정
+await measure(
+  '6.0) FIR 운영 뷰 전환 → 2분할 운영 페이지',
+  () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('.mode-seg button')]
+        .find((b) => b.textContent.trim() === 'FIR 운영')
+        ?.click(),
+    ),
   '.fir-q-row',
 )
 
@@ -245,11 +257,11 @@ console.log(`7.25) 스테이션 '건축 완료' 캐스케이드 반영: ${Date.n
 // --- 보조 보기 (기능 삭제 없이 흡수) ---
 
 await measure(
-  '7.3) 보조 보기 → 준비물 목록 (체크리스트)',
+  '7.3) 통합 체크리스트로 복귀',
   () =>
     page.evaluate(() =>
       [...document.querySelectorAll('.mode-seg button')]
-        .find((b) => b.textContent.includes('준비물 목록'))
+        .find((b) => b.textContent.includes('통합 체크리스트'))
         .click(),
     ),
   '.prep-row',

@@ -33,7 +33,7 @@ import { installSpotlight } from './lib/spotlight'
 const TABS = [
   { key: 'briefing', label: '오늘의 브리핑', eyebrow: 'DAILY BRIEFING', Comp: BriefingTab },
   { key: 'quests', label: '퀘스트', eyebrow: 'TASK DATABASE', Comp: QuestsTab },
-  { key: 'fir', label: 'FIR', eyebrow: 'FIR OPERATIONS', Comp: FirTab },
+  { key: 'fir', label: '내 진행', eyebrow: 'MY PROGRESS', Comp: FirTab },
   { key: 'planner', label: '플래너', eyebrow: 'RAID PLANNER', Comp: PlannerTab },
   { key: 'unlocks', label: '해금', eyebrow: 'OFFER UNLOCKS', Comp: UnlocksTab },
   { key: 'search', label: '아이템 검색', eyebrow: 'ITEM SEARCH', Comp: SearchTab },

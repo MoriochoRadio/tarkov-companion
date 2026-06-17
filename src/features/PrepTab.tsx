@@ -5,8 +5,6 @@ import { useAsyncData } from '../hooks/useAsyncData'
 import { ACTIVE_QUESTS_KEY, HIDEOUT_BUILT_KEY, useIdSet } from '../lib/favorites'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
-import { HideoutView } from './HideoutView'
-import { QuestNeedsView } from './QuestNeedsView'
 import { TableSkeleton } from './Skeleton'
 
 const PAGE_SIZE = 60
@@ -224,50 +222,9 @@ function PrepRowView({
   )
 }
 
-type PrepViewMode = 'list' | 'hideout' | 'quests'
-
-export function PrepTab({
-  onItem,
-  onQuest,
-}: {
-  onItem?: (name: string) => void
-  onQuest?: (id: string) => void
-}) {
-  // 통합 체크리스트(레이드 중 빠른 확인) / 은신처(스테이션별) / 퀘스트(트레이더별)
-  const [viewMode, setViewMode] = useState<PrepViewMode>('list')
-
-  return (
-    <div>
-      <div className="toolbar">
-        <nav className="mode-seg" aria-label="준비물 보기 방식">
-          <button
-            className={viewMode === 'list' ? 'active' : ''}
-            onClick={() => setViewMode('list')}
-          >
-            통합 체크리스트
-          </button>
-          <button
-            className={viewMode === 'hideout' ? 'active' : ''}
-            onClick={() => setViewMode('hideout')}
-          >
-            은신처
-          </button>
-          <button
-            className={viewMode === 'quests' ? 'active' : ''}
-            onClick={() => setViewMode('quests')}
-          >
-            퀘스트
-          </button>
-        </nav>
-      </div>
-      {viewMode === 'list' && <PrepChecklist onItem={onItem} onQuest={onQuest} />}
-      {viewMode === 'hideout' && <HideoutView />}
-      {viewMode === 'quests' && <QuestNeedsView />}
-    </div>
-  )
-}
-
-function PrepChecklist({
+// 통합 필요템 체크리스트 — 퀘스트 제출 + 은신처 건설 수요 집계 + 모은 개수 기록.
+// "내 진행" 탭(FirTab)의 기본 전면 뷰 (Phase 38). 펼친 행에서 시세·퀘스트 딥링크.
+export function PrepChecklist({
   onItem,
   onQuest,
 }: {

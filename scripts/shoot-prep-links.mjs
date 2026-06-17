@@ -48,11 +48,8 @@ async function gotoPrep() {
   await clickGroup('퀘스트 도구')
   await page.waitForSelector('.sub-tabs button', { timeout: 30_000 })
   await wait(400)
-  await clickByText('.sub-tabs button', 'FIR')
-  await wait(700) // FIR(통합 운영) 마운트 대기 — 퀘스트 탭 mode-seg와 race 방지
-  await clickByText('.mode-seg button', '준비물 목록')
-  await wait(500) // PrepTab 마운트
-  // 데이터 로드(~7초) 후 통합 체크리스트 행
+  await clickByText('.sub-tabs button', '내 진행')
+  // '내 진행'의 기본 전면이 통합 체크리스트 → 데이터 로드(~7초) 후 바로 .prep-row
   await page.waitForSelector('.prep-row', { timeout: 60_000 })
   await wait(400)
 }
