@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "taskId": "66aa61663aa37705c5024277",
+  "nameKo": "Know Your Place!",
+  "nameEn": "Know Your Place!",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에서 인터체인지(Interchange)로 이동하려면, Concordia 아파트 단지의 남서쪽에 위치한 트랜싯(Transit) 지점을 찾아야 합니다.",
+    "레이드 시작 후 1분이 지나야 트랜싯을 이용할 수 있으니, 레이드 초반에는 대기해야 합니다.",
+    "트랜싯을 타면 인터체인지 맵으로 이동할 수 있습니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/StreetsTransitToInterchangeMap.png/revision/latest/scale-to-width-down/640?cb=20240828230209",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/StreetsTransitToInterchange.png/revision/latest/scale-to-width-down/640?cb=20240824233949",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Know_Your_Place!",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

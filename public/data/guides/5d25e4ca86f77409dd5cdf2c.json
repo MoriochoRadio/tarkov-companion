@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "5d25e4ca86f77409dd5cdf2c",
+  "nameKo": "사냥 여행",
+  "nameEn": "Hunting Trip",
+  "steps": [
+    "사냥 여행(Hunting Trip) 퀘스트에서는 Remington Model 700 7.62x51 볼트액션 저격소총과 Burris FullField TAC30 1-4x24 30mm 조준경을 사용해야 합니다.",
+    "조준경 Burris FullField TAC30 1-4x24 30mm는 반드시 총기에 장착되어 있어야 하며, 반드시 조준경을 통해 조준할 필요는 없습니다.",
+    "예를 들어 Recknagel Era-Tac 30mm 링 마운트를 사용하여 Burris FullField TAC30 조준경을 총기에 장착하고, 그 위에 컴팩트 레플렉스 사이트를 추가로 장착해도 퀘스트 조건을 충족합니다.",
+    "퀘스트 목표는 Shturman 적을 40미터 이상 거리에서 헤드샷으로 처치하는 것입니다.",
+    "Shturman은 특정 맵과 위치에서 등장하는 적 NPC이므로, 적절한 맵에서 40미터 이상 거리를 확보한 후 헤드샷을 시도해야 합니다.",
+    "킬 카운트가 인정되려면 반드시 Remington Model 700에 Burris FullField TAC30 조준경이 장착되어 있어야 하며, 다른 조준경이나 조준 방식은 자유롭게 사용할 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hunting_Trip",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

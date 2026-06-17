@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "taskId": "625d70031ed3bb5bcc5bd9e5",
+  "nameKo": "Key to the Tower",
+  "nameEn": "Key to the Tower",
+  "steps": [
+    "라디오 송신기 본체를 찾기 위해 등대(Lighthouse) 맵에서 여러 위치를 탐색해야 합니다. 송신기 본체는 여러 스폰 지점이 있으므로 아래 위치들을 참고하세요.",
+    "해안가 침수 건물(Sunken building at the shore) 2층, 나무 팔레트 옆 바닥에서 찾을 수 있습니다.",
+    "테니스 코트(Tennis court)에서는 남쪽 검은 샬레(Black southern chalet) 근처 울타리에 기대어 죽어있는 스캐브(Scav)의 손에서 찾을 수 있습니다.",
+    "검은 샬레(Black southern chalet) 1층 벽난로 근처 삼각형 커피 테이블 아래에서 송신기 본체를 찾을 수 있습니다.",
+    "검은 샬레 1층, 노트북이 있는 식탁과 룸 디바이더 선반 사이 바닥에서도 찾을 수 있습니다.",
+    "검은 샬레 1층, 노트북이 있는 식탁 위 테이프 레코더 사이에서도 송신기 본체가 있습니다.",
+    "파란 샬레(Blue northern chalet) 1층 벽난로 위에서 송신기 본체를 찾으세요.",
+    "파란 샬레 1층 식당 구역, 벽난로 맞은편 선반 옆 패키지 안에도 송신기 본체가 있습니다.",
+    "파란 샬레 2층, 북서쪽 침실에서 옷장과 금고 사이 바닥에서도 찾을 수 있습니다.",
+    "편의점(Convenience store) 내부, 계산대 중간 칸에서 송신기 본체를 획득할 수 있습니다.",
+    "정수장(Water treatment plant) 남동쪽 물 웅덩이 군사 텐트 안 탁자 위에 송신기 본체가 있습니다.",
+    "남동쪽 콘크리트 믹서 트럭 우측 탱크 위에서도 찾을 수 있습니다.",
+    "3번 건물 옥상, NSV 중기관총이 있는 텐트 근처 나무 상자 위에서도 송신기 본체가 스폰됩니다.",
+    "북동쪽 빨간 컨테이너 옆 탁자 위에서도 송신기 본체를 찾으세요.",
+    "북쪽 차량 텐트(BRDM와 픽업 트럭 있는 곳) 드럼통 위에도 송신기 본체가 있습니다.",
+    "작은 북쪽 감시탑 내부, 초록색 나무 상자 옆 바닥에서도 송신기 본체를 획득할 수 있습니다.",
+    "북서쪽 전기 작업 오두막 선반 위에서도 송신기 본체가 스폰됩니다.",
+    "1번 건물 옥상, 위장 그물 아래 초록색 나무 상자 위에서도 송신기 본체를 찾으세요.",
+    "북서쪽 빨간 컨테이너 옆 패키지 더미 안에도 송신기 본체가 있습니다.",
+    "남쪽 타워 '3PY' 옆 파란색 픽업 트럭 뒤쪽 패키지 위에서 송신기 본체를 획득할 수 있습니다.",
+    "남쪽 타워 '3PY' 옥상, 무기 상자 옆 나무 상자 위에도 송신기 본체가 있습니다.",
+    "송신기 본체 외에 퀘스트 제출용 아이템은 레이드 내에서 획득해야 하며, 다음과 같습니다: 플렉시글라스 2개(은신처 작업대 1레벨에서 제작 가능), 절연 테이프 1개, 군용 회로 기판 2개(은신처 작업대 2레벨에서 제작 가능), 군용 COFDM 무선 신호 송신기 1개, 작동하는 LCD 1개(은신처 작업대 2레벨에서 제작 가능).",
+    "라디오 송신기 본체는 퀘스트 활성화 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동합니다. 추출 실패 시 아이템을 잃으니 주의하세요."
+  ],
+  "tips": "라디오 송신기 본체는 등대 맵 내 여러 위치에 분산되어 있으므로, 한 곳에서 찾기 어렵다면 다른 스폰 지점도 반드시 확인하세요. 퀘스트 제출 아이템은 은신처에서 제작하거나 레이드 내에서 획득할 수 있으니, 미리 준비해두면 편리합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8a/Key_to_the_Tower_Quest_Item_Spawn_Map.jpg/revision/latest/scale-to-width-down/640?cb=20230315143946",
+      "caption": "전체 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/SunkenHouseMap.png/revision/latest/scale-to-width-down/640?cb=20230205103738",
+      "caption": "해안가 침수 건물 위치 표시"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/32/BodySpawnSunkenHouse.png/revision/latest/scale-to-width-down/640?cb=20230312161448",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/KTTTennisCourtMap.png/revision/latest/scale-to-width-down/640?cb=20230312171338",
+      "caption": "테니스 코트 위치 표시"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/BodyTennisCourtSpawn.png/revision/latest/scale-to-width-down/640?cb=20230312162459",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a8/BlackChaletMap.png/revision/latest/scale-to-width-down/640?cb=20230115032635",
+      "caption": "샬레 위치 표시"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/63/BodySpawnBlackChalet1.png/revision/latest/scale-to-width-down/640?cb=20230312162824",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/76/KTTShelving.png/revision/latest/scale-to-width-down/640?cb=20230312163424",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/KTTBlackChaletDining.jpg/revision/latest/scale-to-width-down/640?cb=20230312163511",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/KTTBlackChaletTapes.png/revision/latest/scale-to-width-down/640?cb=20230312194909",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/BlueChaletMapKTT.png/revision/latest/scale-to-width-down/640?cb=20230115032329",
+      "caption": "샬레 위치 표시"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/BodySpawnBlueChaletStairs.png/revision/latest/scale-to-width-down/640?cb=20230312164115",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Key_to_the_Tower",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

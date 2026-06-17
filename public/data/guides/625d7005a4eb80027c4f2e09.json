@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "625d7005a4eb80027c4f2e09",
+  "nameKo": "Knock-Knock",
+  "nameEn": "Knock-Knock",
+  "steps": [
+    "메카닉(Mechanic)에게서 받은 트랜스폰더(transponder)를 인벤토리 내 특수 아이템 슬롯에 장착한다.",
+    "등대(Lighthouse) 맵으로 이동한다.",
+    "등대 반도(Lighthouse peninsula)로 이어지는 다리의 시작 지점까지 걸어간다. 다리 입구에 클레이모어(Claymore) 지뢰가 흩어져 있으나, 지뢰가 설치된 게이트를 넘을 필요는 없다.",
+    "트랜스폰더가 정상 작동하는지 확인한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/KnockKnockMap.png/revision/latest/scale-to-width-down/640?cb=20230110151021",
+      "caption": "지도에 표시된 다리"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Knock-Knock",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "5d25e2e286f77444001e2e48",
+  "nameKo": "사냥꾼의 길 - 변절자",
+  "nameEn": "The Huntsman Path - Sellout",
+  "steps": [
+    "킬라(Killa)를 처치한다. 주의할 점은 복수심에 불타는 킬라(Vengeful Killa)가 아닌 일반 킬라를 상대해야 한다.",
+    "레이드 중에 Maska-1SCh 방탄 헬멧(킬라 에디션 또는 크리스마스 에디션)을 찾아 획득한다. 헬멧의 페이스 실드는 필요하지 않다.",
+    "획득한 Maska-1SCh 헬멧을 퀘스트 아이템으로 제출한다."
+  ],
+  "tips": "킬라는 주로 공장(Factory) 맵에서 등장하므로 해당 맵에서 킬라를 노리는 것이 효율적이다. Maska-1SCh 헬멧은 레이드 내에서만 획득 가능하며, 트레이더 구매나 플리마켓에서는 구할 수 없다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/Killa-Maska.png/revision/latest?cb=20240107131629",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Sellout",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

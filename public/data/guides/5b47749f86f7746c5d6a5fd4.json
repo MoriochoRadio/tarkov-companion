@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "5b47749f86f7746c5d6a5fd4",
+  "nameKo": "건스미스 - 파트 17",
+  "nameEn": "Gunsmith - Part 17",
+  "steps": [
+    "AK-102의 내구도는 60이어야 합니다.",
+    "인체공학 지수는 53 이상이어야 합니다.",
+    "반동 수치는 300 이하로 맞춰야 합니다.",
+    "조준 거리는 800 이상이어야 합니다.",
+    "장전 가능한 탄창 수는 8개 이하로 제한됩니다.",
+    "Ferfrans CRD 5.56x45 Concussion Reduction Device를 장착해야 합니다.",
+    "Magpul AFG 전술용 포어그립(올리브 드랩 색상)을 부착해야 합니다.",
+    "Zenit Klesch-2U 전술용 손전등을 장착해야 합니다.",
+    "RPK-16 버퍼 튜브를 장착해야 합니다.",
+    "SLR-106/AK 5.56x45 Circle 10 30발 탄창을 사용해야 합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_17",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

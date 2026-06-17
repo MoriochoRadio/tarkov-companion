@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "taskId": "639135cd8ba6894d155e77cb",
+  "nameKo": "House Arrest - Part 2",
+  "nameEn": "House Arrest - Part 2",
+  "steps": [
+    "세관의 Chekannaya 15 아파트 건물로 가세요. 이 퀘스트를 진행하기 위해서는 Chekannaya 15 아파트 키가 필요합니다.",
+    "아파트 건물에 들어가면 벽에 있는 구멍을 통해 들어가세요. 들어가면 왼쪽 복도를 보고 오른쪽에 있는 이중문으로 들어갑니다.",
+    "1층의 동쪽 계단으로 가세요. 여기서 교도소 소장의 시신이 있습니다.",
+    "소장의 시신을 확인한 후, 2층으로 올라가세요. 2층의 가장 동쪽에 있는 아파트가 목표 아파트입니다.",
+    "3층으로 올라가서, 5호실 바닥에 있는 구멍을 통해 2층으로 내려가야 합니다. 이 구멍을 통해서만 아파트에 접근할 수 있습니다.",
+    "2층 복도에서 잔해가 있는 곳을 지나가야 합니다. 이곳은 엎드려서 통과해야 합니다.",
+    "목표 아파트의 문을 찾아서 열어보세요."
+  ],
+  "tips": "아파트에 들어가기 위해서는 Chekannaya 15 아파트 키가 반드시 필요합니다. 이 키는 레이드에서 획득해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Chekannaya15Map.png/revision/latest/scale-to-width-down/640?cb=20230826220245",
+      "caption": "지도에 표시된 아파트 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/Chekannaya15ApartmentBuilding.png/revision/latest/scale-to-width-down/640?cb=20230102195416",
+      "caption": "입구가 표시된 아파트 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fc/WesternStaircaseMap.png/revision/latest?cb=20240729161305",
+      "caption": "건물 지도에 표시된 서쪽 계단으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/WesternStaircaseWay1.png/revision/latest/scale-to-width-down/640?cb=20230108164530",
+      "caption": "서쪽 계단으로 가는 길 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/WesternStaircaseWay2.png/revision/latest/scale-to-width-down/640?cb=20230108164528",
+      "caption": "서쪽 계단으로 가는 길 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/WesternStaircaseWay3.png/revision/latest/scale-to-width-down/640?cb=20230108165133",
+      "caption": "서쪽 계단으로 가는 길 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6f/Chekannaya15ApartmentBuildingWesternStairs.png/revision/latest/scale-to-width-down/640?cb=20230108165324",
+      "caption": "서쪽 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cc/Chek15TFHallway.png/revision/latest/scale-to-width-down/640?cb=20230128224646",
+      "caption": "5호실 바닥에 구멍이 있는 3층 복도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/de/Chek15SFHallway.png/revision/latest/scale-to-width-down/640?cb=20230128225014",
+      "caption": "잔해 통과가 표시된 2층 복도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/Chek15AptDoor.png/revision/latest/scale-to-width-down/640?cb=20230101204945",
+      "caption": "소장 아파트의 문"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/House_Arrest_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "taskId": "600302d73b897b11364cd161",
+  "nameKo": "사냥꾼",
+  "nameEn": "Hunter",
+  "steps": [
+    "Shturman을 20회 처치해야 합니다. Shturman은 특정 지역에서 등장하는 적으로, 주로 레이드 내에서 찾아 사냥해야 합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Hunter",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

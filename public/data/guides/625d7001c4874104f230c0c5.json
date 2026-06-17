@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "625d7001c4874104f230c0c5",
+  "nameKo": "Assessment - Part 3",
+  "nameEn": "Assessment - Part 3",
+  "steps": [
+    "레이드에 진입하여 The Lab(연구소) 맵으로 이동한다.",
+    "The Lab 내에서 Scav Raider(스캐브 레이더) 적 7명을 처치한다.",
+    "전투 중 또는 처치 후 레이드 내에서 SJ1 TGLabs combat stimulant injector(전투 자극제 주사기) 15개를 획득한다. 이 아이템은 Hideout(은신처) 내 Medstation(의료 스테이션) 레벨 2에서 제작 가능하며, 레이드 획득(FIR)도 가능하다.",
+    "SJ6 TGLabs combat stimulant injector 5개도 함께 수집한다. 이 아이템은 Hideout Medstation 레벨 3에서 제작 가능하며, 레이드 획득(FIR)도 가능하다.",
+    "SJ9 TGLabs combat stimulant injector 1개를 찾아 획득한다. 이 아이템은 The Lab 내의 Cultists(컬티스트) 적 또는 The Lab 맵에서 레이드 획득(FIR)할 수 있다.",
+    "필요한 모든 자극제 주사기를 수집한 후, 퀘스트를 완료하기 위해 해당 아이템들을 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Assessment_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

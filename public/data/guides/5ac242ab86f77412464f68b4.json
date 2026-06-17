@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "5ac242ab86f77412464f68b4",
+  "nameKo": "건스미스 - 파트 16",
+  "nameEn": "Gunsmith - Part 16",
+  "steps": [
+    "DVL-10 저격소총을 준비한다. 이 무기는 내구도 60 이상이어야 하며, 인체공학 지수가 36 이상이어야 한다.",
+    "반동 수치는 450 이하로 맞추고, 조준 사거리는 2,000 이상이어야 한다.",
+    "무게는 6.7kg 이하로 조절한다.",
+    "NcSTAR Tactical Blue Laser 같은 전술 장비를 장착한다. 전술 장비는 자유롭게 선택 가능하다."
+  ],
+  "tips": "DVL-10은 레이드에서 획득하거나 마켓에서 구매할 수 있다. 무게와 반동, 인체공학 수치를 맞추기 위해 부품을 적절히 조합하는 것이 중요하다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_16",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

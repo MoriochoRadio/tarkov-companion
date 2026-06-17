@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "taskId": "625d700cc48e6c62a440fab5",
+  "nameKo": "Getting Acquainted",
+  "nameEn": "Getting Acquainted",
+  "steps": [
+    "라이트하우스(Lighthouse)의 정수장(Water treatment plant)에는 V3 보안 플래시 드라이브(Secure Flash drive V3)가 여러 위치에 스폰된다. 이 아이템은 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다. 추출하지 못하고 사망 시 아이템을 잃게 되므로 주의한다.",
+    "플래시 드라이브를 획득한 후에는 은신처(Hideout)의 정보 센터(Intelligence Center) 2단계에서 송신기를 리플래싱(reflash)해야 한다. 이 과정 동안 전기가 계속 공급되어야 하며, 전기 공급이 끊기면 리플래싱이 중단된다.",
+    "리플래싱이 완료되면 송신기가 완전 작동 상태가 되어, 클레이모어(Claymores)와 브릿지를 지키는 즈랴치(Zryachiy)를 우회할 수 있게 된다. 이를 통해 등대지기(Lightkeeper)를 만나러 등대 건물로 진입할 수 있다.",
+    "참고로, 로비 내 모든 파티원이 인코딩된 송신기를 가지고 있지 않으면 송신기가 '차단됨(blocked)' 상태가 되어 다리를 건널 수 없다.",
+    "V3 보안 플래시 드라이브 획득 위치는 다음과 같다.",
+    "남서쪽 컨테이너: 남쪽 타워 서쪽에 위치한 파란 컨테이너 내부 책상 위 라디오 시스템 위에 있다.",
+    "남쪽 타워: '3PY'로 표시된 남쪽 타워 위 무기 상자 옆 나무 상자 위에 있다.",
+    "남동쪽 물 저장소 텐트: 남동쪽 물 저장소에 위치한 군용 텐트 내부 노트북이 놓인 탁자 위에 있다.",
+    "남동쪽 전기 작업 셰이크: 남동쪽 전기 작업 셰이크 내부 금속 선반 위에 있다.",
+    "건물 #3: Rogue USEC 막사 방 안 책상 위에 하나가 있으며, 이 방은 Rogue USEC 막사 열쇠(Rogue USEC barrack key)로 잠금 해제 가능하다.",
+    "같은 건물 3층 서쪽 사무실과 외부 계단을 연결하는 창고 방 금속 선반 위에도 하나가 있다.",
+    "동쪽 인원 통로 북쪽 사무실 내 이동식 탁자 위에도 하나가 있다.",
+    "북동쪽 셰이크: 방수포(tarp)가 덮인 북동쪽 전기 작업 셰이크 내부 금속 선반 위에 있다.",
+    "북동쪽 탁자: 북동쪽에 위치한 빨간 컨테이너 옆 탁자 위에 있다.",
+    "건물 #2: 정수장 저장실 내 금속 선반 하단 중간 칸에 하나가 있다. 저장실은 저장실 열쇠(Water treatment plant storage room key)로 잠금 해제 가능하다.",
+    "같은 건물 남동쪽 2층 사무실 내 선반 중간 칸에도 하나가 있다.",
+    "서쪽 사무실 책상 위에도 하나가 있다.",
+    "북쪽 차량 텐트: BRDM 장갑차와 픽업 트럭이 있는 북쪽 차량 텐트 내 탁자와 드럼통 위에 각각 하나씩 있다.",
+    "북쪽 텐트: 녹색 나무 상자 옆 탁자 위에 하나가 있다.",
+    "북쪽 소형 감시탑: 감시탑 내부 의자 위에 하나가 있다.",
+    "건물 #1: 북동쪽 2층 사무실 내 선반과 책상 위에 각각 하나씩 있다.",
+    "서쪽 인원 통로 복도 내 금속 선반 위에도 하나가 있다.",
+    "서쪽 셰이크: 서쪽 전기 작업 셰이크 내부 금속 선반 위에 하나가 있다.",
+    "퀘스트 아이템인 Rogue USEC 막사 열쇠와 저장실 열쇠는 퀘스트 진행에 일부 위치에서만 필요하며, 반드시 모두 필요하지는 않다."
+  ],
+  "tips": "V3 플래시 드라이브는 레이드 중 획득해야 하며, 획득 후 반드시 은신처 정보 센터에서 리플래싱을 완료해야 한다. 리플래싱 중 전기 공급이 끊기면 작업이 중단되므로 주의한다. 또한, 파티원 모두가 인코딩된 송신기를 가지고 있어야 다리를 건널 수 있으니 협력 플레이 시 확인이 필요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/Getting_Acquainted_Quest_Item_Spawn_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260108214637",
+      "caption": "개요 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9b/GATentedMap.png/revision/latest/scale-to-width-down/640?cb=20240923150134",
+      "caption": "지도에 표시된 컨테이너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5d/GATented.png/revision/latest/scale-to-width-down/640?cb=20230312213544",
+      "caption": "컨테이너 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/14/V3WTPTent.png/revision/latest/scale-to-width-down/640?cb=20230312213241",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/KTTTower.png/revision/latest/scale-to-width-down/640?cb=20230115032126",
+      "caption": "지도에 표시된 타워"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/BodySpawnWTPTower2.png/revision/latest/scale-to-width-down/640?cb=20230312193612",
+      "caption": "타워 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f3/GASouthernTower.png/revision/latest/scale-to-width-down/640?cb=20230312212605",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b3/KTTSouthEasternWaterBasinTentMap.png/revision/latest/scale-to-width-down/640?cb=20230312192407",
+      "caption": "지도에 표시된 텐트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/GASouthEasternWaterBasinTent.png/revision/latest/scale-to-width-down/640?cb=20251020202938",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/GASouthEasternShackMap.png/revision/latest/scale-to-width-down/640?cb=20230312211654",
+      "caption": "지도에 표시된 셰이크"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/16/GASouthEasternShack1.png/revision/latest/scale-to-width-down/640?cb=20230312211656",
+      "caption": "셰이크 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6a/GASouthEasternShack2.png/revision/latest/scale-to-width-down/640?cb=20230312211658",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Getting_Acquainted",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

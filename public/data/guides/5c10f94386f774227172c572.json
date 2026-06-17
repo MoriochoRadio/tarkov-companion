@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "taskId": "5c10f94386f774227172c572",
+  "nameKo": "전쟁의 피 - 파트 3",
+  "nameEn": "The Blood of War - Part 3",
+  "steps": [
+    "MS2000 마커 3개를 준비한다. 이 아이템은 퀘스트 진행에 반드시 필요하며, 인벤토리에 있어야 한다.",
+    "맵은 삼림(Woods)에서 진행한다. 삼림 맵 내에 숨겨진 연료 은닉처 3곳을 찾아야 한다.",
+    "첫 번째 은닉처는 체크포인트(checkpoint) 근처에 위치해 있다. 해당 위치로 이동하여 은닉처를 찾는다.",
+    "두 번째 은닉처는 \"ZB-016\" 추출 지점 근처의 쌍둥이 바위(twin rocks) 부근에 있다. 이곳으로 이동하여 은닉처를 찾는다.",
+    "세 번째 은닉처는 \"Mountain Stash\" 스캐브(Scav) 추출 지점에 위치해 있다. 해당 위치로 이동하여 은닉처를 찾는다.",
+    "각 은닉처에 도착하면 MS2000 마커를 사용해 표시한다. 마커를 설치하면 플레이어 인벤토리에서 해당 마커가 사라진다.",
+    "3곳 모두 마커로 표시를 완료하면, '생존(Survived)' 상태로 추출해야 한다. 반드시 생존 상태로 추출해야 퀘스트가 완료된다.",
+    "만약 'Run Through' 상태로 추출하면 퀘스트가 완료되지 않는다. 이를 방지하려면 레이드 내에서 최소 7분 이상 머무르거나, 레이드 내에서 적을 처치하거나 아이템을 획득하여 최소 200 경험치(EXP)를 얻어야 한다.",
+    "모든 은닉처 위치는 퀘스트 지도에 표시되어 있으니 참고한다."
+  ],
+  "tips": "은닉처 위치가 맵에 표시되어 있으므로, 미리 위치를 숙지하고 이동 경로를 계획하는 것이 좋다. MS2000 마커는 퀘스트 시작 전에 반드시 준비해야 하며, 마커가 부족하면 퀘스트 진행이 불가능하다. 생존 상태로 추출하는 것을 잊지 말자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Blood_of_War_-_Part_3_Map.png/revision/latest/scale-to-width-down/640?cb=20240729131641",
+      "caption": "지도에 표시된 은닉처 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/04/Bow1.png/revision/latest/scale-to-width-down/640?cb=20240729130145",
+      "caption": "체크포인트 근처의 은닉처 #1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3a/Bow3.png/revision/latest/scale-to-width-down/640?cb=20240729125830",
+      "caption": "\"ZB-016\" 추출 지점 근처 쌍둥이 바위의 은닉처 #2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Bow2.png/revision/latest/scale-to-width-down/640?cb=20240729125640",
+      "caption": "\"Mountain Stash\" 스캐브 추출 지점의 은닉처 #3"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "taskId": "625d6fff4149f1149b5b12c9",
+  "nameKo": "Assessment - Part 2",
+  "nameEn": "Assessment - Part 2",
+  "steps": [
+    "MS2000 마커 4개를 준비한다. 이 아이템은 퀘스트 진행에 필수이며, 인벤토리에 있어야 한다. 마커는 레이드 내에서 획득할 수 없으며, 반드시 미리 준비해야 한다.",
+    "삼림(Woods) 맵으로 진입한다.",
+    "북서쪽 안테나 근처 벙커로 이동한다. 이 벙커는 스캐브 벙커 추출 지점이다. 도착하면 MS2000 마커를 벙커에 설치한다. 설치 시 인벤토리에서 마커가 사라진다.",
+    "북쪽 산길 경로에 위치한 벙커로 이동한다. 이곳은 산으로 가는 북쪽 경로에 있다. 도착하면 두 번째 MS2000 마커를 설치한다.",
+    "\"Mountain Stash\" 스캐브 추출 지점 위쪽에 있는 벙커로 이동한다. 이 벙커는 저격수 스캐브 위치 근처에 있다. 세 번째 MS2000 마커를 설치한다.",
+    "남서쪽 벽에 위치한 벙커로 이동한다. 이 벙커는 ZB-014 추출 지점 근처에 있다. 네 번째 MS2000 마커를 설치한다.",
+    "모든 벙커에 MS2000 마커 4개를 설치하면 퀘스트가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/53/AssessmentPart2Map.png/revision/latest/scale-to-width-down/640?cb=20230110001802",
+      "caption": "지도에 표시된 벙커 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/AssessmentPart2Bunker4.png/revision/latest/scale-to-width-down/640?cb=20230110002014",
+      "caption": "1: 북서쪽 안테나 근처 벙커 (스캐브 벙커 추출 지점)"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/AssessmentPart2Bunker3.png/revision/latest/scale-to-width-down/640?cb=20230110002011",
+      "caption": "2: 산으로 가는 북쪽 경로에 위치한 벙커"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/AssessmentPart2Bunker2.png/revision/latest/scale-to-width-down/640?cb=20230110002009",
+      "caption": "3: \"Mountain Stash\" 스캐브 추출 지점 위, 저격수 스캐브 근처 벙커"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b8/AssessmentPart2Bunker1.png/revision/latest/scale-to-width-down/640?cb=20230110002007",
+      "caption": "4: 남서쪽 벽에 위치한 벙커 (ZB-014 추출 지점)"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Assessment_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

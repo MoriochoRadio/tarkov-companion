@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "5c0d0f1886f77457b8210226",
+  "nameKo": "무기 대여 - 파트 2",
+  "nameEn": "Lend-Lease - Part 2",
+  "steps": [
+    "세관(Customs) 지역에서 Virtex 프로그래머블 프로세서(Virtex programmable processor) 2개를 획득한다. 이 아이템은 레이드 중에 발견할 수 있으며, 특정 상자나 적 NPC가 드랍할 수 있다.",
+    "세관 지역 또는 다른 맵에서 Military COFDM 무선 신호 송신기(Military COFDM Wireless Signal Transmitter) 1개를 획득한다. 이 아이템 역시 레이드 획득(FIR) 아이템으로, 상자나 적 NPC를 통해 얻을 수 있다.",
+    "획득한 Virtex 프로그래머블 프로세서 2개와 Military COFDM 무선 신호 송신기 1개를 퀘스트 의뢰자에게 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Lend-Lease_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

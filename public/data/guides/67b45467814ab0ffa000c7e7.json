@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "67b45467814ab0ffa000c7e7",
+  "nameKo": "The Art of Explosion",
+  "nameEn": "The Art of Explosion",
+  "steps": [
+    "수류탄, 언더배럴 수류탄 발사기, 수류탄 발사기 또는 로켓 발사기를 사용하여 적 35명을 처치해야 합니다.",
+    "고정식 AGS-30 수류탄 발사기로 처치한 적은 퀘스트에 포함되지 않습니다.",
+    "40x46mm M576 (MP-APERS) 수류탄은 실제 수류탄이 아닌 산탄 카트리지이므로 이 퀘스트에 적용되지 않습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Art_of_Explosion",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

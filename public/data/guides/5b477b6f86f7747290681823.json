@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "5b477b6f86f7747290681823",
+  "nameKo": "건스미스 - 파트 18",
+  "nameEn": "Gunsmith - Part 18",
+  "steps": [
+    "AKMN 사양을 충족시키기 위해 다음 부품들을 준비한다:",
+    "내구도 60 이상이어야 하며, 반동은 380 이하로 맞춘다.",
+    "인체공학 지수는 40 이상이어야 하며, 무게는 5kg 이하로 제한한다.",
+    "핸드가드는 AK Magpul MOE AKM 핸드가드(블랙)를 사용한다.",
+    "스톡은 AKM/AK-74 Magpul Zhukov-S 스톡을 장착한다.",
+    "권총 그립은 AK Magpul MOE 권총 그립(블랙)을 사용한다.",
+    "탄창은 AK 7.62x39 Magpul PMAG 30 GEN M3 30발 탄창(블랙)을 장착한다.",
+    "포어그립은 Magpul M-LOK AFG 전술 포어그립(블랙)을 사용한다.",
+    "소음기는 Rotor 43 7.62x39 사운드 서프레서로 장착한다.",
+    "조준경은 EOTech HHS-1 하이브리드 사이트(블랙)를 장착한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_18",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

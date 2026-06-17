@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5c0d4c12d09282029f539173",
+  "nameKo": "평화 유지 임무",
+  "nameEn": "Peacekeeping Mission",
+  "steps": [
+    "지정된 UNTAR 방탄복을 착용한다.",
+    "M4A1, M16A1 또는 M16A2 중 하나의 무기를 사용하여 스캐브(Scav)를 처치한다.",
+    "무기는 개조가 가능하며, 필요한 장비 외에 추가 아이템을 지참할 수 있다.",
+    "초기 장비 세트를 잃어버린 경우, 피스키퍼(Peacekeeper) 상인에게서 지정된 모든 장비를 구매할 수 있다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Peacekeeping_Mission",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

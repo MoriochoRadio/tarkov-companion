@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "taskId": "639135c3744e452011470807",
+  "nameKo": "House Arrest - Part 1",
+  "nameEn": "House Arrest - Part 1",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 Chekannaya 15 아파트 건물을 찾는다. 지도에서 아파트 건물 위치를 확인한다.",
+    "아파트 건물 벽면에 있는 입구로 들어간다. 입구 위치는 건물 외벽에 표시되어 있다.",
+    "건물 내부에서 서쪽 계단(western staircase)으로 이동한다. 서쪽 계단 위치는 건물 지도에 표시되어 있으며, 계단으로 가는 길은 세 장의 이미지로 자세히 안내되어 있다.",
+    "서쪽 계단을 따라 3층으로 올라간다. 계단은 건물 내부에 있으며, 이미지에서 확인할 수 있다.",
+    "3층 복도에 도착하면 1번 감옥 칸(cell no. 1)을 찾는다. 복도에서 1번 감옥 칸 위치가 표시되어 있다.",
+    "감옥 칸 입구는 철문으로 잠겨 있으므로 Iron gate key(철문 열쇠)가 반드시 필요하다. 이 열쇠 없이는 감옥 칸에 들어갈 수 없다.",
+    "Iron gate key를 사용해 감옥 칸 1번의 철문을 열고 내부로 들어간다."
+  ],
+  "tips": "Iron gate key는 퀘스트 진행에 필수 아이템이며, 레이드 내에서 획득해야 한다. 아파트 건물 내부는 적들이 있을 수 있으니 주의하며 이동할 것.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Chekannaya15Map.png/revision/latest/scale-to-width-down/640?cb=20230826220245",
+      "caption": "지도에 표시된 아파트 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/Chekannaya15ApartmentBuilding.png/revision/latest/scale-to-width-down/640?cb=20230102195416",
+      "caption": "벽면 입구가 표시된 아파트 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fc/WesternStaircaseMap.png/revision/latest?cb=20240729161305",
+      "caption": "건물 지도에 표시된 서쪽 계단 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/WesternStaircaseWay1.png/revision/latest/scale-to-width-down/640?cb=20230108164530",
+      "caption": "서쪽 계단 가는 길 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/WesternStaircaseWay2.png/revision/latest/scale-to-width-down/640?cb=20230108164528",
+      "caption": "서쪽 계단 가는 길 2"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/WesternStaircaseWay3.png/revision/latest/scale-to-width-down/640?cb=20230108165133",
+      "caption": "서쪽 계단 가는 길 3"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6f/Chekannaya15ApartmentBuildingWesternStairs.png/revision/latest/scale-to-width-down/640?cb=20230108165324",
+      "caption": "서쪽 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/HouseArrestCell1.png/revision/latest/scale-to-width-down/640?cb=20230108230631",
+      "caption": "3층 복도에 표시된 1번 감옥 칸"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b7/HouseArrestCell1Inside.png/revision/latest/scale-to-width-down/640?cb=20230108231132",
+      "caption": "감옥 칸 내부"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/House_Arrest_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

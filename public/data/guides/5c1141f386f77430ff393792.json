@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5c1141f386f77430ff393792",
+  "nameKo": "잘 사는 건 죄가 아니야 - 파트 2",
+  "nameEn": "Living High is Not a Crime - Part 2",
+  "steps": [
+    "세관(Customs)과 기타 맵에서 레이드 중에 다음 아이템들을 찾아야 한다: 앤티크 찻주전자(Antique teapot) 3개, 앤티크 꽃병(Antique vase) 2개, 악셀 앵무새 조각상(Axel parrot figurine) 1개, 레이븐 조각상(Raven figurine) 2개.",
+    "이 아이템들은 모두 레이드 획득(FIR) 가능하며, 트레이더나 플리마켓에서는 구매할 수 없다. 따라서 직접 레이드에서 찾아야 한다.",
+    "각 아이템은 맵 곳곳의 가구 위, 선반, 테이블 등에서 발견할 수 있으니 꼼꼼히 수색한다.",
+    "모든 아이템을 모은 후, 퀘스트를 수주한 NPC에게 제출하면 완료된다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Living_High_is_Not_a_Crime_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

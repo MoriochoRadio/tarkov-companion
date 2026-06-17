@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "6261482fa4eb80027c4f2e11",
+  "nameKo": "Make Amends - Equipment",
+  "nameEn": "Make Amends - Equipment",
+  "steps": [
+    "SVDS 7.62x54R 저격소총 4개를 찾아야 합니다. 이 아이템은 레이드에서 획득(FIR)해야 하며, 기능 상태가 필요합니다.",
+    "SVDS를 찾기 좋은 장소는 다양한 맵에서 가능합니다. 특히, 리저브(Reserve)와 삼림(Woods) 맵에서 자주 발견됩니다.",
+    "리저브 맵에서는 저격소총이 군사 시설이나 스나이퍼 포지션 근처에 있을 가능성이 높습니다.",
+    "삼림 맵에서는 스나이퍼가 자주 사용하는 지역이나 적의 시체에서 SVDS를 찾을 수 있습니다.",
+    "아이템을 찾은 후, 프라퍼(Пrapor)에게 전달해야 합니다."
+  ],
+  "tips": "SVDS는 기능 상태가 필요하므로, 상태가 좋지 않은 경우 수리 후 제출해야 합니다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Make_Amends_-_Equipment",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "625d6ffcaa168e51321d69d7",
+  "nameKo": "Assessment - Part 1",
+  "nameEn": "Assessment - Part 1",
+  "steps": [
+    "레이드 시작 후 등대(Lighthouse) 맵으로 진입한다.",
+    "맵 내 지정된 킬 구역에서 PMC(플레이어 캐릭터) 15명을 처치해야 한다.",
+    "킬 구역은 제공된 지도에 표시되어 있으니, 해당 지역을 중심으로 이동하며 PMC를 찾아 사격한다.",
+    "PMC 처치 수가 15명에 도달하면 퀘스트가 완료된다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/29/AssessmentPart1Map.png/revision/latest/scale-to-width-down/640?cb=20230404155513",
+      "caption": "지도에 표시된 킬 구역"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Assessment_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}

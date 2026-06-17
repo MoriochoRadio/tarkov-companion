@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "639dbaf17c898a131e1cffff",
+  "nameKo": "채무자",
+  "nameEn": "Debtor",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 파인우드 호텔 북쪽 건물로 이동한다.",
+    "호텔 북쪽 건물 2층으로 올라간다.",
+    "2층 206호실로 이동한다. 이 방은 열쇠가 필요하지 않으므로 바로 들어갈 수 있다.",
+    "206호실 안에서 채무자를 찾는다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c1/PineWoodHotelNorthMap.png/revision/latest/scale-to-width-down/640?cb=20230826230436",
+      "caption": "지도에 표시된 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/PineWoodHotelNorthBuilding.png/revision/latest/scale-to-width-down/640?cb=20230101162034",
+      "caption": "북쪽 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8a/HotelRoom206Door.png/revision/latest/scale-to-width-down/640?cb=20221231222919",
+      "caption": "방 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/DeadDebtor.png/revision/latest/scale-to-width-down/640?cb=20230108232906",
+      "caption": "바닥에 누워있는 채무자"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Debtor",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T19:16:54.229+09:00"
+}
