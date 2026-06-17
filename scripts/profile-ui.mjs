@@ -354,6 +354,34 @@ const commitRaf = await page.evaluate(
 const commitW = await page.evaluate(() => document.querySelector('.mapview-layer')?.style.width)
 console.log(`7.44) 세관 줌 정지 commit(재래스터): rAF ${commitRaf}ms · layer ${commitW}`)
 
+// Phase 34: 마커 클릭 자동확대(rAF transform) — 메인스레드 블로킹 없는지.
+// 좌표 있는 마커 확보를 위해 퀘스트 여러 개 체크 (첫 1개만으론 좌표 없을 수 있음)
+await page.evaluate(() =>
+  [...document.querySelectorAll('.planner-pick input')]
+    .slice(0, 10)
+    .forEach((i) => {
+      if (!i.checked) i.click()
+    }),
+)
+await new Promise((r) => setTimeout(r, 300))
+const hasMark = await page.evaluate(() => !!document.querySelector('.mapmark'))
+if (hasMark) {
+  const t34 = Date.now()
+  await page.evaluate(() => document.querySelector('.mapmark')?.click())
+  const focusRaf = await page.evaluate(
+    () =>
+      new Promise((resolve) => {
+        const s = performance.now()
+        requestAnimationFrame(() => resolve(Math.round(performance.now() - s)))
+      }),
+  )
+  const clickMs = Date.now() - t34
+  await new Promise((r) => setTimeout(r, 600)) // 애니(380ms)+commit 정착 대기
+  console.log(`7.44b) 마커 클릭 자동확대: ${clickMs}ms (rAF 응답 ${focusRaf}ms · 이후 애니는 rAF transform)`)
+} else {
+  console.log('7.44b) 마커 없음(좌표 미제공 퀘스트) — 자동확대 측정 skip')
+}
+
 // 큰 SVG(해안선 304K) 고배율 재래스터 비용 — 최악 케이스
 await page.evaluate(() =>
   [...document.querySelectorAll('.planner-map')]

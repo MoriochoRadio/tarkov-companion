@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { fetchMaps } from '../api/maps'
 import { biName, fetchQuests, type Quest, type QuestObjective } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
@@ -9,8 +9,9 @@ import {
   type MapMeta,
 } from '../lib/mapProject'
 import { usePlannerPicks } from '../lib/plannerPicks'
+import { usePlannerDone, usePlannerHidden } from '../lib/plannerView'
 import { usePlayerLevel } from '../lib/playerLevel'
-import { MapViewer, type ViewMarker } from './MapViewer'
+import { MapViewer, type MapViewerHandle, type ViewMarker } from './MapViewer'
 import { TableSkeleton } from './Skeleton'
 
 // 맵 퀘스트 플래너 1단계 (Phase 25) — "한 레이드에 퀘스트 몰아 밀기".
@@ -247,7 +248,10 @@ export function PlannerTab({
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
   const [showMap, setShowMap] = useState(false)
   const { picks, toggle, clear } = usePlannerPicks()
+  const { hidden, toggle: toggleHidden, clearMap: clearHidden } = usePlannerHidden()
+  const { done, toggle: toggleDone } = usePlannerDone()
   const { ids: activeIds } = useIdSet(ACTIVE_QUESTS_KEY)
+  const mapRef = useRef<MapViewerHandle>(null) // 호버 포커스(좌측 리스트→마커 강조)
 
   // 맵 메타(투영·층 정의)는 맵 보기를 처음 켤 때만 로드 (lazy)
   const metaState = useAsyncData(
@@ -368,6 +372,7 @@ export function PlannerTab({
           if (loc.mapId !== mapId) continue
           out.push({
             key: `${o.id}-${i}`,
+            questId: quest.id,
             x: loc.x,
             z: loc.z,
             icon: cat.icon,
@@ -375,12 +380,42 @@ export function PlannerTab({
             questName: quest.displayName,
             desc: o.description || cat.label,
             ...(keys?.length ? { keys } : {}),
+            // 위키 위치 사진 재호스팅 금지 → 정확한 위치는 출처 링크로만 (Phase 34)
+            wikiLink: quest.wikiLink,
+            mapNormalizedName: normalizedName,
           })
         }
       }
     }
     return out
-  }, [selected, mapId, questColor])
+  }, [selected, mapId, questColor, normalizedName])
+
+  // 마커 표시/완료 상태 — 맵별 신규 키(tc:planner-hidden·tc:planner-done). 픽·체크와 분리
+  const hiddenIds = useMemo(
+    () => new Set(mapId ? hidden[mapId] ?? [] : []),
+    [hidden, mapId],
+  )
+  const doneKeys = useMemo(
+    () => new Set(mapId ? done[mapId] ?? [] : []),
+    [done, mapId],
+  )
+
+  // 맵에 그릴 마커 = 숨기지 않은 퀘스트만 (픽·가방은 그대로, 마커만 on/off)
+  const visibleMarkers = useMemo(
+    () => markers.filter((m) => !hiddenIds.has(m.questId)),
+    [markers, hiddenIds],
+  )
+
+  // "표시 중 N / 전체 M" — 마커를 가진 퀘스트 기준
+  const markerQuestIds = useMemo(() => {
+    const s = new Set<string>()
+    for (const m of markers) s.add(m.questId)
+    return s
+  }, [markers])
+  const shownQuestCount = useMemo(
+    () => [...markerQuestIds].filter((id) => !hiddenIds.has(id)).length,
+    [markerQuestIds, hiddenIds],
+  )
 
   // 좌표 미제공 목표 — 조용히 숨기지 않고 명시
   const noCoordObjectives = useMemo(() => {
@@ -466,11 +501,29 @@ export function PlannerTab({
           )}
           {showMap && mapMeta && (
             <>
+              {markerQuestIds.size > 0 && (
+                <div className="planner-marker-bar">
+                  <span className="dim">
+                    마커 표시 중 <b>{shownQuestCount}</b> / 전체 {markerQuestIds.size} 퀘스트
+                  </span>
+                  {shownQuestCount < markerQuestIds.size && (
+                    <button
+                      className="btn-ext planner-show-all"
+                      onClick={() => clearHidden(selectedMap.id)}
+                    >
+                      모두 표시
+                    </button>
+                  )}
+                </div>
+              )}
               <MapViewer
+                ref={mapRef}
                 meta={mapMeta}
                 svgUrl={`${import.meta.env.BASE_URL}maps/${mapMeta.svg}`}
-                markers={markers}
+                markers={visibleMarkers}
+                doneKeys={doneKeys}
                 onItem={onItem}
+                onToggleDone={(key) => toggleDone(selectedMap.id, key)}
               />
               {noCoordObjectives.length > 0 && (
                 <details className="planner-nocoord">
@@ -526,22 +579,51 @@ export function PlannerTab({
             <ul className="planner-quests">
               {mapQuests.slice(0, visible).map(({ quest, objectives }) => {
                 const cats = [...new Set(objectives.map(catOf))]
+                const picked = pickedIds.has(quest.id)
+                const markerHidden = hiddenIds.has(quest.id)
                 return (
-                  <li key={quest.id} className="planner-quest">
+                  <li
+                    key={quest.id}
+                    className="planner-quest"
+                    // 호버/포커스 → 맵에서 이 퀘스트 마커만 또렷 (Phase 34, 리렌더 없음)
+                    onMouseEnter={() => mapRef.current?.focusQuest(quest.id)}
+                    onMouseLeave={() => mapRef.current?.focusQuest(null)}
+                    onFocus={() => mapRef.current?.focusQuest(quest.id)}
+                    onBlur={() => mapRef.current?.focusQuest(null)}
+                  >
                     <label className="planner-pick">
                       <input
                         type="checkbox"
-                        checked={pickedIds.has(quest.id)}
+                        checked={picked}
                         onChange={() => toggle(selectedMap.id, quest.id)}
                       />
                       <span className="planner-quest-main">
                         <span className="planner-quest-name">
-                          {pickedIds.has(quest.id) && questColor.get(quest.id) && (
-                            <span
-                              className="mapmark-dot"
-                              style={{ background: questColor.get(quest.id) }}
-                              title="맵 마커 색"
-                            />
+                          {picked && questColor.get(quest.id) && (
+                            <button
+                              type="button"
+                              className={`mapmark-eye${markerHidden ? ' off' : ''}`}
+                              onClick={(e) => {
+                                // label 안의 버튼 — 체크박스 토글 방지
+                                e.preventDefault()
+                                e.stopPropagation()
+                                toggleHidden(selectedMap.id, quest.id)
+                              }}
+                              title={
+                                markerHidden
+                                  ? '맵에 이 퀘스트 마커 표시'
+                                  : '맵에서 이 퀘스트 마커 숨기기'
+                              }
+                              aria-pressed={!markerHidden}
+                              aria-label={
+                                markerHidden ? '마커 표시' : '마커 숨기기'
+                              }
+                            >
+                              <span
+                                className="mapmark-dot"
+                                style={{ background: questColor.get(quest.id) }}
+                              />
+                            </button>
                           )}
                           {quest.displayName}
                           {quest.kappaRequired && (

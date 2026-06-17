@@ -1,4 +1,12 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react'
 import { makeProjector, type MapMeta } from '../lib/mapProject'
 
 // 맵 뷰어 (Phase 26) — SVG 지도 + 퀘스트 목표 마커 오버레이.
@@ -18,6 +26,7 @@ export interface MarkerKey {
 
 export interface ViewMarker {
   key: string
+  questId: string // 포커스 모드(같은 퀘스트 강조)·표시 토글 식별용 (Phase 34)
   x: number
   z: number
   icon: string // 6분류 이모지 (플래너와 공유)
@@ -26,10 +35,21 @@ export interface ViewMarker {
   desc: string
   // 잠긴 목표의 필요 열쇠 — [[Key]] 그룹 배열(그룹 간 AND, 그룹 내 OR). 없으면 숨김
   keys?: MarkerKey[][]
+  // 출처 링크 (Phase 34) — 위키 위치 사진 재호스팅 대신 정확한 위치는 링크로만 안내.
+  // PlannerTab이 실어 보냄 (MapViewer는 quests API를 모름)
+  wikiLink?: string | null
+  mapNormalizedName?: string | null
+}
+
+// 좌측 리스트 호버 → 그 퀘스트 마커만 또렷(포커스 모드, Phase 34)을 명령형으로 제어.
+// state를 안 쓰는 이유: 호버마다 리렌더하면 마커 20+개를 다시 그려 성능 규칙(1초)에 위험.
+export interface MapViewerHandle {
+  focusQuest: (questId: string | null) => void
 }
 
 const ZOOM_MIN_FACTOR = 0.5 // 초기 핏 대비
 const ZOOM_MAX = 14
+const FOCUS_FACTOR = 7 // 마커 클릭 시 자동 확대 배율(핏 대비, 6~8 범위)
 
 // SVG 텍스트 세션 캐시 — 토글을 껐다 켜도 재요청 없음
 const svgCache = new Map<string, Promise<string>>()
@@ -47,17 +67,21 @@ function fetchSvg(url: string): Promise<string> {
   return p
 }
 
-export function MapViewer({
-  meta,
-  svgUrl,
-  markers,
-  onItem,
-}: {
-  meta: MapMeta
-  svgUrl: string
-  markers: ViewMarker[]
-  onItem?: (name: string) => void // 열쇠 클릭 → 아이템 검색으로 이동
-}) {
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' &&
+  window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+
+export const MapViewer = forwardRef<
+  MapViewerHandle,
+  {
+    meta: MapMeta
+    svgUrl: string
+    markers: ViewMarker[]
+    doneKeys?: ReadonlySet<string> // 완료/방문 표시된 목표-위치 키 (Phase 34)
+    onItem?: (name: string) => void // 열쇠 클릭 → 아이템 검색으로 이동
+    onToggleDone?: (key: string) => void // 팝오버 "완료" 토글
+  }
+>(function MapViewer({ meta, svgUrl, markers, doneKeys, onItem, onToggleDone }, ref) {
   const wrapRef = useRef<HTMLDivElement>(null)
   const layerRef = useRef<HTMLDivElement>(null)
   const svgHostRef = useRef<HTMLDivElement>(null)
@@ -71,6 +95,8 @@ export function MapViewer({
     left: number
     top: number
   } | null>(null)
+  // 강조 링을 띄울 마커 키 (Phase 34) — 클릭 자동확대 시 "여기"를 표시
+  const [focusKey, setFocusKey] = useState<string | null>(null)
 
   const proj = useMemo(() => makeProjector(meta), [meta])
 
@@ -90,6 +116,7 @@ export function MapViewer({
   const [baseScale, setBaseScale] = useState(1)
   const baseRef = useRef(1)
   const commitTimer = useRef<number | null>(null)
+  const animRef = useRef<number | null>(null)
 
   // --- 팬·줌 상태: ref + 직접 스타일 갱신 (리렌더 금지) ---
   const view = useRef({ x: 0, y: 0, s: 1, fit: 1 })
@@ -116,9 +143,17 @@ export function MapViewer({
     commitTimer.current = window.setTimeout(commit, 150)
   }
 
+  const cancelAnim = () => {
+    if (animRef.current != null) {
+      cancelAnimationFrame(animRef.current)
+      animRef.current = null
+    }
+  }
+
   const clampZoom = (s: number) =>
     Math.min(ZOOM_MAX, Math.max(view.current.fit * ZOOM_MIN_FACTOR, s))
   const zoomAt = (cx: number, cy: number, factor: number) => {
+    cancelAnim()
     const v = view.current
     const ns = clampZoom(v.s * factor)
     const k = ns / v.s
@@ -129,9 +164,61 @@ export function MapViewer({
     apply()
     scheduleCommit()
   }
+
+  // 한 점을 화면 중앙으로 부드럽게 이동·확대 (Phase 34). transform/--inv만 rAF로 갱신해
+  // 레이아웃 패스 없음 → 저사양에서도 가벼움. 멈춘 뒤 commit()으로 그 배율 재래스터(또렷).
+  const animateTo = (tx: number, ty: number, ts: number) => {
+    cancelAnim()
+    const v = view.current
+    if (prefersReducedMotion()) {
+      v.x = tx
+      v.y = ty
+      v.s = ts
+      apply()
+      commit()
+      return
+    }
+    const sx = v.x
+    const sy = v.y
+    const ss = v.s
+    const start = performance.now()
+    const dur = 380
+    const ease = (t: number) => 1 - Math.pow(1 - t, 3) // ease-out cubic
+    const step = (now: number) => {
+      const t = Math.min(1, (now - start) / dur)
+      const e = ease(t)
+      v.x = sx + (tx - sx) * e
+      v.y = sy + (ty - sy) * e
+      v.s = ss + (ts - ss) * e
+      apply()
+      if (t < 1) {
+        animRef.current = requestAnimationFrame(step)
+      } else {
+        animRef.current = null
+        commit() // 정지 후 재래스터 (Phase 32 흐름)
+      }
+    }
+    animRef.current = requestAnimationFrame(step)
+  }
+
+  // 마커 좌표를 화면 중앙으로 자동 확대 + 강조 링 (Phase 34)
+  const focusMarker = (m: ViewMarker) => {
+    const wrap = wrapRef.current
+    if (!wrap) return
+    const { px, py } = proj.project(m.x, m.z)
+    const ns = clampZoom(view.current.fit * FOCUS_FACTOR)
+    // 화면좌표 = view.x + (proj - min) * s (baseScale 무관) → 중앙(cw/2,ch/2) 정렬
+    const tx = wrap.clientWidth / 2 - (px - proj.rect.minX) * ns
+    const ty = wrap.clientHeight / 2 - (py - proj.rect.minY) * ns
+    setFocusKey(m.key)
+    animateTo(tx, ty, ns)
+  }
+
   const fitView = () => {
     const wrap = wrapRef.current
     if (!wrap) return
+    cancelAnim()
+    setFocusKey(null)
     const cw = wrap.clientWidth
     const ch = wrap.clientHeight
     const s = Math.min(cw / proj.rect.w, ch / proj.rect.h) * 0.96
@@ -147,6 +234,18 @@ export function MapViewer({
     apply()
   }
 
+  // 좌측 리스트 호버 → 그 퀘스트 마커만 또렷(나머지 흐리게). 리렌더 없이 DOM 클래스만 토글.
+  useImperativeHandle(ref, () => ({
+    focusQuest: (questId: string | null) => {
+      const layer = layerRef.current
+      if (!layer) return
+      for (const n of layer.querySelectorAll<HTMLElement>('.mapmark')) {
+        if (questId == null) n.classList.remove('dimmed')
+        else n.classList.toggle('dimmed', n.dataset.quest !== questId)
+      }
+    },
+  }), [])
+
   // baseScale 변경(commit) → baseRef 동기 + transform 재적용. 레이어 크기·마커는 이미
   // 새 baseScale로 렌더됐고, 같은 페인트 전에 transform을 맞춰 재래스터 전후 튐 없음
   useLayoutEffect(() => {
@@ -155,9 +254,10 @@ export function MapViewer({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [baseScale])
 
-  // 언마운트 시 디바운스 타이머 정리
+  // 언마운트 시 디바운스 타이머·애니메이션 정리
   useEffect(() => () => {
     if (commitTimer.current != null) clearTimeout(commitTimer.current)
+    if (animRef.current != null) cancelAnimationFrame(animRef.current)
   }, [])
 
   // SVG 로드 + 주입 — 맵 보기를 켰을 때만 (lazy)
@@ -222,6 +322,7 @@ export function MapViewer({
       if ((e.target as Element).closest?.('.mapmark, .mapmark-pop, .mapview-fit')) {
         return
       }
+      cancelAnim() // 자동확대 중 손대면 즉시 멈춤
       wrap.setPointerCapture(e.pointerId)
       pointers.set(e.pointerId, rel(e))
       moved = false
@@ -303,9 +404,17 @@ export function MapViewer({
     e.stopPropagation()
     const wrap = wrapRef.current
     if (!wrap) return
-    const r = wrap.getBoundingClientRect()
-    setPop({ m, left: e.clientX - r.left, top: e.clientY - r.top })
+    // 자동확대로 마커는 화면 중앙에 온다 → 팝오버는 상단에 띄워 중앙의 마커·강조 링이
+    // 가려지지 않게(정확한 위치 확인이 ①의 목적). 232px 너비를 가로 중앙에 맞춤.
+    setPop({ m, left: Math.max(8, wrap.clientWidth / 2 - 116), top: 20 })
+    focusMarker(m)
   }
+
+  // 강조 링 좌표 — 포커스된 마커가 현재 표시 목록에 있을 때만
+  const focused = focusKey ? markers.find((m) => m.key === focusKey) : null
+  const focusedPt = focused ? proj.project(focused.x, focused.z) : null
+
+  const popDone = pop ? doneKeys?.has(pop.m.key) ?? false : false
 
   return (
     <div className="mapview-shell">
@@ -332,22 +441,39 @@ export function MapViewer({
           {svgState === 'ready' &&
             markers.map((m) => {
               const { px, py } = proj.project(m.x, m.z)
+              const done = doneKeys?.has(m.key)
               return (
                 <button
                   key={m.key}
-                  className="mapmark"
+                  className={`mapmark${done ? ' done' : ''}`}
+                  data-quest={m.questId}
                   style={{
                     left: (px - proj.rect.minX) * baseScale,
                     top: (py - proj.rect.minY) * baseScale,
                     borderColor: m.color,
                   }}
                   onClick={(e) => onMarkerClick(m, e)}
-                  aria-label={`${m.questName}: ${m.desc}`}
+                  aria-label={`${m.questName}: ${m.desc}${done ? ' (완료 표시됨)' : ''}`}
                 >
                   <span aria-hidden>{m.icon}</span>
+                  {done && (
+                    <span className="mapmark-check" aria-hidden>
+                      ✓
+                    </span>
+                  )}
                 </button>
               )
             })}
+          {svgState === 'ready' && focusedPt && (
+            <div
+              className="mapmark-focus"
+              style={{
+                left: (focusedPt.px - proj.rect.minX) * baseScale,
+                top: (focusedPt.py - proj.rect.minY) * baseScale,
+              }}
+              aria-hidden
+            />
+          )}
         </div>
         {svgState === 'loading' && <p className="mapview-note dim">지도 불러오는 중…</p>}
         {svgState === 'error' && (
@@ -398,6 +524,39 @@ export function MapViewer({
                 </span>
               </div>
             )}
+            {(pop.m.wikiLink || pop.m.mapNormalizedName) && (
+              <div className="mapmark-pop-src">
+                {pop.m.wikiLink && (
+                  <a
+                    className="source-link"
+                    href={pop.m.wikiLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    위키에서 정확한 위치 ↗
+                  </a>
+                )}
+                {pop.m.mapNormalizedName && (
+                  <a
+                    className="source-link"
+                    href={`https://tarkov.dev/map/${pop.m.mapNormalizedName}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    tarkov.dev 맵 ↗
+                  </a>
+                )}
+              </div>
+            )}
+            <p className="mapmark-pop-approx">근사 위치 — 정확한 지점은 출처 링크 참고</p>
+            {onToggleDone && (
+              <button
+                className={`mapmark-pop-done${popDone ? ' on' : ''}`}
+                onClick={() => onToggleDone(pop.m.key)}
+              >
+                {popDone ? '✓ 완료 표시됨 — 해제' : '여기 완료·방문함'}
+              </button>
+            )}
             <button className="mapmark-pop-close" onClick={() => setPop(null)} aria-label="닫기">
               ×
             </button>
@@ -417,8 +576,8 @@ export function MapViewer({
         >
           The Hideout 커뮤니티 (CC BY-NC-SA 4.0) ↗
         </a>{' '}
-        · 드래그 이동 · 휠/핀치 줌 · 더블클릭(탭) 확대 · 마커를 누르면 퀘스트 정보
+        · 드래그 이동 · 휠/핀치 줌 · 마커를 누르면 그 위치로 확대 + 퀘스트 정보
       </p>
     </div>
   )
-}
+})
