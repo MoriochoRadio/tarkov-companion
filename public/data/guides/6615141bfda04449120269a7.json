@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "6615141bfda04449120269a7",
+  "nameKo": "Drip-Out - Part 2",
+  "nameEn": "Drip-Out - Part 2",
+  "steps": [
+    "레이드에서 로그(Rogue) 적 NPC 100명을 처치해야 합니다. 로그는 특정 맵에서 등장하며, 주로 레저브(Reserve) 맵에서 많이 출현합니다. 로그 사냥 시 주의 깊게 움직이며 안전을 확보하세요.",
+    "LBT 브랜드 장비 50개를 레이드에서 획득해야 합니다. LBT 브랜드 장비는 다음 아이템들로 구성되어 있습니다: LBT-6094A Slick Plate Carrier (Black, Olive Drab, Coyote Tan), LBT-1961A Load Bearing Chest Rig (MAS Grey, Goons Edition), LBT-1476A 3Day Pack (Woodland), LBT-2670 Slim Field Med Pack (Black), LBT-8005A Day Pack backpack (MultiCam Black).",
+    "획득한 LBT 브랜드 장비는 반드시 레이드 획득(FIR) 상태여야 하며, 트레이더 구매나 플리마켓 구매 아이템은 인정되지 않습니다.",
+    "로그 100명 처치와 LBT 브랜드 장비 50개 획득이 완료되면, 퀘스트를 수락한 NPC에게 장비를 제출하여 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Drip-Out_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

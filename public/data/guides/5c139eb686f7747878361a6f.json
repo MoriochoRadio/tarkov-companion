@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "5c139eb686f7747878361a6f",
+  "nameKo": "수입",
+  "nameEn": "Import",
+  "steps": [
+    "수입(Import) 퀘스트는 특정 아이템 두 개를 수집하여 제출하는 임무입니다.",
+    "첫 번째 아이템은 UHF RFID Reader로, 레이드 내에서만 획득할 수 있습니다.",
+    "두 번째 아이템은 VPX Flash Storage Module로, 이 아이템 역시 레이드 획득(FIR)만 가능합니다.",
+    "두 아이템 모두 트레이더 판매나 플리마켓 구매가 불가능하므로, 직접 레이드에 참여해 찾아야 합니다.",
+    "레이드 내에서 UHF RFID Reader와 VPX Flash Storage Module을 찾아 인벤토리에 확보하세요.",
+    "획득한 두 아이템을 퀘스트 담당자에게 제출하면 수입(Import) 퀘스트가 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Import",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

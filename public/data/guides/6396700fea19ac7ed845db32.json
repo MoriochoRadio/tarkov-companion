@@ -1,0 +1,72 @@
+{
+  "version": 2,
+  "taskId": "6396700fea19ac7ed845db32",
+  "nameKo": "Spotter",
+  "nameEn": "Spotter",
+  "steps": [
+    "세관(Street of Tarkov) Concordia 건물 3층 8호 아파트 주방의 빨간 테이블 위치를 찾는다. 건물 외부 1번 집 계단을 통해 3층으로 올라가 복도를 지나 8호 아파트 문까지 이동한다.",
+    "8호 아파트 문을 열고 내부 주방으로 들어가 빨간 테이블을 찾는다. 이곳이 Concordia 저격 위치이다.",
+    "빨간 테이블에 AI .338 LM Tactical Sound Moderator(사운드 모더레이터)를 설치한다.",
+    "빨간 테이블에 Trijicon REAP-IR 열화상 스코프를 설치한다.",
+    "Primorsky 48 아파트 4층 10호 아파트의 침실 침대 위치를 찾는다. 이 아파트는 Primorsky 46 아파트와 연결된 스카이브릿지를 통해서만 접근 가능하다.",
+    "Primorsky 46-48 스카이브릿지 열쇠를 사용하여 Primorsky 46 아파트 계단에서 스카이브릿지 입구 문을 연다.",
+    "스카이브릿지를 건너 Primorsky 48 아파트 10호 입구 문으로 이동한다. 이 문은 내부에서 부수고 나올 수 있다.",
+    "10호 아파트 문을 열고 내부 침실로 들어간다.",
+    "침실 내 침대를 찾아 AI .338 LM Tactical Sound Moderator를 설치한다.",
+    "침대에 Trijicon REAP-IR 열화상 스코프를 설치한다."
+  ],
+  "tips": "Primorsky 46-48 스카이브릿지 열쇠는 필수 아이템이며, 스카이브릿지를 통해서만 48 아파트 10호에 접근할 수 있으므로 반드시 준비해야 한다. 8호 아파트는 1번 집 계단을 이용해 쉽게 접근 가능하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5a/Apartment8KitchenMap.png/revision/latest/scale-to-width-down/640?cb=20230827001045",
+      "caption": "지도에 표시된 8호 아파트 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b9/ConcordiaBuilding.png/revision/latest/scale-to-width-down/640?cb=20250810210903",
+      "caption": "Concordia 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4c/SpotterApartment8Outside.png/revision/latest/scale-to-width-down/640?cb=20230123015554",
+      "caption": "외부에서 1번 집 계단을 통해 8호 아파트로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/HouseNr1Staircase.png/revision/latest/scale-to-width-down/640?cb=20230101185354",
+      "caption": "8호 아파트로 올라가는 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9d/HouseNr1Hallway.png/revision/latest/scale-to-width-down/640?cb=20230101185514",
+      "caption": "8호 아파트로 가는 복도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/59/Apartment8Door.png/revision/latest/scale-to-width-down/640?cb=20230101170610",
+      "caption": "8호 아파트 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/ConcordiaSnipingSpot.png/revision/latest/scale-to-width-down/640?cb=20230123012214",
+      "caption": "주방 내 빨간 테이블"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a2/SpotterTable.png/revision/latest/scale-to-width-down/640?cb=20260404234232",
+      "caption": "테이블"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/Apartment10Map.png/revision/latest/scale-to-width-down/640?cb=20230825214825",
+      "caption": "지도에 표시된 10호 아파트 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Apartment10Outside.png/revision/latest/scale-to-width-down/640?cb=20230108161221",
+      "caption": "외부에서 본 10호 아파트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/UnderpassKeyMap.png/revision/latest/scale-to-width-down/640?cb=20230825214519",
+      "caption": "지도에 표시된 스카이브릿지 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/UnderpassKeyUnderpass.png/revision/latest/scale-to-width-down/640?cb=20230108161937",
+      "caption": "지상에서 본 스카이브릿지"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Spotter",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

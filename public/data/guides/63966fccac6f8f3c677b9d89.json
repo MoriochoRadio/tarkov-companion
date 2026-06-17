@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "taskId": "63966fccac6f8f3c677b9d89",
+  "nameKo": "Snatch",
+  "nameEn": "Snatch",
+  "steps": [
+    "라이트하우스(Lighthouse)에서 퀘스트를 수락하면 다음 레이드에서 위조된 정보(Forged Lightkeeper intelligence)가 등장합니다. 이 아이템은 서쪽 입구 근처의 물 처리장(water treatment plant) 주변에 있는 초록색 또는 파란색 컨테이너 안에서 찾을 수 있습니다.",
+    "초록색 컨테이너는 무기 상자와 드럼통 사이에 위치해 있으며, 내부에서 위조된 정보를 획득할 수 있습니다. 파란색 컨테이너 내부에는 소파 위에 위조된 정보가 있습니다.",
+    "위조된 정보를 획득하면 반드시 레이드에서 탈출해야 하며, 탈출하지 못하면 아이템을 잃게 됩니다. 획득한 위조된 정보는 퀘스트 아이템 인벤토리에 자동으로 들어갑니다.",
+    "다음으로 리저브(Reserve) 맵으로 이동합니다. 리저브의 수리 센터(Repair Center, White Knight) 내 두 개의 차고 건물 중 더 큰 건물 안에 잠긴 방이 있습니다. 이 방은 RB-ST 키가 있어야 열 수 있습니다.",
+    "RB-ST 키는 별도로 준비해야 하며, 이 키를 사용해 차고 내 잠긴 방 문을 엽니다.",
+    "잠긴 방 안에는 BMP-2 장갑차가 있습니다. 이 BMP-2 장갑차의 오른쪽 궤도 부분에 원본 정보(Lightkeeper intelligence)가 숨겨져 있습니다. 이 아이템도 퀘스트 활성화 상태에서만 등장하며, 획득 후 반드시 탈출해야 합니다.",
+    "위조된 정보를 BMP-2 장갑차 뒤쪽에 배치해야 합니다. 즉, 라이트하우스에서 획득한 위조된 정보를 리저브의 BMP-2 뒤에 놓고, 원본 정보를 획득해 가져옵니다.",
+    "획득한 원본 정보는 Lightkeeper(등대지기)에게 전달해야 합니다. 퀘스트 완료를 위해서는 원본 정보를 안전하게 전달하는 것이 필수입니다."
+  ],
+  "tips": "위조된 정보와 원본 정보 모두 퀘스트 활성화 상태에서만 등장하며, 획득 후 반드시 레이드에서 탈출해야 아이템을 잃지 않습니다. 리저브의 RB-ST 키는 미리 준비해 두어야 하며, BMP-2 장갑차가 있는 차고 건물 위치를 정확히 파악하는 것이 중요합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/SnatchContainerMap.png/revision/latest/scale-to-width-down/640?cb=20230124123943",
+      "caption": "지도에 표시된 컨테이너 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/09/SnatchContainer.png/revision/latest/scale-to-width-down/640?cb=20230116214450",
+      "caption": "초록색 컨테이너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ee/SnatchContainerInside.png/revision/latest/scale-to-width-down/640?cb=20230310220454",
+      "caption": "초록색 컨테이너 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/88/SnatchForgedIntel.png/revision/latest/scale-to-width-down/640?cb=20230310220255",
+      "caption": "무기 상자와 드럼통 사이에 있는 위조된 정보"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6e/SnatchContainerBlue.png/revision/latest/scale-to-width-down/640?cb=20230124123005",
+      "caption": "파란색 컨테이너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a9/SnatchContainerBlueInside.png/revision/latest/scale-to-width-down/640?cb=20230310220327",
+      "caption": "파란색 컨테이너 내부, 소파 위의 위조된 정보"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e8/SurplusGoodsGarageMap.jpg/revision/latest/scale-to-width-down/640?cb=20230605002547",
+      "caption": "지도에 표시된 차고 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/60/SurplusGoodsGarage.png/revision/latest/scale-to-width-down/640?cb=20260424184251",
+      "caption": "목표 차고 건물"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/RB-ST_door_inside.png/revision/latest/scale-to-width-down/640?cb=20250716002241",
+      "caption": "잠긴 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/83/SnatchBMP2.png/revision/latest/scale-to-width-down/640?cb=20230116224705",
+      "caption": "BMP-2 장갑차"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/36/SnatchOriginalIntel.png/revision/latest/scale-to-width-down/640?cb=20230310221449",
+      "caption": "오른쪽 궤도에 숨겨진 원본 정보"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Snatch",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

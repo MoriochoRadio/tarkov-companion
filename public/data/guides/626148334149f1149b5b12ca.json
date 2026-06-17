@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "taskId": "626148334149f1149b5b12ca",
+  "nameKo": "Make Amends - Security",
+  "nameEn": "Make Amends - Security",
+  "steps": [
+    "메카닉(Mechanic) 레벨 1에서 WI-FI 카메라 4개를 구매한다.",
+    "등대(Lighthouse) 맵의 정수장(Water Treatment Plant) 주변에 위치한 4대의 차량을 찾는다. 차량 위치는 지도에 표시되어 있다.",
+    "첫 번째 차량인 버스(Bus)에 WI-FI 카메라를 설치한다.",
+    "두 번째 차량인 불도저(Bulldozer)에 WI-FI 카메라를 설치한다.",
+    "세 번째 차량인 경찰 트럭(Police Truck)에 WI-FI 카메라를 설치한다.",
+    "네 번째 차량인 군용 트럭(Army Truck)에 WI-FI 카메라를 설치한다."
+  ],
+  "tips": "WI-FI 카메라는 메카닉 레벨 1부터 구매할 수 있으니 미리 레벨을 올려두는 것이 좋다. 차량 위치는 등대 맵 내 정수장 주변에 집중되어 있어 이동 동선을 최소화할 수 있다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6a/MakeAmendsSecurityMap.png/revision/latest/scale-to-width-down/640?cb=20230120214856",
+      "caption": "지도에 표시된 차량들"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c7/MakeAmendsBus.png/revision/latest/scale-to-width-down/640?cb=20230120214852",
+      "caption": "버스"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/MakeAmendsBulldozer.png/revision/latest/scale-to-width-down/640?cb=20230120214850",
+      "caption": "불도저"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c6/MakeAmendsPoliceTruck.png/revision/latest/scale-to-width-down/640?cb=20230120214854",
+      "caption": "경찰 트럭"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/07/MakeAmendsArmyTruck.png/revision/latest/scale-to-width-down/640?cb=20230120214848",
+      "caption": "군용 트럭"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Make_Amends_-_Security",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

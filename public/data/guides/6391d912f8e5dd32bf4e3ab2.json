@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "taskId": "6391d912f8e5dd32bf4e3ab2",
+  "nameKo": "Make Amends",
+  "nameEn": "Make Amends",
+  "steps": [
+    "Zryachiy를 죽이면 퀘스트가 실패하며 진행할 수 없게 됩니다. 주의하세요.",
+    "퀘스트 아이템인 Secure Flash drive V3(보안 플래시 드라이브 V3)를 획득해야 합니다. 이 아이템은 퀘스트가 활성화된 상태에서만 레이드 내에서 획득할 수 있으며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동합니다. 추출하지 못하면 아이템을 잃게 됩니다.",
+    "Secure Flash drive V3는 Lighthouse(등대) 맵 내 Water treatment plant(정수장) 지역 여러 곳에서 스폰됩니다. 아래 위치들을 참고해 획득하세요.",
+    "남서쪽 컨테이너: 남쪽 타워 서쪽에 위치한 파란색 컨테이너 안 책상 위 라디오 시스템 위에 있습니다.",
+    "남쪽 타워: '3PY' 표시가 있는 남쪽 타워 위 무기 상자 옆 나무 상자 위에 있습니다.",
+    "남동쪽 물 저장소 텐트: 남동쪽 물 저장소에 위치한 군용 텐트 내부 노트북이 있는 탁자 위에 있습니다.",
+    "남동쪽 전기 작업 오두막: 남동쪽 전기 작업 오두막 내부 금속 선반 위에 있습니다.",
+    "건물 #3: Rogue USEC 병영 방 안 책상 위(이 방은 Rogue USEC barrack key로 잠금 해제 가능), 외부 계단과 서쪽 사무실을 연결하는 창고 금속 선반 위, 동쪽 인원 구역 북쪽 사무실 롤링 테이블 위에 각각 스폰됩니다.",
+    "북동쪽 전기 작업 오두막: 덮개가 씌워진 북동쪽 전기 작업 오두막 내부 금속 선반 위에 있습니다.",
+    "북동쪽 탁자: 북동쪽 빨간 컨테이너 옆 탁자 위에 있습니다.",
+    "건물 #2: 정수장 저장고 방 내부 금속 선반 하단 칸, 남동쪽 2층 사무실 금속 선반 중간 칸, 서쪽 사무실 책상 위에 각각 있습니다.",
+    "북쪽 차량 텐트: BRDM과 픽업트럭이 있는 북쪽 차량 텐트 내 탁자와 통 위에 각각 있습니다.",
+    "북쪽 텐트: 북쪽 텐트 내 초록색 나무 상자 옆 탁자 위에 있습니다.",
+    "북쪽 작은 감시탑: 북쪽 작은 감시탑 내부 의자 위에 있습니다.",
+    "건물 #1: 북동쪽 2층 사무실 내 선반과 책상 위, 서쪽 인원 구역 복도 금속 선반 위에 각각 있습니다.",
+    "서쪽 전기 작업 오두막: 서쪽 전기 작업 오두막 내부 금속 선반 위에 있습니다.",
+    "Secure Flash drive V3를 획득한 후, Hideout(은신처) 내 Intelligence Center(정보 센터) 2층으로 이동해 송신기를 리플래시해야 합니다. 이 과정에서 은신처에 전기가 공급되어야 하며, 전기가 끊기면 리플래시가 중단됩니다.",
+    "리플래시가 완료되면 송신기가 완전히 작동하게 되고, 이를 통해 Claymores(클레이모어 지뢰)와 Zryachiy가 지키는 등대 반도 입구 다리를 우회할 수 있습니다. 이로써 등대 건물에 방문해 Lightkeeper(등대지기)를 만날 수 있습니다.",
+    "참고: 로비 내 모든 파티원이 인코딩된 송신기를 가지고 있지 않으면 송신기가 'blocked'(차단) 상태가 되어 다리를 건널 수 없습니다."
+  ],
+  "tips": "퀘스트 아이템인 Secure Flash drive V3는 여러 위치에 분산되어 있으므로, 팀원들과 역할을 분담해 효율적으로 수집하세요. 은신처에서 전기 공급 상태를 항상 확인해 리플래시가 중단되지 않도록 주의하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a7/Getting_Acquainted_Quest_Item_Spawn_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260108214637",
+      "caption": "전체 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9b/GATentedMap.png/revision/latest/scale-to-width-down/640?cb=20240923150134",
+      "caption": "지도에 표시된 컨테이너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5d/GATented.png/revision/latest/scale-to-width-down/640?cb=20230312213544",
+      "caption": "컨테이너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/14/V3WTPTent.png/revision/latest/scale-to-width-down/640?cb=20230312213241",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f1/KTTTower.png/revision/latest/scale-to-width-down/640?cb=20230115032126",
+      "caption": "지도에 표시된 타워"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/BodySpawnWTPTower2.png/revision/latest/scale-to-width-down/640?cb=20230312193612",
+      "caption": "타워"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f3/GASouthernTower.png/revision/latest/scale-to-width-down/640?cb=20230312212605",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b3/KTTSouthEasternWaterBasinTentMap.png/revision/latest/scale-to-width-down/640?cb=20230312192407",
+      "caption": "지도에 표시된 텐트"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/GASouthEasternWaterBasinTent.png/revision/latest/scale-to-width-down/640?cb=20251020202938",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7d/GASouthEasternShackMap.png/revision/latest/scale-to-width-down/640?cb=20230312211654",
+      "caption": "지도에 표시된 오두막"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/16/GASouthEasternShack1.png/revision/latest/scale-to-width-down/640?cb=20230312211656",
+      "caption": "오두막"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6a/GASouthEasternShack2.png/revision/latest/scale-to-width-down/640?cb=20230312211658",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Make_Amends",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

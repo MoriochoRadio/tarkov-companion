@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "taskId": "626bd75d5bef5d7d590bd415",
+  "nameKo": "일급 비밀",
+  "nameEn": "Top Secret",
+  "steps": [
+    "레이더 스테이션 사령관실 열쇠(Radar station commandant room key)를 준비한다. 이 열쇠는 라이트하우스(Lighthouse) 맵의 레이더 스테이션 사령관실 출입에 필수이다.",
+    "라이트하우스 맵의 등대 반도 지역에 위치한 레이더 스테이션으로 이동한다. 맵에서 레이더 스테이션 위치를 미리 확인해 두는 것이 좋다.",
+    "레이더 스테이션 건물 1층으로 들어간다. 사령관실은 1층에 있으며, 빨간색 표지판이 있어 쉽게 식별할 수 있다.",
+    "사령관실 문을 레이더 스테이션 사령관실 열쇠로 열고 내부로 진입한다.",
+    "사령관실 내부 뒤쪽에 있는 책상 위를 확인한다. 여기에서 '작동 중인 하드 드라이브(Working hard drive)'를 찾을 수 있다.",
+    "하드 드라이브를 획득하면, 이 아이템은 퀘스트 아이템 인벤토리로 자동 이동한다. 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 후 반드시 추출해야 한다. 만약 하드 드라이브를 설치하지 않고 추출에 실패하면 아이템을 잃게 된다."
+  ],
+  "tips": "레이더 스테이션 사령관실 열쇠는 반드시 미리 준비해야 하며, 하드 드라이브는 퀘스트 활성 상태에서만 획득 가능하므로 퀘스트 시작 후 방문해야 한다. 하드 드라이브를 획득한 후에는 안전하게 추출하는 것을 최우선으로 하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/30/RadarStationMap.png/revision/latest/scale-to-width-down/640?cb=20250504000733",
+      "caption": "지도에 표시된 레이더 스테이션"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1b/RadarStation.png/revision/latest/scale-to-width-down/640?cb=20220702203823",
+      "caption": "레이더 스테이션 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cb/CommandersOffice.png/revision/latest/scale-to-width-down/640?cb=20260325235930",
+      "caption": "사령관실로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c3/CommandersOfficeClose.png/revision/latest/scale-to-width-down/640?cb=20260325235847",
+      "caption": "목표 사령관실 내부"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Top_Secret_Table.jpg/revision/latest/scale-to-width-down/640?cb=20260326000248",
+      "caption": "하드 드라이브가 놓인 책상"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4a/Top_Secret_HDD.jpg/revision/latest/scale-to-width-down/640?cb=20260326000342",
+      "caption": "획득 대상인 하드 드라이브"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Top_Secret",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

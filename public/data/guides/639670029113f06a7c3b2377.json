@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "taskId": "639670029113f06a7c3b2377",
+  "nameKo": "Following the Bread Crumbs",
+  "nameEn": "Following the Bread Crumbs",
+  "steps": [
+    "The Lab(연구소) 또는 Reserve(리저브)에서 Scav Raiders(스캐브 레이더) 20명을 처치한다.",
+    "The Lab(연구소) 1층에 위치한 무기 시험장(weapon testing area)으로 이동한다. 이 구역에 들어가기 위해서는 TerraGroup Labs weapon testing area key(테라그룹 연구소 무기 시험장 열쇠)가 필요하다.",
+    "무기 시험장 내부의 유리로 된 방(glassed room) 안으로 들어가야 한다. 이 방에 들어가야 임무가 진행된다.",
+    "The Lab 1층에 있는 인간 실험실(human experiment room)으로 이동한다. 이곳에 들어가기 위해서는 TerraGroup Labs keycard (Black)(테라그룹 연구소 키카드(블랙))가 필요하다.",
+    "The Lab 2층에 위치한 회의실(conference room)로 이동한다. 회의실 입구는 건물 내 계단을 통해 2층으로 올라가면 된다.",
+    "회의실 내에서 Secured tape(보안 테이프)를 찾아야 한다. 이 테이프는 총 8곳의 스폰 위치 중 한 곳에 랜덤으로 등장한다.",
+    "회의실 내 첫 번째와 두 번째 스폰 위치는 접수 데스크(reception desk) 위에 있으며, 빨간색 또는 파란색 폴더 안에 숨겨져 있다.",
+    "회의실 내 세 번째 스폰 위치는 타원형 테이블(oval table) 위, 파란색 폴더 옆에 있다.",
+    "회의실 내 네 번째 스폰 위치는 타원형 테이블 뒤쪽 왼쪽, 노트북 옆에 있다.",
+    "회의실 내 다섯 번째 스폰 위치는 타원형 테이블 뒤쪽 오른쪽 바닥에 있다.",
+    "회의실 내 여섯 번째, 일곱 번째, 여덟 번째 스폰 위치는 모두 잠긴 매니저 구역(manager's area) 내에 있다. 이 구역에 들어가기 위해서는 TerraGroup Labs manager's office room key(테라그룹 연구소 매니저 사무실 열쇠)가 필요하다.",
+    "잠긴 매니저 구역 내 여섯 번째 위치는 라운지 의자 중 하나 위에 있다.",
+    "일곱 번째 위치는 모니터 한 대가 있는 책상에서 데스크톱과 서랍 사이에 있다.",
+    "여덟 번째 위치는 모니터 두 대가 있는 책상에서 데스크톱과 서랍 사이에 있다.",
+    "Secured tape를 획득하면 Lightkeeper(등대지기)에게 가져가 임무를 완료한다. 이 아이템은 퀘스트 활성화 시에만 획득 가능하며, 레이드 종료 전에 추출하지 못하면 아이템을 잃게 된다."
+  ],
+  "tips": "Secured tape는 퀘스트가 활성화된 상태에서만 획득할 수 있으니, 반드시 퀘스트 진행 중에만 찾아야 한다. 매니저 사무실 열쇠는 8곳 중 3곳의 스폰 위치에만 필요하며, 모든 위치에서 필수는 아니다. 무기 시험장과 인간 실험실 입장에 필요한 키와 키카드는 퀘스트 진행에 반드시 필요하므로 미리 준비해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bf/BreadCrumbsBlackTestingMap.png/revision/latest/scale-to-width-down/640?cb=20230121231609",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b9/Lab_Key_testing_area_%28weap.%29_-_Outside.png/revision/latest/scale-to-width-down/640?cb=20230121233416",
+      "caption": "무기 시험장"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/18/The_Lab_Showcase_16.png/revision/latest/scale-to-width-down/640?cb=20230730023611",
+      "caption": "유리로 된 방"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c8/BreadCrumbsManagersMap.png/revision/latest/scale-to-width-down/640?cb=20230208204300",
+      "caption": "회의실 위치가 표시된 지도"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/ManagersOfficeEntrance.png/revision/latest/scale-to-width-down/640?cb=20230208202411",
+      "caption": "회의실 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/BreadCrumbsReception.png/revision/latest/scale-to-width-down/640?cb=20230310212630",
+      "caption": "빨간색 폴더"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/de/BreadCrumbsReception2.png/revision/latest/scale-to-width-down/640?cb=20230310212605",
+      "caption": "파란색 폴더"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b0/BreadCrumbsRightSideTable.png/revision/latest/scale-to-width-down/640?cb=20230310213823",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/BreadCrumbsUnlocked1.png/revision/latest/scale-to-width-down/640?cb=20230310215542",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/93/BreadCrumbsFloor.png/revision/latest/scale-to-width-down/640?cb=20230310212952",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c9/BreadCrumbsChair1.png/revision/latest/scale-to-width-down/640?cb=20230310215221",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/BreadCrumbsChair2.png/revision/latest/scale-to-width-down/640?cb=20230310215204",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Following_the_Bread_Crumbs",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

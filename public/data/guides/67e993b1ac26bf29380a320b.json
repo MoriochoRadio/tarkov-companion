@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "taskId": "67e993b1ac26bf29380a320b",
+  "nameKo": "Surprise Gift [PVP ZONE]",
+  "nameEn": "Surprise Gift [PVP ZONE]",
+  "steps": [
+    "세관(Customs) 맵의 3층 기숙사 건물 2층으로 이동한다. 2층은 209호와 211호 사이에 있는 방이 목표 지점이다.",
+    "기숙사 2층 209호와 211호 사이에 있는 방에 들어가기 위해서는 Dorm overseer key(기숙사 관리자 열쇠)가 반드시 필요하다. 이 열쇠를 준비한다.",
+    "Dorm overseer key를 사용해 해당 방의 문을 열고 내부로 진입한다.",
+    "방 안에서 옷장 옆 바닥에 피가 고여 있는 곳을 찾는다. 그곳에서 '타협할 만한 정보(Compromising information)' 아이템을 획득한다.",
+    "획득한 아이템은 퀘스트 아이템 인벤토리로 자동 이동하며, 퀘스트가 활성화된 상태에서만 획득 가능하다.",
+    "획득 후 반드시 안전하게 추출해야 하며, 추출 실패 시 아이템을 잃게 된다.",
+    "참고로, Between Two Fires 또는 Decisions, Decisions 퀘스트를 완료하면 이 퀘스트는 실패 처리되어 진행할 수 없으니 주의한다."
+  ],
+  "tips": "Dorm overseer key는 세관 맵의 3층 기숙사 특정 방을 여는 데 필수이므로 미리 준비해야 하며, 피가 고여 있는 장소는 옷장 바로 옆 바닥임을 기억하자. 퀘스트 아이템은 퀘스트가 활성화된 상태에서만 획득 가능하고, 추출 실패 시 아이템을 잃으니 신중히 행동해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/94/DormOverseerKeyMap.png/revision/latest/scale-to-width-down/640?cb=20250828000820",
+      "caption": "3층 기숙사 지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/DormOverseerKeyDoor.png/revision/latest/scale-to-width-down/640?cb=20250828001310",
+      "caption": "방 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/CompromisingInformationLocation.png/revision/latest/scale-to-width-down/640?cb=20250426092759",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Surprise_Gift",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

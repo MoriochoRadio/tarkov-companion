@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "taskId": "639135534b15ca31f76bc317",
+  "nameKo": "Your Car Needs a Service",
+  "nameEn": "Your Car Needs a Service",
+  "steps": [
+    "타르코프 시내(Streets of Tarkov)에 위치한 LexOs 자동차 매장으로 이동한다.",
+    "LexOs 자동차 매장은 2층에 폐쇄 구역이 있으며, 이 구역에 들어가기 위해서는 'Car dealership closed section key'가 필요하다.",
+    "폐쇄 구역 입구는 철창문으로 되어 있으니, 이 열쇠로 철창문을 열고 내부로 진입한다.",
+    "폐쇄 구역 내부에 자동차 매장 관리자의 사무실이 있다. 이 사무실 문을 열기 위해서는 'Car dealership director's office room key'가 필요하다.",
+    "이 열쇠는 피스키퍼(Peacekeeper)로부터 게임 내 우편을 통해 받을 수 있다.",
+    "사무실 문을 열고 들어가면 책상 위에 'Secure Flash drive'가 놓여 있다.",
+    "이 플래시 드라이브는 퀘스트 아이템으로, 퀘스트가 활성화된 상태에서만 레이드 중에 획득 가능하다.",
+    "플래시 드라이브를 획득하면 자동으로 퀘스트 아이템 인벤토리에 들어가며, 레이드에서 추출하지 못하면 아이템을 잃게 되니 반드시 추출해야 한다.",
+    "LexOs 자동차 매장 내부에는 클레이모어 지뢰가 다수 설치되어 있으니 매우 주의하며 이동한다."
+  ],
+  "tips": "플래시 드라이브는 반드시 퀘스트 활성 상태에서만 획득 가능하므로, 퀘스트를 수락한 후에만 해당 장소를 탐색해야 한다. 클레이모어가 많아 접근 시 신중히 움직이고, 가능하면 원거리에서 적을 제압하거나 탐색하는 것이 안전하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/80/CarDealerMap.png/revision/latest/scale-to-width-down/640?cb=20230826213528",
+      "caption": "지도에 표시된 자동차 매장"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/df/LexOsClaymoreOverview.png/revision/latest/scale-to-width-down/640?cb=20250203160104",
+      "caption": "LexOs 단지 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/CarDealer.png/revision/latest/scale-to-width-down/640?cb=20231203123016",
+      "caption": "자동차 매장 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/CarDealerClosedSectionDoor.png/revision/latest/scale-to-width-down/640?cb=20230101015454",
+      "caption": "폐쇄 구역으로 통하는 철창문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a4/CarDealerOfficeDoor.png/revision/latest/scale-to-width-down/640?cb=20230101022120",
+      "caption": "사무실 입구 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d3/CarDealerOfficeInside.png/revision/latest/scale-to-width-down/640?cb=20230101022506",
+      "caption": "사무실 내부 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7f/YCNAS_Flashdrive_location.png/revision/latest/scale-to-width-down/640?cb=20230605011315",
+      "caption": "책상 위에 놓인 플래시 드라이브"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Your_Car_Needs_a_Service",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

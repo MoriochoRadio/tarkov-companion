@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "taskId": "63966ff54c3ef01b6f3ffad8",
+  "nameKo": "Provocation",
+  "nameEn": "Provocation",
+  "steps": [
+    "인터체인지(Interchange) 몰 내 키바 암즈(Kiba Arms) 매장 주변에서 ASh-12 12.7x55 돌격소총을 사용해 적 20명을 처치해야 합니다. 처치는 주차장, 1층, 2층 어디서든 가능합니다.",
+    "키바 암즈 매장 1층 내 울타리로 둘러싸인 구역 안에 있는 나무 상자에 Salty Dog 소고기 소시지를 배치해야 합니다. 이때 전원 공급이 되어 있어야 하며, 키바 암즈 외부 문 열쇠(Kiba Arms outer door key)와 내부 격자문 열쇠(Kiba Arms inner grate door key)가 필요합니다.",
+    "주차장 내 'Saferoom Exfil' 추출 지점 안 소파 위에 Bottle of Fierce Hatchling 밀주를 배치해야 합니다. 이 구역에 접근하려면 전원 공급이 되어 있어야 하고, 'Burger spot' 레스토랑 소변기에서 Object #11SR 키카드를 사용해 문을 열어야 합니다.",
+    "몰 남서쪽 컨테이너 야적장에 있는 빨간 컨테이너 내부 나무 상자 위에 화장지를 배치해야 합니다. 이 작업을 위해 전원 공급과 Object #21WS 키카드가 필요합니다."
+  ],
+  "tips": "ASh-12 돌격소총은 반드시 킬에 사용해야 하므로, 미리 준비해 두어야 합니다. 소시지, 밀주, 화장지 아이템은 퀘스트용으로 배치하는 아이템이며, 레이드에서 획득하는 것이 아니라 퀘스트 진행 중 지정 위치에 놓아야 합니다. 키바 암즈 매장 출입을 위해서는 외부 문과 내부 격자문 열쇠가 모두 필요하니 미리 준비하세요. 'Saferoom Exfil' 출구는 'Burger spot' 레스토랑 소변기에서 Object #11SR 키카드를 사용해 접근할 수 있습니다. 컨테이너 야적장 화장지 배치는 Object #21WS 키카드가 있어야 가능하므로 키카드도 반드시 챙기세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/85/ProvocationKiba.png/revision/latest/scale-to-width-down/640?cb=20230128001840",
+      "caption": "지도에 표시된 킬 지역"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/ProvocationKibaMap.png/revision/latest/scale-to-width-down/640?cb=20230120203836",
+      "caption": "지도에 표시된 매장 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/KibaFencedCrate.png/revision/latest/scale-to-width-down/640?cb=20230120204709",
+      "caption": "나무 상자 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/85/ProvocationKibaPlacement.png/revision/latest/scale-to-width-down/640?cb=20250306212230",
+      "caption": "나무 상자"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/SafeRoomMap.png/revision/latest/scale-to-width-down/640?cb=20250306210330",
+      "caption": "지도에 표시된 Saferoom Exfil 추출 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/58/IC-Saferoom_EXFIL.png/revision/latest/scale-to-width-down/640?cb=20230417011505",
+      "caption": "Saferoom Exfil 추출 지점 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bc/ProvocationCouch.png/revision/latest/scale-to-width-down/640?cb=20250306213548",
+      "caption": "소파"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5c/21WSMap.png/revision/latest/scale-to-width-down/640?cb=20220409230216",
+      "caption": "지도에 표시된 컨테이너 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a6/21ws_outside.jpg/revision/latest/scale-to-width-down/640?cb=20230120211047",
+      "caption": "빨간 컨테이너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/ToiletPaperPlacement.png/revision/latest/scale-to-width-down/640?cb=20250306214158",
+      "caption": "배치 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Provocation",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "63966faeea19ac7ed845db2c",
+  "nameKo": "Information Source",
+  "nameEn": "Information Source",
+  "steps": [
+    "레이드에서 생존(Survived) 상태로 탈출해야 하며, 탈출 지점은 삼림(Woods), 세관(Customs), 인터체인지(Interchange), 타르코프 시내(Streets of Tarkov), 그라운드 제로(Ground Zero)의 차량 탈출 지점 중 하나여야 한다.",
+    "생존 상태로 탈출한 후, 타르코프 시내(Streets of Tarkov) 맵으로 이동한다.",
+    "타르코프 시내에서 Patrol-A 차량 2대를 찾아야 하며, 이 차량들은 지도에 표시된 위치에서 확인할 수 있다.",
+    "각 Patrol-A 차량에 MS2000 마커(MS2000 Marker)를 1개씩 설치해야 한다. MS2000 마커는 총 2개가 필요하다.",
+    "MS2000 마커는 Patrol-A 차량에 설치하면 플레이어 인벤토리에서 사라진다.",
+    "Patrol-A 차량 위치는 지도에 표시된 위치를 참고하여 정확히 찾아가야 한다."
+  ],
+  "tips": "MS2000 마커는 퀘스트 진행을 위해 반드시 필요하며, Patrol-A 차량은 타르코프 시내 맵 내 특정 위치에만 존재하므로 지도상의 위치를 정확히 확인하는 것이 중요하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/InformationSourceMap.png/revision/latest/scale-to-width-down/640?cb=20230826233040",
+      "caption": "지도에 표시된 Patrol-A 차량 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1e/InformationSourcePatrolA1.png/revision/latest/scale-to-width-down/640?cb=20230113225826",
+      "caption": "Patrol-A 차량 1"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0d/InformationSourcePatrolA2.png/revision/latest/scale-to-width-down/640?cb=20230113225848",
+      "caption": "Patrol-A 차량 2"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Information_Source",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}

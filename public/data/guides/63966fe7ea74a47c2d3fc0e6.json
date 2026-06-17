@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "taskId": "63966fe7ea74a47c2d3fc0e6",
+  "nameKo": "Return the Favor",
+  "nameEn": "Return the Favor",
+  "steps": [
+    "삼림(Woods) 맵의 산악 지역 주변에서 PMC 플레이어 15명을 처치한다. 산악 지역은 맵 북서쪽 USEC 캠프 근처이며, PMC 사냥은 이 일대에서 집중적으로 진행해야 한다.",
+    "PMC 처치 후, USEC 캠프(북서쪽에 위치)로 이동한다. 캠프에 접근할 때는 서쪽과 북서쪽 진입로에 지뢰가 설치되어 있으니 매우 주의해야 한다.",
+    "USEC 캠프 남쪽에 주차된 검은색 SUV 차량을 찾는다. SUV는 캠프 내에서 쉽게 확인할 수 있다.",
+    "검은색 SUV 차량의 조수석 쪽에 TerraGroup \"Blue Folders\" 자료 1개를 은닉한다. 이 자료는 레이드 획득(FIR) 아이템으로, 미션 수행 전 미리 확보해야 한다.",
+    "USEC 캠프 북쪽에 위치한 위성 안테나 옆 나무 상자들을 찾는다. 이곳이 두 번째 자료 은닉 장소이다.",
+    "위성 안테나 옆 나무 상자에 TerraGroup \"Blue Folders\" 자료 1개를 은닉한다. 두 번째 자료도 레이드 획득(FIR) 아이템이며, 반드시 미션 전에 준비해야 한다.",
+    "지뢰가 설치된 지역을 피해서 안전하게 캠프에 접근하고, 자료를 은닉한 후 임무를 완료한다."
+  ],
+  "tips": "USEC 캠프 주변의 서쪽과 북서쪽 진입로는 지뢰가 많아 접근이 매우 위험하므로, 지뢰 탐지기나 주의 깊은 시야 확보가 필요하다. TerraGroup \"Blue Folders\" 자료는 레이드에서만 획득 가능하므로, 미션 전에 충분히 확보해 두는 것이 좋다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/ReturnTheFavorMap.png/revision/latest/scale-to-width-down/640?cb=20260404170402",
+      "caption": "지도에 표시된 PMC 처치 지역과 자료 은닉 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9a/RTTBlackSVU.png/revision/latest/scale-to-width-down/640?cb=20230118211418",
+      "caption": "검은색 SUV 차량"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7c/RTTBlackSVU2.png/revision/latest/scale-to-width-down/640?cb=20250304220236",
+      "caption": "SUV 조수석 쪽 자료 은닉 장소"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1a/RTTCrates.png/revision/latest/scale-to-width-down/640?cb=20250304221012",
+      "caption": "위성 안테나 옆 나무 상자 자료 은닉 장소"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Woods_USEC_camp_northwest_approach_mines.png/revision/latest/scale-to-width-down/640?cb=20240811155208",
+      "caption": "지뢰가 설치된 북서쪽 진입로 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/Woods_USEC_camp_northwest_approach_mines2.png/revision/latest/scale-to-width-down/640?cb=20240811155216",
+      "caption": "나무 그루터기, 시체, 지뢰 폭발 흔적으로 식별되는 캠프에서 본 지뢰 지역"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Woods_USEC_camp_west_approach_mines2.png/revision/latest/scale-to-width-down/640?cb=20240811153350",
+      "caption": "폭발한 지뢰 흔적이 있는 서쪽 바위 진입로 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ea/Woods_USEC_camp_west_approach_mines.png/revision/latest/scale-to-width-down/640?cb=20240811151926",
+      "caption": "폭발한 지뢰 흔적이 있는 서쪽 경사로 진입로 전경"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Return_the_Favor",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-17T22:01:57.602+09:00"
+}
