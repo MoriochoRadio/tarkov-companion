@@ -19,6 +19,7 @@ await page.evaluateOnNewDocument(() => {
     // 신규 키는 run마다 초기화(같은 origin이라 누적됨 — 격리)
     localStorage.removeItem('tc:planner-hidden')
     localStorage.removeItem('tc:planner-done')
+    localStorage.removeItem('tc:planner-extracts')
     // 기존 키 보존 확인용 시드 — 검증 후 그대로 남아야 함
     localStorage.setItem('tc:planner-picks', JSON.stringify({ __seed: ['x'] }))
   } catch {}
@@ -139,13 +140,52 @@ async function run(label, w, h) {
   )
   console.log(`[${label}] 모두 표시 복구 — 마커 ${restored}개`)
 
+  // ④ 탈출구 표시 토글 (Phase 35) — 마커·범례·진영색·팝오버
+  await page.evaluate(() =>
+    [...document.querySelectorAll('button')]
+      .find((b) => b.textContent.includes('탈출구'))
+      ?.click(),
+  )
+  await wait(300)
+  const ext = await page.evaluate(() => {
+    const marks = [...document.querySelectorAll('.mapextract')]
+    const byFac = { pmc: 0, scav: 0, shared: 0 }
+    for (const m of marks) {
+      if (m.classList.contains('f-pmc')) byFac.pmc++
+      else if (m.classList.contains('f-scav')) byFac.scav++
+      else if (m.classList.contains('f-shared')) byFac.shared++
+    }
+    return {
+      count: marks.length,
+      byFac,
+      legend: !!document.querySelector('.mapextract-legend'),
+    }
+  })
+  console.log(
+    `[${label}] 탈출구 표시 — ${ext.count}개 (pmc ${ext.byFac.pmc}/scav ${ext.byFac.scav}/공용 ${ext.byFac.shared}) · 범례:${ext.legend}`,
+  )
+  await shoot(`${label}-extracts`)
+
+  // 탈출구 클릭 → 이름+진영 팝오버 (자동확대 없음)
+  await page.evaluate(() => document.querySelector('.mapextract')?.click())
+  await wait(200)
+  const extPop = await page.evaluate(() => {
+    const p = document.querySelector('.mapextract-pop')
+    return { has: !!p, text: p?.textContent?.replace(/\s+/g, ' ').trim() }
+  })
+  console.log(`[${label}] 탈출구 클릭 — 팝오버:${extPop.has} "${extPop.text}"`)
+  await shoot(`${label}-extract-pop`)
+
   // localStorage 신규 키 기록 + 기존 키 보존 확인
   const ls = await page.evaluate(() => ({
     hidden: localStorage.getItem('tc:planner-hidden'),
     done: localStorage.getItem('tc:planner-done'),
+    extracts: localStorage.getItem('tc:planner-extracts'),
     picksSeed: JSON.parse(localStorage.getItem('tc:planner-picks') || '{}').__seed,
   }))
-  console.log(`[${label}] LS hidden=${ls.hidden} done=${ls.done} picks시드보존=${JSON.stringify(ls.picksSeed)}`)
+  console.log(
+    `[${label}] LS hidden=${ls.hidden} done=${ls.done} extracts=${ls.extracts} picks시드보존=${JSON.stringify(ls.picksSeed)}`,
+  )
 }
 
 await run('desktop', 1280, 900)

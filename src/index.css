@@ -6317,6 +6317,99 @@ summary:focus-visible {
   padding: 2px 10px;
 }
 
+/* ===== Phase 35: 탈출구 마커 — 퀘스트 마커(원형 점)와 구분되는 사각 문 아이콘 ===== */
+
+/* 진영색(퀘스트 8색과 톤 구분). 1차 구분은 모양(사각+🚪), 2차가 색 */
+.mapextract.f-pmc,
+.mapextract-swatch.f-pmc {
+  --ext: #5cc97a; /* PMC 초록 */
+}
+
+.mapextract.f-scav,
+.mapextract-swatch.f-scav {
+  --ext: #e0a52e; /* 스캐브 황 */
+}
+
+.mapextract.f-shared,
+.mapextract-swatch.f-shared {
+  --ext: #5b9bd5; /* 공용 파랑 */
+}
+
+/* 탈출구 마커 — 퀘스트 마커(원형 z2)보다 뒤(z1)·약간 흐리게 "지도 시설"처럼 */
+.mapextract {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.82;
+  transform: translate(-50%, -50%) scale(var(--inv));
+  transform-origin: center;
+  transition: opacity 0.15s ease;
+}
+
+.mapextract span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: color-mix(in srgb, var(--ext) 22%, var(--bg));
+  border: 2px solid var(--ext);
+  border-radius: 5px; /* 사각 — 퀘스트 원형과 구분 */
+  font-size: 0.78rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.mapextract:hover {
+  opacity: 1;
+  z-index: 3; /* 호버 시 잠깐 앞으로 — 겹쳐도 탭 쉽게 */
+}
+
+.mapextract:hover span {
+  transform: scale(1.12);
+}
+
+/* 진영 범례 — 맵 좌하단 작게. 패닝 방해 안 하게 pointer-events 없음 */
+.mapextract-legend {
+  position: absolute;
+  left: var(--sp-2);
+  bottom: var(--sp-2);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  max-width: calc(100% - 80px);
+  padding: 3px 8px;
+  background: color-mix(in srgb, var(--bg-raised) 90%, transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--text-2);
+  pointer-events: none;
+}
+
+.mapextract-swatch {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1.5px solid var(--ext);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--ext) 30%, transparent);
+  vertical-align: middle;
+}
+
+.planner-extract-note {
+  margin: 0 0 var(--sp-2);
+}
+
 .planner-nocoord {
   margin: var(--sp-2) 0 var(--sp-3);
   background: var(--bg-raised);

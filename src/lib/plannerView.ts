@@ -1,4 +1,4 @@
-import { useSyncExternalStore } from 'react'
+import { useCallback, useState, useSyncExternalStore } from 'react'
 
 // 맵 플래너 "보기 상태" 저장소 (Phase 34) — 마커 표시/완료를 맵별로 기억.
 // plannerPicks.ts와 같은 패턴(useSyncExternalStore + localStorage). 픽(tc:planner-picks)·
@@ -82,4 +82,27 @@ export function usePlannerDone(): {
     toggle: doneStore.toggle,
     clearMap: doneStore.clearMap,
   }
+}
+
+// 탈출구 마커 표시 선호 (Phase 35) — 맵 무관 단일 불리언. 기본 꺼둠(클러터 방지).
+// 신규 키 tc:planner-extracts만 사용 (기존 키 불변)
+const EXTRACTS_KEY = 'tc:planner-extracts'
+
+export function usePlannerExtracts(): [boolean, (v: boolean) => void] {
+  const [on, setOn] = useState(() => {
+    try {
+      return localStorage.getItem(EXTRACTS_KEY) === '1'
+    } catch {
+      return false
+    }
+  })
+  const set = useCallback((v: boolean) => {
+    setOn(v)
+    try {
+      localStorage.setItem(EXTRACTS_KEY, v ? '1' : '0')
+    } catch {
+      // 저장 실패는 무시 — 세션 동안은 메모리로 동작
+    }
+  }, [])
+  return [on, set]
 }

@@ -9,9 +9,18 @@ import {
   type MapMeta,
 } from '../lib/mapProject'
 import { usePlannerPicks } from '../lib/plannerPicks'
-import { usePlannerDone, usePlannerHidden } from '../lib/plannerView'
+import {
+  usePlannerDone,
+  usePlannerExtracts,
+  usePlannerHidden,
+} from '../lib/plannerView'
 import { usePlayerLevel } from '../lib/playerLevel'
-import { MapViewer, type MapViewerHandle, type ViewMarker } from './MapViewer'
+import {
+  MapViewer,
+  type ExtractMarker,
+  type MapViewerHandle,
+  type ViewMarker,
+} from './MapViewer'
 import { TableSkeleton } from './Skeleton'
 
 // 맵 퀘스트 플래너 1단계 (Phase 25) — "한 레이드에 퀘스트 몰아 밀기".
@@ -250,6 +259,7 @@ export function PlannerTab({
   const { picks, toggle, clear } = usePlannerPicks()
   const { hidden, toggle: toggleHidden, clearMap: clearHidden } = usePlannerHidden()
   const { done, toggle: toggleDone } = usePlannerDone()
+  const [showExtracts, setShowExtracts] = usePlannerExtracts()
   const { ids: activeIds } = useIdSet(ACTIVE_QUESTS_KEY)
   const mapRef = useRef<MapViewerHandle>(null) // 호버 포커스(좌측 리스트→마커 강조)
 
@@ -280,10 +290,33 @@ export function PlannerTab({
   }, [quests])
 
   const selectedMap = mapStats.find((m) => m.id === mapId) ?? null
-  const normalizedName = useMemo(() => {
+  // 선택 맵의 tarkov.dev 레코드 (normalizedName·탈출구 좌표) — 맵 탭과 캐시 공유
+  const tarkovMap = useMemo(() => {
     if (mapsState.status !== 'ready' || !mapId) return null
-    return mapsState.data.find((m) => m.id === mapId)?.normalizedName ?? null
+    return mapsState.data.find((m) => m.id === mapId) ?? null
   }, [mapsState, mapId])
+  const normalizedName = tarkovMap?.normalizedName ?? null
+
+  // 탈출구 마커 (Phase 35) — 좌표 보유분만. 좌표 없는 건 개수만 안내(조용히 숨기지 않음).
+  // 퀘스트 목표와 동일 게임 월드 좌표 → MapViewer가 같은 makeProjector로 투영
+  const extractData = useMemo(() => {
+    const markers: ExtractMarker[] = []
+    let noPos = 0
+    for (const [i, e] of (tarkovMap?.extracts ?? []).entries()) {
+      if (!e.position) {
+        noPos++
+        continue
+      }
+      markers.push({
+        key: e.id || `ext-${i}`,
+        x: e.position.x,
+        z: e.position.z,
+        name: e.name,
+        faction: e.faction,
+      })
+    }
+    return { markers, noPos }
+  }, [tarkovMap])
 
   // 맵 전환마다 2단계 렌더 리셋
   useEffect(() => {
@@ -489,6 +522,15 @@ export function PlannerTab({
             >
               🗺️ 맵 보기 {showMap ? '끄기' : ''}
             </button>
+            {showMap && mapMeta && (
+              <button
+                className={`btn-ext${showExtracts ? ' active' : ''}`}
+                onClick={() => setShowExtracts(!showExtracts)}
+                title="탈출구 위치를 맵에 표시 (진영별 색)"
+              >
+                🚪 탈출구 {showExtracts ? '끄기' : ''}
+              </button>
+            )}
             {showMap && metaState.status === 'ready' && !mapMeta && (
               <span className="hint" style={{ margin: 0 }}>
                 이 맵은 수록 지도가 없습니다 (신맵·연구소·미궁) — 가방 패널의
@@ -516,11 +558,18 @@ export function PlannerTab({
                   )}
                 </div>
               )}
+              {showExtracts && extractData.noPos > 0 && (
+                <p className="hint planner-extract-note">
+                  🚪 좌표 없는 탈출구 {extractData.noPos}개는 맵에 못 찍습니다 (API에 위치
+                  없음)
+                </p>
+              )}
               <MapViewer
                 ref={mapRef}
                 meta={mapMeta}
                 svgUrl={`${import.meta.env.BASE_URL}maps/${mapMeta.svg}`}
                 markers={visibleMarkers}
+                extracts={showExtracts ? extractData.markers : undefined}
                 doneKeys={doneKeys}
                 onItem={onItem}
                 onToggleDone={(key) => toggleDone(selectedMap.id, key)}

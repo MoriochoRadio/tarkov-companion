@@ -8,8 +8,12 @@ export interface MapBoss {
 }
 
 export interface MapExtract {
+  id: string
   name: string
   faction: 'pmc' | 'scav' | 'shared'
+  // 게임 월드 좌표 (퀘스트 목표와 동일 좌표계 → 같은 makeProjector로 투영, Phase 35).
+  // API가 좌표를 안 주면 생략 — 마커는 그릴 수 없고 호출부에서 개수만 안내
+  position?: { x: number; z: number }
 }
 
 export interface TarkovMap {
@@ -36,7 +40,12 @@ interface RawMap {
     boss: { name: string; imagePortraitLink: string | null }
     spawnChance: number | null
   }[]
-  extracts: { name: string; faction: string | null }[]
+  extracts: {
+    id: string
+    name: string
+    faction: string | null
+    position: { x: number; z: number } | null
+  }[]
   accessKeys: { name: string }[]
   accessKeysMinPlayerLevel: number | null
   wiki: string | null
@@ -54,7 +63,7 @@ export function fetchMaps(): Promise<TarkovMap[]> {
         maps(lang: ko) {
           id name normalizedName players raidDuration
           bosses { boss { name imagePortraitLink } spawnChance }
-          extracts { name faction }
+          extracts { id name faction position { x z } }
           accessKeys { name } accessKeysMinPlayerLevel
           wiki description
         }
@@ -81,10 +90,14 @@ export function fetchMaps(): Promise<TarkovMap[]> {
           portrait: b.boss.imagePortraitLink,
         })),
         extracts: m.extracts.map((e) => ({
+          id: e.id,
           name: e.name,
           faction: (e.faction === 'pmc' || e.faction === 'scav'
             ? e.faction
             : 'shared') as MapExtract['faction'],
+          ...(e.position
+            ? { position: { x: e.position.x, z: e.position.z } }
+            : {}),
         })),
         accessKeys: m.accessKeys.map((k) => k.name),
         accessKeysMinPlayerLevel: m.accessKeysMinPlayerLevel,

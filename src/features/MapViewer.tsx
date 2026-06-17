@@ -47,6 +47,24 @@ export interface MapViewerHandle {
   focusQuest: (questId: string | null) => void
 }
 
+// 탈출구 마커 (Phase 35) — 퀘스트 마커와 별도 레이어. focus/숨김/완료 로직과 분리해
+// 기존 퀘스트 마커 코드를 건드리지 않는다. 좌표는 퀘스트 목표와 동일 게임 월드(x,z).
+export type ExtractFaction = 'pmc' | 'scav' | 'shared'
+export interface ExtractMarker {
+  key: string
+  x: number
+  z: number
+  name: string
+  faction: ExtractFaction
+}
+
+// 진영 라벨 — 범례·팝오버 공용. 색은 CSS(.mapextract.f-*)에서 (퀘스트 8색과 톤 구분)
+export const FACTION_LABEL: Record<ExtractFaction, string> = {
+  pmc: 'PMC',
+  scav: '스캐브',
+  shared: '공용',
+}
+
 const ZOOM_MIN_FACTOR = 0.5 // 초기 핏 대비
 const ZOOM_MAX = 14
 const FOCUS_FACTOR = 7 // 마커 클릭 시 자동 확대 배율(핏 대비, 6~8 범위)
@@ -77,11 +95,15 @@ export const MapViewer = forwardRef<
     meta: MapMeta
     svgUrl: string
     markers: ViewMarker[]
+    extracts?: ExtractMarker[] // 탈출구 마커 (Phase 35) — 켰을 때만 전달
     doneKeys?: ReadonlySet<string> // 완료/방문 표시된 목표-위치 키 (Phase 34)
     onItem?: (name: string) => void // 열쇠 클릭 → 아이템 검색으로 이동
     onToggleDone?: (key: string) => void // 팝오버 "완료" 토글
   }
->(function MapViewer({ meta, svgUrl, markers, doneKeys, onItem, onToggleDone }, ref) {
+>(function MapViewer(
+  { meta, svgUrl, markers, extracts, doneKeys, onItem, onToggleDone },
+  ref,
+) {
   const wrapRef = useRef<HTMLDivElement>(null)
   const layerRef = useRef<HTMLDivElement>(null)
   const svgHostRef = useRef<HTMLDivElement>(null)
@@ -97,6 +119,12 @@ export const MapViewer = forwardRef<
   } | null>(null)
   // 강조 링을 띄울 마커 키 (Phase 34) — 클릭 자동확대 시 "여기"를 표시
   const [focusKey, setFocusKey] = useState<string | null>(null)
+  // 탈출구 팝오버 (Phase 35) — 퀘스트 팝오버(pop)와 분리. 이름+진영만 간단히
+  const [extractPop, setExtractPop] = useState<{
+    e: ExtractMarker
+    left: number
+    top: number
+  } | null>(null)
 
   const proj = useMemo(() => makeProjector(meta), [meta])
 
@@ -161,6 +189,7 @@ export const MapViewer = forwardRef<
     v.y = cy - (cy - v.y) * k
     v.s = ns
     setPop(null)
+    setExtractPop(null)
     apply()
     scheduleCommit()
   }
@@ -319,7 +348,11 @@ export const MapViewer = forwardRef<
     const onDown = (e: PointerEvent) => {
       // 마커·팝오버·전체 버튼 위에서는 팬을 시작하지 않음 — 포인터 캡처가
       // 걸리면 click이 캡처 대상(wrap)으로 가서 버튼 클릭이 죽는다 (실측)
-      if ((e.target as Element).closest?.('.mapmark, .mapmark-pop, .mapview-fit')) {
+      if (
+        (e.target as Element).closest?.(
+          '.mapmark, .mapmark-pop, .mapextract, .mapextract-pop, .mapview-fit',
+        )
+      ) {
         return
       }
       cancelAnim() // 자동확대 중 손대면 즉시 멈춤
@@ -340,7 +373,10 @@ export const MapViewer = forwardRef<
         if (Math.hypot(cur.x - prev.x, cur.y - prev.y) > 2) moved = true
         view.current.x += cur.x - prev.x
         view.current.y += cur.y - prev.y
-        if (moved) setPop(null)
+        if (moved) {
+          setPop(null)
+          setExtractPop(null)
+        }
         apply()
       } else if (pointers.size === 2) {
         const [a, b] = [...pointers.values()]
@@ -404,10 +440,21 @@ export const MapViewer = forwardRef<
     e.stopPropagation()
     const wrap = wrapRef.current
     if (!wrap) return
+    setExtractPop(null)
     // 자동확대로 마커는 화면 중앙에 온다 → 팝오버는 상단에 띄워 중앙의 마커·강조 링이
     // 가려지지 않게(정확한 위치 확인이 ①의 목적). 232px 너비를 가로 중앙에 맞춤.
     setPop({ m, left: Math.max(8, wrap.clientWidth / 2 - 116), top: 20 })
     focusMarker(m)
+  }
+
+  // 탈출구 클릭 (Phase 35) — 자동확대 없이 이름+진영만. 퀘스트 팝오버는 닫음
+  const onExtractClick = (ex: ExtractMarker, e: React.MouseEvent) => {
+    e.stopPropagation()
+    const wrap = wrapRef.current
+    if (!wrap) return
+    const r = wrap.getBoundingClientRect()
+    setPop(null)
+    setExtractPop({ e: ex, left: e.clientX - r.left, top: e.clientY - r.top })
   }
 
   // 강조 링 좌표 — 포커스된 마커가 현재 표시 목록에 있을 때만
@@ -438,6 +485,26 @@ export const MapViewer = forwardRef<
           style={{ width: proj.rect.w * baseScale, height: proj.rect.h * baseScale }}
         >
           <div className="mapview-svg" ref={svgHostRef} aria-hidden />
+          {/* 탈출구 레이어 — 퀘스트 마커보다 먼저(뒤에) 그려 "지도 시설"처럼 읽히게 */}
+          {svgState === 'ready' &&
+            extracts?.map((ex) => {
+              const { px, py } = proj.project(ex.x, ex.z)
+              return (
+                <button
+                  key={ex.key}
+                  className={`mapextract f-${ex.faction}`}
+                  style={{
+                    left: (px - proj.rect.minX) * baseScale,
+                    top: (py - proj.rect.minY) * baseScale,
+                  }}
+                  onClick={(e) => onExtractClick(ex, e)}
+                  title={`🚪 ${ex.name} — ${FACTION_LABEL[ex.faction]} 탈출구`}
+                  aria-label={`탈출구 ${ex.name} (${FACTION_LABEL[ex.faction]})`}
+                >
+                  <span aria-hidden>🚪</span>
+                </button>
+              )
+            })}
           {svgState === 'ready' &&
             markers.map((m) => {
               const { px, py } = proj.project(m.x, m.z)
@@ -560,6 +627,37 @@ export const MapViewer = forwardRef<
             <button className="mapmark-pop-close" onClick={() => setPop(null)} aria-label="닫기">
               ×
             </button>
+          </div>
+        )}
+        {extractPop && (
+          <div
+            className="mapmark-pop mapextract-pop"
+            style={{
+              left: Math.min(extractPop.left, (wrapRef.current?.clientWidth ?? 320) - 200),
+              top: Math.max(8, extractPop.top - 12),
+            }}
+            role="dialog"
+          >
+            <p className="mapmark-pop-quest">
+              <span className={`mapextract-swatch f-${extractPop.e.faction}`} />
+              🚪 {extractPop.e.name}
+            </p>
+            <p className="mapmark-pop-desc">{FACTION_LABEL[extractPop.e.faction]} 탈출구</p>
+            <button
+              className="mapmark-pop-close"
+              onClick={() => setExtractPop(null)}
+              aria-label="닫기"
+            >
+              ×
+            </button>
+          </div>
+        )}
+        {svgState === 'ready' && extracts && extracts.length > 0 && (
+          <div className="mapextract-legend" aria-hidden>
+            <span>🚪 탈출구</span>
+            <span className="mapextract-swatch f-pmc" /> PMC
+            <span className="mapextract-swatch f-scav" /> 스캐브
+            <span className="mapextract-swatch f-shared" /> 공용
           </div>
         )}
         <button className="mapview-fit btn-ext" onClick={fitView}>

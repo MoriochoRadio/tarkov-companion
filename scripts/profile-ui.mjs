@@ -316,6 +316,23 @@ await measure(
   '.mapview-svg svg',
 )
 
+// Phase 35: 탈출구 표시 토글 → 마커 다수(~27) 렌더가 메인스레드 막지 않는지
+const t35 = Date.now()
+await page.evaluate(() =>
+  [...document.querySelectorAll('button')]
+    .find((b) => b.textContent.includes('탈출구'))
+    ?.click(),
+)
+const extRaf = await page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const s = performance.now()
+      requestAnimationFrame(() => resolve(Math.round(performance.now() - s)))
+    }),
+)
+const extN = await page.evaluate(() => document.querySelectorAll('.mapextract').length)
+console.log(`7.42b) 탈출구 표시 토글(${extN}개 렌더): ${Date.now() - t35}ms (rAF 응답 ${extRaf}ms)`)
+
 // 줌 연사 — transform만 갱신되는지 (메인 스레드 응답 확인)
 const t26 = Date.now()
 await page.evaluate(() => {
