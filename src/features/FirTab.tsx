@@ -23,9 +23,11 @@ const VIEWS: { key: FirView; label: string }[] = [
 export function FirTab({
   onItem,
   onQuest,
+  onProfit,
 }: {
   onItem?: (name: string) => void // 필요템 → 시세(검색) 딥링크 (Phase 36)
   onQuest?: (id: string) => void // 필요템 출처 퀘스트 → 퀘스트 상세 딥링크
+  onProfit?: (id: string) => void // 필요템 → 돈벌이(제작·바터) 딥링크 (Phase 41)
 }) {
   const [view, setView] = useState<FirView>('list')
   return (
@@ -43,7 +45,9 @@ export function FirTab({
           ))}
         </nav>
       </div>
-      {view === 'list' && <PrepChecklist onItem={onItem} onQuest={onQuest} />}
+      {view === 'list' && (
+        <PrepChecklist onItem={onItem} onQuest={onQuest} onProfit={onProfit} />
+      )}
       {view === 'hideout' && <HideoutView />}
       {view === 'quests' && <QuestNeedsView />}
       {view === 'ops' && <FirOps />}

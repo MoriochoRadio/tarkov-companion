@@ -394,6 +394,15 @@ Phase 39의 나머지 절반("필수 아이템도 다 체크"). 퀘스트 상세
 - [x] **검증**: "신상이 왔어요" 상세에서 + 클릭 → 보유 0→증가, `tc:prep-counts` 기록(통합 체크리스트와 동일 스토어라 자동 동기화), 보유≥요구 시 met ✓ 노출 실측. 빌드 통과, `profile-ui` 상세 진입 회귀 없음(rAF 11ms·최대 롱태스크 470ms<1초)
 - 메모: 이로써 "어디서든 퀘스트 완료 체크(Phase 39) + 어디서든 필수 아이템 체크(Phase 40)"가 한 `prep-counts`·`done-quests`로 묶임. 남은 후속: 제작/바터→돈벌이 딥링크 · 다음 퀘스트 로드맵 · 중복 5뷰 로직 통폐합
 
+### Phase 41 — 필요템 → 돈벌이(제작·바터) 딥링크 (완료)
+
+Phase 36에서 미뤘던 v1.1. 통합 체크리스트에서 *사야 할* 아이템을 *만들/바꿀* 길로 연결 → "돈벌이" 탭에 열 이유를 부여(척추가 탭을 하나 더 끌어들임). 시세(검색)·퀘스트(상세) 딥링크에 이어 세 번째.
+
+- [x] **출력 인덱스(`craftBarterOutputIds`)**: 돈벌이 데이터(crafts·barters)의 산출 아이템 id 집합 → 그 아이템에만 "🔁 제작·바터" 링크 노출(없는 아이템엔 안 띄움). 통합 체크리스트가 **별도 비차단 로드**(`useAsyncData(fetchProfitData)`)로 받아 첫 페인트는 안 막고 링크만 나중에 채움
+- [x] **pending 네비(`setPendingProfit`/`consumePendingProfit`)**: `setPendingSearch`/`setPendingQuest`와 같은 모듈 변수 패턴. App이 `onProfit`(itemId)를 모든 탭에 전달(`pickProfit`→`switchTab('profit')`); ProfitTab이 마운트 시 consume. PrepChecklist→FirTab 경로로 `onProfit` 전달
+- [x] **ProfitTab "이 아이템 만들기/바꾸기" 필터 뷰**: `outputItem` 설정 시 정상 뷰 대신 그 아이템을 산출하는 **크래프트 + 바터를 한 화면에**(모드 토글 우회). "← 전체 돈벌이 보기"로 복귀. 레시피가 목적이라 시세 미확인분도 표시하되 수익만 "시세 일부 미확인"으로 생략(`RecipeRow`에 `incomplete` 플래그)
+- [x] **검증**: 데스크톱/375px(`shoot-profit-link.mjs`) — 통합 체크리스트 "5.56 MK 318 SOST"의 🔁 제작·바터 → 돈벌이 탭 점프, 크래프트 1+바터 1 표시, 시세 미확인 처리, 전체 보기 복귀 확인. 빌드 통과, `profile-ui` 회귀 없음(내 진행 진입 rAF 134ms·최대 롱태스크 693ms<1초)
+
 ## 6. 환경 역할 분담
 
 | 작업 | 환경 |

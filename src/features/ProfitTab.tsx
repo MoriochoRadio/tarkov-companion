@@ -10,6 +10,7 @@ import { useAsyncData } from '../hooks/useAsyncData'
 import { HIDEOUT_BUILT_KEY, useIdSet } from '../lib/favorites'
 import { fleaFee } from '../lib/fleaFee'
 import { formatRub } from '../lib/format'
+import { consumePendingProfit } from '../lib/searchSeed'
 import { KeysView } from './KeysView'
 import { TableSkeleton } from './Skeleton'
 
@@ -57,10 +58,12 @@ function RecipeRow<T extends CraftInfo | BarterInfo>({
   row,
   items,
   badge,
+  incomplete,
 }: {
   row: Row<T>
   items: Map<string, TarkovItem>
   badge: string
+  incomplete?: boolean // 시세 미확인 재료가 있어 수익 계산 불가 (Phase 41 필터 뷰)
 }) {
   const { src, profit, cost, perHour } = row
   const out = src.outputs[0]
@@ -100,14 +103,20 @@ function RecipeRow<T extends CraftInfo | BarterInfo>({
         )}
       </span>
       <span className="profit-nums num">
-        <span className="dim">재료 {formatRub(cost)}</span>
-        <span className={profit >= 0 ? 'up' : 'down'}>
-          {profit >= 0 ? '+' : ''}
-          {formatRub(Math.abs(profit)).replace('₽ ', '₽')}
-          {profit < 0 ? ' 손해' : ''}
-        </span>
-        {perHour != null && (
-          <span className="profit-per-hour">시간당 {formatRub(perHour)}</span>
+        {incomplete ? (
+          <span className="dim">시세 일부 미확인</span>
+        ) : (
+          <>
+            <span className="dim">재료 {formatRub(cost)}</span>
+            <span className={profit >= 0 ? 'up' : 'down'}>
+              {profit >= 0 ? '+' : ''}
+              {formatRub(Math.abs(profit)).replace('₽ ', '₽')}
+              {profit < 0 ? ' 손해' : ''}
+            </span>
+            {perHour != null && (
+              <span className="profit-per-hour">시간당 {formatRub(perHour)}</span>
+            )}
+          </>
         )}
       </span>
     </li>
@@ -125,6 +134,8 @@ export function ProfitTab() {
   const [craftSort, setCraftSort] = useState<CraftSort>('perHour')
   const [traderLevel, setTraderLevel] = useState('')
   const [visible, setVisible] = useState(FIRST_PAINT_ROWS)
+  // 필요템에서 "🔁 제작·바터"로 점프해 오면 그 아이템 레시피만 (Phase 41)
+  const [outputItem, setOutputItem] = useState<string | null>(() => consumePendingProfit())
   const { ids: built } = useIdSet(HIDEOUT_BUILT_KEY)
 
   // 첫 페인트 후 한 페이지 분량으로 확장 (2단계 렌더 — 퀘스트 탭과 동일 패턴)
@@ -200,11 +211,105 @@ export function ProfitTab() {
     return [...m.entries()].sort((a, b) => a[1].localeCompare(b[1], 'ko'))
   }, [state])
 
+  // "이 아이템 만들기/바꾸기" — 특정 산출 아이템의 크래프트·바터만 (필터·정렬 무시).
+  // 레시피 자체가 목적이라 시세 미확인분도 보여주고 수익만 생략(incomplete)
+  const outRecipes = useMemo(() => {
+    if (!outputItem || state.status !== 'ready') return null
+    const target = outputItem
+    const items = state.data.items
+    const sums = (src: CraftInfo | BarterInfo) => {
+      let cost = 0
+      let value = 0
+      let incomplete = false
+      for (const i of src.inputs) {
+        const v = inputCost(i, items.get(i.id))
+        if (v == null) incomplete = true
+        else cost += v
+      }
+      for (const o of src.outputs) {
+        const v = outputValue(o, items.get(o.id))
+        if (v == null) incomplete = true
+        else value += v
+      }
+      return { cost, value, incomplete }
+    }
+    const has = (o: ProfitIO) => o.id === target
+    const crafts = state.data.crafts
+      .filter((c) => c.outputs.some(has))
+      .map((c) => {
+        const { cost, value, incomplete } = sums(c)
+        const profit = value - cost
+        return { src: c, profit, cost, perHour: profit / (c.duration / 3600), incomplete }
+      })
+    const barters = state.data.barters
+      .filter((b) => b.outputs.some(has))
+      .map((b) => {
+        const { cost, value, incomplete } = sums(b)
+        return { src: b, profit: value - cost, cost, perHour: null, incomplete }
+      })
+    return { name: items.get(target)?.name ?? '이 아이템', crafts, barters }
+  }, [outputItem, state])
+
   if (state.status === 'loading') {
     return <TableSkeleton rows={8} label="크래프트·바터 데이터 불러오는 중…" />
   }
   if (state.status === 'error') {
     return <p className="status error">불러오기 실패: {state.message}</p>
+  }
+
+  if (outRecipes) {
+    const none = outRecipes.crafts.length === 0 && outRecipes.barters.length === 0
+    return (
+      <div>
+        <div className="toolbar">
+          <button className="quest-back" onClick={() => setOutputItem(null)}>
+            ← 전체 돈벌이 보기
+          </button>
+        </div>
+        <p className="hint">
+          🔁 <b>{outRecipes.name}</b> 만들기/바꾸기 — 재료 → 산출 · 수익 = 산출 플리
+          실수익(수수료 제외) − 재료 플리 시세 · 시세 미확인 재료가 있으면 수익 생략
+        </p>
+        {none && (
+          <p className="hint">
+            이 아이템을 만들거나 바터로 얻는 레시피가 없습니다 (플리·트레이더에서 직접
+            구매).
+          </p>
+        )}
+        {outRecipes.crafts.length > 0 && (
+          <>
+            <h3 className="profit-out-h">🏭 은신처 크래프트 {outRecipes.crafts.length}</h3>
+            <ul className="profit-list">
+              {outRecipes.crafts.map((row) => (
+                <RecipeRow
+                  key={row.src.id}
+                  row={row}
+                  items={state.data.items}
+                  badge={`${row.src.stationName} ${row.src.level}레벨`}
+                  incomplete={row.incomplete}
+                />
+              ))}
+            </ul>
+          </>
+        )}
+        {outRecipes.barters.length > 0 && (
+          <>
+            <h3 className="profit-out-h">🤝 트레이더 바터 {outRecipes.barters.length}</h3>
+            <ul className="profit-list">
+              {outRecipes.barters.map((row) => (
+                <RecipeRow
+                  key={row.src.id}
+                  row={row}
+                  items={state.data.items}
+                  badge={`${row.src.trader} LL${row.src.level}${row.src.questLocked ? ' ⚿' : ''}`}
+                  incomplete={row.incomplete}
+                />
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
+    )
   }
 
   const total = mode === 'craft' ? craftRows.length : barterRows.length

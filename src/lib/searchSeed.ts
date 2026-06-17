@@ -24,3 +24,16 @@ export function consumePendingQuest(): string | null {
   pendingQuest = null
   return p
 }
+
+// 필요템 → 돈벌이 탭 "이 아이템 만들기/바꾸기" (Phase 41) — itemId 전달
+let pendingProfit: string | null = null
+
+export function setPendingProfit(id: string) {
+  pendingProfit = id
+}
+
+export function consumePendingProfit(): string | null {
+  const p = pendingProfit
+  pendingProfit = null
+  return p
+}

@@ -3837,6 +3837,12 @@ summary:focus-visible {
   gap: var(--sp-2);
 }
 
+/* "이 아이템 만들기/바꾸기" 필터 뷰의 구역 헤딩 (Phase 41) */
+.profit-out-h {
+  margin: var(--sp-4) 0 var(--sp-2);
+  font-size: 0.95rem;
+}
+
 .profit-row {
   display: grid;
   grid-template-columns: 1fr auto auto;

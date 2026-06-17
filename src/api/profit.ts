@@ -120,3 +120,15 @@ export function fetchProfitData(): Promise<{
     })
   return cache
 }
+
+// 제작/바터로 "나오는"(산출) 아이템 id 집합 — 필요템 리스트에서 "제작·바터 가능"
+// 여부 판별용 (Phase 41). 같은 fetchProfitData 캐시를 공유한다
+export function craftBarterOutputIds(data: {
+  crafts: CraftInfo[]
+  barters: BarterInfo[]
+}): Set<string> {
+  const ids = new Set<string>()
+  for (const c of data.crafts) for (const o of c.outputs) ids.add(o.id)
+  for (const b of data.barters) for (const o of b.outputs) ids.add(o.id)
+  return ids
+}

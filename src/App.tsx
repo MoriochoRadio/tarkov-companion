@@ -25,7 +25,7 @@ import { TickerBar } from './features/TickerBar'
 import { UnlocksTab } from './features/UnlocksTab'
 import { ValueTab } from './features/ValueTab'
 import { startAlertPoller } from './lib/alertPoller'
-import { setPendingQuest, setPendingSearch } from './lib/searchSeed'
+import { setPendingProfit, setPendingQuest, setPendingSearch } from './lib/searchSeed'
 import { installSpotlight } from './lib/spotlight'
 
 // eyebrow: 마스트헤드 위에 얹는 영문 모노 라벨 — 잡지 코너명처럼.
@@ -222,6 +222,12 @@ export default function App() {
     })
   }
 
+  // 필요템 → 돈벌이 탭 "이 아이템 만들기/바꾸기" (Phase 41). 다른 탭에서 오므로
+  // 'profit' 탭은 새로 마운트되어 consumePendingProfit을 읽는다 (nonce 불필요)
+  const pickProfit = (id: string) => {
+    switchTab('profit', () => setPendingProfit(id))
+  }
+
   const activeGroup = groupOf(active)
 
   // 두 줄 다 가로 스크롤 가능 — 잘려 있으면 "오른쪽에 더 있음" 힌트
@@ -255,6 +261,7 @@ export default function App() {
   const ActiveComp = activeTab.Comp as ComponentType<{
     onQuest?: (id: string) => void
     onItem?: (name: string) => void
+    onProfit?: (id: string) => void
   }>
   const tabLabel = (key: TabKey) => TABS.find((t) => t.key === key)?.label ?? key
 
@@ -347,6 +354,7 @@ export default function App() {
             }
             onQuest={pickQuest}
             onItem={pickFromTicker}
+            onProfit={pickProfit}
           />
         </main>
         <footer className="app-footer">

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { CURRENCY_IDS, fetchHideoutRequirements } from '../api/hideout'
+import { craftBarterOutputIds, fetchProfitData } from '../api/profit'
 import { biName, fetchQuests } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
 import {
@@ -118,6 +119,8 @@ function PrepRowView({
   onAdd,
   onItem,
   onQuest,
+  craftable,
+  onProfit,
 }: {
   view: PrepView
   got: number
@@ -126,6 +129,8 @@ function PrepRowView({
   onAdd: (delta: number) => void
   onItem?: (name: string) => void // 시세(검색) 딥링크
   onQuest?: (id: string) => void // 출처 퀘스트 상세 딥링크
+  craftable?: boolean // 제작/바터로 나오는 아이템인지 (Phase 41)
+  onProfit?: (id: string) => void // 돈벌이(제작·바터) 딥링크
 }) {
   const done = got >= view.total
   const pct = Math.min(100, Math.round((got / view.total) * 100))
@@ -210,15 +215,26 @@ function PrepRowView({
               </li>
             )
           })}
-          {onItem && (
+          {(onItem || (craftable && onProfit)) && (
             <li className="prep-acts">
-              <button
-                className="prep-act"
-                onClick={() => onItem(view.nameKo)}
-                title="아이템 검색 — 시세·구매처·수익성"
-              >
-                🔍 시세·구매처
-              </button>
+              {onItem && (
+                <button
+                  className="prep-act"
+                  onClick={() => onItem(view.nameKo)}
+                  title="아이템 검색 — 시세·구매처·수익성"
+                >
+                  🔍 시세·구매처
+                </button>
+              )}
+              {craftable && onProfit && (
+                <button
+                  className="prep-act"
+                  onClick={() => onProfit(view.id)}
+                  title="돈벌이 탭 — 이 아이템을 만들거나 바터로 얻는 레시피"
+                >
+                  🔁 제작·바터
+                </button>
+              )}
             </li>
           )}
         </ul>
@@ -232,13 +248,17 @@ function PrepRowView({
 export function PrepChecklist({
   onItem,
   onQuest,
+  onProfit,
 }: {
   onItem?: (name: string) => void
   onQuest?: (id: string) => void
+  onProfit?: (id: string) => void
 }) {
   const state = useAsyncData(() =>
     Promise.all([fetchQuests(), fetchHideoutRequirements()]),
   )
+  // 제작·바터 인덱스는 별도 로드 — 체크리스트 첫 페인트를 막지 않게(링크만 나중에 채움)
+  const profitState = useAsyncData(fetchProfitData)
   const [query, setQuery] = useState('')
   const [level, setLevel] = usePlayerLevel()
   const [source, setSource] = useState<Source>('all')
@@ -261,6 +281,15 @@ export function PrepChecklist({
     // visible은 의도적으로 제외 — 확장은 데이터 도착 후 1회만
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.status])
+
+  // 제작/바터로 나오는 아이템 id — "🔁 제작·바터" 딥링크를 그런 아이템에만 노출
+  const craftableIds = useMemo(
+    () =>
+      profitState.status === 'ready'
+        ? craftBarterOutputIds(profitState.data)
+        : new Set<string>(),
+    [profitState],
+  )
 
   const allRows = useMemo(
     () => (state.status === 'ready' ? buildRows(state.data[0], state.data[1]) : []),
@@ -443,6 +472,8 @@ export function PrepChecklist({
             onAdd={(d) => add(v.id, d)}
             onItem={onItem}
             onQuest={onQuest}
+            craftable={craftableIds.has(v.id)}
+            onProfit={onProfit}
           />
         ))}
       </ul>
@@ -466,6 +497,8 @@ export function PrepChecklist({
                 onAdd={(d) => add(v.id, d)}
                 onItem={onItem}
                 onQuest={onQuest}
+                craftable={craftableIds.has(v.id)}
+                onProfit={onProfit}
               />
             ))}
           </ul>
