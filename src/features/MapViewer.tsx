@@ -67,7 +67,6 @@ export const FACTION_LABEL: Record<ExtractFaction, string> = {
 
 const ZOOM_MIN_FACTOR = 0.5 // 초기 핏 대비
 const ZOOM_MAX = 14
-const FOCUS_FACTOR = 7 // 마커 클릭 시 자동 확대 배율(핏 대비, 6~8 범위)
 
 // SVG 텍스트 세션 캐시 — 토글을 껐다 켜도 재요청 없음
 const svgCache = new Map<string, Promise<string>>()
@@ -84,10 +83,6 @@ function fetchSvg(url: string): Promise<string> {
   }
   return p
 }
-
-const prefersReducedMotion = () =>
-  typeof window !== 'undefined' &&
-  window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
 
 export const MapViewer = forwardRef<
   MapViewerHandle,
@@ -117,7 +112,7 @@ export const MapViewer = forwardRef<
     left: number
     top: number
   } | null>(null)
-  // 강조 링을 띄울 마커 키 (Phase 34) — 클릭 자동확대 시 "여기"를 표시
+  // 강조 링을 띄울 마커 키 — 클릭한 위치에 "여기"를 표시 (Phase 34, 줌은 Phase 37에서 제거)
   const [focusKey, setFocusKey] = useState<string | null>(null)
   // 탈출구 팝오버 (Phase 35) — 퀘스트 팝오버(pop)와 분리. 이름+진영만 간단히
   const [extractPop, setExtractPop] = useState<{
@@ -144,7 +139,6 @@ export const MapViewer = forwardRef<
   const [baseScale, setBaseScale] = useState(1)
   const baseRef = useRef(1)
   const commitTimer = useRef<number | null>(null)
-  const animRef = useRef<number | null>(null)
 
   // --- 팬·줌 상태: ref + 직접 스타일 갱신 (리렌더 금지) ---
   const view = useRef({ x: 0, y: 0, s: 1, fit: 1 })
@@ -171,17 +165,9 @@ export const MapViewer = forwardRef<
     commitTimer.current = window.setTimeout(commit, 150)
   }
 
-  const cancelAnim = () => {
-    if (animRef.current != null) {
-      cancelAnimationFrame(animRef.current)
-      animRef.current = null
-    }
-  }
-
   const clampZoom = (s: number) =>
     Math.min(ZOOM_MAX, Math.max(view.current.fit * ZOOM_MIN_FACTOR, s))
   const zoomAt = (cx: number, cy: number, factor: number) => {
-    cancelAnim()
     const v = view.current
     const ns = clampZoom(v.s * factor)
     const k = ns / v.s
@@ -194,59 +180,9 @@ export const MapViewer = forwardRef<
     scheduleCommit()
   }
 
-  // 한 점을 화면 중앙으로 부드럽게 이동·확대 (Phase 34). transform/--inv만 rAF로 갱신해
-  // 레이아웃 패스 없음 → 저사양에서도 가벼움. 멈춘 뒤 commit()으로 그 배율 재래스터(또렷).
-  const animateTo = (tx: number, ty: number, ts: number) => {
-    cancelAnim()
-    const v = view.current
-    if (prefersReducedMotion()) {
-      v.x = tx
-      v.y = ty
-      v.s = ts
-      apply()
-      commit()
-      return
-    }
-    const sx = v.x
-    const sy = v.y
-    const ss = v.s
-    const start = performance.now()
-    const dur = 380
-    const ease = (t: number) => 1 - Math.pow(1 - t, 3) // ease-out cubic
-    const step = (now: number) => {
-      const t = Math.min(1, (now - start) / dur)
-      const e = ease(t)
-      v.x = sx + (tx - sx) * e
-      v.y = sy + (ty - sy) * e
-      v.s = ss + (ts - ss) * e
-      apply()
-      if (t < 1) {
-        animRef.current = requestAnimationFrame(step)
-      } else {
-        animRef.current = null
-        commit() // 정지 후 재래스터 (Phase 32 흐름)
-      }
-    }
-    animRef.current = requestAnimationFrame(step)
-  }
-
-  // 마커 좌표를 화면 중앙으로 자동 확대 + 강조 링 (Phase 34)
-  const focusMarker = (m: ViewMarker) => {
-    const wrap = wrapRef.current
-    if (!wrap) return
-    const { px, py } = proj.project(m.x, m.z)
-    const ns = clampZoom(view.current.fit * FOCUS_FACTOR)
-    // 화면좌표 = view.x + (proj - min) * s (baseScale 무관) → 중앙(cw/2,ch/2) 정렬
-    const tx = wrap.clientWidth / 2 - (px - proj.rect.minX) * ns
-    const ty = wrap.clientHeight / 2 - (py - proj.rect.minY) * ns
-    setFocusKey(m.key)
-    animateTo(tx, ty, ns)
-  }
-
   const fitView = () => {
     const wrap = wrapRef.current
     if (!wrap) return
-    cancelAnim()
     setFocusKey(null)
     const cw = wrap.clientWidth
     const ch = wrap.clientHeight
@@ -283,10 +219,9 @@ export const MapViewer = forwardRef<
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [baseScale])
 
-  // 언마운트 시 디바운스 타이머·애니메이션 정리
+  // 언마운트 시 디바운스 타이머 정리
   useEffect(() => () => {
     if (commitTimer.current != null) clearTimeout(commitTimer.current)
-    if (animRef.current != null) cancelAnimationFrame(animRef.current)
   }, [])
 
   // SVG 로드 + 주입 — 맵 보기를 켰을 때만 (lazy)
@@ -355,7 +290,6 @@ export const MapViewer = forwardRef<
       ) {
         return
       }
-      cancelAnim() // 자동확대 중 손대면 즉시 멈춤
       wrap.setPointerCapture(e.pointerId)
       pointers.set(e.pointerId, rel(e))
       moved = false
@@ -440,11 +374,12 @@ export const MapViewer = forwardRef<
     e.stopPropagation()
     const wrap = wrapRef.current
     if (!wrap) return
+    const r = wrap.getBoundingClientRect()
     setExtractPop(null)
-    // 자동확대로 마커는 화면 중앙에 온다 → 팝오버는 상단에 띄워 중앙의 마커·강조 링이
-    // 가려지지 않게(정확한 위치 확인이 ①의 목적). 232px 너비를 가로 중앙에 맞춤.
-    setPop({ m, left: Math.max(8, wrap.clientWidth / 2 - 116), top: 20 })
-    focusMarker(m)
+    // 줌인 없이 — 강조 링으로 "여기"만 표시하고 팝오버는 클릭 지점 근처에 (친구 피드백:
+    // 클릭마다 카메라가 확대돼 거슬림, Phase 37). 더 자세한 위치는 팝오버의 출처 링크로.
+    setFocusKey(m.key)
+    setPop({ m, left: e.clientX - r.left, top: e.clientY - r.top })
   }
 
   // 탈출구 클릭 (Phase 35) — 자동확대 없이 이름+진영만. 퀘스트 팝오버는 닫음
@@ -674,7 +609,7 @@ export const MapViewer = forwardRef<
         >
           The Hideout 커뮤니티 (CC BY-NC-SA 4.0) ↗
         </a>{' '}
-        · 드래그 이동 · 휠/핀치 줌 · 마커를 누르면 그 위치로 확대 + 퀘스트 정보
+        · 드래그 이동 · 휠/핀치 줌 · 마커를 누르면 위치 강조 + 퀘스트 정보
       </p>
     </div>
   )

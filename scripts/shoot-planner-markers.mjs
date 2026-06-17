@@ -92,9 +92,9 @@ async function run(label, w, h) {
   console.log(`[${label}] 마커 ${markerCount}개 · 바: "${shownBar}"`)
   await shoot(`${label}-planner-markers`)
 
-  // ① 마커 클릭 → 자동확대 + 강조 링 + 팝오버(출처 링크·완료 버튼)
+  // ① 마커 클릭 → 강조 링 + 팝오버(출처 링크·완료 버튼). 줌 없음(Phase 37)
   await page.evaluate(() => document.querySelector('.mapmark')?.click())
-  await wait(700) // 자동확대 애니메이션(380ms) 후
+  await wait(400)
   const pop = await page.evaluate(() => {
     const hasSrc = !!document.querySelector('.mapmark-pop-src a')
     const hasDone = !!document.querySelector('.mapmark-pop-done')
