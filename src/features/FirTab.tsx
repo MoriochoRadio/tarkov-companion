@@ -9,7 +9,13 @@ import { TrackerTab } from './TrackerTab'
 //  · 트래커·조직도 = 은신처 의존성 조직도 + 상인별 정크박스 상세
 type FirView = 'ops' | 'prep' | 'tracker'
 
-export function FirTab() {
+export function FirTab({
+  onItem,
+  onQuest,
+}: {
+  onItem?: (name: string) => void // 필요템 → 시세(검색) 딥링크 (Phase 36)
+  onQuest?: (id: string) => void // 필요템 출처 퀘스트 → 퀘스트 상세 딥링크
+}) {
   const [view, setView] = useState<FirView>('ops')
   return (
     <div>
@@ -30,7 +36,7 @@ export function FirTab() {
         </nav>
       </div>
       {view === 'ops' && <FirOps />}
-      {view === 'prep' && <PrepTab />}
+      {view === 'prep' && <PrepTab onItem={onItem} onQuest={onQuest} />}
       {view === 'tracker' && <TrackerTab />}
     </div>
   )

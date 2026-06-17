@@ -2411,6 +2411,68 @@ select:focus-visible {
   color: var(--accent);
 }
 
+/* 펼침 상세의 딥링크 (Phase 36) — 출처 퀘스트 줄 클릭 + 시세 버튼 */
+.prep-need-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2px 4px;
+  margin: -2px 0;
+  background: none;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.prep-need-link:hover,
+.prep-need-link:focus-visible {
+  background: var(--bg-inset);
+  color: var(--text);
+}
+
+.prep-need-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.prep-need-go {
+  margin-left: var(--sp-2);
+  color: var(--accent);
+  opacity: 0;
+}
+
+.prep-need-link:hover .prep-need-go,
+.prep-need-link:focus-visible .prep-need-go {
+  opacity: 1;
+}
+
+.prep-acts {
+  margin-top: var(--sp-1);
+  padding-top: var(--sp-2);
+  border-top: 1px dashed var(--border);
+}
+
+.prep-act {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  cursor: pointer;
+  font-size: var(--fs-sub);
+}
+
+.prep-act:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .prep-done {
   margin-top: var(--sp-5);
 }

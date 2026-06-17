@@ -113,12 +113,16 @@ function PrepRowView({
   expanded,
   onToggle,
   onAdd,
+  onItem,
+  onQuest,
 }: {
   view: PrepView
   got: number
   expanded: boolean
   onToggle: () => void
   onAdd: (delta: number) => void
+  onItem?: (name: string) => void // 시세(검색) 딥링크
+  onQuest?: (id: string) => void // 출처 퀘스트 상세 딥링크
 }) {
   const done = got >= view.total
   const pct = Math.min(100, Math.round((got / view.total) * 100))
@@ -169,19 +173,51 @@ function PrepRowView({
       </span>
       {expanded && (
         <ul className="prep-needs">
-          {view.needs.map((n, i) => (
-            <li key={i}>
-              <span className={n.kind === 'quest' ? 'prep-kind quest' : 'prep-kind'}>
-                {n.kind === 'quest' ? '퀘스트' : '은신처'}
-              </span>
-              {n.label}
-              {n.kind === 'quest' && n.minLevel > 1 && (
-                <span className="dim"> (레벨 {n.minLevel}+)</span>
-              )}
-              <span className="num"> × {n.count}</span>
-              {n.fir && <span className="badge-fir">FIR</span>}
+          {view.needs.map((n, i) => {
+            const inner = (
+              <>
+                <span className={n.kind === 'quest' ? 'prep-kind quest' : 'prep-kind'}>
+                  {n.kind === 'quest' ? '퀘스트' : '은신처'}
+                </span>
+                {n.label}
+                {n.kind === 'quest' && n.minLevel > 1 && (
+                  <span className="dim"> (레벨 {n.minLevel}+)</span>
+                )}
+                <span className="num"> × {n.count}</span>
+                {n.fir && <span className="badge-fir">FIR</span>}
+              </>
+            )
+            // 퀘스트 출처는 클릭 → 그 퀘스트 상세(목표·맵 = 어디서 파밍)로 이동
+            return (
+              <li key={i}>
+                {n.kind === 'quest' && n.questId && onQuest ? (
+                  <button
+                    className="prep-need-link"
+                    onClick={() => onQuest(n.questId!)}
+                    title="이 퀘스트 상세 보기 (목표·맵)"
+                  >
+                    <span className="prep-need-body">{inner}</span>
+                    <span className="prep-need-go" aria-hidden>
+                      →
+                    </span>
+                  </button>
+                ) : (
+                  inner
+                )}
+              </li>
+            )
+          })}
+          {onItem && (
+            <li className="prep-acts">
+              <button
+                className="prep-act"
+                onClick={() => onItem(view.nameKo)}
+                title="아이템 검색 — 시세·구매처·수익성"
+              >
+                🔍 시세·구매처
+              </button>
             </li>
-          ))}
+          )}
         </ul>
       )}
     </li>
@@ -190,7 +226,13 @@ function PrepRowView({
 
 type PrepViewMode = 'list' | 'hideout' | 'quests'
 
-export function PrepTab() {
+export function PrepTab({
+  onItem,
+  onQuest,
+}: {
+  onItem?: (name: string) => void
+  onQuest?: (id: string) => void
+}) {
   // 통합 체크리스트(레이드 중 빠른 확인) / 은신처(스테이션별) / 퀘스트(트레이더별)
   const [viewMode, setViewMode] = useState<PrepViewMode>('list')
 
@@ -218,14 +260,20 @@ export function PrepTab() {
           </button>
         </nav>
       </div>
-      {viewMode === 'list' && <PrepChecklist />}
+      {viewMode === 'list' && <PrepChecklist onItem={onItem} onQuest={onQuest} />}
       {viewMode === 'hideout' && <HideoutView />}
       {viewMode === 'quests' && <QuestNeedsView />}
     </div>
   )
 }
 
-function PrepChecklist() {
+function PrepChecklist({
+  onItem,
+  onQuest,
+}: {
+  onItem?: (name: string) => void
+  onQuest?: (id: string) => void
+}) {
   const state = useAsyncData(() =>
     Promise.all([fetchQuests(), fetchHideoutRequirements()]),
   )
@@ -397,7 +445,9 @@ function PrepChecklist() {
         집계 · FIR = 레이드 획득(체크 표시)만 인정, 1.0부터 은신처 일부 요구에도
         적용 · +/−로 모은 개수를 기록 (이 브라우저에 저장) · 은신처 뷰에서
         “지었음” 표시한 레벨 몫은 자동 제외 · “여러 아이템 중 하나” 선택형 목표와
-        화폐는 제외 · 내 레벨을 입력하면 그 레벨에 받을 수 있는 퀘스트만 집계
+        화폐는 제외 · 내 레벨을 입력하면 그 레벨에 받을 수 있는 퀘스트만 집계 ·
+        행을 펼치면 <b>출처 퀘스트</b>를 눌러 상세(목표·맵)로, <b>🔍 시세·구매처</b>로
+        검색 탭(가격·구매처·수익성)으로 바로 이동
       </p>
 
       <div className="prep-summary">
@@ -426,6 +476,8 @@ function PrepChecklist() {
             expanded={expandedId === v.id}
             onToggle={() => setExpandedId(expandedId === v.id ? null : v.id)}
             onAdd={(d) => add(v.id, d)}
+            onItem={onItem}
+            onQuest={onQuest}
           />
         ))}
       </ul>
@@ -447,6 +499,8 @@ function PrepChecklist() {
                 expanded={expandedId === v.id}
                 onToggle={() => setExpandedId(expandedId === v.id ? null : v.id)}
                 onAdd={(d) => add(v.id, d)}
+                onItem={onItem}
+                onQuest={onQuest}
               />
             ))}
           </ul>
