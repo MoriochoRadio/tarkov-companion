@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "67af4c17f4f1fb58a907f8f6",
+  "nameKo": "Never Too Late To Learn",
+  "nameEn": "Never Too Late To Learn",
+  "steps": [
+    "프라퍼(Prapor)에게서 'Never Too Late To Learn' 퀘스트를 수락한다.",
+    "퀘스트 목표는 HK 416A5 5.56x45 돌격소총 15정, 5.56x45mm MK 318 Mod 0 (SOST) 탄약 4,500발, UVSR Taiga-1 생존용 마체테 8개를 준비하여 제출하는 것이다.",
+    "HK 416A5 5.56x45 돌격소총은 레이드 내에서 획득할 수 없으므로, 주로 트레이더나 플리마켓에서 구매해야 한다.",
+    "56x45mm MK 318 Mod 0 (SOST) 탄약 역시 레이드 내에서 획득할 수 없으므로, 트레이더 또는 플리마켓에서 구매하는 것이 필요하다.",
+    "UVSR Taiga-1 생존용 마체테도 레이드 내 획득이 불가능하므로, 트레이더나 플리마켓에서 구매해야 한다.",
+    "모든 아이템을 준비한 후 프라퍼에게 제출하면 퀘스트가 완료된다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Never_Too_Late_To_Learn",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

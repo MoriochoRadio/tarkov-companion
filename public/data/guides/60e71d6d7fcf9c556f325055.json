@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "taskId": "60e71d6d7fcf9c556f325055",
+  "nameKo": "배달부",
+  "nameEn": "The Courier",
+  "steps": [
+    "트리지콘 REAP-IR 열화상 조준경 2개를 준비한다. 해당 아이템은 레이드 획득(FIR)만 가능하며, 보안 컨테이너에 넣을 수 없다.",
+    "첫 번째 조준경을 세관(Customs) 맵 내 건설 구역에 있는 스캐브(Scav) 기지의 남동쪽 모서리에 위치한 노란 크레인 기둥 밑에 설치한다. 설치 시간은 30초이다.",
+    "두 번째 조준경은 세관 맵 내 ‘새로운’ 주유소 뒤에 있는 드럼통 더미 뒤에 설치한다. 설치 시간은 30초이다."
+  ],
+  "tips": "조준경 설치 시 주변을 주의하여 적의 공격을 받지 않도록 하며, 보안 컨테이너에 넣을 수 없으므로 인벤토리 공간을 확보해 두는 것이 좋다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/The_Courier_Map.png/revision/latest/scale-to-width-down/640?cb=20230624233941",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3f/The_Courier_Crane_Location.png/revision/latest/scale-to-width-down/640?cb=20260602155724",
+      "caption": "조준경을 설치해야 하는 크레인"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e0/The_Courier_Barrels_Location.png/revision/latest/scale-to-width-down/640?cb=20260602155124",
+      "caption": "조준경을 설치해야 하는 드럼통 더미"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Courier",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

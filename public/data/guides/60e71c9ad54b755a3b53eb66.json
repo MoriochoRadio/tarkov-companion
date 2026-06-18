@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "60e71c9ad54b755a3b53eb66",
+  "nameKo": "청소부",
+  "nameEn": "The Cleaner",
+  "steps": [
+    "레이드 시작 시 지하 터널 시스템의 지휘 구역에서 스캐브 레이더(Scav Raiders)를 발견할 수 있습니다.",
+    "\"D-2\" 추출 전원 스위치를 활성화하면 추가 스캐브 레이더가 나타날 수 있습니다.",
+    "기차 도착 시 기차 야드에서 스캐브 레이더가 출현할 수 있습니다.",
+    "\"벙커 밀폐문\" 추출 레버를 당기면 기차 야드에서 스캐브 레이더가 출현할 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Cleaner",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "taskId": "60e71dc67fcf9c556f325056",
+  "nameKo": "술",
+  "nameEn": "Booze",
+  "steps": [
+    "술(Booze) 퀘스트는 특정 주류 아이템들을 수집하여 제출하는 임무입니다.",
+    "다음 아이템들을 준비해야 합니다: 타르코프스카야 보드카(Tarkovskaya vodka) 10병, 댄 재키엘 위스키(Dan Jackiel whiskey) 10병, 정제수 통(Canister with purified water) 3개, 페브코 라이트 맥주(Pevko Light beer) 20병.",
+    "각 아이템은 레이드 획득(FIR)이 가능하며, 숨겨진 장소에서 직접 획득하거나 거래소(플리마켓)에서 구매할 수 있습니다.",
+    "타르코프스카야 보드카, 댄 재키엘 위스키, 페브코 라이트 맥주는 은신처(Hideout)의 영양 유닛(Nutrition Unit) 레벨 3에서 제작할 수 있습니다.",
+    "정제수 통은 은신처의 물 수집기(Water Collector) 레벨 3에서 제작할 수 있습니다.",
+    "은신처를 활용하여 제작하는 경우, 해당 시설들을 레벨 3까지 업그레이드해야 합니다.",
+    "모든 아이템을 준비한 후, 퀘스트 담당 NPC에게 제출하면 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Booze",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

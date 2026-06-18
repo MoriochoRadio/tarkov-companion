@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "6848100b00afffa81f09e365",
+  "nameKo": "New Beginning",
+  "nameEn": "New Beginning",
+  "steps": [
+    "레이드 시작 후 1분이 지나야 이용할 수 있는 이동 지점을 이용해야 합니다.",
+    "The Lab(연구소) 맵 내 오렌지 돔 근처, 당구대가 있는 사무실 옆에 위치한 이동 지점으로 이동합니다.",
+    "이동 지점을 통해 Streets of Tarkov(타르코프 시내)로 이동합니다.",
+    "퀘스트 제출용 아이템으로 PMC 피규린(3개), Scav 피규린(3개), 보스 피규린(3개), 트레이더 피규린(3개)를 준비해야 합니다.",
+    "피규린 아이템들은 모두 레이드 획득(FIR)으로만 입수할 수 있습니다.",
+    "준비한 피규린 3종류 각각 3개씩 총 12개를 퀘스트 진행 시 제출합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f0/MutkevichFigurineGrid.png/revision/latest?cb=20250109200038",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/TheLabTranistToStreetsOfTarkovMap.png/revision/latest/scale-to-width-down/640?cb=20240828224204",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/TheLabTranistToStreetsOfTarkov.png/revision/latest/scale-to-width-down/640?cb=20240822204510",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/New_Beginning_(Prestige_3)",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

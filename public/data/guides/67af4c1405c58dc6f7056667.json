@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "67af4c1405c58dc6f7056667",
+  "nameKo": "Profitable Venture",
+  "nameEn": "Profitable Venture",
+  "steps": [
+    "Profitable Venture 퀘스트는 Trijicon REAP-IR 열상 조준경 15개를 수집하여 제출하는 임무입니다.",
+    "Trijicon REAP-IR 열상 조준경은 레이드 내에서만 획득할 수 있으며, 트레이더 구매나 플리마켓 거래는 불가능합니다.",
+    "레이드 중에 다양한 맵에서 Trijicon REAP-IR 열상 조준경을 찾아 15개를 모으세요.",
+    "모든 열상 조준경을 모은 후, 퀘스트를 제공한 NPC에게 제출하여 완료합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Profitable_Venture",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

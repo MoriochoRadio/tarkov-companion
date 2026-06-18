@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "60e71ccb5688f6424c7bfec4",
+  "nameKo": "전리품",
+  "nameEn": "Trophies",
+  "steps": [
+    "BEAR 도그태그 20개를 수집한다. BEAR 도그태그는 레이드에서 획득해야 하며, 캐릭터 레벨이 50 이상이어야 한다.",
+    "USEC 도그태그 20개를 수집한다. USEC 도그태그 역시 레이드 획득 아이템이며, 캐릭터 레벨 50 이상이어야 한다.",
+    "수집한 BEAR 도그태그 20개와 USEC 도그태그 20개를 퀘스트 담당자에게 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Trophies",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

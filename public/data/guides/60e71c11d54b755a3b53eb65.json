@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "60e71c11d54b755a3b53eb65",
+  "nameKo": "야간 작전",
+  "nameEn": "Night Sweep",
+  "steps": [
+    "레이드 중에 '컬티스트 나이프(Cultist knife)' 12개를 찾아야 합니다.",
+    "컬티스트 나이프는 컬티스트 사제(Cultist priest)와 때때로 그의 추종자들이 소지하고 있습니다.",
+    "컬티스트가 등장하는 맵에서 탐색하며 나이프를 획득하세요.",
+    "획득한 컬티스트 나이프 12개를 모두 모은 후, 트레이더 스키어(Skier)에게 전달하면 퀘스트가 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Night_Sweep",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "taskId": "6761f28a022f60bb320f3e95",
+  "nameKo": "New Beginning",
+  "nameEn": "New Beginning",
+  "steps": [
+    "PMC 피규린, 스캐브 피규린, 보스 피규린, 트레이더 피규린 중 각각 1개씩 준비한다.",
+    "각 피규린은 특정 장소에서 획득하거나 구매할 수 있으며, 레이드 획득(FIR)은 필요하지 않다.",
+    "준비한 피규린을 퀘스트 담당자에게 전달하여 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f0/MutkevichFigurineGrid.png/revision/latest?cb=20250109200038",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/New_Beginning_(Prestige_1)",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

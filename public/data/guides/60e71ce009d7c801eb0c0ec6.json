@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "taskId": "60e71ce009d7c801eb0c0ec6",
+  "nameKo": "특수 장비",
+  "nameEn": "Special Equipment",
+  "steps": [
+    "VPX 플래시 저장 모듈(VPX Flash Storage Module) 5개를 레이드에서 획득한다.",
+    "UHF RFID 리더(UHF RFID Reader) 5개를 레이드에서 획득한다.",
+    "Virtex 프로그래머블 프로세서(Virtex programmable processor) 5개를 레이드에서 획득한다.",
+    "군용 COFDM 무선 신호 송신기(Military COFDM Wireless Signal Transmitter) 5개를 레이드에서 획득한다.",
+    "군용 플래시 드라이브(Military flash drive) 4개를 레이드에서 획득한다.",
+    "획득한 모든 아이템을 지정된 NPC에게 제출한다."
+  ],
+  "tips": "모든 아이템은 레이드 내에서만 획득할 수 있으므로, 여러 번 레이드에 참여해 필요한 수량을 모으는 것이 중요하다. 플리마켓이나 트레이더 구매는 불가능하니 주의하자.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Special_Equipment",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

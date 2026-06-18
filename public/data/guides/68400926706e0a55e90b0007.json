@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "68400926706e0a55e90b0007",
+  "nameKo": "Fair Price - Part 1",
+  "nameEn": "Fair Price - Part 1",
+  "steps": [
+    "스키어(Skier)에게 루블로 50,000 유로(Euros)를 구매한다.",
+    "구매한 50,000 유로를 퀘스트 아이템으로 제출한다."
+  ],
+  "tips": "유로는 레이드 내에서 획득할 수 없으므로 반드시 스키어에게 루블로 구매해야 한다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Fair_Price_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

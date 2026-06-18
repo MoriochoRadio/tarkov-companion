@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "taskId": "68481881f43abfdda2058369",
+  "nameKo": "New Beginning",
+  "nameEn": "New Beginning",
+  "steps": [
+    "레이드 시작 후 1분이 지나야 이용 가능한 이동 구간을 이용해야 합니다.",
+    "연구소(The Lab)에서 타르코프 시내(Streets of Tarkov)로 이동하려면, 주황색 돔 근처 당구대가 있는 사무실 옆에 위치한 전이 구간을 찾으세요.",
+    "타르코프 시내에서 인터체인지(Interchange)로 이동하려면, 콘코디아 아파트 단지(Concordia apartment complex) 남서쪽에 위치한 전이 구간을 이용하세요.",
+    "퀘스트 제출 아이템으로는 PMC 피규린(Any PMC figurine) 3개, 스캐브 피규린(Any Scav figurine) 3개, 보스 피규린(Any boss figurine) 3개, 트레이더 피규린(Any trader figurine) 3개가 필요합니다.",
+    "모든 피규린 아이템은 레이드 내에서 획득(FIR)해야 하며, 퀘스트 제출용으로 사용됩니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f0/MutkevichFigurineGrid.png/revision/latest?cb=20250109200038",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/TheLabTranistToStreetsOfTarkovMap.png/revision/latest/scale-to-width-down/640?cb=20240828224204",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/TheLabTranistToStreetsOfTarkov.png/revision/latest/scale-to-width-down/640?cb=20240822204510",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/StreetsTransitToInterchangeMap.png/revision/latest/scale-to-width-down/640?cb=20240828230209",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/StreetsTransitToInterchange.png/revision/latest/scale-to-width-down/640?cb=20240824233949",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/New_Beginning_(Prestige_4)",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

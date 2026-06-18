@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "taskId": "5e4d4ac186f774264f758336",
+  "nameKo": "원단 - 파트 2",
+  "nameEn": "Textile - Part 2",
+  "steps": [
+    "인터체인지(Interchange) 맵 내 의류 매장들을 중심으로 코듀라 폴리아미드 원단(Cordura polyamide fabric)과 플리스 원단(Fleece fabric)을 찾아야 합니다. 이 원단들은 의류 매장 선반이나 진열대에서 흔히 발견됩니다.",
+    "스포츠 가방(Sport bags), 매장 내 매장 바닥에 묻혀 있는 매장 배럴(Buried barrel caches), 그리고 지상 매장 캐시(Ground caches)에서도 코듀라 폴리아미드 원단과 플리스 원단을 획득할 수 있으니 꼼꼼히 탐색하세요.",
+    "KEKTAPE 덕트 테이프(KEKTAPE duct tape)는 건설 자재가 나오는 장소, 서랍(drawers), 그리고 공구 상자(toolboxes)에서 주로 발견됩니다. 인터체인지 맵 내 해당 장소들을 집중적으로 수색하세요.",
+    "필요한 아이템 수량은 코듀라 폴리아미드 원단 10개, 플리스 원단 10개, KEKTAPE 덕트 테이프 5개입니다. 모두 레이드 획득(FIR) 아이템이므로 레이드 내에서 직접 획득해야 합니다.",
+    "획득한 아이템들은 모두 인벤토리에 보관한 뒤, 퀘스트 진행을 위해 지정된 NPC에게 제출하면 됩니다.",
+    "추가로, 코듀라 폴리아미드 원단과 플리스 원단은 은신처(Hideout) 내 화장실(Lavatory) 레벨 1과 2에서 제작할 수도 있으니, 은신처를 운영 중이라면 제작도 고려해보세요."
+  ],
+  "tips": "인터체인지 맵의 의류 매장과 스포츠 가방, 매장 배럴, 지상 캐시를 집중적으로 탐색하는 것이 효율적입니다. KEKTAPE 덕트 테이프는 공구 상자와 건설 자재가 나오는 장소를 노리세요. 은신처 화장실에서 제작도 가능하니 자원이 충분하다면 제작을 병행하면 시간을 절약할 수 있습니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/98/Textile_1_and_2_locations.png/revision/latest/scale-to-width-down/640?cb=20201005102520",
+      "caption": "인터체인지 맵 내 원단 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

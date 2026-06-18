@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "60e729cf5698ee7b05057439",
+  "nameKo": "날쌘돌이",
+  "nameEn": "Swift One",
+  "steps": [
+    "삼림(Woods) 맵에서 퀘스트가 진행됩니다.",
+    "퀘스트 목표는 방탄 조끼, 방탄 체스트 리그, 방탄 머리 보호구, 방탄 얼굴 보호구를 착용하지 않고 PMC 적 15명을 처치하는 것입니다.",
+    "방탄 안경 착용은 허용됩니다.",
+    "현재 버그로 인해 ANA Tactical Alpha 체스트 리그 (MultiCam)가 방탄으로 인식되어 이 퀘스트에서는 착용 시 처치 카운트가 인정되지 않습니다.",
+    "퀘스트 진행 중 자신을 보호하고 싶다면 방탄 장비를 착용한 상태로 이동하다가 PMC를 처치하기 직전에 장비를 벗고 처치하면 됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Swift_One",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

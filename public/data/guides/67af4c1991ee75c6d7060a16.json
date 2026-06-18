@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "67af4c1991ee75c6d7060a16",
+  "nameKo": "Get a Foothold",
+  "nameEn": "Get a Foothold",
+  "steps": [
+    "퀘스트 'Get a Foothold'는 특정 주사기류 아이템 30개씩을 제출하는 임무입니다.",
+    "제출해야 하는 아이템은 SJ6 TGLabs 전투 자극제 주사기, Obdolbos 2 칵테일 주사기, Propital 재생 자극제 주사기, M.U.L.E. 자극제 주사기, ETG-change 재생 자극제 주사기, SJ9 TGLabs 전투 자극제 주사기, SJ12 TGLabs 전투 자극제 주사기, 그리고 Meldonin 주사기입니다.",
+    "각 아이템은 30개씩 제출해야 하며, 모두 제출 아이템으로 지정되어 있습니다.",
+    "이 아이템들은 레이드 획득(FIR)이 필요하지 않으므로, 플리마켓이나 트레이더를 통해 구매할 수 있습니다.",
+    "퀘스트 진행을 위해서는 각 아이템을 충분히 확보한 후, 퀘스트 수락 NPC에게 제출하면 됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Get_a_Foothold",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}

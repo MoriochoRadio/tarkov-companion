@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "taskId": "5c51aac186f77432ea65c552",
+  "nameKo": "수집가",
+  "nameEn": "Collector",
+  "steps": [
+    "수집가(Collector) 퀘스트는 다양한 희귀 아이템을 레이드 내에서 직접 획득하여 프라퍼(Prapor)에게 전달하는 임무입니다.",
+    "퀘스트에 필요한 아이템은 총 44종으로, 각각 1개씩 획득해야 하며 모두 레이드 획득(FIR) 아이템입니다. 즉, 상점에서 구매하거나 제작할 수 없으므로 직접 레이드에서 찾아야 합니다.",
+    "아이템 목록은 다음과 같습니다: 42 Signature Blend English Tea, Antique axe, Armband (Evasion), Axel parrot figurine, BEAR Buddy plush toy, Baddie's red beard, BakeEzy cook book, Battered antique book, Can of Dr. Lupo's coffee beans, Can of RatCola soda, Deadlyslob's beard oil, DesmondPilak CD, Domontovich ushanka hat, DRD body armor, Dunduk floppy disk, Fake mustache, #FireKlean gun lube, Gingy keychain, Glorious E lightweight armored mask, Golden 1GPhone smartphone, Golden egg, Inseq gas pipe wrench, JohnB Liquid DNB glasses, Loot Lord plushie, LVNDMARK's rat poison, Mazoni golden dumbbell, Missam forklift key, Nut Sack balaclava, Pestily plague mask, Press pass (issued for NoiceGuy), Raven figurine, SheefGG piggy bank, Shroud half-mask, Silver Badge, Smoke balaclava, Tamatthi kunai knife replica, Tigzresq splint, Veritas guitar pick, Video cassette with the Cyborg Killer movie, Viibiin sneaker, WZ Wallet.",
+    "각 아이템은 특정 맵이나 특정 장소에서 주로 발견되며, 레이드 내 상자, 시체, 바닥 등 다양한 위치에서 획득 가능합니다. 예를 들어, Antique axe는 공장(Factory)이나 삼림(Woods)에서 발견될 수 있고, Golden 1GPhone smartphone은 해안선(Shoreline)이나 인터체인지(Interchange)에서 찾을 수 있습니다.",
+    "아이템 획득 시에는 주변 적 스캐브나 PMC를 주의하며, 아이템을 안전하게 확보한 후 탈출 지점으로 이동해야 합니다.",
+    "모든 아이템을 모은 후 프라퍼(Prapor)에게 돌아가 퀘스트를 완료하고 보상을 받으십시오."
+  ],
+  "tips": "수집가 퀘스트는 아이템 수집량이 많아 여러 레이드에 걸쳐 진행하는 것이 효율적입니다. 아이템별로 출현 위치와 경로를 미리 조사해 두면 시간 절약에 도움이 됩니다. 또한, 아이템을 찾을 때는 항상 탈출 경로를 염두에 두고 움직이세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/DRD_body_armor.png/revision/latest?cb=20240103163643",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Glori_mask.png/revision/latest?cb=20240103194827",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b8/Missamkey.png/revision/latest?cb=20250318223231",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Collector",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T18:56:19.643+09:00"
+}
