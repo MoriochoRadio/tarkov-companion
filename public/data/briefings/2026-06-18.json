@@ -1,0 +1,54 @@
+{
+  "date": "2026-06-18",
+  "generatedAt": "2026-06-18T14:01:13.868+09:00",
+  "headline": "레이드 참가 불가 문제 완전 수정 및 블랙 디비전 AI 행동 개선 지속",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "레이드 참가 및 AI 관련 문제 경고",
+      "items": [
+        {
+          "title": "레이드 참가 불가 문제 수정",
+          "summary": "플레이어가 레이드 드롭 카운트다운 화면에 머무르며 레이드에 참가하지 못하는 문제를 해결해 정상적인 게임 진행이 가능해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45581_(16_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "블랙 디비전 AI 행동 개선 및 버그 수정",
+          "summary": "블랙 디비전 병사들이 엔진룸에서 플레이어를 향해 고르게 분산되어 움직이고 수류탄 사용 빈도가 증가해 전투가 더욱 치열해졌으며, 이동하지 않고 정지하는 버그가 수정되어 AI가 더 적극적으로 행동합니다."
+        },
+        {
+          "title": "Wedge 보스의 가스 수류탄 트립와이어 함정 강화",
+          "summary": "Wedge 보스가 더 많은 가스 수류탄 트립와이어를 설치해 플레이어 접근을 방해하므로, 접근 경로를 신중히 선택해 피해를 최소화해야 합니다."
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "플레이어 도움말 및 공략",
+      "items": [
+        {
+          "title": "주요 퀘스트 난이도와 장비 제한에 대한 신규 플레이어 불만",
+          "summary": "신규 플레이어들이 특정 퀘스트에서 제한된 탄창과 고가 총기 사용을 강요받아 비현실적이라는 의견을 내며, 퀘스트 난이도 조정 필요성을 시사합니다."
+        },
+        {
+          "title": "키 아이템 정리 및 보관 팁",
+          "summary": "어떤 키를 보관하고 어떤 키를 버려야 하는지 구체적인 조언을 제공해 인벤토리 관리 효율성을 높입니다."
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상",
+      "items": [
+        {
+          "title": "Taking the MOST TOXIC Loadouts to Streets ft. Glorious E & HutchMF"
+        },
+        {
+          "title": "CHECKING OUT NEW SEASON TEST SERVER"
+        }
+      ]
+    }
+  ]
+}
