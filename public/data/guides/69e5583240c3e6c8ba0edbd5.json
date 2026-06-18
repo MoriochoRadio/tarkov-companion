@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "taskId": "69e5583240c3e6c8ba0edbd5",
+  "nameKo": "선내 배선 작업",
+  "nameEn": "Wiring the Vessel",
+  "steps": [
+    "세관 맵 내 Icebreaker(아이스브레이커)에서 진행하는 퀘스트입니다. 먼저, 자동화실(Automation room) 3곳에 있는 장비를 Toolset(공구 세트)를 사용해 수리해야 합니다. Toolset은 수리에 사용되며, 사용 후에도 인벤토리에서 사라지지 않습니다.",
+    "첫 번째 자동화실은 창고(Storage room) 근처 0층에 있습니다. 지도에 표시된 방 위치로 이동해 장비를 찾아 수리하세요. 참고로 게임 내 버그로 인해 이 장비를 수리하면 실제로는 엔진실 아래 자동화실 관련 목표가 완료됩니다.",
+    "두 번째 자동화실은 엔진으로 이어지는 통로에 있는 0층 방입니다. 지도에 표시된 위치로 가서 장비를 찾아 Toolset으로 수리하세요.",
+    "세 번째 자동화실은 엔진실 아래 -3층에 위치해 있습니다. 이 방에 들어가려면 코드가 필요하며, 코드는 인근 감시 캐빈(Overseeing cabin)의 핀보드(pinboard)에서 확인할 수 있습니다. 코드는 매 레이드마다 변경됩니다.",
+    "감시 캐빈은 자동화실 근처에 있으며, 핀보드에 적힌 코드를 확인한 뒤 엔진실에서 -3층으로 내려가는 계단을 이용해 자동화실로 들어가세요. 이 방의 장비를 Toolset으로 수리하면 창고 근처 자동화실 관련 목표가 완료됩니다.",
+    "모든 자동화실 장비 수리를 완료했다면, 중앙 제어실(Central control station room)로 이동합니다. 이 방은 0층에 위치해 있으며, 지도에 표시된 위치를 참고하세요.",
+    "중앙 제어실에 Local network hacking device(로컬 네트워크 해킹 장치)를 설치해야 합니다. 이 아이템은 설치 시 인벤토리에서 사라집니다. 설치 위치는 방 안에 표시된 곳을 참고해 정확히 설치하세요."
+  ],
+  "tips": "자동화실 아래 엔진실 방과 창고 근처 자동화실 방의 수리 목표가 게임 내 버그로 서로 바뀌어 있으니, 수리 후 완료된 목표를 꼭 확인하세요. 코드가 매 레이드마다 바뀌므로 감시 캐빈에서 반드시 최신 코드를 확인해야 합니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f4/Wiring_the_Vessel_Near_the_storage_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260531230035",
+      "caption": "지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/15/Wiring_the_Vessel_Near_the_storage_Equipment.png/revision/latest/scale-to-width-down/640?cb=20260528235551",
+      "caption": "장비"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9b/Wiring_the_Vessel_Leading_to_engine_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260531225324",
+      "caption": "지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2a/Wiring_the_Vessel_Leading_to_engine_Equipment.png/revision/latest/scale-to-width-down/640?cb=20260528235658",
+      "caption": "장비"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3b/Peaceful_Atom_Automation_Room_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260531213318",
+      "caption": "지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/Peaceful_Atom_Automation_Room_Code_Room.png/revision/latest/scale-to-width-down/640?cb=20260528223744",
+      "caption": "코드가 적힌 감시 캐빈"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/Peaceful_Atom_Automation_Room_Code.png/revision/latest/scale-to-width-down/640?cb=20260528223758",
+      "caption": "핀보드에 적힌 코드"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Wiring_the_Vessel_Under_engine_Entry.png/revision/latest/scale-to-width-down/640?cb=20260528234042",
+      "caption": "엔진실에서 방으로 내려가는 계단"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b5/Wiring_the_Vessel_Under_engine_Equipment.png/revision/latest/scale-to-width-down/640?cb=20260528234102",
+      "caption": "장비"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/70/Peaceful_Atom_Control_Room_Map.jpg/revision/latest/scale-to-width-down/640?cb=20260531214136",
+      "caption": "지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/Wiring_the_Vessel_Control_Room.png/revision/latest/scale-to-width-down/640?cb=20260528234739",
+      "caption": "방 안 설치 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Wiring_the_Vessel_Control_Room_Placement.png/revision/latest/scale-to-width-down/640?cb=20260528234438",
+      "caption": "설치 위치 클로즈업"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Wiring_the_Vessel",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

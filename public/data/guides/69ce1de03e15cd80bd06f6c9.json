@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "69ce1de03e15cd80bd06f6c9",
+  "nameKo": "기름 교체",
+  "nameEn": "Oil Change",
+  "steps": [
+    "AMG-10 유압유(hydraulic fluid) 5개를 준비한다. 이 아이템은 레이드 획득(FIR)로만 입수 가능하며, 프리마켓이나 트레이더 구매는 불가능하다.",
+    "준비한 AMG-10 유압유 5개를 퀘스트 담당자에게 제출한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Oil_Change",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

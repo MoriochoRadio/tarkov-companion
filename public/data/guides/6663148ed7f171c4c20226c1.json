@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "taskId": "6663148ed7f171c4c20226c1",
+  "nameKo": "Small Business - Part 1",
+  "nameEn": "Small Business - Part 1",
+  "steps": [
+    "레이드 내에서 Ded Moroz, Politician Mutkevich, Killa, Reshala, Ryzhy, Scav, Tagilla, Cultist, Den 피규린을 각각 1개씩 획득한다. 모든 피규린은 레이드 획득(FIR) 아이템으로, 특정 맵이나 장소에 한정되지 않고 다양한 맵에서 발견할 수 있다.",
+    "획득한 9개의 피규린을 모두 모은 후, 퀘스트를 수여한 NPC에게 제출한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f0/MutkevichFigurineGrid.png/revision/latest?cb=20250109200038",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/Scavfigurineico.png/revision/latest?cb=20250109200232",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Small_Business_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

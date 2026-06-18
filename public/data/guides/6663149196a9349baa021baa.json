@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "6663149196a9349baa021baa",
+  "nameKo": "Small Business - Part 2",
+  "nameEn": "Small Business - Part 2",
+  "steps": [
+    "이 퀘스트에서는 보스(Boss)를 죽이지 않고 보스의 경호원 10명을 처치해야 합니다. 보스를 죽으면 퀘스트가 실패합니다.",
+    "각 보스의 행동 패턴과 경호원 제거 전략은 해당 보스 페이지를 참고하세요.",
+    "위험을 최소화하는 방법 중 하나는 타르코프 시내(Streets of Tarkov)에 있는 LexOs 자동차 매장 옥상에서 Kaban 보스의 저격수 경호원들을 멀리서 사격해 처치하는 것입니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Small_Business_-_Part_2",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

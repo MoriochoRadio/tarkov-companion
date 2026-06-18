@@ -1,14 +1,49 @@
 {
+  "version": 2,
   "taskId": "657315df034d76585f032e01",
   "nameKo": "사격 연습",
   "nameEn": "Shooting Cans",
   "steps": [
-    "지상 제로 (Ground Zero) 지역에서 퀘스트를 시작합니다.",
-    "타르뱅크 건물 (Tarbank building) 3층 사무실(번호 5번)에서 우티오스 기관총 (Utyos machine gun)을 찾습니다.",
-    "캐피탈 인사이트 건물 (Capital Insight building) 3층 후방 사무실에서 AGS 유탄발사기 (AGS grenade launcher)를 획득합니다.",
-    "지상 제로 지역 내에서 적 엔티티 5명을 처치합니다."
+    "그라운드 제로(Ground Zero) 맵에 진입한다.",
+    "타르뱅크(Tarbank) 빌딩 3층으로 이동한다. 빌딩은 지도에 표시된 위치에 있으며, 외관을 확인해 쉽게 찾을 수 있다.",
+    "타르뱅크 빌딩 내부 계단을 이용해 3층으로 올라간다. 계단 위치는 빌딩 내부에서 쉽게 찾을 수 있다.",
+    "3층에 도착하면 사무실 중 하나(5번으로 표시된 방)에서 우티오스(Utyos) 기관총을 찾는다.",
+    "캐피탈 인사이트(Capital Insight) 빌딩으로 이동한다. 이 빌딩 역시 지도에 위치가 표시되어 있다.",
+    "캐피탈 인사이트 빌딩 내부 계단을 이용해 3층으로 올라간다.",
+    "3층 후면 사무실에서 AGS 유탄발사기를 찾는다.",
+    "그라운드 제로 내에서 적대적인 엔티티(Entity) 5마리를 처치한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/Shooting_Cans_Map.png/revision/latest/scale-to-width-down/640?cb=20240325032754",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/26/Tarbank_Building.png/revision/latest/scale-to-width-down/640?cb=20250708202708",
+      "caption": "타르뱅크 빌딩"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/51/Tarbank_Building_Stairs.png/revision/latest/scale-to-width-down/640?cb=20250522211749",
+      "caption": "계단으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Shooting_Cans_Utyos.png/revision/latest/scale-to-width-down/640?cb=20231230062117",
+      "caption": "우티오스 기관총"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9d/Capital_Insight_Building.png/revision/latest/scale-to-width-down/640?cb=20250708203107",
+      "caption": "캐피탈 인사이트 빌딩"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Capital_Insight_Building_Stairs.png/revision/latest/scale-to-width-down/640?cb=20240325031748",
+      "caption": "3층으로 가는 길"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/Shooting_Cans_AGS.png/revision/latest/scale-to-width-down/640?cb=20250708203510",
+      "caption": "후면 사무실에 있는 AGS 유탄발사기"
+    }
   ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Shooting_Cans",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
 }

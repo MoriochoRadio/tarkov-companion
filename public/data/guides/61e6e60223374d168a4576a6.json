@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "61e6e60223374d168a4576a6",
+  "nameKo": "손해배상 - 내기",
+  "nameEn": "Compensation for Damage - Wager",
+  "steps": [
+    "AK 시리즈 돌격소총 중 하나를 사용하여 PMC(플레이어 캐릭터)를 총 7명 처치해야 합니다.",
+    "사용 가능한 AK 시리즈 돌격소총은 다음과 같습니다: AK-101, AK-102, AK-103, AK-104, AK-105, AK-74, AK-74M, AK-74N, AKM, AKMN, AKMS, AKMSN, AKS-74, AKS-74N, AKS-74U, AKS-74UB, AKS-74UN.",
+    "레이드에서 PMC를 만나고, 위에 명시된 AK 시리즈 무기를 사용해 처치하세요.",
+    "PMC 처치는 레이드 내에서만 인정되므로, 가능한 한 PMC가 자주 출몰하는 맵과 위치를 공략하는 것이 좋습니다.",
+    "무기는 직접 레이드에서 획득하거나, 프리마켓 또는 트레이더를 통해 구매할 수 있습니다.",
+    "7명의 PMC를 모두 처치하면 퀘스트가 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Compensation_for_Damage_-_Wager",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

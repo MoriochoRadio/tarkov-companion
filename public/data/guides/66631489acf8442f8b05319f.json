@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "66631489acf8442f8b05319f",
+  "nameKo": "Friend Among Strangers",
+  "nameEn": "Friend Among Strangers",
+  "steps": [
+    "레이드에서 PMC(플레이어 캐릭터)를 7명 처치해야 합니다. 단, Scav(스캐브), Scav Raiders(스캐브 레이더), Rogues(로그), 보스는 절대 처치하면 안 됩니다.",
+    "PMC를 처치한 후에도 레이드를 완전히 종료하고 퀘스트를 제출하기 전까지는 Scav, Scav Raiders, Rogues, 보스를 죽이지 않도록 주의해야 합니다. 이들을 죽이면 퀘스트 실패 처리됩니다.",
+    "퀘스트 진행 중 사망해도 퀘스트는 실패하지 않으며, 다시 도전할 수 있습니다.",
+    "PMC 처치를 위해 적절한 맵과 위치를 선택하고, Scav 및 기타 적대 세력과의 교전을 피하면서 PMC만 집중적으로 사냥하세요.",
+    "퀘스트 완료 후에는 반드시 레이드에서 안전하게 탈출하여 퀘스트를 제출해야 합니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Friend_Among_Strangers",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

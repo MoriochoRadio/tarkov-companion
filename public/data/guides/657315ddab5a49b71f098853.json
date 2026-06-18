@@ -1,13 +1,25 @@
 {
+  "version": 2,
   "taskId": "657315ddab5a49b71f098853",
   "nameKo": "First in Line",
   "nameEn": "First in Line",
   "steps": [
-    "그라운드 제로 (Ground Zero) 지도에서 'Unity Credit' 은행 앞에 위치한 에머콤 스테이션 (Emercom station)을 찾습니다.",
-    "레이드 중에 의료 아이템 3개를 획득합니다.",
-    "획득한 의료 아이템 3개를 치료사 (Therapist)에게 전달합니다."
+    "그라운드 제로(Ground Zero) 맵에 진입한다.",
+    "\"Unity Credit\" 은행 건물 앞에 위치한 Emercom 스테이션을 찾는다. (지도에 위치가 표시되어 있음)",
+    "레이드 중에 의료 아이템 3개를 획득한다. (의료 아이템은 레이드 내에서 획득 가능하며, 종류는 제한 없음)",
+    "획득한 의료 아이템 3개를 테라피스트(Therapist)에게 전달한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/First_in_Line_Map.png/revision/latest/scale-to-width-down/640?cb=20240123113807",
+      "caption": "지도에 표시된 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a9/Ground_Zero_Emercom_Station.png/revision/latest/scale-to-width-down/640?cb=20250708202351",
+      "caption": "Emercom 스테이션"
+    }
   ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/First_in_Line",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
 }

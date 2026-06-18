@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "69ce213a298a6529b30d7134",
+  "nameKo": "생화학",
+  "nameEn": "Biochemistry",
+  "steps": [
+    "생화학(Biochemistry) 퀘스트는 Aceso Xpress 반자동 생화학 분석기 3개를 제출하는 임무입니다.",
+    "Aceso Xpress 반자동 생화학 분석기는 레이드 획득(FIR) 아이템으로, 특정 트레이더나 마켓에서 구매할 수 없습니다.",
+    "분석기를 얻기 위해 여러 맵에서 탐색하며, 특히 의료 시설이나 연구소, 병원 등에서 찾는 것이 유리합니다.",
+    "레이드 중 Aceso Xpress 분석기를 3개 모은 후, 퀘스트를 수락한 트레이더에게 제출하여 완료할 수 있습니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Biochemistry",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

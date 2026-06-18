@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "taskId": "66631493312343839d032d22",
+  "nameKo": "Small Business - Part 3",
+  "nameEn": "Small Business - Part 3",
+  "steps": [
+    "총 4개의 컬티스트 나이프(Cultist knife)를 준비한다. 나이프는 컬티스트를 사살하거나 플리마켓에서 구매할 수 있다.",
+    "해안선(Shoreline) 맵의 첫 번째 보관 장소는 늪지 마을의 교회 안이다. 교회 위치는 지도에서 확인할 수 있으며, 내부 탁자 위에 나이프를 보관한다.",
+    "해안선(Shoreline) 맵의 두 번째 보관 장소는 건강 리조트(Health Resort) 동쪽 별관 3층 321호(돼지 방)이다. 이 방은 문에 촛불과 여러 표시가 있어 쉽게 식별 가능하다. 욕조 위에 나이프를 보관한다.",
+    "삼림(Woods) 맵의 첫 번째 보관 장소는 북쪽의 황폐한 마을에 있다. 교회 북쪽에 위치한 집 뒤뜰의 원형 의식 장소에 나이프를 보관한다.",
+    "삼림(Woods) 맵의 두 번째 보관 장소는 톱밥 공장 서쪽, 검문소 근처 숲속에 있다. 검문소 바리케이드에 서서 남쪽의 큰 바위를 바라보면 보관 장소를 쉽게 찾을 수 있다. 표시된 원형 의식 장소에 나이프를 보관한다."
+  ],
+  "tips": "컬티스트 나이프는 컬티스트를 사살하여 획득하거나 플리마켓에서 구매할 수 있으니, 레이드 전에 미리 준비하는 것이 편리하다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/SmallBusinessPart3ChurchMap.png/revision/latest/scale-to-width-down/640?cb=20240707221241",
+      "caption": "지도에 표시된 교회"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/SmallBusinessPart3Church.png/revision/latest/scale-to-width-down/640?cb=20240707222141",
+      "caption": "교회 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/ShorelineChurchInside.png/revision/latest/scale-to-width-down/640?cb=20260611205849",
+      "caption": "탁자 위 보관 장소"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWing.jpg/revision/latest/scale-to-width-down/640?cb=20240520225533",
+      "caption": "지도에 표시된 건강 리조트 동쪽 별관 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/HealthResortEastWingMarkedRoom.png/revision/latest/scale-to-width-down/640?cb=20190910191931",
+      "caption": "동쪽 별관 지도에 표시된 방 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9e/Shorelineritualsite.png/revision/latest/scale-to-width-down/640?cb=20260611205250",
+      "caption": "욕조 위 보관 장소"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/53/WoodsRitualSpotMapMarked.png/revision/latest/scale-to-width-down/640?cb=20210115145037",
+      "caption": "지도에 표시된 위치 (상단)"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/The_second_ritual_spot_in_the_Woods.png/revision/latest/scale-to-width-down/640?cb=20231112222030",
+      "caption": "표시된 원형 의식 장소 보관 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e6/CheckPointViewToMarkedCircle.png/revision/latest/scale-to-width-down/640?cb=20190910195221",
+      "caption": "검문소에서 표시된 원형 의식 장소 보관 위치를 바라본 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0e/MarkedCircleViewToCheckpoint.png/revision/latest/scale-to-width-down/640?cb=20190910195340",
+      "caption": "표시된 원형 의식 장소 보관 위치에서 검문소를 바라본 모습"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/82/Cultists_ritual_place.png/revision/latest/scale-to-width-down/640?cb=20231112222223",
+      "caption": "표시된 원형 의식 장소"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Small_Business_-_Part_3",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

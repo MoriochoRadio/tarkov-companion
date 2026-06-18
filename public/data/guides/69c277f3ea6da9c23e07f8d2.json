@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "taskId": "69c277f3ea6da9c23e07f8d2",
+  "nameKo": "씁쓸한 승리",
+  "nameEn": "A Bitter Victory",
+  "steps": [
+    "Hideout(은신처)에서 필요한 아이템을 준비한다. 아이템은 다음과 같다:",
+    "- Fierce Hatchling moonshine (강렬한 병아리 밀주) 2병: 은신처의 Booze generator(주류 제조기) 레벨 1에서 제작 가능",
+    "- Rye croutons 또는 Emelya rye croutons (호밀 크루통 또는 에멜랴 호밀 크루통) 4개: 별도 획득 방법 없음",
+    "- Tarkovskaya vodka (타르코프스카야 보드카) 4병: 은신처의 Nutrition Unit(영양 단위) 레벨 3에서 제작 가능",
+    "- Salty Dog beef sausage (짭짤한 소고기 소시지) 2개: 은신처의 Nutrition Unit 레벨 1에서 제작 가능",
+    "모든 아이템은 레이드 획득(FIR) 불필요하며, 트레이더 구매도 불가능하다. 반드시 은신처에서 제작하거나 직접 준비해야 한다.",
+    "준비한 아이템을 퀘스트 NPC에게 전달하여 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/67/Rye_Croutons.png/revision/latest?cb=20250117123913",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c1/Emeyla_Croutons.png/revision/latest?cb=20250117122429",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/A_Bitter_Victory",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

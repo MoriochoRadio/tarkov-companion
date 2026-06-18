@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "taskId": "61e6e615eea2935bc018a2c5",
+  "nameKo": "손해배상 - 바텐더",
+  "nameEn": "Compensation for Damage - Barkeep",
+  "steps": [
+    "바텐더(Barkeep)에게 손해배상 아이템을 전달해야 한다.",
+    "필요한 아이템은 Dan Jackiel 위스키 1병과 TarCola 소다 3캔이다.",
+    "이 아이템들은 모두 레이드 획득(FIR) 가능하다.",
+    "Dan Jackiel 위스키 1병을 준비한다.",
+    "TarCola 소다 3캔을 준비한다.",
+    "준비한 Dan Jackiel 위스키 1병과 TarCola 소다 3캔을 바텐더에게 전달한다."
+  ],
+  "tips": "아이템은 레이드 중 상점, 상자, 또는 적 NPC가 들고 있을 수 있으니 다양한 맵에서 탐색하는 것이 좋다.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Compensation_for_Damage_-_Barkeep",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

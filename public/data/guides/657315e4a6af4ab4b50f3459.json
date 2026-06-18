@@ -1,16 +1,53 @@
 {
+  "version": 2,
   "taskId": "657315e4a6af4ab4b50f3459",
   "nameKo": "Saving the Mole",
   "nameEn": "Saving the Mole",
   "steps": [
-    "테라그룹 (TerraGroup) 건물 단지의 메인 빌딩 입구 홀에 있는 큰 테라그룹 간판 뒤 복도에서 실험실 과학자를 찾는다. 그는 잔해 아래에 매장되어 있다.",
-    "과학자 시체 안에서 테라그룹 과학 사무실 열쇠(TerraGroup science office key)를 획득한다. 이 열쇠는 2층의 사무실 번호 4를 여는 데 사용된다. 열쇠는 매 레이드마다 1개가 보장 스폰되지만 다른 플레이어가 가져갈 수 있다.",
-    "2층 사무실 번호 4를 열쇠로 열고 들어간다.",
-    "켜진 모니터가 있는 책상에서 하드 드라이브(TerraGroup scientist's hard drive)를 찾는다. 하드 드라이브는 책상 위나 오른쪽 선반에서 스폰될 수 있다.",
-    "하드 드라이브를 획득하면 퀘스트 아이템 인벤토리에 자동으로 들어가며, 추출하지 못하면 아이템을 잃게 된다."
+    "세관(Сustoms) 그라운드 제로(Ground Zero) 맵 내 TerraGroup 빌딩 단지의 메인 빌딩으로 이동한다. 입구 홀에서 큰 TerraGroup 간판 뒤 복도에 있는 과학자를 찾는다. 과학자는 잔해에 깔려 있으며, 시체 안에서 TerraGroup 과학 사무실 키(TerraGroup science office key)를 획득할 수 있다. 이 키는 TerraGroup 빌딩 2층 4번 사무실을 여는 데 필요하다. 키는 매 레이드마다 한 개가 보장 스폰되지만, 다른 플레이어가 먼저 획득할 수 있으니 주의한다.",
+    "TerraGroup 과학 사무실 키를 사용해 TerraGroup 빌딩 2층 4번 사무실 문을 연다. 사무실 내부에는 켜진 모니터가 있는 책상이 하나 있는데, 이 책상 위나 오른쪽 선반에서 과학자의 하드 드라이브(TerraGroup scientist's hard drive)를 찾아야 한다.",
+    "과학자의 하드 드라이브는 책상 위에 3가지 스폰 위치 중 하나에 나타난다. 첫 번째와 두 번째 위치는 책상 위이며, 세 번째 위치는 책상 오른쪽 선반이다. 하드 드라이브는 퀘스트가 활성화되어 있을 때만 레이드 내에서 획득 가능하며, 획득 즉시 퀘스트 아이템 인벤토리로 옮겨진다. 하드 드라이브를 들고 추출하지 못하면 아이템을 잃게 되므로 안전한 추출 경로를 확보해야 한다."
   ],
-  "tips": "과학자 시체와 하드 드라이브는 퀘스트가 활성화되어 있을 때만 스폰되므로, 퀘스트를 받지 않은 상태에서는 찾을 수 없다. 하드 드라이브를 획득한 후 반드시 안전하게 추출해야 한다.",
+  "tips": "과학자 시체에서 얻는 TerraGroup 과학 사무실 키는 매 레이드마다 1개가 보장 스폰되지만, 다른 플레이어가 먼저 가져갈 수 있으므로 빠르게 확보하는 것이 중요하다. 하드 드라이브는 퀘스트 활성 상태에서만 획득 가능하며, 반드시 안전하게 추출해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e8/Saving_the_Mole_Map.png/revision/latest/scale-to-width-down/640?cb=20240325024052",
+      "caption": "지도에 표시된 TerraGroup 빌딩 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a8/Ground_Zero_TerraGroup_Building.png/revision/latest/scale-to-width-down/640?cb=20250708201533",
+      "caption": "TerraGroup 빌딩 단지 전경"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/98/SavingTheMoleWay.png/revision/latest/scale-to-width-down/640?cb=20250223154808",
+      "caption": "입구 홀에서 과학자 위치로 가는 경로"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a0/Terragroup_Scientist.png/revision/latest/scale-to-width-down/640?cb=20231230202741",
+      "caption": "과학자 시체"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bc/Scientist%27s_Office.png/revision/latest/scale-to-width-down/640?cb=20250223152436",
+      "caption": "2층 과학자 사무실 문"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/86/Saving_the_mole_hard_drive_desk.png/revision/latest/scale-to-width-down/640?cb=20250223153242",
+      "caption": "목표 책상"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a2/Saving_the_mole_hard_drive_location.png/revision/latest/scale-to-width-down/640?cb=20250223153811",
+      "caption": "책상 위 첫 번째 하드 드라이브 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4c/Saving_the_mole_hard_drive_location_2.png/revision/latest/scale-to-width-down/640?cb=20250223154110",
+      "caption": "책상 위 두 번째 하드 드라이브 스폰 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/28/Saving_the_mole_hard_drive_location_3.png/revision/latest/scale-to-width-down/640?cb=20250223154147",
+      "caption": "책상 오른쪽 선반 세 번째 하드 드라이브 스폰 위치"
+    }
+  ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Saving_the_Mole",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
 }

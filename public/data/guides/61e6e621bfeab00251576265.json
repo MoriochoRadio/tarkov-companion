@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "taskId": "61e6e621bfeab00251576265",
+  "nameKo": "손해배상 - 수집가",
+  "nameEn": "Compensation for Damage - Collection",
+  "steps": [
+    "손해배상 - 수집가(Compensation for Damage - Collection) 퀘스트 완료를 위해서는 Colt M4A1 5.56x45 돌격소총 2정을 제출해야 한다.",
+    "제출할 무기는 사용 가능한 상태여야 하며, 무기 아이콘이 빨간색으로 표시되면 필수 부품이 누락된 상태이므로 제출할 수 없다.",
+    "Colt M4A1 5.56x45 돌격소총은 레이드 중 획득(FIR)해야 하며, 트레이더나 플리마켓에서 구매하는 것은 불가능하다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Compensation_for_Damage_-_Collection",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

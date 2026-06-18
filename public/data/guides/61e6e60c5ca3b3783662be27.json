@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "61e6e60c5ca3b3783662be27",
+  "nameKo": "손해배상 - 배상금",
+  "nameEn": "Compensation for Damage - Wergild",
+  "steps": [
+    "프라퍼(Prapor)에게서 '손해배상 - 배상금 (Compensation for Damage - Wergild)' 퀘스트를 수락한다.",
+    "퀘스트 목표는 1,000,000 루블(Roubles)을 프라퍼에게 전달하는 것이다.",
+    "루블 1,000,000은 레이드에서 획득할 필요 없이, 인벤토리에 보유하고 있으면 된다.",
+    "퀘스트 아이템인 1,000,000 루블을 프라퍼에게 전달하여 퀘스트를 완료한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Compensation_for_Damage_-_Wergild",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

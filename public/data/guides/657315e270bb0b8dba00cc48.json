@@ -1,13 +1,25 @@
 {
+  "version": 2,
   "taskId": "657315e270bb0b8dba00cc48",
   "nameKo": "Burning Rubber",
   "nameEn": "Burning Rubber",
   "steps": [
-    "그라운드 제로 (Ground Zero) 지역에서 '경찰 검문소 V-Ex (Police Cordon V-Ex)' 추출 지점을 찾습니다.",
-    "'생존 (Survived)' 또는 '돌파 (Run-Through)' 추출 상태로 해당 추출 지점에서 탈출해야 합니다.",
-    "추출 시 기본 비용은 20,000 루블이며, 스캐브 카르마(Scav karma)에 따라 비용이 변동될 수 있습니다."
+    "그라운드 제로(Ground Zero) 맵에서 'Police Cordon V-Ex' 추출 지점을 찾아야 합니다. 지도에서 해당 위치가 표시되어 있으니 이를 참고하세요.",
+    "레이드 중에 'Survived' 또는 'Run-Through' 추출 상태를 유지하며 'Police Cordon V-Ex' 추출 지점으로 이동합니다.",
+    "추출 시 기본 수수료는 20,000 루블이며, 스캐브 카르마(Scav karma)에 따라 수수료가 더 높거나 낮을 수 있습니다.",
+    "추출 지점에 도착하면 수수료를 지불하고 안전하게 레이드에서 탈출합니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a8/Burning_Rubber_Map.png/revision/latest/scale-to-width-down/640?cb=20240325022129",
+      "caption": "지도에 표시된 Police Cordon V-Ex 추출 지점"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fd/Police_Checkpoint.png/revision/latest/scale-to-width-down/640?cb=20250708200828",
+      "caption": "추출 지점"
+    }
   ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Burning_Rubber",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
 }

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "69ce21e990144e437802b1e0",
+  "nameKo": "신상이 왔어요",
+  "nameEn": "Fresh Stock",
+  "steps": [
+    "프레시 스톡(Fresh Stock) 퀘스트는 특정 방탄복 5개를 수집하여 제출하는 임무입니다.",
+    "수집해야 하는 방탄복은 다음 세 가지 중 하나입니다: Ferro Concepts FCPC V5 Plate Carrier (Black Division), Spiritus Systems LV-119 Plate Carrier (Black Division V2), 또는 Spiritus Systems LV-119 Plate Carrier (MultiCam Black).",
+    "이 방탄복들은 레이드 획득(FIR) 아이템으로, 맵 내에서 적 NPC나 플레이어가 착용하고 있거나, 특정 장소에서 발견할 수 있습니다.",
+    "플리마켓이나 트레이더에게서 구매할 수 없으므로, 직접 레이드에서 획득하는 것이 필수입니다.",
+    "방탄복 5개를 모두 모은 후, 퀘스트를 수락한 트레이더에게 제출하면 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Fresh_Stock",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
+}

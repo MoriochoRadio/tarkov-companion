@@ -1,13 +1,13 @@
 {
+  "version": 2,
   "taskId": "5967733e86f774602332fc84",
   "nameKo": "재고 부족",
   "nameEn": "Shortage",
   "steps": [
-    "세관 (Customs) 또는 다른 맵에서 살레와 구급상자 (Salewa first aid kit) 3개를 획득합니다.",
-    "살레와 구급상자는 상태에 상관없이 획득 및 제출이 가능하며, 은신처 (Hideout) 내 의료 스테이션 (Medstation) 레벨 1에서 제작할 수도 있습니다.",
-    "획득한 살레와 구급상자 3개를 퀘스트 의뢰인에게 전달하여 완료합니다."
+    "세팅에서 의료 스테이션(Medstation) 레벨 1을 확보하여 Salewa 구급상자 3개를 제작한다. 구급상자는 상태에 상관없이 제출 가능하다.",
+    "제작한 Salewa 구급상자 3개를 퀘스트 담당자에게 전달한다."
   ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Shortage",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
 }

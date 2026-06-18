@@ -1,19 +1,41 @@
 {
+  "version": 2,
   "taskId": "5936da9e86f7742d65037edf",
   "nameKo": "배경 조사",
   "nameEn": "Background Check",
   "steps": [
-    "세관(Customs) 지도로 이동한다. 청동 회중시계(Bronze pocket watch)를 얻기 위해서는 기계 열쇠(Machinery key)가 필요하다.",
-    "기계 열쇠가 없다면 남쪽에 위치한 3층 기숙사 건물의 2층 205호실로 향한다.",
-    "복도를 막고 있는 잔해 위로 점프한 후 웅크려서 방 입구로 들어간다. 옷장 옆 파란색 재킷 안에서 기계 열쇠를 찾는다.",
-    "열쇠를 얻은 후 북쪽 건설 현장에 있는 연료 탱커 트럭으로 이동한다.",
-    "기계 열쇠로 트럭 운전석 문을 열고 내부 바닥 좌석 앞에서 청동 회중시계를 획득한다.",
-    "근처 보일러 건물 옥상에 저격 스캐브(Scav)가 있으니 조심한다.",
-    "회중시계를 획득하면 퀘스트 아이템 인벤토리에 자동으로 들어가며, 반드시 회중시계를 들고 안전하게 탈출해야 한다.",
-    "회중시계를 가지고 탈출에 성공하면 프라포르(Prapor)에게 전달하여 퀘스트를 완료한다."
+    "세관(Customs) 맵으로 진입한다. 브론즈 회중시계를 얻기 위해서는 기계 열쇠(Machinery key)가 필요하다. 만약 열쇠가 없다면 남쪽에 위치한 3층 기숙사 건물의 2층 205호로 이동한다.",
+    "205호실 입구는 복도를 막고 있는 잔해 위로 점프한 후 웅크려서 들어가야 한다. 방 안으로 들어가면 옷장 옆 파란색 재킷 안에서 기계 열쇠를 찾을 수 있다.",
+    "기계 열쇠를 획득한 후 북쪽에 위치한 건설 현장 내 연료 운반 트럭으로 이동한다.",
+    "연료 트럭의 운전석 쪽 문은 기계 열쇠로 잠금 해제할 수 있다. 문을 열고 트럭 내부로 들어간다.",
+    "트럭 내부 운전석 앞 바닥에서 브론즈 회중시계를 찾는다. 근처 보일러 건물 옥상에 저격 스캐브(Scav)가 있으니 주의한다.",
+    "회중시계를 획득하면 퀘스트 아이템 인벤토리에 자동으로 들어간다. 회중시계를 가지고 반드시 성공적으로 탈출해야 하며, 탈출 전에 사망하면 아이템을 다시 찾아야 한다.",
+    "회중시계를 가지고 프라퍼(Prapor)에게 전달하면 퀘스트가 완료된다."
   ],
-  "tips": "회중시계를 획득한 후 사망하면 아이템을 다시 찾아야 하므로 신중하게 움직이자.",
+  "tips": "기숙사 205호 입구의 잔해 위로 점프할 때 웅크려서 조심스럽게 진입해야 하며, 연료 트럭 주변과 보일러 건물 옥상에 적 스캐브가 있으니 항상 주변을 경계하자. 회중시계는 퀘스트 활성화 상태에서만 획득 가능하며, 레이드 중 반드시 탈출해야 손실을 방지할 수 있다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f2/Checking_Map.png/revision/latest/scale-to-width-down/640?cb=20220213230832",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/47/DormRoom205Entrance.png/revision/latest/scale-to-width-down/640?cb=20221220200252",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e4/Dorms.png/revision/latest/scale-to-width-down/640?cb=20250712210335",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a2/Machinery_Key_Door.png/revision/latest/scale-to-width-down/640?cb=20240819152618",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/82/Machinery_key_inside.png/revision/latest/scale-to-width-down/640?cb=20230607220614",
+      "caption": ""
+    }
+  ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Background_Check",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-18T21:39:28.485+09:00"
 }
