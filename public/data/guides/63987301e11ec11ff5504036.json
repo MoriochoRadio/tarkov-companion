@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "taskId": "63987301e11ec11ff5504036",
+  "nameKo": "건스미스 - 파트 21",
+  "nameEn": "Gunsmith - Part 21",
+  "steps": [
+    "M700 소총의 사양을 맞추기 위해 다음 조건을 충족해야 합니다: 내구도 60 이상, 인체공학 35 이상, 반동 500 이하, 무게 6kg 이하, 조준 거리 1500 이상, 소음기 장착, 탄창 용량 5발 또는 탄창 미장착, M700 AB Arms MOD*X GEN 3 섀시, M700 AB Arms MOD*X GEN 3 KeyMod 핸드가드, M700 AB Arms MOD*X 레일 마운트 장착.",
+    "M1911 권총의 사양을 맞추기 위해 다음 조건을 충족해야 합니다: 내구도 60 이상, 인체공학 75 이상, 조준 거리 200 이상, NcSTAR Tactical Blue Laser와 같은 전술 장치 장착, 탄창 장착, M1911 Pachmayr American Legend Grip #423 그립 장착, M1911 Anarchy Outdoors .45 ACP 머즐 브레이크 장착."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_21",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

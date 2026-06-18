@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "taskId": "5e381b0286f77420e3417a74",
+  "nameKo": "원단 - 파트 1",
+  "nameEn": "Textile - Part 1",
+  "steps": [
+    "인터체인지(Interchange)에서 원단을 찾기 위해 의류 매장을 방문합니다. 이곳에서 아라미드 섬유 원단(Aramid fiber fabric)과 리프스톱 원단(Ripstop fabric)을 찾을 수 있습니다.",
+    "아라미드 섬유 원단은 의류 매장에서 자주 발견되며, 리프스톱 원단은 같은 장소에서 더 드물게 발견됩니다.",
+    "스포츠 가방(Sport bags) 안에서도 아라미드 섬유 원단과 리프스톱 원단을 찾을 수 있습니다. 또한, 묻힌 배럴 캐시(Buried barrel caches)와 지상 캐시(Ground caches)에서도 발견될 수 있습니다.",
+    "리프스톱 원단은 의류 매장에서 찾을 수 있지만, 아라미드 섬유 원단보다 더 드물게 나타납니다.",
+    "파라코드(Paracord)는 스포츠 가방에서 찾을 수 있으며, 리저브(Reserve) 맵에서도 생성됩니다. 더 구체적인 생성 위치는 파라코드 페이지를 참조하세요.",
+    "필요한 아이템 수량: 아라미드 섬유 원단 5개, 리프스톱 원단 10개, 파라코드 3개를 준비합니다.",
+    "아이템을 모두 모은 후, 테라피스트(Therapist)에게 전달합니다."
+  ],
+  "tips": "아이템을 찾을 때는 의류 매장과 스포츠 가방을 집중적으로 탐색하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/98/Textile_1_and_2_locations.png/revision/latest/scale-to-width-down/640?cb=20201005102520",
+      "caption": "인터체인지에서 원단 위치"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_1",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

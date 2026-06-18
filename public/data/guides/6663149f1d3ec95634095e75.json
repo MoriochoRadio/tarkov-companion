@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "6663149f1d3ec95634095e75",
+  "nameKo": "Circulate",
+  "nameEn": "Circulate",
+  "steps": [
+    "라그맨(Ragman)에게 판매할 수 있는 백팩(Backpack) 또는 전술 장비(Tactical rig)를 준비한다.",
+    "레이드에서 백팩이나 전술 장비를 획득하거나, 프리마켓 또는 트레이더(예: 래그맨)에게 구매하여 총 250개를 모은다.",
+    "모은 백팩이나 전술 장비를 인벤토리에서 선택하여 라그맨에게 판매한다.",
+    "판매한 아이템 수가 250개에 도달할 때까지 이 과정을 반복한다.",
+    "판매량 표시가 즉시 업데이트되지 않을 수 있으므로, 필요 시 게임을 재시작하여 판매량을 갱신한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Circulate",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

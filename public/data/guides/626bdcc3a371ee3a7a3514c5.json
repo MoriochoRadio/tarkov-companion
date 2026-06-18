@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "taskId": "626bdcc3a371ee3a7a3514c5",
+  "nameKo": "들개",
+  "nameEn": "Stray Dogs",
+  "steps": [
+    "Knight, Big Pipe, Birdeye 세 명의 보스를 처치해야 합니다.",
+    "Knight는 Reserve(리저브) 맵에서 주로 출현하며, 방어구와 강력한 무장을 갖추고 있습니다. 리저브 내 주요 건물과 지하 벙커 주변을 탐색하면서 Knight를 찾으세요.",
+    "Big Pipe는 Factory(공장) 맵에서 출현하는 보스로, 좁은 공간과 복잡한 구조를 이용해 전투가 치열합니다. 공장 내부와 주변 지역을 주의 깊게 수색하며 Big Pipe를 찾아 처치하세요.",
+    "Birdeye는 Woods(삼림) 맵에서 출현하는 보스입니다. 삼림 내 개활지와 나무가 우거진 지역을 중심으로 탐색하며 Birdeye를 발견해 처치해야 합니다.",
+    "각 보스는 강력한 무장과 방어구를 갖추고 있으므로, 충분한 장비와 탄약을 준비하고 팀원과 협력하여 공략하는 것이 좋습니다.",
+    "보스 처치 후 해당 보스가 드랍하는 아이템을 획득하거나, 퀘스트 진행에 필요한 아이템을 챙기세요."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Stray_Dogs",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

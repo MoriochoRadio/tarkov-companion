@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "64f83bd983cfca080a362c82",
+  "nameKo": "Gunsmith - Part 25",
+  "nameEn": "Gunsmith - Part 25",
+  "steps": [
+    "PKP 기관총을 제작하기 위해 필요한 부품들을 준비합니다.",
+    "부품 목록은 다음과 같습니다: \n- 내구도 60 이상 \n- 10 이상의 인체공학성 \n- 반동 950 이하 \n- NcSTAR 전술 블루 레이저와 같은 전술 장비 \n- PK Zenit B-50 핸드가드 \n- PK Zenit PT-2 \"Klassika\" 스톡 \n- PK Zenit DTK-1P 7.62x54R 머즐 브레이크 \n- NPZ USP-1 Tyulpan 4x 스코프 \n- PK 7.62x54R 100발 박스",
+    "각 부품을 얻기 위해 필요한 방법을 확인합니다.",
+    "부품들은 다음과 같은 방법으로 획득할 수 있습니다: \n- 특정 트레이더에게 구매 \n- 레이드에서 발견하여 획득(FIR) \n- 플리마켓에서 거래"
+  ],
+  "tips": "부품을 조합할 때는 내구도와 반동 수치를 주의 깊게 확인하세요.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_25",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "5b47825886f77468074618d3",
+  "nameKo": "건스미스 - 파트 22",
+  "nameEn": "Gunsmith - Part 22",
+  "steps": [
+    "M4A1 소총을 준비한다. 다음 사양을 충족해야 한다: 내구도 60 이상, 인체공학 40 이상, 반동 280 이하, 무게 5kg 이하, 탄창 용량 최소 60발.",
+    "무기에는 KAC QDSS NT4 5.56x45 소음기(FDE 색상)를 장착해야 한다. 이 소음기는 레이드 획득(FIR) 또는 마켓에서 구매할 수 있다.",
+    "AR-15 Alexander Arms MK10 라이플 길이 핸드가드를 장착한다. 이 부품은 레이드 획득(FIR) 또는 마켓에서 구매할 수 있다.",
+    "Trijicon REAP-IR 열상 조준경을 장착한다. 이 조준경 역시 레이드 획득(FIR) 또는 마켓에서 구매 가능하다.",
+    "모든 부품을 장착하여 M4A1이 내구도 60 이상, 인체공학 40 이상, 반동 280 이하, 무게 5kg 이하, 탄창 용량 60발 이상을 만족하는지 확인한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_22",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "taskId": "5ae449d986f774453a54a7e1",
+  "nameKo": "감독관",
+  "nameEn": "Supervisor",
+  "steps": [
+    "Goshan 캐시 레지스터 키를 획득해야 합니다. 이 아이템은 레이드 획득(FIR) 필요 없이 플리마켓에서 구매하거나 다른 방법으로 얻을 수 있습니다."
+  ],
+  "tips": "Goshan 캐시 레지스터 키는 세관( Customs) 맵의 Goshan 슈퍼마켓에서 자주 발견됩니다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3c/Goshan_key.png/revision/latest?cb=20220707182122",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Supervisor",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

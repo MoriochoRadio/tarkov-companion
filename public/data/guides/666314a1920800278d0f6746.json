@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "666314a1920800278d0f6746",
+  "nameKo": "Special Offer",
+  "nameEn": "Special Offer",
+  "steps": [
+    "레이드에서 보스 또는 컬티스트 서클에서 다음 장비를 획득한다: Sanitar의 가방(Sanitar's bag), Tagilla의 Crye Precision AVS 플레이트 캐리어 (Tagilla Edition), Birdeye의 LBT-1961A 로드 베어링 체스트 릭 (Goons Edition), Birdeye의 Mystery Ranch NICE COMM 3 BVS 프레임 시스템 (Coyote), Knight의 Crye Precision CPC 플레이트 캐리어 (Goons Edition).",
+    "획득한 각 장비는 퀘스트 제출 아이템으로 사용되며, 반드시 레이드 내에서 직접 획득해야 한다.",
+    "각 아이템은 해당 보스가 드랍하거나 컬티스트 서클에서 발견할 수 있으니, 보스 사냥 또는 컬티스트 서클 탐색을 통해 아이템을 모은다.",
+    "모든 아이템을 모은 후, 퀘스트를 진행하는 NPC에게 제출하여 퀘스트를 완료한다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/CPCGoons.png/revision/latest?cb=20240103193754",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Special_Offer",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

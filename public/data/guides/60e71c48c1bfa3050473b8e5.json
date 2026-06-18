@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "60e71c48c1bfa3050473b8e5",
+  "nameKo": "위기",
+  "nameEn": "Crisis",
+  "steps": [
+    "위기(Crisis) 퀘스트는 여러 가지 의료 아이템을 수집하여 제출하는 임무입니다. 제출해야 할 아이템은 휴대용 제세동기(Portable defibrillator) 3개, 안과검안경(Ophthalmoscope) 3개, LEDX 피부 투과기(LEDX Skin Transilluminator) 2개, 약 더미(Pile of meds) 20개, OLOLO 종합비타민(Bottle of OLOLO Multivitamins) 10개입니다.",
+    "LEDX 피부 투과기는 레이드에서 획득할 수 있으며, 연구소(The Lab) 중앙 구역과 TerraGroup Labs 키카드(파랑, 초록)를 사용해 열 수 있는 잠긴 방 안에서 발견할 수 있습니다. 또한 해안선(Shoreline)의 리조트(Resort) 구역과 산타르(Sanitar)를 처치한 후 그의 시체에서도 얻을 수 있습니다. 인터체인지(Interchange)에서는 ULTRA 의료 상점 등 여러 위치에서 스폰됩니다. 이 아이템은 은신처(Medstation 레벨 3)에서 제작도 가능합니다. 단, 제작에는 Lightkeeper(등대지기) 임무 'Return the Favor'를 통해 얻는 Silicon Optoelectronic Integrated Circuits 교재가 필요하며, 이 교재는 플리마켓에서 구매할 수 없습니다.",
+    "휴대용 제세동기는 연구소(The Lab), 타르코프 시내(Streets of Tarkov), 인터체인지(Interchange)에서 발견할 수 있으며, 은신처(Medstation 레벨 2)에서 제작할 수도 있습니다.",
+    "안과검안경, 약 더미, OLOLO 종합비타민은 특정 위치를 찾을 필요 없이 의료 아이템이 스폰되는 모든 장소에서 획득할 수 있습니다. 약 더미는 은신처(Medstation 레벨 2)에서 제작 가능합니다.",
+    "각 아이템은 레이드 획득(FIR) 가능하며, 일부는 은신처에서 제작할 수 있으니 제작과 레이드 획득을 병행하여 수집하는 것이 효율적입니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Crisis",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "666314a31cd52e3d040a2e76",
+  "nameKo": "Combat Proven",
+  "nameEn": "Combat Proven",
+  "steps": [
+    "고온 전투복 Goons Edition 전술 장비 중 하나를 착용한다. 선택 가능한 장비는 LBT-1961A Load Bearing Chest Rig (Goons Edition), S&S Precision PlateFrame plate carrier (Goons Edition), Crye Precision CPC plate carrier (Goons Edition)이다.",
+    "Goons와 Partisan 보스를 제외한 다른 보스 5명을 처치한다. 보스는 세관, 삼림, 해안선, 인터체인지, 리저브 등 다양한 맵에서 등장한다.",
+    "보스 처치 시 반드시 Goons Edition 전술 장비를 착용한 상태여야 한다. 착용하지 않으면 퀘스트가 진행되지 않는다.",
+    "참고: 현재 버그로 인해 The Wedge 보스를 처치해도 이 퀘스트에는 카운트되지 않는다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/CPCGoons.png/revision/latest?cb=20240103193754",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Combat_Proven",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

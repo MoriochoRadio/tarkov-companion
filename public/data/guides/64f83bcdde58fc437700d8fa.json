@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "64f83bcdde58fc437700d8fa",
+  "nameKo": "Gunsmith - Part 24",
+  "nameEn": "Gunsmith - Part 24",
+  "steps": [
+    "KAC SR-25을 조립하기 위해 필요한 부품을 모두 준비합니다.",
+    "부품 목록은 다음과 같습니다:\n- KAC PRS/QDC 7.62x51 소음기\n- Stark SE-5 Express Forward 포그립 (블랙)\n- AR-15 Magpul PRS GEN3 스톡\n- AR-15 HK Ergo PSG-1 스타일 핸드그립\n- Steiner DBAL-PL 전술 장비\n- Burris FastFire 3 반사 조준기\n- NcSTAR MPR45 백업 마운트\n- AR-10 7.62x51 KAC 10발 스틸 매거진\n- FLIR RS-32 2.25-9x 35mm 60Hz 열화상 조준경",
+    "각 부품의 사양을 확인하여 조립할 수 있는지 확인합니다.",
+    "KAC SR-25의 내구도는 60 이상이어야 하며, 인체공학성은 25 이상이어야 합니다.",
+    "무게는 6kg 이하로 맞춰야 합니다.",
+    "부품을 조립한 후, KAC SR-25의 사양을 충족하는지 다시 한번 확인합니다.",
+    "CMMG Mk3 핸드가드가 명시되어 있지만, 현재는 다른 핸드가드도 허용됩니다.",
+    "모든 부품이 준비되면, 조립을 시작합니다.",
+    "조립이 완료되면, KAC SR-25를 검토하여 모든 요구 사항을 충족하는지 확인합니다."
+  ],
+  "tips": "부품은 다양한 맵에서 찾을 수 있으며, 플리마켓에서 구매할 수도 있습니다. 레이드 획득(FIR) 여부를 확인하세요.",
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_24",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

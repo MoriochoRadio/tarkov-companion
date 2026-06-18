@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "taskId": "6942b44f891369fc790e385a",
+  "nameKo": "Setting Priorities",
+  "nameEn": "Setting Priorities",
+  "steps": [
+    "PMC(플레이어) 제거 첫 번째 목표를 수행할 때는 반드시 어떤 방탄 조끼, 방탄 흉부 장비, 방탄 머리 보호구, 방탄 얼굴 가리개도 착용하지 않은 상태에서 진행해야 한다.",
+    "첫 번째 목표를 수행할 때는 어떤 이어피스(earpiece)라도 착용해야 한다. 단, Arena BattlePass 시즌 2, Factory 전술 맵, Echo Belli 상자에서 얻는 이어피스는 이 퀘스트에 적용되지 않으니 주의한다.",
+    "두 번째 목표인 PMC 제거 시에는 TSh-4M-L 소프트 탱크 승무원 헬멧을 반드시 착용해야 한다."
+  ],
+  "tips": "이어피스 착용 조건과 방탄 장비 미착용 조건을 반드시 지켜야 퀘스트가 정상적으로 진행된다. Arena BattlePass 시즌 2, Factory 전술 맵, Echo Belli 상자에서 획득한 이어피스는 퀘스트에 적용되지 않으니 다른 이어피스를 준비하자.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/20/TankHelm2.png/revision/latest?cb=20240102204306",
+      "caption": ""
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Setting_Priorities",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

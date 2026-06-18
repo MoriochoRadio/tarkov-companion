@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "taskId": "671a49f77d49aea42c029b5f",
+  "nameKo": "Irresistible",
+  "nameEn": "Irresistible",
+  "steps": [
+    "인터체인지(Interchange) 쇼핑몰 남서쪽에 위치한 컨테이너 야적장으로 이동한다.",
+    "컨테이너 야적장 내 빨간색 컨테이너를 찾는다. (지도에 표시된 위치 참고)",
+    "컨테이너 내부에 들어가기 위해서는 전원 공급이 필요하며, Object #21WS 키카드를 반드시 소지해야 한다.",
+    "빨간 컨테이너 안에서 분실된 무기 케이스(Stolen weapon case)를 찾아 획득한다. 이 아이템은 퀘스트가 활성화된 상태에서만 획득 가능하며, 획득 시 퀘스트 아이템 인벤토리로 자동 이동한다.",
+    "무기 케이스를 획득한 후 반드시 안전하게 추출해야 하며, 추출에 실패할 경우 아이템을 잃게 된다."
+  ],
+  "tips": "Object #21WS 키카드는 인터체인지 내 비밀 컨테이너를 여는 데 필수적인 아이템이므로, 미리 준비해두는 것이 좋다. 무기 케이스는 퀘스트 활성화 시에만 획득 가능하므로, 퀘스트를 시작한 후에만 컨테이너를 탐색해야 한다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5c/21WSMap.png/revision/latest/scale-to-width-down/640?cb=20220409230216",
+      "caption": "지도에 표시된 컨테이너 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a6/21ws_outside.jpg/revision/latest/scale-to-width-down/640?cb=20230120211047",
+      "caption": "빨간색 컨테이너"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/60/IrresistibleQuestStolenCase.png/revision/latest/scale-to-width-down/640?cb=20241031203315",
+      "caption": "분실된 무기 케이스"
+    }
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Irresistible",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

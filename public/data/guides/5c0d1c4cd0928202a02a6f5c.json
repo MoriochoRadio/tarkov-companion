@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "5c0d1c4cd0928202a02a6f5c",
+  "nameKo": "청소부",
+  "nameEn": "Decontamination Service",
+  "steps": [
+    "인터체인지(Interchange) 맵에서 퀘스트를 진행해야 합니다.",
+    "퀘스트 진행에 필요한 장비 중 하나를 반드시 착용해야 합니다. 착용 가능한 장비는 다음과 같습니다: Respirator, GP-5 가스 마스크, GP-7 가스 마스크, Gentex Ops-Core SOTR Respirator, Avon M53A1 가스 마스크.",
+    "장비를 착용한 상태에서 인터체인지 맵 내에서 스캐브(Scav) 적을 사거리 60미터 이내에서 사살해야 합니다.",
+    "총 40명의 스캐브를 처치해야 퀘스트가 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Decontamination_Service",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "taskId": "64f83bb69878a0569d6ecfbe",
+  "nameKo": "Gunsmith - Part 23",
+  "nameEn": "Gunsmith - Part 23",
+  "steps": [
+    "CMMG Mk47 Mutant 무기 사양을 충족시키기 위해 다음 부품들을 준비한다:",
+    "내구도 60 이상, 인체공학 30 이상, 무게 5kg 이하를 맞춘다.",
+    "AR-10 Noveske SWS N6 Split 핸드가드를 장착한다.",
+    "Mk47 409mm 배럴을 장착한다.",
+    "AR-10 Odin Works ATLAS-7 7.62x51 소염기를 장착한다.",
+    "Tactical Dynamics Skeletonized 포어그립을 장착한다.",
+    "Glock GTL 21 전술용 손전등과 레이저를 장착한다.",
+    "Vortex Razor AMG UH-1 홀로그램 조준기를 장착한다.",
+    "AR-15 HK E1 개머리판을 장착한다.",
+    "AR-15 F1 Firearms Skeletonized 스타일 2 권총 그립을 장착한다.",
+    "AK 7.62x39 ProMag AK-A-16 73발 드럼 탄창을 장착한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_23",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

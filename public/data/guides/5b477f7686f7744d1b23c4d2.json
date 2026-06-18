@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "5b477f7686f7744d1b23c4d2",
+  "nameKo": "건스미스 - 파트 20",
+  "nameEn": "Gunsmith - Part 20",
+  "steps": [
+    "M1A 소총을 준비한다. 다음 사양을 충족해야 한다: 내구도 60 이상, 인체공학 20 이상, 반동 400 이하, 무게 7.3kg 이하, 탄창 용량 20발 이상.",
+    "M1A에 M14 UltiMAK M8 전방 광학 마운트를 장착한다.",
+    "M1A에 Nightforce ATACR 7-35x56 34mm 라이플스코프를 장착한다.",
+    "Aimpoint Micro T-1 레플렉스 사이트를 M1A에 장착한다.",
+    "Holosun LS321 전술 장치를 M1A에 장착한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_20",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

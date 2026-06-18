@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "taskId": "639873003693c63d86328f25",
+  "nameKo": "건스미스 - 파트 19",
+  "nameEn": "Gunsmith - Part 19",
+  "steps": [
+    "SVDS(소총) 사양을 충족하는 무기를 준비한다. 사양은 다음과 같다: 내구도 60 이상, 인체공학 10 이상, 반동 500 이하, 소음기 장착, 탄창은 10발 이상이거나 탄창 없이, AR-15 Magpul UBR GEN2 스톡(검정색), SVD SAG MK1 섀시, AK Magpul MOE 권총 그립(검정색), March Tactical 3-24x42 FFP 30mm 조준경 장착.",
+    "각 부품을 준비한다. AR-15 Magpul UBR GEN2 스톡(검정색)은 프라퍼 또는 마켓에서 구매 가능하며, SVD SAG MK1 섀시는 레이드 획득(FIR) 또는 마켓에서 구할 수 있다.",
+    "AK Magpul MOE 권총 그립(검정색)은 마켓이나 트레이더에서 구입할 수 있으며, March Tactical 3-24x42 FFP 30mm 조준경은 레이드 획득(FIR) 또는 마켓에서 구매 가능하다.",
+    "준비한 부품들을 조립하여 SVDS를 완성한다. 내구도, 인체공학, 반동, 소음기, 탄창 용량, 스톡, 섀시, 권총 그립, 조준경이 모두 사양에 맞는지 확인한다.",
+    "완성한 SVDS를 퀘스트 제출 장소에 제출하여 퀘스트를 완료한다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_19",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

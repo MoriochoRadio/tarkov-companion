@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "666314a50aa5c7436c00908a",
+  "nameKo": "Old Patterns",
+  "nameEn": "Old Patterns",
+  "steps": [
+    "Old Patterns(오래된 패턴) 퀘스트는 Physical Bitcoin(실물 비트코인) 15개를 제출하는 임무입니다.",
+    "Physical Bitcoin은 레이드에서 획득해야 하며, 상점이나 트레이더를 통해 구매할 수 없습니다.",
+    "레이드 내 다양한 장소에서 Physical Bitcoin을 찾아야 하므로, 여러 맵에서 탐색을 권장합니다.",
+    "획득한 Physical Bitcoin 15개를 모은 후, 퀘스트를 수여한 NPC에게 전달하면 완료됩니다."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Old_Patterns",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}

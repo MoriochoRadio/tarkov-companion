@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "taskId": "67e993f5ed537409f009da75",
+  "nameKo": "Postponed Reward [PVP ZONE]",
+  "nameEn": "Postponed Reward [PVP ZONE]",
+  "steps": [
+    "Postponed Reward [PVP ZONE] 퀘스트는 Lega Medal(레가 메달) 1개를 제출하는 임무입니다.",
+    "Lega Medal은 레이드 내에서 획득할 수 없으며, 별도의 획득 방법이 없습니다.",
+    "퀘스트 완료를 위해서는 Lega Medal을 반드시 소지하고 있어야 하며, 해당 아이템을 트레이더나 거래소에서 구입하거나 다른 플레이어와 거래를 통해 입수해야 합니다.",
+    "획득한 Lega Medal을 퀘스트 창에서 제출하여 임무를 완료하세요."
+  ],
+  "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Postponed_Reward",
+  "license": "CC BY-SA",
+  "generatedAt": "2026-06-18T16:08:34.879+09:00"
+}
