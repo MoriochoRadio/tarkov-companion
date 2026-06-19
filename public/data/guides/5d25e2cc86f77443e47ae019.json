@@ -1,11 +1,12 @@
 {
+  "version": 2,
   "taskId": "5d25e2cc86f77443e47ae019",
   "nameKo": "사냥꾼의 길 - 삼림 청소",
   "nameEn": "The Huntsman Path - Forest Cleaning",
   "steps": [
-    "어떤 맵에서든 스캐브(Scavs) 30명을 처치합니다."
+    "레이드 중 어떤 맵에서든 스캐브(Scav) 30명을 처치한다."
   ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Forest_Cleaning",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-19T19:03:34.742+09:00"
 }
