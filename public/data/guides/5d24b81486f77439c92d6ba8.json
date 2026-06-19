@@ -1,16 +1,39 @@
 {
+  "version": 2,
   "taskId": "5d24b81486f77439c92d6ba8",
   "nameKo": "지인",
   "nameEn": "Acquaintance",
   "steps": [
-    "1단계: 퀘스트에 필요한 식량 아이템인 이스카라 식량 팩(Iskra ration pack) 3개, 즉석 라면 팩(Pack of instant noodles) 2개, 대형 소고기 스튜 캔(Can of beef stew (Large)) 2개를 레이드에서 찾아야 합니다.",
-    "2단계: 예비군 기지(Reserve)에서는 블랙 비숍 건물의 주방 구역과 지하 벙커의 잠긴 철장 방에서 식량 아이템과 식량 보급 상자를 쉽게 찾을 수 있습니다.",
-    "3단계: 쇼어라인(Shoreline) 리조트의 행정동과 극장 건물 곳곳에 많은 식량 아이템이 흩어져 있으니 꼼꼼히 수색하세요.",
-    "4단계: 인터체인지(Interchange)에서는 고샨(Goshan) 식료품점 내부 선반들을 모두 확인해야 하며, 어두운 구석을 탐색할 때는 손전등이 도움이 됩니다.",
-    "5단계: 우즈(Woods)에서는 USEC 캠프와 호수 남동쪽 캠프 주변에서 식량 팩이 자주 스폰되니 해당 지역을 탐색하세요."
+    "이 퀘스트를 진행하기 위해서는 레이드에서 필요한 식량 아이템을 찾아야 합니다.",
+    "식량 아이템은 다음과 같습니다: 이스크라 비상식량 팩 3개, 즉석 라면 2개, 대형 소고기 스튜 캔 2개입니다.",
+    "이 아이템들은 레이드에서 획득해야 하며, 리저브, 인터체인지, 해안선 맵에서 흔히 발견됩니다.",
+    "리저브 맵에서는 블랙 비숍 건물의 주방 구역에서 식량을 가장 쉽게 찾을 수 있습니다.",
+    "지하 벙커의 잠긴 철창 방에는 많은 식량 아이템 스폰과 비상식량 상자가 있습니다. 이 상자들은 많은 양의 식량을 스폰합니다.",
+    "각 방에 있는 비상식량 상자의 수는 아래 지도에서 빨간색으로 표시되어 있으며, 주방 위치도 동그라미로 표시되어 있습니다.",
+    "해안선 맵에서는 리조트의 관리/극장 건물 곳곳에 식량 아이템이 흩어져 있습니다.",
+    "인터체인지 맵에서는 고샨(Goshan)이라는 식료품 가게가 있으며, 많은 식량이 있습니다. 모든 선반을 확인해야 합니다. 어두운 구석에서는 손전등이 유용합니다.",
+    "삼림 맵에서는 USEC 캠프와 호수 남동쪽 캠프에서 팩이 자주 스폰됩니다."
   ],
-  "tips": "이스카라 식량 팩(Iskra ration pack)은 은신처(Hideout) 내 영양 단위(Nutrition Unit) 레벨 1에서 제작할 수 있으나, 퀘스트용 아이템은 반드시 레이드에서 획득해야 합니다.",
+  "tips": "각 맵에서 식량 아이템을 찾을 때는 주의 깊게 탐색하고, 다른 플레이어와의 접촉에 대비하세요.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/3D_Map_by_loweffortsaltbox-FOOD.png/revision/latest/scale-to-width-down/640?cb=20230618201305",
+      "caption": "USEC 캠프 위치 (아래 화살표)"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/92/Map_Shorline-FOOD.png/revision/latest/scale-to-width-down/640?cb=20220130001724",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/73/Interchange-Map-Small-FOOD.png/revision/latest/scale-to-width-down/640?cb=20220130002134",
+      "caption": ""
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/de/Acquaintance_food_location.png/revision/latest/scale-to-width-down/640?cb=20210502153137",
+      "caption": "Location the USEC camp (bottom arrow)"
+    }
+  ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/Acquaintance",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-19T16:29:36.982+09:00"
 }

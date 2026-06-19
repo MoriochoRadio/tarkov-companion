@@ -1,13 +1,15 @@
 {
+  "version": 2,
   "taskId": "5d25e2c386f77443e7549029",
   "nameKo": "사냥꾼의 길 - 트로피",
   "nameEn": "The Huntsman Path - Trophy",
   "steps": [
-    "1단계: 레샬라(Reshala)를 사냥꾼의 길 - 트로피(The Huntsman Path - Trophy) 퀘스트가 진행되는 레이드에서 찾아 제거합니다.",
-    "2단계: 레샬라가 소유한 황금 토카레프 TT-33 7.62x25 권총(Tokarev TT-33 7.62x25 TT pistol (Golden))을 획득합니다.",
-    "3단계: 획득한 황금 토카레프 권총을 퀘스트 완료를 위해 지정된 NPC에게 전달합니다."
+    "레이드에서 Reshala를 찾아 처치한다.",
+    "Reshala가 소지하고 있는 황금색 Tokarev TT-33 7.62x25 TT 권총을 획득한다.",
+    "획득한 황금 TT 권총을 퀘스트 아이템으로 제출한다."
   ],
+  "tips": "Reshala는 리저브(Reserve) 맵에서 주로 등장하며, 그의 황금 TT 권총은 반드시 레이드 중에 직접 획득해야 한다. 트레이더 구매나 플리마켓에서 구할 수 없다.",
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Trophy",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-19T16:29:36.982+09:00"
 }

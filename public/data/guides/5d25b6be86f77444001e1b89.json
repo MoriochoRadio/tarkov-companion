@@ -1,15 +1,46 @@
 {
+  "version": 2,
   "taskId": "5d25b6be86f77444001e1b89",
   "nameKo": "생존가의 길 - 비축",
   "nameEn": "The Survivalist Path - Thrifty",
   "steps": [
-    "1단계: Woods 맵에 있는 벙커 ZB-016에 들어갑니다.",
-    "2단계: ZB-016 벙커 내부의 나무 상자에 물병 (Bottle of water 0.6L) 1개와 이스크라 식량 팩 (Iskra ration pack) 1개를 보관합니다.",
-    "3단계: Woods 맵에 있는 벙커 ZB-014에 들어갑니다.",
-    "4단계: ZB-014 벙커 내부의 나무 상자에 물병 (Bottle of water 0.6L) 1개와 이스크라 식량 팩 (Iskra ration pack) 1개를 보관합니다."
+    "삼림(Woods) 맵에서 ZB-016 벙커를 찾는다. 벙커 입구는 지상에 있으며, 입구 주변 지형을 참고하여 위치를 확인한다.",
+    "ZB-016 벙커 내부로 진입 후, 벙커 안쪽에 있는 나무 상자를 찾아 0.6L 물병(Bottle of water) 1개와 이스카라션팩(Iskra ration pack) 1개를 각각 보관한다.",
+    "다음으로 삼림(Woods) 맵에서 ZB-014 벙커 입구를 찾는다. 입구 위치를 정확히 파악하여 벙커로 들어간다.",
+    "ZB-014 벙커 내부에 진입한 후, 내부에 있는 나무 상자에 0.6L 물병(Bottle of water) 1개와 이스카라션팩(Iskra ration pack) 1개를 각각 보관한다."
   ],
-  "tips": "물병과 이스크라 식량 팩은 직접 획득하여 벙커에 보관해야 하며, 벙커 위치는 Woods 맵 내에 있습니다.",
+  "tips": "이스카라션팩(Iskra ration pack)과 0.6L 물병(Bottle of water)은 레이드 내에서 획득한 후 보관해야 하며, 두 아이템 모두 벙커 내부의 나무 상자에 정확히 보관해야 퀘스트가 완료된다.",
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5e/ZB_Bunker_location.png/revision/latest/scale-to-width-down/640?cb=20250816203420",
+      "caption": "맵에 표시된 벙커 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/28/Zb-016_entrance.png/revision/latest/scale-to-width-down/640?cb=20250816203722",
+      "caption": "ZB-016 벙커 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/65/The_survivalist_path_-_Thrifty_Crate_overview.png/revision/latest/scale-to-width-down/640?cb=20250816205039",
+      "caption": "벙커 내부 보관 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/60/The_survivalist_path_-_Thrifty_Crate_close-up.png/revision/latest/scale-to-width-down/640?cb=20250816205026",
+      "caption": "아이템을 보관해야 하는 나무 상자"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/29/ZB-014-Bunker.png/revision/latest/scale-to-width-down/640?cb=20250816204007",
+      "caption": "ZB-014 벙커 입구"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/de/The_survivalist_path_-_Thrifty_Crate_overview2.png/revision/latest/scale-to-width-down/640?cb=20250816204318",
+      "caption": "벙커 내부 보관 위치"
+    },
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/The_survivalist_path_-_Thrifty_Crate_close-up2.png/revision/latest/scale-to-width-down/640?cb=20250816204854",
+      "caption": "아이템을 보관해야 하는 나무 상자"
+    }
+  ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Thrifty",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-19T16:29:36.982+09:00"
 }

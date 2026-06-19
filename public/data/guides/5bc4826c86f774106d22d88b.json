@@ -1,12 +1,14 @@
 {
+  "version": 2,
   "taskId": "5bc4826c86f774106d22d88b",
   "nameKo": "타르코프의 저격수 - 파트 5",
   "nameEn": "The Tarkov Shooter - Part 5",
   "steps": [
-    "세관 (Customs) 지역에 21:00부터 5:00 사이에 진입한다.",
-    "최대한 3:00까지 레이드에 입장하여 5:00 이전에 퀘스트를 진행할 시간을 확보한다."
+    "세관( Customs)으로 가서 시간은 21:00에서 5:00 사이에 맞추어야 합니다.",
+    "최대한 늦어도 3:00까지 레이드에 들어가야 퀘스트를 진행할 충분한 시간을 확보할 수 있습니다."
   ],
+  "tips": "세관에서 저녁 늦은 시간에 진행하는 것이 중요합니다.",
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_Shooter_-_Part_5",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-19T16:29:36.982+09:00"
 }

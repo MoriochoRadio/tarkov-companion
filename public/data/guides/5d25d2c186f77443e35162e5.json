@@ -1,12 +1,22 @@
 {
+  "version": 2,
   "taskId": "5d25d2c186f77443e35162e5",
   "nameKo": "생존가의 길 - 냉혈한",
   "nameEn": "The Survivalist Path - Cold Blooded",
   "steps": [
-    "통증으로 인한 손 떨림 상태에서 PMC 2명을 머리 부위에 헤드샷으로 처치해야 합니다.",
-    "손 떨림 상태는 45초간 치료하지 않은 통증으로 발생하며, SJ9 TGLabs 전투 자극기 주사기를 사용해 원하는 시점에 상태를 유발할 수 있습니다."
+    "퀘스트 시작 전에 손 떨림(Hands tremor) 상태를 만들어야 합니다. 손 떨림은 45초 동안 치료하지 않은 통증으로 발생하며, 이를 위해 일부러 부상을 입고 치료를 하지 않고 기다리거나 SJ9 TGLabs 전투 자극기 주사기를 사용해 즉시 손 떨림 효과를 얻을 수 있습니다.",
+    "손 떨림 상태가 되면 PMC(플레이어 캐릭터)를 찾아 사격을 시작합니다. 반드시 헤드샷으로 PMC 2명을 처치해야 합니다.",
+    "헤드샷을 성공시키기 위해서는 손 떨림 상태에서 정확한 조준이 필요하므로, 침착하게 사격하고 위치 선정에 신경 써야 합니다.",
+    "PMC 사살은 어떤 맵에서든 가능하며, 레이드 중 다른 플레이어 PMC를 대상으로 진행할 수 있습니다.",
+    "헤드샷으로 PMC 2명을 처치하면 퀘스트가 완료됩니다."
+  ],
+  "images": [
+    {
+      "url": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/Tremor.png/revision/latest?cb=20230807005208",
+      "caption": "손 떨림"
+    }
   ],
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Cold_Blooded",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-19T16:29:36.982+09:00"
 }

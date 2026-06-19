@@ -1,12 +1,14 @@
 {
+  "version": 2,
   "taskId": "5bc4893c86f774626f5ebf3e",
   "nameKo": "타르코프의 저격수 - 파트 8",
   "nameEn": "The Tarkov Shooter - Part 8",
   "steps": [
-    "여러 번의 레이드에 걸쳐 적을 처치할 수 있습니다.",
-    "퀘스트 완료 후 보상을 받기 전까지 죽으면 퀘스트가 실패합니다."
+    "이 퀘스트는 여러 번의 레이드에서 진행할 수 있지만, 퀘스트를 완료하기 전에 죽으면 실패합니다.",
+    "타르코프의 저격수 - 파트 8의 목표는 특정 적을 처치하는 것입니다. 이 목표는 여러 레이드에 걸쳐 수행할 수 있습니다."
   ],
+  "tips": "퀘스트를 완료하기 위해서는 적을 처치한 후 생존하여 퀘스트를 제출해야 합니다.",
   "sourceUrl": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_Shooter_-_Part_8",
   "license": "CC BY-SA",
-  "generatedAt": "2026-06-11T20:57:25.057+09:00"
+  "generatedAt": "2026-06-19T16:29:36.982+09:00"
 }
