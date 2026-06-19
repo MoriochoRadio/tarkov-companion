@@ -1,0 +1,78 @@
+{
+  "date": "2026-06-19",
+  "generatedAt": "2026-06-19T14:23:57.874+09:00",
+  "headline": "레이드 참가 불가 문제 완전 수정 및 초보자와 고레벨 유저를 위한 실전 장비 팁 공개",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "레이드 참가 불가 문제 수정",
+      "items": [
+        {
+          "title": "레이드 참가 불가 문제 수정",
+          "summary": "플레이어가 레이드 드롭 카운트다운 화면에 머무르며 레이드에 참가하지 못하는 문제를 완전히 해결해 정상적인 게임 진행이 가능해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45581_(16_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "초보자와 고레벨 유저를 위한 장비 및 플레이 팁",
+      "items": [
+        {
+          "title": "초보자를 위한 트레이더 구매 가능 초반 게임 로드아웃 추천",
+          "summary": "초보자가 솔로 플레이 시 트레이더에서 구매할 수 있는 효율적인 장비 세팅을 공유해 초반 생존과 진행에 실질적인 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u957jb/new_player_please_give_me_your_best_early_game/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "레벨 55 경험자가 알려주는 장비 공포(Gear Fear) 극복 팁",
+          "summary": "1000시간 이상 플레이한 고레벨 유저가 초보자에게 장비 손실에 대한 두려움을 줄이고 효율적으로 플레이하는 방법을 조언해 게임 적응에 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1u99bm5/what_a_lvl551000_hr_player_wishes_they_knew_about/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "예비 업데이트 계획 발표",
+      "items": [
+        {
+          "title": "Escape from Tarkov 2026년 4분기 예비 업데이트 계획 공개",
+          "summary": "2026년 4분기까지의 업데이트 계획이 발표되어 향후 게임 방향과 신규 콘텐츠에 대한 기대를 높입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/672872215678552846",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상 모음",
+      "items": [
+        {
+          "title": "델타포스 과거 비콘 대회 보면서 공부 할께요",
+          "url": "https://www.youtube.com/watch?v=N45lPu7DLug",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "쇄빙선 '완성본 빌드' 들고 왔습니다. 오늘 완벽 검증",
+          "url": "https://www.youtube.com/watch?v=Zqo0F8ZEPWY",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=PVy5xJ0oBZU",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Taking the AA-12 to STREETS ft Fragas - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=rnNKiloDDAE",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
