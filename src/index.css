@@ -14,7 +14,9 @@
   /* 색: 텍스트 3단계 (대비 상향) */
   --text: #e4e7ea;
   --text-2: #a4adb6;
-  --text-3: #6e7882;
+  /* --text-3: 보조/라벨용. #6e7882는 카드 배경 위 3.8:1로 본문 AA(4.5) 미달이라
+     #7d8791로 상향 — 기본/카드/입력 배경 모두에서 4.5:1 이상 (WCAG AA) */
+  --text-3: #7d8791;
 
   /* 색: 포인트 — 탄 골드 단일 액센트 */
   --accent: #c9b482;
@@ -3833,8 +3835,10 @@ summary:focus-visible {
 }
 
 /* 0(튕김)→6(확실) — 커뮤니티 탄약 차트 관례의 적→녹 그라데이션 */
-.ammo-r0 { background: #8a4a42; color: #f2ddda; }
-.ammo-r1 { background: #96604a; color: #f4e4dc; }
+/* r0·r1은 어두운 적색 위 밝은 텍스트 — #f4e4dc는 r1(#96604a)에서 4.1:1로 AA
+   미달이라 두 칸 모두 #fdf0ec로 상향(r1 4.6:1). 칸 안 숫자가 주 정보(색맹 무관) */
+.ammo-r0 { background: #8a4a42; color: #fdf0ec; }
+.ammo-r1 { background: #96604a; color: #fdf0ec; }
 .ammo-r2 { background: #a1794f; color: #16120a; }
 .ammo-r3 { background: #ab9254; color: #16120a; }
 .ammo-r4 { background: #9aa45c; color: #16120a; }
