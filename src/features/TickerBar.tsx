@@ -23,8 +23,13 @@ export function TickerBar({ onPick }: { onPick: (name: string) => void }) {
       .sort(
         (a, b) => (b.changeLast48hPercent ?? 0) - (a.changeLast48hPercent ?? 0),
       )
-    const risers = sorted.slice(0, PER_SIDE)
-    const fallers = sorted.slice(-PER_SIDE).reverse()
+    // 부호로 갈라야 함 — 끝에서 자르면 변동 아이템이 적은 날 급락에 양수가 섞이고
+    // risers와 fallers가 겹쳐 같은 아이템이 mixed에 중복(React key 충돌)된다
+    const risers = sorted.filter((i) => (i.changeLast48hPercent ?? 0) > 0).slice(0, PER_SIDE)
+    const fallers = sorted
+      .filter((i) => (i.changeLast48hPercent ?? 0) < 0)
+      .slice(-PER_SIDE)
+      .reverse()
     // 급등·급락을 번갈아 — 한쪽 색만 길게 이어지면 단조로움
     const mixed = []
     for (let i = 0; i < PER_SIDE; i++) {

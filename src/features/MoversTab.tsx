@@ -73,9 +73,14 @@ export function MoversTab() {
     const sorted = [...candidates].sort(
       (a, b) => (b.changeLast48hPercent ?? 0) - (a.changeLast48hPercent ?? 0),
     )
+    // 부호로 갈라야 함 — 끝에서 N개만 자르면 변동 아이템이 적은 날(전부 양수 등)에
+    // 급락 톱에 양수(+)가 섞이고 급등과 겹친다. 양수만 급등, 음수만 급락.
     return {
-      risers: sorted.slice(0, TOP_N),
-      fallers: sorted.slice(-TOP_N).reverse(),
+      risers: sorted.filter((i) => (i.changeLast48hPercent ?? 0) > 0).slice(0, TOP_N),
+      fallers: sorted
+        .filter((i) => (i.changeLast48hPercent ?? 0) < 0)
+        .slice(-TOP_N)
+        .reverse(),
     }
   }, [state])
 
