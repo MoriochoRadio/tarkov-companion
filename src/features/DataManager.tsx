@@ -9,9 +9,14 @@ import { useEffect, useRef, useState } from 'react'
 
 const LAST_EXPORT_KEY = 'tc:last-export' // 백업 파일에는 포함하지 않는 메타
 
+// 백업/복원/초기화 대상 — localStorage에 저장되는 "사용자 진행 데이터"만.
+// 새 키를 추가했다면 반드시 여기에도 등록할 것 (안 하면 기기 이전 시 조용히 유실).
+// 제외 대상: tc:visited(히어로 1회 플래그)·tc:last-export(메타)·tc:seen-movers
+// (이미 본 급등락 해제 상태 — 진행 데이터 아님, 새 기기에선 새로 보는 게 자연스러움)
 const DATA_KEYS = [
   'tc:fav-items',
   'tc:active-quests',
+  'tc:done-quests',
   'tc:prep-counts',
   'tc:hideout-built',
   'tc:my-level',
@@ -19,11 +24,15 @@ const DATA_KEYS = [
   'tc:quest-item-marks',
   'tc:story-done',
   'tc:planner-picks',
+  'tc:planner-hidden',
+  'tc:planner-done',
+  'tc:planner-extracts',
 ] as const
 
 const KEY_LABELS: Record<string, string> = {
   'tc:fav-items': '즐겨찾기',
   'tc:active-quests': '진행 중 퀘스트',
+  'tc:done-quests': '완료한 퀘스트',
   'tc:prep-counts': '준비물 체크리스트',
   'tc:hideout-built': '은신처 건설 상태',
   'tc:my-level': '내 레벨',
@@ -31,6 +40,9 @@ const KEY_LABELS: Record<string, string> = {
   'tc:quest-item-marks': '퀘스트 아이템 그리드 표시',
   'tc:story-done': '스토리 챕터 완료',
   'tc:planner-picks': '맵 플래너 선택',
+  'tc:planner-hidden': '플래너 숨긴 마커',
+  'tc:planner-done': '플래너 완료 표시',
+  'tc:planner-extracts': '플래너 탈출구 선택',
 }
 
 // "몇 개 저장돼 있나" — 키마다 저장 형태가 달라 형태별로 센다
