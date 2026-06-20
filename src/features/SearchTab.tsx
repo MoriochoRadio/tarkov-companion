@@ -31,10 +31,19 @@ function NetCell({ item }: { item: TarkovItem }) {
     return <span className="dim">—</span>
   }
   const fee = fleaFee(item.basePrice, price, getFleaRates())
+  const net = price - fee
+  // 저가 아이템은 등록 수수료가 시세를 넘어 실수익이 음수가 됨 — "−₽5,000"만
+  // 보이면 혼란스러우니 하락색 + 툴팁으로 "팔면 손해"를 명시
+  const loss = net <= 0
   return (
-    <span className="net-cell">
-      {formatRub(price - fee)}
-      <span className="fee-sub dim">수수료 −{formatRub(fee)}</span>
+    <span
+      className={loss ? 'net-cell net-loss' : 'net-cell'}
+      title={loss ? '등록 수수료가 시세보다 커서 플리 판매는 손해입니다' : undefined}
+    >
+      {formatRub(net)}
+      <span className="fee-sub dim">
+        {loss ? '수수료 초과' : `수수료 −${formatRub(fee)}`}
+      </span>
     </span>
   )
 }

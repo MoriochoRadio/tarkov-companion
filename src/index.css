@@ -23,8 +23,11 @@
 
   /* 색: 시맨틱 (채도 낮게) */
   --warn: #d4a04a; /* 머스터드/오렌지 — 경고 */
-  --up: #84b48c;
+  --up: #84b48c; /* 시세 상승 — 차분한 초록 */
   --down: #c98078;
+  /* 완료/충족 — 밝은 초록. 진행도 체크·받을 수 있음·정크박스 충족 등에 공용.
+     (--up보다 밝아 "내가 끝냈다"는 능동 액션을 또렷이 알림) */
+  --ok: #7fd98c;
 
   /* 간격 */
   --sp-1: 4px;
@@ -1043,7 +1046,7 @@ th.star-col {
 
 .done-btn:hover,
 .done-btn.on {
-  color: #7fd98c;
+  color: var(--ok);
 }
 
 /* 완료한 퀘스트 — 흐리게 + 취소선 (퀘스트·플래너·해금 체인 공용) */
@@ -1062,8 +1065,8 @@ th.star-col {
 
 /* 상세의 "완료" 액션 버튼 — 켜지면 초록 (★ active의 골드와 구분) */
 .btn-ext.btn-done.active {
-  border-color: #7fd98c;
-  color: #7fd98c;
+  border-color: var(--ok);
+  color: var(--ok);
 }
 
 /* 퀘스트 상세 필요 아이템 — 보유 ± 카운터(통합 체크리스트와 공유, Phase 40) */
@@ -1080,7 +1083,7 @@ th.star-col {
 }
 
 .quest-item-need.met {
-  color: #7fd98c;
+  color: var(--ok);
 }
 
 /* 진행 로드맵 상태 배지 (Phase 42) — 받을 수 있음(초록) / 선행 잠김(회색) */
@@ -1096,8 +1099,8 @@ th.star-col {
 }
 
 .quest-status.avail {
-  background: color-mix(in srgb, #7fd98c 22%, var(--bg-inset));
-  color: #7fd98c;
+  background: color-mix(in srgb, var(--ok) 22%, var(--bg-inset));
+  color: var(--ok);
 }
 
 .quest-status.locked {
@@ -2198,6 +2201,11 @@ select:focus-visible {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+/* 실수익 음수(수수료 > 시세) — 하락색으로 "팔면 손해"를 한눈에 */
+.net-loss {
+  color: var(--down);
 }
 
 .fee-sub {
@@ -5291,7 +5299,7 @@ summary:focus-visible {
 }
 
 .junk-tile.full .junk-count {
-  color: var(--ok, #7fbf7f);
+  color: var(--ok);
 }
 
 /* --- FIR 통합 운영 페이지 (Phase 28) --- */
@@ -6368,8 +6376,28 @@ summary:focus-visible {
   font-size: 0.68rem;
   font-weight: 900;
   line-height: 1;
-  color: #7fd98c;
+  color: var(--ok);
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.95);
+}
+
+/* 퀘스트 번호 배지 — 마커 좌상단 코너. 색맹 대응: 좌측 목록 점의 번호와
+   일치시켜 색 없이도 어느 퀘스트인지 매칭. .mapmark span(26px 원)을 덮어야
+   하므로 (0,2,1) 선택자로 박스를 다시 지정 */
+.mapmark .mapmark-num {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 15px;
+  height: 15px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  border: 1px solid var(--bg);
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 /* 클릭 자동확대 시 "여기" 강조 링 — 상시 링(::before) + 펄스 2회(::after) */
@@ -6449,8 +6477,8 @@ summary:focus-visible {
 }
 
 .mapmark-pop-done.on {
-  border-color: #7fd98c;
-  color: #7fd98c;
+  border-color: var(--ok);
+  color: var(--ok);
 }
 
 /* 좌측 리스트 색 점 → 마커 표시 토글(눈). off면 점 흐리게 + 빗금 */

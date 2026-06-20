@@ -299,6 +299,7 @@ export default function App() {
                 <button
                   key={g.key}
                   className={g.key === activeGroup.key ? 'active' : ''}
+                  aria-current={g.key === activeGroup.key ? 'true' : undefined}
                   onClick={() =>
                     switchTab(lastSubRef.current[g.key] ?? g.tabs[0])
                   }
@@ -325,6 +326,7 @@ export default function App() {
                   <button
                     key={key}
                     className={key === active ? 'active' : ''}
+                    aria-current={key === active ? 'true' : undefined}
                     onClick={() => switchTab(key)}
                   >
                     {tabLabel(key)}

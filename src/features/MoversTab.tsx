@@ -16,6 +16,9 @@ function MoversTable({
   rows: TarkovItem[]
   seen: ReadonlySet<string> | null
 }) {
+  if (rows.length === 0) {
+    return <p className="hint movers-empty">표시할 항목이 없습니다 — 변동이 잠잠한 시간대입니다.</p>
+  }
   return (
     <table className="data-table">
       <thead>

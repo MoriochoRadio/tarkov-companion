@@ -153,11 +153,15 @@ export function MapsTab() {
         모든 외부 지도는 링크로만 연결 (이미지 미수록) · 한글 지도 링크는{' '}
         <code>public/data/map-links.json</code>에서 관리
       </p>
-      <div className="maps-grid">
-        {mapsState.data.map((m) => (
-          <MapCard key={m.id} map={m} links={links[m.normalizedName] ?? []} />
-        ))}
-      </div>
+      {mapsState.data.length === 0 ? (
+        <p className="hint">표시할 맵이 없습니다 — 잠시 후 다시 시도해 주세요.</p>
+      ) : (
+        <div className="maps-grid">
+          {mapsState.data.map((m) => (
+            <MapCard key={m.id} map={m} links={links[m.normalizedName] ?? []} />
+          ))}
+        </div>
+      )}
     </div>
   )
 }
