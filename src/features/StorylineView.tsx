@@ -3,7 +3,7 @@ import { fetchStoryline, type StoryChapter, type StoryObjective } from '../api/s
 import { fetchStoryGuide, type StoryGuideImage } from '../api/storyGuides'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { STORY_DONE_KEY, useIdSet } from '../lib/favorites'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 // 1.0 메인 스토리라인 — 챕터 카드(진행 순서) → 상세(목표 한국어 + 위키 공략
 // 충실 번역 + 위치 스크린샷). 목표 번역은 storyline.json에 큐레이션(즉시),
@@ -269,7 +269,7 @@ export function StorylineView() {
     return <TableSkeleton rows={6} label="스토리라인 데이터 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   const { chapters, generated } = state.data

@@ -5,7 +5,7 @@ import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { usePlayerLevel } from '../lib/playerLevel'
 import { questSubmitNeeds } from '../lib/questNeeds'
 import { useQuestItemMarks } from '../lib/questItemMarks'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 
 const GRID_FIRST_PAINT = 60 // 타일 수백 개를 한 번에 그리지 않는 2단계 렌더
@@ -112,7 +112,7 @@ export function QuestNeedsView() {
     return <TableSkeleton rows={8} label="퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   const toggleOpen = (id: string) => {

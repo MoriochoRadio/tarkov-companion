@@ -5,7 +5,7 @@ import { FAV_ITEMS_KEY, useIdSet } from '../lib/favorites'
 import { fleaFee } from '../lib/fleaFee'
 import { formatRub } from '../lib/format'
 import { ItemCell } from './ItemRow'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 
 const TOP_N = 50
@@ -50,7 +50,7 @@ export function ValueTab() {
     return <TableSkeleton rows={8} label="아이템 데이터 불러오는 중… (최초 1회, 약 5초)" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   return (

@@ -18,7 +18,7 @@ import {
   displayGroupOf,
 } from '../lib/storageBuckets'
 import { builtKey, cascadeBuilt } from './HideoutView'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 // FIR 통합 운영 페이지 (Phase 27 최종) — 친구 스케치.
 // 좌: 소스 패널. 퀘스트는 상인 가로 선택 → 그 상인 퀘스트가 레벨 오름차순
@@ -466,7 +466,7 @@ export function FirOps() {
     )
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   // 고정 순서 그대로 분류만 필터 — 보유 기준 재정렬 없음 (위치 유지)

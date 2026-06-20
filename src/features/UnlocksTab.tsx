@@ -4,7 +4,7 @@ import { fetchAllItems, type TarkovItem } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { DoneButton } from './DoneButton'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 // 해금 탭 — "이 아이템 언제 살 수 있어?"의 역방향 답.
 // tasks의 finishRewards.offerUnlock(실측 228개 오퍼)을 아이템 기준으로 뒤집어
@@ -214,7 +214,7 @@ export function UnlocksTab({ onQuest }: { onQuest?: (id: string) => void }) {
     return <TableSkeleton rows={8} label="퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   const selected = selectedId

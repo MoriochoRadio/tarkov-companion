@@ -1,7 +1,7 @@
 import { fetchMapLinks, fetchMaps, type MapExtract, type TarkovMap } from '../api/maps'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { useTilt } from '../hooks/useTilt'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 const FACTION_LABELS: Record<MapExtract['faction'], string> = {
   pmc: 'PMC 전용',
@@ -142,7 +142,7 @@ export function MapsTab() {
     return <TableSkeleton rows={6} label="맵 데이터 불러오는 중…" />
   }
   if (mapsState.status === 'error') {
-    return <p className="status error">불러오기 실패: {mapsState.message}</p>
+    return <ErrorState message={mapsState.message} onRetry={mapsState.reload} />
   }
 
   const links = linksState.status === 'ready' ? linksState.data : {}

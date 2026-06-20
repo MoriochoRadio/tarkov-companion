@@ -9,7 +9,7 @@ import {
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatRub } from '../lib/format'
 import { BuildsView } from './BuildsView'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 type SortKey = 'ergo' | 'recoil' | 'price'
 
@@ -171,7 +171,7 @@ function SlotBrowser({
     return <TableSkeleton rows={6} label="호환 부품 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
   if (state.data.length === 0) {
     return <p className="hint">이 아이템에는 장착 슬롯이 없습니다.</p>
@@ -209,7 +209,7 @@ function WeaponPicker({ onPick }: { onPick: (w: WeaponSummary) => void }) {
     return <TableSkeleton rows={8} label="무기 목록 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   return (

@@ -3,7 +3,7 @@ import { fetchAmmo, type AmmoInfo } from '../api/tarkov'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatRub } from '../lib/format'
 import { ItemCell } from './ItemRow'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 // API의 구경 코드("Caliber556x45NATO")를 사람이 읽는 이름으로
 const CALIBER_NAMES: Record<string, string> = {
@@ -100,7 +100,7 @@ export function AmmoTab() {
     return <TableSkeleton rows={8} label="탄약 데이터 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   const sortableHeader = (key: SortKey, label: string) => (

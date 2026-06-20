@@ -3,7 +3,7 @@ import { fetchKeys } from '../api/keys'
 import { useAsyncData } from '../hooks/useAsyncData'
 import { formatRub } from '../lib/format'
 import { ItemCell } from './ItemRow'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 const MAX_ROWS = 80
 
@@ -41,7 +41,7 @@ export function KeysView() {
     return <TableSkeleton rows={8} label="열쇠 데이터 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   return (

@@ -6,7 +6,7 @@ import { HIDEOUT_BUILT_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
 import { computeBuildOrder } from '../lib/hideoutOrder'
 import { usePrepCounts } from '../lib/prepCounts'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 export const builtKey = (stationId: string, level: number) => `${stationId}:${level}`
 
@@ -259,7 +259,7 @@ export function HideoutView() {
     return <TableSkeleton rows={8} label="은신처 데이터 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   const stations = state.data

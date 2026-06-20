@@ -22,7 +22,7 @@ import {
   type MapViewerHandle,
   type ViewMarker,
 } from './MapViewer'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 // 맵 퀘스트 플래너 1단계 (Phase 25) — "한 레이드에 퀘스트 몰아 밀기".
 // 맵 선택 → 그 맵에 목표가 있는 퀘스트를 체크 → 목표 유형 분류 +
@@ -496,7 +496,7 @@ export function PlannerTab({
     return <TableSkeleton rows={8} label="퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)" />
   }
   if (questsState.status === 'error') {
-    return <p className="status error">불러오기 실패: {questsState.message}</p>
+    return <ErrorState message={questsState.message} onRetry={questsState.reload} />
   }
 
   return (

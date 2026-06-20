@@ -12,7 +12,7 @@ import { fleaFee } from '../lib/fleaFee'
 import { formatRub } from '../lib/format'
 import { consumePendingProfit } from '../lib/searchSeed'
 import { KeysView } from './KeysView'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 const PAGE_SIZE = 50
 // 데이터 도착 직후 첫 화면은 소량만 — 행마다 재료 아이콘이 여러 개라
@@ -254,7 +254,7 @@ export function ProfitTab() {
     return <TableSkeleton rows={8} label="크래프트·바터 데이터 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   if (outRecipes) {

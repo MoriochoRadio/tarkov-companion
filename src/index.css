@@ -1290,6 +1290,14 @@ select:focus-visible {
   animation: none;
 }
 
+/* 공통 에러 상태 — 메시지 + "다시 시도" 버튼을 세로로 묶음 */
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-3);
+}
+
 /* 로딩 스켈레톤 — 테이블이 올 자리를 미리 그려둠 */
 .skeleton-label {
   display: flex;

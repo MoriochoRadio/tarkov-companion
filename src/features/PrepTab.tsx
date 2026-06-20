@@ -12,7 +12,7 @@ import {
 import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
 import { questSubmitNeeds } from '../lib/questNeeds'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 const PAGE_SIZE = 60
 // 데이터 도착 직후 첫 화면은 소량만 — 저사양 기기에서 큰 레이아웃 패스 1개가
@@ -361,7 +361,7 @@ export function PrepChecklist({
     )
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   const shown = todo.slice(0, visible)

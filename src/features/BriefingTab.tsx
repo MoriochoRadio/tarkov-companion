@@ -8,7 +8,7 @@ import {
   type BriefingSection,
 } from '../api/briefings'
 import { useAsyncData } from '../hooks/useAsyncData'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 // 섹션 타입별 표시 (warning은 CSS에서 강조)
 const SECTION_BADGES: Record<string, string> = {
@@ -231,7 +231,7 @@ export function BriefingTab() {
     return <TableSkeleton rows={4} label="브리핑 목록 불러오는 중…" />
   }
   if (datesState.status === 'error') {
-    return <p className="status error">불러오기 실패: {datesState.message}</p>
+    return <ErrorState message={datesState.message} onRetry={datesState.reload} />
   }
   if (!date) {
     return (
@@ -313,7 +313,7 @@ export function BriefingTab() {
         <TableSkeleton rows={4} label="브리핑 불러오는 중…" />
       )}
       {briefingState.status === 'error' && (
-        <p className="status error">불러오기 실패: {briefingState.message}</p>
+        <ErrorState message={briefingState.message} onRetry={briefingState.reload} />
       )}
       {briefingState.status === 'ready' && (
         <article>

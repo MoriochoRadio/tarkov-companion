@@ -23,3 +23,25 @@ export function TableSkeleton({
     </div>
   )
 }
+
+// 공통 에러 상태 — 모든 탭이 같은 모양으로 실패를 알리고 "다시 시도"를 제공.
+// 예전엔 12개 탭이 "불러오기 실패"만 띄워 새로고침을 강제했음(다른 탭 캐시까지
+// 날아감). onRetry는 useAsyncData의 reload로 새로고침 없이 그 탭만 재요청.
+export function ErrorState({
+  message,
+  onRetry,
+}: {
+  message: string
+  onRetry?: () => void
+}) {
+  return (
+    <div className="error-state" role="alert">
+      <p className="status error">불러오기 실패: {message}</p>
+      {onRetry && (
+        <button className="btn-ext" onClick={onRetry}>
+          ↻ 다시 시도
+        </button>
+      )}
+    </div>
+  )
+}

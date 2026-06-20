@@ -15,7 +15,7 @@ import { usePlayerLevel } from '../lib/playerLevel'
 import { usePrepCounts } from '../lib/prepCounts'
 import { questSubmitNeeds } from '../lib/questNeeds'
 import { builtKey, cascadeBuilt } from './HideoutView'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 
 // FIR 트래커 (Phase 24) — 친구 스케치 구현: 좌측 퀘스트/스테이션 목록에서
 // 아이템을 클릭해 "모았음"을 기록하면 우측 정크박스 그리드의 남은 수량이
@@ -227,7 +227,7 @@ function StoryPanel() {
     return <TableSkeleton rows={5} label="스토리라인 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
   return (
     <div>
@@ -332,7 +332,7 @@ function QuestTracker() {
     return <TableSkeleton rows={8} label="퀘스트 데이터 불러오는 중… (최초 1회, 약 7초)" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   return (
@@ -674,7 +674,7 @@ function HideoutTracker() {
     return <TableSkeleton rows={8} label="은신처 데이터 불러오는 중…" />
   }
   if (state.status === 'error') {
-    return <p className="status error">불러오기 실패: {state.message}</p>
+    return <ErrorState message={state.message} onRetry={state.reload} />
   }
 
   const selected = stations.find((s) => s.id === selectedId) ?? null

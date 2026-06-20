@@ -14,7 +14,7 @@ import { usePrepCounts } from '../lib/prepCounts'
 import { submitObjectiveItem } from '../lib/questNeeds'
 import { consumePendingQuest } from '../lib/searchSeed'
 import { DoneButton } from './DoneButton'
-import { TableSkeleton } from './Skeleton'
+import { ErrorState, TableSkeleton } from './Skeleton'
 import { StarButton } from './StarButton'
 import { StorylineView } from './StorylineView'
 
@@ -480,7 +480,7 @@ export function QuestsTab() {
     return (
       <div>
         {modeSeg}
-        <p className="status error">불러오기 실패: {state.message}</p>
+        <ErrorState message={state.message} onRetry={state.reload} />
       </div>
     )
   }
