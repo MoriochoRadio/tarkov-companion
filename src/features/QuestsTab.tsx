@@ -7,6 +7,7 @@ import {
   type QuestItemRef,
 } from '../api/quests'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { useEscapeKey } from '../hooks/useEscapeKey'
 import { ACTIVE_QUESTS_KEY, DONE_QUESTS_KEY, useIdSet } from '../lib/favorites'
 import { formatNumber } from '../lib/format'
 import { usePlayerLevel } from '../lib/playerLevel'
@@ -64,6 +65,7 @@ function QuestDetail({
   onBack: () => void
 }) {
   const [zoomed, setZoomed] = useState<QuestItemRef | null>(null)
+  useEscapeKey(!!zoomed, () => setZoomed(null))
   const { ids: activeIds, toggle: toggleActive } = useIdSet(ACTIVE_QUESTS_KEY)
   const { ids: doneIds, toggle: toggleDone, set: setDone } = useIdSet(DONE_QUESTS_KEY)
   const { counts, add } = usePrepCounts()

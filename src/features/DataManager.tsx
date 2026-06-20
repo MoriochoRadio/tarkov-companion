@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useEscapeKey } from '../hooks/useEscapeKey'
 
 // 내 데이터 백업/복원 — 즐겨찾기·진행 중 퀘스트·체크리스트·은신처·알림이
 // 전부 localStorage라 브라우저를 바꾸거나 캐시를 지우면 사라진다.
@@ -119,16 +120,11 @@ export function DataManager() {
       .catch(() => setPersisted(null))
   }, [open])
 
-  // 모달 열림 동안: 초기 포커스를 다이얼로그로 옮기고 Esc로 닫기 (키보드 접근성)
+  // 모달 열릴 때 초기 포커스를 다이얼로그로 (키보드 접근성). Esc 닫기는 공통 훅
   useEffect(() => {
-    if (!open) return
-    dialogRef.current?.focus()
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setOpen(false)
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
+    if (open) dialogRef.current?.focus()
   }, [open])
+  useEscapeKey(open, () => setOpen(false))
 
   const importFile = async (file: File) => {
     try {

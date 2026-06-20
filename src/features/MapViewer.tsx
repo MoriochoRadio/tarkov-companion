@@ -7,6 +7,7 @@ import {
   useRef,
   useState,
 } from 'react'
+import { useEscapeKey } from '../hooks/useEscapeKey'
 import { makeProjector, type MapMeta } from '../lib/mapProject'
 
 // 맵 뷰어 (Phase 26) — SVG 지도 + 퀘스트 목표 마커 오버레이.
@@ -121,6 +122,10 @@ export const MapViewer = forwardRef<
     left: number
     top: number
   } | null>(null)
+
+  // 팝오버를 Esc로 닫기 (마커·탈출구 각각)
+  useEscapeKey(!!pop, () => setPop(null))
+  useEscapeKey(!!extractPop, () => setExtractPop(null))
 
   const proj = useMemo(() => makeProjector(meta), [meta])
 

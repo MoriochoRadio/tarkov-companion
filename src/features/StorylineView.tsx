@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { fetchStoryline, type StoryChapter, type StoryObjective } from '../api/storyline'
 import { fetchStoryGuide, type StoryGuideImage } from '../api/storyGuides'
 import { useAsyncData } from '../hooks/useAsyncData'
+import { useEscapeKey } from '../hooks/useEscapeKey'
 import { STORY_DONE_KEY, useIdSet } from '../lib/favorites'
 import { ErrorState, TableSkeleton } from './Skeleton'
 
@@ -86,6 +87,7 @@ function ChapterDetail({
 }) {
   const guideState = useAsyncData(() => fetchStoryGuide(chapter.slug), [chapter.slug])
   const [zoomed, setZoomed] = useState<StoryGuideImage | null>(null)
+  useEscapeKey(!!zoomed, () => setZoomed(null))
   const [visibleSections, setVisibleSections] = useState(FIRST_SECTIONS)
   const guide =
     guideState.status === 'ready' && guideState.data !== 'pending'
