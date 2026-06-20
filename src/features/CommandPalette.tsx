@@ -60,38 +60,44 @@ export function CommandPalette({
       }
     }
     if (q.length >= 2) {
+      // 배열 앞에서 6개만 자르면 정확히 일치하는 항목이 뒤에 묻힘 →
+      // 전체 매칭을 모아 "이름이 q로 시작" 우선으로 정렬한 뒤 6개만
       if (items) {
-        let n = 0
-        for (const i of items) {
-          if (n >= MAX_PER_KIND) break
-          if (
+        const matched = items.filter(
+          (i) =>
             i.name.toLowerCase().includes(q) ||
-            i.shortName.toLowerCase().includes(q)
-          ) {
-            out.push({
-              kind: 'item',
-              id: i.id,
-              label: i.name,
-              sub: `아이템 · ${formatRub(i.avg24hPrice)}`,
-              iconLink: i.iconLink,
-            })
-            n++
-          }
+            i.shortName.toLowerCase().includes(q),
+        )
+        const prefix = (i: TarkovItem) =>
+          i.name.toLowerCase().startsWith(q) || i.shortName.toLowerCase().startsWith(q)
+            ? 0
+            : 1
+        matched.sort(
+          (a, b) => prefix(a) - prefix(b) || (b.avg24hPrice ?? 0) - (a.avg24hPrice ?? 0),
+        )
+        for (const i of matched.slice(0, MAX_PER_KIND)) {
+          out.push({
+            kind: 'item',
+            id: i.id,
+            label: i.name,
+            sub: `아이템 · ${formatRub(i.avg24hPrice)}`,
+            iconLink: i.iconLink,
+          })
         }
       }
       if (quests) {
-        let n = 0
-        for (const quest of quests) {
-          if (n >= MAX_PER_KIND) break
-          if (quest.searchKey.includes(q)) {
-            out.push({
-              kind: 'quest',
-              id: quest.id,
-              label: quest.displayName,
-              sub: `퀘스트 · ${quest.trader.name} · 레벨 ${quest.minPlayerLevel}+`,
-            })
-            n++
-          }
+        const matched = quests.filter((quest) => quest.searchKey.includes(q))
+        const prefix = (quest: Quest) => (quest.searchKey.startsWith(q) ? 0 : 1)
+        matched.sort(
+          (a, b) => prefix(a) - prefix(b) || a.minPlayerLevel - b.minPlayerLevel,
+        )
+        for (const quest of matched.slice(0, MAX_PER_KIND)) {
+          out.push({
+            kind: 'quest',
+            id: quest.id,
+            label: quest.displayName,
+            sub: `퀘스트 · ${quest.trader.name} · 레벨 ${quest.minPlayerLevel}+`,
+          })
         }
       }
     }
