@@ -108,6 +108,7 @@ export function DataManager() {
   const [message, setMessage] = useState('')
   const [persisted, setPersisted] = useState<boolean | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
+  const dialogRef = useRef<HTMLDivElement>(null)
 
   // 다이얼로그를 열 때 영구 보관 상태 확인 + 미승인 시 한 번 더 요청
   useEffect(() => {
@@ -116,6 +117,17 @@ export function DataManager() {
       .persist()
       .then(setPersisted)
       .catch(() => setPersisted(null))
+  }, [open])
+
+  // 모달 열림 동안: 초기 포커스를 다이얼로그로 옮기고 Esc로 닫기 (키보드 접근성)
+  useEffect(() => {
+    if (!open) return
+    dialogRef.current?.focus()
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
   }, [open])
 
   const importFile = async (file: File) => {
@@ -168,7 +180,10 @@ export function DataManager() {
           <div
             className="palette data-dialog"
             role="dialog"
+            aria-modal="true"
             aria-label="내 데이터 관리"
+            ref={dialogRef}
+            tabIndex={-1}
             onClick={(e) => e.stopPropagation()}
           >
             <h3>내 데이터</h3>
