@@ -4187,6 +4187,14 @@ summary:focus-visible {
   font-size: var(--fs-label);
 }
 
+/* 알림 차단 안내 — 편집 행(flex-wrap) 안에서 한 줄을 통째로 차지 */
+.alert-denied {
+  flex-basis: 100%;
+  margin: var(--sp-1) 0 0;
+  color: var(--warn);
+  max-width: 280px;
+}
+
 /* --- 내 데이터 백업/복원 --- */
 .footer-actions {
   display: inline-flex;

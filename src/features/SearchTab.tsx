@@ -131,6 +131,13 @@ function AlertCell({ item }: { item: TarkovItem }) {
         <button className="btn-ext" onClick={() => setEditing(false)} aria-label="취소">
           ✕
         </button>
+        {typeof Notification !== 'undefined' &&
+          Notification.permission === 'denied' && (
+            <span className="hint alert-denied">
+              ⚠ 브라우저 알림이 차단돼 있어 푸시는 안 와요 — 주소창 자물쇠에서 알림을
+              허용하면 됩니다. 지금은 목록의 ✅ 표시로만 확인돼요.
+            </span>
+          )}
       </span>
     )
   }
