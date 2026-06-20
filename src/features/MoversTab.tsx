@@ -20,7 +20,7 @@ function MoversTable({
     return <p className="hint movers-empty">표시할 항목이 없습니다 — 변동이 잠잠한 시간대입니다.</p>
   }
   return (
-    <table className="data-table">
+    <table className="data-table card-table">
       <thead>
         <tr>
           <th>아이템</th>
@@ -38,8 +38,8 @@ function MoversTable({
                 shortName={item.shortName}
               />
             </td>
-            <td className="num">{formatRub(item.avg24hPrice)}</td>
-            <td className={`num ${percentClass(item.changeLast48hPercent)}`}>
+            <td className="num" data-label="평균가">{formatRub(item.avg24hPrice)}</td>
+            <td className={`num ${percentClass(item.changeLast48hPercent)}`} data-label="48h 변동">
               {formatPercent(item.changeLast48hPercent)}
             </td>
           </tr>
