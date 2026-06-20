@@ -6179,6 +6179,22 @@ summary:focus-visible {
   vertical-align: baseline;
 }
 
+/* 번호 들어가는 점 — 좌측 목록·범례·팝오버에서 마커 번호와 매칭(색맹 대응).
+   8색 QUEST_COLORS는 전부 밝은 파스텔이라 어두운 잉크 텍스트로 대비 확보 */
+.mapmark-dot-num {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-ink);
+}
+
 /* 팝오버 — 화면 좌표 고정 (줌과 무관) */
 .mapmark-pop {
   position: absolute;

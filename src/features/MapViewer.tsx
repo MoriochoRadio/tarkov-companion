@@ -27,6 +27,7 @@ export interface MarkerKey {
 export interface ViewMarker {
   key: string
   questId: string // 포커스 모드(같은 퀘스트 강조)·표시 토글 식별용 (Phase 34)
+  num: number // 퀘스트 선택 번호(1,2,3…) — 색맹 대응, 좌측 목록과 색 없이 매칭
   x: number
   z: number
   icon: string // 6분류 이모지 (플래너와 공유)
@@ -455,9 +456,15 @@ export const MapViewer = forwardRef<
                     borderColor: m.color,
                   }}
                   onClick={(e) => onMarkerClick(m, e)}
-                  aria-label={`${m.questName}: ${m.desc}${done ? ' (완료 표시됨)' : ''}`}
+                  aria-label={`${m.num}번 ${m.questName}: ${m.desc}${done ? ' (완료 표시됨)' : ''}`}
                 >
                   <span aria-hidden>{m.icon}</span>
+                  {m.num > 0 && (
+                    // 퀘스트 번호 배지 — 좌측 목록 점의 번호와 일치, 색 없이 식별
+                    <span className="mapmark-num" aria-hidden>
+                      {m.num}
+                    </span>
+                  )}
                   {done && (
                     <span className="mapmark-check" aria-hidden>
                       ✓
@@ -491,7 +498,9 @@ export const MapViewer = forwardRef<
             role="dialog"
           >
             <p className="mapmark-pop-quest">
-              <span className="mapmark-dot" style={{ background: pop.m.color }} />
+              <span className="mapmark-dot mapmark-dot-num" style={{ background: pop.m.color }}>
+                {pop.m.num > 0 ? pop.m.num : ''}
+              </span>
               {pop.m.questName}
             </p>
             <p className="mapmark-pop-desc">

@@ -377,6 +377,14 @@ export function PlannerTab({
     return m
   }, [selected])
 
+  // 퀘스트 → 번호 (선택 순서 1,2,3…). 색맹 대응: 마커·목록·범례를 잇는 단서가
+  // 색뿐이면 적록색맹은 매칭이 안 됨 → 같은 번호를 양쪽에 찍어 색과 무관하게 연결
+  const questNum = useMemo(() => {
+    const m = new Map<string, number>()
+    selected.forEach(({ quest }, i) => m.set(quest.id, i + 1))
+    return m
+  }, [selected])
+
   // 이 맵의 수록 SVG 메타 — 없으면(쇄빙선·연구소·미궁) 맵 보기 비활성
   const mapMeta: MapMeta | null = useMemo(() => {
     if (metaState.status !== 'ready' || !metaState.data) return null
@@ -392,6 +400,7 @@ export function PlannerTab({
     const out: ViewMarker[] = []
     for (const { quest, objectives } of selected) {
       const color = questColor.get(quest.id) ?? QUEST_COLORS[0]
+      const num = questNum.get(quest.id) ?? 0
       for (const o of objectives) {
         const cat = CATS.find((c) => c.key === catOf(o))!
         // 잠긴 목표면 필요 열쇠를 칩으로 (한/영 표시명 + 검색어 미리 가공)
@@ -408,6 +417,7 @@ export function PlannerTab({
           out.push({
             key: `${o.id}-${i}`,
             questId: quest.id,
+            num,
             x: loc.x,
             z: loc.z,
             icon: cat.icon,
@@ -423,7 +433,7 @@ export function PlannerTab({
       }
     }
     return out
-  }, [selected, mapId, questColor, normalizedName])
+  }, [selected, mapId, questColor, questNum, normalizedName])
 
   // 마커 표시/완료 상태 — 맵별 신규 키(tc:planner-hidden·tc:planner-done). 픽·체크와 분리
   const hiddenIds = useMemo(
@@ -586,9 +596,11 @@ export function PlannerTab({
                     {noCoordObjectives.map(({ quest, o }) => (
                       <li key={o.id}>
                         <span
-                          className="mapmark-dot"
+                          className="mapmark-dot mapmark-dot-num"
                           style={{ background: questColor.get(quest.id) }}
-                        />
+                        >
+                          {questNum.get(quest.id)}
+                        </span>
                         {CATS.find((c) => c.key === catOf(o))!.icon}{' '}
                         {o.description || o.type}
                         <span className="dim"> — {quest.nameKo}</span>
@@ -672,9 +684,11 @@ export function PlannerTab({
                               }
                             >
                               <span
-                                className="mapmark-dot"
+                                className="mapmark-dot mapmark-dot-num"
                                 style={{ background: questColor.get(quest.id) }}
-                              />
+                              >
+                                {questNum.get(quest.id)}
+                              </span>
                             </button>
                           )}
                           {quest.displayName}
