@@ -21,6 +21,31 @@ import { StarButton } from './StarButton'
 
 const MAX_RESULTS = 50
 
+// 정렬 비교마다 생성하지 않도록 단일 collator 재사용
+const collator = new Intl.Collator('ko')
+
+// 실수익(시세 − 수수료). 플리 거래 불가/시세 0은 정렬 맨 아래로 가게 -Infinity
+function netOf(item: TarkovItem): number {
+  const price = item.avg24hPrice ?? 0
+  if (price <= 0 || item.basePrice <= 0 || item.types.includes('noFlea')) {
+    return -Infinity
+  }
+  return price - fleaFee(item.basePrice, price, getFleaRates())
+}
+
+type SortKey = 'price' | 'net' | 'change' | 'name'
+
+const SORTS: { key: SortKey; label: string; cmp: (a: TarkovItem, b: TarkovItem) => number }[] = [
+  { key: 'price', label: '시세 높은순', cmp: (a, b) => (b.avg24hPrice ?? 0) - (a.avg24hPrice ?? 0) },
+  { key: 'net', label: '실수익 높은순', cmp: (a, b) => netOf(b) - netOf(a) },
+  {
+    key: 'change',
+    label: '변동률 높은순',
+    cmp: (a, b) => (b.changeLast48hPercent ?? 0) - (a.changeLast48hPercent ?? 0),
+  },
+  { key: 'name', label: '이름순', cmp: (a, b) => collator.compare(a.name, b.name) },
+]
+
 // 즐겨찾기 시세 카운트업은 세션당 1회만 — 검색을 지울 때마다 다시 차오르면 성가심
 let favCountedUp = false
 
@@ -227,21 +252,25 @@ export function SearchTab() {
   const state = useAsyncData(fetchAllItems)
   // 티커 클릭으로 넘어온 검색어가 있으면 그걸로 시작
   const [query, setQuery] = useState(() => consumePendingSearch() ?? '')
+  const [sortKey, setSortKey] = useState<SortKey>('price')
   const { ids: favIds, toggle: toggleFav } = useIdSet(FAV_ITEMS_KEY)
 
   const results = useMemo(() => {
     if (state.status !== 'ready') return []
     const q = query.trim().toLowerCase()
     if (q.length < 2) return []
+    const cmp = (SORTS.find((s) => s.key === sortKey) ?? SORTS[0]).cmp
+    // 정렬 전에 MAX_RESULTS로 자르면 "시세 상위 50" 안에서만 재정렬돼 의미가 어긋남
+    // → 전체 매칭을 정렬한 뒤 자른다 (매칭 수가 많아도 비교는 가벼움)
     return state.data
       .filter(
         (item) =>
           item.name.toLowerCase().includes(q) ||
           item.shortName.toLowerCase().includes(q),
       )
-      .sort((a, b) => (b.avg24hPrice ?? 0) - (a.avg24hPrice ?? 0))
+      .sort(cmp)
       .slice(0, MAX_RESULTS)
-  }, [state, query])
+  }, [state, query, sortKey])
 
   // 검색하지 않을 때는 즐겨찾기 모아보기 — "내 관심 아이템 시세 한눈에"
   const favorites = useMemo(() => {
@@ -289,6 +318,20 @@ export function SearchTab() {
           onChange={(e) => setQuery(e.target.value)}
           autoFocus
         />
+        {searching && (
+          <select
+            className="sort-select"
+            value={sortKey}
+            onChange={(e) => setSortKey(e.target.value as SortKey)}
+            aria-label="정렬 기준"
+          >
+            {SORTS.map((s) => (
+              <option key={s.key} value={s.key}>
+                {s.label}
+              </option>
+            ))}
+          </select>
+        )}
       </div>
       <FeeCalc items={state.data} />
       {searching && results.length === 0 && (
