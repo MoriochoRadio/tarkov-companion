@@ -1775,6 +1775,14 @@ select:focus-visible {
   cursor: pointer;
 }
 
+/* 행 자체가 키보드로 포커스됨(role=button tabindex=0) — 포커스 표시 필수.
+   outline은 셀 경계에 묻히기 쉬워 inset 박스섀도로 행 전체를 또렷이 감싼다 */
+.quest-row:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--accent-bright);
+  border-radius: var(--radius-sm);
+}
+
 /* 퀘스트 행 이름 칸 — 이름은 말줄임, 작은 위키 링크는 오른쪽 끝에 항상 노출 */
 .quest-name-cell {
   display: flex;

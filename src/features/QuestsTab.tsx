@@ -588,7 +588,21 @@ export function QuestsTab() {
             <tr
               key={q.id}
               className={`quest-row${doneIds.has(q.id) ? ' done' : ''}`}
+              role="button"
+              tabIndex={0}
+              aria-label={`${q.displayName} 상세 보기`}
               onClick={() => setSelectedId(q.id)}
+              onKeyDown={(e) => {
+                // 행 자체가 포커스됐을 때만 — 안쪽 ★/○/위키에 포커스가 있으면
+                // 그 버튼의 Enter/Space가 행까지 버블돼 상세가 같이 열리는 걸 막는다
+                if (
+                  e.target === e.currentTarget &&
+                  (e.key === 'Enter' || e.key === ' ')
+                ) {
+                  e.preventDefault()
+                  setSelectedId(q.id)
+                }
+              }}
             >
               <td>
                 <div className="quest-name-cell">
