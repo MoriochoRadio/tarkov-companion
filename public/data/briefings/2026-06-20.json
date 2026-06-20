@@ -1,0 +1,64 @@
+{
+  "date": "2026-06-20",
+  "generatedAt": "2026-06-20T13:40:41.213+09:00",
+  "headline": "레이드 참가 불가 문제 완전 수정과 2026년 하반기 및 4분기 업데이트 계획 공개",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "중요 버그 수정",
+      "items": [
+        {
+          "title": "레이드 참가 불가 문제 수정",
+          "summary": "플레이어가 레이드 드롭 카운트다운 화면에 머무르며 레이드에 참가하지 못하는 문제를 완전히 해결해 정상적인 게임 진행이 가능해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45581_(16_June_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "업데이트 및 로드맵 소식",
+      "items": [
+        {
+          "title": "Escape from Tarkov 2026년 4분기 예비 업데이트 계획 공개",
+          "summary": "2026년 4분기까지의 업데이트 계획이 발표되어 향후 게임 방향과 신규 콘텐츠에 대한 기대를 높입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/672872215678552846",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "타르코프 2026년 하반기 로드맵 공개",
+          "summary": "시즌 캐릭터와 관전 카메라 모드가 7월에 추가되며, PVE 프레스티지 모드는 빠르면 3분기에 도입될 예정입니다. GPS 기능 추가 가능성도 언급되어 향후 편의성 향상이 기대됩니다.",
+          "url": "https://www.youtube.com/watch?v=xVs3KLL3-ew",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주목할 만한 영상",
+      "items": [
+        {
+          "title": "타르코프 2026년 하반기 로드맵 공개 | 시즌 캐릭터, 관전 카메라 모드 7월 추가 | PVE 프레스티지 빠르면 3분기 | GPS 추가?  | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=xVs3KLL3-ew",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "델타포스 공부",
+          "url": "https://www.youtube.com/watch?v=N45lPu7DLug",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=5ZnXssMqUak",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "THIS MAP has become absolute CHAOS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=Fwqs1Mk-fXQ",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
