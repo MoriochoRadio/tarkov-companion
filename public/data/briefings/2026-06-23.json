@@ -1,0 +1,78 @@
+{
+  "date": "2026-06-23",
+  "generatedAt": "2026-06-23T01:20:16.076+09:00",
+  "headline": "레이드 참가 불가 문제 완전 해결과 GPU 가치 하락 원인 분석",
+  "sections": [
+    {
+      "type": "news",
+      "title": "레이드 참가 문제 해결",
+      "items": [
+        {
+          "title": "레이드 참가 불가 문제 수정",
+          "summary": "플레이어가 레이드 드롭 카운트다운 화면에 멈춰 레이드에 참가하지 못하던 문제가 완전히 해결되어 정상적인 레이드 참여가 가능해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45581_(16_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "게임 내 경제 변화와 고급 아이템 파밍법",
+      "items": [
+        {
+          "title": "GPU 가치 하락 원인과 메타 영향",
+          "summary": "인터체인지에서 획득한 GPU의 가치가 크게 떨어진 이유와 게임 내 경제 변화가 메타에 미치는 영향을 분석하여 아이템 가치 판단과 효율적인 자원 활용에 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uc4b6e/why_are_gpus_worthless_in_10_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "플레이어 경험과 소소한 이야기",
+      "items": [
+        {
+          "title": "신규 플레이어 우즈 숲 스캐브 러닝 경험",
+          "summary": "6일 차 플레이어가 우즈 숲에서 스캐브로 임무를 수행하며 고급 무기와 장비를 획득한 경험담으로, 초보자에게 유용한 생존 및 전투 팁을 제공합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uc4fzl/loot_bought_the_game_6_days_ago_went_on_a_scav/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "아버지와 딸의 터보크레이프 이야기",
+          "summary": "한 플레이어가 딸에게서 받은 아버지의 날 카드와 함께 게임 내에서의 가족 간 소통을 공유하며, 게임이 일상 속 소소한 행복을 주는 사례를 보여줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uc839r/irl_hey_dad_you_in_a_raid/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "BTR 차량 스폰 확률 문제 토론",
+          "summary": "BTR 차량이 일정 확률로 스폰되지 않는 현상에 대한 플레이어들의 불만과 개선 요구가 이어지며, 게임 내 밸런스와 재미 요소에 대한 중요한 의견이 제시되고 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ucemiz/discussion_the_btr_having_a_chance_not_to_spawn/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상 모음",
+      "items": [
+        {
+          "title": "델타포스 적응하기",
+          "url": "https://www.youtube.com/watch?v=DMmzhTqDaIw",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "1-TAPPING Everyone on LABS with the MK-18 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=S8L7mMU9ZSI",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=hdCa9CNgkLU",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
