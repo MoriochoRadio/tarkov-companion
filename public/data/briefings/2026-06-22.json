@@ -1,0 +1,102 @@
+{
+  "date": "2026-06-22",
+  "generatedAt": "2026-06-22T14:30:09.026+09:00",
+  "headline": "레이드 참가 문제 수정과 다수의 주요 버그 경고, 우즈 숲 고급 아이템 파밍법 공유",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "중요 버그 및 그래픽 문제 경고",
+      "items": [
+        {
+          "title": "스캐브 레이드 반복 부활 버그",
+          "summary": "스캐브 레이드에서 사망 후 게임 멈춤과 부상 상태로 다른 위치에 부활하는 버그가 발생해 아이템 손실과 진행 차질을 유발하므로 주의가 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uc77a7/bug_repetedly_revived_in_scav_raid/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "터미널 미션 증거 컨테이너 중복 소지 버그",
+          "summary": "터미널 미션 시작 전 증거 컨테이너가 두 개 존재해 어떤 것을 선택해야 할지 혼란을 주는 버그가 보고되어 미션 진행 시 주의가 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ubtjz1/bug_why_do_i_have_two_evidence_conteiners_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Tarkov Arena 미션 결제 후 초기화 버그와 해결법",
+          "summary": "1백만 루블 결제 후 미션이 초기화되는 버그가 있으나, 결제 후 약 5분간 대기하면 정상 진행되므로 결제 직후 당황하지 말고 기다리는 것이 중요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uc0wwx/bug_tarkov_arena_to_great_heights_part_4_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "New Gas 맵 TAA 안티앨리어싱 그래픽 문제",
+          "summary": "New Gas 맵에서 TAA 안티앨리어싱 사용 시 조명 효과가 비정상적으로 나타나며, DLSS 품질 모드 활성화 시 문제가 해결되므로 그래픽 설정 조정이 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ubks1e/anti_aliasing_taa_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "게임 플레이 및 업데이트 소식",
+      "items": [
+        {
+          "title": "레이드 참가 불가 문제 수정",
+          "summary": "플레이어가 레이드 드롭 카운트다운 화면에 멈춰 레이드에 참가하지 못하던 문제가 해결되어 정상적인 레이드 참여가 가능해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.5.0.45581_(16_June_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "유용한 게임 내 팁",
+      "items": [
+        {
+          "title": "우즈 숲에서 핸드 드릴 찾는 법과 보상 위치",
+          "summary": "우즈 숲 USEC 캠프와 숨겨진 벙커에서 핸드 드릴을 찾는 방법과 LEDX, RBVO 마크 키 획득 위치를 공유하여 고급 아이템 파밍에 큰 도움이 됩니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ubkgzy/searching_for_hand_drill_on_woods_and_came_out/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "랩스 출입 카드 분실 시 대처법",
+          "summary": "랩스 임무 중 출입 카드를 잃어버리면 레벨 30까지 재구매가 불가능하므로, 임무를 정확히 수행해 카드 분실을 방지하는 것이 중요하다는 경험담입니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ubtv7z/discussion_if_you_ever_want_to_make_this_game/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "GPU 가치 하락 원인과 메타 영향",
+          "summary": "인터체인지에서 획득한 GPU의 가치가 크게 떨어진 이유와 게임 내 경제 변화가 메타에 미치는 영향을 분석하여 아이템 가치 판단에 참고할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uc4b6e/why_are_gpus_worthless_in_10_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상",
+      "items": [
+        {
+          "title": "델타포스 5시 대회 결승전 봐요 (한국 vs 중국)",
+          "url": "https://www.youtube.com/watch?v=9NO1uQO871Q",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=hdCa9CNgkLU",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "This NEW Extraction Game Was WAY Harder Than We Expected - Mistfall Hunter",
+          "url": "https://www.youtube.com/watch?v=4gT8Tc8_WOo",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
