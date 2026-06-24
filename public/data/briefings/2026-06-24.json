@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-24",
+  "generatedAt": "2026-06-24T13:34:45.693+09:00",
+  "headline": "Escape From Tarkov 최신 영상 모음: 델타포스 비콘 체험과 .45 벡터 25킬 연속 영상 공개",
+  "sections": [
+    {
+      "type": "videos",
+      "title": "최신 유튜브 영상",
+      "items": [
+        {
+          "title": "델타포스 비콘 기밀 체험",
+          "url": "https://www.youtube.com/watch?v=LrOPsUmbM8w",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=W-q3mjoFIQI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "25 KILL STREAK WITH THE .45 VECTOR! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=1gkBURijXTY",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
