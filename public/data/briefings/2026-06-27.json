@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-27",
+  "generatedAt": "2026-06-27T13:15:41.352+09:00",
+  "headline": "우즈 맵 이벤트로 희귀 키 스폰 증가, 게임 내 설문조사도 시작",
+  "sections": [
+    {
+      "type": "news",
+      "title": "이벤트 및 게임 내 설문조사 소식",
+      "items": [
+        {
+          "title": "우즈 맵 이벤트로 랩스 키 등 희귀 아이템 스폰 대폭 증가",
+          "summary": "이번 이벤트에서는 모든 플레이어 스캐브와 일부 일반 스캐브가 리볼버와 MXLR을 들고 스폰되며, 우즈 맵 침대 중 한 곳에서 랩스 키가 스폰되는 위치가 확인되어 희귀 키 획득 기회가 늘어났습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ug3y7r/explanation_of_the_new_event_and_how_much_it/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "게임 내 설문조사 시작, 하이드아웃과 캐릭터 진행 의견 수집",
+          "summary": "모듈 업그레이드, 건설 시간, 유용성 및 새로운 기능에 관한 의견을 받아 향후 게임 개선에 반영할 예정입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708901647665857450",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Shturmans 보관함 열쇠 가격과 가치 분석",
+      "items": [
+        {
+          "title": "Shturmans 보관함 열쇠는 9만 루블로 저렴하지만 내부 아이템 가치가 낮음",
+          "summary": "열쇠 가격 대비 보관함 내 아이템 가치가 낮아 열쇠 구매 전 활용도를 신중히 판단할 필요가 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ugdkjk/loot_i_now_understand_why_the_shturmans_stash_key/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "최근 Escape from Tarkov 영상",
+      "items": [
+        {
+          "title": "말보다 빠른 리볼버와 레버액션, 서부극 타르코프 | 와일드 와일드 우드 | 없어진, 초기화 직전 세기말 급 파밍 이벤트 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=ZwsVuJ5-NxM",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "Does P90 Leg Meta still Work - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=Vq7i5YpPCrU",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "The Most DYSFUNCTIONAL Trio Goes to Labs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=BtIWoXQXQ70",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
