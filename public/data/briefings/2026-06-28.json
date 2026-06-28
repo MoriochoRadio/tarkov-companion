@@ -1,0 +1,64 @@
+{
+  "date": "2026-06-28",
+  "generatedAt": "2026-06-28T13:49:13.414+09:00",
+  "headline": "5.8x42mm 신형 탄약과 QBZ 개조 공식 발표, 여름 세일과 게임 내 설문조사 진행 중",
+  "sections": [
+    {
+      "type": "news",
+      "title": "신규 탄약과 게임 내 이벤트 소식",
+      "items": [
+        {
+          "title": "5.8x42mm 신규 탄약과 QBZ 무기 개조 공식 발표",
+          "summary": "개발자 트위터를 통해 5.8x42mm 신형 탄약이 확정되었으며, QBZ 무기 개조가 가능해진다는 공식 정보가 공개되어 기존 5.56, 5.45 탄약과 다른 새로운 메타 변화를 예고합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ugxedq/discussion_58x42mm_new_cal_confirmed_qbz_modding/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "게임 내 설문조사 진행 중",
+          "summary": "하이드아웃 모듈 업그레이드, 건설 시간, 유용성 및 신규 기능에 대한 플레이어 의견을 수집하여 향후 게임 개선에 반영할 예정입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708901647665857450",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "여름 세일 시작, 최대 25% 할인",
+          "summary": "Escape from Tarkov의 여러 에디션과 확장팩이 7월 9일까지 최대 25% 할인된 가격으로 판매되며, Unheard Steam Edition 번들도 포함됩니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708901647665857010",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "유용한 게임 정보",
+      "items": [
+        {
+          "title": "Shturmans 보관함 열쇠 구매 전 활용도 판단 필요",
+          "summary": "9만 루블로 저렴한 Shturmans 보관함 열쇠는 가격 대비 내부 아이템 가치가 낮아 구매 전 신중한 판단이 요구됩니다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "추천 유튜브 영상",
+      "items": [
+        {
+          "title": "이벤트 중. 쇄빙선에서 돈 벌어서 타르코인 풀매수",
+          "url": "https://www.youtube.com/watch?v=kqS_874Yu44",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Cleaning out Dorms with the Mk47 MUTANT - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=z1ZDNhZc2bo",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "These Customs lobbies were NOT ready for the PKM - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=XedNLphze-o",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
