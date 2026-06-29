@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-30",
+  "generatedAt": "2026-06-30T00:20:01.980+09:00",
+  "headline": "Escape From Tarkov 최신 영상 3편 공개, Streets 맵에서의 전투와 타르코인 농장 견제 전략 주목",
+  "sections": [
+    {
+      "type": "videos",
+      "title": "최신 유튜브 영상 모음",
+      "items": [
+        {
+          "title": "델타포스 야호",
+          "url": "https://www.youtube.com/watch?v=nFoJojfmcO0",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Streets was NOT READY for this trio - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=GiziUh63QEY",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Being a MENACE to TarCoin Farmers on Streets - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=BxK2ocTo3MY",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
