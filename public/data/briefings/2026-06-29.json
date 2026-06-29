@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-29",
+  "generatedAt": "2026-06-29T13:58:59.813+09:00",
+  "headline": "Kord Breach 추가로 DDM4 제작 가능해져 무기 커스터마이징 확장",
+  "sections": [
+    {
+      "type": "news",
+      "title": "신규 아이템과 게임 내 설문조사 소식",
+      "items": [
+        {
+          "title": "Kord Breach로 DDM4 제작 가능해진다",
+          "summary": "트위터에서 공개된 스크린샷을 통해 Kord Breach 아이템이 추가되어 DDM4 무기를 제작할 수 있게 되면서 무기 커스터마이징에 새로운 선택지가 생겼습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uhruih/screenshot_seeing_as_nobodys_posted_it_from/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "게임 내 설문조사 진행 중",
+          "summary": "하이드아웃 모듈 업그레이드, 건설 시간, 유용성 및 신규 기능에 대해 플레이어 의견을 수집하여 향후 게임 개선에 반영할 예정입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708901647665857450",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상",
+      "items": [
+        {
+          "title": "쇄빙선에서 돈 벌어서 타르코인 풀매수",
+          "url": "https://www.youtube.com/watch?v=tClAfP6lsmw",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Being a MENACE to TarCoin Farmers on Streets - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=BxK2ocTo3MY",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Taking the AA-12 to Streets was ABSOLUTE CINEMA - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=nnfpea6Lj7E",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
