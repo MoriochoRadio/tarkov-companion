@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-03",
+  "generatedAt": "2026-07-03T13:06:59.449+09:00",
+  "headline": "Battlestate Games, ChinaJoy에서 Escape from Tarkov와 EFT: Arena 직접 체험 기회 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "Battlestate Games, 중국 최대 게임 전시회 ChinaJoy 참가",
+      "items": [
+        {
+          "title": "Battlestate Games, 중국 최대 게임 전시회 ChinaJoy 참가",
+          "summary": "Battlestate Games가 처음으로 중국 상하이에서 열리는 아시아 최대 게임 전시회 ChinaJoy에 참가하여 Escape from Tarkov와 EFT: Arena를 직접 체험할 수 있는 기회를 제공합니다. 7월 31일부터 8월 3일까지 Hall 2, Stand 9에서 개발자와 소통하며 게임에 대한 다양한 정보를 얻을 수 있습니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708901647665859741",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "Escape from Tarkov 관련 최신 영상",
+      "items": [
+        {
+          "title": "1부 타르코프 / 2부 델타포스",
+          "url": "https://www.youtube.com/watch?v=ovIxJ7CWlz8",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - QUICK LIL STREAM",
+          "url": "https://www.youtube.com/watch?v=fbwPaE8htdM",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "The WILD WILD WOODS event made this map JUICED - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=J6Is2syvjFU",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
