@@ -1,0 +1,118 @@
+{
+  "date": "2026-07-05",
+  "generatedAt": "2026-07-05T13:19:07.909+09:00",
+  "headline": "임무 검색 기능 개선과 다양한 치명적 버그 및 하드웨어 문제 주의",
+  "sections": [
+    {
+      "type": "news",
+      "title": "주요 업데이트 및 이벤트 소식",
+      "items": [
+        {
+          "title": "퀘스트 검색 기능 추가",
+          "summary": "사이드 태스크와 오퍼레이셔널 태스크 화면에서 이름, 목표, 위치, 트레이더별로 퀘스트를 검색할 수 있어 임무 관리가 훨씬 편리해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Expansion Hub 출시를 위한 기술적 변경사항 포함",
+          "summary": "이번 업데이트는 Expansion Hub 출시 준비를 위한 기술적 변경사항을 포함하며, Expansion Hub는 아직 이용할 수 없고 TarCoins 전환도 진행 중입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708901647665861071",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "ChinaJoy에서 Escape from Tarkov 및 EFT: Arena 체험 기회 제공",
+          "summary": "Battlestate Games가 7월 31일부터 8월 3일까지 상하이에서 열리는 ChinaJoy에 참가하여 두 게임을 현장에서 직접 체험하고 개발자와 소통할 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "FAMAS 무기 공식 생산 시작",
+          "summary": "게임 내에서 FAMAS 무기가 공식적으로 생산되기 시작해 무기 선택과 메타 변화에 중요한 영향을 미칠 전망입니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1un7jfv/discussion_baguette_jousters_can_rejoice_for_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "GP-25 수류탄 발사기 스킬 레벨업 관련 이해",
+          "summary": "GP-25 사용 시 'Under-barrel Launchers'가 아닌 'Grenade Launcher' 스킬이 레벨업되는 이유를 설명해 무기 스킬 시스템 이해에 도움을 줍니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1une4ey/discussion_i_used_several_gp25s_and_leveled_up/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "중요 버그 및 하드웨어 문제 경고",
+      "items": [
+        {
+          "title": "Streets of Tarkov 맵 무기 과열 문제 수정",
+          "summary": "특정 상황에서 무기가 지나치게 빨리 과열되는 문제가 해결되어 전투 중 불필요한 무기 과열로 인한 불이익을 크게 줄일 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "사망 후 무기 공중 부유 버그 수정",
+          "summary": "플레이어 사망 시 무기가 공중에 떠 있는 시각적 오류가 해결되어 게임 내 혼란과 버그 현상이 감소했습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "터미널 맵 문 열기 버그 발생 사례",
+          "summary": "로딩 중 크래시 후 재접속 시 터미널 맵 문이 닫히고 이후 열리지 않는 문제가 보고되어, 해당 버그 회피 및 대응에 주의가 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1un5z0y/bug_door_cant_be_opened_on_terminal/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "플레이어 동기화 중 사망 버그 보고",
+          "summary": "동기화 과정에서 카운트다운 없이 바로 종료 화면으로 넘어가 사망 처리되는 치명적 버그가 확인되어 게임 진행 중 각별한 주의가 요구됩니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1un8xqe/bug_i_died_during_player_synchronization/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Tarkov 플레이 시만 반복되는 블루스크린 문제",
+          "summary": "특정 고사양 PC 환경에서 Tarkov 플레이 중에만 반복적으로 블루스크린이 발생하는 문제가 보고되어 하드웨어 호환성과 드라이버 점검이 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1un6i1x/recurring_bsods_only_in_tarkov_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "1.0.6 업데이트 이후 화면 깜빡임 및 시각 버그 발생",
+          "summary": "메뉴 등에서 발생하는 깜빡임과 시각적 이상 현상이 보고되어 임시 해결책이나 공식 대응을 기다릴 필요가 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1un57qe/bug_flickering_and_visual_bug_since_106_any_fixes/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상 모음",
+      "items": [
+        {
+          "title": "델타포스",
+          "url": "https://www.youtube.com/watch?v=Dpl4OikX7UA",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "패치버전 쇄빙선 변한게 있으려나?",
+          "url": "https://www.youtube.com/watch?v=UtyGGdQp278",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Is the HK-416 BACK ON TOP again in the new AB:I season?",
+          "url": "https://www.youtube.com/watch?v=Euxtjpfk1as",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Checking out the NEW Season (Perks Added) - Arena Breakout Infinite",
+          "url": "https://www.youtube.com/watch?v=BkcwOkYaouM",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
