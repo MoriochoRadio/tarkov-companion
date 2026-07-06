@@ -28,13 +28,21 @@ function kstDateString() {
   return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10)
 }
 
+// 소스가 일시 5xx로 빠지면 guard 때문에 그날 브리핑 품질 저하가 고착됨 — 3회 백오프 재시도
 async function getText(url) {
-  const res = await fetch(url, {
-    headers: { 'User-Agent': UA },
-    signal: AbortSignal.timeout(FETCH_TIMEOUT),
-  })
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`)
-  return res.text()
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': UA },
+        signal: AbortSignal.timeout(FETCH_TIMEOUT),
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`)
+      return await res.text()
+    } catch (e) {
+      if (attempt >= 3) throw e
+      await new Promise((r) => setTimeout(r, attempt * 3000))
+    }
+  }
 }
 
 function decodeEntities(s) {

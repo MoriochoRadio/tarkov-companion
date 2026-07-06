@@ -33,16 +33,29 @@ const generatedAt = new Date(Date.now() + 9 * 3600 * 1000)
 
 // ---------- 퀘스트 목록 (한/영 이름 + 위키 링크) ----------
 
-const res = await fetch('https://api.tarkov.dev/graphql', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({
-    query:
-      '{ ko: tasks(lang: ko) { id name wikiLink } en: tasks(lang: en) { id name } }',
-  }),
-  signal: AbortSignal.timeout(30_000),
-})
-const tasksJson = await res.json()
+// tarkov.dev는 간헐적으로 5xx를 던짐 — 3회 백오프 재시도
+async function fetchTasks() {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch('https://api.tarkov.dev/graphql', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query:
+            '{ ko: tasks(lang: ko) { id name wikiLink } en: tasks(lang: en) { id name } }',
+        }),
+        signal: AbortSignal.timeout(30_000),
+      })
+      if (!res.ok) throw new Error(`tarkov.dev HTTP ${res.status}`)
+      return await res.json()
+    } catch (e) {
+      if (attempt >= 3) throw e
+      console.warn(`tarkov.dev tasks 조회 실패(${e.message}) — ${attempt * 5}초 후 재시도`)
+      await new Promise((r) => setTimeout(r, attempt * 5000))
+    }
+  }
+}
+const tasksJson = await fetchTasks()
 if (!tasksJson.data) throw new Error('tarkov.dev tasks 조회 실패')
 const enName = new Map(tasksJson.data.en.map((t) => [t.id, t.name]))
 const tasks = tasksJson.data.ko

@@ -3,12 +3,10 @@ name: Quest Guides Backfill
 
 on:
   schedule:
-    # schedule 누락이 잦아(2026-06 daily 연속 누락, 6/13은 schedule 0건) 시각 분산 cron을 다중 등록.
-    # 이 워크플로우는 "아직 가이드 없는 퀘스트"만 골라 처리하고 끝나면 즉시 종료하므로,
-    # 여러 번 떠도 중복 생성이 없다(백로그를 더 빨리 소진할 뿐) → 별도 guard 불필요. 정각은 회피.
-    - cron: '17 2 * * *' # 02:17 UTC = 11:17 KST (주 실행)
-    - cron: '37 5 * * *' # 05:37 UTC = 14:37 KST (백업 1)
-    - cron: '43 9 * * *' # 09:43 UTC = 18:43 KST (백업 2)
+    # 백필(전체 ~510개)은 2026-07 완료 — 이제 이 cron은 신규 퀘스트(패치/와이프)만 잡는다.
+    # 신규는 드물고 하루 놓쳐도 다음 날 잡히므로 cron 1개로 충분. 정각(0분)은 회피.
+    # 와이프 직후 대량 백로그가 다시 생기면 시각 분산 cron 다중 등록으로 복원할 것.
+    - cron: '17 2 * * *' # 02:17 UTC = 11:17 KST
   workflow_dispatch:
 
 permissions:
@@ -23,6 +21,7 @@ concurrency:
 jobs:
   guides:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,8 +47,12 @@ jobs:
             echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "퀘스트 가이드: $(TZ=Asia/Seoul date +%F) 백필"
-            git pull --rebase origin main
-            git push origin main
+            # 다른 콘텐츠 워크플로우와 push가 겹치면 non-fast-forward — 재시도로 방어
+            for i in 1 2 3; do
+              git pull --rebase origin main && git push origin main && break
+              [ "$i" = 3 ] && exit 1
+              echo "push 실패(${i}회차) — 5초 후 재시도"; sleep 5
+            done
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 

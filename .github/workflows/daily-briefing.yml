@@ -29,6 +29,7 @@ concurrency:
 jobs:
   briefing:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -74,8 +75,12 @@ jobs:
             echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "브리핑: $(TZ=Asia/Seoul date +%F) 자동 생성"
-            git pull --rebase origin main
-            git push origin main
+            # 다른 콘텐츠 워크플로우와 push가 겹치면 non-fast-forward — 재시도로 방어
+            for i in 1 2 3; do
+              git pull --rebase origin main && git push origin main && break
+              [ "$i" = 3 ] && exit 1
+              echo "push 실패(${i}회차) — 5초 후 재시도"; sleep 5
+            done
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 
