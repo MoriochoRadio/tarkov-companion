@@ -1,0 +1,37 @@
+{
+  "date": "2026-07-07",
+  "generatedAt": "2026-07-07T13:17:04.983+09:00",
+  "headline": "퀘스트 검색 기능 편리해지고 무기 과열 및 사망 후 무기 공중 부유 버그 완전 수정",
+  "sections": [
+    {
+      "type": "news",
+      "title": "퀘스트 관리 편의성 향상",
+      "items": [
+        {
+          "title": "퀘스트 검색 기능 추가",
+          "summary": "사이드 및 작전 퀘스트 화면에서 퀘스트 이름, 목표, 위치, 거래상인별로 검색할 수 있어 임무 관리가 훨씬 편리해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "중요 버그 수정 안내",
+      "items": [
+        {
+          "title": "Streets of Tarkov 맵 무기 과열 문제 수정",
+          "summary": "특정 상황에서 무기가 지나치게 빨리 과열되는 문제가 해결되어 전투 중 불필요한 무기 과열로 인한 불이익을 크게 줄일 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "플레이어 사망 후 무기 공중 부유 버그 수정",
+          "summary": "사망 시 무기가 공중에 떠 있는 시각적 오류가 완전히 해결되어 게임 내 혼란과 버그 현상이 감소했습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    }
+  ]
+}
