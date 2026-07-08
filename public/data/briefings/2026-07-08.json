@@ -1,0 +1,57 @@
+{
+  "date": "2026-07-08",
+  "generatedAt": "2026-07-08T12:44:14.291+09:00",
+  "headline": "퀘스트 검색 기능 편리해지고 무기 과열·사망 후 무기 공중 부유 버그 완전 수정, 아레나 외 방어구 획득 위치 문의 증가",
+  "sections": [
+    {
+      "type": "news",
+      "title": "주요 업데이트 및 기능 개선",
+      "items": [
+        {
+          "title": "퀘스트 검색 기능 추가",
+          "summary": "사이드 및 작전 퀘스트 화면에서 이름, 목표, 위치, 거래상인별로 퀘스트를 검색할 수 있어 임무 관리가 훨씬 편리해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그 수정 및 주의 사항",
+      "items": [
+        {
+          "title": "Streets of Tarkov 맵 무기 과열 문제 수정",
+          "summary": "특정 상황에서 무기가 지나치게 빨리 과열되는 문제가 해결되어 전투 중 불필요한 무기 과열로 인한 불이익을 크게 줄일 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "플레이어 사망 후 무기 공중 부유 버그 수정",
+          "summary": "사망 시 무기가 공중에 떠 있는 시각적 오류가 완전히 해결되어 게임 내 혼란과 버그 현상이 감소했습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "커뮤니티 문의 및 제안",
+      "items": [
+        {
+          "title": "아레나 외부에서 특정 방어구 획득 위치 문의",
+          "summary": "아레나 전용 방어구를 메인 게임에서 얻는 구체적인 위치나 방법이 명확하지 않아, 관련 정보 공유와 확인이 필요한 상황입니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1upycqr/loot_where_to_get_this_armor_outside_of_arena/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "ARMS와 VLTOR 부품 추가 요청 및 메타 관련 논의",
+          "summary": "AR-15 플랫폼의 현대화에 중요한 ARMS와 VLTOR사의 부품을 게임 내에 더 많이 추가해 달라는 제안으로, 이들 부품이 메타에 긍정적 영향을 줄 수 있음을 강조합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1upl0uv/suggestion_we_need_more_arms_and_vltor_parts/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
