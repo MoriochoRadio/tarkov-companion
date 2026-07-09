@@ -1,0 +1,73 @@
+{
+  "date": "2026-07-09",
+  "generatedAt": "2026-07-09T13:13:31.669+09:00",
+  "headline": "퀘스트 검색 기능 강화와 무기 과열·사망 후 무기 공중 부유 버그 완전 수정, 확장 허브와 TarCoin 도입",
+  "sections": [
+    {
+      "type": "news",
+      "title": "게임 편의성 및 경제 시스템 업데이트",
+      "items": [
+        {
+          "title": "퀘스트 검색 기능 추가",
+          "summary": "사이드 태스크와 작전 태스크 화면에서 이름, 목표, 위치, 거래상인 기준으로 퀘스트를 검색할 수 있어 임무 관리가 훨씬 편리해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "확장 허브와 TarCoin 도입",
+          "summary": "게임 내 상점인 확장 허브가 도입되어 공식 웹사이트보다 더 유연한 아이템 선택이 가능해졌으며, TarCoin은 확장 허브 내에서만 사용되는 게임 내 화폐로 레이드에서 획득 후 추출 시 자동으로 적용됩니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708902764859622444",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "중요 버그 및 문제점 수정",
+      "items": [
+        {
+          "title": "Streets of Tarkov 무기 과열 문제 완전 수정",
+          "summary": "특정 상황에서 무기가 지나치게 빨리 과열되는 문제가 완전히 해결되어 전투 중 불필요한 무기 과열로 인한 불이익을 크게 줄일 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "플레이어 사망 후 무기 공중 부유 버그 완전 수정",
+          "summary": "사망 시 무기가 공중에 떠 있는 시각적 오류가 완전히 해결되어 게임 내 혼란과 버그 현상이 감소했습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "오디오 및 UI 오류 수정",
+      "items": [
+        {
+          "title": "The Lab 여성 음성 및 UI 오류 개선",
+          "summary": "The Lab 맵의 여성 음성 오디오, 중거리 총격음, 캐릭터 및 무기 빌드 화면 UI 오류, MSGL 유탄발사기 실린더 애니메이션 오류가 수정되어 전반적인 게임 경험이 향상되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.45949_(3_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "커뮤니티 주요 이슈 및 토론",
+      "items": [
+        {
+          "title": "아레나 외부 특정 방어구 획득 위치 문의",
+          "summary": "아레나 전용 방어구를 메인 게임에서 얻는 구체적인 위치나 방법이 명확하지 않아, 관련 정보 공유와 확인이 필요한 상황입니다.",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "ARMS와 VLTOR 부품 추가 요청 및 메타 논의",
+          "summary": "AR-15 플랫폼의 현대화에 중요한 ARMS와 VLTOR사의 부품을 게임 내에 더 많이 추가해 달라는 제안이 있으며, 이들 부품이 메타에 긍정적 영향을 줄 수 있음을 강조합니다.",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
