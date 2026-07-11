@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-11",
+  "generatedAt": "2026-07-11T12:41:39.184+09:00",
+  "headline": "레벨 15 이하 플레이어의 아이템 접근성 문제와 M4A1 메타 빌드 가이드 주목",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "레벨 15 이하 플레이어의 플리마켓 아이템 제한 문제",
+      "items": [
+        {
+          "title": "레벨 15에서 플리마켓 잠긴 아이템 문제와 스코프 접근성",
+          "summary": "레벨 15 이하 플레이어는 사용할 수 있는 아이템이 매우 제한적이며, 특히 인기 있는 EaoTech Vudu 1-6x24 30mm 스코프가 레벨 40에 잠겨 있어 초중반 플레이어가 경쟁에서 불리한 상황입니다. 이는 신규 및 중급 플레이어의 게임 경험에 직접적인 영향을 미치므로 주의가 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ust24w/discussion_too_many_items_are_locked_on_the_flea/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "M4A1 메타 빌드 가이드",
+      "items": [
+        {
+          "title": "Meta M4A1 빌드 가이드",
+          "summary": "게임 내에서 강력한 20게이지 무기 중 하나인 M4A1의 최적화된 메타 빌드 방법을 영상으로 상세히 설명하여, 플레이어가 효과적인 무기 세팅을 구성하는 데 큰 도움이 됩니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ut3j6d/video_meta_m4a1_build_guide/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "패치 및 기술 업데이트",
+      "items": [
+        {
+          "title": "패치 1.0.6.0.46010 (7 July 2026)",
+          "summary": "이번 패치는 주로 기술적 업데이트로, 게임 내 주요 기능 개선이나 버그 수정에 대한 구체적 내용은 공개되지 않았습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.46010_(7_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상 모음",
+      "items": [
+        {
+          "title": "2부 델타포스 레식 콜라보 / 1부 월드오브워쉽",
+          "url": "https://www.youtube.com/watch?v=zDdemLFZL2E",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=OkvUk-M_Jzw",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Trying out HUNGER for the FIRST TIME!",
+          "url": "https://www.youtube.com/watch?v=UmkuxvLfgZw",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
