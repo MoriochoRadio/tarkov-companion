@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-12",
+  "generatedAt": "2026-07-12T12:56:20.549+09:00",
+  "headline": "7월 7일 패치 1.0.6.0.46010 기술 업데이트 및 신규 영상 다수 공개",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치 소식",
+      "items": [
+        {
+          "title": "패치 1.0.6.0.46010 (7 July 2026)",
+          "summary": "이번 패치는 주로 기술적 업데이트로, 게임 내 주요 기능 개선이나 버그 수정에 대한 구체적 내용은 공개되지 않았습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.46010_(7_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상",
+      "items": [
+        {
+          "title": "오랜만에 타르코프",
+          "url": "https://www.youtube.com/watch?v=vMoP0eBUEzY",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=YzFL8NdRiFI",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "I found the most BROKEN gun in HUNGER",
+          "url": "https://www.youtube.com/watch?v=OAvsIXw3ees",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
