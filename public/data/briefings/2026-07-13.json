@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-13",
+  "generatedAt": "2026-07-13T12:59:04.823+09:00",
+  "headline": "7월 7일 패치 1.0.6.0.46010은 기술적 업데이트 중심, 신규 시즌 특성 및 모디파이어 영상 다수 공개",
+  "sections": [
+    {
+      "type": "news",
+      "title": "7월 7일 패치 1.0.6.0.46010 기술 업데이트",
+      "items": [
+        {
+          "title": "패치 1.0.6.0.46010 (7 July 2026)",
+          "summary": "이번 패치는 주로 기술적 업데이트로, 게임 내 주요 기능 개선이나 버그 수정에 대한 구체적 내용은 공개되지 않았습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.0.46010_(7_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 시즌 특성 및 모디파이어 관련 영상",
+      "items": [
+        {
+          "title": "특성 퍽 조합 시뮬레이션 해보는 타르코프 신규 시즌 캐릭터 | 특성 퍽, 모디파이어 공략 | 코드 브리치 특성 퍽, 모디파이어 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=aHo4V8Fvv4U",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "새 시즌 1티어 특성은? (특성 포인트 계산기) 타르코프",
+          "url": "https://www.youtube.com/watch?v=fmqFAJMkZRo",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "오랜만에 타르코프",
+          "url": "https://www.youtube.com/watch?v=vMoP0eBUEzY",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=z3B_6ysb37o",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Making 400IQ plays on CUSTOMS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=mh0yMuna6tY",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
