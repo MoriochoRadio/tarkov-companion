@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T12:32:54.252+09:00",
+  "headline": "내일 블랙아웃 이벤트 시작, Lighthouse 퀘스트 진행 전략과 치터 경고 필독",
+  "sections": [
+    {
+      "type": "news",
+      "title": "주요 게임 이벤트 및 퀘스트 이슈",
+      "items": [
+        {
+          "title": "내일 예정된 블랙아웃 이벤트 상세 정보",
+          "summary": "블랙아웃 이벤트 참여 방법과 예상되는 게임 내 변화가 구체적으로 공유되어 이벤트 준비에 큰 도움이 됩니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uvegd9/discussion_blackout_event_tomorrow/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Lighthouse 퀘스트 진행 문제와 플레이어 밀집 구역 분석",
+          "summary": "Assessment Part 1 퀘스트가 어려운 이유와 샬레, 산악지대 등 플레이어 캠핑 위치, 워터 트리트먼트 플랜트 지역이 퀘스트 진행에 미치는 영향을 상세히 설명해 전략 수립에 유용합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uv9032/feedback_lighthouse_should_be_deleted_forever/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "잊혀진 무기 MP5K 활용법",
+      "items": [
+        {
+          "title": "MP5K의 높은 인체공학과 850RPM 연사율을 활용한 중간급 SMG 제안",
+          "summary": "MP5K는 커스터마이징이 부족해 잘 쓰이지 않지만, 높은 연사율과 인체공학으로 중간급 SMG로서 충분히 활용 가능하므로 무기 선택 폭을 넓히는 데 참고할 만합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uvj6qd/suggestion_forgotten_weapons_of_tarkov/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "치터 및 핵 사용자 현황과 대응",
+      "items": [
+        {
+          "title": "최근 치터 빈번 발생과 BSG 안티치트 대응 비판",
+          "summary": "게임 내 치터 행동 양상과 심각성을 다루며, BSG의 안티치트 대응에 대한 비판과 개선 요구가 포함되어 있어 치터 피해를 줄이기 위한 커뮤니티 차원의 대응책 마련에 필수적입니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uvtmzw/lmfao_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "최근 공개된 Escape From Tarkov 영상",
+      "items": [
+        {
+          "title": "특성 퍽 조합 시뮬레이션 해보는 타르코프 신규 시즌 캐릭터 | 특성 퍽, 모디파이어 공략 | 코드 브리치 특성 퍽, 모디파이어 | Escape from Tarkov"
+        },
+        {
+          "title": "새 시즌 1티어 특성은? (특성 포인트 계산기) 타르코프"
+        },
+        {
+          "title": "오랜만에 타르코프"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS"
+        },
+        {
+          "title": "Making 400IQ plays on CUSTOMS - Escape From Tarkov"
+        }
+      ]
+    }
+  ]
+}
