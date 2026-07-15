@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-15",
+  "generatedAt": "2026-07-15T12:33:03.965+09:00",
+  "headline": "Labs Blackout 이벤트 시작과 주요 버그 경고",
+  "sections": [
+    {
+      "type": "news",
+      "title": "Labs Blackout 이벤트 및 추출 방법 안내",
+      "items": [
+        {
+          "title": "Labs Blackout 이벤트 정보와 추출 방법 안내",
+          "summary": "Labs Blackout 이벤트 참여를 위해 Labs 카드가 필수이며, 현재 Hangar와 Parking lot만 추출구로 열려 있다. 이벤트 내 일회용 Labs 키는 Black Division 사냥 후 카드 방 맞은편 복도 문을 여는 데 사용되어 이벤트 진행에 핵심적인 역할을 한다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uwft8w/labs_blackout_event_info_and_extract_help/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.0.6.5.46168 (14 July 2026)",
+          "summary": "이번 패치는 기술적 업데이트로 게임 안정성 향상에 중점을 두었으며, 세부 변경 사항은 EFT 위키 체인지로그에서 확인 가능하다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46168_(14_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "게임 진행에 치명적인 버그 및 이벤트 비용 주의",
+      "items": [
+        {
+          "title": "[주의] 로딩 화면에서 게임이 멈추는 버그 다수 보고",
+          "summary": "Factory에서 Labs 이동 중, PVE 모드 진입 시, 또는 매칭 대기 중 로딩 화면에서 장시간 멈추는 현상이 빈번히 발생하며, 1시간 이상 진입 불가 사례도 있어 플레이어는 해당 상황에 대비해야 한다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uwaqhi/bug_stuck_on_loading_screen/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[주의] Woods 맵에서 캐릭터가 임의 위치로 순간이동되는 버그 발생",
+          "summary": "Woods 맵 탈출 직후 캐릭터가 Emercom 등 임의 위치로 순간이동되는 버그가 반복 보고되어, 플레이어는 예기치 않은 위치 이동에 주의하고 대응책을 모색할 필요가 있다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uwdve4/bug_second_time_this_happened_to_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Labs Blackout 이벤트의 높은 비용과 난이도 문제점 토론",
+          "summary": "이벤트 참여에 최소 250k 이상 자금과 NVG, 총기, 방어구 등이 필요하며, Labs 지역은 보험이 불가해 손실 위험이 크다. 스트리머도 1천만 이상 손해를 봤다는 점에서 일반 플레이어의 자금 부담과 위험성이 매우 높아 주의가 요구된다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uwhol1/discussion_bsg_need_to_stop_making_events_for_1/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
