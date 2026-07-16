@@ -1,0 +1,54 @@
+{
+  "date": "2026-07-16",
+  "generatedAt": "2026-07-16T12:36:31.084+09:00",
+  "headline": "Labs Blackout 이벤트 진행 중, 고비용과 버그 주의 필요",
+  "sections": [
+    {
+      "type": "news",
+      "title": "Labs Blackout 이벤트 및 최신 패치 소식",
+      "items": [
+        {
+          "title": "Labs Blackout 이벤트 진행과 추출구 안내",
+          "summary": "Labs Blackout 이벤트 참여 시 Labs 카드가 필수이며, 현재 Hangar와 Parking lot만 추출구로 열려 있어 전략적 이동이 중요하다. 이벤트 내 일회용 Labs 키는 Black Division 사냥 후 카드 방 맞은편 복도 문을 여는 데 사용되어 이벤트 진행에 핵심적인 역할을 한다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46168_(14_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.0.6.5.46189 (15 July 2026) 기술적 업데이트",
+          "summary": "최근 패치에서는 게임 안정성 향상에 중점을 둔 기술적 업데이트가 이루어졌다. 세부 내용은 EFT 위키 체인지로그에서 확인 가능하다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46189_(15_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "게임 내 주요 버그 및 이벤트 위험 경고",
+      "items": [
+        {
+          "title": "로딩 화면에서 장시간 멈추는 버그 발생",
+          "summary": "Factory에서 Labs 이동 중, PVE 모드 진입 시, 또는 매칭 대기 중 로딩 화면에서 장시간 멈추는 현상이 빈번히 보고되어, 최대 1시간 이상 게임 진입이 불가능한 사례가 있다. 플레이어는 이 문제에 대비해야 한다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46168_(14_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "Woods 맵 탈출 후 임의 위치 순간이동 버그 주의",
+          "summary": "Woods 맵에서 탈출 직후 캐릭터가 Emercom 등 임의 위치로 순간이동되는 버그가 반복 보고되고 있어, 예기치 않은 위치 이동에 대비하고 대응책을 모색할 필요가 있다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46168_(14_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "Labs Blackout 이벤트의 높은 비용과 손실 위험",
+          "summary": "이벤트 참여에 최소 25만 루블 이상 자금과 NVG, 총기, 방어구 등이 필요하며, Labs 지역은 보험이 불가해 손실 위험이 크다. 스트리머도 1천만 루블 이상 손해를 봤다는 점에서 일반 플레이어의 자금 부담과 위험성이 매우 높아 주의가 요구된다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46168_(14_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
