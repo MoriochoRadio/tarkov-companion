@@ -1,0 +1,82 @@
+{
+  "date": "2026-07-17",
+  "generatedAt": "2026-07-17T12:36:03.062+09:00",
+  "headline": "Kappa 계정 요구사항 대폭 변경과 레이드 경로 계획 도구 소개",
+  "sections": [
+    {
+      "type": "news",
+      "title": "계정 해금 조건 변경 및 레이드 전략 도구",
+      "items": [
+        {
+          "title": "Kappa 계정 요구사항 대폭 변경",
+          "summary": "패치 1.1.0에서 Kappa 계정 해금 조건이 트레이더 레벨 4, Fence 평판, 대형 사이드 퀘스트 완료 등으로 강화되어, 계정 해금 난이도가 크게 상승했다. 이는 고급 계정 접근성을 조절하는 중요한 변화로, 플레이어가 장기적인 목표 설정에 참고할 필요가 있다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uy441d/discussion_massive_kappa_requirement_overhaul/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Gamma 계정 해금 조건 개선 제안",
+          "summary": "Gamma 계정 해금 조건을 시즌 내 표준 계정이 도달 가능한 수준으로 조정하고, Kappa 계정은 영구 캐릭터 보상으로 유지하는 밸런스 개선 방안이 제안되어, 계정 해금 체계의 합리적 조정 가능성을 시사한다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uyad1t/wouldnt_unlocking_the_gamma_with_these/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "레이드 경로 계획 도구 소개",
+          "summary": "사용자가 만든 레이드 경로 계획 도구는 임무 수행 시 최단 경로를 계산하고 PMC 및 보스와의 접촉을 최소화해 생존 확률을 높이는 효과적인 전략 수립에 도움을 준다. 이를 활용하면 위험 구간을 우회하며 효율적인 플레이가 가능하다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uybqz2/video_raid_planning/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.0.6.5.46189 (15 July 2026) 기술적 업데이트",
+          "summary": "최근 패치에서는 게임 안정성 향상에 중점을 둔 기술적 업데이트가 이루어졌다. 세부 내용은 EFT 위키 체인지로그에서 확인 가능하다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46189_(15_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "중요 버그 및 이벤트 위험 경고",
+      "items": [
+        {
+          "title": "로딩 화면에서 장시간 멈추는 버그 발생",
+          "summary": "Factory에서 Labs 이동 중, PVE 모드 진입 시, 또는 매칭 대기 중 로딩 화면에서 최대 1시간 이상 멈추는 현상이 빈번히 보고되어, 플레이어는 게임 진입 지연에 대비해야 한다.",
+          "isNew": true
+        },
+        {
+          "title": "Woods 맵 탈출 후 임의 위치 순간이동 버그 주의",
+          "summary": "Woods 맵에서 탈출 직후 캐릭터가 Emercom 등 임의 위치로 순간이동되는 버그가 반복 보고되어, 예기치 않은 위치 이동에 대비하고 대응책을 모색할 필요가 있다.",
+          "isNew": true
+        },
+        {
+          "title": "Labs Blackout 이벤트의 높은 비용과 손실 위험",
+          "summary": "Labs Blackout 이벤트 참여에는 최소 25만 루블 이상 자금과 NVG, 총기, 방어구가 필요하며, 보험이 불가해 손실 위험이 크다. 스트리머도 1천만 루블 이상 손해를 봤다는 점에서 일반 플레이어의 자금 부담과 위험성이 매우 높아 주의가 요구된다.",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 Escape From Tarkov 영상",
+      "items": [
+        {
+          "title": "[DPS:델타포스] 팀 연습 유우양",
+          "url": "https://www.youtube.com/watch?v=2BPPV8Y-COc",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=BpzJ2S26k2k",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Chaotic Customs Raids with the NL545 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=-TD3RsUSdso",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
