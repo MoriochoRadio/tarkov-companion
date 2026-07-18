@@ -1,0 +1,97 @@
+{
+  "date": "2026-07-18",
+  "generatedAt": "2026-07-18T12:30:44.439+09:00",
+  "headline": "The Lab 레이드 시간 증가 및 Black Division 요원 열쇠 소지 확률 상승으로 임무 진행 용이해져",
+  "sections": [
+    {
+      "type": "news",
+      "title": "1.0.6.5 패치 주요 변경점",
+      "items": [
+        {
+          "title": "The Lab 레이드 시간 및 난이도 조정",
+          "summary": "The Lab 레이드 시간이 PvP 30분, PvE 35분으로 늘어나고, PvE 모드에서 Black Division 요원 수는 줄고 PMC 봇 수는 증가해 난이도와 전리품 구성이 조정됐다. 잠긴 방 전리품 양도 늘어나 임무 보상이 개선되었다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "Black Division 요원의 무기고 열쇠 소지 확률 증가",
+          "summary": "Black Division 요원들이 무기고 저장실 열쇠를 더 자주 소지해 관련 임무 진행이 한층 수월해졌다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "\"If I Can't Have It\" 임무 진행 조건 변경",
+          "summary": "모든 적 대상이 임무 진행에 포함되어 임무 완료가 더 쉬워졌다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "Therapist와 Mechanic의 TerraGroup Labs 출입 키카드 신규 판매",
+          "summary": "Therapist와 Mechanic 상인이 TerraGroup Labs 출입 키카드를 판매하기 시작해 입장 접근성이 향상되었다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "The Lab PvE 전력 차단 시 음성 안내 버그 수정",
+          "summary": "PvE 모드에서 전력 차단 시 음성 안내가 나오지 않던 문제를 해결해 게임 몰입감이 개선되었다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "위치 선택 화면 '지도' 탭 UI 오류 수정",
+          "summary": "지도 탭에서 발생하던 UI 오류가 수정되어 위치 선택 시 혼란이 줄어들었다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "주의해야 할 버그 및 이벤트 위험",
+      "items": [
+        {
+          "title": "Labs Blackout 이벤트의 높은 비용과 손실 위험",
+          "summary": "Labs Blackout 이벤트 참여 시 최소 25만 루블과 NVG, 총기, 방어구가 필요하며 보험이 불가해 손실 위험이 크다. 스트리머도 1천만 루블 이상 손해를 봤다는 점에서 자금 부담과 위험성이 매우 높아 주의가 요구된다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "로딩 화면에서 장시간 멈추는 버그 발생",
+          "summary": "Factory에서 Labs 이동 중, PVE 모드 진입 시, 또는 매칭 대기 중 로딩 화면에서 최대 1시간 이상 멈추는 현상이 빈번히 보고되어 게임 진입 지연에 대비해야 한다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "Woods 맵 탈출 후 임의 위치 순간이동 버그 주의",
+          "summary": "Woods 맵 탈출 직후 캐릭터가 Emercom 등 임의 위치로 순간이동되는 버그가 반복 보고되어 예기치 않은 위치 이동에 대비할 필요가 있다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상",
+      "items": [
+        {
+          "title": "[DPS:델타포스] 개인 연습 유우양",
+          "url": "https://www.youtube.com/watch?v=BB1eSWpBnck",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=vVHICpNKUP0",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Is this Tarkov's HARDEST Event yet?! - Blackout Event",
+          "url": "https://www.youtube.com/watch?v=JKLFebj_mws",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
