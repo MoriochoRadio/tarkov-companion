@@ -1,0 +1,117 @@
+{
+  "date": "2026-07-20",
+  "generatedAt": "2026-07-20T13:52:18.332+09:00",
+  "period": {
+    "from": "2026-07-13",
+    "to": "2026-07-19"
+  },
+  "headline": "Labs Blackout 이벤트와 The Lab 레이드 개선, 고비용과 주요 버그 주의가 핵심",
+  "sections": [
+    {
+      "type": "news",
+      "title": "주요 패치 및 이벤트 변화",
+      "items": [
+        {
+          "title": "Labs Blackout 이벤트 진행과 추출구 안내",
+          "summary": "Labs Blackout 이벤트는 Labs 카드가 필수이며, Hangar와 Parking lot만 추출구로 열려 전략적 이동이 중요하다. 이벤트 내 일회용 Labs 키는 Black Division 사냥 후 카드 방 맞은편 복도 문을 여는 데 사용되어 임무 진행에 핵심 역할을 한다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46168_(14_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "The Lab 레이드 시간 및 난이도 조정",
+          "summary": "The Lab 레이드 시간이 PvP 30분, PvE 35분으로 연장되고, PvE에서는 Black Division 요원 수가 감소하며 PMC 봇 수가 증가해 난이도와 전리품 구성이 조정되었다. Black Division 요원의 무기고 열쇠 소지 확률 상승과 잠긴 방 전리품 양 증가로 임무 보상이 개선되어 임무 진행이 더 수월해졌다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "\"If I Can't Have It\" 임무 진행 조건 변경",
+          "summary": "모든 목표물이 임무 진행에 반영되어 임무 완료가 더 쉬워졌다. 이 변경으로 플레이어가 다양한 적을 처치하며 임무를 빠르게 달성할 수 있다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Therapist와 Mechanic 상점에 TerraGroup Labs 출입 키카드 신규 판매 추가",
+          "summary": "TerraGroup Labs 출입 키카드를 상점에서 구매할 수 있게 되어 키카드 획득 경로가 다양해지고 입장 접근성이 향상되었다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Kappa 계정 요구사항 대폭 변경",
+          "summary": "패치 1.1.0에서 Kappa 계정 해금 조건이 트레이더 레벨 4, Fence 평판, 대형 사이드 퀘스트 완료 등으로 강화되어 계정 해금 난이도가 크게 상승했다. 이는 고급 계정 접근성을 조절하는 중요한 변화로 장기 목표 설정에 참고할 필요가 있다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uy441d/discussion_massive_kappa_requirement_overhaul/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "지속되는 주요 버그 및 이벤트 위험 경고",
+      "items": [
+        {
+          "title": "Labs Blackout 이벤트의 높은 비용과 손실 위험",
+          "summary": "이벤트 참여에는 최소 25만 루블 이상 자금과 NVG, 총기, 방어구가 필요하며, Labs 지역은 보험이 불가해 손실 위험이 크다. 스트리머도 1천만 루블 이상 손해를 봤다는 점에서 일반 플레이어의 자금 부담과 위험성이 매우 높아 신중한 참여가 요구된다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "로딩 화면에서 장시간 멈추는 버그 발생",
+          "summary": "Factory에서 Labs 이동 중, PvE 모드 진입 시, 또는 매칭 대기 중 로딩 화면에서 최대 1시간 이상 멈추는 현상이 빈번히 보고되어 게임 진입 지연에 대비해야 한다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "Woods 맵 탈출 후 임의 위치 순간이동 버그 주의",
+          "summary": "Woods 맵 탈출 직후 캐릭터가 Emercom 등 임의 위치로 순간이동되는 버그가 반복 보고되어 예기치 않은 위치 이동에 대비하고 대응책을 모색할 필요가 있다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "유용한 전투 및 무기 정보",
+      "items": [
+        {
+          "title": "MP5K의 높은 인체공학과 850RPM 연사율을 활용한 중간급 SMG 제안",
+          "summary": "MP5K는 커스터마이징이 부족해 잘 쓰이지 않지만, 높은 연사율과 인체공학으로 중간급 SMG로서 충분히 활용 가능하므로 무기 선택 폭을 넓히는 데 참고할 만하다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uvj6qd/suggestion_forgotten_weapons_of_tarkov/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "5.45mm 탄환별 BR2 및 BR4 강철판 관통 성능 비교",
+          "summary": "7N6 PS, 7N10 PP, 7BT4 BT, 7N39 PPBS 'Igonlik' 4종 5.45mm 탄환을 BR2(NIJ IIIA)와 BR4(NIJ III+) 강철판에 쏘아 방탄 성능을 비교했다. BR2는 9x19mm 경량 AP탄을 막도록 설계되었으나, 5.45mm 탄환 중 PS와 BT 탄환이 관통 가능한지 구체적으로 확인할 수 있어 방탄판 선택과 전투 전략에 유용하다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1uzr89a/irl_update_on_the_545_ballistic_test_i_will_be/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 Escape From Tarkov 영상",
+      "items": [
+        {
+          "title": "특성 퍽 조합 시뮬레이션 해보는 타르코프 신규 시즌 캐릭터 | 특성 퍽, 모디파이어 공략 | 코드 브리치 특성 퍽, 모디파이어 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=aHo4V8Fvv4U",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "[DPS:델타포스] 팀 연습 유우양",
+          "url": "https://www.youtube.com/watch?v=2BPPV8Y-COc",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=BpzJ2S26k2k",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Chaotic Customs Raids with the NL545 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=-TD3RsUSdso",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "타르코프 7년만에 카파 컨테이너 획득 조건 크게 완화 | 엔드 게임이 아닌 미드 게임으로 | 블랙아웃 이벤트도 난이도 크게 완화, 정상화",
+          "url": "https://www.youtube.com/watch?v=FrweN8Wc0jQ",
+          "source": "YouTube 노잼망겜"
+        }
+      ]
+    }
+  ]
+}
