@@ -1,0 +1,64 @@
+{
+  "date": "2026-07-20",
+  "generatedAt": "2026-07-20T13:03:32.090+09:00",
+  "headline": "The Lab 레이드 시간 증가와 임무 조건 완화로 플레이 환경 개선",
+  "sections": [
+    {
+      "type": "news",
+      "title": "The Lab 레이드 및 임무 변경",
+      "items": [
+        {
+          "title": "The Lab 레이드 시간 및 환경 조정",
+          "summary": "The Lab 레이드 시간이 PvP 30분, PvE 35분으로 연장되었고, PvE에서는 Black Division 요원 수가 줄고 PMC 봇 수가 늘어났습니다. 또한 Black Division 요원의 무기고 열쇠 소지 확률과 잠긴 방 전리품 양이 증가해 임무 진행과 보상이 개선되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "\"If I Can't Have It\" 임무 진행 조건 변경",
+          "summary": "모든 목표물이 임무 진행에 포함되어 임무 완료가 더 수월해졌습니다. 이로 인해 플레이어가 다양한 적을 처치하며 임무를 빠르게 달성할 수 있습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Therapist와 Mechanic의 TerraGroup Labs 출입 키카드 신규 판매 추가",
+          "summary": "Therapist와 Mechanic 상점에서 TerraGroup Labs 출입 키카드를 구매할 수 있게 되어 키카드 획득 경로가 다양해지고 입장 접근성이 향상되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "The Lab PvE 전력 차단 시 음성 안내 버그 수정",
+          "summary": "PvE 모드에서 전력 차단 시 음성 안내가 나오지 않던 문제가 해결되어 게임 몰입감이 향상되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "위치 선택 화면 UI 오류 수정",
+          "summary": "위치 선택 화면의 '지도' 탭에서 발생하던 UI 오류가 수정되어 위치 선택 시 혼란이 줄어들었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상 모음",
+      "items": [
+        {
+          "title": "[DPS:델타포스] 결승전 (우승)",
+          "url": "https://www.youtube.com/watch?v=0w2dlmJviY4",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=qrrlLtVDSKI",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Chaotic CUSTOMS PVP - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=meiFDZR6DPM",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
