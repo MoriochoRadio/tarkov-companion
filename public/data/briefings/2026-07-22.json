@@ -1,0 +1,89 @@
+{
+  "date": "2026-07-22",
+  "generatedAt": "2026-07-22T12:45:13.909+09:00",
+  "headline": "The Lab PvE 환경 개선과 블랙 디비전 강력한 체력 문제 집중 조명",
+  "sections": [
+    {
+      "type": "news",
+      "title": "The Lab 레이드 및 임무, 키카드 업데이트",
+      "items": [
+        {
+          "title": "The Lab 레이드 시간 증가 및 PvE 환경 조정",
+          "summary": "The Lab 레이드 시간이 PvP 30분, PvE 35분으로 연장되었고, PvE에서는 Black Division 요원 수가 줄고 PMC 봇 수가 증가해 전투 난이도와 전략이 변화했습니다. 잠긴 방 전리품 양과 Black Division 요원의 무기고 열쇠 소지 확률도 상승해 보상이 개선되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "\"If I Can't Have It\" 임무 진행 조건 변경",
+          "summary": "임무 \"If I Can't Have It\"의 진행 조건이 모든 목표물 반영으로 변경되어 임무 수행 방식에 영향을 줍니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "Therapist와 Mechanic 상점에 TerraGroup Labs 출입 키카드 추가 판매",
+          "summary": "Therapist와 Mechanic 상점에서 TerraGroup Labs 출입용 새로운 키카드를 구매할 수 있어 접근성이 높아졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "블랙 디비전 적 강력한 체력과 웨지 늑대 형태 주의",
+      "items": [
+        {
+          "title": "블랙 디비전 체력 및 방어력 문제 분석",
+          "summary": "블랙 디비전 적들은 Tier 5 방어구와 PMC 체력의 거의 두 배에 달하는 체력으로 머리 외 부위 공격 시 피해가 거의 없으며, 일반 탄환으로 효과적인 대미지를 주기 어렵습니다. 이에 대비한 무기 선택과 전술 조정이 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v2h1hu/discussion_the_black_division_health_pool_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "웨지(Wedge) 늑대 형태 대비 방법 토론",
+          "summary": "웨지의 늑대 변신 후 은탄은 일시적으로 도망가게 할 뿐 처치에는 효과적이지 않으며, 변신 후 더욱 강력해지므로 한 방에 처치하지 못하면 위험이 커집니다. 변신 전 신속한 처치가 중요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v2mh6r/how_do_yall_prep_for_wedges_wolf_form_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "기타 버그 수정 및 UI 개선",
+      "items": [
+        {
+          "title": "The Lab PvE 전력 차단 시 음성 안내 버그 수정",
+          "summary": "The Lab PvE 모드에서 전력 차단 시 음성 안내가 나오지 않던 문제가 해결되어 게임 몰입감이 향상되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "위치 선택 화면 지도 탭 UI 표시 오류 수정",
+          "summary": "위치 선택 화면에서 'Map' 탭을 열었을 때 UI가 잘못 표시되던 문제가 해결되어 사용자 경험이 개선되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상",
+      "items": [
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=oYM1PlwkMs8",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Is taking the M60 to Labs during the Blackout Event a good idea? - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=VUehsEGhy0g",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
