@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-23",
+  "generatedAt": "2026-07-23T12:43:41.611+09:00",
+  "headline": "The Lab PvE 난이도 조정 및 초반 장비 접근성 개선, 블랙 디비전 강력 체력 주의",
+  "sections": [
+    {
+      "type": "news",
+      "title": "The Lab 레이드 및 임무, 키카드 판매 업데이트",
+      "items": [
+        {
+          "title": "The Lab 레이드 시간 및 PvE 환경 조정",
+          "summary": "The Lab 레이드 시간이 PvP 30분, PvE 35분으로 늘어나고, PvE 모드에서 Black Division 요원 수는 줄고 PMC 봇 수는 증가해 전투 난이도와 전략에 변화가 생겼습니다. 잠긴 방 전리품 양과 Black Division 요원의 무기고 열쇠 소지 확률도 상승해 보상이 강화되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "\"If I Can't Have It\" 임무 진행 조건 변경",
+          "summary": "임무 진행 대상이 모든 목표물로 확대되어 임무 수행이 더 수월해졌으며, 플레이어가 다양한 상황에서 임무를 완료할 수 있게 되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Therapist와 Mechanic 상점에 TerraGroup Labs 출입 키카드 신규 판매처 추가",
+          "summary": "TerraGroup Labs 출입 키카드를 Therapist와 Mechanic 상인에게서도 구매할 수 있게 되어 키카드 획득 경로가 다양해졌습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Escape From Tarkov 1.1.0 업데이트: 초반 장비 및 탄약 접근성 개선",
+          "summary": "1.1.0 업데이트로 게임 초반 단계에서 장비와 탄약의 가용성이 크게 향상되어, 예를 들어 7.62x39 T-45M1 탄약을 게임 시작부터 Prapor 상인에게서 구매할 수 있어 초반 생존과 전투 준비가 수월해졌습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v3mxoi/discussion_110_quality_of_life/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "블랙 디비전 및 웨지 늑대 변신 관련 주의사항",
+      "items": [
+        {
+          "title": "블랙 디비전 체력 및 방어력 문제 분석",
+          "summary": "블랙 디비전 적들은 Tier 5 방어구와 PMC 체력의 거의 두 배에 달하는 체력을 보유해 머리 외 부위 공격 시 피해가 매우 적으며, 일반 탄환으로 효과적인 대미지를 주기 어렵습니다. 이에 대비해 무기와 전술을 신중히 선택해야 합니다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "웨지(Wedge) 늑대 형태 대비 방법",
+          "summary": "웨지의 늑대 변신 후 은탄은 일시적으로 도망가게 할 뿐 처치에는 효과적이지 않으며, 변신 후 더욱 강력해지므로 변신 전 신속한 처치가 중요합니다. 한 방에 처치하지 못하면 위험이 커집니다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "The Lab PvE UI 및 음성 안내 버그 수정",
+      "items": [
+        {
+          "title": "The Lab PvE 전력 차단 시 음성 안내 버그 수정",
+          "summary": "The Lab PvE 모드에서 전력 차단 시 음성 안내가 누락되는 문제가 해결되어 게임 몰입감이 향상되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "위치 선택 화면 지도 탭 UI 표시 오류 수정",
+          "summary": "위치 선택 화면에서 '지도' 탭을 열었을 때 UI가 잘못 표시되던 문제가 해결되어 사용자 경험이 개선되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "최근 Escape From Tarkov 관련 영상",
+      "items": [
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=K8IexcyoE-M",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "We Went in With Nothing but SNIPERS - Blackout Event",
+          "url": "https://www.youtube.com/watch?v=bCj7F5rhx9s",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
