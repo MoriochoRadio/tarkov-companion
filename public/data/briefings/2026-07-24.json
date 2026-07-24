@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-24",
+  "generatedAt": "2026-07-24T12:43:26.289+09:00",
+  "headline": "블랙아웃 이벤트와 The Lab PvE 개선, 블랙 디비전 강력 체력 주의",
+  "sections": [
+    {
+      "type": "news",
+      "title": "최신 게임 이벤트 및 업데이트 소식",
+      "items": [
+        {
+          "title": "The Lab PvE 전력 차단 시 음성 안내 버그 수정",
+          "summary": "The Lab PvE 모드에서 전력 차단 시 음성 안내가 누락되는 문제가 해결되어 게임 몰입감이 향상되었습니다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "위치 선택 화면 지도 탭 UI 표시 오류 수정",
+          "summary": "위치 선택 화면에서 '지도' 탭을 열었을 때 UI가 잘못 표시되던 문제가 해결되어 사용자 경험이 개선되었습니다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "블랙 디비전 및 웨지 늑대 형태 주의사항",
+      "items": [
+        {
+          "title": "블랙 디비전 체력 및 방어력 문제 분석",
+          "summary": "블랙 디비전 적들은 Tier 5 방어구와 PMC 체력의 거의 두 배에 달하는 체력을 보유해 머리 외 부위 공격 시 피해가 매우 적으며, 일반 탄환으로 효과적인 대미지를 주기 어렵습니다. 이에 대비해 무기와 전술을 신중히 선택해야 합니다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "웨지(Wedge) 늑대 형태 대비 방법",
+          "summary": "웨지의 늑대 변신 후 은탄은 일시적으로 도망가게 할 뿐 처치에는 효과적이지 않으며, 변신 후 더욱 강력해지므로 변신 전 신속한 처치가 중요합니다. 한 방에 처치하지 못하면 위험이 커집니다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "유튜브 최신 영상",
+      "items": [
+        {
+          "title": "타르코프 랩 정전? 처음 가봐요",
+          "url": "https://www.youtube.com/watch?v=CdVc2xqm95k",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=Xo7-DrnY5eU",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Are Flashlights BETTER than NVGs in the Blackout Event? - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=LWREyAUaMr4",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
