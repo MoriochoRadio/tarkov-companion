@@ -33,7 +33,8 @@ const generatedAt = new Date(Date.now() + 9 * 3600 * 1000)
 
 // ---------- 퀘스트 목록 (한/영 이름 + 위키 링크) ----------
 
-// tarkov.dev는 간헐적으로 5xx를 던짐 — 3회 백오프 재시도
+// tarkov.dev는 간헐적으로 5xx를 던짐 — 특정 시간대(UTC 05시경)에 몇 분씩 지속되는
+// 사례가 있어(2026-07-21~23 3일 연속 실패) 6회로 늘리고 백오프도 최대 60초까지 늘렸다.
 async function fetchTasks() {
   for (let attempt = 1; ; attempt++) {
     try {
@@ -49,9 +50,10 @@ async function fetchTasks() {
       if (!res.ok) throw new Error(`tarkov.dev HTTP ${res.status}`)
       return await res.json()
     } catch (e) {
-      if (attempt >= 3) throw e
-      console.warn(`tarkov.dev tasks 조회 실패(${e.message}) — ${attempt * 5}초 후 재시도`)
-      await new Promise((r) => setTimeout(r, attempt * 5000))
+      if (attempt >= 6) throw e
+      const waitSec = Math.min(attempt * 10, 60)
+      console.warn(`tarkov.dev tasks 조회 실패(${e.message}) — ${waitSec}초 후 재시도`)
+      await new Promise((r) => setTimeout(r, waitSec * 1000))
     }
   }
 }
