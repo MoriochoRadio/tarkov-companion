@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-25",
+  "generatedAt": "2026-07-25T12:35:57.828+09:00",
+  "headline": "주말 XP 보너스 이벤트와 블랙아웃 이벤트 주목, 블랙 디비전 강력 체력 경계 필요",
+  "sections": [
+    {
+      "type": "news",
+      "title": "주요 이벤트 및 설문조사",
+      "items": [
+        {
+          "title": "주말 XP 보너스 이벤트!",
+          "summary": "이번 주말 The Lab에서 Wedge와 팀에 도전하면 PvP와 PvE 모두에서 획득하는 XP가 25% 증가합니다. 7월 27일 오전 11시 BST까지 적용되어 빠른 레벨업 기회를 제공합니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/716785482215719856",
+          "source": "Steam 뉴스",
+          "isNew": true
+        },
+        {
+          "title": "게임 내 설문조사 시작",
+          "summary": "새로운 게임 내 설문조사가 진행 중이며, 소규모 이벤트에 대한 관심도와 보상 선호도를 수집합니다. 이를 통해 향후 이벤트 임무와 업적 개선에 반영될 예정입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/716785482215719816",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상",
+      "items": [
+        {
+          "title": "증바람 고? 선착순 4명",
+          "url": "https://www.youtube.com/watch?v=sbpR6ZI1Sgs",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=-ihHRgFsXF0",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "The PKM is SURPRISINGLY Effective in the Blackout Event - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=wzUcEoV5Ehs",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "위험 및 주의 사항",
+      "items": [
+        {
+          "title": "블랙 디비전 체력 및 방어력 문제 분석",
+          "summary": "블랙 디비전 적들은 Tier 5 방어구와 PMC 체력의 거의 두 배에 달하는 체력을 보유해 머리 외 부위 공격 시 피해가 매우 적습니다. 일반 탄환으로 효과적인 대미지를 주기 어려우므로 무기와 전술 선택에 신중해야 합니다."
+        },
+        {
+          "title": "웨지(Wedge) 늑대 형태 대비 방법",
+          "summary": "웨지의 늑대 변신 후 은탄은 도망가게 할 뿐 처치에는 효과적이지 않으며, 변신 후 더욱 강력해집니다. 변신 전 신속한 처치가 중요하며, 한 방에 처치하지 못하면 위험이 커집니다."
+        }
+      ]
+    }
+  ]
+}
