@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-27",
+  "generatedAt": "2026-07-27T13:00:52.164+09:00",
+  "headline": "Atlas 지도에 AI 순찰 경로 표시 기능 추가와 Arena 모드 무기 부품 문제 제기",
+  "sections": [
+    {
+      "type": "news",
+      "title": "주요 업데이트 및 이벤트 소식",
+      "items": [
+        {
+          "title": "Atlas 지도에 AI PMC와 Scav 순찰 경로 표시 기능 추가",
+          "summary": "Atlas 툴이 AI PMC 및 Scav의 순찰 경로를 지도에 표시하는 기능을 도입해 기존 Tarkov 지도보다 전술적 활용도가 크게 향상되었습니다. Streets 맵 VRAM 사용량도 9GB에서 4GB로 절반 이상 줄어 최적화 효과가 뛰어납니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v7l206/discussion_atlas_map_now_shows_the_routes_that_ai/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "게임 플레이 팁",
+      "items": [
+        {
+          "title": "PvE에서 컬티스트 사냥 방법 조언",
+          "summary": "컬티스트의 출현 위치와 패턴을 이해하면 불필요한 교전을 피할 수 있으며, 스토리 진행을 위해 반드시 사냥해야 할 때는 효과적인 접근법과 위치 정보를 활용해 위험을 최소화할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v7iflq/advice_on_hunting_cultists_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "게임 내 문제점 및 주의 사항",
+      "items": [
+        {
+          "title": "Arena 모드에서 무기 부품 삭제 문제 및 복귀 요청",
+          "summary": "Arena 모드에서 M60 등 여러 무기에서 조준에 필수적인 부품들이 삭제되어 정확한 사격이 어렵고, 다수 무기에서 부품 호환성 문제가 발생하고 있습니다. 이에 대한 개선 및 부품 복귀 요청이 제기되어 플레이어 주의가 필요합니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v6ulae/feedback_please_add_back_all_weapons_and_parts_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "블랙 디비전 체력 및 방어력 문제 분석",
+          "summary": "블랙 디비전 적들은 Tier 5 방어구와 PMC 체력의 거의 두 배에 달하는 체력을 보유해 머리 외 부위 공격 시 피해가 매우 적습니다. 일반 탄환으로 효과적인 대미지를 주기 어려워 무기와 전술 선택에 신중해야 합니다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "웨지(Wedge) 늑대 형태 대비 방법",
+          "summary": "웨지의 늑대 변신 후 은탄은 도망가게 할 뿐 처치에는 효과적이지 않으며, 변신 전 신속한 처치가 중요합니다. 한 방에 처치하지 못하면 위험이 커지므로 주의해야 합니다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이벤트 및 설문조사",
+      "items": [
+        {
+          "title": "주말 XP 보너스 이벤트!",
+          "summary": "이번 주말 The Lab에서 Wedge와 팀에 도전 시 PvP와 PvE 모두에서 획득하는 XP가 25% 증가합니다. 7월 27일 오전 11시 BST까지 적용되어 빠른 레벨업 기회를 제공합니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/716785482215719856",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "게임 내 설문조사 시작",
+          "summary": "짧은 기간 동안 진행되는 소규모 이벤트에 대한 관심도를 조사하는 설문조사가 시작되어, 이벤트 보상과 형식에 대한 플레이어 의견을 수집하고 향후 개선에 활용할 예정입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/716785482215719816",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 영상 모음",
+      "items": [
+        {
+          "title": "타르코프 첫 시즌 대비 인강 (7월 말 예정)",
+          "url": "https://www.youtube.com/watch?v=QjLMv-dgqoA",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=WAzFTVJ7F90",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "THIS GUN Made the Event Feel Easy - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=alb5OcUpNXY",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
