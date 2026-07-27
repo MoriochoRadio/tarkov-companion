@@ -1,0 +1,112 @@
+{
+  "date": "2026-07-27",
+  "generatedAt": "2026-07-27T13:51:45.114+09:00",
+  "period": {
+    "from": "2026-07-20",
+    "to": "2026-07-26"
+  },
+  "headline": "The Lab PvE 환경 개선과 블랙 디비전 강력 체력 문제, 주말 XP 보너스 및 블랙아웃 이벤트 주목",
+  "sections": [
+    {
+      "type": "news",
+      "title": "The Lab 레이드 및 임무, 키카드 업데이트와 초반 장비 접근성 개선",
+      "items": [
+        {
+          "title": "The Lab 레이드 시간 및 PvE 환경 조정",
+          "summary": "The Lab 레이드 시간이 PvP 30분, PvE 35분으로 연장되었으며, PvE 모드에서 Black Division 요원 수가 줄고 PMC 봇 수가 증가해 전투 난이도와 전략에 변화가 생겼습니다. 잠긴 방 전리품 양과 Black Division 요원의 무기고 열쇠 소지 확률도 상승해 보상이 강화되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "\"If I Can't Have It\" 임무 진행 조건 변경",
+          "summary": "임무 진행 대상이 모든 목표물로 확대되어 임무 수행이 더 수월해졌으며, 플레이어가 다양한 상황에서 임무를 완료할 수 있게 되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Therapist와 Mechanic 상점에 TerraGroup Labs 출입 키카드 신규 판매처 추가",
+          "summary": "Therapist와 Mechanic 상인에게서 TerraGroup Labs 출입 키카드를 구매할 수 있게 되어 키카드 획득 경로가 다양해지고 입장 접근성이 향상되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Escape From Tarkov 1.1.0 업데이트: 초반 장비 및 탄약 접근성 개선",
+          "summary": "1.1.0 업데이트로 게임 초반 단계에서 장비와 탄약의 가용성이 크게 향상되어, 예를 들어 7.62x39 T-45M1 탄약을 게임 시작부터 Prapor 상인에게서 구매할 수 있어 초반 생존과 전투 준비가 수월해졌습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v3mxoi/discussion_110_quality_of_life/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "The Lab PvE 전력 차단 시 음성 안내 및 UI 오류 수정",
+          "summary": "PvE 모드에서 전력 차단 시 음성 안내가 누락되던 문제가 해결되었고, 위치 선택 화면의 지도 탭 UI 오류도 수정되어 게임 몰입감과 사용자 경험이 개선되었습니다.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.0.6.5.46221_(17_July_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "블랙 디비전 및 웨지 늑대 형태 주의사항",
+      "items": [
+        {
+          "title": "블랙 디비전 체력 및 방어력 문제 분석",
+          "summary": "블랙 디비전 적들은 Tier 5 방어구와 PMC 체력의 거의 두 배에 달하는 체력을 보유해 머리 외 부위 공격 시 피해가 매우 적으며, 일반 탄환으로 효과적인 대미지를 주기 어렵습니다. 이에 대비해 무기와 전술을 신중히 선택해야 합니다.",
+          "source": "Reddit r/EscapefromTarkov 및 주간 브리핑 종합"
+        },
+        {
+          "title": "웨지(Wedge) 늑대 형태 대비 방법",
+          "summary": "웨지의 늑대 변신 후 은탄은 일시적으로 도망가게 할 뿐 처치에는 효과적이지 않으며, 변신 후 더욱 강력해지므로 변신 전 신속한 처치가 중요합니다. 한 방에 처치하지 못하면 위험이 커집니다.",
+          "source": "Reddit r/EscapefromTarkov 및 주간 브리핑 종합"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "주말 XP 보너스 이벤트 및 인게임 설문조사 시작",
+      "items": [
+        {
+          "title": "주말 XP 보너스 이벤트",
+          "summary": "이번 주말 The Lab에서 Wedge와 팀에 도전하면 PvP와 PvE 모두에서 획득하는 XP가 25% 증가합니다. 7월 27일 오전 11시 BST까지 적용되어 빠른 레벨업 기회를 제공합니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/716785482215719856",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "게임 내 설문조사 시작",
+          "summary": "소규모 단기 이벤트에 대한 인게임 설문조사가 진행 중이며, 플레이어 의견을 수집하여 향후 이벤트 임무와 업적 개선에 반영될 예정입니다.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/716785482215719816",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 Escape From Tarkov 관련 영상 모음",
+      "items": [
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=0w2dlmJviY4",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=qrrlLtVDSKI",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Chaotic CUSTOMS PVP - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=meiFDZR6DPM",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Owning Factory with GAS GRENADES & The KS-23M - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=CEDO351Q7W8",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "타르코프 역대급 편의성 패치, 상점 거래량 조건 철폐 | 블랙아웃 종료 27일, 신규 시즌 코드브리치도? | 예거 2시간 쾌속 보험 개시? | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=Nj5bpOQBqdk",
+          "source": "YouTube 노잼망겜"
+        }
+      ]
+    }
+  ]
+}
