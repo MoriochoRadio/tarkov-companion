@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-28",
+  "generatedAt": "2026-07-28T12:34:32.688+09:00",
+  "headline": "1.1 업데이트로 사이드 퀘스트 체인 대폭 축소 및 장비 해금 제한, 시즌 업데이트 8월 3일로 연기 발표",
+  "sections": [
+    {
+      "type": "news",
+      "title": "1.1 업데이트 주요 변경사항 및 시즌 일정",
+      "items": [
+        {
+          "title": "사이드 퀘스트 개편 및 장비 해금 제한",
+          "summary": "Escape From Tarkov 1.1 버전에서 사이드 퀘스트 체인이 크게 줄어들고 장비 해금이 매우 제한적으로 변경되어, 퀘스트 진행 방식과 보상 체계에 큰 영향을 미칩니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v81fo9/discussion_11_side_tasks_getting_reworked/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "시즌 업데이트 지연 및 예정일 안내",
+          "summary": "시즌 업데이트가 지연되어 새 예정일이 8월 3일로 공지되었으며, 공식 트윗을 통해 추가 정보를 확인할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v7wxwm/discussion_seasons_delayed_planned_date_3rd_of/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "맵 및 플레이 기술 향상 정보",
+      "items": [
+        {
+          "title": "Icebreaker 맵 내 루트 룸 위치 및 전리품 정보",
+          "summary": "Icebreaker 맵 내 특정 루트 룸 위치와 획득 가능한 전리품 정보를 통해 효율적인 아이템 파밍 경로를 파악할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v7pf2a/icebreaker_loot_room_loot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Tarkov 플레이어의 실제 생활 기술 향상 경험",
+          "summary": "장기간 Tarkov 플레이를 통해 스트레스 및 아드레날린 조절, 상황 인식, 위험 관리, 단기 계획 능력 등 실생활에 유용한 기술이 향상된 사례들이 공유되어 게임 외적 효과를 확인할 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v7q4dh/irl_benefits_of_playing_tarkov_discussionirlnew/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "어제 브리핑 이슈 재확인",
+      "items": [
+        {
+          "title": "Arena 모드 무기 부품 삭제 및 호환성 문제",
+          "summary": "Arena 모드에서 M60 등 여러 무기에서 조준에 필수적인 부품들이 삭제되어 정확한 사격이 어렵고, 다수 무기에서 부품 호환성 문제가 발생하고 있어 주의가 필요합니다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "블랙 디비전 체력 및 방어력 문제",
+          "summary": "블랙 디비전 적들은 Tier 5 방어구와 PMC 체력의 거의 두 배에 달하는 체력을 보유해 일반 탄환으로 피해를 주기 어려우므로 무기와 전술 선택에 신중해야 합니다.",
+          "source": "어제 브리핑"
+        },
+        {
+          "title": "웨지 늑대 변신 대비법",
+          "summary": "웨지의 늑대 변신 후 은탄은 도망가게 할 뿐 처치에는 효과적이지 않아 변신 전 신속한 처치가 중요하며, 한 방에 처치하지 못하면 위험이 커집니다.",
+          "source": "어제 브리핑"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주요 유튜브 영상",
+      "items": [
+        {
+          "title": "ESCAPE FROM TARKOV - BLACKOUT EVENT NOW",
+          "url": "https://www.youtube.com/watch?v=ZizvomOXZkQ",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "SR-3M + SP-6 is a MONSTER on Labs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=8xb5iCsNDfw",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
