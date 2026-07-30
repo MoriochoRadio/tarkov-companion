@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-30",
+  "generatedAt": "2026-07-30T12:27:26.051+09:00",
+  "headline": "실제 5.45mm 탄약 가이드와 드럼 매거진 이벤트 시작 소식",
+  "sections": [
+    {
+      "type": "news",
+      "title": "주요 소식",
+      "items": [
+        {
+          "title": "드럼 매거진 이벤트 시작",
+          "summary": "새로운 이벤트가 시작되어 드럼 매거진 관련 아이템 획득에 집중할 수 있습니다. 이벤트 참여로 희귀 아이템을 노릴 수 있어 플레이어들의 관심이 집중되고 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v9wk4u/discussion_the_drum_mag_event_has_begun/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "정규 Scav 무기 드랍 현상과 보스 이벤트 연관성",
+          "summary": "오랜만에 복귀한 플레이어들이 정규 Scav에서 평소 보기 힘든 무기들이 드랍되는 현상을 보고했습니다. 이는 보스 이벤트 시작과 관련된 것으로 추정되어 이벤트 진행 상황 파악에 도움이 됩니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v9tw6t/loot_regular_scav_weapons/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "탄약 선택 가이드",
+      "items": [
+        {
+          "title": "실제 5.45mm 탄약 종류에 대한 종합적이고 상세한 가이드",
+          "summary": "게임 내 5.45mm 탄약 선택에 도움을 주기 위해 실제 탄약 종류와 특징을 깊이 있게 조사한 글입니다. 탄약의 성능과 용도를 이해하는 데 유용해 전투 효율을 높일 수 있습니다.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1v9u88h/irl_comprehensive_and_detailed_guide_on_real_545/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "주목할 영상",
+      "items": [
+        {
+          "title": "오버워치 배치 브론즈 나옴",
+          "url": "https://www.youtube.com/watch?v=sa9nRozm9kM",
+          "source": "YouTube 유우양"
+        }
+      ]
+    }
+  ]
+}
