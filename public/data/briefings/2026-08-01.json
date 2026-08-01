@@ -1,0 +1,79 @@
+{
+  "date": "2026-08-01",
+  "generatedAt": "2026-08-01T12:48:41.322+09:00",
+  "headline": "2026-08-01 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "[Suggestion] I don't like this fence.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbr9a3/suggestion_i_dont_like_this_fence/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Can we please increase the mag case to 8x8",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbwmcv/discussion_can_we_please_increase_the_mag_case_to/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Finally, they are all dead [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbgvks/finally_they_are_all_dead_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "New event [screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbpiaj/new_event_screenshot/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] \"KORD BREACH\" From OEFT Discord",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbhtb2/discussion_kord_breach_from_oeft_discord/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "I'm going to have to be a party pooper, but sadly the tools that open the game up fully for browser tools are violating the Terms of Service for Tarkov. Thus, having them here in the largest EFT Community is a bit iffy. I'll have to ask you guys share them elsewhere.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbtmkn/im_going_to_have_to_be_a_party_pooper_but_sadly/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Permanent dog tags barters?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbykeu/discussion_permanent_dog_tags_barters/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] New Event Related Barters",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vbpour/discussion_new_event_related_barters/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 관전자 모드 최초 공개 | 코드 브리치, 시즌 보상 시스템 공개 | PVE 전용 컨텐츠 더 많이 나올 것 | 올해 시즌 2개 더 있다?| Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=rx9wqup_uwo",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "롤 브론즈 탈출기",
+          "url": "https://www.youtube.com/watch?v=4ZDhlE9j2lM",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Clearing Customs in the most CHAOTIC way possible - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=elLx1Ew1Sjo",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "MISTFALL HUNTER | @y4mi & @heyyouvideogame | Woodling High Roller| THE GYLDEN RUSH#AD",
+          "url": "https://www.youtube.com/watch?v=mdEQgJvTOcc",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
