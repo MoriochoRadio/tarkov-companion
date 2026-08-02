@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-02",
+  "generatedAt": "2026-08-02T12:51:41.978+09:00",
+  "headline": "2026-08-02 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "How rare is this poster? [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vcvglg/how_rare_is_this_poster_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Loot] New event ammo : .50 FMJB",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vck1b8/loot_new_event_ammo_50_fmjb/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Battlepass info - free across all game modes",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vcirhe/discussion_battlepass_info_free_across_all_game/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[IRL] ChinaJoy day 2",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vcm4r5/irl_chinajoy_day_2/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "You're not hidden bro [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vcw7g6/youre_not_hidden_bro_video/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "I guess I got outplayed. [bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vczr3f/i_guess_i_got_outplayed_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[feedback] BSG is doing good right now",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vco3ax/feedback_bsg_is_doing_good_right_now/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[New Player] What is the 0.7 under the vehicle extraction?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vcmnvj/new_player_what_is_the_07_under_the_vehicle/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "델타포스 비콘 레벨업",
+          "url": "https://www.youtube.com/watch?v=lSV2JClnHlk",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 ON MONDAY AUGUST 3RD",
+          "url": "https://www.youtube.com/watch?v=X2VNqk6LIxs",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Arresting Players as the Tarkov Police Department - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=RVY_fWt03wQ",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
