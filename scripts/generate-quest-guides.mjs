@@ -35,6 +35,10 @@ const generatedAt = new Date(Date.now() + 9 * 3600 * 1000)
 
 // tarkov.dev는 간헐적으로 5xx를 던짐 — 특정 시간대(UTC 05시경)에 몇 분씩 지속되는
 // 사례가 있어(2026-07-21~23 3일 연속 실패) 6회로 늘리고 백오프도 최대 60초까지 늘렸다.
+// 2026-08-03: 그마저도 부족해 7/25~8/3 10일 연속 실패(원인은 tarkov.dev 자체 장기 장애,
+// 우리 쪽 재시도로는 못 뚫음). 이 백필은 신규 퀘스트만 잡는 비필수 작업이라 재시도를
+// 다 써도 실패하면 "오늘은 건너뜀"으로 조용히 끝낸다 — 매일 빨간 X 알림만 쌓이고
+// 데이터 손실은 없으므로(진행 상태 그대로 보존) 내일 다시 시도하면 그만이다.
 async function fetchTasks() {
   for (let attempt = 1; ; attempt++) {
     try {
@@ -50,7 +54,12 @@ async function fetchTasks() {
       if (!res.ok) throw new Error(`tarkov.dev HTTP ${res.status}`)
       return await res.json()
     } catch (e) {
-      if (attempt >= 6) throw e
+      if (attempt >= 6) {
+        console.error(
+          `tarkov.dev 장기 장애로 오늘 백필 건너뜀(${e.message}) — 내일 자동 재시도`,
+        )
+        return null
+      }
       const waitSec = Math.min(attempt * 10, 60)
       console.warn(`tarkov.dev tasks 조회 실패(${e.message}) — ${waitSec}초 후 재시도`)
       await new Promise((r) => setTimeout(r, waitSec * 1000))
@@ -58,6 +67,7 @@ async function fetchTasks() {
   }
 }
 const tasksJson = await fetchTasks()
+if (!tasksJson) process.exit(0)
 if (!tasksJson.data) throw new Error('tarkov.dev tasks 조회 실패')
 const enName = new Map(tasksJson.data.en.map((t) => [t.id, t.name]))
 const tasks = tasksJson.data.ko
