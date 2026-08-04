@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-04",
+  "generatedAt": "2026-08-04T12:36:06.010+09:00",
+  "headline": "2026-08-04 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.0.46624 (3 August 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46624_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46608 (3 August 2026)",
+          "summary": "Apply only to Seasonal Characters;\nAre enabled for all players participating in the season;\nCannot be changed, disabled, or selected individually.\nNegative modifiers grant points;\nPositive modifiers consume points.\nReach a specific PMC level;\nComplete a specified task;\nComplete a task chain.\nEarn ac",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46608_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.1.0.0",
+          "summary": "Seasons system and Season One With the release of Patch 1.1.0.0, the Seasons system has been introduced to Escape from Tarkov, along with the launch of the first season, KORD BREACH . Each season will introduce new rules, mechanics, rewards, and gameplay changes designed to diversify the experience ",
+          "url": "https://store.steampowered.com/news/app/3932890/view/686386819418294180",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "[SCREENSHOT] Close enough. Welcome back beta banner.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1veppq4/screenshot_close_enough_welcome_back_beta_banner/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "I may have made a questionable financial decision... I bought over 3,000 Labs keycards [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ve52ju/i_may_have_made_a_questionable_financial_decision/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[New Player] This a fairly drastic increase of operational cost for new players.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vef6tb/new_player_this_a_fairly_drastic_increase_of/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Reload speed (Kord Breach)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1veki1u/discussion_reload_speed_kord_breach/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] Holy fuck, Lois... I'M CAGGING",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vek9vg/screenshot_holy_fuck_lois_im_cagging/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] tbh i dont know what i expected but this was funny to find",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vemb6d/screenshot_tbh_i_dont_know_what_i_expected_but/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "This is the amount of money you get from street tax [loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1veo2e1/this_is_the_amount_of_money_you_get_from_street/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] 1.1.0.0 Patch Notes, Kord Breach",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ve4xsb/discussion_1100_patch_notes_kord_breach/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
