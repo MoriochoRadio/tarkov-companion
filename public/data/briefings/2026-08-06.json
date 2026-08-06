@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-06T12:35:40.593+09:00",
+  "headline": "2026-08-06 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed several issues causing an error to appear immediately after launching the game client;\nFixed an issue where loyalty levels with traders were displayed incorrectly, as well as issues with accepting side tasks in some cases;\nFixed an issue where Q and E key inputs were not processed correctly in",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46624 (3 August 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46624_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46608 (3 August 2026)",
+          "summary": "Apply only to Seasonal Characters;\nAre enabled for all players participating in the season;\nCannot be changed, disabled, or selected individually.\nNegative modifiers grant points;\nPositive modifiers consume points.\nReach a specific PMC level;\nComplete a specified task;\nComplete a task chain.\nEarn ac",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46608_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Twitch Drops for the launch of season one!",
+          "summary": "It's time to choose your modifiers and prepare to escape anew - Kord Breach season has begun! To celebrate it, we will launch a Twitch Drops campaign on August 5, where you’ll be able to earn a variety of in-game rewards. The campaign will be split into two parts: global Twitch Drops and subscriptio",
+          "url": "https://store.steampowered.com/news/app/3932890/view/686386819418294691",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "Patch 1.1.0.0",
+          "summary": "Seasons system and Season One With the release of Patch 1.1.0.0, the Seasons system has been introduced to Escape from Tarkov, along with the launch of the first season, KORD BREACH . Each season will introduce new rules, mechanics, rewards, and gameplay changes designed to diversify the experience ",
+          "url": "https://store.steampowered.com/news/app/3932890/view/686386819418294180",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "1시즌 3일차 쇄빙선 숏컷+웨지 잡기",
+          "url": "https://www.youtube.com/watch?v=R7v4O07NCzU",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "시즌 2일차 쇄빙선 해금 완료",
+          "url": "https://www.youtube.com/watch?v=bX8csKI_p7U",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1 NOW",
+          "url": "https://www.youtube.com/watch?v=gPJ6KHeCnxI",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "We Tried SEASON 1 of Mistfall Hunter for the first time!",
+          "url": "https://www.youtube.com/watch?v=Ub6qv-C7ok8",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
