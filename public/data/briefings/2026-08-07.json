@@ -1,0 +1,80 @@
+{
+  "date": "2026-08-07",
+  "generatedAt": "2026-08-07T12:15:13.907+09:00",
+  "headline": "2026-08-07 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed an issue where players were unable to receive side tasks from Prapor after visiting him for the first time;\nMinor balancing changes to side tasks;\nFixed an issue where players were receiving Kord Breach season achievements in PvP mode.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed several issues causing an error to appear immediately after launching the game client;\nFixed an issue where loyalty levels with traders were displayed incorrectly, as well as issues with accepting side tasks in some cases;\nFixed an issue where Q and E key inputs were not processed correctly in",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46624 (3 August 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46624_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46608 (3 August 2026)",
+          "summary": "Apply only to Seasonal Characters;\nAre enabled for all players participating in the season;\nCannot be changed, disabled, or selected individually.\nNegative modifiers grant points;\nPositive modifiers consume points.\nReach a specific PMC level;\nComplete a specified task;\nComplete a task chain.\nEarn ac",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46608_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Twitch Drops for the launch of season one!",
+          "summary": "It's time to choose your modifiers and prepare to escape anew - Kord Breach season has begun! To celebrate it, we will launch a Twitch Drops campaign on August 5, where you’ll be able to earn a variety of in-game rewards. The campaign will be split into two parts: global Twitch Drops and subscriptio",
+          "url": "https://store.steampowered.com/news/app/3932890/view/686386819418294691",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "시즌 초반을 편하게 해줄 프로모션 코드 | 키툴, 탄창 케이스 | 랩 불 끄기 가능!? | 너무 높아진 시즌 초반 장비 수준 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=ZGq4a4MUBVE",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "1시즌 3일차 쇄빙선 숏컷+웨지 잡기",
+          "url": "https://www.youtube.com/watch?v=R7v4O07NCzU",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "HUGE RAIDS - #3 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=rnec3n7lo4k",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "Trying the Howa Type 20 (NEW GUN) in Season 1 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=GgfzsPFSDG4",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Fighting Black Division & The Goons on Shoreline (INSANE RAID) - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=cxeXQWI8DKM",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
