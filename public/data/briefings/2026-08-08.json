@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-08",
+  "generatedAt": "2026-08-08T11:20:55.105+09:00",
+  "headline": "2026-08-08 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.0.46657 (7 August 2026)",
+          "summary": "Fixed an issue that made it impossible to enter Lightkeeper's chamber.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(7_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed an issue where players were unable to receive side tasks from Prapor after visiting him for the first time;\nMinor balancing changes to side tasks;\nFixed an issue where players were receiving Kord Breach season achievements in PvP mode.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed several issues causing an error to appear immediately after launching the game client;\nFixed an issue where loyalty levels with traders were displayed incorrectly, as well as issues with accepting side tasks in some cases;\nFixed an issue where Q and E key inputs were not processed correctly in",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46624 (3 August 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46624_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46608 (3 August 2026)",
+          "summary": "Apply only to Seasonal Characters;\nAre enabled for all players participating in the season;\nCannot be changed, disabled, or selected individually.\nNegative modifiers grant points;\nPositive modifiers consume points.\nReach a specific PMC level;\nComplete a specified task;\nComplete a task chain.\nEarn ac",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46608_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "Head mounted [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vic1qr/head_mounted_screenshot/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] I have 72 Raids. The Wipe will last 126 Days. So far I have unlocked 0 items on the Battlepass.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vhq3yy/discussion_i_have_72_raids_the_wipe_will_last_126/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Big nerf to documents spawn for battlepass",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vi05qt/discussion_big_nerf_to_documents_spawn_for/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] BSG nerfed battlepass documentation spawn",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vhyxda/discussion_bsg_nerfed_battlepass_documentation/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] This Battle Pass is 100% pay-to-win. I honestly don't understand why BSG keeps making decisions like this.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vi7e2c/feedback_this_battle_pass_is_100_paytowin_i/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] Battle Pass might as well not even exist as a casual player / semi-casual",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vi3rt8/feedback_battle_pass_might_as_well_not_even_exist/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "I am allergic to every type of water. [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vicnvn/i_am_allergic_to_every_type_of_water_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] The Goons goons",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vhrjcd/screenshot_the_goons_goons/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "탈콥 1시즌 5일차 퀘스트 밀기 너무 귀찮다",
+          "url": "https://www.youtube.com/watch?v=2F8g8wdo_qw",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "1시즌 4일차 쇄빙선 너프 ㅠ_ㅠ",
+          "url": "https://www.youtube.com/watch?v=uAvjOkr4LAg",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Tasking Rework is GOATED! - #4 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=D0kR9w4xKQI",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "The Most CHAOTIC Factory raids with Fragas & Gingy - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=Oqm8HUiia8Q",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1 NOW",
+          "url": "https://www.youtube.com/watch?v=OouF2gJuQ84",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
