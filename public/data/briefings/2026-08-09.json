@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-09",
+  "generatedAt": "2026-08-09T11:27:48.942+09:00",
+  "headline": "2026-08-09 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.0.46657 (7 August 2026)",
+          "summary": "Fixed an issue that made it impossible to enter Lightkeeper's chamber.\nFixed an issue where players with the \"Well that hurt!\" or \"Diet\" modifiers would encounter error 228 when using medkits or provisions with partially depleted resource;\nMade balancing changes to the stats of some stocks;\nMade bal",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(7_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed an issue where players were unable to receive side tasks from Prapor after visiting him for the first time;\nMinor balancing changes to side tasks;\nFixed an issue where players were receiving Kord Breach season achievements in PvP mode.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed several issues causing an error to appear immediately after launching the game client;\nFixed an issue where loyalty levels with traders were displayed incorrectly, as well as issues with accepting side tasks in some cases;\nFixed an issue where Q and E key inputs were not processed correctly in",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46624 (3 August 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46624_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46608 (3 August 2026)",
+          "summary": "Apply only to Seasonal Characters;\nAre enabled for all players participating in the season;\nCannot be changed, disabled, or selected individually.\nNegative modifiers grant points;\nPositive modifiers consume points.\nReach a specific PMC level;\nComplete a specified task;\nComplete a task chain.\nEarn ac",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46608_(3_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "[IRL] Never knew these were still being produced lol",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1virlzg/irl_never_knew_these_were_still_being_produced_lol/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "The battlepass is making chads feel like timmies [discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vj0fm0/the_battlepass_is_making_chads_feel_like_timmies/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] The battle pass model is unbearable and the community needs to be more vocal about it.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1virmlm/feedback_the_battle_pass_model_is_unbearable_and/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] Another update, another time paid content is not included in EOD",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vj6fel/feedback_another_update_another_time_paid_content/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[IRL] Who doesn't love a good crossover. I slapped together this awesome livery using designs I've created BUT also other players designs. Anyone here play Forza Horizon 6 too?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1viogj9/irl_who_doesnt_love_a_good_crossover_i_slapped/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "101 Raids = Battlepass is at 1/53 [Feedback]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1viy1wx/101_raids_battlepass_is_at_153_feedback/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] Thought I was gonna get exit camped by a player. How wrong I was…",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vizmmp/video_thought_i_was_gonna_get_exit_camped_by_a/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Battlepass daily reset is BS [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1virqme/battlepass_daily_reset_is_bs_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "배틀패스 재료 무한 파밍 글리치? | 코드 브리치 시즌 초반, 잠수함 패치 | 갑작스런 문서 드롭율 너프 | 아이스브레이커 입장료 인상 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=V7v4EUblL9s",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "탈콥 1시즌 5일차 퀘스트 밀기 너무 귀찮다",
+          "url": "https://www.youtube.com/watch?v=2F8g8wdo_qw",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Struggling more than on HARDCORE? - #5 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=vMWlI9io8Rk",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "This is how I completed SETUP in Season 1! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=_9ZcaFBSXik",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=k6J2T6zS1z4",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
