@@ -1,5 +1,7 @@
 # Tarkov Companion 🎯
 
+🇰🇷 한국어 · 🇬🇧 [English](README.en.md)
+
 [![일일 브리핑](https://github.com/MoriochoRadio/tarkov-companion/actions/workflows/daily-briefing.yml/badge.svg)](https://github.com/MoriochoRadio/tarkov-companion/actions/workflows/daily-briefing.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
