@@ -1,0 +1,121 @@
+{
+  "date": "2026-08-11",
+  "generatedAt": "2026-08-11T11:27:09.755+09:00",
+  "headline": "2026-08-11 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46699 (10 August 2026)",
+          "summary": "Fixed an issue that prevented the door in A.P.'s corporate apartment on Streets of Tarkov from opening after using the keycard;\nFixed an issue that caused the “Juice Time” and “Sailor’s Nostalgia” modifiers to activate when the player canceled an item’s use before the animation started;\nFixed an iss",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(10_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (7 August 2026)",
+          "summary": "Fixed an issue that made it impossible to enter Lightkeeper's chamber.\nFixed an issue where players with the \"Well that hurt!\" or \"Diet\" modifiers would encounter error 228 when using medkits or provisions with partially depleted resource;\nMade balancing changes to the stats of some stocks;\nMade bal",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(7_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed an issue where players were unable to receive side tasks from Prapor after visiting him for the first time;\nMinor balancing changes to side tasks;\nFixed an issue where players were receiving Kord Breach season achievements in PvP mode.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (5 August 2026)",
+          "summary": "Fixed several issues causing an error to appear immediately after launching the game client;\nFixed an issue where loyalty levels with traders were displayed incorrectly, as well as issues with accepting side tasks in some cases;\nFixed an issue where Q and E key inputs were not processed correctly in",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(5_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "TarkovTV on August 10!",
+          "summary": "Watch the next episode of TarkovTV LIVE on August 10 at 6:00 PM BST / 1:00 PM EDT. The podcast will be focused on the current ongoing work and future plans. See you on: https://www.twitch.tv/battlestategames",
+          "url": "https://store.steampowered.com/news/app/3932890/view/680758162260754813",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "One Shot - 770m [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vkbxb0/one_shot_770m_video/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "10x abandoned factory marked key [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vkvuxm/10x_abandoned_factory_marked_key_loot/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] \"Ray, how much Ripped Fuel have you ingested?\" \"I'M ON IT LIKE A MOTHERFUCKER\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vkr0l1/screenshot_ray_how_much_ripped_fuel_have_you/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Adrenaline injectors should cancel allergic reactions [suggestion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vkkua1/adrenaline_injectors_should_cancel_allergic/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Loot] I made a Documents Tracker Map site",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vkb7re/loot_i_made_a_documents_tracker_map_site/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[IRL] New car sticker",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vkyf9m/irl_new_car_sticker/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "What early wipe? [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vkl0j5/what_early_wipe_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "2.0 Ready Servers [Bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vk9oo0/20_ready_servers_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "탈콥 시즌1 퀘스트 지옥",
+          "url": "https://www.youtube.com/watch?v=o4bdsG7z7zA",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Going CRAZY on Ground Zero! - #7 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=sN2aVWw8F3A",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "Completing THE PUNISHER PART 5 with the RPDN - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=xF3WNry3NT4",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=V-T5w8cC_0A",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
