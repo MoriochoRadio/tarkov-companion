@@ -1,0 +1,107 @@
+{
+  "date": "2026-08-12",
+  "generatedAt": "2026-08-12T11:43:04.128+09:00",
+  "headline": "2026-08-12 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46699 (10 August 2026)",
+          "summary": "Fixed an issue that prevented the door in A.P.'s corporate apartment on Streets of Tarkov from opening after using the keycard;\nFixed an issue that caused the “Juice Time” and “Sailor’s Nostalgia” modifiers to activate when the player canceled an item’s use before the animation started;\nFixed an iss",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(10_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (7 August 2026)",
+          "summary": "Fixed an issue that made it impossible to enter Lightkeeper's chamber.\nFixed an issue where players with the \"Well that hurt!\" or \"Diet\" modifiers would encounter error 228 when using medkits or provisions with partially depleted resource;\nMade balancing changes to the stats of some stocks;\nMade bal",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(7_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "My most sincere opinion regarding these improvements for the UMP-45. [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vlecsb/my_most_sincere_opinion_regarding_these/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] Go night time to do quest they said, will be more peaceful they said.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vl7lc6/video_go_night_time_to_do_quest_they_said_will_be/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] What I just realized... why tf is there 13 different types of 9x18mm?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vlxivg/discussion_what_i_just_realized_why_tf_is_there/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Suggestion] Strike industries p90 chassis",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vlp3x3/suggestion_strike_industries_p90_chassis/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "25 Possible Locations of BattlePass Documents in Factory in 4 minutes [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vlcdqb/25_possible_locations_of_battlepass_documents_in/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[New Player] I somehow managed to murder Killa and I’m very proud of myself",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vlt4zz/new_player_i_somehow_managed_to_murder_killa_and/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Loot] any suggestions where to find",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vlskm7/loot_any_suggestions_where_to_find/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] GP25 kills are total BS",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vldd1y/bug_gp25_kills_are_total_bs/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 하반기 로드맵 발표 | PVE 프레스티지 10월 도입? | 기절, 부활, 아군 치료 도입 | 등대맵 개편 | 신규맵과 보스: 포보디리 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=ALX3RPkHEfM",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "탈콥 시즌1 쇄빙선 무장 수급 + 퀘스트",
+          "url": "https://www.youtube.com/watch?v=goAZ-r-r0fQ",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "타르코프TV 3-4분기 패치 내용 미리보기",
+          "url": "https://www.youtube.com/watch?v=W2QSxiN09sE",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "DUBS on Shoreline! - #8 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=AMdobjtq9LM",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=KIwUIekMbKw",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Farming Black Division on LABS with the AS VAL - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=H6ImqflbfL4",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
