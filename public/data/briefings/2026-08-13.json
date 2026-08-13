@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-13",
+  "generatedAt": "2026-08-13T11:46:39.840+09:00",
+  "headline": "2026-08-13 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46699 (12 August 2026)",
+          "summary": "Technical udpate",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(12_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (10 August 2026)",
+          "summary": "Fixed an issue that prevented the door in A.P.'s corporate apartment on Streets of Tarkov from opening after using the keycard;\nFixed an issue that caused the “Juice Time” and “Sailor’s Nostalgia” modifiers to activate when the player canceled an item’s use before the animation started;\nFixed an iss",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(10_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.0.46657 (7 August 2026)",
+          "summary": "Fixed an issue that made it impossible to enter Lightkeeper's chamber.\nFixed an issue where players with the \"Well that hurt!\" or \"Diet\" modifiers would encounter error 228 when using medkits or provisions with partially depleted resource;\nMade balancing changes to the stats of some stocks;\nMade bal",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.0.46657_(7_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "[Discussion] Player-base is split 55% seasonal, 38% PvE and 7% PvP",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vmn9ns/discussion_playerbase_is_split_55_seasonal_38_pve/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[New Player] I'm not having fun boss.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vmeohp/new_player_im_not_having_fun_boss/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Why these Town and the suburbs maps didnt added? [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vmbe5t/why_these_town_and_the_suburbs_maps_didnt_added/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] The campaign shouldn't go for for this long.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vm6jxc/feedback_the_campaign_shouldnt_go_for_for_this/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Loot] Am I missing something?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vmiorh/loot_am_i_missing_something/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "White bear drip is just goated [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vmhkg7/white_bear_drip_is_just_goated_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Checked random player profile who was selling Wedge's X-17 [Cheating]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vmbu31/checked_random_player_profile_who_was_selling/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Local Drugstore [IRL]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vmcjbq/local_drugstore_irl/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
