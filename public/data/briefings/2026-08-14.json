@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-14",
+  "generatedAt": "2026-08-14T11:45:00.030+09:00",
+  "headline": "2026-08-14 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46777 (13 August 2026)",
+          "summary": "Fixed a number of culling issues at the Customs location;\nFixed an error that occurred during the loading in raid when playing with a seasonal character and in the PvE ZONE in certain cases;\nFixed incorrect input handling when using hotkeys assigned to the arrow keys.\nThe number of documents has bee",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46777_(13_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (12 August 2026)",
+          "summary": "Technical udpate",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(12_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (10 August 2026)",
+          "summary": "Fixed an issue that prevented the door in A.P.'s corporate apartment on Streets of Tarkov from opening after using the keycard;\nFixed an issue that caused the “Juice Time” and “Sailor’s Nostalgia” modifiers to activate when the player canceled an item’s use before the animation started;\nFixed an iss",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(10_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "[screenshot] How is this even possible？",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vn7461/screenshot_how_is_this_even_possible/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[suggestion] correct me if I'm wrong but does this not just make more fucking sense?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vncqlo/suggestion_correct_me_if_im_wrong_but_does_this/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] Throwback to me sniping a 100mil Red Keycard for 100k in 2021",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vn94cl/video_throwback_to_me_sniping_a_100mil_red/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] pro tip if you want to farm seasonal docs",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vn4bd1/discussion_pro_tip_if_you_want_to_farm_seasonal/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "They just increased the Daily BP limit [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vnimsw/they_just_increased_the_daily_bp_limit_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Since when have scavs been carrying around .50 caliber rifles? [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vn0oz6/since_when_have_scavs_been_carrying_around_50/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] Scav train coming through, choo choo!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vn06rl/video_scav_train_coming_through_choo_choo/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] This game loves having us LARP as CAG. How about some vintage CAG stuff?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vnjwyl/screenshot_this_game_loves_having_us_larp_as_cag/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "상인 만렙이 멀지 않아졌다",
+          "url": "https://www.youtube.com/watch?v=wgEY1YIgpnU",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Punisher on Customs - #10 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=E3sgtpPAmZc",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "I found the BEST Gun for Punisher Part 6! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=pZWW2sa-qt8",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=E6GsKCz1jIo",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
