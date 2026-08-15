@@ -1,0 +1,108 @@
+{
+  "date": "2026-08-15",
+  "generatedAt": "2026-08-15T10:48:56.084+09:00",
+  "headline": "2026-08-15 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46777 (13 August 2026)",
+          "summary": "Fixed a number of culling issues at the Customs location;\nFixed an error that occurred during the loading in raid when playing with a seasonal character and in the PvE ZONE in certain cases;\nFixed incorrect input handling when using hotkeys assigned to the arrow keys.\nThe number of documents has bee",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46777_(13_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (12 August 2026)",
+          "summary": "Technical udpate",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(12_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (10 August 2026)",
+          "summary": "Fixed an issue that prevented the door in A.P.'s corporate apartment on Streets of Tarkov from opening after using the keycard;\nFixed an issue that caused the “Juice Time” and “Sailor’s Nostalgia” modifiers to activate when the player canceled an item’s use before the animation started;\nFixed an iss",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(10_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "[Video] Apparently they've added an invisible wall here. Veteran knowledge gets you killed nowadays.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vo4oz1/video_apparently_theyve_added_an_invisible_wall/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Impossible to obtain seasonal rewards without prestige/reset",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vo3osf/discussion_impossible_to_obtain_seasonal_rewards/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] The worst modifer ever! Stay away! Anyway I can fix this other than reset my account?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vnz4u1/discussion_the_worst_modifer_ever_stay_away/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Is BSG going to ban bug abusers?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vnz18u/bug_is_bsg_going_to_ban_bug_abusers/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Despite some people arguing that you can't (maybe BOT accounts) you can indeed see Interchange from Customs [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vogkja/despite_some_people_arguing_that_you_cant_maybe/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Eotech magnifier at home:",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vockb8/discussion_eotech_magnifier_at_home/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] Looks like M1A is getting an asset rework + new parts",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vo5q2y/screenshot_looks_like_m1a_is_getting_an_asset/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] \"Oh wow I unlocked that cool gas mask from the battlepass! I'm going to wear it every raid!...oh...\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1von1oo/feedback_oh_wow_i_unlocked_that_cool_gas_mask/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "배틀패스 파밍 난이도 급 완화 | 시즌 오픈빨 때문일까? | 충격적인 PVP 서버 점유율 공개 | 이번 주말은 배패 문서 파밍이나 해야 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=KqjQanvH7yE",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "2부 타르코프 슈본헤 지옥 / 1부 STALZONE l 스탈존",
+          "url": "https://www.youtube.com/watch?v=HWrxsckJsM8",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Winning on Shoreline - #11 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=YRN_LpVS0Po",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "Fighting the GOONS & Black Division with the QBZ-191 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=l9lBwIi4jYA",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=wtJ18CwRy9I",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
