@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-16",
+  "generatedAt": "2026-08-16T10:56:40.553+09:00",
+  "headline": "2026-08-16 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46777 (13 August 2026)",
+          "summary": "Fixed a number of culling issues at the Customs location;\nFixed an error that occurred during the loading in raid when playing with a seasonal character and in the PvE ZONE in certain cases;\nFixed incorrect input handling when using hotkeys assigned to the arrow keys.\nThe number of documents has bee",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46777_(13_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (12 August 2026)",
+          "summary": "Technical udpate",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(12_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (10 August 2026)",
+          "summary": "Fixed an issue that prevented the door in A.P.'s corporate apartment on Streets of Tarkov from opening after using the keycard;\nFixed an issue that caused the “Juice Time” and “Sailor’s Nostalgia” modifiers to activate when the player canceled an item’s use before the animation started;\nFixed an iss",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(10_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "POV: you peaked a Rogue on IB and missed the first headshot [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vpf2j4/pov_you_peaked_a_rogue_on_ib_and_missed_the_first/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] my friends find an Inmortal AFK now they are farming Strenght",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vosx0n/screenshot_my_friends_find_an_inmortal_afk_now/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] Yeah... i dont like being ugly. Traders dont like me :c",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vou58o/screenshot_yeah_i_dont_like_being_ugly_traders/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Suggestion] Purely conceptual Rework for Malfunctions",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vp7vad/suggestion_purely_conceptual_rework_for/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] HOW DID RESHALA AND HIS GUARDS SPAWN HERE?! (RED CIRCLE)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vp1y5a/discussion_how_did_reshala_and_his_guards_spawn/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Leg meta is giving me some of the most fun then ever before [Feedback]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vp1vhv/leg_meta_is_giving_me_some_of_the_most_fun_then/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Suggestion] [Discussion] I need your support! This is my submission for the #TarkovArenaStyle Contest !",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vp0lwf/suggestion_discussion_i_need_your_support_this_is/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] The seasonal quest Sheep in Wolf's Clothing is awful",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vpbu00/discussion_the_seasonal_quest_sheep_in_wolfs/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "콜렉터 재료 구하면 카파 땀 | 타르코프",
+          "url": "https://www.youtube.com/watch?v=JGFaBlQ4o7E",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "STREETS is DELIVERING - #12 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=dtwG1jcl0u8",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=hc_miaq7_Ho",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Fighting Players With the NEW QBZ-191 on Shoreline - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=Qe4OFfuoHi8",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
