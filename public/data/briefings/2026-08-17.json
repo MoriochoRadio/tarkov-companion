@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-17",
+  "generatedAt": "2026-08-17T10:54:35.785+09:00",
+  "headline": "2026-08-17 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46777 (13 August 2026)",
+          "summary": "Fixed a number of culling issues at the Customs location;\nFixed an error that occurred during the loading in raid when playing with a seasonal character and in the PvE ZONE in certain cases;\nFixed incorrect input handling when using hotkeys assigned to the arrow keys.\nThe number of documents has bee",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46777_(13_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (12 August 2026)",
+          "summary": "Technical udpate",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(12_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "12칸 팬티 카파 완료. 이제부터 타르뱅크 쌀먹런",
+          "url": "https://www.youtube.com/watch?v=a4-_yHV32ew",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "I am Disappointed - #13 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=yr4vE85oLlg",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "Terrorizing THE LOBBY with the new HOWA TYPE 20 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=7_yB8IhsgfE",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=uv7_ofah22E",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
