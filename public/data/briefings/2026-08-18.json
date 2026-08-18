@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-18",
+  "generatedAt": "2026-08-18T10:50:03.029+09:00",
+  "headline": "2026-08-18 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46777 (13 August 2026)",
+          "summary": "Fixed a number of culling issues at the Customs location;\nFixed an error that occurred during the loading in raid when playing with a seasonal character and in the PvE ZONE in certain cases;\nFixed incorrect input handling when using hotkeys assigned to the arrow keys.\nThe number of documents has bee",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46777_(13_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (12 August 2026)",
+          "summary": "Technical udpate",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(12_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "1조 손실낸 마라톤, 흔들리는 탈출 슈터계 | 대박친 아크 레이더스, 최근 평가 | 꾸준함의 그레이존 | 우주 타르코프는 언제 플레이? | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=q-GjnW98VTg",
+          "source": "YouTube 노잼망겜"
+        },
+        {
+          "title": "타르뱅크런 코인 2850개가 목표!",
+          "url": "https://www.youtube.com/watch?v=c6sA8YM85jk",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Gooood Raids - #14 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=eWe_DwpukIE",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV | SEASON 1",
+          "url": "https://www.youtube.com/watch?v=T-2LjLxSEsM",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "Completing Shooter Born in Heaven! Season 1 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=52WTHxkCSJg",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
