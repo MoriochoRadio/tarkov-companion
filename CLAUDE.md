@@ -5,7 +5,7 @@ Escape From Tarkov용 AI 큐레이션 컴패니언 웹. 상세 설계는 `docs/D
 ## 핵심 제약
 
 - **모든 것이 무료여야 함**: 서버 없음, 유료 API 금지, 런타임에 Claude API 호출 금지
-- 시세 데이터는 방문자 브라우저가 `https://api.tarkov.dev/graphql` (무료, 키 불필요)를 직접 호출
+- 시세·퀘스트 데이터는 방문자 브라우저가 `https://json.tarkov.dev` (무료, 키 불필요)를 직접 호출 — GraphQL(api.tarkov.dev)은 2026-08-02부터 장기 장애라 tarkov.dev 본 사이트와 같은 JSON API로 이전(Phase 44). 클라이언트는 `src/api/jsonApi.ts`, Node 스크립트는 `scripts/tarkov-json.mjs`
 - 호스팅: GitHub Pages (`https://moriochoradio.github.io/tarkov-companion/`) → Vite `base: '/tarkov-companion/'` 필수
 - 일일 브리핑은 GitHub Actions(`daily-briefing.yml`)가 매일 `public/data/briefings/YYYY-MM-DD.json`으로 커밋함 — 웹은 이 파일을 읽기만 함. AI 요약은 GitHub Models(GITHUB_TOKEN, 무료) 사용
 
@@ -15,7 +15,7 @@ React + TypeScript + Vite. 배포는 GitHub Actions → GitHub Pages.
 
 ## 컨벤션
 
-- UI 텍스트는 한국어 우선. tarkov.dev API 호출 시 `lang: ko` 사용
+- UI 텍스트는 한국어 우선. 이름은 JSON API의 `_ko` 로케일 사전으로 치환하고, 한/영 병기가 필요한 곳은 `_en`도 함께 받아 `biName()`으로 합침
 - 커밋 메시지는 한국어
 - 사용자(저장소 주인)는 미숙한 1인 개발자 — 복잡한 결정을 했을 때는 커밋 메시지나 응답에 이유를 짧게 설명할 것
 - **GitHub Actions cron은 정각(0분) 금지** — 정각은 GitHub 혼잡 슬롯이라 스케줄 이벤트가 통째로 누락될 수 있음 (2026-06-12 브리핑 미발행 사고). 분은 17처럼 어중간한 값 사용

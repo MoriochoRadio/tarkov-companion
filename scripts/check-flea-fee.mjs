@@ -2,6 +2,12 @@
 // fleaMarketFee(서버 측 계산) 값과 대조한다. 공식이나 세율이 패치로 바뀌면
 // 여기서 어긋나므로, 수수료 관련 수정 전후로 한 번씩 돌려볼 것.
 // 사용: node scripts/check-flea-fee.mjs  (Node 24+ — TS 타입 스트리핑으로 lib 직접 import)
+//
+// ⚠ 2026-08 현재 동작 불가: fleaMarketFee는 GraphQL 서버가 계산해 주는 필드라
+// json.tarkov.dev(JSON API)에 대응물이 없다. api.tarkov.dev/graphql이 다시 살아나야
+// 쓸 수 있다(the-hideout/tarkov-api#474). 그동안 세율만 확인하려면
+// json.tarkov.dev/regular/items의 fleaMarket.sellOfferFeeRate/sellRequirementFeeRate와
+// src/lib/fleaFee.ts의 기본값을 눈으로 대조할 것.
 import { fleaFee } from '../src/lib/fleaFee.ts'
 
 const ENDPOINT = 'https://api.tarkov.dev/graphql'
@@ -32,6 +38,14 @@ const baseRes = await fetch(ENDPOINT, {
     query: `{ ${SAMPLES.map((s, i) => `i${i}: item(id: "${s.id}") { basePrice }`).join(' ')} }`,
   }),
 }).then((r) => r.json())
+
+if (!baseRes.data) {
+  console.error('tarkov.dev GraphQL 응답 없음 — 2026-08-02부터 장기 장애라 이 검증은 돌릴 수 없다')
+  console.error('(JSON API에는 fleaMarketFee 대응물이 없음 — 파일 상단 주석 참고)')
+  // 소켓 정리 후 종료 (Windows에서 곧바로 exit하면 libuv assert 노이즈가 뜸)
+  await new Promise((r) => setTimeout(r, 100))
+  process.exit(1)
+}
 
 const prices = SAMPLES.map((_, i) =>
   PRICE_MULTS.map((m) => Math.max(1, Math.round(baseRes.data[`i${i}`].basePrice * m))),

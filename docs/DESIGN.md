@@ -421,6 +421,19 @@ Phase 39에서 `done-quests`가 일급이 됐으니 `requires`/`unlocks`(이미 
 - [x] **동작 보존 검증(핵심)**: 리팩터라 결과가 **이전과 100% 동일**해야 함 — `shoot-done-quests` 통합 체크리스트 5681→5584개·229→211종(Phase 39와 동일), `shoot-roadmap` 19→24(Phase 42와 동일), FirOps 클리어함→수요차감·트래커·딥링크 정상. 빌드 통과, `profile-ui` 회귀 없음(최대 롱태스크 626ms<1초)
 - 남음(후속 가능): 은신처 집계(FirOps·TrackerTab·HideoutView가 stations 직접 순회) 통폐합은 출력 형태가 제각각이라 더 큰 작업 → 분리. 이번은 퀘스트 수요만(가장 명확한 5중 복제)
 
+### Phase 44 — 데이터원 이전: GraphQL → json.tarkov.dev (완료)
+
+- **문제**: `api.tarkov.dev/graphql`이 2026-08-02부터 계속 다운(HTTP 422 "GraphQL server unavailable", upstream [the-hideout/tarkov-api#474] 열린 채 17일 이상). 웹 전 탭이 "불러오기 실패", quest-guides 백필도 매일 skip
+- **해결**: tarkov.dev 본 사이트가 쓰는 **JSON API(json.tarkov.dev)**로 이전. 무료·키 불필요·브라우저 직접 호출이라는 제약은 그대로. 공용 클라이언트 `src/api/jsonApi.ts` + Node용 `scripts/tarkov-json.mjs`
+- **GraphQL과의 차이 3가지**(모든 api 모듈이 이 차이를 흡수):
+  1. **필드 선택 불가** — 데이터셋 전량 수신(items brotli 약 1.9MB / 원본 16MB). 대신 items·tasks·maps·traders·hideout·barters·crafts 데이터셋을 **탭 간 공유 캐시**로 두어 요청 횟수는 오히려 줄었다(모딩 슬롯·아이템 types 조회 등 lazy 요청이 전부 사라짐)
+  2. **참조가 전부 id** — 아이템·트레이더·맵·스테이션은 id만 오고 데이터셋끼리 조인
+  3. **이름이 본문에 없음** — 본문엔 `"<id> Name"` 로케일 키가 들어 있고 `<데이터셋>_ko`/`_en` 사전으로 치환(한/영 병기라 두 벌). 슬롯 이름만 예외 — `nameId`(mod_pistol_grip)의 대문자가 키
+- **UI 무변경**: api 모듈의 export 타입·시그니처를 그대로 유지해 features/ 코드는 한 줄도 안 고침
+- **바뀐 동작 2가지**: ① 시세 히스토리는 아이템당 별도 요청(전 구간 응답을 7일로 잘라 씀) ② 가격 알림 폴링 주기 5분 → 15분(원본 시세가 2시간 간격 갱신이라 5분 폴링은 트래픽만 낭비)
+- **검증**: 프로덕션 빌드 + CPU 4x — 전 탭 스모크 통과(퀘스트 517·아이템 5,312·탄약 200·열쇠 80·맵 17·은신처 26·빌드 16), 최장 롱태스크 531ms(1초 규칙 이내), 퀘스트 그룹 첫 진입 5.4초(네트워크 지배, rAF 응답 1ms로 메인 스레드는 계속 반응). `validate-builds`/`check-unlocks`/`check-map-projection`/`explore-weapon`도 JSON API로 이전해 전부 통과
+- **못 옮긴 것**: `check-flea-fee.mjs` — `fleaMarketFee`는 GraphQL 서버 계산 필드라 JSON API에 대응물이 없다. GraphQL 복구 전까지 사용 불가(스크립트가 그렇게 안내하고 종료)
+
 ## 6. 환경 역할 분담
 
 | 작업 | 환경 |
@@ -433,5 +446,6 @@ Phase 39에서 `done-quests`가 일급이 됐으니 `requires`/`unlocks`(이미 
 
 ## 7. 알려진 제약
 
-- Cowork 샌드박스에서 api.tarkov.dev 직접 호출 불가(네트워크 허용목록) → API 테스트는 브라우저(Chrome 연동) 또는 노트북에서 수행
+- **데이터원은 json.tarkov.dev** — api.tarkov.dev/graphql은 2026-08-02부터 장기 장애(Phase 44). 복구되더라도 JSON API가 tarkov.dev 본 사이트가 쓰는 경로라 되돌릴 이유는 없음
+- Cowork 샌드박스에서 tarkov.dev 직접 호출 불가(네트워크 허용목록) → API 테스트는 브라우저(Chrome 연동) 또는 노트북에서 수행
 - 게임 버전: 1.0.5.0 Icebreaker (2026-06) 기준. 패치마다 아이템/메타 변동 가능

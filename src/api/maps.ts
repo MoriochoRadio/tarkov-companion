@@ -1,5 +1,7 @@
-// tarkov.dev maps 쿼리 — 맵 탭에서 첫 진입 시 1회 로드 후 캐시
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
+// tarkov.dev maps 데이터셋 — 맵 탭에서 첫 진입 시 1회 로드 후 캐시.
+// 보스는 mob id 참조라 같은 데이터셋의 mobs에서 이름·초상화를 조인하고,
+// 출입 열쇠는 아이템 id라 items 데이터셋에서 이름을 가져온다
+import { loadDataset, loadItems, trKo, type Dataset } from './jsonApi'
 
 export interface MapBoss {
   name: string
@@ -30,68 +32,49 @@ export interface TarkovMap {
   description: string | null
 }
 
+interface RawMapsData {
+  maps: Record<string, RawMap>
+  mobs: Record<string, { name: string; imagePortraitLink: string | null }>
+}
+
 interface RawMap {
   id: string
-  name: string
+  name: string // 로케일 키
   normalizedName: string
   players: string | null
   raidDuration: number | null
-  bosses: {
-    boss: { name: string; imagePortraitLink: string | null }
-    spawnChance: number | null
-  }[]
+  bosses: { mob: string; spawnChance: number | null }[]
   extracts: {
     id: string
     name: string
     faction: string | null
     position: { x: number; z: number } | null
   }[]
-  accessKeys: { name: string }[]
+  accessKeys: string[] // 아이템 id
   accessKeysMinPlayerLevel: number | null
   wiki: string | null
-  description: string | null
+  description: string | null // 로케일 키
 }
 
 let mapsCache: Promise<TarkovMap[]> | null = null
 
 export function fetchMaps(): Promise<TarkovMap[]> {
-  mapsCache ??= fetch(ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      query: `{
-        maps(lang: ko) {
-          id name normalizedName players raidDuration
-          bosses { boss { name imagePortraitLink } spawnChance }
-          extracts { id name faction position { x z } }
-          accessKeys { name } accessKeysMinPlayerLevel
-          wiki description
-        }
-      }`,
-    }),
-  })
-    .then(async (res) => {
-      if (!res.ok) throw new Error(`tarkov.dev API 응답 오류 (HTTP ${res.status})`)
-      const json = (await res.json()) as {
-        data?: { maps: RawMap[] }
-        errors?: { message: string }[]
-      }
-      if (json.errors?.length) throw new Error(json.errors[0].message)
-      if (!json.data) throw new Error('tarkov.dev API가 데이터를 반환하지 않음')
-      return json.data.maps.map((m) => ({
+  mapsCache ??= Promise.all([loadDataset<RawMapsData>('maps'), loadItems()])
+    .then(([d, items]: [Dataset<RawMapsData>, Awaited<ReturnType<typeof loadItems>>]) =>
+      Object.values(d.data.maps).map((m) => ({
         id: m.id,
-        name: m.name,
+        name: trKo(d, m.name),
         normalizedName: m.normalizedName,
         players: m.players,
         raidDuration: m.raidDuration,
         bosses: m.bosses.map((b) => ({
-          name: b.boss.name,
+          name: trKo(d, d.data.mobs[b.mob]?.name ?? b.mob),
           spawnChance: b.spawnChance ?? 0,
-          portrait: b.boss.imagePortraitLink,
+          portrait: d.data.mobs[b.mob]?.imagePortraitLink ?? null,
         })),
         extracts: m.extracts.map((e) => ({
           id: e.id,
-          name: e.name,
+          name: trKo(d, e.name),
           faction: (e.faction === 'pmc' || e.faction === 'scav'
             ? e.faction
             : 'shared') as MapExtract['faction'],
@@ -99,12 +82,14 @@ export function fetchMaps(): Promise<TarkovMap[]> {
             ? { position: { x: e.position.x, z: e.position.z } }
             : {}),
         })),
-        accessKeys: m.accessKeys.map((k) => k.name),
+        accessKeys: (m.accessKeys ?? []).map((id) =>
+          trKo(items, items.data.items[id]?.name),
+        ),
         accessKeysMinPlayerLevel: m.accessKeysMinPlayerLevel,
         wiki: m.wiki,
-        description: m.description,
-      }))
-    })
+        description: m.description ? trKo(d, m.description) : null,
+      })),
+    )
     .catch((err: unknown) => {
       mapsCache = null
       throw err

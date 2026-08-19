@@ -59,7 +59,7 @@ Escape From Tarkov 플레이어를 위한 한국어 컴패니언 웹.
 ## 동작 원리 — 서버 없이, 운영비 0원
 
 ```
-[방문자 브라우저] ──직접 호출──> api.tarkov.dev/graphql (무료 공개 API)
+[방문자 브라우저] ──직접 호출──> json.tarkov.dev (무료 공개 API)
        │
        └─ GitHub Pages (정적 호스팅)
               ▲

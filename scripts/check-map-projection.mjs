@@ -27,23 +27,37 @@ function projector(m) {
   return { project, rect: { minX, maxX, minY, maxY, w: maxX - minX, h: maxY - minY } }
 }
 
-const QUERY = `{ maps { id normalizedName } tasks(lang: en) { name objectives {
-  id type description maps { id }
-  ... on TaskObjectiveItem { zones { map { id } position { x z } } }
-  ... on TaskObjectiveMark { zones { map { id } position { x z } } }
-  ... on TaskObjectiveQuestItem { zones { map { id } position { x z } } possibleLocations { map { id } positions { x z } } }
-  ... on TaskObjectiveShoot { zones { map { id } position { x z } } }
-  ... on TaskObjectiveUseItem { zones { map { id } position { x z } } }
-  ... on TaskObjectiveBasic { zones { map { id } position { x z } } }
-} } }`
+// 데이터원은 json.tarkov.dev (GraphQL 장기 장애로 이전). 좌표는 언어 무관이라
+// 로케일 사전은 쓰지 않고, zones/possibleLocations의 map은 id 문자열로 온다
+import { loadDataset, trEn } from './tarkov-json.mjs'
 
-const res = await fetch('https://api.tarkov.dev/graphql', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ query: QUERY }),
-})
-const json = await res.json()
-if (json.errors?.length) throw new Error(json.errors[0].message)
+const mapsData = await loadDataset('maps')
+const tasksData = await loadDataset('tasks')
+const json = {
+  data: {
+    maps: Object.values(mapsData.data.maps).map((m) => ({
+      id: m.id,
+      normalizedName: m.normalizedName,
+    })),
+    tasks: Object.values(tasksData.data.tasks).map((t) => ({
+      name: trEn(tasksData, t.name),
+      objectives: (t.objectives ?? []).map((o) => ({
+        id: o.id,
+        type: o.type,
+        description: trEn(tasksData, o.description),
+        maps: (o.maps ?? []).map((id) => ({ id })),
+        zones: (o.zones ?? []).map((z) => ({
+          map: z.map ? { id: z.map } : null,
+          position: z.position ?? null,
+        })),
+        possibleLocations: (o.possibleLocations ?? []).map((pl) => ({
+          map: pl.map ? { id: pl.map } : null,
+          positions: pl.positions ?? [],
+        })),
+      })),
+    })),
+  },
+}
 
 const ALIAS = {
   'night-factory': 'factory',

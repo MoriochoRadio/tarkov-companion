@@ -13,6 +13,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { setTimeout as sleep } from 'node:timers/promises'
 import { callWithFallback, getCallCount, MAX_CALLS } from './github-models.mjs'
+import { loadDataset, trEn, trKo } from './tarkov-json.mjs'
 import { extractImageRefs, resolveImageUrls } from './wiki-images.mjs'
 
 const GUIDE_VERSION = 2
@@ -33,49 +34,28 @@ const generatedAt = new Date(Date.now() + 9 * 3600 * 1000)
 
 // ---------- 퀘스트 목록 (한/영 이름 + 위키 링크) ----------
 
-// tarkov.dev는 간헐적으로 5xx를 던짐 — 특정 시간대(UTC 05시경)에 몇 분씩 지속되는
-// 사례가 있어(2026-07-21~23 3일 연속 실패) 6회로 늘리고 백오프도 최대 60초까지 늘렸다.
-// 2026-08-03: 그마저도 부족해 7/25~8/3 10일 연속 실패(원인은 tarkov.dev 자체 장기 장애,
-// 우리 쪽 재시도로는 못 뚫음). 이 백필은 신규 퀘스트만 잡는 비필수 작업이라 재시도를
-// 다 써도 실패하면 "오늘은 건너뜀"으로 조용히 끝낸다 — 매일 빨간 X 알림만 쌓이고
-// 데이터 손실은 없으므로(진행 상태 그대로 보존) 내일 다시 시도하면 그만이다.
+// tarkov.dev GraphQL은 2026-08-02부터 장기 장애 → json.tarkov.dev로 이전(웹과 동일 데이터원).
+// 이 백필은 신규 퀘스트만 잡는 비필수 작업이라, 재시도를 다 써도 실패하면 "오늘은 건너뜀"으로
+// 조용히 끝낸다 — 매일 빨간 X 알림만 쌓이고 데이터 손실은 없으므로(진행 상태 그대로 보존)
+// 내일 다시 시도하면 그만이다.
 async function fetchTasks() {
-  for (let attempt = 1; ; attempt++) {
-    try {
-      const res = await fetch('https://api.tarkov.dev/graphql', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          query:
-            '{ ko: tasks(lang: ko) { id name wikiLink } en: tasks(lang: en) { id name } }',
-        }),
-        signal: AbortSignal.timeout(30_000),
-      })
-      if (!res.ok) throw new Error(`tarkov.dev HTTP ${res.status}`)
-      return await res.json()
-    } catch (e) {
-      if (attempt >= 6) {
-        console.error(
-          `tarkov.dev 장기 장애로 오늘 백필 건너뜀(${e.message}) — 내일 자동 재시도`,
-        )
-        return null
-      }
-      const waitSec = Math.min(attempt * 10, 60)
-      console.warn(`tarkov.dev tasks 조회 실패(${e.message}) — ${waitSec}초 후 재시도`)
-      await new Promise((r) => setTimeout(r, waitSec * 1000))
-    }
+  try {
+    return await loadDataset('tasks')
+  } catch (e) {
+    console.error(
+      `tarkov.dev 장기 장애로 오늘 백필 건너뜀(${e.message}) — 내일 자동 재시도`,
+    )
+    return null
   }
 }
-const tasksJson = await fetchTasks()
-if (!tasksJson) process.exit(0)
-if (!tasksJson.data) throw new Error('tarkov.dev tasks 조회 실패')
-const enName = new Map(tasksJson.data.en.map((t) => [t.id, t.name]))
-const tasks = tasksJson.data.ko
+const tasksData = await fetchTasks()
+if (!tasksData) process.exit(0)
+const tasks = Object.values(tasksData.data.tasks)
   .filter((t) => t.wikiLink)
   .map((t) => ({
     id: t.id,
-    nameKo: t.name.trim(),
-    nameEn: (enName.get(t.id) ?? t.name).trim(),
+    nameKo: trKo(tasksData, t.name),
+    nameEn: trEn(tasksData, t.name),
     wikiLink: t.wikiLink,
   }))
 

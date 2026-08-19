@@ -1,9 +1,8 @@
 // 추천 빌드 — 정적 시드(public/data/builds.json, scripts/validate-builds.mjs로
 // 장착 검증됨)에 tarkov.dev 실시간 시세·스탯을 입혀서 카드로 보여준다.
-// 빌드에 등장하는 아이템만 ids로 콕 집어 받으므로 응답이 수십 KB로 가벼움.
+// 아이템 정보는 다른 탭과 공유하는 items 데이터셋 캐시에서 뽑아 쓴다(추가 요청 없음).
+import { loadItems, loadTraders, trEn, trKo } from './jsonApi'
 import { biName } from './quests'
-
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
 
 export type BuildCategory = 'ar' | 'smg' | 'dmr' | 'shotgun' | 'sniper'
 
@@ -185,95 +184,33 @@ export interface BuildItemInfo {
   }[]
 }
 
-interface RawBuildItem {
-  id: string
-  name: string
-  shortName: string
-  iconLink: string | null
-  image512pxLink: string | null
-  weight: number | null
-  avg24hPrice: number | null
-  category: { name: string; normalizedName: string } | null
-  properties: {
-    ergonomics?: number | null
-    recoilModifier?: number | null
-    recoilVertical?: number | null
-    recoilHorizontal?: number | null
-    fireRate?: number | null
-    caliber?: string | null
-    defaultPreset?: { image512pxLink: string | null } | null
-  } | null
-  buyFor: {
-    priceRUB: number
-    vendor: {
-      trader?: { name: string }
-      minTraderLevel?: number | null
-      taskUnlock?: { id: string } | null
-    }
-  }[]
-}
-
 let itemsCache: Promise<Map<string, BuildItemInfo>> | null = null
 
-// 빌드에 등장하는 전체 아이템(무기+부품)을 한 요청으로 — ko/en 별칭 병기
+// 빌드에 등장하는 전체 아이템(무기+부품)을 items 데이터셋에서 뽑아 한/영 병기로 만든다.
+// GraphQL의 item.category는 "가장 구체적인 분류" 하나였는데, JSON API는 상위 분류까지
+// 배열(categories)로 주고 [0]이 그 가장 구체적인 분류다 (assault-rifle → weapon → item 순 실측)
 export function fetchBuildItems(ids: string[]): Promise<Map<string, BuildItemInfo>> {
-  itemsCache ??= (async () => {
-    const idList = [...new Set(ids)]
-      .map((id) => `"${id.replace(/[^\w-]/g, '')}"`)
-      .join(',')
-    const query = `{
-      ko: items(ids: [${idList}], lang: ko) {
-        id name shortName iconLink image512pxLink weight avg24hPrice
-        category { name normalizedName }
-        properties {
-          ... on ItemPropertiesWeapon {
-            ergonomics recoilVertical recoilHorizontal fireRate caliber
-            defaultPreset { image512pxLink }
-          }
-          ... on ItemPropertiesWeaponMod { ergonomics recoilModifier }
-          ... on ItemPropertiesBarrel { ergonomics recoilModifier }
-          ... on ItemPropertiesMagazine { ergonomics recoilModifier }
-          ... on ItemPropertiesScope { ergonomics recoilModifier }
-        }
-        buyFor {
-          priceRUB
-          vendor { ... on TraderOffer { trader { name } minTraderLevel taskUnlock { id } } }
-        }
-      }
-      en: items(ids: [${idList}]) { id name category { name } }
-    }`
-    const res = await fetch(ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query }),
-    })
-    if (!res.ok) throw new Error(`tarkov.dev API 응답 오류 (HTTP ${res.status})`)
-    const json = (await res.json()) as {
-      data?: {
-        ko: RawBuildItem[]
-        en: { id: string; name: string; category: { name: string } | null }[]
-      }
-      errors?: { message: string }[]
-    }
-    if (json.errors?.length) throw new Error(`tarkov.dev API 오류: ${json.errors[0].message}`)
-    if (!json.data) throw new Error('tarkov.dev API가 데이터를 반환하지 않음')
-
-    const enName = new Map(json.data.en.map((i) => [i.id, i.name]))
-    const enCat = new Map(json.data.en.map((i) => [i.id, i.category?.name ?? null]))
-    return new Map(
-      json.data.ko.map((i) => [
-        i.id,
-        {
-          id: i.id,
-          displayName: biName(i.name.trim(), (enName.get(i.id) ?? i.name).trim()),
-          searchName: i.name.trim(),
-          shortName: i.shortName,
-          slotKo: i.category?.name ?? null,
-          slotEn: enCat.get(i.id) ?? i.category?.name ?? null,
-          slotNorm: i.category?.normalizedName ?? null,
+  itemsCache ??= Promise.all([loadItems(), loadTraders()])
+    .then(([items, traders]) => {
+      const out = new Map<string, BuildItemInfo>()
+      for (const id of new Set(ids)) {
+        const i = items.data.items[id]
+        if (!i) continue
+        const category = items.data.itemCategories[i.categories?.[0] ?? '']
+        const preset = i.properties?.defaultPreset
+          ? items.data.items[i.properties.defaultPreset]
+          : null
+        out.set(id, {
+          id,
+          displayName: biName(trKo(items, i.name), trEn(items, i.name)),
+          searchName: trKo(items, i.name),
+          shortName: trKo(items, i.shortName),
+          slotKo: category ? trKo(items, category.name) : null,
+          slotEn: category ? trEn(items, category.name) : null,
+          slotNorm: category?.normalizedName ?? null,
           iconLink: i.iconLink,
           imageLink: i.image512pxLink,
-          presetImageLink: i.properties?.defaultPreset?.image512pxLink ?? null,
+          presetImageLink: preset?.image512pxLink ?? null,
           weight: i.weight ?? 0,
           ergonomics: i.properties?.ergonomics ?? null,
           recoilModifier: i.properties?.recoilModifier ?? null,
@@ -282,20 +219,19 @@ export function fetchBuildItems(ids: string[]): Promise<Map<string, BuildItemInf
           fireRate: i.properties?.fireRate ?? null,
           caliber: i.properties?.caliber?.replace(/^Caliber/, '') ?? null,
           fleaPrice: i.avg24hPrice,
-          offers: i.buyFor
-            .filter((o) => o.vendor.trader)
-            .map((o) => ({
-              trader: o.vendor.trader!.name,
-              traderLevel: o.vendor.minTraderLevel ?? 1,
-              questLocked: o.vendor.taskUnlock != null,
-              priceRUB: o.priceRUB,
-            })),
-        },
-      ]),
-    )
-  })().catch((err: unknown) => {
-    itemsCache = null
-    throw err
-  })
+          offers: (i.buyFromTrader ?? []).map((o) => ({
+            trader: trKo(traders, traders.data[o.trader]?.name),
+            traderLevel: o.minTraderLevel ?? 1,
+            questLocked: o.taskUnlock != null,
+            priceRUB: o.priceRUB,
+          })),
+        })
+      }
+      return out
+    })
+    .catch((err: unknown) => {
+      itemsCache = null
+      throw err
+    })
   return itemsCache
 }

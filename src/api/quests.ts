@@ -1,7 +1,15 @@
-// tarkov.dev tasks 쿼리 — 한국어/영어 두 벌을 한 요청으로 받아 병합.
-// "한국어명 (English)" 병기를 위해 영어판은 이름 필드만 최소로 받는다.
-// 응답이 ~3MB라 퀘스트 탭을 처음 열 때 1회만 받아 세션 동안 캐시.
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
+// tarkov.dev tasks 데이터셋 → 퀘스트 모델. 이름은 로케일 사전 ko/en 두 벌로 병기한다
+// ("한국어명 (English)"). 참조가 전부 id라 items(아이템·열쇠)·traders·maps 데이터셋과
+// 조인하며, 네 데이터셋 모두 다른 탭과 공유하는 캐시라 탭을 옮겨도 재요청은 없다
+import {
+  loadDataset,
+  loadItems,
+  loadTraders,
+  trEn,
+  trKo,
+  type Dataset,
+  type RawItemsData,
+} from './jsonApi'
 
 export interface QuestItemRef {
   id: string
@@ -71,199 +79,155 @@ export interface Quest {
   unlockOffers: OfferUnlock[]
 }
 
-const QUERY = `{
-  ko: tasks(lang: ko) {
-    id name minPlayerLevel experience kappaRequired wikiLink
-    trader { id name imageLink }
-    map { id name normalizedName wiki }
-    taskRequirements { task { id } }
-    objectives {
-      id type description optional
-      maps { id name }
-      ... on TaskObjectiveItem { items { id name iconLink image512pxLink } count foundInRaid zones { map { id } position { x z } } requiredKeys { id name iconLink } }
-      ... on TaskObjectiveMark { markerItem { id name iconLink image512pxLink } zones { map { id } position { x z } } requiredKeys { id name iconLink } }
-      ... on TaskObjectiveQuestItem { questItem { id name } count zones { map { id } position { x z } } possibleLocations { map { id } positions { x z } } requiredKeys { id name iconLink } }
-      ... on TaskObjectiveShoot { targetNames count zones { map { id } position { x z } } }
-      ... on TaskObjectiveUseItem { useAny { id name iconLink image512pxLink } count zones { map { id } position { x z } } }
-      ... on TaskObjectiveBasic { zones { map { id } position { x z } } requiredKeys { id name iconLink } }
-    }
-    finishRewards {
-      items { item { id name iconLink image512pxLink } count }
-      traderStanding { trader { name } standing }
-      offerUnlock { level trader { id name } item { id name iconLink image512pxLink } }
-    }
-  }
-  en: tasks(lang: en) {
-    id name
-    objectives {
-      id
-      ... on TaskObjectiveItem { items { id name } requiredKeys { id name } }
-      ... on TaskObjectiveMark { markerItem { id name } requiredKeys { id name } }
-      ... on TaskObjectiveQuestItem { questItem { id name } requiredKeys { id name } }
-      ... on TaskObjectiveUseItem { useAny { id name } }
-      ... on TaskObjectiveBasic { requiredKeys { id name } }
-    }
-    finishRewards { items { item { id name } } offerUnlock { item { id name } } }
-  }
-}`
+// ---------- 원본(JSON API) 타입 — 참조는 전부 id ----------
 
-interface RawKoTask {
+interface RawPos {
+  x: number
+  z: number
+}
+
+interface RawObjective {
+  id: string
+  type: string
+  description: string | null
+  optional: boolean | null
+  maps?: string[] | null
+  items?: string[] | null
+  count?: number | null
+  foundInRaid?: boolean | null
+  markerItem?: string | null
+  questItem?: string | null
+  targetNames?: string[] | null
+  useAny?: string[] | null
+  requiredKeys?: string[][] | null
+  zones?: { map: string | null; position: RawPos | null }[] | null
+  possibleLocations?: { map: string | null; positions: RawPos[] | null }[] | null
+}
+
+interface RawTask {
   id: string
   name: string
+  trader: string
+  map: string | null
   minPlayerLevel: number | null
   experience: number | null
   kappaRequired: boolean | null
   wikiLink: string | null
-  trader: { id: string; name: string; imageLink: string | null }
-  map: { id: string; name: string; normalizedName: string; wiki: string | null } | null
-  taskRequirements: { task: { id: string } | null }[]
-  objectives: {
-    id: string
-    type: string
-    description: string | null
-    optional: boolean | null
-    maps: { id: string; name: string }[] | null
-    items?: RawItem[]
-    count?: number | null
-    foundInRaid?: boolean | null
-    markerItem?: RawItem | null
-    questItem?: { id: string; name: string } | null
-    targetNames?: (string | null)[] | null
-    useAny?: RawItem[] | null
-    requiredKeys?: { id: string; name: string; iconLink: string | null }[][] | null
-    zones?: { map: { id: string } | null; position: { x: number; z: number } | null }[] | null
-    possibleLocations?:
-      | { map: { id: string } | null; positions: { x: number; z: number }[] | null }[]
-      | null
-  }[]
+  taskRequirements: { task: string | null }[]
+  objectives: RawObjective[]
   finishRewards: {
-    items: { item: RawItem; count: number }[]
-    traderStanding: { trader: { name: string }; standing: number }[]
-    offerUnlock: {
-      level: number
-      trader: { id: string; name: string }
-      item: RawItem
-    }[]
+    items: { item: string; count: number }[]
+    traderStanding: { trader: string; standing: number }[]
+    offerUnlock: { level: number; trader: string; item: string }[]
   } | null
 }
 
-interface RawItem {
-  id: string
-  name: string
-  iconLink: string | null
-  image512pxLink: string | null
+interface RawTasksData {
+  tasks: Record<string, RawTask>
+  questItems: Record<string, { id: string; name: string }>
 }
 
-interface RawEnTask {
-  id: string
-  name: string
-  objectives: {
-    id: string
-    items?: { id: string; name: string }[]
-    markerItem?: { id: string; name: string } | null
-    questItem?: { id: string; name: string } | null
-    useAny?: { id: string; name: string }[] | null
-    requiredKeys?: { id: string; name: string }[][] | null
-  }[]
-  finishRewards: {
-    items: { item: { id: string; name: string } }[]
-    offerUnlock: { item: { id: string; name: string } }[]
-  } | null
+interface RawMapsData {
+  maps: Record<
+    string,
+    { id: string; name: string; normalizedName: string; wiki: string | null }
+  >
 }
 
-type RawOffer = NonNullable<RawKoTask['finishRewards']>['offerUnlock'][number]
-
-function dedupeOffers(offers: RawOffer[]): RawOffer[] {
-  const seen = new Set<string>()
-  return offers.filter((o) => {
-    const key = `${o.item.id}|${o.trader.id}|${o.level}`
-    if (seen.has(key)) return false
-    seen.add(key)
-    return true
-  })
+interface Datasets {
+  tasks: Dataset<RawTasksData>
+  items: Dataset<RawItemsData>
+  traders: Awaited<ReturnType<typeof loadTraders>>
+  maps: Dataset<RawMapsData>
 }
 
-function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
-  // 영어 이름 색인: 퀘스트명은 id로, 아이템명은 전역 아이템 id로
-  const enTaskName = new Map<string, string>()
-  const enItemName = new Map<string, string>()
-  for (const t of enTasks) {
-    enTaskName.set(t.id, t.name)
-    for (const o of t.objectives) {
-      for (const i of o.items ?? []) enItemName.set(i.id, i.name)
-      if (o.markerItem) enItemName.set(o.markerItem.id, o.markerItem.name)
-      if (o.questItem) enItemName.set(o.questItem.id, o.questItem.name)
-      for (const i of o.useAny ?? []) enItemName.set(i.id, i.name)
-      for (const grp of o.requiredKeys ?? [])
-        for (const k of grp) enItemName.set(k.id, k.name)
-    }
-    for (const r of t.finishRewards?.items ?? []) {
-      enItemName.set(r.item.id, r.item.name)
-    }
-    for (const o of t.finishRewards?.offerUnlock ?? []) {
-      enItemName.set(o.item.id, o.item.name)
+function buildQuests(d: Datasets): Quest[] {
+  const { tasks, items, traders, maps } = d
+
+  // 일반 아이템 참조 — 이름은 items 사전(ko/en), 아이콘·이미지는 아이템 본문
+  const itemRef = (id: string): QuestItemRef => {
+    const it = items.data.items[id]
+    return {
+      id,
+      nameKo: trKo(items, it?.name),
+      nameEn: trEn(items, it?.name),
+      iconLink: it?.iconLink ?? null,
+      imageLink: it?.image512pxLink ?? null,
     }
   }
 
-  const quests: Quest[] = koTasks.map((t) => {
-    const nameKo = t.name.trim()
-    const nameEn = (enTaskName.get(t.id) ?? t.name).trim()
+  // 퀘스트 아이템(회수·설치 대상)은 일반 아이템 목록에 없고 tasks 데이터셋 안에 따로 있다
+  const questItemRef = (id: string) => {
+    const qi = tasks.data.questItems[id]
     return {
-    id: t.id,
-    nameKo,
-    nameEn,
-    displayName: biName(nameKo, nameEn),
-    searchKey: `${nameKo} ${nameEn}`.toLowerCase(),
-    trader: t.trader,
-    map: t.map,
-    minPlayerLevel: t.minPlayerLevel ?? 1,
-    experience: t.experience ?? 0,
-    kappaRequired: t.kappaRequired ?? false,
-    wikiLink: t.wikiLink,
-    requires: t.taskRequirements
-      .map((r) => r.task?.id)
-      .filter((id): id is string => Boolean(id)),
-    unlocks: [],
-    objectives: t.objectives.map((o) => {
-      const ref = (i: RawItem): QuestItemRef => ({
-        id: i.id,
-        nameKo: i.name.trim(),
-        nameEn: (enItemName.get(i.id) ?? i.name).trim(),
-        iconLink: i.iconLink,
-        imageLink: i.image512pxLink,
-      })
-      return {
+      id,
+      nameKo: trKo(tasks, qi?.name),
+      nameEn: trEn(tasks, qi?.name),
+    }
+  }
+
+  const quests: Quest[] = Object.values(tasks.data.tasks).map((t) => {
+    const nameKo = trKo(tasks, t.name)
+    const nameEn = trEn(tasks, t.name)
+    const trader = traders.data[t.trader]
+    const map = t.map ? maps.data.maps[t.map] : null
+    return {
+      id: t.id,
+      nameKo,
+      nameEn,
+      displayName: biName(nameKo, nameEn),
+      searchKey: `${nameKo} ${nameEn}`.toLowerCase(),
+      trader: {
+        id: t.trader,
+        name: trKo(traders, trader?.name),
+        imageLink: trader?.imageLink ?? null,
+      },
+      map: map
+        ? {
+            id: map.id,
+            name: trKo(maps, map.name),
+            normalizedName: map.normalizedName,
+            wiki: map.wiki,
+          }
+        : null,
+      minPlayerLevel: t.minPlayerLevel ?? 1,
+      experience: t.experience ?? 0,
+      kappaRequired: t.kappaRequired ?? false,
+      wikiLink: t.wikiLink,
+      requires: t.taskRequirements
+        .map((r) => r.task)
+        .filter((id): id is string => Boolean(id)),
+      unlocks: [],
+      objectives: t.objectives.map((o) => ({
         id: o.id,
         type: o.type,
-        description: (o.description ?? '').trim(),
+        description: trKo(tasks, o.description),
         optional: o.optional ?? false,
-        maps: o.maps ?? [],
-        ...(o.items?.length ? { items: o.items.map(ref) } : {}),
+        maps: (o.maps ?? []).map((id) => ({
+          id,
+          name: trKo(maps, maps.data.maps[id]?.name),
+        })),
+        ...(o.items?.length ? { items: o.items.map(itemRef) } : {}),
         ...(o.count != null ? { count: o.count } : {}),
         ...(o.foundInRaid != null ? { foundInRaid: o.foundInRaid } : {}),
-        ...(o.markerItem ? { markerItem: ref(o.markerItem) } : {}),
-        ...(o.questItem
-          ? {
-              questItem: {
-                id: o.questItem.id,
-                nameKo: o.questItem.name.trim(),
-                nameEn: (enItemName.get(o.questItem.id) ?? o.questItem.name).trim(),
-              },
-            }
-          : {}),
+        ...(o.markerItem ? { markerItem: itemRef(o.markerItem) } : {}),
+        ...(o.questItem ? { questItem: questItemRef(o.questItem) } : {}),
         ...(o.targetNames?.length
-          ? { targetNames: o.targetNames.filter((n): n is string => Boolean(n)) }
+          ? { targetNames: o.targetNames.map((n) => trKo(tasks, n)) }
           : {}),
-        ...(o.useAny?.length ? { useItems: o.useAny.map(ref) } : {}),
+        ...(o.useAny?.length ? { useItems: o.useAny.map(itemRef) } : {}),
         ...(o.requiredKeys?.length
           ? {
               requiredKeys: o.requiredKeys.map((grp) =>
-                grp.map((k) => ({
-                  id: k.id,
-                  nameKo: k.name.trim(),
-                  nameEn: (enItemName.get(k.id) ?? k.name).trim(),
-                  iconLink: k.iconLink,
-                })),
+                grp.map((id) => {
+                  const ref = itemRef(id)
+                  return {
+                    id: ref.id,
+                    nameKo: ref.nameKo,
+                    nameEn: ref.nameEn,
+                    iconLink: ref.iconLink,
+                  }
+                }),
               ),
             }
           : {}),
@@ -272,46 +236,34 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
           const locs: { mapId: string; x: number; z: number }[] = []
           for (const zn of o.zones ?? []) {
             if (zn.map && zn.position) {
-              locs.push({ mapId: zn.map.id, x: zn.position.x, z: zn.position.z })
+              locs.push({ mapId: zn.map, x: zn.position.x, z: zn.position.z })
             }
           }
           for (const pl of o.possibleLocations ?? []) {
             if (!pl.map) continue
             for (const p of pl.positions ?? []) {
-              locs.push({ mapId: pl.map.id, x: p.x, z: p.z })
+              locs.push({ mapId: pl.map, x: p.x, z: p.z })
             }
           }
           return locs.length ? { locations: locs } : {}
         })(),
-      }
-    }),
-    rewards: {
-      items: (t.finishRewards?.items ?? []).map((r) => ({
-        id: r.item.id,
-        nameKo: r.item.name.trim(),
-        nameEn: (enItemName.get(r.item.id) ?? r.item.name).trim(),
-        iconLink: r.item.iconLink,
-        imageLink: r.item.image512pxLink,
-        count: r.count,
       })),
-      standing: (t.finishRewards?.traderStanding ?? []).map((s) => ({
-        trader: s.trader.name,
-        standing: s.standing,
-      })),
-    },
-    // 일부 아이템명에 후행 공백이 있어 trim 필수, API가 같은 오퍼를 태스크 안에
-    // 두 번 주는 경우가 있어(Gunsmith Part 4 등 5건 실측) 중복 제거도 필수
-    unlockOffers: dedupeOffers(t.finishRewards?.offerUnlock ?? []).map((o) => ({
-      level: o.level,
-      trader: o.trader,
-      item: {
-        id: o.item.id,
-        nameKo: o.item.name.trim(),
-        nameEn: (enItemName.get(o.item.id) ?? o.item.name).trim(),
-        iconLink: o.item.iconLink,
-        imageLink: o.item.image512pxLink,
+      rewards: {
+        items: (t.finishRewards?.items ?? []).map((r) => ({
+          ...itemRef(r.item),
+          count: r.count,
+        })),
+        standing: (t.finishRewards?.traderStanding ?? []).map((s) => ({
+          trader: trKo(traders, traders.data[s.trader]?.name),
+          standing: s.standing,
+        })),
       },
-    })),
+      // API가 같은 오퍼를 태스크 안에 두 번 주는 경우가 있어(Gunsmith Part 4 등 실측) 중복 제거 필수
+      unlockOffers: dedupeOffers(t.finishRewards?.offerUnlock ?? []).map((o) => ({
+        level: o.level,
+        trader: { id: o.trader, name: trKo(traders, traders.data[o.trader]?.name) },
+        item: itemRef(o.item),
+      })),
     }
   })
 
@@ -321,12 +273,28 @@ function mergeTasks(koTasks: RawKoTask[], enTasks: RawEnTask[]): Quest[] {
   return dedupeTasks(quests)
 }
 
+interface RawOffer {
+  level: number
+  trader: string
+  item: string
+}
+
+function dedupeOffers(offers: RawOffer[]): RawOffer[] {
+  const seen = new Set<string>()
+  return offers.filter((o) => {
+    const key = `${o.item}|${o.trader}|${o.level}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
 // (영어명+상인) 기준 중복 제거 — 대표는 목표가 가장 많은 것(동률이면 id 작은 것).
 // requires는 대표 id로 재매핑하고 unlocks(후행)는 대표 집합에서 다시 계산.
 function dedupeTasks(quests: Quest[]): Quest[] {
   const groups = new Map<string, Quest[]>()
   for (const q of quests) {
-    const key = `${q.nameEn || q.id} ${q.trader.id}`
+    const key = `${q.nameEn || q.id} ${q.trader.id}`
     const arr = groups.get(key)
     if (arr) arr.push(q)
     else groups.set(key, [q])
@@ -366,23 +334,15 @@ function dedupeTasks(quests: Quest[]): Quest[] {
 let questsCache: Promise<Quest[]> | null = null
 
 export function fetchQuests(): Promise<Quest[]> {
-  questsCache ??= fetch(ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: QUERY }),
-  })
-    .then(async (res) => {
-      if (!res.ok) throw new Error(`tarkov.dev API 응답 오류 (HTTP ${res.status})`)
-      const json = (await res.json()) as {
-        data?: { ko: RawKoTask[]; en: RawEnTask[] }
-        errors?: { message: string }[]
-      }
-      if (json.errors?.length) {
-        throw new Error(`tarkov.dev API 오류: ${json.errors[0].message}`)
-      }
-      if (!json.data) throw new Error('tarkov.dev API가 데이터를 반환하지 않음')
-      return mergeTasks(json.data.ko, json.data.en)
-    })
+  questsCache ??= Promise.all([
+    loadDataset<RawTasksData>('tasks'),
+    loadItems(),
+    loadTraders(),
+    loadDataset<RawMapsData>('maps'),
+  ])
+    .then(([tasks, items, traders, maps]) =>
+      buildQuests({ tasks, items, traders, maps }),
+    )
     .catch((err: unknown) => {
       questsCache = null // 실패는 캐시하지 않고 재시도 가능하게
       throw err

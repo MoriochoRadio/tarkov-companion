@@ -1,25 +1,19 @@
 // 모딩 탭 데이터 — tarkov.dev의 무기/모드 슬롯 호환 데이터.
-// 전체 호환 트리는 무기당 수천 항목이라 한 번에 받지 않고,
-// (1) 무기 목록은 경량 쿼리 1회, (2) 슬롯·부품은 "지금 보는 아이템" 단위로
-// lazy 조회 + 캐시 (실측: M4A1 1단계 응답 ~63KB).
-// 슬롯 필드는 무기(ItemPropertiesWeapon)와 모드(WeaponMod/Barrel/Magazine/Scope)
-// 양쪽에 있어서, 같은 함수로 하위 슬롯 드릴다운까지 처리한다.
+// GraphQL 시절엔 무기 목록 1회 + "지금 보는 아이템"의 슬롯을 lazy 조회했지만,
+// JSON API는 items 데이터셋 한 벌에 슬롯·호환 부품 id가 전부 들어 있어 추가 요청이 없다.
+// 슬롯 필드는 무기와 모드(WeaponMod/Barrel/Magazine/Scope) 양쪽에 있어서,
+// 같은 함수로 하위 슬롯 드릴다운까지 처리한다.
+import {
+  loadItems,
+  loadTraders,
+  slotKey,
+  trEn,
+  trKo,
+  type Dataset,
+  type RawItem,
+  type RawItemsData,
+} from './jsonApi'
 import { biName } from './quests'
-
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
-
-async function gql<T>(query: string): Promise<T> {
-  const res = await fetch(ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query }),
-  })
-  if (!res.ok) throw new Error(`tarkov.dev API 응답 오류 (HTTP ${res.status})`)
-  const json = (await res.json()) as { data?: T; errors?: { message: string }[] }
-  if (json.errors?.length) throw new Error(`tarkov.dev API 오류: ${json.errors[0].message}`)
-  if (!json.data) throw new Error('tarkov.dev API가 데이터를 반환하지 않음')
-  return json.data
-}
 
 // ---------- 무기 목록 ----------
 
@@ -36,57 +30,32 @@ export interface WeaponSummary {
   recoilVertical: number | null
 }
 
-interface RawWeapon {
-  id: string
-  name: string
-  shortName: string
-  iconLink: string | null
-  types: string[]
-  properties: {
-    caliber?: string | null
-    ergonomics?: number | null
-    recoilVertical?: number | null
-  } | null
-}
-
-const WEAPONS_QUERY = `{
-  ko: items(lang: ko, types: gun) {
-    id name shortName iconLink types
-    properties { ... on ItemPropertiesWeapon { caliber ergonomics recoilVertical } }
-  }
-  en: items(lang: en, types: gun) { id name }
-}`
-
 let weaponsCache: Promise<WeaponSummary[]> | null = null
 
 export function fetchWeapons(): Promise<WeaponSummary[]> {
-  weaponsCache ??= gql<{ ko: RawWeapon[]; en: { id: string; name: string }[] }>(
-    WEAPONS_QUERY,
-  )
-    .then((d) => {
-      const enName = new Map(d.en.map((w) => [w.id, w.name]))
-      return (
-        d.ko
-          // "M4A1 표준형" 같은 조립 프리셋은 베이스 무기와 중복이라 제외
-          .filter((w) => !w.types.includes('preset'))
-          .map((w) => {
-            const nameKo = w.name.trim()
-            const nameEn = (enName.get(w.id) ?? w.name).trim()
-            return {
-              id: w.id,
-              nameKo,
-              nameEn,
-              shortName: w.shortName,
-              displayName: biName(nameKo, nameEn),
-              searchKey: `${nameKo} ${nameEn} ${w.shortName}`.toLowerCase(),
-              iconLink: w.iconLink,
-              caliber: w.properties?.caliber?.replace(/^Caliber/, '') ?? null,
-              ergonomics: w.properties?.ergonomics ?? null,
-              recoilVertical: w.properties?.recoilVertical ?? null,
-            }
-          })
-      )
-    })
+  weaponsCache ??= loadItems()
+    .then((d) =>
+      Object.values(d.data.items)
+        // "M4A1 표준형" 같은 조립 프리셋은 베이스 무기와 중복이라 제외
+        .filter((w) => w.types?.includes('gun') && !w.types.includes('preset'))
+        .map((w) => {
+          const nameKo = trKo(d, w.name)
+          const nameEn = trEn(d, w.name)
+          const shortName = trKo(d, w.shortName)
+          return {
+            id: w.id,
+            nameKo,
+            nameEn,
+            shortName,
+            displayName: biName(nameKo, nameEn),
+            searchKey: `${nameKo} ${nameEn} ${shortName}`.toLowerCase(),
+            iconLink: w.iconLink,
+            caliber: w.properties?.caliber?.replace(/^Caliber/, '') ?? null,
+            ergonomics: w.properties?.ergonomics ?? null,
+            recoilVertical: w.properties?.recoilVertical ?? null,
+          }
+        }),
+    )
     .catch((err: unknown) => {
       weaponsCache = null
       throw err
@@ -127,107 +96,33 @@ export interface ModSlot {
   parts: ModPart[]
 }
 
-// 모드 속성은 타입별 인라인 프래그먼트가 필요 — 필드 구성은 전부 동일
-const MOD_PROP_TYPES = [
-  'ItemPropertiesWeaponMod',
-  'ItemPropertiesBarrel',
-  'ItemPropertiesMagazine',
-  'ItemPropertiesScope',
-]
-const modProps = MOD_PROP_TYPES.map(
-  (t) =>
-    `... on ${t} { ergonomics recoilModifier ${
-      t === 'ItemPropertiesMagazine' ? 'capacity' : ''
-    } slots { id } }`,
-).join(' ')
-
-const SLOT_FIELDS_KO = `slots {
-  id name required
-  filters { allowedItems {
-    id name shortName iconLink avg24hPrice
-    properties { ${modProps} }
-    buyFor {
-      priceRUB
-      vendor { name ... on TraderOffer { trader { name } minTraderLevel taskUnlock { id } } }
-    }
-  } }
-}`
-const SLOT_FIELDS_EN = `slots { id name filters { allowedItems { id name } } }`
-
-// 슬롯을 가질 수 있는 속성 타입 전부에 같은 필드를 요청
-const slotsOn = (fields: string) =>
-  ['ItemPropertiesWeapon', ...MOD_PROP_TYPES]
-    .map((t) => `... on ${t} { ${fields} }`)
-    .join(' ')
-
-interface RawPart {
-  id: string
-  name: string
-  shortName: string
-  iconLink: string | null
-  avg24hPrice: number | null
-  properties: {
-    ergonomics?: number | null
-    recoilModifier?: number | null
-    capacity?: number | null
-    slots?: { id: string }[]
-  } | null
-  buyFor: {
-    priceRUB: number
-    vendor: {
-      name: string
-      trader?: { name: string }
-      minTraderLevel?: number | null
-      taskUnlock?: { id: string } | null
-    }
-  }[]
-}
-
-interface RawSlots {
-  slots?: {
-    id: string
-    name: string
-    required: boolean | null
-    filters: { allowedItems: RawPart[] } | null
-  }[]
-}
-
 const slotsCache = new Map<string, Promise<ModSlot[]>>()
 
-export function fetchItemSlots(itemId: string): Promise<ModSlot[]> {
-  const id = itemId.replace(/[^\w-]/g, '') // 쿼리에 끼워 넣으므로 한 번 거름
-  let cached = slotsCache.get(id)
-  if (cached) return cached
-
-  const query = `{
-    ko: item(id: "${id}", lang: ko) { id properties { ${slotsOn(SLOT_FIELDS_KO)} } }
-    en: item(id: "${id}", lang: en) { id properties { ${slotsOn(SLOT_FIELDS_EN)} } }
-  }`
-
-  cached = gql<{
-    ko: { properties: RawSlots | null }
-    en: { properties: { slots?: { id: string; name: string; filters: { allowedItems: { id: string; name: string }[] } | null }[] } | null }
-  }>(query)
-    .then((d) => {
-      const enSlotName = new Map<string, string>()
-      const enItemName = new Map<string, string>()
-      for (const s of d.en.properties?.slots ?? []) {
-        enSlotName.set(s.id, s.name)
-        for (const i of s.filters?.allowedItems ?? []) enItemName.set(i.id, i.name)
-      }
-      return (d.ko.properties?.slots ?? []).map((s): ModSlot => ({
-        id: s.id,
-        nameKo: s.name.trim(),
-        nameEn: (enSlotName.get(s.id) ?? s.name).trim(),
-        required: s.required ?? false,
-        parts: (s.filters?.allowedItems ?? []).map((p): ModPart => {
-          const nameKo = p.name.trim()
-          const nameEn = (enItemName.get(p.id) ?? p.name).trim()
+function buildSlots(
+  itemId: string,
+  items: Dataset<RawItemsData>,
+  traders: Awaited<ReturnType<typeof loadTraders>>,
+): ModSlot[] {
+  const item: RawItem | undefined = items.data.items[itemId]
+  return (item?.properties?.slots ?? []).map((s): ModSlot => {
+    // 슬롯 이름은 본문에 nameId(mod_pistol_grip)로만 오고 사전 키는 대문자
+    const key = slotKey(s.nameId)
+    return {
+      id: s.id,
+      nameKo: trKo(items, key),
+      nameEn: trEn(items, key),
+      required: s.required ?? false,
+      parts: (s.filters?.allowedItems ?? [])
+        .map((pid) => items.data.items[pid])
+        .filter((p): p is RawItem => Boolean(p))
+        .map((p): ModPart => {
+          const nameKo = trKo(items, p.name)
+          const nameEn = trEn(items, p.name)
           return {
             id: p.id,
             nameKo,
             nameEn,
-            shortName: p.shortName,
+            shortName: trKo(items, p.shortName),
             displayName: biName(nameKo, nameEn),
             searchKey: `${nameKo} ${nameEn}`.toLowerCase(),
             iconLink: p.iconLink,
@@ -236,22 +131,28 @@ export function fetchItemSlots(itemId: string): Promise<ModSlot[]> {
             capacity: p.properties?.capacity ?? null,
             hasSubSlots: (p.properties?.slots?.length ?? 0) > 0,
             fleaPrice: p.avg24hPrice,
-            offers: p.buyFor
-              .filter((o) => o.vendor.trader)
-              .map((o) => ({
-                trader: o.vendor.trader!.name,
-                traderLevel: o.vendor.minTraderLevel ?? 1,
-                questLocked: o.vendor.taskUnlock != null,
-                priceRUB: o.priceRUB,
-              })),
+            offers: (p.buyFromTrader ?? []).map((o) => ({
+              trader: trKo(traders, traders.data[o.trader]?.name),
+              traderLevel: o.minTraderLevel ?? 1,
+              questLocked: o.taskUnlock != null,
+              priceRUB: o.priceRUB,
+            })),
           }
         }),
-      }))
-    })
+    }
+  })
+}
+
+export function fetchItemSlots(itemId: string): Promise<ModSlot[]> {
+  let cached = slotsCache.get(itemId)
+  if (cached) return cached
+
+  cached = Promise.all([loadItems(), loadTraders()])
+    .then(([items, traders]) => buildSlots(itemId, items, traders))
     .catch((err: unknown) => {
-      slotsCache.delete(id) // 실패는 캐시하지 않고 재시도 가능하게
+      slotsCache.delete(itemId) // 실패는 캐시하지 않고 재시도 가능하게
       throw err
     })
-  slotsCache.set(id, cached)
+  slotsCache.set(itemId, cached)
   return cached
 }

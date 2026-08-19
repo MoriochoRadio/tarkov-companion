@@ -1,7 +1,8 @@
-// 돈벌이 탭 데이터 — 은신처 크래프트(211개)·트레이더 바터(787개)의 레시피만
-// 받고, 아이템 이름·아이콘·시세는 기존 전체 아이템 캐시(fetchAllItems)와
-// 조인한다. 응답은 id+개수뿐이라 수십 KB.
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
+// 돈벌이 탭 데이터 — 은신처 크래프트(약 210개)·트레이더 바터(약 790개)의 레시피만
+// 받고, 아이템 이름·아이콘·시세는 기존 전체 아이템 캐시(fetchAllItems)와 조인한다.
+// crafts/barters 데이터셋은 id 참조뿐이라 가볍고(수십 KB) 로케일 사전도 없다 →
+// 스테이션·트레이더 이름은 hideout/traders 데이터셋에서 가져온다
+import { loadDataset, loadTraders, trKo, type Dataset } from './jsonApi'
 
 export interface ProfitIO {
   id: string
@@ -28,49 +29,39 @@ export interface BarterInfo {
   outputs: ProfitIO[]
 }
 
-const QUERY = `{
-  crafts(lang: ko) {
-    id station { id name } level duration
-    requiredItems { item { id } count attributes { type } }
-    rewardItems { item { id } count }
-  }
-  barters(lang: ko) {
-    id trader { name } level taskUnlock { id }
-    requiredItems { item { id } count }
-    rewardItems { item { id } count }
-  }
-}`
-
 interface RawIO {
-  item: { id: string }
+  item: string
   count: number
-  attributes?: { type: string }[] | null
+  attributes?: { tool?: boolean } | null
 }
 
-interface RawData {
-  crafts: {
-    id: string
-    station: { id: string; name: string }
-    level: number
-    duration: number
-    requiredItems: RawIO[]
-    rewardItems: RawIO[]
-  }[]
-  barters: {
-    id: string
-    trader: { name: string }
-    level: number
-    taskUnlock: { id: string } | null
-    requiredItems: RawIO[]
-    rewardItems: RawIO[]
-  }[]
+interface RawCraft {
+  id: string
+  station: string
+  level: number
+  duration: number
+  requiredItems: RawIO[]
+  productItem: RawIO
+}
+
+interface RawBarter {
+  id: string
+  trader: string
+  minTraderLevel: number | null
+  taskUnlock: string | null
+  requiredItems: RawIO[]
+  offeredItem: RawIO
+}
+
+interface RawStations {
+  [id: string]: { id: string; name: string }
 }
 
 const mapIO = (list: RawIO[]): ProfitIO[] =>
   list.map((r) => ({
-    id: r.item.id,
+    id: r.item,
     count: r.count,
-    isTool: (r.attributes ?? []).some((a) => a.type === 'tool'),
+    isTool: r.attributes?.tool === true,
   }))
 
 let cache: Promise<{ crafts: CraftInfo[]; barters: BarterInfo[] }> | null = null
@@ -79,41 +70,36 @@ export function fetchProfitData(): Promise<{
   crafts: CraftInfo[]
   barters: BarterInfo[]
 }> {
-  cache ??= fetch(ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: QUERY }),
-  })
-    .then(async (res) => {
-      if (!res.ok) throw new Error(`tarkov.dev API 응답 오류 (HTTP ${res.status})`)
-      const json = (await res.json()) as {
-        data?: RawData
-        errors?: { message: string }[]
-      }
-      if (json.errors?.length) {
-        throw new Error(`tarkov.dev API 오류: ${json.errors[0].message}`)
-      }
-      if (!json.data) throw new Error('tarkov.dev API가 데이터를 반환하지 않음')
-      return {
-        crafts: json.data.crafts.map((c) => ({
-          id: c.id,
-          stationId: c.station.id,
-          stationName: c.station.name.trim(),
-          level: c.level,
-          duration: c.duration,
-          inputs: mapIO(c.requiredItems),
-          outputs: mapIO(c.rewardItems),
-        })),
-        barters: json.data.barters.map((b) => ({
-          id: b.id,
-          trader: b.trader.name.trim(),
-          level: b.level,
-          questLocked: b.taskUnlock != null,
-          inputs: mapIO(b.requiredItems),
-          outputs: mapIO(b.rewardItems),
-        })),
-      }
-    })
+  cache ??= Promise.all([
+    loadDataset<RawCraft[]>('crafts'),
+    loadDataset<RawBarter[]>('barters'),
+    loadDataset<RawStations>('hideout'),
+    loadTraders(),
+  ])
+    .then(([crafts, barters, stations, traders]: [
+      Dataset<RawCraft[]>,
+      Dataset<RawBarter[]>,
+      Dataset<RawStations>,
+      Awaited<ReturnType<typeof loadTraders>>,
+    ]) => ({
+      crafts: crafts.data.map((c) => ({
+        id: c.id,
+        stationId: c.station,
+        stationName: trKo(stations, stations.data[c.station]?.name),
+        level: c.level,
+        duration: c.duration,
+        inputs: mapIO(c.requiredItems),
+        outputs: mapIO([c.productItem]),
+      })),
+      barters: barters.data.map((b) => ({
+        id: b.id,
+        trader: trKo(traders, traders.data[b.trader]?.name),
+        level: b.minTraderLevel ?? 1,
+        questLocked: b.taskUnlock != null,
+        inputs: mapIO(b.requiredItems),
+        outputs: mapIO([b.offeredItem]),
+      })),
+    }))
     .catch((err: unknown) => {
       cache = null // 실패는 캐시하지 않고 재시도 가능하게
       throw err

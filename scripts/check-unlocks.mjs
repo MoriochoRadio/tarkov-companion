@@ -3,25 +3,39 @@
 //  2) 인기 해금 아이템 체인을 출력 (사람 눈 검증용)
 //  3) 해금 퀘스트의 EFT 위키 원문에 해당 아이템이 실제로 언급되는지 대조
 // 사용: node scripts/check-unlocks.mjs
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
+// 데이터원은 json.tarkov.dev (GraphQL 장기 장애로 이전). 영어 기준으로 검증한다
+import { loadDataset, trEn } from './tarkov-json.mjs'
 
-const QUERY = `{
-  tasks(lang: en) {
-    id name minPlayerLevel wikiLink
-    trader { name }
-    taskRequirements { task { id } }
-    finishRewards { offerUnlock { level trader { name } item { id name shortName } } }
-  }
-}`
+const tasksData = await loadDataset('tasks')
+const itemsData = await loadDataset('items')
+const tradersData = await loadDataset('traders')
 
-const res = await fetch(ENDPOINT, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ query: QUERY }),
-})
-const json = await res.json()
-if (json.errors?.length) throw new Error(json.errors[0].message)
-const tasks = json.data.tasks
+// JSON API는 참조가 전부 id — 예전 GraphQL 응답 모양으로 감싸 아래 검증 로직은 그대로 둔다
+const traderName = (id) => trEn(tradersData, tradersData.data[id]?.name)
+const tasks = Object.values(tasksData.data.tasks).map((t) => ({
+  id: t.id,
+  name: trEn(tasksData, t.name),
+  minPlayerLevel: t.minPlayerLevel ?? 1,
+  wikiLink: t.wikiLink,
+  trader: { name: traderName(t.trader) },
+  taskRequirements: (t.taskRequirements ?? []).map((r) => ({
+    task: r.task ? { id: r.task } : null,
+  })),
+  finishRewards: {
+    offerUnlock: (t.finishRewards?.offerUnlock ?? []).map((o) => {
+      const item = itemsData.data.items[o.item]
+      return {
+        level: o.level,
+        trader: { name: traderName(o.trader) },
+        item: {
+          id: o.item,
+          name: trEn(itemsData, item?.name),
+          shortName: trEn(itemsData, item?.shortName),
+        },
+      }
+    }),
+  },
+}))
 const byId = new Map(tasks.map((t) => [t.id, t]))
 
 // UnlocksTab.buildChain과 동일한 DFS 후위 순회

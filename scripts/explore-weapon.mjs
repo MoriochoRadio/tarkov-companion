@@ -6,7 +6,8 @@
 //   --tier N  현금 오퍼 기준 트레이더 레벨 N 이하로 살 수 있는 부품만
 //   --top N   슬롯당 표시 수 (에르고 내림차순, 기본 12)
 // 하위 슬롯이 있는 부품(핸드가드 등)은 그 부품 id로 다시 실행해 안쪽을 본다.
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
+// 데이터원은 json.tarkov.dev (GraphQL 장기 장애로 이전)
+import { loadDataset, trKo } from './tarkov-json.mjs'
 
 const args = process.argv.slice(2)
 const ids = args.filter((a) => /^[\w-]{20,}$/.test(a))
@@ -18,44 +19,61 @@ if (ids.length === 0) {
   process.exit(1)
 }
 
-const SLOT_TYPES = [
-  'ItemPropertiesWeapon',
-  'ItemPropertiesWeaponMod',
-  'ItemPropertiesBarrel',
-  'ItemPropertiesMagazine',
-  'ItemPropertiesScope',
-]
-const slotFields = `slots {
-  id name required
-  filters { allowedItems {
-    id name avg24hPrice
-    properties { ${SLOT_TYPES.slice(1)
-      .map((t) => `... on ${t} { ergonomics recoilModifier slots { id } }`)
-      .join(' ')} }
-    buyFor { priceRUB vendor { name ... on TraderOffer { trader { name } minTraderLevel taskUnlock { id } } } }
-  } }
-}`
-const query = `{ ${ids
-  .map(
-    (id, i) =>
-      `w${i}: item(id: "${id}") { id name properties { ${SLOT_TYPES.map(
-        (t) => `... on ${t} { ${t === 'ItemPropertiesWeapon' ? 'ergonomics recoilVertical ' : ''}${slotFields} }`,
-      ).join(' ')} } }`,
-  )
-  .join(' ')} }`
+const dataset = await loadDataset('items')
+const traders = await loadDataset('traders')
+const rawItems = dataset.data.items
 
-const res = await fetch(ENDPOINT, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ query }),
-}).then((r) => r.json())
-if (res.errors) {
-  console.error(JSON.stringify(res.errors, null, 1))
-  process.exit(1)
+// JSON API는 참조가 전부 id — 예전 GraphQL 응답 모양으로 감싸 아래 출력 로직은 그대로 둔다
+const offersOf = (i) =>
+  (i.buyFromTrader ?? []).map((o) => ({
+    priceRUB: o.priceRUB,
+    vendor: {
+      trader: { name: trKo(traders, traders.data[o.trader]?.name) },
+      minTraderLevel: o.minTraderLevel ?? 1,
+      taskUnlock: o.taskUnlock ? { id: o.taskUnlock } : null,
+    },
+  }))
+
+const partOf = (id) => {
+  const i = rawItems[id]
+  if (!i) return null
+  return {
+    id,
+    name: trKo(dataset, i.name),
+    avg24hPrice: i.avg24hPrice,
+    properties: {
+      ergonomics: i.properties?.ergonomics ?? null,
+      recoilModifier: i.properties?.recoilModifier ?? null,
+      slots: i.properties?.slots ?? [],
+    },
+    buyFor: offersOf(i),
+  }
 }
 
+const items = ids.map((id) => {
+  const i = rawItems[id]
+  if (!i) return null
+  return {
+    id,
+    name: trKo(dataset, i.name),
+    properties: {
+      ergonomics: i.properties?.ergonomics ?? null,
+      recoilVertical: i.properties?.recoilVertical ?? null,
+      slots: (i.properties?.slots ?? []).map((sl) => ({
+        id: sl.id,
+        // 슬롯 이름은 본문에 nameId(mod_pistol_grip)로만 오고 사전 키는 대문자
+        name: trKo(dataset, (sl.nameId ?? '').toUpperCase()),
+        required: sl.required,
+        filters: {
+          allowedItems: (sl.filters?.allowedItems ?? []).map(partOf).filter(Boolean),
+        },
+      })),
+    },
+  }
+})
+
 for (const [i] of ids.entries()) {
-  const item = res.data[`w${i}`]
+  const item = items[i]
   if (!item) {
     console.log(`!! ${ids[i]} — 아이템 없음`)
     continue

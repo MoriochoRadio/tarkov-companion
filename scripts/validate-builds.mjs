@@ -11,62 +11,58 @@
 // 사용: node scripts/validate-builds.mjs   (빌드 수정·추가 후 반드시 실행)
 import { readFile } from 'node:fs/promises'
 
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
-const CHUNK = 40
+// 데이터원은 json.tarkov.dev (GraphQL 장기 장애로 이전) — 아이템 데이터셋을 한 번 받아
+// 예전 GraphQL 응답과 같은 모양으로 감싸서 아래 검증 로직은 그대로 둔다
+import { loadDataset, trKo } from './tarkov-json.mjs'
 
 const file = JSON.parse(
   await readFile(new URL('../public/data/builds.json', import.meta.url), 'utf8'),
 )
 const builds = file.builds
 
-const SLOT_TYPES = [
-  'ItemPropertiesWeapon',
-  'ItemPropertiesWeaponMod',
-  'ItemPropertiesBarrel',
-  'ItemPropertiesMagazine',
-  'ItemPropertiesScope',
-]
-const propsFragment = SLOT_TYPES.map(
-  (t) =>
-    `... on ${t} { slots { filters { allowedItems { id } } } ${
-      t === 'ItemPropertiesWeapon' ? 'defaultPreset { containsItems { item { id } } }' : ''
-    } }`,
-).join(' ')
+const dataset = await loadDataset('items')
+const traders = await loadDataset('traders')
+const rawItems = dataset.data.items
 
-async function fetchItems(ids) {
+// JSON API는 참조가 전부 id — 예전 GraphQL 응답 모양(중첩 객체)으로 변환
+function adapt(id) {
+  const i = rawItems[id]
+  if (!i) return null
+  const preset = i.properties?.defaultPreset ? rawItems[i.properties.defaultPreset] : null
+  return {
+    id,
+    name: trKo(dataset, i.name),
+    properties: {
+      slots: (i.properties?.slots ?? []).map((s) => ({
+        filters: { allowedItems: (s.filters?.allowedItems ?? []).map((a) => ({ id: a })) },
+      })),
+      defaultPreset: preset
+        ? { containsItems: (preset.containsItems ?? []).map((c) => ({ item: { id: c.item } })) }
+        : null,
+    },
+    buyFor: (i.buyFromTrader ?? []).map((o) => ({
+      priceRUB: o.priceRUB,
+      vendor: {
+        trader: { name: trKo(traders, traders.data[o.trader]?.name) },
+        minTraderLevel: o.minTraderLevel,
+        taskUnlock: o.taskUnlock ? { id: o.taskUnlock } : null,
+      },
+    })),
+  }
+}
+
+function fetchItems(ids) {
   const out = new Map()
-  for (let i = 0; i < ids.length; i += CHUNK) {
-    const batch = ids.slice(i, i + CHUNK)
-    const query = `{ ${batch
-      .map(
-        (id, k) =>
-          `i${k}: item(id: "${id.replace(/[^\w-]/g, '')}") {
-            id name
-            properties { ${propsFragment} }
-            buyFor { priceRUB vendor { name ... on TraderOffer { trader { name } minTraderLevel taskUnlock { id } } } }
-          }`,
-      )
-      .join(' ')} }`
-    const res = await fetch(ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query }),
-    }).then((r) => r.json())
-    if (res.errors) {
-      // 존재하지 않는 id가 섞이면 해당 항목만 null — 메시지로 골라낸다
-      for (const e of res.errors) console.error(`API 오류: ${e.message}`)
-    }
-    batch.forEach((id, k) => {
-      const item = res.data?.[`i${k}`]
-      if (item) out.set(id, item)
-    })
+  for (const id of ids) {
+    const item = adapt(id)
+    if (item) out.set(id, item)
   }
   return out
 }
 
 // 1차: 빌드에 등장하는 모든 아이템
 const allIds = [...new Set(builds.flatMap((b) => [b.weapon, ...b.parts]))]
-const items = await fetchItems(allIds)
+const items = fetchItems(allIds)
 
 // 2차: 무기 기본 프리셋에 포함된 부품 중 아직 안 받은 것 (슬롯 연쇄용)
 const presetIds = new Set()
@@ -77,7 +73,7 @@ for (const b of builds) {
   }
 }
 if (presetIds.size > 0) {
-  for (const [id, item] of await fetchItems([...presetIds])) items.set(id, item)
+  for (const [id, item] of fetchItems([...presetIds])) items.set(id, item)
 }
 
 const slotAllowed = (item) =>
