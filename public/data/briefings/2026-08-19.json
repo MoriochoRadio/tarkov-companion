@@ -1,0 +1,91 @@
+{
+  "date": "2026-08-19",
+  "generatedAt": "2026-08-19T10:52:16.785+09:00",
+  "headline": "2026-08-19 브리핑 — AI 통합 요약을 사용할 수 없어 그룹별 정리로 제공",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46777 (13 August 2026)",
+          "summary": "Fixed a number of culling issues at the Customs location;\nFixed an error that occurred during the loading in raid when playing with a seasonal character and in the PvE ZONE in certain cases;\nFixed incorrect input handling when using hotkeys assigned to the arrow keys.\nThe number of documents has bee",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46777_(13_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "Reddit 커뮤니티",
+      "items": [
+        {
+          "title": "[Feedback] The rat \"problem\" is 100% due to how overly important sound is in Tarkov",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrjhi0/feedback_the_rat_problem_is_100_due_to_how_overly/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "HUGE FPS boost using Virtual memory! Try it, it might help! [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrr5tj/huge_fps_boost_using_virtual_memory_try_it_it/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Just gonna say it - people's ideas to fixing the rat 'problem' are just going to create more, worse problems and I hope BSG doesn't actually listen to any of these",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrhhrc/discussion_just_gonna_say_it_peoples_ideas_to/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Please ELI5 the rat \"problem\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrlutr/discussion_please_eli5_the_rat_problem/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Tarkov does NOT have a «ratting» problem",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrjjps/discussion_tarkov_does_not_have_a_ratting_problem/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Desync shots hit me around a corner just after a clear(?) face shot with .308ME round. Is he tanking because he (server?) is lagging? [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vs21kj/desync_shots_hit_me_around_a_corner_just_after_a/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "They added the ability to put AR stocks on the pk machineguns [discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrl5wz/they_added_the_ability_to_put_ar_stocks_on_the_pk/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] The \"funkopops\" cluttering up every value spawn is discouraging.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vs24gm/feedback_the_funkopops_cluttering_up_every_value/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코인 600개씩 캐는 중, 창고 20줄 2850개가 목표!",
+          "url": "https://www.youtube.com/watch?v=ESfddQE2onM",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "The Gods Sent Me A Package - #15 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=rRkBHCWIQqk",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "Did They BREAK LABS with this Update? - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=0yxz-88wPQA",
+          "source": "YouTube LVNDMARK"
+        },
+        {
+          "title": "We tried teaching Nickmercs how to play Tarkov...",
+          "url": "https://www.youtube.com/watch?v=n5mzy9mdHqs",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
