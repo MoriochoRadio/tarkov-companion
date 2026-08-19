@@ -61,8 +61,11 @@ public/data/briefings/
    - Reddit r/EscapefromTarkov: 일간 인기글 + 플레어 검색 RSS (버그·이슈 등)
    - YouTube 채널 RSS: 노잼망겜, 유우양, Pestily, LVNDMARK — 최근 24시간 신규 영상
    - Steam 뉴스 RSS (appid 3932890)
-2. `scripts/generate-briefing.mjs` — GitHub Models(GITHUB_TOKEN, 무료) 2패스:
-   1차 "기자"가 소스 그룹별 요약(그룹당 1회 호출) → 2차 "편집장"이 통합·중복 제거·중요도 랭킹·섹션 분류.
-   어제 브리핑과 비교해 새 이슈에 `isNew: true`. AI 실패 시 제목+링크 목록 폴백 — 빈 날이 없도록 보장.
-   호출 횟수 로깅 + 상한 20회 안전장치 (`scripts/github-models.mjs`, 평소 하루 ≤5회)
+2. `scripts/generate-briefing.mjs` — **규칙 기반 큐레이션** (외부 AI 없음, Phase 45):
+   - 섹션 배정: 수집기가 붙인 피드 라벨로 — 버그·이슈·PSA → `warning`, 공략·팁 → `tips`,
+     치터 동향·일간 인기 → `community`, 위키/Steam → `news`, YouTube → `videos`
+   - 중복 제거: URL 기준 전역 1회 (같은 글이 여러 피드에 걸리는 일이 흔함). 위 섹션이 URL을 선점
+   - `isNew`: 어제 브리핑의 URL 집합에 없으면 표시 (어제 파일이 없으면 아무 데도 붙이지 않음)
+   - `headline`: 새로 들어온 패치 > 새 공식 소식 > 건수 요약 순. 어제도 있던 패치는 헤드라인으로 올리지 않음
+   - `summary`: 원문 발췌를 400자까지 그대로 (번역·통합 요약은 하지 않는다). 영상은 summary 없음
 3. 같은 날짜 파일이 있으면 덮어쓰고 `index.json` 갱신 후 커밋, 배포 워크플로우 dispatch

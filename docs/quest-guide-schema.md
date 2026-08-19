@@ -56,7 +56,8 @@ public/data/guides/
 1. tarkov.dev tasks에서 한/영 이름 + wikiLink 조회
 2. 가이드 파일이 없는 퀘스트(신규) 우선, 그다음 `version < 2`인 파일(재생성) — 합쳐 30개/일
 3. MediaWiki API로 해당 페이지의 `== Guide ==` 섹션 추출 (없으면 skipped) + 이미지 File명 추출
-4. GitHub Models로 한국어 상세 공략 (호출 상한 30/실행 — 브리핑 5회·주간 1회와 합쳐도 무료 한도 내)
+4. GitHub Models로 한국어 상세 공략 — ⚠ 2026-07-30 폐지로 **현재 생성 불가**(워크플로우 휴면, Phase 45).
+   이미 만들어 둔 471개는 그대로 서비스되고, 그 이후 추가된 신규 퀘스트만 가이드가 없다
 5. `scripts/wiki-images.mjs`로 이미지 URL 일괄 해석 (imageinfo, 640px 썸네일)
 6. 커밋 후 배포 워크플로우 dispatch
 

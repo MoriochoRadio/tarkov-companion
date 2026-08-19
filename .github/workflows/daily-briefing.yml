@@ -19,7 +19,6 @@ on:
 
 permissions:
   contents: write # 브리핑 JSON 커밋·푸시
-  models: read # GitHub Models (무료 AI 요약)
   actions: write # 배포 워크플로우 dispatch
 
 concurrency:
@@ -57,11 +56,9 @@ jobs:
         if: steps.guard.outputs.skip != 'true'
         run: node scripts/collect-briefing.mjs
 
-      - name: 브리핑 생성 (GitHub Models 요약, 실패 시 링크 목록 폴백)
+      - name: 브리핑 생성 (규칙 기반 큐레이션 — 분류·중복 제거·isNew)
         if: steps.guard.outputs.skip != 'true'
         run: node scripts/generate-briefing.mjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 커밋 & 푸시
         id: commit

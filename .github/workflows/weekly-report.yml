@@ -12,7 +12,6 @@ on:
 
 permissions:
   contents: write
-  models: read
   actions: write
 
 concurrency:
@@ -44,11 +43,9 @@ jobs:
         with:
           node-version: 22
 
-      - name: 주간 리포트 생성
+      - name: 주간 리포트 생성 (규칙 기반 집계 — 반복 등장 횟수로 랭킹)
         if: steps.guard.outputs.skip != 'true'
         run: node scripts/generate-weekly.mjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 커밋 & 푸시
         id: commit

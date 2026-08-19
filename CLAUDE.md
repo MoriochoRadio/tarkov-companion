@@ -1,13 +1,13 @@
 # Tarkov Companion
 
-Escape From Tarkov용 AI 큐레이션 컴패니언 웹. 상세 설계는 `docs/DESIGN.md` 참고 (작업 전 반드시 읽을 것).
+Escape From Tarkov용 한국어 컴패니언 웹. 상세 설계는 `docs/DESIGN.md` 참고 (작업 전 반드시 읽을 것).
 
 ## 핵심 제약
 
 - **모든 것이 무료여야 함**: 서버 없음, 유료 API 금지, 런타임에 Claude API 호출 금지
 - 시세·퀘스트 데이터는 방문자 브라우저가 `https://json.tarkov.dev` (무료, 키 불필요)를 직접 호출 — GraphQL(api.tarkov.dev)은 2026-08-02부터 장기 장애라 tarkov.dev 본 사이트와 같은 JSON API로 이전(Phase 44). 클라이언트는 `src/api/jsonApi.ts`, Node 스크립트는 `scripts/tarkov-json.mjs`
 - 호스팅: GitHub Pages (`https://moriochoradio.github.io/tarkov-companion/`) → Vite `base: '/tarkov-companion/'` 필수
-- 일일 브리핑은 GitHub Actions(`daily-briefing.yml`)가 매일 `public/data/briefings/YYYY-MM-DD.json`으로 커밋함 — 웹은 이 파일을 읽기만 함. AI 요약은 GitHub Models(GITHUB_TOKEN, 무료) 사용
+- 일일 브리핑은 GitHub Actions(`daily-briefing.yml`)가 매일 `public/data/briefings/YYYY-MM-DD.json`으로 커밋함 — 웹은 이 파일을 읽기만 함. **AI 요약은 쓰지 않는다** — GitHub Models가 2026-07-30 폐지돼 규칙 기반 큐레이션으로 확정(Phase 45). 분류·중복 제거·신규 표시는 규칙으로 하고, 번역·통합 요약은 하지 않는다
 
 ## 스택
 

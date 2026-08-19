@@ -15,12 +15,12 @@ Escape From Tarkov 플레이어를 위한 **AI 큐레이션 컴패니언 웹** �
 ## 3. 아키텍처
 
 ```
-[방문자 브라우저] ──직접 호출──> api.tarkov.dev/graphql (무료, 키 불필요)
+[방문자 브라우저] ──직접 호출──> json.tarkov.dev (무료, 키 불필요)
        │
        └─ GitHub Pages (정적 호스팅, 무료)
               ▲
               │ 커밋 → 배포 dispatch (매일 09:00 KST)
-[GitHub Actions daily-briefing] ── 수집 → GitHub Models 요약 → public/data/briefings/YYYY-MM-DD.json
+[GitHub Actions daily-briefing] ── 수집 → 규칙 기반 분류 → public/data/briefings/YYYY-MM-DD.json
 ```
 
 - 서버 없음. 시세는 방문자 브라우저가 API를 직접 호출 → 운영비 0원
@@ -32,10 +32,10 @@ Escape From Tarkov 플레이어를 위한 **AI 큐레이션 컴패니언 웹** �
 | 영역 | 선택 | 이유 |
 |---|---|---|
 | 프론트엔드 | React + TypeScript + Vite | 표준 스택, 유지보수 용이 |
-| 데이터 | tarkov.dev GraphQL API | 무료·키 불필요·한국어 지원(lang: ko) |
+| 데이터 | tarkov.dev JSON API (json.tarkov.dev) | 무료·키 불필요·한국어 로케일 사전 제공 (Phase 44에 GraphQL에서 이전) |
 | 호스팅 | GitHub Pages | 무료, 리포 push만으로 배포 |
 | CI/CD | GitHub Actions | push 시 자동 빌드·배포 (무료) |
-| 브리핑 생성 | GitHub Actions + GitHub Models | GITHUB_TOKEN만으로 무료 AI 요약, 리포 안에서 완결 |
+| 브리핑 생성 | GitHub Actions + 규칙 기반 큐레이션 | 외부 AI 계정 의존 0 — GitHub Models 폐지로 Phase 45에 전환 |
 
 ## 5. 로드맵
 
@@ -433,6 +433,20 @@ Phase 39에서 `done-quests`가 일급이 됐으니 `requires`/`unlocks`(이미 
 - **바뀐 동작 2가지**: ① 시세 히스토리는 아이템당 별도 요청(전 구간 응답을 7일로 잘라 씀) ② 가격 알림 폴링 주기 5분 → 15분(원본 시세가 2시간 간격 갱신이라 5분 폴링은 트래픽만 낭비)
 - **검증**: 프로덕션 빌드 + CPU 4x — 전 탭 스모크 통과(퀘스트 517·아이템 5,312·탄약 200·열쇠 80·맵 17·은신처 26·빌드 16), 최장 롱태스크 531ms(1초 규칙 이내), 퀘스트 그룹 첫 진입 5.4초(네트워크 지배, rAF 응답 1ms로 메인 스레드는 계속 반응). `validate-builds`/`check-unlocks`/`check-map-projection`/`explore-weapon`도 JSON API로 이전해 전부 통과
 - **못 옮긴 것**: `check-flea-fee.mjs` — `fleaMarketFee`는 GraphQL 서버 계산 필드라 JSON API에 대응물이 없다. GraphQL 복구 전까지 사용 불가(스크립트가 그렇게 안내하고 종료)
+
+### Phase 45 — AI 요약 제거: 규칙 기반 큐레이션으로 확정 (완료)
+
+- **문제**: GitHub Models가 2026-07-30자로 완전 폐지(HTTP 410 `github_models_retirement_brownout`). 7/31 브리핑부터 19일 연속 AI 요약이 폴백으로 떨어져 헤드라인이 "AI 통합 요약을 사용할 수 없어…"로 박혀 있었다. quest-guides 백필도 같은 이유로 매일 빈손
+- **대체제 조사**(2026-08 기준): GitHub 공식 후속인 Microsoft Foundry는 Azure 계정·과금이 필요해 "전부 무료" 원칙에 어긋남. 무료 티어는 **Gemini 2.5 Flash**(AI Studio 키, 카드 불필요, OpenAI 호환 `/v1beta/openai/`, 한국어 최상, 단 무료 입력이 학습에 쓰일 수 있음), **Groq**(30 RPM·1,000 RPD, 카드 불필요, OpenAI 호환), OpenRouter 무료 모델(50 RPD), Cloudflare Workers AI(10,000 뉴런/일) 순으로 현실적. Cerebras는 상시 무료가 아니라 $5 크레딧 체험
+- **결정**: **AI를 쓰지 않는다.** 어느 무료 티어든 외부 계정·API 키 관리가 생기고, 이번처럼 제공자가 사라지면 또 같은 사고가 난다. 저장소 안에서 완결되는 구조를 유지하는 쪽을 택했다
+- **AI가 하던 일 중 규칙으로 대체한 것**:
+  - 섹션 분류 → 수집기가 붙인 피드 라벨 (버그·이슈·PSA → `warning`, 공략·팁 → `tips`, 치터 동향·일간 인기 → `community`)
+  - 중복 제거 → URL 기준 전역 1회 (섹션 순서가 곧 우선순위)
+  - `isNew` 판정 → 어제 브리핑 URL 집합과 대조 (AI 판정보다 정확하고 결정적)
+  - 헤드라인 → 새로 들어온 패치 > 새 공식 소식 > 건수 요약. 어제도 있던 패치는 올리지 않아 같은 줄이 며칠씩 박히지 않는다
+  - 주간 리포트 → "며칠에 걸쳐 등장했는가"를 중요도 신호로 삼아 랭킹하고 `[이번 주 N일 등장]` 표기
+- **못 하는 것**(정직하게 남김): 영어 원문의 한국어 번역·통합 요약. 발췌를 원문 그대로 싣고 출처를 명시한다. README·면책 문구도 "AI가 생성한 요약" → "자동 수집·분류된 원문 발췌"로 수정
+- **부수 정리**: daily-briefing·weekly-report에서 `models: read` 권한과 `GITHUB_TOKEN` 주입 제거(브리핑 생성은 이제 네트워크 자격증명이 필요 없음). quest-guides는 cron을 떼 휴면(dispatch 전용) — 기존 가이드 471개는 그대로 서비스되고 신규 퀘스트만 가이드가 없다. `scripts/github-models.mjs`는 나중에 제공자를 붙일 때 **이 파일 하나만 갈아끼우면 되도록** 남겨 두고 폐지 사실을 주석에 명시
 
 ## 6. 환경 역할 분담
 

@@ -95,7 +95,7 @@ export function Hero({ onEnter }: { onEnter: () => void }) {
         <div className="hero-rule" aria-hidden />
         <HeroWeapon />
         <p className="hero-sub">
-          실시간 플리마켓 시세 · 가성비 분석 · 매일 아침 AI 브리핑
+          실시간 플리마켓 시세 · 가성비 분석 · 매일 아침 자동 브리핑
         </p>
         <div className="hero-stats">
           {/* 로고 리빌(~1.2s)이 끝난 뒤 하나씩 등장 */}
