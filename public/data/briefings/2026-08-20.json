@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-20",
+  "generatedAt": "2026-08-20T10:50:44.085+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 5건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Loot] Baguette",
+          "summary": "Apparently this baguette is very rare? Friend told me people like to post it when they loot it so here I am. Yes I did successfully extract with it. This was after accidentally eating some automatic grenade launcher when I spawned in and ran the wrong way to my friend.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vsbwy9/loot_baguette/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Triple Tap Bug NEEDS To Be Fixed Already",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vs8w1e/bug_triple_tap_bug_needs_to_be_fixed_already/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Craziest weekly reward in 9 years of playing.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vsl50g/screenshot_craziest_weekly_reward_in_9_years_of/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[loot] just venting my frustration at the baguette!!!",
+          "summary": "Running ice breaker, air drops and this thing will not drop! Any suggestions ?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vsgob5/loot_just_venting_my_frustration_at_the_baguette/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Justice. You love to see it. [Cheating]",
+          "summary": "Felt good to look back at the VOD's from these days.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vsrrmk/justice_you_love_to_see_it_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "We need a timer for documents like we have for daily tasks. [Suggestion]",
+          "summary": "It would be nice to be able to see the countdown timer for when your daily allotment for documents is reset. Feels like a no-brainer to have the timer visible for anything that resets every day.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vssymv/we_need_a_timer_for_documents_like_we_have_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "쇄빙선에서 장비 빨아먹기",
+          "url": "https://www.youtube.com/watch?v=BMJM4-Zuy1c",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "창고 20줄 2850개가 목표! 타르코인런",
+          "url": "https://www.youtube.com/watch?v=zI42S2y1dDw",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "From Getting Smacked to GREAT Raids - #16 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=aY2PFWwTjyc",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "1-TAPPING Everyone on Customs with the TKPD! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=85FTnTrlUFc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Taking the Howa Type 20 to Woods - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=_nVlif51isE",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
