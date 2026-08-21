@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-21",
+  "generatedAt": "2026-08-21T10:56:45.000+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Does anyone actually run mags like this IRL?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vtd40x/discussion_does_anyone_actually_run_mags_like/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Me accidentaly deleting my Seasonal Kappa [Video]",
+          "summary": "Im a Beta Container enjoyer now wanted to delete the used up grizzly and replace it gg",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vtpg29/me_accidentaly_deleting_my_seasonal_kappa_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Seasonal League ranking system explained",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vtvm7j/discussion_seasonal_league_ranking_system/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Season It's a good concept, but will +120 days be enough for everything?",
+          "summary": "Tarkov has developed too much by the time we get to the seasons, and I’ll explain what I think the problem is. The new concept of unlocking quests helps partially, however I feel that with +120 days per season and this amount of content, the main quests + storyline shouldn’t be that necessary. The season should allow you to skip them, so that seasonal quests are more profitable and the gameplay is",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vt92oo/discussion_season_its_a_good_concept_but_will_120/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Killed two juicers at level 13![Video]",
+          "summary": "I am hooked. Leg meta Kedr for the win! Here is the loot: https://medal.tv/games/escape-from-tarkov/clips/nma0X3gSCuLu8C2R-?invite=cr-MSw5OXcsNDU3Mjc1MzUw",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vt9e86/killed_two_juicers_at_level_13video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Mines are scary :( [New Player] [Video]",
+          "summary": "My 2nd run... Wanted to look for the exit and found a mine instead. Picked up a weapon from this dead body so don't mind the weird scope combo.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vtp19b/mines_are_scary_new_player_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Reserve is Calling My Name - #17 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=lkw61lD4SiY",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "I FINALLY Unlocked KAPPA in KORD Season 1! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=3n9iSmvf0VA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Is taking the QBZ-191 to Dorms a good idea - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=5Rj9rYpKEC8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
