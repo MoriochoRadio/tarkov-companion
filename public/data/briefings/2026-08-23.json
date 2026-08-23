@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-23T10:59:03.040+09:00",
+  "headline": "오늘의 소식 — 신규 영상 5건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46911 (21 August 2026)",
+          "summary": "Fixed certain keybinds being displayed as NONE in the control settings, which resulted in the inability to use such hotkeys;\nFixed the issue where PMC fatigue effects were triggered when stamina was at full capacity in some cases;\nFixed a darkening effect in the Lab location if the player had previously been in a raid in an open location;\nFixed an issue with freezing on a blank screen after leavi…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46911_(21_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "스오타 타르코인런 ㄱㄱ",
+          "url": "https://www.youtube.com/watch?v=2oQsYu5KmNE",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "(4. 방탄복) 2026년 뉴비 가이드 | 타르코프 공략",
+          "url": "https://www.youtube.com/watch?v=UEqRyqIliJE",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "HUGE STREETS RAID - #19 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=W6I3qbis6g0",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "This Has To Be THE BEST Gun In The Game Right Now.. - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=G4luOsLl2F8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS PLAY TEST IS HERE",
+          "url": "https://www.youtube.com/watch?v=mbzP-enkS98",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
