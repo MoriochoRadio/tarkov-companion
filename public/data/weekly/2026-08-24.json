@@ -1,0 +1,71 @@
+{
+  "date": "2026-08-24",
+  "generatedAt": "2026-08-24T11:37:20.870+09:00",
+  "period": {
+    "from": "2026-08-17",
+    "to": "2026-08-23"
+  },
+  "headline": "2026-08-17 ~ 2026-08-23 주간 정리 — 패치·공식 3건 · 화제 6건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46777 (13 August 2026)",
+          "summary": "Fixed a number of culling issues at the Customs location;\nFixed an error that occurred during the loading in raid when playing with a seasonal character and in the PvE ZONE in certain cases;\nFixed incorrect input handling when using hotkeys assigned to the arrow keys.\nThe number of documents has bee",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46777_(13_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46699 (12 August 2026)",
+          "summary": "Technical udpate",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46699_(12_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.0.1.46911 (21 August 2026)",
+          "summary": "Fixed certain keybinds being displayed as NONE in the control settings, which resulted in the inability to use such hotkeys;\nFixed the issue where PMC fatigue effects were triggered when stamina was at full capacity in some cases;\nFixed a darkening effect in the Lab location if the player had previously been in a raid in an open location;\nFixed an issue with freezing on a blank screen after leavi…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46911_(21_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "이번 주 커뮤니티 인기 글",
+      "items": [
+        {
+          "title": "[Feedback] The rat \"problem\" is 100% due to how overly important sound is in Tarkov",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrjhi0/feedback_the_rat_problem_is_100_due_to_how_overly/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "HUGE FPS boost using Virtual memory! Try it, it might help! [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrr5tj/huge_fps_boost_using_virtual_memory_try_it_it/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Just gonna say it - people's ideas to fixing the rat 'problem' are just going to create more, worse problems and I hope BSG doesn't actually listen to any of these",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrhhrc/discussion_just_gonna_say_it_peoples_ideas_to/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Please ELI5 the rat \"problem\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrlutr/discussion_please_eli5_the_rat_problem/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Tarkov does NOT have a «ratting» problem",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vrjjps/discussion_tarkov_does_not_have_a_ratting_problem/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Desync shots hit me around a corner just after a clear(?) face shot with .308ME round. Is he tanking because he (server?) is lagging? [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vs21kj/desync_shots_hit_me_around_a_corner_just_after_a/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
