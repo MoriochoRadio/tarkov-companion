@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-25",
+  "generatedAt": "2026-08-25T10:51:33.716+09:00",
+  "headline": "오늘의 소식 — 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46911 (21 August 2026)",
+          "summary": "Fixed certain keybinds being displayed as NONE in the control settings, which resulted in the inability to use such hotkeys;\nFixed the issue where PMC fatigue effects were triggered when stamina was at full capacity in some cases;\nFixed a darkening effect in the Lab location if the player had previously been in a raid in an open location;\nFixed an issue with freezing on a blank screen after leavi…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46911_(21_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "2부) 델타포스, 1부 타르코프",
+          "url": "https://www.youtube.com/watch?v=7-njeKSke34",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "I Hate This Map - #21 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=7Kb48wJ8Qks",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=5Lm3oUXB0y8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "My FIRST Game in WARDOGS Was Insane... ($100,000 Profit)",
+          "url": "https://www.youtube.com/watch?v=omTica8e_-s",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
