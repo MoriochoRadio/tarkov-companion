@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-26T10:57:38.311+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46911 (21 August 2026)",
+          "summary": "Fixed certain keybinds being displayed as NONE in the control settings, which resulted in the inability to use such hotkeys;\nFixed the issue where PMC fatigue effects were triggered when stamina was at full capacity in some cases;\nFixed a darkening effect in the Lab location if the player had previously been in a raid in an open location;\nFixed an issue with freezing on a blank screen after leavi…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46911_(21_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] This is closest to death I have ever been in Tarkov",
+          "summary": "I think this is the closest I have ever been to death in Tarkov and actually survived. Well I think is the closest you can get.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vy3ss3/screenshot_this_is_closest_to_death_i_have_ever/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "BattlEye finally started blocking Blitz. End of an era. [Discussion]",
+          "summary": "After Blitz got proper attention on social media by (probably) VeryBadSCAV's posts, BSG finally decided to block Blitz from reading Tarkov executable's data.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vxwcnw/battleye_finally_started_blocking_blitz_end_of_an/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "\"Keep absolutely still. Its vision is based on movement.\" [Arena]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vy5hrk/keep_absolutely_still_its_vision_is_based_on/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] New to EFT, will this \"GP-25 flashlight shroud\" help conceal my light?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vxobbk/bug_new_to_eft_will_this_gp25_flashlight_shroud/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Fragmentary Order | Gameplay First look [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vy4y28/fragmentary_order_gameplay_first_look_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Found A Red Rebel on a Scav & 3 GPUs inside of big red (CUSTOMS ON TOP) [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vxnxuy/found_a_red_rebel_on_a_scav_3_gpus_inside_of_big/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 뭘 해야 재미있을라나",
+          "url": "https://www.youtube.com/watch?v=NiDjoTfAGx0",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Death by Mechanic - #22 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=aZ58F1m4guA",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=2wHP4tuc8-I",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Unlocking & Trying the GALIL in Wardogs for the First Time!",
+          "url": "https://www.youtube.com/watch?v=nDjcbhct168",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
