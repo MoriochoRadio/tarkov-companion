@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-27",
+  "generatedAt": "2026-08-27T18:46:32.491+09:00",
+  "headline": "오늘의 소식 — 신규 영상 5건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46911 (21 August 2026)",
+          "summary": "Fixed certain keybinds being displayed as NONE in the control settings, which resulted in the inability to use such hotkeys;\nFixed the issue where PMC fatigue effects were triggered when stamina was at full capacity in some cases;\nFixed a darkening effect in the Lab location if the player had previously been in a raid in an open location;\nFixed an issue with freezing on a blank screen after leavi…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46911_(21_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "우주 타르코프, 프래고 플레이 영상 공개 | 스트리머를 죽이면 밴, 시즌2 | 스트리머 특혜, 밴 권력 논란 | 니키타 QnA 사설 모드 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=TzSLSo7P9F4",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "기침이 심해서 델타포스 짧방",
+          "url": "https://www.youtube.com/watch?v=1-7IdAdTpW0",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "The Streets Grind Continues - #23 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=_rSfKWx0thA",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=ESZKuDHD-Sw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "This Long Barrel HK416 Build Surprised me! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=9kP3tAuvflI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
