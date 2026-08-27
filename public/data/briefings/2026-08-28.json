@@ -1,0 +1,129 @@
+{
+  "date": "2026-08-28",
+  "generatedAt": "2026-08-28T01:34:26.230+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46911 (21 August 2026)",
+          "summary": "Fixed certain keybinds being displayed as NONE in the control settings, which resulted in the inability to use such hotkeys;\nFixed the issue where PMC fatigue effects were triggered when stamina was at full capacity in some cases;\nFixed a darkening effect in the Lab location if the player had previously been in a raid in an open location;\nFixed an issue with freezing on a blank screen after leavi…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46911_(21_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "\"Exit the Location\" daily and weekly quests are bugged [Bug]",
+          "summary": "I have a weekly quest which shows \"Survive on the location\" 6 times but the location says \"Any Location\". This does not seem to be true though, as i get no progress on extractions. I have a similar daily quest from Fence which also shows \"Any location\" but only Factory seems to count. Looks like a visual bug to me or they wanted to change the requirements for the quests and messed it up",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzv3pe/exit_the_location_daily_and_weekly_quests_are/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug]? Escape from any location",
+          "summary": "I have this daily quest, thought I just need to escape any map, but did not count. Is this a bug or didn't I understand something?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vz92gp/bug_escape_from_any_location/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Advice for dealing with Backend Errors?",
+          "summary": "Since late last night I've been hitting constant \"1000 - Backend Error\"s while in my hideout. In addition of essentially crashing the game, it also seems to be affecting my hideout upgrades - The game no longer recognises my L3 Workshop, and no longer lets me repair weapons and armour with me (almost fully charged) kits, stating: \"Missing the required Hideout zone for repair.\" Finally, it randomly",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzbgdj/bug_advice_for_dealing_with_backend_errors/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] No Loot for Me",
+          "summary": "Killed a fat Pmc on streets, got relax room key then extracted all good then boom loading screen of doom and despair. Ive been waiting 15-20ish minutes to see if itll finally let me put it in my stash yet i leave in an hour for vacation rip loot. Is this a common bug or has anyone else gotten around it?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vz5jq6/bug_no_loot_for_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Customs is a %^#&$% Stutterfest!",
+          "summary": "I play on BSG servers since the developer is unwilling to fix the memory leak that's been plaguing the game for 4+ years, and every time I load into Customs for 30-45 seconds you have to just sit there and let it stutter. It's been this way for maybe a week or two and was wondering if anyone else experiences this?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzhu8k/bug_customs_is_a_stutterfest/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] Scav giving a timely helping hand",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vz5mua/video_scav_giving_a_timely_helping_hand/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Opened Tarkov, [bug] PMC has forgot all keys and other items?",
+          "summary": "Pretty weird. Tarkov being Tarkov.....Just happy the backend errors have subsided.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzbc57/opened_tarkov_bug_pmc_has_forgot_all_keys_and/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] What Gun would You like to see added to This game?",
+          "summary": "For me It’ll be the Galil ARM. (And Galil ACE) mainly because it’ll be neat and kinda go with the esthetics of the game. I don’t care rather it be the 5.56 or 7.62x51 variants. I’d be happy regardless. As for the ACE. Eh I’m not as picky. But overall I’d like to see the Galil(s) ingame.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzi9eo/discussion_what_gun_would_you_like_to_see_added/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Revives dont belong in tarkov and they should scap it from road map [Discussion]",
+          "summary": "The reward for having three of your four man die shouldnt be that you get the loot of the guy who killed them and all your 4 man get picked back up.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzvouw/revives_dont_belong_in_tarkov_and_they_should/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Tarkov 1.1 - Texture quality: Low - Medium - High - Ultra",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vz6p04/screenshot_tarkov_11_texture_quality_low_medium/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] They're calling it the best luck of all time",
+          "summary": "I also just got the RB-PKPM key this week off a jacket on Factory, I've been having crazy luck",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vz98j4/screenshot_theyre_calling_it_the_best_luck_of_all/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "A Couple Tough Raids - #24 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=cSDe04v5pSU",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The SPEAR with FMJ is Actually INSANE right now! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=ZKUabhT5riw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=ESZKuDHD-Sw",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
