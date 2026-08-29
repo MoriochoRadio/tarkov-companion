@@ -1,0 +1,109 @@
+{
+  "date": "2026-08-30",
+  "generatedAt": "2026-08-30T00:46:05.687+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 8건 · 신규 영상 5건",
+  "sections": [
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "How to not quit [Discussion]",
+          "summary": "Now I normally don’t quit on games, with thousands of hours on games like rust and more, normally I can grind a game. But as a beginner in tarkov I am really struggling, feel no drive to learn maps completely, just keep dying and not wanting to play. Anyone have any motivation or Tips.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w1olbg/how_to_not_quit_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[New Player] How to unlock Shooter Born?",
+          "summary": "Hey for some context I am level 31 with all expect for Jaeger and Ref level 3 and I still haven’t gotten shooter born yet. With the new task system I find it difficult to understand how tasks fit together. Can anyone tell me how to get this task?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w168ki/new_player_how_to_unlock_shooter_born/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Suggestion] Add a Gimp To Labyrinth",
+          "summary": "Honestly I don't know why there isn't one already. It could be a rare spawn that is lurking in the map somewhere waiting for his chance to take you down.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w18oj1/suggestion_add_a_gimp_to_labyrinth/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Not a cheater post I don't think, but I really need some help understanding what in gods name this guys doing...",
+          "summary": "Also the dog tags in his display case are his own, hence the blur out if anyone was wondering. I was his third kill, he chucked a banger nade at me on streets but when I saw his profile I lost all my brain cells and started to try and think about what in the world he could be doing. He was with a trio as well.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w0uw06/screenshot_not_a_cheater_post_i_dont_think_but_i/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Fell out of the map at Expo Checkpoint extract",
+          "summary": "no insurance can't even get my kit back 😭",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w1kpcx/bug_fell_out_of_the_map_at_expo_checkpoint_extract/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Cheating] I refuse to believe you people actually play this game",
+          "summary": "Literally played 5 games on Labs back to back, 4 of them were white named and 300 hours. 1 guy tried shooting through the lower part of server room double doors(I.E, couldnt see me, just prefired thinking the door was open) 1 guy literally tracing me through blue curtains by black room and prefiring me multiple times after hiding in a room for 10 minutes. .3kd, but game sense and audio location of",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w14nhk/cheating_i_refuse_to_believe_you_people_actually/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[discussion] For the love of god, can we PLEASE have a cheater profile thread stickied weekly or monthly so we can stop clogging this sub",
+          "summary": "I am so fucking tired of seeing pictures of profiles on this subreddit. Can we PLEASE have a dedicated thread for them. Please. Please?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w15h82/discussion_for_the_love_of_god_can_we_please_have/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "i know its only arena but this is still the wildest jumpshot ive hit [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w0wzyn/i_know_its_only_arena_but_this_is_still_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "창고 20줄 확장하려고 타르코인 2,850개 모아봤습니다 | 타르코프 EFT",
+          "url": "https://www.youtube.com/watch?v=Hcjnt_0vtMA",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "프리스타일 리부트 나왔다길래 해봄 (광고 아님)",
+          "url": "https://www.youtube.com/watch?v=zpfbS-aonFg",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Risking My SR-2M on Reserve - #25 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=8XJzRtAMrts",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=MWIFAIogQgs",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "I was NOT READY for the PvP in this game! - Mistfall Hunter",
+          "url": "https://www.youtube.com/watch?v=yc-O28fiUi8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
