@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-31T00:29:36.914+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] These days, SCAVs have no brotherhood.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w2c01y/discussion_these_days_scavs_have_no_brotherhood/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] The tiered flea market is one of the worst things to ever happen to Tarkov.",
+          "summary": "I hit level 25 tonight and I give up. There was once a time where you could unlock the flea market and give yourself a fighting chance against people that have no job and play this game 16 hours a day. That is no longer the case. I kept telling myself, \"Just stick it out, it'll get better.\" I thought when I unlocked the flea I'd be in business. NOPE. Okay then, maybe when I hit level 20. NOPE. Oh,",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w26mck/discussion_the_tiered_flea_market_is_one_of_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Being a rat really highlights how subtle cheating is sometimes.",
+          "summary": "For some of the harder quests I usually just rat and wait until there are 10 minutes left on the clock to start doing them. Especially for streets of tarkov I do this. What I've noticed since doing this strategy is how subtle some cheating is like radar. When I spawn I try to go a completely useless building and sit it out in complete silence, but then I hear someone running towards me and either",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w2breo/discussion_being_a_rat_really_highlights_how/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] Goop Goop 🥜",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w20qkd/loot_goop_goop/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Did someone call a 'Doctor'? Sanitar's apprentice",
+          "summary": "https://preview.redd.it/mr60yexylcmh1.png?width=373&format=png&auto=webp&s=82f51af32c4345d9b40c4439f16964dee15049c2 I'm ready to heal my allies and become the Med of our party uwu ♥",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w1sele/screenshot_did_someone_call_a_doctor_sanitars/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I wish BSG could do a de-expansion of factory [Feedback]",
+          "summary": "The map is a shell of its former self. There are far too many tunnels, hallways, rooms, bunkers with the lightning being complete trash compared to 2020 factory. Not to mention the sound of the game in this map specifically reveals all its glaring flaws. Everything is fucking everywhere but nobody knows where, why does office building have 4 fucking floors now due to a basement which connects both",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w1x818/i_wish_bsg_could_do_a_deexpansion_of_factory/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 배틀패스 문서 줍줍",
+          "url": "https://www.youtube.com/watch?v=huzQSoLp6pI",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "4 Quests DONE in 1 Raid! - #26 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=8lZ19Fm2OfM",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS Gameplay and PVP with the AK74",
+          "url": "https://www.youtube.com/watch?v=Gl3IWa7NHC0",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "I Didn't expect the PVP to be like THIS in WARDOGS",
+          "url": "https://www.youtube.com/watch?v=CFa-WMZNc4I",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
