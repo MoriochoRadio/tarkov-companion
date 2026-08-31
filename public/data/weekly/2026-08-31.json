@@ -1,0 +1,115 @@
+{
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-31T16:02:07.414+09:00",
+  "period": {
+    "from": "2026-08-24",
+    "to": "2026-08-30"
+  },
+  "headline": "2026-08-24 ~ 2026-08-30 주간 정리 — 패치·공식 1건 · 주의 5건 · 공략 2건 · 화제 6건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "이번 주 누적 주의사항",
+      "items": [
+        {
+          "title": "\"Exit the Location\" daily and weekly quests are bugged [Bug]",
+          "summary": "I have a weekly quest which shows \"Survive on the location\" 6 times but the location says \"Any Location\". This does not seem to be true though, as i get no progress on extractions. I have a similar daily quest from Fence which also shows \"Any location\" but only Factory seems to count. Looks like a visual bug to me or they wanted to change the requirements for the quests and messed it up",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzv3pe/exit_the_location_daily_and_weekly_quests_are/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug]? Escape from any location",
+          "summary": "I have this daily quest, thought I just need to escape any map, but did not count. Is this a bug or didn't I understand something?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vz92gp/bug_escape_from_any_location/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Advice for dealing with Backend Errors?",
+          "summary": "Since late last night I've been hitting constant \"1000 - Backend Error\"s while in my hideout. In addition of essentially crashing the game, it also seems to be affecting my hideout upgrades - The game no longer recognises my L3 Workshop, and no longer lets me repair weapons and armour with me (almost fully charged) kits, stating: \"Missing the required Hideout zone for repair.\" Finally, it randomly",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzbgdj/bug_advice_for_dealing_with_backend_errors/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] No Loot for Me",
+          "summary": "Killed a fat Pmc on streets, got relax room key then extracted all good then boom loading screen of doom and despair. Ive been waiting 15-20ish minutes to see if itll finally let me put it in my stash yet i leave in an hour for vacation rip loot. Is this a common bug or has anyone else gotten around it?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vz5jq6/bug_no_loot_for_me/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Customs is a %^#&$% Stutterfest!",
+          "summary": "I play on BSG servers since the developer is unwilling to fix the memory leak that's been plaguing the game for 4+ years, and every time I load into Customs for 30-45 seconds you have to just sit there and let it stutter. It's been this way for maybe a week or two and was wondering if anyone else experiences this?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vzhu8k/bug_customs_is_a_stutterfest/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.1.0.1.46911 (21 August 2026)",
+          "summary": "Fixed certain keybinds being displayed as NONE in the control settings, which resulted in the inability to use such hotkeys;\nFixed the issue where PMC fatigue effects were triggered when stamina was at full capacity in some cases;\nFixed a darkening effect in the Lab location if the player had previously been in a raid in an open location;\nFixed an issue with freezing on a blank screen after leavi…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.0.1.46911_(21_August_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "이번 주 공략·팁",
+      "items": [
+        {
+          "title": "How to not quit [Discussion]",
+          "summary": "Now I normally don’t quit on games, with thousands of hours on games like rust and more, normally I can grind a game. But as a beginner in tarkov I am really struggling, feel no drive to learn maps completely, just keep dying and not wanting to play. Anyone have any motivation or Tips.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w1olbg/how_to_not_quit_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[New Player] How to unlock Shooter Born?",
+          "summary": "Hey for some context I am level 31 with all expect for Jaeger and Ref level 3 and I still haven’t gotten shooter born yet. With the new task system I find it difficult to understand how tasks fit together. Can anyone tell me how to get this task?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w168ki/new_player_how_to_unlock_shooter_born/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "이번 주 커뮤니티 인기 글",
+      "items": [
+        {
+          "title": "[Screenshot] This is closest to death I have ever been in Tarkov",
+          "summary": "I think this is the closest I have ever been to death in Tarkov and actually survived. Well I think is the closest you can get.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vy3ss3/screenshot_this_is_closest_to_death_i_have_ever/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "BattlEye finally started blocking Blitz. End of an era. [Discussion]",
+          "summary": "After Blitz got proper attention on social media by (probably) VeryBadSCAV's posts, BSG finally decided to block Blitz from reading Tarkov executable's data.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vxwcnw/battleye_finally_started_blocking_blitz_end_of_an/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "\"Keep absolutely still. Its vision is based on movement.\" [Arena]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vy5hrk/keep_absolutely_still_its_vision_is_based_on/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] New to EFT, will this \"GP-25 flashlight shroud\" help conceal my light?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vxobbk/bug_new_to_eft_will_this_gp25_flashlight_shroud/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Fragmentary Order | Gameplay First look [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vy4y28/fragmentary_order_gameplay_first_look_video/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Found A Red Rebel on a Scav & 3 GPUs inside of big red (CUSTOMS ON TOP) [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1vxnxuy/found_a_red_rebel_on_a_scav_3_gpus_inside_of_big/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
