@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-01",
+  "generatedAt": "2026-09-01T01:21:05.950+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 7건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Guide to Unlock Containers",
+          "summary": "Does anyone have a good guide for how to unlock containers the quickest? Item Cases, Medical Cases, etc. I found this video but it's 4 years old so I know quests have changed.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w2z4ie/discussion_guide_to_unlock_containers/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Armour properties are being removed from all masks (with the exception of the CQCM)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w2m09g/discussion_armour_properties_are_being_removed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Tarkov on Linux is playable even without native support, it's just battleye [Discussion]",
+          "summary": "If it wasn't for the battleye workarounds, I think many people would play tarkov on linux, sure the peformance for me is about 10-20fps worse than windows but I believe most of that is lost in using FSR instead of DLSS, as it isn't supported on linux.(also streets isn't playable as it requires BSG server connection :) )",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w3d7c2/tarkov_on_linux_is_playable_even_without_native/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "8k hours (2018-current) FINALLY DID IT![screenshot]",
+          "summary": "After so many times trying to get it I finally achieved Snowball! Also worth noting I got what I refer to as the “cheater” achievement of killer 7. Both on seasonal. The former took only 2 resets about halfway through. The latter happened on interchange 2 weeks ago. I just want to thank the two teams of timmies who made it all possible! One 3 man, the other a 4 man, I also had the help of my frien",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w2zzyf/8k_hours_2018current_finally_did_itscreenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Arena space program",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w2vqx8/video_arena_space_program/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Dont drop your bag on the left side of customs flare exfil",
+          "summary": "Seen a couple posts about people losing things around here lately and found this when i tested in an offline raid. The entire left side of the ground past flare exfil has no collision with items and they'll fall right through, if you've ever dropped a bag here and wondered why you couldn't find it later this is why. Already reported it, just posting for visibility and so hopefully more people can",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w32br6/bug_dont_drop_your_bag_on_the_left_side_of/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Out Numbered but Not Outgunned [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w2n3tu/out_numbered_but_not_outgunned_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "PvP섭 교전 후 배틀패스를 하려고 했지만 리필 기다리며 프리스타일",
+          "url": "https://www.youtube.com/watch?v=q8romb0Sj90",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "It's My Lucky Day! - #27 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=fr_0wxT7I7A",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Is STREETS Where All The Players Are Now? - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=r4Md0KXC65A",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=f9szGUidCKA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
