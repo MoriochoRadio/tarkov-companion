@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-02",
+  "generatedAt": "2026-09-02T00:34:45.207+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 6건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[screenshot] The tarkov samurai",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w430xg/screenshot_the_tarkov_samurai/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Re:Zero - Escape From Tarkov",
+          "summary": "I haven't played Tarkov in a while so I forgot which window actually leads to drop... Luckily packet loss gave me another chance in life.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w3jxft/video_rezero_escape_from_tarkov/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] its always nice to extract with an extra 360 rounds of 55 pen ammo and 270 rounds of 37 pen ammo (reserve)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w3mpj2/screenshot_its_always_nice_to_extract_with_an/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Escape from Tarkov with DLSS 5 - Reserve",
+          "summary": "Love it or hate it, stuff like this makes me a little hopeful for Unity 6 update and visual improvements Nikita has talked about. Game will never look like this, but any progress is good.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w3uiyr/screenshot_escape_from_tarkov_with_dlss_5_reserve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] New player, why did Partizan smoke me like a summer sausage?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w3usdx/screenshot_new_player_why_did_partizan_smoke_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] How do I get rid of this Guy?",
+          "summary": "For context, this is Partizan if anyone doesn't know it might be hard to see from the screenshot, but I have been doing scav raids to progress my fence rep in order to get collector, im not far from it. I reset 2 weeks ago and im doing alright. Yeah I get its not PvP I love playing PvP but at the moment I just want to chill out on tarkov and listen to youtube and pass the day along. In my past few",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w3q514/screenshot_how_do_i_get_rid_of_this_guy/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "세계의 눈, 도시를 지켜보는 자들 | 스토리 캠페인 모드 정주행 3탄 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=mvHu_hqV4xo",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "타르코프 등대가 완전히 바뀝니다 | 1.1.5.0 리워크 총정리",
+          "url": "https://www.youtube.com/watch?v=XsDVieKrRhM",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "블디 SSD를 주워야 해",
+          "url": "https://www.youtube.com/watch?v=Iijo1JzDrgk",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Risking the RPD on Shoreline! - #28 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=i3edZ2CkD8w",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "They Were Trash Talking... Then THIS Happened! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=Vfb74oz8OUo",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=nx1nWEJnCes",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
