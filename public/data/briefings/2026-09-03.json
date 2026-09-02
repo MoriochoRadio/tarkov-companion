@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-03",
+  "generatedAt": "2026-09-03T00:21:54.429+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] Too much greed :(",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w4lwfv/screenshot_too_much_greed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Cheating] The current state of PvP is becoming impossible to enjoy",
+          "summary": "I consider myself a fairly experienced player, and I've been actively playing the PvP season. The amount of suspicious encounters I've had this season is getting ridiculous. I'm not talking about one questionable death or accusing a specific player — I'm talking about the overall experience after playing a significant number of raids. What concerns me even more is how accessible cheating appears t",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w4u69o/cheating_the_current_state_of_pvp_is_becoming/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] A single fucking fragment in the eye",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5a7in/video_a_single_fucking_fragment_in_the_eye/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "And YOU get a Salewa... And YOU get a Salewa [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w4fusl/and_you_get_a_salewa_and_you_get_a_salewa_loot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Game so infuriating Birdeye reached Zen",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w4m8hz/screenshot_game_so_infuriating_birdeye_reached_zen/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Absolute Cinema of a Fight [video]",
+          "summary": "Duo coming from school/MVD area ran into me heading towards flare extract. Killed his partner hiding in the shack he jumped towards. This is probably one of my favorite fights I've had in this game",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w4toai/absolute_cinema_of_a_fight_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Hunting in Darkness - #29 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=KeeS--XAl24",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Terrorizing Factory Lobbies with the KS-23 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=UXaX06_ClVk",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
+          "url": "https://www.youtube.com/watch?v=LFHrq-TK33c",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
