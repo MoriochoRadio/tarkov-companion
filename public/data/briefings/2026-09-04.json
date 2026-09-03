@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T00:15:05.008+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 8건 · 신규 영상 5건",
+  "sections": [
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "How to unlock 5.45 BP ammo [suggestion]",
+          "summary": "What i have to do to unlock the craft or to buy them from traders?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5m8b7/how_to_unlock_545_bp_ammo_suggestion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "How to Unlock Peacekeeping/M80 Ammo in Season 1? [Discussion]",
+          "summary": "What's the pre-requisites for unlocking this mission now?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5olqr/how_to_unlock_peacekeepingm80_ammo_in_season_1/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] check out these sweet melee weapons! too bad they're like completely useless",
+          "summary": "i mean is there any reason to use anything other than red rebel? I use red rebel extract all the time on reserve and shoreline. Anybody else think they should add special uses for other melee weapons? or idk something to make all of the other melee weapons less useless?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5hvbq/screenshot_check_out_these_sweet_melee_weapons/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Player distribution as of now [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5yh52/player_distribution_as_of_now_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Comparison of level 50 and elite mag drills load speed",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5oe8k/video_comparison_of_level_50_and_elite_mag_drills/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Niki loves all players, just prefers PvP ones more",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5zhr0/discussion_niki_loves_all_players_just_prefers/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Kord Breach - Armor Shortage is a meme at this point",
+          "summary": "Traders across Tarkov are experiencing an armor shortage. THANK GOD Black Division does not.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5gwrr/screenshot_kord_breach_armor_shortage_is_a_meme/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Rant - The Flea Market warns me about undercutting by $1, but lets me pay a 14 MILLION rouble fee because I used the wrong currency",
+          "summary": "I love how Tarkov’s Flea Market is apparently extremely concerned about protecting me from making bad financial decisions. If I list an item for $1 less than the cheapest Flea listing, the game is immediately like: “Warning: your offer price is significantly lower than the current market price.” Thank you, Tarkov. Very helpful. God forbid I undercut someone by one fucking dollar. But then I accide",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w5ji4n/feedback_rant_the_flea_market_warns_me_about/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "2부 델타포스 / 1부 탈콥 배패 문서 줍기",
+          "url": "https://www.youtube.com/watch?v=QmvDwvJwjZY",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "스토커 느낌의 PvPvE 게임이 나왔습니다｜STALZONE 스탈존",
+          "url": "https://www.youtube.com/watch?v=5quQ-Qapqgc",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "John Wick is Back! - #30 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=7CeRl-wkx9o",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Taking the SA58 JUICE CANNON to Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=2KEDGtkgotQ",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASON 1 RAIDING",
+          "url": "https://www.youtube.com/watch?v=TdTCvBvijj4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
