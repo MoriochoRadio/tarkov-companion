@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-05T00:09:59.531+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 5건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Feedback] Remove this spawn from the fucking game already",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w6agsd/feedback_remove_this_spawn_from_the_fucking_game/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] 5.8x42 ammo packs on the way + spam cans possibly confirmed",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w6wdqz/screenshot_58x42_ammo_packs_on_the_way_spam_cans/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Well, I think I'm ready for season 2...",
+          "summary": "After Ricocheting 2 M80A1 rounds, I think it's time I pack it up.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w6qqzh/video_well_i_think_im_ready_for_season_2/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] I get why people play PvE. This game is way too unforgiving for solo players",
+          "summary": "I have 2k hours (yeah i know, it's not that much) in this game and I'm pretty good at pvp, I usually play around a 2kd, 60% survival rate, I win 1v2s, 1v3s sometimes, I think I'm pretty decent at this game, at least at the mechanics of fighting. But the game is just so incredibly unforgiving for solo players. I'll give you an example of what it's like. I just had a raid, spawned in GZ next to gara",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w6pvr1/discussion_i_get_why_people_play_pve_this_game_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] You dont need to justify yourself for playing PVE",
+          "summary": "Im NOT talking about people who shares their experiences Im talking about the people who starts every discussion involving PvE and PvP with \"I have 8 jobs and 45 children and a wife and 4 sick grandmas and my back hurts and have the plague and I hate kids with free time and I hate cheaters and I have a date with my mistress every saturday\" You dont need to a \"moral high ground\" about having other",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w6yaqm/discussion_you_dont_need_to_justify_yourself_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] When can haz \"smol\" barrel for MP153?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w6por0/suggestion_when_can_haz_smol_barrel_for_mp153/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "대중의 외면을 받은 게임들 품겠다는 BSG, 퍼블리싱 사업 발표 | 등대맵 개편 세부, USEC 우대 삭제 | 리그 도입 앞두고 쇄빙선 너프 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=9WhxYAwu47E",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "신작 100명 대규모 전투. 돈벌어서 무장 사는 게임 (탈콥 + 델타포스 전면전 느낌)",
+          "url": "https://www.youtube.com/watch?v=JDgdS4ljOcY",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Today I Took a Beating - #31 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=D5tsGxr0Fl0",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Fighting Black Division & JUICERS on Streets with the SPEAR - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=6gvVDEiPzVw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS PLAYTEST IS BACK",
+          "url": "https://www.youtube.com/watch?v=9yB1vUZNvO4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
