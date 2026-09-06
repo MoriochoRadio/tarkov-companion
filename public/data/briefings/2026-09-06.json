@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-06",
+  "generatedAt": "2026-09-06T13:37:06.408+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 5건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Cheeki breeki",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w7ydq4/discussion_cheeki_breeki/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] Tan Killa Helmet",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w86tqn/suggestion_tan_killa_helmet/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[video] check out this absolutely beautiful grenade toss",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8897q/video_check_out_this_absolutely_beautiful_grenade/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Animated: new EXFIL parts",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w7s5nw/video_animated_new_exfil_parts/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tarkov might be the most ambitious shooter ever made",
+          "summary": "People love to bash Tarkov for being buggy, and plenty of that criticism is deserved. But I think people lose sight of what BSG is actually trying to make. Name another shooter combining this many systems at this depth. Detailed ballistics and armor penetration, individual body-part damage, hundreds of weapon components that actually affect handling, ammo variants, medical systems, metabolism, per",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8fp5u/discussion_tarkov_might_be_the_most_ambitious/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "TARKOV PUBLIC SERVICE ANNOUNCEMENT: WARNING It is Saturday. Don't go to labs or most loot heavy maps. [Suggestion]",
+          "summary": "We have to let all of the cheaters enjoy sucking each off each weekend. Probably best not to play the game at all right now. We must give them each weekend to enjoy their weird little cheating orgy. This has become mandatory by law it seems.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w85kib/tarkov_public_service_announcement_warning_it_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "100명이 돈벌어서 무장 사서 전쟁하는 게임 ㅋㅋ 개꿀잼 | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=U2RPl4Pof30",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "돈벌어서 무장 사는 게임 ㅋㅋ 개꿀잼 | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=IJmHe_Z4JuY",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Heading to The Smuggler's Camp - #33 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=j62QTTs1HfQ",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS PLAYTEST IS BACK",
+          "url": "https://www.youtube.com/watch?v=_052TOUcEWc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Owning DORMS with the HK 416A5 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=1u3f4AwzQCk",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
