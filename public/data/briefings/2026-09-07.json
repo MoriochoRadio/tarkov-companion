@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-07",
+  "generatedAt": "2026-09-07T13:39:07.842+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 7건 · 신규 영상 6건",
+  "sections": [
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[New Player] How to get better armor?",
+          "summary": "So I've been playing seasonal and I'm wondering why so many people have tier 5-6 armor? I have most traders max and from my knowledge, I can't even buy tier 4 armor, so where do I get or buy this armor? Is it locked behind some quest I need to complete or are people farming icebreaker? I don't really know anything about icebreaker so I'm not sure if it's even farmable but it feels like everyone I",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w9c62f/new_player_how_to_get_better_armor/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] So you can get killed by a ricochet off another persons helmet?",
+          "summary": "I'm a new player, kinda never thought that this is a thing.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w96yeh/video_so_you_can_get_killed_by_a_ricochet_off/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I have submitted a GDPR complaint against BSG [Discussion]",
+          "summary": "3 months ago I was false banned, I have already posted about it before so im not gonna explain any of that. Since making my initial posts I have both messaged others who said they were false banned and also been messaged by others looking for help. One of these people who I was messaging is French and was able to get unbanned after making a GDPR request for his data. This is the message he got aft",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8ocdg/i_have_submitted_a_gdpr_complaint_against_bsg/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] My first PvP kill I need to get so much better",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w950lh/video_my_first_pvp_kill_i_need_to_get_so_much/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] New Sanitar buff?",
+          "summary": "Was a throwaway kit, so not mad and honestly, I just laughed about it.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8pmyf/video_new_sanitar_buff/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] New favorite armor. What's yours?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8oany/screenshot_new_favorite_armor_whats_yours/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] Leave Ice Breaker Alone",
+          "summary": "Ice Breaker is already expensive, dangerous, and punishing. That’s the point. It costs a pile of money just to enter, the extract isn’t free, and failure can erase a lot of time and resources. Now it looks like BSG is about to change entry again in a way that limits how often you can even run it. Just because of some sort of odd XP driven league system. (I probably won’t ever click the tab for) Wh",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w95aby/suggestion_leave_ice_breaker_alone/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "니케 유저들은 왜 터졌을까 | 핵케이션 : 핵 쓰다 걸리면 1주일 휴가를 받는다는 뜻의 동사 | 4년간 참아온 내 이야기 |  | Goddess of Victory: Nikke",
+          "url": "https://www.youtube.com/watch?v=m1SSLXnH9UM",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "어제 장시간 방송해서 짧방 | 델타포스 DeltaForce 三角洲行动",
+          "url": "https://www.youtube.com/watch?v=Gb65AzVeXHg",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "100명이 돈벌어서 무장 사서 전쟁하는 게임 ㅋㅋ 개꿀잼 | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=U2RPl4Pof30",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "My Raids Are FILLED With Gigachads - #34 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=ChdrsbBk7kg",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=yNBQhKCHDxo",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Wiping the Custom Lobbies with the QBZ-191! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=M3be_kOJGOs",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
