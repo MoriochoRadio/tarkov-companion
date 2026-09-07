@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-08",
+  "generatedAt": "2026-09-08T01:40:52.931+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] So you can get killed by a ricochet off another persons helmet?",
+          "summary": "I'm a new player, kinda never thought that this is a thing.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w96yeh/video_so_you_can_get_killed_by_a_ricochet_off/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] My first PvP kill I need to get so much better",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w950lh/video_my_first_pvp_kill_i_need_to_get_so_much/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Suggestion] Leave Ice Breaker Alone",
+          "summary": "Ice Breaker is already expensive, dangerous, and punishing. That’s the point. It costs a pile of money just to enter, the extract isn’t free, and failure can erase a lot of time and resources. Now it looks like BSG is about to change entry again in a way that limits how often you can even run it. Just because of some sort of odd XP driven league system. (I probably won’t ever click the tab for) Wh",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w95aby/suggestion_leave_ice_breaker_alone/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] You will be able to view and report profiles from the kill list in tomorrow's update",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w9rqv8/screenshot_you_will_be_able_to_view_and_report/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Welp, see you in 5 hours",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w969pq/video_welp_see_you_in_5_hours/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Weekly Task - Ragman [Screenshot]",
+          "summary": "Holy smokes, Ragman hooked me up with this weekly :)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w9nu0l/weekly_task_ragman_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "어제 장시간 방송해서 짧방 | 델타포스 DeltaForce 三角洲行动",
+          "url": "https://www.youtube.com/watch?v=Gb65AzVeXHg",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Encounters of The Killa Kind - #35 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=WQ1g3Yd4x6w",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Wiping Reserve lobbies as a SOLO - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=UN53T9SobRQ",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=yNBQhKCHDxo",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
