@@ -1,0 +1,133 @@
+{
+  "date": "2026-09-10",
+  "generatedAt": "2026-09-10T00:21:04.569+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 7건 · 신규 영상 6건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.1.5.0",
+          "summary": "Lighthouse rework To give players more control over the risks they face while moving through the location and reduce their dependence on random factors, the following changes have been made: Rogues have moved from the water treatment plant to the mountain chalets; There are no longer any stationary weapons at the water treatment plant; The open areas along the main road have been reworked to provi",
+          "url": "https://store.steampowered.com/news/app/3932890/view/712285688032135502",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] How to navigate southern spawns with rework?",
+          "summary": "Seems you either go through chalets and fight the rogues, or go on the shore and fight very other player, or get killed by the goons when crossing over to the shore from the chalet side of the road. So far I've only had any success at all spawning in the water treatment plant. Any tips?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wb5v3k/discussion_how_to_navigate_southern_spawns_with/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Feedback] Classic BSG moment?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1washkg/feedback_classic_bsg_moment/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[discussion] Why the fuck are we timegating the most fun map to 2 runs a day on fucking PVE?",
+          "summary": "I basically only log on to run a few IB a week these days and now I have to do fucking dailies to access the goddamn map? Why on gods green earth would you include this in PVE? Or even perma PVP?? I literally don't understand who thought this was in any way a good idea. Most people don't even run the damn map, what the fuck man. I'm actually SO salty they constantly take our fun away for no fuckin",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1way45t/discussion_why_the_fuck_are_we_timegating_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "You only get 1 attempt at Icebreaker per day [Discussion]",
+          "summary": "In classic BSG fashion, they created a problem out of thin air just to apply the WORST \"fix\" imaginable. From now on you will get 1 daily for the icebreaker repair parts. That's right - 1 raid per day. How are we meant to progress the questline, if you can't even practise icebreaker in offline raids? Timegating content like this is insanely lame and they should really fix it ASAP.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1waupv2/you_only_get_1_attempt_at_icebreaker_per_day/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[discussion] lighthouse rework isn’t even a rework",
+          "summary": "“Let’s move rouges to chalet, even though it makes literally no sense why they wouldn’t stay at the fortified industrial buildings, we are too lazy to actually rework map! We must just move maps only POI to middle of map! This will make map lane better and we didn’t even have to do anything!” 5 million ruble raise for that guy. Seriously the laziest thing they could have done to counter the maps o",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wb3206/discussion_lighthouse_rework_isnt_even_a_rework/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] FLIR's can now be found in raid i guess?",
+          "summary": "Did a quick scav run, as i always do as the first thing booting up the game, and to my surprise i stumpled upon some pretty tasty loot, if you ask me. Interchange, abit of the basement, rest outside the mall. Both thermals were laying on tables, not in weapon crates. Seems abit over the top no?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1waz7es/loot_flirs_can_now_be_found_in_raid_i_guess/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Lighthouse is worse now [Discussion]",
+          "summary": "I thought we were getting an actual rework, you know, adding more ways around and more cover. Its literally the same map with a few new small camps and moving the rouges... They didnt even bother to add barricades, or warning signs around the chalet, or making it look more fortified. Its the exact same lol.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1waz8l3/lighthouse_is_worse_now_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 최악의 맵, 등대 개편 | 패치 1.1.5.0 | 이사 간 로그, 한 가운데를 틀어 막다 | 과감한 시도인가 무리한 삽질인가 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=wxvD4eI49nA",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "등대 리뉴얼 후 섬에 새 열쇠가 생겼습니다. 원래 마크방이었는데… | 타르코프",
+          "url": "https://www.youtube.com/watch?v=s24SbA81OWA",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "타르코프 등대지기 / 등대 / 쇄빙선 관련 업데이트 확인",
+          "url": "https://www.youtube.com/watch?v=_QVzV3-5aO8",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Just One of Those Days... - #36 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=PdmbIm-bmS8",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "I Tried Bringing the KS-23 to Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=v2PzkKzXsaw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=h5sx_wm4WBg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
