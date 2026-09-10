@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-11T00:13:46.227+09:00",
+  "headline": "오늘의 소식 — 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.1.5.0",
+          "summary": "Lighthouse rework To give players more control over the risks they face while moving through the location and reduce their dependence on random factors, the following changes have been made: Rogues have moved from the water treatment plant to the mountain chalets; There are no longer any stationary weapons at the water treatment plant; The open areas along the main road have been reworked to provi",
+          "url": "https://store.steampowered.com/news/app/3932890/view/712285688032135502",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "1부 바디캠 체험 2부 타르코프",
+          "url": "https://www.youtube.com/watch?v=hUj-WYqIdfQ",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "On a Mission on Factory - #37 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=VspNIxh0b1A",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Joining Peanut's squad in WARDOGS was a MISTAKE",
+          "url": "https://www.youtube.com/watch?v=XIO_NfI4-8c",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=4SwvzXXxZdw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
