@@ -1,0 +1,139 @@
+{
+  "date": "2026-09-12",
+  "generatedAt": "2026-09-12T00:16:14.421+09:00",
+  "headline": "New in-game survey",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Seasons system. We'd like to hear your opinion on the current Seasons system, individual seasonal mechanics and rewards, and understand what changes and features you'd like to see in future Seasons. Your responses will help us determine priorities for the development of the Seasons system. You will receive a participation reward in your in-game",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941706274",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "[discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wd0pvy/discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Influx of cheaters",
+          "summary": "Anyone else notice a large increase in the number of cheaters since the lighthouse update?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wcoxsh/discussion_influx_of_cheaters/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] (Whining) Is \"The Courier\" quest just cheater bait? Like what the actual fk is this quest",
+          "summary": "\"Ope you get one try and you will spawn at big red as always and when you fail you will wait until end game to try again\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wdeuj1/discussion_whining_is_the_courier_quest_just/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[IRL] Yesterday I posted here about adding a Unity optic riser, today look at what Niki posted",
+          "summary": "Crazy coincidence, I guess they'll add it?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wcqlvn/irl_yesterday_i_posted_here_about_adding_a_unity/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] My favourite part of Tarkov is when you both hear each other and then you just hear the backpack drop.",
+          "summary": "That's when you know some shit is about to go down.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wczclp/discussion_my_favourite_part_of_tarkov_is_when/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Its cool that Tagilla can do that [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wd0315/its_cool_that_tagilla_can_do_that_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[loot] after about a year give or take. And 1700 hrs I finally got it (and I spawned with it on a scav on ground zero….)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wczv7x/loot_after_about_a_year_give_or_take_and_1700_hrs/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] savior ending finally",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wcy6bm/screenshot_savior_ending_finally/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Lighthouse update was poorly done.",
+          "summary": "Rogues shooting across the map at 200m+ at night through trees and brush with 1x sights and no NVGs / Thermals. Really makes sense ya know. Extremely boring change to the game. Please think about how the AI functions before a major change like this lmfao.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wd3ay2/discussion_lighthouse_update_was_poorly_done/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "하지 말라고 했더니 성공한 게임 워독스 WAR DOGS | 진짜 핵 개발단 검거한 델타포스 | 그레이존 워페어 본격 알파테스트 돌입 | 9월 2주차 탈 (출)슈터 뉴스단신",
+          "url": "https://www.youtube.com/watch?v=pspu58icrFk",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "드디어 기다리던 워독스 얼엑 출시!",
+          "url": "https://www.youtube.com/watch?v=yRArzhtL7Cw",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "No Armor Raids! - #38 - Punisher - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=IRGm2gSxliM",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Checking out the New Lighthouse Rework! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=JgCGgjZyfS0",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS LAUNCH DAY",
+          "url": "https://www.youtube.com/watch?v=NIXA-H8IjFQ",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
