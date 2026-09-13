@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-13",
+  "generatedAt": "2026-09-13T13:46:17.298+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Seasons system. We'd like to hear your opinion on the current Seasons system, individual seasonal mechanics and rewards, and understand what changes and features you'd like to see in future Seasons. Your responses will help us determine priorities for the development of the Seasons system. You will receive a participation reward in your in-game",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941706274",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Feedback] Can we go back to a dollar being ~110 roubles? Why would you ever spend 110k on a crappy burst only 5.56 gun?",
+          "summary": "m16 needs like 100k worth of attatchments to be usable too, not to mention the horrible erognomics.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1weermz/feedback_can_we_go_back_to_a_dollar_being_110/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tigz deletes entire stash and quits because seasonal wipe sucks and cant stand playing it anymore",
+          "summary": "What ratting does to a man Edit: Love him or hate him, he is deeply passionate about the game. Sure, he complains a lot, but his core point is entirely valid. Over the years, the developers have piled on restrictions that have slowly sucked the fun out of PvP. Flea market limits, hitboxes, ammo restrictions, helmet/plate availabilty, removed insurance, aimpunch and movement.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1weq80e/discussion_tigz_deletes_entire_stash_and_quits/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Do I need to pay another 40 BTC if I lost this key? [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1we316v/do_i_need_to_pay_another_40_btc_if_i_lost_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Ah yes, first cheater of the day - 4 hours untill, close to record. [Video]",
+          "summary": "And you already know the reddit crawlers will come defending him. \"hE cOuLd fEel YoU\" Edit: Wanted to report him with video directly to BSG, but they simply have no option for that.. You cannot create a ticket for anything cheating related. Nice move BSG, professional. Just look at this guy, who plays labs like this in that gear - prestige 3 600 hours. Prolly no aimcheat, but esp for sure. https:/",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wec93v/ah_yes_first_cheater_of_the_day_4_hours_untill/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Thats so fucking adorableee ♥",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1we5wh5/screenshot_thats_so_fucking_adorableee/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] First time fighting Black Division, didn't disappoint",
+          "summary": "Almost got botted from accross the map, realized its BD got rushed, killed 3, visually checked for more, naded for voice cue and then this happened.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wem2e8/bug_first_time_fighting_black_division_didnt/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
