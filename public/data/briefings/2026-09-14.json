@@ -1,0 +1,140 @@
+{
+  "date": "2026-09-14",
+  "generatedAt": "2026-09-14T00:06:26.326+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Seasons system. We'd like to hear your opinion on the current Seasons system, individual seasonal mechanics and rewards, and understand what changes and features you'd like to see in future Seasons. Your responses will help us determine priorities for the development of the Seasons system. You will receive a participation reward in your in-game",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941706274",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Knight can flash step and phase through solid walls and windows now?",
+          "summary": "I died to a BD that phased through a door without audio recently, fine, I can close both eyes because I've seen clips of those happening anyway and I should've seen it coming. But this one, Knight seemingly straight up phases THROUGH a solid wall/window on Icebreaker? I don't know if I should laugh? cry? get mad? Look at this shit dude Clip context: I shot Knight, didn't get to kill him, naded to",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wf3g9t/bug_knight_can_flash_step_and_phase_through_solid/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Not even hiding it anymore. Very helpful Support. [Bug]",
+          "summary": "They waited a whole 1 day just to close the Ticket themselves. FUN. Just when I thought Tarkov Support might help me with a bug that prevents me from getting to Lightkeeper. To the light - Trust but verify: missing false data hard drive. GGs, f this mess of a season.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wemwq3/not_even_hiding_it_anymore_very_helpful_support/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Transit bug workaround, if you get stuck on transit quest, try this!",
+          "summary": "the current game only allows 2 times transit, so do the following: On your second transit, when it's counting down, Alt+F4 when your screen becomes black reboot your game and make sure you use \"reconnect\" button to go to your third raid (Sometime when you reboot, your game is already in loading screen, i am not sure whether it will work, but for me, I use the \"reconnect\" button) After loading in,",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wekecz/discussion_transit_bug_workaround_if_you_get/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Camera stutters while sprinting！",
+          "summary": "As said，frame rate is stable and 1k polling rate. Rather smooth until you start to dash and move your camera around",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wesg4k/bug_camera_stutters_while_sprinting/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "To the Light - Trust but Verify missing Hard Drive [Bug]",
+          "summary": "https://preview.redd.it/1nvybgnzjaph1.png?width=1630&format=png&auto=webp&s=dbf5a139d3cd7edda5fdfe7845e9434c81597a8a I went to Labs with the item in the quest inventory, but when loaded in raid the item was missing, and I could not plant it. The wiki said youll get the drive back if you fail the quest, but my quest dont fail not matter what I do. I saw some ppl with the same problem, anyone figure",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wf86ge/to_the_light_trust_but_verify_missing_hard_drive/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Tigz deletes entire stash and quits because seasonal wipe sucks and cant stand playing it anymore",
+          "summary": "What ratting does to a man Edit: Love him or hate him, he is deeply passionate about the game. Sure, he complains a lot, but his core point is entirely valid. Over the years, the developers have piled on restrictions that have slowly sucked the fun out of PvP. Flea market limits, hitboxes, ammo restrictions, helmet/plate availabilty, removed insurance, aimpunch and movement.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1weq80e/discussion_tigz_deletes_entire_stash_and_quits/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] First time fighting Black Division, didn't disappoint",
+          "summary": "Almost got botted from accross the map, realized its BD got rushed, killed 3, visually checked for more, naded for voice cue and then this happened.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wem2e8/bug_first_time_fighting_black_division_didnt/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] Wall hacker forgets walls exist",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wf32ba/video_wall_hacker_forgets_walls_exist/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "i thought they removed all landmines on lighthouse....[Video]",
+          "summary": "(Edit) I don’t blame the game that they said they removed all the mines on lighthouse, but it is more blaming me for misreading the patch notes. Hope this helps with some of the confusion🙏🏻",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wegan4/i_thought_they_removed_all_landmines_on/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Why is no body armor still required for RR extracts?",
+          "summary": "I can mayyyyybe understand it way back in ye olden days when the extracts were first introduced and armored rigs were generally weaker or maybe smaller compared to the big body armors. But its just silly when nowadays you can RR extract with a Siege-R no problem, but that Paca and scav vest? Sorry fatty. Just seems like one of many pointless things that needs revisiting...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wemae7/discussion_why_is_no_body_armor_still_required/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Another look at the upcoming Blackfeather M14 chassis",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wf3tf0/screenshot_another_look_at_the_upcoming/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "이건 첫번째 레슨. 파산하지 않기 | 워독스, WarDogs",
+          "url": "https://www.youtube.com/watch?v=r5g0MK9sAYM",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Dominating STREETS with the M4A1 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=Ujt7eOi4L4A",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS LAUNCH",
+          "url": "https://www.youtube.com/watch?v=_I6bsnucJXE",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
