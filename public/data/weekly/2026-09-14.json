@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-14",
+  "generatedAt": "2026-09-14T15:17:42.378+09:00",
+  "period": {
+    "from": "2026-09-07",
+    "to": "2026-09-13"
+  },
+  "headline": "2026-09-07 ~ 2026-09-13 주간 정리 — 패치·공식 3건 · 공략 2건 · 화제 6건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Patch 1.1.5.0",
+          "summary": "Lighthouse rework To give players more control over the risks they face while moving through the location and reduce their dependence on random factors, the following changes have been made: Rogues have moved from the water treatment plant to the mountain chalets; There are no longer any stationary weapons at the water treatment plant; The open areas along the main road have been reworked to provi",
+          "url": "https://store.steampowered.com/news/app/3932890/view/712285688032135502",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Seasons system. We'd like to hear your opinion on the current Seasons system, individual seasonal mechanics and rewards, and understand what changes and features you'd like to see in future Seasons. Your responses will help us determine priorities for the development of the Seasons system. You will receive a participation reward in your in-game",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941706274",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "이번 주 공략·팁",
+      "items": [
+        {
+          "title": "[New Player] How to get better armor?",
+          "summary": "So I've been playing seasonal and I'm wondering why so many people have tier 5-6 armor? I have most traders max and from my knowledge, I can't even buy tier 4 armor, so where do I get or buy this armor? Is it locked behind some quest I need to complete or are people farming icebreaker? I don't really know anything about icebreaker so I'm not sure if it's even farmable but it feels like everyone I",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w9c62f/new_player_how_to_get_better_armor/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] How to navigate southern spawns with rework?",
+          "summary": "Seems you either go through chalets and fight the rogues, or go on the shore and fight very other player, or get killed by the goons when crossing over to the shore from the chalet side of the road. So far I've only had any success at all spawning in the water treatment plant. Any tips?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wb5v3k/discussion_how_to_navigate_southern_spawns_with/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "여러 날 반복된 화제",
+      "items": [
+        {
+          "title": "[Video] So you can get killed by a ricochet off another persons helmet?",
+          "summary": "[이번 주 2일 등장] I'm a new player, kinda never thought that this is a thing.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w96yeh/video_so_you_can_get_killed_by_a_ricochet_off/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] My first PvP kill I need to get so much better",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w950lh/video_my_first_pvp_kill_i_need_to_get_so_much/",
+          "source": "Reddit r/EscapefromTarkov",
+          "summary": "이번 주 2일 등장"
+        },
+        {
+          "title": "[Suggestion] Leave Ice Breaker Alone",
+          "summary": "[이번 주 2일 등장] Ice Breaker is already expensive, dangerous, and punishing. That’s the point. It costs a pile of money just to enter, the extract isn’t free, and failure can erase a lot of time and resources. Now it looks like BSG is about to change entry again in a way that limits how often you can even run it. Just because of some sort of odd XP driven league system. (I probably won’t ever click the tab for) Wh",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w95aby/suggestion_leave_ice_breaker_alone/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "I have submitted a GDPR complaint against BSG [Discussion]",
+          "summary": "3 months ago I was false banned, I have already posted about it before so im not gonna explain any of that. Since making my initial posts I have both messaged others who said they were false banned and also been messaged by others looking for help. One of these people who I was messaging is French and was able to get unbanned after making a GDPR request for his data. This is the message he got aft",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8ocdg/i_have_submitted_a_gdpr_complaint_against_bsg/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] New Sanitar buff?",
+          "summary": "Was a throwaway kit, so not mad and honestly, I just laughed about it.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8pmyf/video_new_sanitar_buff/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] New favorite armor. What's yours?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w8oany/screenshot_new_favorite_armor_whats_yours/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
