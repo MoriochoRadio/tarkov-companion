@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T00:15:43.701+09:00",
+  "period": {
+    "from": "2026-09-08",
+    "to": "2026-09-14"
+  },
+  "headline": "2026-09-08 ~ 2026-09-14 주간 정리 — 패치·공식 3건 · 주의 5건 · 공략 1건 · 화제 6건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "이번 주 누적 주의사항",
+      "items": [
+        {
+          "title": "[Bug] Knight can flash step and phase through solid walls and windows now?",
+          "summary": "I died to a BD that phased through a door without audio recently, fine, I can close both eyes because I've seen clips of those happening anyway and I should've seen it coming. But this one, Knight seemingly straight up phases THROUGH a solid wall/window on Icebreaker? I don't know if I should laugh? cry? get mad? Look at this shit dude Clip context: I shot Knight, didn't get to kill him, naded to",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wf3g9t/bug_knight_can_flash_step_and_phase_through_solid/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Not even hiding it anymore. Very helpful Support. [Bug]",
+          "summary": "They waited a whole 1 day just to close the Ticket themselves. FUN. Just when I thought Tarkov Support might help me with a bug that prevents me from getting to Lightkeeper. To the light - Trust but verify: missing false data hard drive. GGs, f this mess of a season.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wemwq3/not_even_hiding_it_anymore_very_helpful_support/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Transit bug workaround, if you get stuck on transit quest, try this!",
+          "summary": "the current game only allows 2 times transit, so do the following: On your second transit, when it's counting down, Alt+F4 when your screen becomes black reboot your game and make sure you use \"reconnect\" button to go to your third raid (Sometime when you reboot, your game is already in loading screen, i am not sure whether it will work, but for me, I use the \"reconnect\" button) After loading in,",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wekecz/discussion_transit_bug_workaround_if_you_get/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Camera stutters while sprinting！",
+          "summary": "As said，frame rate is stable and 1k polling rate. Rather smooth until you start to dash and move your camera around",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wesg4k/bug_camera_stutters_while_sprinting/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "To the Light - Trust but Verify missing Hard Drive [Bug]",
+          "summary": "https://preview.redd.it/1nvybgnzjaph1.png?width=1630&format=png&auto=webp&s=dbf5a139d3cd7edda5fdfe7845e9434c81597a8a I went to Labs with the item in the quest inventory, but when loaded in raid the item was missing, and I could not plant it. The wiki said youll get the drive back if you fail the quest, but my quest dont fail not matter what I do. I saw some ppl with the same problem, anyone figure",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wf86ge/to_the_light_trust_but_verify_missing_hard_drive/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Patch 1.1.5.0",
+          "summary": "Lighthouse rework To give players more control over the risks they face while moving through the location and reduce their dependence on random factors, the following changes have been made: Rogues have moved from the water treatment plant to the mountain chalets; There are no longer any stationary weapons at the water treatment plant; The open areas along the main road have been reworked to provi",
+          "url": "https://store.steampowered.com/news/app/3932890/view/712285688032135502",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Seasons system. We'd like to hear your opinion on the current Seasons system, individual seasonal mechanics and rewards, and understand what changes and features you'd like to see in future Seasons. Your responses will help us determine priorities for the development of the Seasons system. You will receive a participation reward in your in-game",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941706274",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "이번 주 공략·팁",
+      "items": [
+        {
+          "title": "[Discussion] How to navigate southern spawns with rework?",
+          "summary": "Seems you either go through chalets and fight the rogues, or go on the shore and fight very other player, or get killed by the goons when crossing over to the shore from the chalet side of the road. So far I've only had any success at all spawning in the water treatment plant. Any tips?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wb5v3k/discussion_how_to_navigate_southern_spawns_with/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "여러 날 반복된 화제",
+      "items": [
+        {
+          "title": "[Discussion] Tigz deletes entire stash and quits because seasonal wipe sucks and cant stand playing it anymore",
+          "summary": "[이번 주 2일 등장] What ratting does to a man Edit: Love him or hate him, he is deeply passionate about the game. Sure, he complains a lot, but his core point is entirely valid. Over the years, the developers have piled on restrictions that have slowly sucked the fun out of PvP. Flea market limits, hitboxes, ammo restrictions, helmet/plate availabilty, removed insurance, aimpunch and movement.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1weq80e/discussion_tigz_deletes_entire_stash_and_quits/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] First time fighting Black Division, didn't disappoint",
+          "summary": "[이번 주 2일 등장] Almost got botted from accross the map, realized its BD got rushed, killed 3, visually checked for more, naded for voice cue and then this happened.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wem2e8/bug_first_time_fighting_black_division_didnt/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] So you can get killed by a ricochet off another persons helmet?",
+          "summary": "I'm a new player, kinda never thought that this is a thing.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w96yeh/video_so_you_can_get_killed_by_a_ricochet_off/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] My first PvP kill I need to get so much better",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w950lh/video_my_first_pvp_kill_i_need_to_get_so_much/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Suggestion] Leave Ice Breaker Alone",
+          "summary": "Ice Breaker is already expensive, dangerous, and punishing. That’s the point. It costs a pile of money just to enter, the extract isn’t free, and failure can erase a lot of time and resources. Now it looks like BSG is about to change entry again in a way that limits how often you can even run it. Just because of some sort of odd XP driven league system. (I probably won’t ever click the tab for) Wh",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w95aby/suggestion_leave_ice_breaker_alone/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] You will be able to view and report profiles from the kill list in tomorrow's update",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1w9rqv8/screenshot_you_will_be_able_to_view_and_report/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
