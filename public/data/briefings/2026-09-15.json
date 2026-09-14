@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T00:13:07.999+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 7건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] How To Melee Farm Labs",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfvm7t/video_how_to_melee_farm_labs/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] My 1st Labrys raid be like",
+          "summary": "Got a quest from Mechanic that required me to go to this place. I should have watched a tutorial first :D",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfasi7/video_my_1st_labrys_raid_be_like/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Lighthouse update in a nutshell [Video]",
+          "summary": "Rouges don't follow the same rules, idk how he shot me with his gun sideways",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfdylj/lighthouse_update_in_a_nutshell_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Did I just loose 20 mil? [bug]",
+          "summary": "Error: 707 - Can’t complete quest I’ve tried game integrity check, clear logs and cache. Am I screwed here? I don’t know what to do. Took the 20 mil from my stash",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfdsiz/did_i_just_loose_20_mil_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "First and (Hopefully) Last time running into BD [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfwwbz/first_and_hopefully_last_time_running_into_bd/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[New Player] new player experience",
+          "summary": "Interchange - second raid on account killed in parking garage like 4 minutes in",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfnpu3/new_player_new_player_experience/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] Friendly reminder that the SOIC book spawns (rarely) in the train warehouse on lighthouse.",
+          "summary": "Would have been baller to get this BEFORE I found all the LEDX's I needed but whatever.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wft0ee/loot_friendly_reminder_that_the_soic_book_spawns/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "슈본헤로 갈고 닦은 똥쟁이 실력 | 워독스, WarDogs",
+          "url": "https://www.youtube.com/watch?v=v2HqOTUEIMo",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "타르코프 때문에 싫어하는 볼트액션을 너무 잘 쏩니다 | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=nxi09y400Ek",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Fighting BLACK DIVISION on Streets and getting JUICED LOOT - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=Atf-_6nQXUU",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS LAUNCH",
+          "url": "https://www.youtube.com/watch?v=BdN10MAuBkA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
