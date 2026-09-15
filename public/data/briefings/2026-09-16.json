@@ -1,0 +1,115 @@
+{
+  "date": "2026-09-16",
+  "generatedAt": "2026-09-16T00:43:53.665+09:00",
+  "headline": "패치 1.1.5.0.47426 (15 September 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Leagues are live!",
+          "summary": "League System Added a new competitive system – Leagues, available only for Seasonal characters. After your first raid, you'll be placed into a group of 50 players of your rank. Each group has its own leaderboard. Your position on the leaderboard is determined by the amount of experience you've earned during the week. Experience earned from eliminating PMCs, Scavs, and Bosses, completing tasks, exa",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941707149",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Feedback] Rail adapters for the PPSh exist, and I do wish they were added at some point.",
+          "summary": "So while looking up for some cursed pictures of PPSh-41s, I discovered that a company called В АТАКУ does make actually make bolt on picatinny rails for it. I really like using it and I'd really love it if BSG added some rails for it in the future so you could do some modding to it.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wgtqau/feedback_rail_adapters_for_the_ppsh_exist_and_i/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "bsg really don't care about how much their a.i can cheat [video]",
+          "summary": "i guess this steel gate is like one of those interrogation windows or something...really thou, they just dont care sometimes hey",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wglum9/bsg_really_dont_care_about_how_much_their_ai_can/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Fabulous scav [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wgdatv/fabulous_scav_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tons of false ban reports Documenting my story for visibility - PLEASE READ",
+          "summary": "I know cheating is one of the most sensitive topics in Tarkov, so I’m going to keep this simple. On September 11 my level 52 PvP account with roughly 5,500 hours was permanently restricted under Clause 4.3.4 for allegedly using methods that provide an unfair advantage or automated gameplay/bots. **I have never cheated, used bots, gameplay automation, advantage-giving macros, or software intended t",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wgha4n/discussion_tons_of_false_ban_reports_documenting/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[VIDEO] I should not be alive !",
+          "summary": "I forgot to add a mag, and got into a fight right at spawn",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wg7g09/video_i_should_not_be_alive/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "We have waited YEARS for this fix! [Feedback]",
+          "summary": "Hybrid 3x is finally usable, bless nikita",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wgzpvv/we_have_waited_years_for_this_fix_feedback/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 랭킹 리그 도입 | 패치 1.1.5.1 | 밥똥탈 경험치 경쟁, 이거보다 등대 맵을 고쳐야 | 시즌 중반 블랙 디비전 스폰율 35% | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=eyoG7csqUE0",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "안녕하세요. 워독스 스트리머입니다. | 워독스, WarDogs",
+          "url": "https://www.youtube.com/watch?v=UeYlRr_FU7Y",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "슈본헤로 갈고 닦은 똥쟁이 실력 | 워독스, WarDogs",
+          "url": "https://www.youtube.com/watch?v=v2HqOTUEIMo",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "Solo WARDOGS is a Different Experience",
+          "url": "https://www.youtube.com/watch?v=fvmU2zT2Evo",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS LAUNCH",
+          "url": "https://www.youtube.com/watch?v=JslkGTo6eXk",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
