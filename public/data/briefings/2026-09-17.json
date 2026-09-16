@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-17T00:35:33.762+09:00",
+  "headline": "오늘의 소식 — 신규 영상 2건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Leagues are live!",
+          "summary": "League System Added a new competitive system – Leagues, available only for Seasonal characters. After your first raid, you'll be placed into a group of 50 players of your rank. Each group has its own leaderboard. Your position on the leaderboard is determined by the amount of experience you've earned during the week. Experience earned from eliminating PMCs, Scavs, and Bosses, completing tasks, exa",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941707149",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Gameplay and PVP on the NEW MAP in WARDOGS",
+          "url": "https://www.youtube.com/watch?v=4c09xmQewOs",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS LAUNCH",
+          "url": "https://www.youtube.com/watch?v=qx8i7UY1PtU",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
