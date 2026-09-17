@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-18",
+  "generatedAt": "2026-09-18T00:41:42.420+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Leagues are live!",
+          "summary": "League System Added a new competitive system – Leagues, available only for Seasonal characters. After your first raid, you'll be placed into a group of 50 players of your rank. Each group has its own leaderboard. Your position on the leaderboard is determined by the amount of experience you've earned during the week. Experience earned from eliminating PMCs, Scavs, and Bosses, completing tasks, exa",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941707149",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "I witnessed a fight in Dorms through the scope of another player [Video]",
+          "summary": "Spawned on Customs, ran to this point, went prone and was scoped on the hill near new gas for about 30 seconds or so and then this happened. There was no sound and no shots could be heard from Dorms. Absurd that this can happen.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wi3b3l/i_witnessed_a_fight_in_dorms_through_the_scope_of/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "What if we a map device was added that you can use on your arm? [Suggestion]",
+          "summary": "DICLAIMER BEFORE SOME PEOPLE CRASH OUT: WITHOUT A POINTER PINPOINTING YOUR EXACT LOCATION!!!!!!!!!! So a feature depicted in another game (credit: Beautiful Light trailer) is a map device on your arm. Very immersive, clean looking that lets you actually play the game without doing dumb shit that you shouldn’t have to do like alt-tabbing to look up a map or have a map on your 2nd monitor (the game",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wimcfs/what_if_we_a_map_device_was_added_that_you_can/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "BUG ON LABS BD KILLED ME IN ELEVATOR [Bug]",
+          "summary": "Wiped a full labs lobby with the m10 to die like this... EDIT: IT WAS BD THAT KILLED ME",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wi8hrk/bug_on_labs_bd_killed_me_in_elevator_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "New Bug or Cheats? [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wi180f/new_bug_or_cheats_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Maybe update the \"easy\" rating of lighthouse . . .",
+          "summary": "Fighting omniscient npc with near perfect aim, almost map wide visual acuity, and hyper aggressive natures might betray the \"easy\" descriptor of the map. Just a tad.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wih8ra/feedback_maybe_update_the_easy_rating_of/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] I didn't know BD were wizards",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wiubf7/video_i_didnt_know_bd_were_wizards/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "안녕하세요. 워독스 스트리머입니다. | 워독스, WarDogs",
+          "url": "https://www.youtube.com/watch?v=RoW11dUYXTI",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "The GALIL & Defib Combo PRINTS MONEY in WARDOGS",
+          "url": "https://www.youtube.com/watch?v=9MW1WaJ8uQA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ABI ZOMBIES W/ PEANUT AND GINGY",
+          "url": "https://www.youtube.com/watch?v=iT2wIJgPpjU",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
