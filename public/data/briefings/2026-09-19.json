@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T00:12:50.654+09:00",
+  "headline": "패치 1.1.5.1.47473 (18 September 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Feedback]180-meter neck shot 9x19 kill through foliage from a Rogue during a night raid.",
+          "summary": "3 hits, but PMC dropped like a one tap. I could barely see him through the foliage with a thermal. Took a pot shot at him, he returned fire and I was dead before I could react. I generally don't make a fuss about this stuff, but the Rogues are egregiously badly tuned right now.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wj65ff/feedback180meter_neck_shot_9x19_kill_through/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Ricochets are broken [Video]",
+          "summary": "Tarkov only allows bounces between 10° and 47.5° . If you shoot sharper than 10 degrees, the game completely CANCELS the ricochet. Full vid https://youtube.com/watch?v=GcbkAjSoPn0&si=huFpG6Olrr5nWnCA",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wjmggo/ricochets_are_broken_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Ultra-lightweight M4A1 build (1.973 kg | 70 Ergo | 69 Recoil)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wjfuch/screenshot_ultralightweight_m4a1_build_1973_kg_70/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] My Favorite MDR Build",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wjemfh/feedback_my_favorite_mdr_build/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Add a setting for priority of the selection algorithm of healing of body parts [Suggestion]",
+          "summary": "The idea is simple: currently healing algorithm has a specific priority that you can't change. It always heals HEAD > THORAX > LOWEST BODY PART (if there are no bleeds) What is missing is actual ways to configure this, there must be a setting that lets us change how we want healing priority to work due to BSG finally adding such priority, so just let us adjust it to how we want. For example, somet",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wjjbvg/add_a_setting_for_priority_of_the_selection/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Shturman can now spawn in North-west near scav bunker/scav bridge",
+          "summary": "It's the second raid now I've found him around there, this last raid I went there because there were so many shots at the beginning of the raid, turns out he/his guards were fighting the cultists, I killed shturman and ended up dying to one of the cultists lol Image is the 1st time I found him yesterday, this was on PVP Seasonal btw",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wj68yq/discussion_shturman_can_now_spawn_in_northwest/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 경쟁 리그, 졸속 논란 | 밥똥탈 경험치 경쟁, 치트 의심 사례 | 탈로란트, 카운터 스트라이크식 경제 기반 폭파미션 도입 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=Ynf9OYaLAI4",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "1부 스페셜포스 리마스터 / 2부 워독스",
+          "url": "https://www.youtube.com/watch?v=s8TPQZqbsRg",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "The M249 SAW Absolutely SHREDS in WARDOGS",
+          "url": "https://www.youtube.com/watch?v=N_iWHFgkPQA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "WARDOGS - CHILL GAMES",
+          "url": "https://www.youtube.com/watch?v=27Yv6fgKJXg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
