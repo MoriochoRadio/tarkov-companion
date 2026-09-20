@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-20",
+  "generatedAt": "2026-09-20T13:53:22.289+09:00",
+  "headline": "패치 1.1.5.1.47510 (18 September 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.1.47510 (18 September 2026)",
+          "summary": "Fixed an issue when in the 6B5-15 Zh-86 ‘Uley’ Flora and Khaki armored rigs slots appeared empty even after items had been moved into them",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47510_(18_September_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "I was blessed to spawn in as Scav Team 6 [Screenshot]",
+          "summary": "Honestly didn't know this combination of gear was possible until this",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wkd1t5/i_was_blessed_to_spawn_in_as_scav_team_6/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "QOL: medical items should scale according to how many uses are left [Suggestion]",
+          "summary": "For example: currently, a surv kit with 9/9 uses weighs the same as 1/9 uses left surv kit. ITS JUST AN EXAMPLE, THINK OF OTHER MEDS/FOOD/FUEL ITEMS (SURV/CMS kits can be not included for this simple as that) I think it makes sense that medical/food/fuel items would weigh less with the items being used, as there is less \"stuff\" inside them left to be used This should also apply to food, which it d",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wkiv0p/qol_medical_items_should_scale_according_to_how/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] I think Tarkov is telling me something.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wkj1du/screenshot_i_think_tarkov_is_telling_me_something/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Let players wear their drip, dont be the Fun pollice",
+          "summary": "I'm tired of not being allowed to customize my character's appearance however I like. Back in the day, I used to always play with the alien mask, but ever since the switch to headphones, you can't use it without being practically deaf—because for some reason, it can only be used with the Tep-300s, which don't improve your audio range even though you're not wearing a helmet; it's just plastic, and",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wki7fu/feedback_let_players_wear_their_drip_dont_be_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[IRL] Key Holder",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wl1b1s/irl_key_holder/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tarkov Arena's latest changes. Their greed has no boundaries",
+          "summary": "Case/Crate Price Increases: Echo Belli crates used to cost 30 BP points. Now they’ve jacked them up to 45 for the new crates, and to make it worse, we now have two new crates instead of one. Tactical Map Price : The new Arena tactical map went up in price from 15 to 20 euros. Token Removals: Tokens were changed so you can’t farm them with knife kills anymore. On top of that, they removed the assau",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wkii0w/discussion_tarkov_arenas_latest_changes_their/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
