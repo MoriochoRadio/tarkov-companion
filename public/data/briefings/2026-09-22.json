@@ -1,0 +1,141 @@
+{
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T00:18:27.955+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.1.47510 (18 September 2026)",
+          "summary": "Fixed an issue when in the 6B5-15 Zh-86 ‘Uley’ Flora and Khaki armored rigs slots appeared empty even after items had been moved into them",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47510_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "I'm a slithery little sneaky snake [Bug]",
+          "summary": "Had me pissing myself laughing when this happened",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmdfgd/im_a_slithery_little_sneaky_snake_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Arena] Money transfer completely broken since new update.",
+          "summary": "Tried 5 different times on seasonal/PVP and got a different error each time. Amazing. Update: After these errors, my daily transfer limit maxed out as if I actually got to send it. Amazing!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wm1fyw/arena_money_transfer_completely_broken_since_new/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] 6B5-15 Items hidden",
+          "summary": "Until you drag it in the inventory lmao 1.0 ready surely",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wln3hh/bug_6b515_items_hidden/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] I have maxed out lighting (it's on) but my hall of fame is always dark like this. Is it broken?",
+          "summary": "https://preview.redd.it/uql45poryuqh1.png?width=2514&format=png&auto=webp&s=ea9264b04dba1f18257f2e2a54c7701d2f644681 The hall of fame has been dark like this since I built it weeks ago. Anybody know how to fix it?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wma2ym/bug_i_have_maxed_out_lighting_its_on_but_my_hall/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] I think ?",
+          "summary": "Found a mags case in marked room on customs but couldn't pick up, only search. Anyone know why, or is it simply a dumb bug ? Had more then enough room in backpack as you can see on 2nd image and even changed to another backpack from a random scav in case the Rush-100 couldn't carry mag cases for reason",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wm75j8/bug_i_think/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Don't forget to bring dorm guard desk key, kiddo's [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wm3if3/dont_forget_to_bring_dorm_guard_desk_key_kiddos/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] PvE Prestige Rewards Revealed",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmbsdl/discussion_pve_prestige_rewards_revealed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Why do the shots go so far above where you're aiming with the sight? It’s crazy how much they deviate.",
+          "summary": "its because de MOA? Its an AKMN, with 2.38 Moa, but its crazy the desviation in 15 meters to the wall. How can i reduce them?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wltij1/discussion_why_do_the_shots_go_so_far_above_where/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "FINALLY ESCAPED FROM TARKOV! [Screenshot]",
+          "summary": "I finally did it! It costed me more than 30 attemps without any guide and trying always to be alone(i suicided more than twice when i met people lol). I died over and over, hardly understood what i had to do but i finally escaped from Tarkov! I am so happy! I have to say thanks to the people that i met cause, before suiciding, they at least guided me a bit in some areas where i was totally lost. I",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wls3nj/finally_escaped_from_tarkov_screenshot/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Only when you are trying to plant something... [screenshot]",
+          "summary": "Practice mode horde tag and cursed is hilarious.😂",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wlwqqw/only_when_you_are_trying_to_plant_something/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[suggestion] remove player scavs from ground zero atleast under level 21",
+          "summary": "I just did a 20 minute raid on ground zero getting a bunch of tasks done and pmc kills. as im heading to basement extract 3 player scavs appear around me. i kill 3 but one is hiding in a corner and gets me as im leaving. dude has 9k hours and level 30 something prestige 3. im just trying to get tasks so i can unlock level 15 flear market my guy",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wm0dyl/suggestion_remove_player_scavs_from_ground_zero/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "동접 스팀 40만. 전쟁터에서 돈 벌어서 무장 사는 게임. | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=aiPz_NXZLbU",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "THIS is Why I keep choosing the GALIL over the M4 - WARDOGS",
+          "url": "https://www.youtube.com/watch?v=9KtISjT3-_w",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ARENA BREAKOUT INFINITE - CHECKING OUT SEASON 7",
+          "url": "https://www.youtube.com/watch?v=ibxhVWNnVtU",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
