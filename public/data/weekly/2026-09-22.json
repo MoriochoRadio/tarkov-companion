@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T00:20:52.407+09:00",
+  "period": {
+    "from": "2026-09-15",
+    "to": "2026-09-21"
+  },
+  "headline": "2026-09-15 ~ 2026-09-21 주간 정리 — 패치·공식 5건 · 공략 1건 · 화제 6건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Leagues are live!",
+          "summary": "League System Added a new competitive system – Leagues, available only for Seasonal characters. After your first raid, you'll be placed into a group of 50 players of your rank. Each group has its own leaderboard. Your position on the leaderboard is determined by the amount of experience you've earned during the week. Experience earned from eliminating PMCs, Scavs, and Bosses, completing tasks, exa",
+          "url": "https://store.steampowered.com/news/app/3932890/view/695397823941707149",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.1.47510 (18 September 2026)",
+          "summary": "Fixed an issue when in the 6B5-15 Zh-86 ‘Uley’ Flora and Khaki armored rigs slots appeared empty even after items had been moved into them",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47510_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.0.47242 (8 September 2026)",
+          "summary": "Rogues have moved from the water treatment plant to the mountain chalets;\nThere are no longer any stationary weapons at the water treatment plant;\nThe open areas along the main road have been reworked to provide more cover and additional routes;\nAll landmines have been removed from the water treatment plant;\nA transition point to Icebreaker has been added to the location. The hovercraft stays at …",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47242_(8_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "이번 주 공략·팁",
+      "items": [
+        {
+          "title": "[Video] How To Melee Farm Labs",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfvm7t/video_how_to_melee_farm_labs/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "이번 주 커뮤니티 인기 글",
+      "items": [
+        {
+          "title": "[Video] My 1st Labrys raid be like",
+          "summary": "Got a quest from Mechanic that required me to go to this place. I should have watched a tutorial first :D",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfasi7/video_my_1st_labrys_raid_be_like/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Lighthouse update in a nutshell [Video]",
+          "summary": "Rouges don't follow the same rules, idk how he shot me with his gun sideways",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfdylj/lighthouse_update_in_a_nutshell_video/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Did I just loose 20 mil? [bug]",
+          "summary": "Error: 707 - Can’t complete quest I’ve tried game integrity check, clear logs and cache. Am I screwed here? I don’t know what to do. Took the 20 mil from my stash",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfdsiz/did_i_just_loose_20_mil_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "First and (Hopefully) Last time running into BD [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfwwbz/first_and_hopefully_last_time_running_into_bd/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[New Player] new player experience",
+          "summary": "Interchange - second raid on account killed in parking garage like 4 minutes in",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wfnpu3/new_player_new_player_experience/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Loot] Friendly reminder that the SOIC book spawns (rarely) in the train warehouse on lighthouse.",
+          "summary": "Would have been baller to get this BEFORE I found all the LEDX's I needed but whatever.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wft0ee/loot_friendly_reminder_that_the_soic_book_spawns/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
