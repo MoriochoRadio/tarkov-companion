@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-23",
+  "generatedAt": "2026-09-23T00:46:04.038+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.1.47510 (18 September 2026)",
+          "summary": "Fixed an issue when in the 6B5-15 Zh-86 ‘Uley’ Flora and Khaki armored rigs slots appeared empty even after items had been moved into them",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47510_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "I KNOW the devs thinks this is funniest shit ever (it kinda is) [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmislu/i_know_the_devs_thinks_this_is_funniest_shit_ever/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Repacking",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wn61if/video_repacking/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[IRL] Cultist Circle",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmmgqo/irl_cultist_circle/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tigz returns to seasons with the sole purpose of ratting labs.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmmp6n/discussion_tigz_returns_to_seasons_with_the_sole/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[discussion] Is there any other boss exclusive item I am missing",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmotkj/discussion_is_there_any_other_boss_exclusive_item/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] I Love All the Easter Eggs",
+          "summary": "I love all of these wonderful easter eggs. What are some of your favorites?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmwjox/feedback_i_love_all_the_easter_eggs/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "길리슈트 해금 완. 진정한 똥쟁이로 다시 태어나다.  | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=Gy_d1J5RsiI",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "ARENA BREAKOUT INFINITE - CHECKING OUT SEASON 7",
+          "url": "https://www.youtube.com/watch?v=gl5WSdmxX6w",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Attacking Enemy FOBs in the CRAZIEST WAY possible - Wardogs",
+          "url": "https://www.youtube.com/watch?v=GDo4GCbz0yo",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
