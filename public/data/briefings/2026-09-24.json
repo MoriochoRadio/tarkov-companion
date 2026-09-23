@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-24",
+  "generatedAt": "2026-09-24T00:35:45.643+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.1.47510 (18 September 2026)",
+          "summary": "Fixed an issue when in the 6B5-15 Zh-86 ‘Uley’ Flora and Khaki armored rigs slots appeared empty even after items had been moved into them",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47510_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[IRL] The Wedge cosplay",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wndb12/irl_the_wedge_cosplay/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[IRL] AK Shotgun variant from Pakistan",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wnl7qq/irl_ak_shotgun_variant_from_pakistan/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Rgb lights flashing on screen, only happens on Tarkov",
+          "summary": "So this only happens on Tarkov, no other game I have does this. I'm not really sure what to do about it, I've tried turning on high-quality color and it doesn't really help much, the artifacts are smaller but they're still there. I have an RTX 3080 and DLSS is off Edit: This was the issue at its worst, thankfully it got better on its own for some reason but it does still happen, oddly enough the w",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wnside/bug_rgb_lights_flashing_on_screen_only_happens_on/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Last week found 2 in here and thought it was super lucky.. nope turns out this room is just stacked now. [loot] kinda ridiculous",
+          "summary": "Was another armour repair kit on the table closer to the shipping container area as well between the two old turrets",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wni05s/last_week_found_2_in_here_and_thought_it_was/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] You don't make this shit up",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wo7bg1/video_you_dont_make_this_shit_up/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Ian McCollum wants to know your location",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wo38mc/screenshot_ian_mccollum_wants_to_know_your/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "볼액 맛집. 스나이퍼는 이런겁니다.. | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=vVd81Gezbk0",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "This Suppressed M4 Build has ZERO Recoil - Wardogs",
+          "url": "https://www.youtube.com/watch?v=95b0Qxm9G3s",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ARENA BREAKOUT INFINITE - CHECKING OUT SEASON 7",
+          "url": "https://www.youtube.com/watch?v=gl5WSdmxX6w",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
