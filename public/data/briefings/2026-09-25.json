@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-25",
+  "generatedAt": "2026-09-25T00:57:04.859+09:00",
+  "headline": "오늘의 소식 — 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.1.5.1.47510 (18 September 2026)",
+          "summary": "Fixed an issue when in the 6B5-15 Zh-86 ‘Uley’ Flora and Khaki armored rigs slots appeared empty even after items had been moved into them",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47510_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "볼액 맛집. 스나이퍼는 이런겁니다.. | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=B8P6MaQwjXE",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Checking out Season 7 of Arena Breakout: Infinite!",
+          "url": "https://www.youtube.com/watch?v=cTT0oBPPscU",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=SVV_DAuJ4f4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
