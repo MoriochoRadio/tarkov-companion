@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-26",
+  "generatedAt": "2026-09-26T00:57:20.087+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 8건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "Killed a cheater on labs [cheating]",
+          "summary": "Is it me or do these rmt guys hop on labs bright and early at 6am to cheat on labs or really any map. Was playing till 4 am stay up playing after work. I was ratting labs kinda but not really I was sitting by kitchen spawn holding double black and a guy kept prefiring me shooting at the wall trying to get me off the angle. I saw him kill a duo with a mp7 and while he was looting I ran under violet",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wpg6ke/killed_a_cheater_on_labs_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] What if the cheating problem WAS a thing and is now just all in le head?",
+          "summary": "Now I only have 1,500 hours, and I can count on one hand how many times I was absolutely sure I died to a cheater without any doubt . Now, this could be boiled down to the servers I play on not having that many cheaters, or maybe I'm just not skilled enough to spot a cheater when I see one but who is? I started thinking about it after seeing a clip of Tigz dying and immediately starting to hate DM",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wp6j1o/discussion_what_if_the_cheating_problem_was_a/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Local band has Tarkov themed tour poster [IRL]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wpgghr/local_band_has_tarkov_themed_tour_poster_irl/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Junkie Cat (Sketch by me)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wpihvq/discussion_junkie_cat_sketch_by_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] To the guy who looted Woods bunker down to the studs but didn't check the cultist circle - I thank you, and I love you.",
+          "summary": "I honestly think there was one more marked key in there but after I grabbed the second one, I just booked it. Had I grabbed the third key, I would not have made it out. Made it from the secret bunker to the scav bunker in like 3 minutes, with 2 seconds to spare.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wpo0jy/loot_to_the_guy_who_looted_woods_bunker_down_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] The power of pocket sun (art by me)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wpjf5b/discussion_the_power_of_pocket_sun_art_by_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Fix your fucking servers, desyncing consistently every raid for nearly 2 months, most egregious case so far",
+          "summary": "Happening to everyone I play with, EU servers. Restarting fixes it, sure, but what a spot to do it at",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wp82l7/discussion_fix_your_fucking_servers_desyncing/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] How I get INSANE FPS on Streets and all maps",
+          "summary": "Hey all, I've been on a performance tweaking grind over the past few weeks and have been able to get my Streets FPS in 4k up to 220fps without DLSS or Smooth Motion in PVP online. I'd like to detail absolutely everything that factors into this. Please note that Lexos and the mall area will still run like crap, which is a BSG issue. Expect maybe 40% decrease in those areas. I went from 60-110fps to",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wp5yok/discussion_how_i_get_insane_fps_on_streets_and/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "즐추 되세요. 오늘 열화상 해금! | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=un3r-2UEUiM",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "볼액 맛집. 스나이퍼는 이런겁니다.. | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=B8P6MaQwjXE",
+          "source": "YouTube 유우양"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=C79Dd_72_30",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "I tried to Carry BLUE TEAM in Wardogs (it was a mistake)",
+          "url": "https://www.youtube.com/watch?v=qpfO8TUdvWA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
