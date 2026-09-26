@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-27",
+  "generatedAt": "2026-09-27T00:08:15.676+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 10건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "Friday night gaming [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqeh57/friday_night_gaming_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Losers are out on arena [Cheating]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqlhkt/losers_are_out_on_arena_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Cheating] New account, kinda suspicious.",
+          "summary": "I died with a single shot on the Shoreline, just one minute after starting the game. Probably cheating with new account. What do you guys think?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqox74/cheating_new_account_kinda_suspicious/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Did I get ddos? [cheating]",
+          "summary": "Last night my friend and I did a labs run I opened green keycard room. I was throwing the plates out of a bd rig and I got lost connection to server. I couldn’t get back into the raid. Then my buddy said he heard somebody running outside green waiting for him to come out. I tried everything to get back in but it wouldn’t let me. I’m just curious was it a ddos or was it just bad luck?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wq5lsc/did_i_get_ddos_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] We finally got teasers of the environmental asset overhaul",
+          "summary": "Even without the lighting engine update that's meant to come at some point as well the game genuinely looks 10x better with these new grass and tree models. The last shot looks very much like it could be a photo of somewhere in the temperate zone of Russia.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqov9g/screenshot_we_finally_got_teasers_of_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] First time always hurts :(",
+          "summary": "My entire effort for today is pretty much gone. I am taking a break. FML UPDATE: Shout-out to BAT_Echoes for buying this massively overpriced wrench and covering my fuck up. To spread this positive good-will further, i am going to wear a santa hat and drop some good shits upon scavs my next few raids. Thank you for attention to this matter.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wq32yr/screenshot_first_time_always_hurts/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Just got a new kitten, had to make sure he was well educated [discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqeld5/just_got_a_new_kitten_had_to_make_sure_he_was/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[video] The other POV of Tigz’s extract camp on labs",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wq4oug/video_the_other_pov_of_tigzs_extract_camp_on_labs/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "sure man [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqk8ys/sure_man_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] The poor bot scab that didn't have a weapon",
+          "summary": "He was just trying to walk away from us cursing us in russian. Finally warcrime update",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqiewa/screenshot_the_poor_bot_scab_that_didnt_have_a/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "시참 끝.  | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=EbNKk0IbDTw",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Dominating the whole map with the GALIL in Wardogs",
+          "url": "https://www.youtube.com/watch?v=5lMWFUsLb_o",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ABI BINGO CHALLENGE",
+          "url": "https://www.youtube.com/watch?v=C79Dd_72_30",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
