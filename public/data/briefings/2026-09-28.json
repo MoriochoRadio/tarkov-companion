@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-28T00:50:18.350+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 8건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "Unplayable today [Discussion]",
+          "summary": "Broken servers and only cheaters today i dont know whats going on. Ive been playing for years and never complained but today is crazy. Does someone experience that too",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wr0qdi/unplayable_today_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Seasonal PVP gameplay [discussion]",
+          "summary": "I honestly think raids would be 100% better if people had confidence there were no cheaters, esp, knowers, etc in raids. Pretty much since the wiggle video, everyone goes into the raid assuming there is at least one cheater so they modify how they play and it makes raids dead quiet. People lurk, and thats a valid play style i love a good sneak session, but theres a time and a place. the fights im",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqwvwq/seasonal_pvp_gameplay_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Tricked a cheater into shooting at Zyrachiy and got his whole squad killed [Screenshot]",
+          "summary": "Playing Lighthouse with my buddy who was trying to get to Lightkeeper. He gets killed on the bridge, annoying but nothing unusual at first. Then, I start getting pre-fired at every angle I try to peak to counter-snipe. Nail in the coffin was the attempted wallbang through the lighthouse as I walked past Lightkeeper's locked door. I dumped my stuff off the cliff as well as my buddy's with shots zin",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wrce8x/tricked_a_cheater_into_shooting_at_zyrachiy_and/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] A quick Q&A with weapon designer lead of BSG, Pavel Kirby",
+          "summary": "I've talked to this guy a few times now on twitter, go show him some love on the original post, really pleasant guy, you can definitely feel the passion for implementing guns in this game lovingly when he speaks. https://x.com/tarkov/status/2103859682578174128 As for stuff in the video: Me personally I cannot wait any longer for the G3. It's been painful waiting this past 9 months while we've seen",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqtwjy/video_a_quick_qa_with_weapon_designer_lead_of_bsg/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Current state of the early 2000s SEALs sniper impression kit",
+          "summary": "W GWOT larps This is a pastiche of a few different looks/guys, but all these elements were present in some shape or form. The Eagle Industries MBSS is really the only plate carrier in the game currently accurate to that early era. A shame, because it sucks gameplay-wise lmao, not much storage for anything. But with the 20s, you can make it work for at least going prone and sniping some guys withou",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wquv59/screenshot_current_state_of_the_early_2000s_seals/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[LOOT] So I just found this randomly on Interchange",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqvogn/loot_so_i_just_found_this_randomly_on_interchange/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Two kils",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wr0run/video_two_kils/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Reminder that magical gun jamming aura superpowers don't belong in Tarkov",
+          "summary": "I don't care that he's easy to kill. Magical superpowers like that don't make any sense at all in Tarkov. Edit: Of course you numbskulls would immediately jump to the \"realism\" bs when I never even mentioned it in the original post but you just had to come up with a strawman argument to defend your cope.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wrcxbs/discussion_reminder_that_magical_gun_jamming_aura/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "도시를 멈춘 불꽃, 세계로 번진 얼음 | 타르코프 스토리 캠페인 모드 정주행 4탄 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=d6WHhJ7DMrs",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "남은 기간동안 많은걸 해금해서 경험해봐야돼! | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=OKjydWTXNCY",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Taking the SUPPRESSED PKM to DORMS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=cs5YpZrfyWQ",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=F-x7KosFwYc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
