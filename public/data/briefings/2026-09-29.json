@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-29",
+  "generatedAt": "2026-09-29T01:58:47.985+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 5건",
+  "sections": [
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] after having over 3k hours on the game i’ve finally decided to put some real use into the 416",
+          "summary": "these two builds are absolutely insane. very good ergo and 70 vertical recoil. plus they just look beautiful",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wrqf06/discussion_after_having_over_3k_hours_on_the_game/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Easiest 7 mil of my life [Loot]",
+          "summary": "I normally Scav Factory to find my daily documents, but I'll knock a few scavs here and there whenever I get the chance to. First time making this much profit tho",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wsf0bv/easiest_7_mil_of_my_life_loot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Kappa keeped me alive [Screenshot]",
+          "summary": "I started playing Tarkov casually. I saw a lot of gameplay videos about it, and I was amused by the game. By late 2024, I was in a very bad place mentally. I had no purpose in life, no gf, no friends, no motivation, no nothing. Then I started to isolate myself and did nothing all day. Nothing besides playing Tarkov. That was the only reason to stay alive, the only reason I woke up: to get Kappa. I",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ws46gz/kappa_keeped_me_alive_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Are we for real? [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ws36cy/are_we_for_real_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Arena] Free weekend Theta Container grind is over",
+          "summary": "For the life of me, I could not tell if the wiki was up to date since the quest update. Decisions, Decisions is indeed the move. It's just a quest reward from Fence so no need to spend those juicy good boy points or ligma medals. Getting in and out of Dorms 210 as a solo is a nightmare. Hopefully that was all worth it for the gaping keister I walked away with. Edit: Regular PVP, not seasonal! Stil",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wrusn0/arena_free_weekend_theta_container_grind_is_over/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Regarding unemployment",
+          "summary": "I can't help to think that there is some truth to this stereotype. Recently, i started a new job and have different working hours, which means i usually play late at night (after 01:00pm)EU region The amount of +3 prestige players i encounter insane. It is/was noticeably different from working hours and working evenings. I mean i cant help but to think of the fat unemployed dude playing tarkov in",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1ws1m43/discussion_regarding_unemployment/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "PVE 프레스티지 보상 공개 | (탈뽕 주의) 역대급 스태시 정리 편의성 기능 공개 | 총기 추가 로드맵, AN-94와 AEK 출시? | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=5eKzi8o0fVs",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "쌍안경 하나면 됩니다｜워독스 정찰병 돈 버는 법",
+          "url": "https://www.youtube.com/watch?v=TlMXxWS3Zlw",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "1부 델타포스 #AD / 2부 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=TQZ1n9D6Trs",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Fighting T-7 THERMAL PLAYERS on Armory (10,000,000 Koen Raid) - Arena Breakout Infinite",
+          "url": "https://www.youtube.com/watch?v=HpGvDMkORFg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=s0GLR6YaBMs",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
