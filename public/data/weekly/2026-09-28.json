@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-28T15:54:17.491+09:00",
+  "period": {
+    "from": "2026-09-21",
+    "to": "2026-09-27"
+  },
+  "headline": "2026-09-21 ~ 2026-09-27 주간 정리 — 패치·공식 3건 · 주의 5건 · 화제 6건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "이번 주 누적 주의사항",
+      "items": [
+        {
+          "title": "I'm a slithery little sneaky snake [Bug]",
+          "summary": "Had me pissing myself laughing when this happened",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wmdfgd/im_a_slithery_little_sneaky_snake_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Arena] Money transfer completely broken since new update.",
+          "summary": "Tried 5 different times on seasonal/PVP and got a different error each time. Amazing. Update: After these errors, my daily transfer limit maxed out as if I actually got to send it. Amazing!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wm1fyw/arena_money_transfer_completely_broken_since_new/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] 6B5-15 Items hidden",
+          "summary": "Until you drag it in the inventory lmao 1.0 ready surely",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wln3hh/bug_6b515_items_hidden/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] I have maxed out lighting (it's on) but my hall of fame is always dark like this. Is it broken?",
+          "summary": "https://preview.redd.it/uql45poryuqh1.png?width=2514&format=png&auto=webp&s=ea9264b04dba1f18257f2e2a54c7701d2f644681 The hall of fame has been dark like this since I built it weeks ago. Anybody know how to fix it?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wma2ym/bug_i_have_maxed_out_lighting_its_on_but_my_hall/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] I think ?",
+          "summary": "Found a mags case in marked room on customs but couldn't pick up, only search. Anyone know why, or is it simply a dumb bug ? Had more then enough room in backpack as you can see on 2nd image and even changed to another backpack from a random scav in case the Rush-100 couldn't carry mag cases for reason",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wm75j8/bug_i_think/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.1.5.1.47510 (18 September 2026)",
+          "summary": "Fixed an issue when in the 6B5-15 Zh-86 ‘Uley’ Flora and Khaki armored rigs slots appeared empty even after items had been moved into them",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47510_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.1.47473 (18 September 2026)",
+          "summary": "Technical update to ensure that rewards from Arena Season 3 are available following the release of update 0.6.0 in Escape from Tarkov: Arena.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.1.47473_(18_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.1.5.0.47426 (15 September 2026)",
+          "summary": "Fixed an issue where transitions became unavailable after a series of transitions from other locations, followed by the loss of progress on some tasks\nFixed an issue where, when using magnified optics at FOV other than the minimum, bullets would land noticeably above the reticle\nFixed the incorrect laser device beam deviation during automatic hip fire at FOV other than the minimum with certain we…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.1.5.0.47426_(15_September_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "여러 날 반복된 화제",
+      "items": [
+        {
+          "title": "FINALLY ESCAPED FROM TARKOV! [Screenshot]",
+          "summary": "[이번 주 2일 등장] I finally did it! It costed me more than 30 attemps without any guide and trying always to be alone(i suicided more than twice when i met people lol). I died over and over, hardly understood what i had to do but i finally escaped from Tarkov! I am so happy! I have to say thanks to the people that i met cause, before suiciding, they at least guided me a bit in some areas where i was totally lost. I",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wls3nj/finally_escaped_from_tarkov_screenshot/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "we can not be deadass [screenshot]",
+          "summary": "since when was this a problem? the comtac 6's work fine but they completely don't match the helmet",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wlafnn/we_can_not_be_deadass_screenshot/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] \"Maxed\" Fence rep is so fun it is totally worth the grind",
+          "summary": "First time in my 5 years of playing Tarkov I've bothered to \"crown\" Fence with 6 rep This is the funniest shit ever Me and the squad Every single raid I queue in Streets where Kaban is still alive I get to troll so many people into running towards the guards :3 I get people complaining on voice chat all the time: \"DUDE HOW\" \"NAH, fuck you man\" Best raid I've played, Kaban and his boys covered me w",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wlbtrt/discussion_maxed_fence_rep_is_so_fun_it_is/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Nightvision",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wleh5t/bug_nightvision/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Just got pve... why am i level 23?",
+          "summary": "I hopped on and look at this, level 23, havent even done 1 raid",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wlhjtm/discussion_just_got_pve_why_am_i_level_23/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Scav Run Of a Lifetime [loot]",
+          "summary": "Player died trying to take out black division killed 2 of them with his kit",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wljj6g/scav_run_of_a_lifetime_loot/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
