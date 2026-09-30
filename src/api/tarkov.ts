@@ -41,7 +41,7 @@ export interface AmmoInfo {
   projectileCount: number | null
 }
 
-// 플리마켓 세율(Ti/Tr) — 기본값은 1.0 기준 0.03이지만, 패치로 바뀔 수 있어
+// 플리마켓 세율(Ti/Tr) — 기본값(lib/fleaFee.ts)이 있지만 패치로 바뀔 수 있어
 // 아이템 응답에 끼워 실시간 값을 받아 둠 (추가 요청 없음).
 // 수수료 표시는 아이템 데이터가 있어야만 일어나므로 이 시점엔 항상 채워져 있음
 let fleaRates = {

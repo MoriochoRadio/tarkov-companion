@@ -5,7 +5,8 @@
 //   assets/* (해시 번들)    → 캐시 우선 (파일명에 해시가 있어 내용이 절대 안 바뀜)
 //   data/* (브리핑 JSON 등) → 네트워크 우선, 실패 시 캐시 (오프라인에서 마지막 브리핑)
 //   폰트 CDN                → 캐시 우선 (버전 고정 URL이라 안전)
-//   api.tarkov.dev          → POST라 fetch 핸들러를 안 거침 — 시세는 항상 실시간
+//   json.tarkov.dev (시세)  → 외부 출처라 이 SW는 캐시하지 않음(아래 "그 외 외부 요청").
+//                             HTTP 캐시(max-age 8일)는 jsonApi.ts가 cache: 'no-cache'로 재검증
 //
 // VERSION을 올리면 이전 캐시가 전부 삭제됨 (전략이 바뀔 때만 올리면 됨)
 const VERSION = 'tc-v1'

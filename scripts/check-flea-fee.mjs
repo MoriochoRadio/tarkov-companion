@@ -1,88 +1,62 @@
-// 플리마켓 수수료 공식 검증 — src/lib/fleaFee.ts의 계산을 tarkov.dev API의
-// fleaMarketFee(서버 측 계산) 값과 대조한다. 공식이나 세율이 패치로 바뀌면
-// 여기서 어긋나므로, 수수료 관련 수정 전후로 한 번씩 돌려볼 것.
+// 플리마켓 세율 점검 — src/lib/fleaFee.ts의 기본 세율(Ti/Tr)이 tarkov.dev 실시간 값과
+// 같은지 대조한다. 화면은 실시간 값으로 덮어쓰지만, 기본값이 낡으면 데이터 로드 전후나
+// 실패 시 수수료가 틀리게 나온다(2026-09: 기본 0.03 vs 실제 0.05). 패치 후 한 번씩 돌려볼 것.
 // 사용: node scripts/check-flea-fee.mjs  (Node 24+ — TS 타입 스트리핑으로 lib 직접 import)
 //
-// ⚠ 2026-08 현재 동작 불가: fleaMarketFee는 GraphQL 서버가 계산해 주는 필드라
-// json.tarkov.dev(JSON API)에 대응물이 없다. api.tarkov.dev/graphql이 다시 살아나야
-// 쓸 수 있다(the-hideout/tarkov-api#474). 그동안 세율만 확인하려면
-// json.tarkov.dev/regular/items의 fleaMarket.sellOfferFeeRate/sellRequirementFeeRate와
-// src/lib/fleaFee.ts의 기본값을 눈으로 대조할 것.
-import { fleaFee } from '../src/lib/fleaFee.ts'
+// 예전엔 GraphQL의 fleaMarketFee(서버 계산값)와 공식 자체를 대조했지만, api.tarkov.dev/graphql이
+// 2026-08-02부터 죽어 있고(HTTP 422) JSON API엔 그 필드가 없다. 그래서 JSON API로 확인할 수 있는
+// 세율만 본다. 공식은 2026-06에 서버 계산값과 20케이스 일치를 확인했다(DESIGN.md Phase 12).
+import {
+  DEFAULT_OFFER_RATE,
+  DEFAULT_REQUIREMENT_RATE,
+  fleaFee,
+} from '../src/lib/fleaFee.ts'
 
-const ENDPOINT = 'https://api.tarkov.dev/graphql'
+const ITEMS_URL = 'https://json.tarkov.dev/regular/items' // 웹(src/api/jsonApi.ts)과 같은 게임 모드
 
-// 기준가 스펙트럼을 넓게 — 저가 잡템부터 고가(LEDX·GPU)까지
-const SAMPLES = [
-  { id: '5448c1d04bdc2dff2f8b4569', label: 'PMAG 20' },
-  { id: '5c0530ee86f774697952d952', label: 'LEDX' },
-  { id: '57347ca924597744596b4e71', label: 'Graphics card' },
-  { id: '544fb25a4bdc2dfb738b4567', label: 'Bandage' },
-  { id: '59faff1d86f7746c51718c9c', label: 'Bitcoin' },
-]
-// 기준가 대비 다양한 가격대 (저가·기준가 부근·고가)
-const PRICE_MULTS = [0.4, 0.9, 1, 1.3, 2.5]
-
-const fields = SAMPLES.map(
-  (s, i) =>
-    `i${i}: item(id: "${s.id}") { basePrice ${PRICE_MULTS.map(
-      (_, k) => `f${k}: fleaMarketFee(price: $p${i}_${k})`,
-    ).join(' ')} }`,
-)
-
-// 1차: basePrice만 받아 가격 후보 계산 → 2차: fleaMarketFee 대조
-const baseRes = await fetch(ENDPOINT, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({
-    query: `{ ${SAMPLES.map((s, i) => `i${i}: item(id: "${s.id}") { basePrice }`).join(' ')} }`,
-  }),
-}).then((r) => r.json())
-
-if (!baseRes.data) {
-  console.error('tarkov.dev GraphQL 응답 없음 — 2026-08-02부터 장기 장애라 이 검증은 돌릴 수 없다')
-  console.error('(JSON API에는 fleaMarketFee 대응물이 없음 — 파일 상단 주석 참고)')
-  // 소켓 정리 후 종료 (Windows에서 곧바로 exit하면 libuv assert 노이즈가 뜸)
-  await new Promise((r) => setTimeout(r, 100))
+const res = await fetch(ITEMS_URL, { signal: AbortSignal.timeout(60_000) })
+if (!res.ok) {
+  console.error(`tarkov.dev 응답 오류 (HTTP ${res.status})`)
+  process.exit(1)
+}
+const { data } = await res.json()
+const live = data.fleaMarket
+if (!(live?.sellOfferFeeRate > 0)) {
+  console.error('items 데이터셋에 fleaMarket 세율이 없음 — 응답 형식이 바뀌었는지 확인')
   process.exit(1)
 }
 
-const prices = SAMPLES.map((_, i) =>
-  PRICE_MULTS.map((m) => Math.max(1, Math.round(baseRes.data[`i${i}`].basePrice * m))),
-)
-
-const query = `{ ${SAMPLES.map(
-  (s, i) =>
-    `i${i}: item(id: "${s.id}") { basePrice ${prices[i]
-      .map((p, k) => `f${k}: fleaMarketFee(price: ${p})`)
-      .join(' ')} }`,
-).join(' ')} }`
-
-const res = await fetch(ENDPOINT, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ query }),
-}).then((r) => r.json())
-
+const rows = [
+  ['Ti (sellOfferFeeRate)', DEFAULT_OFFER_RATE, live.sellOfferFeeRate],
+  ['Tr (sellRequirementFeeRate)', DEFAULT_REQUIREMENT_RATE, live.sellRequirementFeeRate],
+]
 let bad = 0
-for (const [i, s] of SAMPLES.entries()) {
-  const item = res.data[`i${i}`]
-  for (const [k, price] of prices[i].entries()) {
-    const api = item[`f${k}`]
-    if (api == null) {
-      // 플리 등록 불가 아이템(noFlea)은 API가 null을 반환 — 대조 불가, 건너뜀
-      console.log(`SKIP ${s.label.padEnd(14)} 플리 등록 불가 (fleaMarketFee null)`)
-      continue
-    }
-    const ours = fleaFee(item.basePrice, price)
-    const diff = Math.abs(api - ours)
-    // API는 내부 부동소수 경로가 달라 ±1 루블 반올림 차이가 날 수 있음
-    const ok = diff <= 1
-    if (!ok) bad++
+for (const [label, ours, api] of rows) {
+  const ok = ours === api
+  if (!ok) bad++
+  console.log(`${ok ? 'OK  ' : 'FAIL'} ${label.padEnd(28)} 기본값=${ours} 실시간=${api}`)
+}
+
+// 참고용: 실시간 세율로 계산한 수수료 예시 (기준가 대비 가격대별)
+const LEDX = data.items['5c0530ee86f774697952d952']
+if (LEDX?.basePrice) {
+  const rates = {
+    offerRate: live.sellOfferFeeRate,
+    requirementRate: live.sellRequirementFeeRate,
+  }
+  for (const mult of [0.9, 1, 2.5]) {
+    const price = Math.round(LEDX.basePrice * mult)
     console.log(
-      `${ok ? 'OK ' : 'FAIL'} ${s.label.padEnd(14)} base=${item.basePrice} price=${price} api=${api} ours=${ours}${ok ? '' : ` (diff ${diff})`}`,
+      `     LEDX base=${LEDX.basePrice} price=${price} → 수수료 ${fleaFee(LEDX.basePrice, price, rates)}₽`,
     )
   }
 }
-console.log(bad === 0 ? '\n전부 일치 (±1₽)' : `\n${bad}건 불일치 — 공식/세율 변경 여부 확인 필요`)
+
+console.log(
+  bad === 0
+    ? '\n기본 세율이 실시간 값과 일치'
+    : `\n${bad}건 불일치 — src/lib/fleaFee.ts의 DEFAULT_* 값을 실시간 값으로 고칠 것`,
+)
+// 소켓 정리 후 종료 (Windows에서 곧바로 exit하면 libuv assert 노이즈가 뜸)
+await new Promise((r) => setTimeout(r, 100))
 process.exit(bad === 0 ? 0 : 1)

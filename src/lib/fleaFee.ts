@@ -8,13 +8,14 @@
 //   PR = log10(VR / VO), 단 VR ≥ VO면 PR^1.08
 //   Q  = "전체 묶음 판매" 체크 시 1, 아니면 개수
 //
-// 1.0에서 세율 상수가 Ti = Tr = 0.03으로 바뀜 (과거 0.05/0.1) —
-// 위키 본문과 tarkov.dev fleaMarket 쿼리(sellOfferFeeRate/sellRequirementFeeRate)
-// 양쪽에서 교차 확인했고, scripts/check-flea-fee.mjs가 API의 fleaMarketFee
-// 계산값과 대조 검증함.
+// 세율 Ti/Tr은 패치마다 바뀐다 (0.05/0.1 → 1.0 초기 0.03/0.03 → 2026-09 현재 0.05/0.05).
+// 화면에서는 tarkov.dev items 데이터셋의 fleaMarket.sellOfferFeeRate/sellRequirementFeeRate
+// 실시간 값으로 덮어쓰므로(api/tarkov.ts), 아래 기본값은 그 값을 못 받았을 때의 대비용이다.
+// 기본값이 실제 세율과 어긋났는지는 scripts/check-flea-fee.mjs로 확인한다.
+// (공식 자체는 2026-06 GraphQL fleaMarketFee 서버 계산값과 20케이스 일치 확인 — DESIGN.md Phase 12)
 
-export const DEFAULT_OFFER_RATE = 0.03 // Ti
-export const DEFAULT_REQUIREMENT_RATE = 0.03 // Tr
+export const DEFAULT_OFFER_RATE = 0.05 // Ti — json.tarkov.dev 2026-09-30 실측
+export const DEFAULT_REQUIREMENT_RATE = 0.05 // Tr
 
 export interface FleaFeeOptions {
   count?: number // 올리는 개수 (기본 1)

@@ -24,8 +24,13 @@ export interface Dataset<T> {
 // 로케일 사전이 없는 데이터셋 (endpoints의 translations: false)
 const NO_LOCALE = new Set(['barters', 'crafts'])
 
+// json.tarkov.dev는 브라우저(CORS) 요청에 Cache-Control: max-age=691200(8일)을 붙여 준다.
+// 그대로 두면 재방문자가 HTTP 캐시에 남은 최대 8일 전 시세를 본다 → 'no-cache'로 매번
+// 서버에 재검증(ETag)한다. 안 바뀌었으면 304라 본문을 다시 받지 않는다
+const FRESH: RequestInit = { cache: 'no-cache' }
+
 async function getJson<T>(path: string): Promise<T> {
-  const res = await fetch(`${BASE}/${path}`)
+  const res = await fetch(`${BASE}/${path}`, FRESH)
   if (!res.ok) {
     throw new Error(`tarkov.dev 데이터 응답 오류 (HTTP ${res.status})`)
   }
@@ -94,7 +99,7 @@ export interface RawPricePoint {
 }
 
 export async function loadPriceHistory(id: string): Promise<RawPricePoint[]> {
-  const res = await fetch(`${BASE}/${MODE}/prices/${encodeURIComponent(id)}`)
+  const res = await fetch(`${BASE}/${MODE}/prices/${encodeURIComponent(id)}`, FRESH)
   if (res.status === 404) return []
   if (!res.ok) throw new Error(`tarkov.dev 시세 응답 오류 (HTTP ${res.status})`)
   const body = (await res.json()) as { data?: RawPricePoint[] }
