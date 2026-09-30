@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-01",
+  "generatedAt": "2026-10-01T00:13:36.361+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 2건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Randomly testing stuff, wanted to try a little jump",
+          "summary": "Not gamebreaking, but should be fixxed at some point =D Note, i do have elite strenght",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wteqo1/bug_randomly_testing_stuff_wanted_to_try_a_little/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Holy lag spike",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wtvg5n/bug_holy_lag_spike/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] Bathroom camper froze after I accidentally proned mid-fight",
+          "summary": "wrong keybind + i think he standstill like this becuse he think iam died ? \"Accidentally hit my prone keybind while pushing this bathroom camper, but I think he completely froze because he thought he killed me?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wtk0n8/video_bathroom_camper_froze_after_i_accidentally/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Streamer thought I was cheating and reported me but more importantly this show how AWFUL the audio on Reserve is. Both POVs [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wtj78z/streamer_thought_i_was_cheating_and_reported_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "No one at my work appreciates this [IRL]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wu536p/no_one_at_my_work_appreciates_this_irl/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Waiter! Waiter! More MultiCam please!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wtet3h/screenshot_waiter_waiter_more_multicam_please/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Just got this... Nice! [Screenshot]",
+          "summary": "New Beta Armband, just got it a few min. ago. Looks okay, pretty nice",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wu0qwx/just_got_this_nice_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Current top player in my league with 1.7mil XP. Were you as cool as him after playing EFT for just 358 hours?",
+          "summary": "Personally, I still barely knew Customs in my first 500 hours and could somewhat put together an okay M4 build and it was well before any expansions.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wtm8cf/screenshot_current_top_player_in_my_league_with/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Can Two Beginners Survive Project Zomboid? - The Cure #1 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=K6j1Vtbpz6w",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "This is what PERFECT team work looks like in Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=ODoQP2iXfK4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
