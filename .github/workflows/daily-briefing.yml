@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # 백업 cron 멱등화: 오늘(KST) 브리핑 파일이 이미 있으면 이후 단계를 전부 건너뛴다.
       # generate-briefing.mjs는 매번 generatedAt을 새로 찍어 무조건 덮어쓰므로, 이 guard가
@@ -47,7 +47,7 @@ jobs:
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.guard.outputs.skip != 'true'
         with:
           node-version: 22

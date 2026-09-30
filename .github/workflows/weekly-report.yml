@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # 백업 cron 멱등화: 이번 주(오늘 KST 날짜) 리포트 파일이 이미 있으면 건너뛴다.
       # generate-weekly.mjs도 매번 generatedAt을 새로 찍어 덮어쓰므로 guard가 없으면 재배포가 반복된다.
@@ -38,7 +38,7 @@ jobs:
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.guard.outputs.skip != 'true'
         with:
           node-version: 22
