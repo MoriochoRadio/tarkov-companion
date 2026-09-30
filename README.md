@@ -64,7 +64,7 @@ Escape From Tarkov 플레이어를 위한 한국어 컴패니언 웹.
        └─ GitHub Pages (정적 호스팅)
               ▲
               │ 커밋 → 자동 배포 (매일 09:00 KST)
-[GitHub Actions] ── 뉴스·커뮤니티 수집 → GitHub Models로 한국어 요약 → 브리핑 JSON
+[GitHub Actions] ── 뉴스·커뮤니티 수집 → 규칙 기반 분류·중복 제거 → 브리핑 JSON
 ```
 
 - **시세**: 방문자의 브라우저가 [tarkov.dev](https://tarkov.dev/api/) 공개 API를 직접 호출 — 서버·키·비용 없음
@@ -111,7 +111,6 @@ main에 push하면 GitHub Actions가 자동으로 빌드·배포합니다.
 - 커뮤니티 동향: [r/EscapefromTarkov](https://www.reddit.com/r/EscapefromTarkov/) — 공개 RSS 피드 기반. 각 게시물의 권리는 해당 작성자에게 있으며, 브리핑은 원문 링크와 함께 짧은 요약만 제공합니다
 - 신규 영상: YouTube 채널 공개 RSS (노잼망겜, 유우양, Pestily, LVNDMARK) — 제목·링크만 수록하며 각 영상의 권리는 해당 채널에 있습니다
 - 공식 소식: Steam 뉴스 공개 RSS
-- 브리핑 요약 생성: [GitHub Models](https://docs.github.com/en/github-models)
 - 맵 지도 SVG: [The Hideout 커뮤니티 — tarkov-dev-svg-maps](https://github.com/the-hideout/tarkov-dev-svg-maps) ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) · 좌표 변환 메타: [the-hideout/tarkov-dev](https://github.com/the-hideout/tarkov-dev) maps.json (MIT) — 상세는 [`public/maps/LICENSE.md`](public/maps/LICENSE.md). **본 사이트는 광고·후원·유료 기능이 없는 비상업 팬 프로젝트로 NC(비상업) 조건을 준수하며, 이 에셋을 사용하는 동안에는 상업화하지 않습니다.** 퀘스트 마커는 런타임 오버레이로만 그려 지도 파생 파일을 만들지 않습니다
 
 ## 면책

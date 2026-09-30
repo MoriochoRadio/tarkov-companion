@@ -64,12 +64,12 @@ Features are organized into 5 groups of tabs. `Ctrl+K` lets you quickly search a
        └─ GitHub Pages (static hosting)
               ▲
               │ commit → auto deploy (daily 09:00 KST)
-[GitHub Actions] ── collect news & community posts → summarize in Korean with GitHub Models → briefing JSON
+[GitHub Actions] ── collect news & community posts → rule-based sorting & dedup → briefing JSON
 ```
 
 - **Prices**: the visitor's browser calls the [tarkov.dev](https://tarkov.dev/api/) public API directly — no server, no keys, no cost
-- **Briefing**: GitHub Actions collects the EFT wiki changelog, Reddit (top posts + bug reports), new YouTube videos, and Steam news every day, runs a 2-stage summary (per-source → combined) with [GitHub Models](https://docs.github.com/en/github-models) (free), and commits it as static JSON — fully automated with no human involvement. A weekly meta report is also published every Monday
-- Even on days when AI summarization fails, it falls back to a title+link list, so no day goes without a briefing
+- **Briefing**: GitHub Actions collects the EFT wiki changelog, Reddit (top posts + bug reports), new YouTube videos, and Steam news every day, sorts it with rules (patch / caution / guides / community / videos), removes duplicates, marks what is new since yesterday, and commits it as static JSON — fully automated with no human involvement. A weekly meta report is also published every Monday
+- It does not depend on any external AI provider (switched to rule-based curation after GitHub Models was retired in 2026-08), so no day goes without a briefing
 
 For the detailed design, see [docs/DESIGN.md](docs/DESIGN.md); for the briefing data format, see [docs/briefing-schema.md](docs/briefing-schema.md).
 
@@ -81,11 +81,11 @@ A. "Everything must be free" was this project's first constraint. Prices come fr
 **Q. Why React + TypeScript + Vite?**
 A. A standard-stack choice premised on single-person maintenance. The build command includes `tsc --noEmit` so that any type error fails the deployment itself, and deploying under a GitHub Pages subpath is solved with a single Vite `base` setting.
 
-**Q. Why GitHub Models for AI summarization?**
-A. It can be called for free with just GitHub Actions' default `GITHUB_TOKEN`, so the pipeline is self-contained within the repository with no separate key issuance or billing. A per-process call cap (20 calls) keeps usage at 5 or fewer calls per day normally — under half of the free limit (50/day) — and on days when summarization fails it falls back to a title+link list so no briefing day is ever empty.
+**Q. Why is there no AI summary in the briefing?**
+A. It originally used GitHub Models (called for free with Actions' default `GITHUB_TOKEN`), but that service was fully retired on 2026-07-30. With no suitable replacement that keeps the "everything free, no external accounts" principle, the briefing was settled on rule-based curation instead of AI: sections come from the collector's feed labels (bugs & PSAs → caution, guides & tips → tips), duplicates are removed by URL, and items are marked new by comparing with yesterday's briefing. The trade-off is that English excerpts are shown as-is rather than translated into Korean.
 
 **Q. Why register as many as 6 GitHub Actions crons?**
-A. Because in production I experienced GitHub's schedule events being dropped entirely for two consecutive days (2026-06-12 and 13). Avoiding on-the-hour times (the congested slots) wasn't enough, and there were days when all 3 crons bunched in the morning died together, so I spread 6 crons across the whole day from 09:00 to 20:00. A guard step at the very front of the workflow makes it idempotent ("skip if today's briefing already exists"), so no matter how many backup crons there are, duplicate AI calls and redeploy costs are zero.
+A. Because in production I experienced GitHub's schedule events being dropped entirely for two consecutive days (2026-06-12 and 13). Avoiding on-the-hour times (the congested slots) wasn't enough, and there were days when all 3 crons bunched in the morning died together, so I spread 6 crons across the whole day from 09:00 to 20:00. A guard step at the very front of the workflow makes it idempotent ("skip if today's briefing already exists"), so no matter how many backup crons there are, duplicate generation and redeploy costs are zero.
 
 **Q. Why localStorage for user data instead of login?**
 A. With no server, self-hosted login is a non-starter, and I concluded that free BaaS offerings push quotas, key management, privacy liability, and vendor lock-in onto a one-person free project — so I decided not to build it. Instead, `navigator.storage.persist()` prevents the browser's automatic storage cleanup, and JSON file backup export/import supports moving between devices.
@@ -111,7 +111,6 @@ The briefing pipeline can be tested by manually running the `daily-briefing` wor
 - Community trends: [r/EscapefromTarkov](https://www.reddit.com/r/EscapefromTarkov/) — based on the public RSS feed. Rights to each post belong to its author; briefings provide only short summaries with links to the originals
 - New videos: public RSS from YouTube channels (노잼망겜, 유우양, Pestily, LVNDMARK) — only titles and links are included; rights to each video belong to its channel
 - Official news: Steam news public RSS
-- Briefing summary generation: [GitHub Models](https://docs.github.com/en/github-models)
 - Map SVGs: [The Hideout community — tarkov-dev-svg-maps](https://github.com/the-hideout/tarkov-dev-svg-maps) ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) · coordinate transform metadata: [the-hideout/tarkov-dev](https://github.com/the-hideout/tarkov-dev) maps.json (MIT) — details in [`public/maps/LICENSE.md`](public/maps/LICENSE.md). **This site is a non-commercial fan project with no ads, sponsorships, or paid features; it complies with the NC (non-commercial) condition and will not be commercialized for as long as it uses these assets.** Quest markers are drawn only as runtime overlays, so no derivative map files are created
 
 ## Disclaimer
