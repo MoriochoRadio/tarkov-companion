@@ -9,8 +9,10 @@
 //   - 중복 제거: URL 기준 전역 1회 (같은 글이 여러 피드에 걸리는 경우가 흔함)
 //   - isNew: 어제 브리핑의 URL 집합과 대조 (AI 판정보다 오히려 정확)
 // 못 하는 것은 번역·통합 요약이다 — 원문(영어) 발췌를 그대로 싣고 출처를 명시한다.
+// 원문을 그대로 싣는 대신 욕설 단어는 가린다 (mask-profanity.mjs).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { maskProfanity } from './mask-profanity.mjs'
 
 // 로컬 테스트 시 실제 데이터를 건드리지 않도록 OUTPUT_DIR로 출력 경로 변경 가능
 const OUTPUT_DIR = process.env.OUTPUT_DIR ?? 'public/data/briefings'
@@ -110,9 +112,9 @@ function buildSections() {
       })
       .slice(0, plan.max)
       .map((i) => {
-        const summary = excerptOf(i, plan.type)
+        const summary = maskProfanity(excerptOf(i, plan.type))
         return {
-          title: String(i.title),
+          title: maskProfanity(String(i.title)),
           ...(summary ? { summary } : {}),
           ...(i.url ? { url: String(i.url) } : {}),
           ...(i.source ? { source: String(i.source) } : {}),

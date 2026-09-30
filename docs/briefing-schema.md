@@ -43,7 +43,8 @@ public/data/briefings/
 
 ## 주간 메타 리포트 (public/data/weekly/)
 
-매주 월요일 `weekly-report.yml`이 지난 7일치 일일 브리핑을 종합해 같은 구조로 생성한다.
+매주 월요일 `weekly-report.yml`이 지난주(월~일) 일일 브리핑을 종합해 같은 구조로 생성한다.
+파일 날짜는 실행 시각과 무관하게 그 주(KST) 월요일로 고정한다 — 한 주에 파일 하나.
 파일 배치도 동일(`index.json` + `YYYY-MM-DD.json`)하며, 추가 필드 하나만 다름:
 
 ```json
@@ -58,8 +59,10 @@ public/data/briefings/
 
 1. `scripts/collect-briefing.mjs` — 4개 소스 수집, 소스 하나가 실패해도 나머지로 진행:
    - EFT 위키 체인지로그 (MediaWiki API)
-   - Reddit r/EscapefromTarkov: 일간 인기글 + 플레어 검색 RSS (버그·이슈 등)
-   - YouTube 채널 RSS: 노잼망겜, 유우양, Pestily, LVNDMARK — 최근 24시간 신규 영상
+   - Reddit r/EscapefromTarkov: 일간 인기글 RSS 하나를 제목의 [태그]·키워드로 분류
+     (버그·이슈·PSA / 공략·팁 / 치터 동향 / 일간 인기). 검색 RSS는 429가 잦아 2026-09에 뺐다
+   - YouTube 채널 RSS: 노잼망겜, 유우양, Pestily, LVNDMARK — 최근 24시간 신규 영상 중
+     제목·설명에 타르코프 키워드(게임명·맵·보스·은어)가 있는 것만
    - Steam 뉴스 RSS (appid 3932890)
 2. `scripts/generate-briefing.mjs` — **규칙 기반 큐레이션** (외부 AI 없음, Phase 45):
    - 섹션 배정: 수집기가 붙인 피드 라벨로 — 버그·이슈·PSA → `warning`, 공략·팁 → `tips`,
@@ -68,4 +71,5 @@ public/data/briefings/
    - `isNew`: 어제 브리핑의 URL 집합에 없으면 표시 (어제 파일이 없으면 아무 데도 붙이지 않음)
    - `headline`: 새로 들어온 패치 > 새 공식 소식 > 건수 요약 순. 어제도 있던 패치는 헤드라인으로 올리지 않음
    - `summary`: 원문 발췌를 400자까지 그대로 (번역·통합 요약은 하지 않는다). 영상은 summary 없음
+   - 욕설 마스킹: 제목·발췌의 욕설 단어는 첫 글자만 남기고 가림 (`scripts/mask-profanity.mjs`)
 3. 같은 날짜 파일이 있으면 덮어쓰고 `index.json` 갱신 후 커밋, 배포 워크플로우 dispatch

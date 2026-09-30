@@ -432,7 +432,7 @@ Phase 39에서 `done-quests`가 일급이 됐으니 `requires`/`unlocks`(이미 
 - **UI 무변경**: api 모듈의 export 타입·시그니처를 그대로 유지해 features/ 코드는 한 줄도 안 고침
 - **바뀐 동작 2가지**: ① 시세 히스토리는 아이템당 별도 요청(전 구간 응답을 7일로 잘라 씀) ② 가격 알림 폴링 주기 5분 → 15분(원본 시세가 2시간 간격 갱신이라 5분 폴링은 트래픽만 낭비)
 - **검증**: 프로덕션 빌드 + CPU 4x — 전 탭 스모크 통과(퀘스트 517·아이템 5,312·탄약 200·열쇠 80·맵 17·은신처 26·빌드 16), 최장 롱태스크 531ms(1초 규칙 이내), 퀘스트 그룹 첫 진입 5.4초(네트워크 지배, rAF 응답 1ms로 메인 스레드는 계속 반응). `validate-builds`/`check-unlocks`/`check-map-projection`/`explore-weapon`도 JSON API로 이전해 전부 통과
-- **못 옮긴 것**: `check-flea-fee.mjs` — `fleaMarketFee`는 GraphQL 서버 계산 필드라 JSON API에 대응물이 없다. GraphQL 복구 전까지 사용 불가(스크립트가 그렇게 안내하고 종료)
+- **못 옮긴 것**: `check-flea-fee.mjs` — `fleaMarketFee`는 GraphQL 서버 계산 필드라 JSON API에 대응물이 없다. GraphQL 복구 전까지 사용 불가(스크립트가 그렇게 안내하고 종료) → Phase 46에서 JSON API 세율 대조 스크립트로 교체
 
 ### Phase 45 — AI 요약 제거: 규칙 기반 큐레이션으로 확정 (완료)
 
@@ -447,6 +447,16 @@ Phase 39에서 `done-quests`가 일급이 됐으니 `requires`/`unlocks`(이미 
   - 주간 리포트 → "며칠에 걸쳐 등장했는가"를 중요도 신호로 삼아 랭킹하고 `[이번 주 N일 등장]` 표기
 - **못 하는 것**(정직하게 남김): 영어 원문의 한국어 번역·통합 요약. 발췌를 원문 그대로 싣고 출처를 명시한다. README·면책 문구도 "AI가 생성한 요약" → "자동 수집·분류된 원문 발췌"로 수정
 - **부수 정리**: daily-briefing·weekly-report에서 `models: read` 권한과 `GITHUB_TOKEN` 주입 제거(브리핑 생성은 이제 네트워크 자격증명이 필요 없음). quest-guides는 cron을 떼 휴면(dispatch 전용) — 기존 가이드 471개는 그대로 서비스되고 신규 퀘스트만 가이드가 없다. `scripts/github-models.mjs`는 나중에 제공자를 붙일 때 **이 파일 하나만 갈아끼우면 되도록** 남겨 두고 폐지 사실을 주석에 명시
+
+### Phase 46 — 자동화·데이터 운영 버그 정리 (2026-09-30, 완료)
+
+- **주간 리포트 중복 발행**: guard가 "KST 오늘 날짜 파일"을 봐서, 스케줄이 밀려 월요일 백업 cron이 KST 화요일에 돌면 화요일자 리포트가 또 생겼다(09-01·15·22·29). → 파일 날짜를 **그 주 월요일로 고정**, 집계 범위도 지난주 월~일로 고정, guard는 월요일 파일 존재로 판단. 기존 화요일판 4개는 삭제(월요일판 유지)
+- **Reddit 검색 RSS 429**: 주제별 검색 RSS가 거의 매일 429라(08-20 이후 41일 중 3일만 성공) 버그·공략 섹션이 사라졌다. → 검색 피드를 빼고 일간 인기 RSS 하나(`limit=25`)를 제목의 `[Bug]`·`[Cheating]` 같은 태그 + 예전 검색 키워드로 로컬 분류. 일부 피드·채널만 실패해도 `errors`에 `partial: true`로 남긴다(예전엔 "실패 0"으로 찍힘)
+- **비타르코프 영상**: 채널 피드에 델타포스·워독스·ABI 영상이 섞였다(8~9월 237건 중 약 3분의 1). → 제목·설명에 타르코프 키워드(게임명·한국어 맵/보스 이름·은어)가 있을 때만 채택. 다른 게임에도 흔한 단어(Customs·공장·연구소 등)는 제외
+- **욕설 노출**: 원문을 그대로 싣다 보니 Reddit 제목·발췌의 욕설이 그대로 나갔다(8~9월 678건 중 18건). → `scripts/mask-profanity.mjs`로 첫 글자만 남기고 가림(일일·주간 공통)
+- **시세 HTTP 캐시**: json.tarkov.dev가 CORS 응답에 `max-age=691200`(8일)을 줘서 재방문자가 옛 시세를 볼 수 있었다 → `jsonApi.ts` fetch에 `cache: 'no-cache'`(ETag 재검증, 안 바뀌면 304)
+- **플리 세율 기본값**: 0.03 → 실측 0.05/0.05. `check-flea-fee.mjs`는 죽은 GraphQL 대신 JSON API 세율과 기본값을 대조하도록 교체(공식 자체 대조는 서버 계산 필드가 없어 불가)
+- **Actions 버전**: Node 20 대상 액션을 최신 메이저로(checkout v7, setup-node v7, configure-pages v6, upload-pages-artifact v5, deploy-pages v5)
 
 ## 6. 환경 역할 분담
 

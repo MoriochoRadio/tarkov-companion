@@ -1,29 +1,38 @@
-// 주간 메타 리포트: 지난 7일치 일일 브리핑을 종합해 "이번 주 정리" 생성
-// 출력: public/data/weekly/<날짜>.json + index.json (일일 브리핑과 같은 스키마 → 프런트 렌더러 공유)
-// 매주 월요일 01:00 UTC(= KST 10시)에 weekly-report.yml이 실행한다.
+// 주간 메타 리포트: 지난주(월~일) 일일 브리핑을 종합해 "이번 주 정리" 생성
+// 출력: public/data/weekly/<이번 주 월요일>.json + index.json (일일 브리핑과 같은 스키마 → 프런트 렌더러 공유)
+// 매주 월요일 01:17 UTC(= KST 10:17, 백업 cron 2개)에 weekly-report.yml이 실행한다.
+//
+// 파일 날짜는 "실행한 날"이 아니라 "그 주(KST) 월요일"로 고정한다. 예전엔 KST 오늘 날짜를
+// 썼는데, GitHub 스케줄이 몇 시간씩 밀려 월요일 백업 cron이 15:00 UTC(= KST 화요일 0시)를
+// 넘기면 guard가 "오늘(화) 파일 없음"으로 보고 화요일자 리포트를 한 번 더 만들었다
+// (2026-09-01·09-15·09-22·09-29 중복). 월요일로 고정하면 언제 돌아도 같은 파일이라
+// guard(weekly-report.yml)와 함께 한 주에 하나만 남는다. 집계 범위도 지난주 월~일로 고정.
 //
 // AI 요약은 쓰지 않는다 (Phase 45). 대신 "며칠에 걸쳐 반복 등장했는가"를 중요도 신호로
 // 삼는다 — 한 주 내내 올라온 이슈일수록 위로 올린다. 일일 브리핑을 이미 규칙으로
 // 분류해 두었으므로(warning/news/tips/community) 주간은 그 축을 그대로 물려받는다.
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { maskProfanity } from './mask-profanity.mjs'
 
 const BRIEFINGS_DIR = process.env.BRIEFINGS_DIR ?? 'public/data/briefings'
 const OUTPUT_DIR = process.env.OUTPUT_DIR ?? 'public/data/weekly'
 
-const today = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10)
-const generatedAt = new Date(Date.now() + 9 * 3600 * 1000)
-  .toISOString()
-  .replace('Z', '+09:00')
+// KST 기준 이번 주 월요일 (+9h 보정한 시각의 UTC 필드 = KST 달력)
+const kstNow = new Date(Date.now() + 9 * 3600 * 1000)
+const weekStartDate = new Date(kstNow)
+weekStartDate.setUTCDate(kstNow.getUTCDate() - ((kstNow.getUTCDay() + 6) % 7)) // 월=0 … 일=6
+const weekStart = weekStartDate.toISOString().slice(0, 10)
+const generatedAt = kstNow.toISOString().replace('Z', '+09:00')
 
-// 지난 7일치 브리핑 로드
+// 지난주 월~일 브리핑 로드
 const index = JSON.parse(
   await readFile(path.join(BRIEFINGS_DIR, 'index.json'), 'utf8'),
 )
-const cutoff = new Date(`${today}T00:00:00Z`)
+const cutoff = new Date(`${weekStart}T00:00:00Z`)
 cutoff.setUTCDate(cutoff.getUTCDate() - 7)
 const weekDates = (index.dates ?? [])
-  .filter((d) => d >= cutoff.toISOString().slice(0, 10) && d < today)
+  .filter((d) => d >= cutoff.toISOString().slice(0, 10) && d < weekStart)
   .sort()
 
 const briefings = []
@@ -58,7 +67,7 @@ for (const b of briefings) {
         hit.days.add(b.date)
         // 요약은 더 긴 쪽을 남긴다 (날마다 발췌 길이가 다를 수 있음)
         if ((i.summary?.length ?? 0) > (hit.item.summary?.length ?? 0)) {
-          hit.item = { ...hit.item, summary: i.summary }
+          hit.item = { ...hit.item, summary: maskProfanity(i.summary) }
         }
         continue
       }
@@ -66,8 +75,8 @@ for (const b of briefings) {
         type: s.type,
         days: new Set([b.date]),
         item: {
-          title: i.title,
-          ...(i.summary ? { summary: i.summary } : {}),
+          title: maskProfanity(i.title),
+          ...(i.summary ? { summary: maskProfanity(i.summary) } : {}),
           ...(i.url ? { url: i.url } : {}),
           ...(i.source ? { source: i.source } : {}),
         },
@@ -134,7 +143,7 @@ if (count('tips')) headlineParts.push(`공략 ${count('tips')}건`)
 if (count('community')) headlineParts.push(`화제 ${count('community')}건`)
 
 const output = {
-  date: today,
+  date: weekStart,
   generatedAt,
   period: { from: weekDates[0], to: weekDates[weekDates.length - 1] },
   headline: `${weekDates[0]} ~ ${weekDates[weekDates.length - 1]} 주간 정리 — ${headlineParts.join(' · ')}`,
@@ -143,7 +152,7 @@ const output = {
 
 await mkdir(OUTPUT_DIR, { recursive: true })
 await writeFile(
-  path.join(OUTPUT_DIR, `${today}.json`),
+  path.join(OUTPUT_DIR, `${weekStart}.json`),
   `${JSON.stringify(output, null, 2)}\n`,
 )
 
@@ -154,10 +163,10 @@ try {
 } catch {
   // index가 없으면 새로 만든다
 }
-dates = [...new Set([today, ...dates])].sort().reverse()
+dates = [...new Set([weekStart, ...dates])].sort().reverse()
 await writeFile(indexPath, `${JSON.stringify({ dates })}\n`)
 
 const itemCount = sections.reduce((n, s) => n + s.items.length, 0)
 console.log(
-  `주간 리포트 생성 완료 → ${OUTPUT_DIR}/${today}.json (섹션 ${sections.length}개, 항목 ${itemCount}개)`,
+  `주간 리포트 생성 완료 → ${OUTPUT_DIR}/${weekStart}.json (섹션 ${sections.length}개, 항목 ${itemCount}개)`,
 )

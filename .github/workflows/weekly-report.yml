@@ -25,14 +25,19 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # 백업 cron 멱등화: 이번 주(오늘 KST 날짜) 리포트 파일이 이미 있으면 건너뛴다.
+      # 백업 cron 멱등화: 이번 주(KST 월~일) 리포트가 이미 있으면 건너뛴다.
       # generate-weekly.mjs도 매번 generatedAt을 새로 찍어 덮어쓰므로 guard가 없으면 재배포가 반복된다.
+      # 리포트 파일 이름은 "그 주 월요일"로 고정이라(generate-weekly.mjs) 월요일 파일만 보면 된다.
+      # 예전엔 "오늘 KST 날짜" 파일을 봐서, 스케줄이 밀려 백업 cron이 KST 화요일에 돌면
+      # 화요일자 리포트가 한 번 더 생겼다(2026-09-01·15·22·29).
       - name: 이번 주 리포트 존재 여부 확인
         id: guard
         run: |
-          TODAY=$(TZ=Asia/Seoul date +%F)
-          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "public/data/weekly/$TODAY.json" ]; then
-            echo "이미 $TODAY 주간 리포트 존재 → 백업 cron 건너뜀"
+          DOW=$(TZ=Asia/Seoul date +%u) # 1=월 … 7=일
+          MONDAY=$(TZ=Asia/Seoul date -d "-$((DOW - 1)) days" +%F)
+          echo "monday=$MONDAY" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "public/data/weekly/$MONDAY.json" ]; then
+            echo "이미 이번 주($MONDAY) 주간 리포트 존재 → 백업 cron 건너뜀"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -61,7 +66,7 @@ jobs:
             echo "변경 없음 — 커밋 생략"
             echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "주간 리포트: $(TZ=Asia/Seoul date +%F) 자동 생성"
+            git commit -m "주간 리포트: ${{ steps.guard.outputs.monday }} 자동 생성"
             # 다른 콘텐츠 워크플로우와 push가 겹치면 non-fast-forward — 재시도로 방어
             for i in 1 2 3; do
               git pull --rebase origin main && git push origin main && break

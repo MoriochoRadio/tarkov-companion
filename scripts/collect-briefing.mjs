@@ -3,15 +3,15 @@
 //
 // 소스 4그룹 — 어느 하나가 실패해도 나머지로 계속 진행한다:
 //   wikiChangelog  EFT 위키 체인지로그 (MediaWiki API)
-//   reddit         r/EscapefromTarkov 일간 인기글 + 주제별 검색 RSS
-//   youtube        채널 RSS, 최근 24시간 신규 영상
+//   reddit         r/EscapefromTarkov 일간 인기글 RSS 1개 → 제목·플레어로 주제 분류
+//   youtube        채널 RSS, 최근 24시간 신규 영상 (타르코프 영상만)
 //   steam          Steam 뉴스 RSS (appid 3932890)
+// 소스 전체 실패뿐 아니라 "일부 채널만 실패"도 result.errors에 남긴다(partial: true).
 //
 // 공식 뉴스(escapefromtarkov.com/news)는 JS 렌더링 SPA이고 내부 API도
 // 외부 호출을 403으로 막아서(2026-06-11 확인) 수집 불가 →
 // 공식 패치노트를 그대로 수록하는 EFT 위키 체인지로그로 대체.
 import { mkdir, writeFile } from 'node:fs/promises'
-import { setTimeout as sleep } from 'node:timers/promises'
 
 const UA =
   'tarkov-companion-briefing/1.0 (github.com/MoriochoRadio/tarkov-companion)'
@@ -105,43 +105,51 @@ async function collectWikiChangelog() {
   return items
 }
 
-// ---------- 2. Reddit (일간 인기 + 주제별 검색 RSS) ----------
+// ---------- 2. Reddit (일간 인기 RSS 1개 → 제목·플레어로 로컬 분류) ----------
 
 // Reddit JSON API는 외부 IP를 403으로 막지만 RSS는 열려 있음(2026-06-11 확인).
 //
-// 플레어 실측 결과(2026-06-11, 검색 RSS 프로브 32종):
-//   실존 플레어 = Discussion, General, PVE, PVP, Arena, Cheating
-//   버그/PSA/공략 "전용" 플레어는 존재하지 않음 → 해당 주제는 키워드 검색 RSS로 구성
+// 예전엔 일간 인기 + 주제별 검색 RSS(search.rss) 3개를 받았는데, 2026-08 말부터 검색 RSS가
+// 거의 매일 HTTP 429(요청 과다)로 막혀 버그·이슈/공략 섹션이 사실상 사라졌다
+// (08-20 이후 41일 중 3일만 성공). 인기글 피드(top/.rss)는 계속 200이다.
+// → 검색 피드를 없애고, 인기글 피드 하나를 넉넉히 받아 제목으로 직접 분류한다.
+//   요청이 4번 → 1번으로 줄어 레이트리밋에도 덜 걸린다. sort=top & t=day라
+//   "유저 평가로 검증된 글만" 싣는다는 원칙은 그대로다.
+//
+// 플레어 실측(2026-08~09 브리핑의 Reddit 글 344건): 343건 제목에 [Discussion]·[Screenshot]·
+// [Video]·[Bug]·[Feedback]·[Loot]·[Suggestion]·[IRL]·[Cheating]·[New Player] 같은 태그가
+// 붙어 있다(대소문자 제각각, 앞·뒤 위치도 제각각).
 const SUB = 'https://www.reddit.com/r/EscapefromTarkov'
+const REDDIT_TOP_FEED = `${SUB}/top/.rss?t=day&limit=25`
 
-function searchFeed(query, sort, t) {
-  return `${SUB}/search.rss?q=${encodeURIComponent(query)}&restrict_sr=on&sort=${sort}&t=${t}`
-}
-
-// 모든 검색 피드는 sort=top & t=day — 추천수 상위만 수집해
-// "유저 평가로 검증된 글"만 들어오게 한다 (RSS에 점수는 없지만 정렬이 검증 역할)
-const REDDIT_FEEDS = [
-  { label: '일간 인기', max: 8, url: `${SUB}/top/.rss?t=day&limit=10` },
+// 분류 규칙 — 제목의 [태그]가 먼저, 그다음 키워드(예전 검색 RSS 쿼리와 같은 단어).
+// 어느 쪽이든 위에 있는 규칙이 이긴다. 치터 동향은 예전에도 플레어로만 골랐다.
+// label은 generate-briefing.mjs SECTION_PLAN의 feeds와 같은 문자열이어야 한다.
+const REDDIT_RULES = [
   {
     label: '버그·이슈·PSA',
     max: 6,
-    url: searchFeed(
-      'title:bug OR title:issue OR title:broken OR title:desync OR title:PSA',
-      'top',
-      'day',
-    ),
-  },
-  {
-    label: '치터 동향', // Cheating은 실존 플레어
-    max: 4,
-    url: searchFeed('flair:"Cheating"', 'top', 'day'),
+    tags: ['bug', 'bugs', 'bug report', 'issue', 'psa'],
+    words: /\b(bugs?|bugged|issues?|broken|desync(ed)?|psa)\b/i,
   },
   {
     label: '공략·팁',
     max: 5,
-    url: searchFeed('title:guide OR title:tip OR title:"how to"', 'top', 'day'),
+    tags: ['guide', 'tip', 'tips', 'tutorial'],
+    words: /\b(guides?|tips?|how to)\b/i,
   },
+  { label: '치터 동향', max: 4, tags: ['cheating', 'cheater', 'cheaters'] },
 ]
+const REDDIT_POPULAR = { label: '일간 인기', max: 8 }
+
+function classifyRedditPost(title) {
+  const tags = [...title.matchAll(/\[([^\]]{1,30})\]/g)].map((m) =>
+    m[1].trim().toLowerCase(),
+  )
+  const byTag = REDDIT_RULES.find((r) => r.tags.some((t) => tags.includes(t)))
+  if (byTag) return byTag
+  return REDDIT_RULES.find((r) => r.words?.test(title)) ?? REDDIT_POPULAR
+}
 
 // 본문 발췌 — 편집장이 제목만이 아니라 내용을 보고 선별할 수 있게
 function extractExcerpt(entryXml) {
@@ -174,28 +182,20 @@ function parseAtomEntries(xml, max) {
 }
 
 async function collectReddit() {
+  const entries = parseAtomEntries(await getText(REDDIT_TOP_FEED), 25)
+  if (entries.length === 0) {
+    throw new Error('Reddit 인기글 피드에서 글을 하나도 읽지 못함')
+  }
   const items = []
-  const seen = new Set()
-  const failures = []
-  for (const feed of REDDIT_FEEDS) {
-    try {
-      const xml = await getText(feed.url)
-      const entries = parseAtomEntries(xml, feed.max)
-      for (const e of entries) {
-        if (seen.has(e.url)) continue // 피드 간 중복 제거
-        seen.add(e.url)
-        items.push({ ...e, feed: feed.label, source: 'Reddit r/EscapefromTarkov' })
-      }
-      console.log(`  reddit/${feed.label}: ${entries.length}건`)
-    } catch (err) {
-      failures.push(feed.label)
-      console.error(`  reddit/${feed.label} 실패: ${err}`)
-    }
-    await sleep(2000) // 무인증 레이트리밋 회피용 간격
+  const counts = new Map()
+  for (const e of entries) {
+    const rule = classifyRedditPost(e.title)
+    const n = counts.get(rule.label) ?? 0
+    if (n >= rule.max) continue // 피드가 인기순이라 앞쪽 글이 남는다
+    counts.set(rule.label, n + 1)
+    items.push({ ...e, feed: rule.label, source: 'Reddit r/EscapefromTarkov' })
   }
-  if (items.length === 0) {
-    throw new Error(`모든 Reddit 피드 실패 (${failures.join(', ')})`)
-  }
+  for (const [label, n] of counts) console.log(`  reddit/${label}: ${n}건`)
   return items
 }
 
@@ -216,7 +216,32 @@ function isShort(title, url, description) {
   return /#shorts?\b/i.test(`${title} ${description}`)
 }
 
-async function collectYouTube() {
+// 채널 피드엔 다른 게임 영상도 섞인다 (2026-08~09 237건 중 약 3분의 1 — 델타포스·워독스·
+// Arena Breakout·Mistfall Hunter 등). 제목·설명에 타르코프 고유 단어가 있을 때만 싣는다.
+// 해외 채널은 제목에 "Escape From Tarkov"를 거의 항상 붙이지만, 한국 채널은 "타르코프" 없이
+// 은어·맵·보스 이름만 쓰는 경우가 많아(예: "1시즌 3일차 쇄빙선 숏컷+웨지 잡기",
+// "블디 SSD를 주워야 해") 그런 단어도 넣었다. 설명에만 "타르코프 시즌1 영상"이 있는 경우도 있다.
+// Customs·Factory·Woods·공장·연구소처럼 다른 게임에도 흔한 단어는 뺐다.
+const TARKOV_KEYWORDS = new RegExp(
+  [
+    'tarkov', '\\beft\\b', '타르코프', '탈콥', '타르코인', '타르뱅크',
+    // 맵 (tarkov.dev 한국어 이름)
+    '세관', '삼림', '해안선', '리저브', '인터체인지', '등대', '쇄빙선', '그라운드 ?제로',
+    // 보스·세력 (영문은 다른 게임과 겹치지 않는 이름만)
+    'killa', 'tagilla', 'reshala', 'glukhar', 'shturman', 'kollontay', 'zryachiy',
+    '킬라', '타길라', '[르레]샬라', '글루하', '슈[트투]르만', '세니타', '사니타르',
+    '즈리야치', '콜론타이', '블디', '블랙 ?디비전',
+    // 커뮤니티 은어 (카파 컨테이너, 퀘스트 "Shooter Born in Heaven")
+    '카파', '슈본헤',
+  ].join('|'),
+  'i',
+)
+
+function isTarkovVideo(title, description) {
+  return TARKOV_KEYWORDS.test(`${title}\n${description}`)
+}
+
+async function collectYouTube(reportPartial) {
   const cutoff = Date.now() - VIDEO_MAX_AGE_HOURS * 3600 * 1000
   const items = []
   const failures = []
@@ -236,7 +261,12 @@ async function collectYouTube() {
         if (new Date(published[1]).getTime() < cutoff) continue
         const titleText = decodeEntities(title[1].trim())
         const url = decodeEntities(link[1])
-        if (isShort(titleText, url, desc ? desc[1] : '')) continue
+        const descText = desc ? decodeEntities(desc[1]) : ''
+        if (isShort(titleText, url, descText)) continue
+        if (!isTarkovVideo(titleText, descText)) {
+          console.log(`  youtube/${ch.name}: 타르코프 영상 아님 → 제외: ${titleText}`)
+          continue
+        }
         items.push({
           title: titleText,
           url,
@@ -247,13 +277,15 @@ async function collectYouTube() {
         kept += 1
       }
     } catch (err) {
-      failures.push(ch.name)
+      failures.push(`${ch.name}: ${err}`)
       console.error(`  youtube/${ch.name} 실패: ${err}`)
     }
   }
   if (failures.length === YOUTUBE_CHANNELS.length) {
-    throw new Error('모든 YouTube 채널 피드 실패')
+    throw new Error(`모든 YouTube 채널 피드 실패 (${failures.join(' / ')})`)
   }
+  // 일부 채널만 실패 — 나머지로 계속 가되 errors에는 남긴다 (예전엔 로그에만 찍혀 "실패 0"으로 보였다)
+  for (const f of failures) reportPartial(f)
   return items // 신규 영상이 없는 날은 빈 배열 (정상)
 }
 
@@ -301,8 +333,11 @@ for (const [name, collect] of [
   ['youtube', collectYouTube],
   ['steam', collectSteam],
 ]) {
+  // 소스 안의 일부 피드만 실패한 경우 — 수집은 계속하되 errors에 partial로 남긴다
+  const reportPartial = (message) =>
+    result.errors.push({ source: name, partial: true, message: String(message) })
   try {
-    result.sources[name] = await collect()
+    result.sources[name] = await collect(reportPartial)
     console.log(`✓ ${name}: ${result.sources[name].length}건`)
   } catch (err) {
     result.errors.push({ source: name, message: String(err) })
@@ -312,6 +347,7 @@ for (const [name, collect] of [
 
 await mkdir('tmp', { recursive: true })
 await writeFile('tmp/collected.json', JSON.stringify(result, null, 2))
+const partialCount = result.errors.filter((e) => e.partial).length
 console.log(
-  `수집 완료 → tmp/collected.json (성공 ${Object.keys(result.sources).length}, 실패 ${result.errors.length})`,
+  `수집 완료 → tmp/collected.json (성공 ${Object.keys(result.sources).length}, 실패 ${result.errors.length - partialCount}, 일부 실패 ${partialCount})`,
 )
