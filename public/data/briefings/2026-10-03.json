@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-03T01:50:31.845+09:00",
+  "headline": "Steam Autumn Sale discounts!",
+  "sections": [
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Steam Autumn Sale discounts!",
+          "summary": "The Autumn Sale has begun! This is a great opportunity to get Escape from Tarkov at a special price or upgrade your current edition! The following discounts are available on editions and upgrades: Standard Edition — 25% Left Behind Edition — 20% Prepare for Escape Edition — 20% PvE Upgrade — 15% https://store.steampowered.com/app/3932890/Escape_from_Tarkov/ https://store.steampowered.com/bundle/60",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708910525152494100",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "Genuine skill issue [New Player]",
+          "summary": "Before you ask, I'm fine now. Took a 20 minute breather, rewatched the gameplay to figure out what I could've done better(Not lay prone, actually aim for legs, etc). Just thought it was kinda funny how bad I am",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvn0k2/genuine_skill_issue_new_player/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Stash Size Vaporized",
+          "summary": "Fairly new to the game and had just purchased about $20 worth of extra lines in the stash... I guess upgrading your hideout is overrated - haha! I submitted a ticket a few hours ago, hopefully it gets resolved!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wv8qzx/bug_stash_size_vaporized/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Insane Camera Shake Bug",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvbjh6/video_insane_camera_shake_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I think this is the most broken weekly quest I have ever seen [Loot]",
+          "summary": "https://preview.redd.it/p0w38pfvg2th1.png?width=1796&format=png&auto=webp&s=c610d893f57d6d37aeb0740744b60766978a3696 This weekly quest from Ragman requires me to get him two random grey balaclavas - As a reward, he will give me 300k roubles, 3 headsets, and if I understand correctly, 8 different lv5/6 armors",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvvthe/i_think_this_is_the_most_broken_weekly_quest_i/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Audio bug on stairs [Bug]",
+          "summary": "Weird ass bug makes movement on other floors silent",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvng3t/audio_bug_on_stairs_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Operation cannot be created EVERY raid [bug]",
+          "summary": "This bug have begun to happen EVERY raid for me now, no matter what gamemode I play. I can unload and load in the start of the match, but after some time, it just stops. I have tried to find out what triggers it, but I genuinely dont know, right now I suspect its looting that triggers the bug. I am so tired of this, as it forces me to run LMGs with large mags or weapons where I can use singular bu",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wv723x/operation_cannot_be_created_every_raid_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Genuinely what the f*** bro",
+          "summary": "wtf was this upside down teleport??? has this happened to anyone else? cherry on top is I died 30 secs later lmao",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvill1/discussion_genuinely_what_the_fuck_bro/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Thank you, Friend. You earned your slot on a mannequin.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvnfkg/screenshot_thank_you_friend_you_earned_your_slot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Come on bruh",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvg7no/feedback_come_on_bruh/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] \"scavving in PvE 🥀\" legitimately go f*** yourself, no one cares.",
+          "summary": "Every time someone mentions scavving in PvE, there’s inevitably somebody acting like you’re playing Tarkov “wrong” because you’re not running your PMC 24/7. Who gives a s***? There are literally Fence operational tasks that require you to play as a scav , for one thing. But even without those, scav runs can just be a fun, low-stakes break from having everything on the map immediately aggro you. So",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wv97km/discussion_scavving_in_pve_legitimately_go_fuck/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "FAMAS is going to be the new meta if its RPM is realistic [Discussion]",
+          "summary": "Slamming someone with 5.56 at the speed of an MP9 (1000rpm) out of a bulpup is going to outclass everything in the assault rifle group. Can someone run the numbers and see what TTK to a thorax with would be with 56A1/55A1? Im guessing its nearly 20% faster comparing RPM alone to HK/NL545 which sits at 850RPM. Im both excited and terrified.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wv9f5g/famas_is_going_to_be_the_new_meta_if_its_rpm_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Literally Unplayable",
+          "summary": "Absolute sarcasm. No notes. I refuse to keep playing for at least the next 30 milliseconds. https://preview.redd.it/n3m6poen8xsh1.png?width=414&format=png&auto=webp&s=e62c47cdfe8ff0f5ae42867c54d452b09be173c3 Cannot install both headphones AND mustache? UNPLAYABLE",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wvbh5w/discussion_literally_unplayable/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Baddie is Carrying - The Sherpa #3 feat. Baddie - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=4lx5rBu6-ow",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Farming Black Division & Players on LABS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=flLFOMthQ38",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=j8ejLiDjdMc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
