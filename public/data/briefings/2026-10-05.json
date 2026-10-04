@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-05T00:59:58.956+09:00",
+  "headline": "오늘의 소식 — 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Steam Autumn Sale discounts!",
+          "summary": "The Autumn Sale has begun! This is a great opportunity to get Escape from Tarkov at a special price or upgrade your current edition! The following discounts are available on editions and upgrades: Standard Edition — 25% Left Behind Edition — 20% Prepare for Escape Edition — 20% PvE Upgrade — 15% https://store.steampowered.com/app/3932890/Escape_from_Tarkov/ https://store.steampowered.com/bundle/60",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708910525152494100",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "ㅋㅋㅋ 적 기지에 분탕치는 법 | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=jqQ3HM9pg-M",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "The Hunt for Books & VHS Tapes - The Cure #3 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=dSfLHDYwu8k",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Full auto Mosin vs CHADS on Customs (AVT-40) - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=pNAoYq65AjA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=rjndWeAaQYI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
