@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-05T16:02:37.761+09:00",
+  "period": {
+    "from": "2026-09-28",
+    "to": "2026-10-04"
+  },
+  "headline": "2026-09-28 ~ 2026-10-04 주간 정리 — 패치·공식 1건 · 주의 6건 · 화제 6건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "이번 주 누적 주의사항",
+      "items": [
+        {
+          "title": "[Bug] Randomly testing stuff, wanted to try a little jump",
+          "summary": "Not gamebreaking, but should be fixxed at some point =D Note, i do have elite strenght",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wteqo1/bug_randomly_testing_stuff_wanted_to_try_a_little/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Holy lag spike",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wtvg5n/bug_holy_lag_spike/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Do NOT buy stash lines or you lose them.",
+          "summary": "Do NOT buy Stash lines using Tarcoins right now, or you will lose all of your stash lines.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wul0l8/bug_do_not_buy_stash_lines_or_you_lose_them/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Stash size got smaller after purchasing upgrades?",
+          "summary": "A few weeks ago, I purchased a stash upgrade using Tarcoins. Combined with the stash bonuses included with the \"The Unheard\" edition, as well as some of the 60x and 40x stash expansions, this gave me a huge stash capacity. I decided to purchase two additional \"Stash Expansion x4\" upgrades for even more space using the Tarcoins I've gathered around. Immediately after buying the upgrades, my stash c",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wuhtd7/bug_stash_size_got_smaller_after_purchasing/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[BUG] Upgraged generator to lv3 and 2 my locked scav cases dissapeared. Almost 15m worth loot gone + kord files",
+          "summary": "I submitted a ticket, but how is this even possible? I bought the materials needed for the upgrade from the Flea Market, and afterwards, my Scav Junk Boxes had disappeared. They were all full of valuable stuff and kord files etc. F*** this game. *UPDATE* It looks like this has nothing to do with the generator upgrade. Many people are reporting the same issue with the additional stash rows. *UPDATE",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wuzmuc/bug_upgraged_generator_to_lv3_and_2_my_locked/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Game reduced my stash by two lines and deleted my junkboxes",
+          "summary": "How do you f*** up something so simple as a grid based storage system??",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wux8su/bug_game_reduced_my_stash_by_two_lines_and/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "Steam Autumn Sale discounts!",
+          "summary": "The Autumn Sale has begun! This is a great opportunity to get Escape from Tarkov at a special price or upgrade your current edition! The following discounts are available on editions and upgrades: Standard Edition — 25% Left Behind Edition — 20% Prepare for Escape Edition — 20% PvE Upgrade — 15% https://store.steampowered.com/app/3932890/Escape_from_Tarkov/ https://store.steampowered.com/bundle/60",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708910525152494100",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "이번 주 커뮤니티 인기 글",
+      "items": [
+        {
+          "title": "Unplayable today [Discussion]",
+          "summary": "Broken servers and only cheaters today i dont know whats going on. Ive been playing for years and never complained but today is crazy. Does someone experience that too",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wr0qdi/unplayable_today_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Seasonal PVP gameplay [discussion]",
+          "summary": "I honestly think raids would be 100% better if people had confidence there were no cheaters, esp, knowers, etc in raids. Pretty much since the wiggle video, everyone goes into the raid assuming there is at least one cheater so they modify how they play and it makes raids dead quiet. People lurk, and thats a valid play style i love a good sneak session, but theres a time and a place. the fights im",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqwvwq/seasonal_pvp_gameplay_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Tricked a cheater into shooting at Zyrachiy and got his whole squad killed [Screenshot]",
+          "summary": "Playing Lighthouse with my buddy who was trying to get to Lightkeeper. He gets killed on the bridge, annoying but nothing unusual at first. Then, I start getting pre-fired at every angle I try to peak to counter-snipe. Nail in the coffin was the attempted wallbang through the lighthouse as I walked past Lightkeeper's locked door. I dumped my stuff off the cliff as well as my buddy's with shots zin",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wrce8x/tricked_a_cheater_into_shooting_at_zyrachiy_and/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] A quick Q&A with weapon designer lead of BSG, Pavel Kirby",
+          "summary": "I've talked to this guy a few times now on twitter, go show him some love on the original post, really pleasant guy, you can definitely feel the passion for implementing guns in this game lovingly when he speaks. https://x.com/tarkov/status/2103859682578174128 As for stuff in the video: Me personally I cannot wait any longer for the G3. It's been painful waiting this past 9 months while we've seen",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqtwjy/video_a_quick_qa_with_weapon_designer_lead_of_bsg/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Screenshot] Current state of the early 2000s SEALs sniper impression kit",
+          "summary": "W GWOT larps This is a pastiche of a few different looks/guys, but all these elements were present in some shape or form. The Eagle Industries MBSS is really the only plate carrier in the game currently accurate to that early era. A shame, because it sucks gameplay-wise lmao, not much storage for anything. But with the 20s, you can make it work for at least going prone and sniping some guys withou",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wquv59/screenshot_current_state_of_the_early_2000s_seals/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[LOOT] So I just found this randomly on Interchange",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqvogn/loot_so_i_just_found_this_randomly_on_interchange/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
