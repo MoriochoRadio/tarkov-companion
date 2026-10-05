@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T02:21:38.194+09:00",
+  "headline": "오늘의 소식 — 신규 영상 3건",
+  "sections": [
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "The Police Station Massacre - The Cure #4 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=P1xwC7jhLjM",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The LOUD AK-308 Experience - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=H6WK_9JrdrI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=WWe1gUmKdBg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
