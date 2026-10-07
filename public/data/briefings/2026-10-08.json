@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08T00:44:01.287+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 7건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47888 (6 October 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47888_(6_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.2.0.0",
+          "summary": "EXFIL Brothers Program Added the EXFIL Brothers Program to the game. As part of the program, experienced players (Operators) can receive bonuses for playing together with friends who have just started their journey in Tarkov (Candidates). Operators and Candidates receive a 5% XP bonus for playing raids together, as well as other rewards tied to the Candidate's progress or game edition. Candidate r",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708910525152495848",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Loot][Bug] Make it make sense; cant take mags case from marked rooms?",
+          "summary": "We looted RB-VO with some solid pick ups (key tool, ammo can, money case, weapons), but why can't I take the magazine case? I have enough space in my bag.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wz73fi/lootbug_make_it_make_sense_cant_take_mags_case/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[BUG] What is zryiachiy doing bro...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wz76y6/bug_what_is_zryiachiy_doing_bro/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Tagilla no longer cares about scav rep",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wz6fbt/bug_tagilla_no_longer_cares_about_scav_rep/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "[Cheating] He's just that good bro",
+          "summary": "He probably drank a jump boost 2 potion before the fight idk",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wzv2ru/cheating_hes_just_that_good_bro/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Ready for my first raid on PVE! [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wz97z3/ready_for_my_first_raid_on_pve_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Everyone that plays Tarkov should See this video immediately",
+          "summary": "Somehow the server retained a connection to the guys VoIP directly through his discord and could even hear his homies clear as day, and it stayed connected the ENTIRE servers length of the Raid. The flashlight you see is my homie running around while I investigate this lol. There was guaranteed no other PMC's around us as we were a 4 man that full cleared everything around that area. Some truly wi",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wzr6dx/video_everyone_that_plays_tarkov_should_see_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Briefly about the new PMC AI.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wzcerz/video_briefly_about_the_new_pmc_ai/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] How's Icebreaker post update?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wzkf6t/discussion_hows_icebreaker_post_update/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "RIP viewing killed PMCs' profiles in the post-raid summary [Feedback]",
+          "summary": "Hey everyone, Up until yesterday, the post-raid summary screen let you view the profile of any PMC you killed, even if you didn't grab their dogtag. I honestly thought it was a really cool feature. I've been playing on the Permanent PvP server for a long time now, so these days I don't really have any goals when I load into a raid other than getting some good fights. Unfortunately, it's not always",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wzaxqt/rip_viewing_killed_pmcs_profiles_in_the_postraid/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] These absolute bloody donkeys",
+          "summary": "Remember when Icebreaker came out and nobody was able to clear Wedge without grenade launchers? All the big streamers were complaining and everybody was up in arms. So Nikita himself tweeted \"use smokes\". Not only have they nerfed Icebreaker access into the ground with this Suckdak-Tudak changes. No. Now they have actually nerfed the smoke grenades. What's the f****** point?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wzbeve/discussion_these_absolute_bloody_donkeys/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Tarkov With My Son - The Sherpa #5 feat. @AquaFPS - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=nBhkA5_Myxc",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The META Tan NL545 Build with BP Ammo SLAPS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=waYZLVG2AmU",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - NEW UPDATE",
+          "url": "https://www.youtube.com/watch?v=VgHJcHRp3ho",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
