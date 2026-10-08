@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-09T00:49:39.681+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47888 (6 October 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47888_(6_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.2.0.0",
+          "summary": "EXFIL Brothers Program Added the EXFIL Brothers Program to the game. As part of the program, experienced players (Operators) can receive bonuses for playing together with friends who have just started their journey in Tarkov (Candidates). Operators and Candidates receive a 5% XP bonus for playing raids together, as well as other rewards tied to the Candidate's progress or game edition. Candidate r",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708910525152495848",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] Ignoring the thorax, are smokes bugged against BD currently?",
+          "summary": "again ignoring the thorax, BD aren’t usually able to spot me that quick through smoke, did the recent update f*** up their targeting?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x07df2/video_ignoring_the_thorax_are_smokes_bugged/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[bug] with 1.2 the AI on knight on icebreaker is once again f*****",
+          "summary": "Small rant, about how truly incompetent these devs are, Knight now has a very lovely chance of beaming you directly through the wall before you even unseal the first door to icebreaker, absolutely f****** amazing.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x0678x/bug_with_12_the_ai_on_knight_on_icebreaker_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Feedback] Looks like icebreaker is off the table for now",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x04ycz/feedback_looks_like_icebreaker_is_off_the_table/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I would like to see atleast one tarkov dev play icebreaker in its current state and beat it [suggestion]",
+          "summary": "and by beat, i mean survive and extract after killing wedge at the minimum",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x05qaw/i_would_like_to_see_atleast_one_tarkov_dev_play/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Wedge and guards post icebreaker nerf",
+          "summary": "Look I get that they want to get rid of the smoke cheese, I'm totally fine with that. I even understand that if they can't figure out how to fix flashlights insides smoke from a programming perspective that you might want to allow Wedge and his boys to see through smokes. But you have a massive issue with this boss. The start of the video is the very first time I've moved out of the starting doorw",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x0h7t4/feedback_wedge_and_guards_post_icebreaker_nerf/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] Icebreaker is totally unfair",
+          "summary": "i personally challenge anyone on the tarkov dev team to FULL clear icebreaker on the current patch, you can spawn in whatever gear you want, the only requirement is killing everything on the map. if you cant tell, im absolutely fed up with all the nerfs to icebreaker, and the changes to smokes. Icebreaker was so fun to do and they genuinely ruined it with these latest changes. RIP Icebreaker",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x00z99/suggestion_icebreaker_is_totally_unfair/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] New options in expansion hub are coming! :)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x0nfo6/feedback_new_options_in_expansion_hub_are_coming/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "How do they manage to make Icebreaker worse with every single update? [Feedback]",
+          "summary": "I could genuinely go on a full rant about this. I really don’t know how they manage to make one stupid decision after another. First, they put the boss in probably the dumbest possible location: a long corridor, basically no cover, nothing. All four of them can beam you from pretty much any position with insanely fast peeks. Okay. Eventually we figure out that you can use smoke grenades. Suddenly",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x05q0x/how_do_they_manage_to_make_icebreaker_worse_with/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "PVE 프레스티지, 비버집 철거 가능할까? | 게임 머니 루블 현질, PVE에 도입 논란 | 연막 또 너프? 열화상 낀 블랙디비전? | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=6WEC5YFYbHU",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "A Dangerous Encounter - The Cure #5 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=jIn-jOqPic0",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - NEW UPDATE",
+          "url": "https://www.youtube.com/watch?v=BQ-DSVZlSoI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Exterminating RATS with the PKM on Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=iY2-8RbUu5s",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
