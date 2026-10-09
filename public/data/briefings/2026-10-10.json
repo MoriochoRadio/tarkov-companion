@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-10T00:31:48.626+09:00",
+  "headline": "패치 1.2.0.0.47965 (9 October 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47965 (9 October 2026)",
+          "summary": "Fixed an issue that prevented some players from loading into a raid as a Scav.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47965_(9_October_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.2.0.0.47888 (6 October 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47888_(6_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Watch EXFIL Brothers and get Twitch Drops!",
+          "summary": "What is it like to set foot in Tarkov for the first time with an experienced veteran by your side? From October 9 to 14, starting at 8:00 AM BST / 3:00 AM EDT , watch new players find their footing in Escape from Tarkov alongside streamers in the Norvinsk region, live on Twitch. Tune in to the participants’ streams starting tomorrow, follow their adventures, and earn Twitch Drops. The list of part",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708911159562995511",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Water filter is consumed quicker than it says",
+          "summary": "I had the feeling for longer already, but now I paid attention. The production timer of the super water said 3:20:xx to go while I had a water filter in only one slot with a rest time of 4h. So it should have done the job. But when I came back after a few hours the filter was gone (used up) and producting time was still over 42 min left. I have both hide out skills maxed and hideout also maxed out",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1j3lq/bug_water_filter_is_consumed_quicker_than_it_says/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Gotta love them breaking reloading rather then fixing icebreaker or do an actual lighthouse rework",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x106id/bug_gotta_love_them_breaking_reloading_rather/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Cannot load into raids as a scav, though PMC works fine [Bug]",
+          "summary": "I can load into raids as a pmc fine and quite quickly, however when I try to do scav raids I get stuck at “awaiting session start” until I eventually get kicked from a loss of server connection. This wouldn’t be such and issues if it was occasional, however, it is every attempt. I have tried restarting my computer, clearing cache, flushing dns, logging out of and back into my account but nothing h",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x0zncz/cannot_load_into_raids_as_a_scav_though_pmc_works/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[BUG] My scav don’t load into raid, pls help",
+          "summary": "Since today I haven’t been able to play any scab run, u first go into streets and it didn’t load. I tried lots of maps and neither. I reload the launcher, empty the cache and check the integrity of the game archives and nothing happen. Also turn off and on the PC. That only happens with the scav, I can play PMC with no problem. Someone in the same situation or anyone knows how to fix it??",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x169qn/bug_my_scav_dont_load_into_raid_pls_help/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] I have tried 7 diffrent times with diffrent maps but for 2 days i can't get a SCAV raid. Every time it is stuck on \"awaiting session start\".",
+          "summary": "This is unbeliveable, literally unplayable. My PMC raids start in less than 3 minutes.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x13a8t/bug_i_have_tried_7_diffrent_times_with_diffrent/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "After Morning Patch Can't Load into Raids [Bug]",
+          "summary": "After this mornings patch my buddy and I can't load into raid together. After clicking Ready you load for a moment and it gives the errors in attached screenshots. Also bugged for both of us trying to troubleshoot a solo scav raid. Gives error code and sends you back to menu and puts the scav on cooldown. Happened multiple times. Not just isolated issue.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1f5se/after_morning_patch_cant_load_into_raids_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Customs 3D map updated to reflect the latest exfil changes",
+          "summary": "Hello again. Just making a post informing you that my Customs 3D map has been updated to reflect the latest exfil changes. Hope it helps! Huge thanks to Muhawi for compiling all the exfil info for me & to Ency for informing me about the name changes that happened soon after the patch. The direct link can be found here. Changes, since somebody asked in the comments: Gate near medblock scav exfil wa",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x14tna/discussion_customs_3d_map_updated_to_reflect_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Ahem .. Wasn't aware he was around ... [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x0z1ap/ahem_wasnt_aware_he_was_around_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "God tier task [screenshot]",
+          "summary": "Ive seen people get RBK from operational tasks before but never 3 in one",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x16a70/god_tier_task_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] Bloody rusted loot. No way its this bad",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x19ab7/loot_bloody_rusted_loot_no_way_its_this_bad/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] We need bigger ammo box spawns for different calibers/more spawns",
+          "summary": "Currently, I am running 556 or 545 80% of raids, and 762x51 the remaining 20 (Unless I am doing a weapon specific task) Why? Because EVERY AMMO SPAWN GIVES GOOD 556 AND 545, AND NOTHING ELSE Terragroup armory? 120 round boxes of BS, 100 round boxes of SSA/M995. Multiple per run. Oh and 1 20 round box of 7.62x51 M62. Plus maybe 1 20 rd box of 7.62x39 PP. MVD? Same thing. Red key card? Same thing Wo",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x13jwo/suggestion_we_need_bigger_ammo_box_spawns_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] I just realised the way to stop no lifers isnt by making the progression harder, its making it easier.",
+          "summary": "The way the game is going, its not stopping the no lifers, they have no job no life no responsibilities to take care of anyways. They just play play play until max level and then call the game boring anyways. But the casual can only play so much, they dont have the time. So if the no lifers and the casuals are wearing the same gear, they are equal at least on that front.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1h9ds/discussion_i_just_realised_the_way_to_stop_no/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "AquaFPS Is Actually Good - The Sherpa #6 feat. @AquaFPS - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=UQqYlTMc2JM",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The NL545 WALK META is Unbeatable - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=rfB7a3B_nFM",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Can I Get a Melee Kill in Just 2 Raids ($300 on the line) - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=8GXi7qYfbFg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
