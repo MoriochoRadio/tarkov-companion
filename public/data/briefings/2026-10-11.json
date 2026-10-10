@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-11T01:23:30.418+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47965 (9 October 2026)",
+          "summary": "Fixed an issue that prevented some players from loading into a raid as a Scav.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47965_(9_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.2.0.0.47888 (6 October 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47888_(6_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Watch EXFIL Brothers and get Twitch Drops!",
+          "summary": "What is it like to set foot in Tarkov for the first time with an experienced veteran by your side? From October 9 to 14, starting at 8:00 AM BST / 3:00 AM EDT , watch new players find their footing in Escape from Tarkov alongside streamers in the Norvinsk region, live on Twitch. Tune in to the participants’ streams starting tomorrow, follow their adventures, and earn Twitch Drops. The list of part",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708911159562995511",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] When Is This Getting Fixed?",
+          "summary": "Finally beat the BD in woods, then the notorious spawning/respawning instant-kill guy shows up. (There was one left, I don't know if that is important related to the bug, I was trying to get nades to make him move from a horrible angle)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x242ce/bug_when_is_this_getting_fixed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Anybody else been having this stuttering issue in 1.2.0.0?",
+          "summary": "This problem just started during the new update and it happens all raid every raid. I haven't changed my pc, monitor, or anything else. Even when I try and lower my settings to the absolute minimum it still happens. If anybody else has had this problem, or knows of a fix please let me know.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1z1hy/discussion_anybody_else_been_having_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Is anyone else having stability issues on PVE?",
+          "summary": "Ever since the last update I had, I have had several of my raids prematurely shut down (i.e., the timer goes from 30 to 10 minutes) and then crash around the 3-minute mark every time. This has been happening in almost all of my solo runs, and it has been making the game almost impossible to play solo.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1voym/discussion_is_anyone_else_having_stability_issues/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Did anyone not get their legendary drop? [Bug]",
+          "summary": "I got the rest of the drops, just not the legendary one.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x263te/did_anyone_not_get_their_legendary_drop_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Still Can't Display Ending On Profile Inspection [Bug]",
+          "summary": "Pic 1 is the profile screen with the dropdown where you can change the ending/prestige diplayed Pic 2 is the profile inspection screen which is what you see when you view a profile Incredible that a feature they just implemented is completely broken. I had no trouble displaying the ending before I had a choice lol.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1tfas/still_cant_display_ending_on_profile_inspection/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Why is the coolest backpack in the battle pass SEVEN KILOS",
+          "summary": "I want to use this thing every raid, but holy hell why is it more than double the weight of larger ones with the SAME handling debuffs?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x22phx/discussion_why_is_the_coolest_backpack_in_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] They are calling it the unluckiest ricochet of all time",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x22e8w/video_they_are_calling_it_the_unluckiest_ricochet/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "We were standing here like 30 seconds already [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1sm1o/we_were_standing_here_like_30_seconds_already/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] What are your favorite backpack/vest/helmet combo for PURE aesthetics?",
+          "summary": "Not weight, container size, armor, or anything else, let's instead only consider what actually matters, how it looks . I'm still exploring looks, trying to find that nice balance between actual useability and aesthetics. I think the JPC, LV-119, and FCPC VS are my go to vests for a \"Western\" look. While the ANA M1 and the ANA M2 are probably my current go to when i want a \"Eastern\" look. For helme",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1x2cp/discussion_what_are_your_favorite/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] Uh - Thanks twitch? (todays drops)",
+          "summary": "Yes, its PvE, \"free loot mode\" or whatever (I'm bad at the game), but was just kind of shocked that stuff like this is in the pool for drops. This page is all from a single \"legendary,\" so the 5 hour one. On my PvE acc that I started using again to run through the prestiges. Just rolled it over last night, kind of trivializes this one lol. Sharing as a kind of heads up, go get the free loot for ju",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1xauh/loot_uh_thanks_twitch_todays_drops/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Changing portrait under Ground Zero",
+          "summary": "Saw this image changing from a map in the underground of Ground Zero, next to the tunnel with the car and dead scav, with a marker on the top left tower there, anyone knows the reference?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x26baa/screenshot_changing_portrait_under_ground_zero/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Preparations Have Started - The Cure #6 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=BsgK2Aio0YI",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Taking the NL545 to Interchange - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=58ptLw2P5wI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=fTe1S1J-UnI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
