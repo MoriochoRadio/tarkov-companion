@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-12T00:02:47.106+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 6건 · 커뮤니티 7건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47965 (9 October 2026)",
+          "summary": "Fixed an issue that prevented some players from loading into a raid as a Scav.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47965_(9_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.2.0.0.47888 (6 October 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47888_(6_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Watch EXFIL Brothers and get Twitch Drops!",
+          "summary": "What is it like to set foot in Tarkov for the first time with an experienced veteran by your side? From October 9 to 14, starting at 8:00 AM BST / 3:00 AM EDT , watch new players find their footing in Escape from Tarkov alongside streamers in the Norvinsk region, live on Twitch. Tune in to the participants’ streams starting tomorrow, follow their adventures, and earn Twitch Drops. The list of part",
+          "url": "https://store.steampowered.com/news/app/3932890/view/708911159562995511",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] BattlEye (BEDaisy.sys) crashes my PC on every EFT loading screen – confirmed via crash dump analysis",
+          "summary": "Since today (Oct 11), my PC BSODs and reboots every time EFT is on the loading screen. 4 crashes in a row , never had this before. I analyzed the minidumps with WinDbg and all 4 point to the same spot in BattlEye's kernel driver : BugCheck: 0x50 PAGE_FAULT_IN_NONPAGED_AREA (0xffffffffffffffe8, 0x0, ..., 0x2) MODULE_NAME: BEDaisy SYMBOL_NAME: BEDaisy+18c03f9 FAILURE_BUCKET_ID: AV_BEDaisy!unknown_fu",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x38pka/bug_battleye_bedaisysys_crashes_my_pc_on_every/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Tarkov just crashed me and my friends PC, same error code completely different raids!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x37mb7/bug_tarkov_just_crashed_me_and_my_friends_pc_same/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Black Division Teleporting on Ground Zero",
+          "summary": "So Black Division now use black magic to teleport?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2ogyl/bug_black_division_teleporting_on_ground_zero/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Crash and restart [bug]",
+          "summary": "I have been getting a kernal power event 41 error when i load into lighthouse (immediately after i finished loading objects) i checked and its battle eye(i am playing other games with battle eye and tarkov is the only one that crashes me) my pc is good so its not the parts",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x38ilz/crash_and_restart_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "PC Crashes [Bug]",
+          "summary": "Just tried to load into a ground zero raid with my buddy on seasonal PvP. I don't know if anyone else has experienced this but just before loading in both of our PCs crashed, telling us that there was a serious error and the PC had to restart. Got back on my PC, opened the launcher, opened Tarkov. Was told that I was still in raid so tried to reconnect, then at the exact same point the PC crashed",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3a6us/pc_crashes_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Is this just DESYNC?? - invisible players or flashlight floating?",
+          "summary": "Legitimately is this just a s***** server situation? Like wtf lol",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2ztrz/video_is_this_just_desync_invisible_players_or/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] Could you go away man I just found a GPSA and I don't know how to route on this map",
+          "summary": "Also managed to get out with it as well which is rare for me since i usually get scrapped within 5 minutes of dropping someone on labs. Now I just need an MCC to finish my hideout on seasonal :]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x30kaj/video_could_you_go_away_man_i_just_found_a_gpsa/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] Finnish border guard",
+          "summary": "Wish we had an MCX Virtus, I prefer it over the original model in basically every instance (minus the LVAW version of course).",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2zojs/screenshot_finnish_border_guard/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] Average Streets run.",
+          "summary": "On this run I hit both marked rooms, rusty bloody key, and got an air drop. I also hit Tarback, Check 15 + iron gates, and all of the Concordia locked rooms.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2j8bp/loot_average_streets_run/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Well, where is my KABOOM?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2mx3z/video_well_where_is_my_kaboom/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] A letter to PVE PMCs",
+          "summary": "Dear PVE PMCs, I am enjoying your increased presence on maps lately, but please stop killing *all* the scavs. Thank you kindly. Sincerely, A Plebian PVE Player Edit: Image https://preview.redd.it/ps64qamxaquh1.png?width=1865&format=png&auto=webp&s=832ea624f303f1ecb7266ba1fddb1829e5c1abfb",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2tqu0/discussion_a_letter_to_pve_pmcs/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Excuse me? [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2pzzs/excuse_me_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] A funny & juicy scav run",
+          "summary": "https://imgur.com/a/cUECi8o A fun and profitable scav raid !",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2sr5e/video_a_funny_juicy_scav_run/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Playing With a PoE Legend - The Sherpa #7 feat. @GhazzyTV - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=TmcPgZePap8",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The ONLY WAY to fix a bad day in Tarkov..",
+          "url": "https://www.youtube.com/watch?v=BV3sQqRapug",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "TEACHING STREET FIGHTER PRO @christatarian1 ESCAPE FROM TARKOV",
+          "url": "https://www.youtube.com/watch?v=RyjW_4hxqgA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
