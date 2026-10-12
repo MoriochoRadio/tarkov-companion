@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-13T03:09:54.544+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47965 (9 October 2026)",
+          "summary": "Fixed an issue that prevented some players from loading into a raid as a Scav.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47965_(9_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.2.0.0.47888 (6 October 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47888_(6_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] UPDATE: BSG fixed the PC crash issue caused by BattleEye.",
+          "summary": "https://preview.redd.it/02ju3ze3k1vh1.png?width=600&format=png&auto=webp&s=5bfc93c1bfff4bda09f756ae71b09ee838650850 Just tested it on a Lighthouse raid, and had no issues. I didn't have to delete the BattlEye folder or anything either. Should be fixed now.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x42fbk/discussion_update_bsg_fixed_the_pc_crash_issue/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Escaped and received no rewards",
+          "summary": "I'm a completionist and did escape before but this time the only rewards I received were money and money case. There are technical issues around the game right now which I had to fix as well. PC crashed when loading Shoreline. Worst timing for an attempt... Fix that worked for me: 1) Reinstall Battleye through EFT installation folder (apparently this step alone works for many). 2) Some cmd command",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3h0f0/bug_escaped_and_received_no_rewards/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Camera stuttering when moving it diagonally [Bug]",
+          "summary": "I swear that since 1.1.0.0 and 1.2.0.0 the camera has been stuttering all over the place when moving it diagonally and just weird in general I've gone onto multiple posts, seeing people saying it's the recent windows 11 updates, maybe the NVIDIA reflex, rebar or sam and some other s*** (for me they weren't) This is some typical BSG s*** and nothing new but how the f*** does this even happen? I gen",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3k4vq/camera_stuttering_when_moving_it_diagonally_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] I keep hearing people that aren't there!",
+          "summary": "I've been trying to get my three wods night kills. My runs have not been great to say the least... And now I'm literally being haunted!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x47wjw/bug_i_keep_hearing_people_that_arent_there/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I cant change my pants on PVP because of this. Already tried verifying the integrity of the files but it didn't work. Does anyone know a fix for this? [Bug]",
+          "summary": "https://preview.redd.it/ddjf5vh6uwuh1.png?width=650&format=png&auto=webp&s=c176cbcde454b5f1ffbb33cc3e45581816bab925 Pants section just says \"DEFAULT_VALUE\". did something bug me in one of the updates or patches?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3kr0k/i_cant_change_my_pants_on_pvp_because_of_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] First teaser of the GPS system",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3t35i/screenshot_first_teaser_of_the_gps_system/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Paint me like one of your French scavs [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3mpgw/paint_me_like_one_of_your_french_scavs_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I won The Wedge fair fight [Discussion]",
+          "summary": "Forgot to bring money whilst also forgetting to bring the breach xD. Had to make a skip and fight wedge unprepared with no smokes. I don't know how but I won a fair fight against him and his crew. The mattress played a huge role I think cause I'm pretty sure I shot through them.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3ljas/i_won_the_wedge_fair_fight_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] New weapon parts - EOTech Vudu 3-9x and additional Geissele SCH models",
+          "summary": "https://x.com/nikgeneburn/status/2109657721419223250 Cool to see! I'm not sure how much use the 3-9x will get, honestly, the maps are too small for a scope with lowest magnification above 2x unless you're prone sniping past 300m in a couple of select spots, but still. I remember using it in GZW last wipe and the reticle seemed very clean.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x440ng/screenshot_new_weapon_parts_eotech_vudu_39x_and/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "The BEST SHOT you’ll ever see in Tarkov… [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x482rh/the_best_shot_youll_ever_see_in_tarkov_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Icebreaker clear after smokes nerf",
+          "summary": "Might help some players who struggle,you need to use more smokes than before and they shoot through them if you dont kill them fast enough,but it is DOABLE. Also dont forget the gas mask,dont be like me.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x41bs3/video_icebreaker_clear_after_smokes_nerf/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Grinding Shoreline - The Sherpa #8 feat. @GhazzyTV - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=t5dKfKMunb0",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "TEACHING STREET FIGHTER PRO @christatarian1 ESCAPE FROM TARKOV WITH @Fragas_TV",
+          "url": "https://www.youtube.com/watch?v=qB8YkrKaQus",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Full Auto SAIGA-12K WIPES Everyone! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=QQHZEhWUHgE",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
