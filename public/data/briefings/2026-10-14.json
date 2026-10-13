@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T01:21:47.388+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47965 (9 October 2026)",
+          "summary": "Fixed an issue that prevented some players from loading into a raid as a Scav.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47965_(9_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] I finished the entire Kord Breach questline with no flea market and broken secure container, nearly went insane",
+          "summary": "Only took 569 raids, 0.4 K/D and countless hours of shameless ratting. This was the most brutal grind I've ever experienced in any game by far. Picked all negative modifiers to get the achievements, not realising how difficult the seasonal questline would be. Broken secure container is absolute AIDS. No flea market meant I got bottlenecked for ages without a Dorms marked key needed for Lightkeeper",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4kfsx/discussion_i_finished_the_entire_kord_breach/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Makes perfect sense... [Bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4naob/makes_perfect_sense_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Sky and other elements flashing",
+          "summary": "I have recently started to get effects like this, mostly it is the sky, doesn't matter what's the weather but also some items give me weird flash effects. I've seen shotgun drum mag looking like a gun filled up with flashlights. My GPU is RX 6800 XT, anyone here had something similar with AMD?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4swip/bug_sky_and_other_elements_flashing/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] I keep hearing people that aren't there!",
+          "summary": "I've been trying to get my three wods night kills. My runs have not been great to say the least... And now I'm literally being haunted!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x47wjw/bug_i_keep_hearing_people_that_arent_there/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Your stash size isnt bugged it was fixed. [Discussion]",
+          "summary": "When they added the hub and the ability to buy stash space it was bugged and giving more lines then was intended to be given this was fixed and the unintended line got removed. The lines you paid for are still there this is why it hasnt effected everyone because not everyone was given extra lines by mistake. The current stash limit is 72 from unhead and 80 brought on the site or in the hub this ha",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4e3ng/your_stash_size_isnt_bugged_it_was_fixed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "So did BSG allow an entire gun to be excluded from base game EFTs loot pool entirely? It can’t be acquired at all if you didn’t get it in Arena BP? [Discussion]",
+          "summary": "So let me get this straight. You get a very limited amount of guns in the game with new ones being added pretty rarely all things considered. We get a whole AR that I assume was modeled and worked on for plenty of time at BSG only to never see light of day in EFT by anyone that didn’t unlock the gun in the BP of Arena back in the day? How is that even allowed to happen?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4kqon/so_did_bsg_allow_an_entire_gun_to_be_excluded/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] possible birdeye inspiration?",
+          "summary": "Possible inspiration for birdeye? Same drifire cut pants, same drug rug sweater, and tattoo on the hand. IRL pic is a marsoc marine, would that make birdeye marsoc?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x49dmo/discussion_possible_birdeye_inspiration/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Me after watching Warfare",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4fdgz/screenshot_me_after_watching_warfare/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] One week post smoke nerf, 0.00% NEW players clear Wedge",
+          "summary": "I noted the numbers down on patch day. Is this relevant or not? You be the judge. My 2c: Overall Wedge, Guards and BD should have their reaction times increased somewhat. Compensate for it with more HP, if need be. I'm not saying they should be easier, I'm saying they should have other parameters than reaction speed tuned up. This is especially true for people playing on servers with 100+ ping. We",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4r6fs/discussion_one_week_post_smoke_nerf_000_new/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "NEW USEC VOICE “Tony” IS CINEMA [video]",
+          "summary": "The fact that we got some Spanish lines is great. There are a few that aren’t TOS 🤣",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4790y/new_usec_voice_tony_is_cinema_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Drip scav",
+          "summary": "Ofc I got a bitcoin out of this guy What are yours Drip scav ?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x4cxdo/screenshot_drip_scav/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 미니맵 내비 도입? GPS 공개 | 스킬 레벨업 피로도 시스템 폐지? 힘작 시절의 낭만 부활하나 | 컴퓨터를 꺼버리는 탈콥의 안티치트 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=QoCuCtyEIrw",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "Grinding Shoreline - The Sherpa #8 feat. @GhazzyTV - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=t5dKfKMunb0",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=2RLRwGttH1c",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Punishing Reserve RATS with the MCX - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=GzTuqLtqqjg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
