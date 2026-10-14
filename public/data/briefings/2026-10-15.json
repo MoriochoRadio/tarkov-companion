@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-15T00:58:52.211+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47965 (9 October 2026)",
+          "summary": "Fixed an issue that prevented some players from loading into a raid as a Scav.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47965_(9_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] seems like they broke the ultima thermal cam, just shows a static image?",
+          "summary": "https://preview.redd.it/e5in8x00mavh1.png?width=666&format=png&auto=webp&s=750cae526d48b85967e1f932d751a2f165e4579a like bro........ can they make something work?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x57jlz/bug_seems_like_they_broke_the_ultima_thermal_cam/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Bro hit the HEHE [Bug]",
+          "summary": "on today's episode of what new bug have BSG cooked up completely silent footsteps btw",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x58xa5/bro_hit_the_hehe_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "These two bad boys desperately need a buff. Hate rarely seeing them nowadays, cuz their recoil or ergo is so bad that there is no reason to run the alternatives [Discussion]",
+          "summary": "SA-58 and 7.62 MDR need a buff. These two became a troll pick as their stats are far behind other guns, especially SA-58 that handles like a LMG ergo wise. No reason to run them when AK-308 exists",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x57w9l/these_two_bad_boys_desperately_need_a_buff_hate/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion], I feel like we need \"low-caliber\" LMG's.",
+          "summary": "Think about it, M249 (5.56) or RPL-20 (5.45) , the would be so cool. I don't like using the current open-bolt LMG's ( PKM & M60 ) because the ammo is so expensive, as well as the high recoil and weight. 7.62x51 and 7.62x54r is too much man. (I also LOVE, LOVE the animations of the current open bolts- or any of the new guns they've been adding, new animator maybe?)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5r8el/suggestion_i_feel_like_we_need_lowcaliber_lmgs/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Only 2% of Tarkov players reach 30 lvl in PvP Season [Screenshot]",
+          "summary": "I had this achievement and was shocked by statistic",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x571hs/only_2_of_tarkov_players_reach_30_lvl_in_pvp/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Absolute W – First Cultist Circle after Prestige gave me the Document Case",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x54cc4/screenshot_absolute_w_first_cultist_circle_after/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] FNX 45 Tactical",
+          "summary": "How would you guys like this to be added?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5s0o2/suggestion_fnx_45_tactical/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Welp That's enough armor for the day",
+          "summary": "Will be gone into the loot pool soon lel",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5kf0w/screenshot_welp_thats_enough_armor_for_the_day/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "워독스 시즌2, 무엇이 달라질까? 핵심 패치노트 총정리 | Wardogs",
+          "url": "https://www.youtube.com/watch?v=7yceGHqigUI",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Big Loot Runs - The Cure #8 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=Xt2snAoJ-lM",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Trying the New P90 'Scourge' for the first time - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=uUSNUOvKiYM",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=2RLRwGttH1c",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
