@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-16T00:46:43.950+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 10건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.0.0.47965 (9 October 2026)",
+          "summary": "Fixed an issue that prevented some players from loading into a raid as a Scav.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.0.0.47965_(9_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Has anyone else noticed massive server dsync recently?",
+          "summary": "Been noticing really bad dsync with teleporting like 50m back or having to jump off a roof 3 times for it to happen. Doesnt seem to be on my end as my trio has similar issues. Is it a certain us server?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x64ium/bug_has_anyone_else_noticed_massive_server_dsync/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Keep randomly being disconnected from server; playing on both local and BSG servers. Always come back to being killed and it not loading out of raid [Bug]",
+          "summary": "Bug only started since the introduction of Prestige; I'm not running any of the prestige or battle pass clothes/tags/equipment (was told that could be an issue) so I can't figure out why it keeps happening. This is the 5th time and I'm pretty over it; does anyone have any ideas? Game doesn't actually crash and error logs don't show any abnormalities. Internet is hardwired and shows 0 instability a",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6ca9h/keep_randomly_being_disconnected_from_server/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "How to level up armor and weapon maintenance? [Discussion]",
+          "summary": "I know this is probably a dumb question but I figured id ask anyway. Do you just keep using repair kits on armor and weapons? Any suggestions to speed it up or does it just take a long time? Thanks!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5xoap/how_to_level_up_armor_and_weapon_maintenance/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[discussion] how to get better at solo pve?",
+          "summary": "hai! im pretty new to tarkov PvE me and some friends have started play recently 2 of which are longer term players. my general question is how can i catch up/make significant progress on my own since their times for playing are pretty inconsistent and i found myself enjoying it quite a lot",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x62mlm/discussion_how_to_get_better_at_solo_pve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tips for progressing wedge on Icebreaker?",
+          "summary": "Hello! Me and my friend has reached icebreaker for the first time during this season. We've been progressing and learning the map, right now it's pretty good! We've burned around 15 attempts so far, we can now clear the bottom of the helipad with around 20-25minutes left, great! We've had 3 attempts on wedge, one through the chained door and two from using the skips and fighting from above. We try",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5v2u3/discussion_tips_for_progressing_wedge_on/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "Seasonal still cooked with so many cheaters. [cheating]",
+          "summary": "I am still trying to figure out why there are still so many cheaters playing seasonals? What is there left to do? Why do this? Played like 5 factorys in a row and died every time to a sub 50 hr, insane ESP insta headshot players who knew exactly where I was. As I am writing this post I saw another one of a guy waiting to be killed AFK on factory, yellow hawaian shirt, 50 hrs, 9 kd. same guy killed",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5z5hk/seasonal_still_cooked_with_so_many_cheaters/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] Everyone run for bitcoin",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x64wvj/video_everyone_run_for_bitcoin/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] This is not a drill: we are getting early pattern wood G3 furniture",
+          "summary": "I thought BSG had an aversion to wood. Just for the SVD and FAL I guess (hah). I didn't take much away from Fallout 3 (always much preferred New Vegas and 1/2), but if there's one thing I DID take away, it's my love for early pattern G3s/CETMEs. Such a gorgeous rifle in nearly any configuration, but the wood especially gives it a different level of class.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6f7mh/screenshot_this_is_not_a_drill_we_are_getting/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[SCREENSHOT] Found him afk on factory waiting to be killed",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5y7g7/screenshot_found_him_afk_on_factory_waiting_to_be/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Kapt'n Krunch's scrapped voicelines for USEC Tony",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6hjvd/video_kaptn_krunchs_scrapped_voicelines_for_usec/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Why do my buddy and I have different colored Prestige icons?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6c8ad/discussion_why_do_my_buddy_and_i_have_different/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Finally unlocked it! Just in time for Halloween CBRN zombie hunting drip",
+          "summary": "Not the M40 or S10, but it'll get the job done for now... Do wish there was a non-tinted version as well, maybe as a version obtainable for everyone in normal base game progression?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6f0a2/screenshot_finally_unlocked_it_just_in_time_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "She's a CHAD - The Sherpa #9 feat. @honeyxxo - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=xkSxtLID29M",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - !Helix #AD",
+          "url": "https://www.youtube.com/watch?v=tW65Y6dQtvc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "SIG MCX vs Tarkov's Sweatiest Lobbies - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=dTMIZ16Y-i4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
