@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T00:35:38.102+09:00",
+  "headline": "패치 1.2.5.0.48146 (16 October 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire;\nReduced the amount of time PMC bots spend in cover when reacting to gunfire;\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot.\nFixed an issue that could cause Black Division bots to teleport in some cases;\nFixed an issue that allowed the RShG-2 to be unloaded, which could cau…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Leagues system. We'd like to hear your opinion on the current Leagues system, weekly competitions, Ranking up and down, leaderboards, and rewards. Your responses will help us understand which elements of the Leagues system players find most interesting and which changes we should consider as we continue to develop it. You will receive a partici",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677386595815392107",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "Gunsmith AKMN Help [Bug]",
+          "summary": "Can someone tell me what I'm missing here. I have checked and rechecked and checked again that everything is black. Still cant turn it in.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6qole/gunsmith_akmn_help_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Got panacea crate on normal tarkov lol",
+          "summary": "https://preview.redd.it/8305m7yqsovh1.png?width=2560&format=png&auto=webp&s=aa9ff20b57a510259b85b04675bdd14c9db24014 it just let me transfer it, i cant put it on flea",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6vy69/bug_got_panacea_crate_on_normal_tarkov_lol/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] BSG fixed a bug I had within a few days",
+          "summary": "I made a post here 5 days ago about a bug and being locked out from getting the final quest in seasonal quest line and the devs opened my ticket 2 days later and fixed the bug 3 days after that and released a small patch. I can't believe it!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x7bsan/discussion_bsg_fixed_a_bug_i_had_within_a_few_days/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "[Cheating] Hackers in this game are completely out of control. There are so many of them, and they’re so brazen, yet BSG does nothing.",
+          "summary": "https://preview.redd.it/5kxpdzud0ovh1.png?width=402&format=png&auto=webp&s=e3ba53b84885178e44bd8b1e0f926e0d0e270e6c The hackers are laughing in our faces. I spawn in the bunker on Reserve, but I get a phone call. I look for a secluded room—one of those empty ones that nobody ever uses—lie down, and go AFK. Five minutes later, I hear someone running and think, “Well, surely nobody’s going to come i",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6rr1u/cheating_hackers_in_this_game_are_completely_out/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] we will never forget!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x7g0aj/discussion_we_will_never_forget/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "How does slop like COD get this feature implemented before the gun modding haven that is EFT [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6z0b8/how_does_slop_like_cod_get_this_feature/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] I feel this post-raid screen isn't asking for much",
+          "summary": "In my dream world I could replay a top-down map showing everyone's movement and detailed stat breakdown over multiple encounters, but can we just get this in the meanwhile?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6z7kg/discussion_i_feel_this_postraid_screen_isnt/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "My typical luck in one video [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6qdsa/my_typical_luck_in_one_video_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] NikiLeaks shows more G3 and FAMAS animations",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6tqsz/discussion_nikileaks_shows_more_g3_and_famas/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "New event AI aimbot [Video]",
+          "summary": "Just wanted to share how the event was going for me. Looks like it's going well (sorry for the music at start)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x7bqdr/new_event_ai_aimbot_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Getting Loaded - The Cure #9 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=mDc7CYc7ZjI",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "This is why the Suppressed NL545 is the BEST gun in Tarkov..",
+          "url": "https://www.youtube.com/watch?v=2mAdhn276uw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Owning Tarkov Lobbies Solo With an M4A1",
+          "url": "https://www.youtube.com/watch?v=rLKxZ54yygc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
