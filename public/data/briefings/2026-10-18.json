@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T13:30:03.701+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 6건 · 신규 영상 1건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire\nReduced the amount of time PMC bots spend in cover when reacting to gunfire\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot\nFixed an issue that could cause Black Division bots to teleport in some cases\nFixed an issue that allowed the RShG-2 to be unloaded, which could cause a…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Leagues system. We'd like to hear your opinion on the current Leagues system, weekly competitions, Ranking up and down, leaderboards, and rewards. Your responses will help us understand which elements of the Leagues system players find most interesting and which changes we should consider as we continue to develop it. You will receive a partici",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677386595815392107",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] WHY isnt it possible",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x85o2x/bug_why_isnt_it_possible/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] You can't buy the new long handguard from Arena for the P90 \"Scourge\" even after completing the Arena battle pass",
+          "summary": "There are no listings for the FN P90 Strike Industries SMC-90 Long M-LOK handguard and the P90 \"Scourge\" from Ref comes with the short handguard so you literally can't get it unless the new event boss can have the long barrel P90 \"Scourge\" version.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x87fs6/bug_you_cant_buy_the_new_long_handguard_from/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Smoke grenades bug",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8p4th/bug_smoke_grenades_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "This been happening to anyone else lately? Pve on lighthouse, seems to happen every time I use the btr there [Bug]",
+          "summary": "While inside the btr I can access and switch to all my different weapons, haven’t tried using them yet (scared) but also weird thing I have double prompts to buy cover fire and to take a ride",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x84wyq/this_been_happening_to_anyone_else_lately_pve_on/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Feedback] f*** you",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8fotm/feedback_fuck_you/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "PVE feeling like PVP. 😓 [screenshot]",
+          "summary": "only lasted 26 seconds in.... thats what she said.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8d6uu/pve_feeling_like_pvp_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Holy reaction time of this boss",
+          "summary": "I may have overpeeked but with this reaction time i don't think it would have made such a difference",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x82ea1/video_holy_reaction_time_of_this_boss/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[New Player] Injectors help",
+          "summary": "Not really new to the game but I never bothered learning or even using injectors. Somehow I feel like they are so situational that I simply never use them. Can someone brief me a bit on those and tell me what's worth keeping or trashing in my stash ? PS: I'm mainly a PvE player (if it changes anything) but that general knowledge would be great to have I think",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x85r1w/new_player_injectors_help/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] The fact that Melee skill still has useless skill bonuses after 1.0 is pathetic!",
+          "summary": "Reload Speed, Recoil and Ergo are all useless. Even the Elite bonus is just Steady Aim. As a Dev i would be embarrassed that i left it like that.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8iiug/discussion_the_fact_that_melee_skill_still_has/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "191 LEDXs going to Fence [Loot]",
+          "summary": "4:37pm PST good luck Edit: I’m going to prestige and had 300m so I bought every ledx on the flea. Going to sell a couple thick item cases shortly as well.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8ogec/191_ledxs_going_to_fence_loot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 스커지 인커전 이벤트 | 블랙디비전 급의 보스 등장에 눈마살 상태가 된 랩 | 할로윈 이벤트 전야제인가? | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=ot873I13pyE",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
