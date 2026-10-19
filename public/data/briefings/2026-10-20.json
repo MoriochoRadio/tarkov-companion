@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T00:50:00.250+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 6건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire\nReduced the amount of time PMC bots spend in cover when reacting to gunfire\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot\nFixed an issue that could cause Black Division bots to teleport in some cases\nFixed an issue that allowed the RShG-2 to be unloaded, which could cause a…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Apparently Tarkov is now in the Southern Hemisphere",
+          "summary": "Apparently Tarkov has been transported to the Southern Hemisphere, as the Sun on GZ was in the northern sky and moving right to left.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9tmtq/bug_apparently_tarkov_is_now_in_the_southern/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug][Video] New boss NoClip",
+          "summary": "Every new boss just gets given more aimbot and cheat powers, what happened to realism?!?!?!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9yiw6/bugvideo_new_boss_noclip/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Shot through the floor 🥀 [bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9t6mg/shot_through_the_floor_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[bug] Why the hell do AI Scavs turn on you for defending yourself against Big Pipe?",
+          "summary": "I was literally just chilling in cover with a bunch of friendly AI Scavs, minding my own business, when Big Pipe decided to push me. Naturally, I defended myself and killed him. Apparently, that was enough for all my Scav buddies to immediately decide I was public enemy number one. How does this make any sense? The Goons are Rogue ex-PMCs, not Scavs. They're hostile toward us, and killing them isn",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9wtyk/bug_why_the_hell_do_ai_scavs_turn_on_you_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Teleported when getting out of BTR",
+          "summary": "Like that scene in Moon Knight when the guy gets his body back",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9rmn7/bug_teleported_when_getting_out_of_btr/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Wedges Guards spawns right next to me ..",
+          "summary": "We were clearing the upper Levels and there were no sounds from any of Wedges Guys .. and then this happened. Thats new to me. You can clearly see him spawning since he had no helmet on in the beginning while shooting at me .. s*** happens i guess ..",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x97rzx/bug_wedges_guards_spawns_right_next_to_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Yup, it's another \"My Loadout For Terminal\" post",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x96nh4/discussion_yup_its_another_my_loadout_for/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] Rogue with sandevistan??",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9x0b0/video_rogue_with_sandevistan/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Why? [Feedback]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9ehz5/why_feedback/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] 2.6 mil within minutes of the league starting",
+          "summary": "Why does BSG allow this right now? Ignoring this is somehow griefing, almost everyone in this leaderboard has extremely sus KD ratios and people somehow have 2.6 mil XP already? Is there some trick to this? Even with hoarding tasks for like 600K in weekly, maybe another 150k in daily, how does one make 2 mil from turning in tasks? EDIT: Ok so I can see how someone might hoard quests and get to 2.6",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9elki/discussion_26_mil_within_minutes_of_the_league/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "\"[Video] Ima do a run-by\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x97sgv/video_ima_do_a_runby/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Holy Jumpscare",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9ec1s/video_holy_jumpscare/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "PVP GOAT - The Sherpa #11 feat. @DesmondPilak - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=Sgjs1xsQ3kI",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Trying the STICK MPX BUILD for the First time! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=fJYs1BZaVzg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=-5c0j9GYDEg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
