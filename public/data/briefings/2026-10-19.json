@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T13:38:19.020+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire\nReduced the amount of time PMC bots spend in cover when reacting to gunfire\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot\nFixed an issue that could cause Black Division bots to teleport in some cases\nFixed an issue that allowed the RShG-2 to be unloaded, which could cause a…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Leagues system. We'd like to hear your opinion on the current Leagues system, weekly competitions, Ranking up and down, leaderboards, and rewards. Your responses will help us understand which elements of the Leagues system players find most interesting and which changes we should consider as we continue to develop it. You will receive a partici",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677386595815392107",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "The new labs boss is kinda interesting... [BUG]",
+          "summary": "Dear developers, can we not have people teleport to your back as challenge to fight a boss, thank you!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x94ztt/the_new_labs_boss_is_kinda_interesting_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "If you are having issues fighting Scourge and his guards [Discussion]",
+          "summary": "https://preview.redd.it/v9mmfeeyu7wh1.png?width=1547&format=png&auto=webp&s=220f0b9386dc27e7d168a78f30cf314dc3c15b7f https://preview.redd.it/iswysghzu7wh1.png?width=1613&format=png&auto=webp&s=694251bb35cd4c26f265f4eb19823a58f8837c02 https://preview.redd.it/rnpoasf0v7wh1.png?width=1328&format=png&auto=webp&s=04e2539327a2be00c3c0f812a84bc8257f225ab7 If Scourge and his boys spawn at the dome, you ca",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x91n34/if_you_are_having_issues_fighting_scourge_and_his/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[screenshot] Wondering what this name color and icon means",
+          "summary": "So i killed this guy but in all the years i've played this game i've never seen a name this color or the shield icon next to it. anyone got a clue of what it means?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8xbbt/screenshot_wondering_what_this_name_color_and/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Yup, it's another \"My Loadout For Terminal\" post",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x96nh4/discussion_yup_its_another_my_loadout_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "F*** these guys honestly [Video]",
+          "summary": "Had enough of BSGs b******* AI, this is not hard AI its just dumb and unfun",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x93cb4/fuck_these_guys_honestly_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "My PMC is glowing [Discussion]",
+          "summary": "I think I got this glowing thing right after I killed Killa on Interchange. Any one experienced this too?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x96iex/my_pmc_is_glowing_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Protip: Don't forget to look up :)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x93as0/video_protip_dont_forget_to_look_up/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Scourge P90 is slightly worse stat wise than the stock P90",
+          "summary": "Scourge P90 has 910 RPM for less ergo and higher recoil, whereas the Stock P90 has 900 RPM. Such a strange tiny change between the two. Like in the Scourge variants description it says its been 'customized and tuned' for Scourge, which would make me expect better recoil and ergo over stock.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8wvxa/discussion_scourge_p90_is_slightly_worse_stat/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
