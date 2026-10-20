@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T00:50:50.705+09:00",
+  "headline": "패치 1.2.5.0.48146 (20 October 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire\nReduced the amount of time PMC bots spend in cover when reacting to gunfire\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot\nFixed an issue that could cause Black Division bots to teleport in some cases\nFixed an issue that allowed the RShG-2 to be unloaded, which could cause a…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Anyone else having lag and connection issues?",
+          "summary": "Hey, Started playing after a long break and got a newbie friend to join me, but we are both having heavy connection issues, disconnects and lag. We arent located in the same city. Is it just us or? Edit: region EU",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xa3t0s/discussion_anyone_else_having_lag_and_connection/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "AI PMC obliterated his gun shooting at a scav he couldn't see for half the raid [Screenshot]",
+          "summary": "The scav was behind a wall and for some reason just stayed there the entire time, we could hear this guy mag dumping endlessly for several minutes straight",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xa3u6j/ai_pmc_obliterated_his_gun_shooting_at_a_scav_he/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Let's see the devs try and beat this.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xa287k/discussion_lets_see_the_devs_try_and_beat_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] TWO weeks post smoke nerf, 0.00% NEW players clear Wedge",
+          "summary": "Two weeks ago I recorded the Wedge clear rate on patch day, and here is the updated figure: 0.00% additional players have received the I'm On a Boat achievement, 1.83% total. My position hasn’t changed: If Wedge and Guards are intended to be this hard, it should be through other parameters rather than raw reaction speed, especially for players with high ping and dumpster fire rubberband servers. L",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xapjfn/discussion_two_weeks_post_smoke_nerf_000_new/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Clean Winter drip! [Screenshot]",
+          "summary": "Love the new Scourge Mask and body armor, all the new white body armor from arena is super nice.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xalqha/clean_winter_drip_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] Twist the body while lying face down.",
+          "summary": "In this game, going prone is a massive disadvantage. It practically leaves you unable to move at all, so don't you think this feature should be added? Even WW3 included it.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xam64s/suggestion_twist_the_body_while_lying_face_down/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] The New wedge meta from a Korean Streamer",
+          "summary": "Skip to 3:52 From streamer @홍돌_Hongdol, presenting the door peek. This just gets funny and frustrating if this is the new \"meta\" just to counter wedge rip.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xa22b0/video_the_new_wedge_meta_from_a_korean_streamer/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "The Hunt For Knowledge - The Cure #11 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=PPaVL8gJyew",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The PERFECT Gun for Clearing out Labs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=9MqMxOe_Gkg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=T_OkTMv5OfM",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
