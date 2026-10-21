@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T01:07:50.875+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire\nReduced the amount of time PMC bots spend in cover when reacting to gunfire\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot\nFixed an issue that could cause Black Division bots to teleport in some cases\nFixed an issue that allowed the RShG-2 to be unloaded, which could cause a…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Bullets not doing damage?",
+          "summary": "Sorry for the poor quality. Restarted the game which seemed to fix it. Also, Shots 1-5: Clearly missed. Shots 6-9: Missed due to recoil (bad spray control). Shots 10-11: Very close, but recoil and inaccuracy make these reasonable misses. Shot 12: Likely didn't actually fire because desync.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xb0kqv/bug_bullets_not_doing_damage/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] This Game Man",
+          "summary": "Death by geometry. I'm guessing this invisible wall is something people know from experience? Also yeah I don't know the stims yet, was hoping the one I used was painkiller.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbd3o0/video_this_game_man/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] IIIVEEEE DOONNNEEE IITTTT 30TH ATTEMPT!!!!!!!!",
+          "summary": "I just want to thank everyone who has given me advice on how to beat this RNG fest. My 30th run was absolutely flawless, but it was all me. I can barely believe it. All before the season ends. Ive killed every single BD with my own hands. Silo BD, scav boss BD, pier BD. Each peak has been mastered to PERFECTION. Each nade thrown with purpose and deadly accuracy. And i was so good on time at the en",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xb2u0y/screenshot_iiiveeee_doonnneee_iitttt_30th_attempt/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Did Birdeye cross the ocean to get to me? Also a visual.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbaogn/discussion_did_birdeye_cross_the_ocean_to_get_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] Sights for the M203 Grenade Launcher like the LMT Leaf sight and Insight AN/PSQ-18",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xb9pfh/suggestion_sights_for_the_m203_grenade_launcher/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Scourge 360-No-Scope [Video]",
+          "summary": "Scourge 360 no scoped me just after his nerf.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xaz7pk/scourge_360noscope_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "For the USEC on R&R [IRL]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xb8zjk/for_the_usec_on_rr_irl/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Clearing Out the Danger - The Cure #12 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=lknB1Hsg-RY",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Causing CHAOS on Factory with the VECTOR - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=floqwsN8EpE",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Making sweats Uninstall on Labs with the KS-23 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=9ZDOmv4Qs9M",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
