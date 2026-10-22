@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T01:05:18.334+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 7건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire\nReduced the amount of time PMC bots spend in cover when reacting to gunfire\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot\nFixed an issue that could cause Black Division bots to teleport in some cases\nFixed an issue that allowed the RShG-2 to be unloaded, which could cause a…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "Support is likey closed becuase the entire web is patching out php security issues. [Discussion]",
+          "summary": "Do not reedems vibe coded php and every site basically has to patch the issue out, expect to see most sites ha e something go down for fixes over the coming weeks. You dont need to do anything on your end other then keep web browser and os up-to-date.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xc3nmp/support_is_likey_closed_becuase_the_entire_web_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "In case anyone is running into Error in Post (Error 0) This fixed it [bug]",
+          "summary": "This was a fix that was in the Steam Discussions. I copy and pasted it below. Fix was posted by \"Wolverine\" The BSG Launcher worked normally when I opened it directly, but launching through Steam kept giving me the error. I finally found a fix that worked for me! Here's what I did: Completely close Steam and the BSG Launcher. Press Win + R on your keyboard. Copy and paste this path: %appdata%\\Batt",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbvois/in_case_anyone_is_running_into_error_in_post/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] New term, EPS (Errors Per Second)",
+          "summary": "Even when making this post it's still going and speeding up more and more",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbserx/bug_new_term_eps_errors_per_second/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[BUG] anybody having the same issue?",
+          "summary": "just got off my 10pm-7am shift hoping to play some arena just to log on and see this... anybody else having this problem? also trying to make a support ticket just gave me a 403 error, apparently the submission is temporarily disabled",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xchexc/bug_anybody_having_the_same_issue/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Finally escaped. Route and tips for 1.2",
+          "summary": "With the addition of PVE prestige I decided to finally escape. I was trying to finish every quest but got tired of grinding labyrinth but finding no labrys research notes, and the wedge buff made it impossible to clear IB for finishing Boreas. Took about 17 attempts, with a lot of b******* along the way but I finally got it done. Watched 2Lew's video and scrubbed Sheef's and noticed a few things t",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbz728/discussion_finally_escaped_route_and_tips_for_12/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Found out that scourges platecarrier doesnt count as body armor for survivalist path unprotected but dangerous quest.",
+          "summary": "Been slacking on my sidequests and completed survivalist path unprotected but dangerous while wearing scourges vest. Didnt even know i was getting progress on that task at all until it popped so i guess this armored rig isnt armor?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbywyn/discussion_found_out_that_scourges_platecarrier/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Hello, I just wanted to share some screenshots I took back then.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xcf99n/screenshot_hello_i_just_wanted_to_share_some/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "When you're just trying to survive on Shoreline for your daily [Video]",
+          "summary": "Was just sitting there replying to some messages on my phone when suddenly I heard \"Russian spotted\". I was in this hut for at least 5 minutes but turns out BD can smell you from across the map. Funny enough this happens just days after I've wasted tens of hours trying to do Sheep in Wolf Clothing.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xcgibm/when_youre_just_trying_to_survive_on_shoreline/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "The method I use for clearing engine room SOLO [Video]",
+          "summary": "First things first I like to meditate for a few seconds to prepare myself for the worst. For this method you have to be really calm and prepared. Prep a M67 and throw it at the left side of the walkways to delay the push. They can come from the middle or the top so you need to be ready for that too. I find more often than not there will be 3 in one group as shown in the video and 1 stray. Sometime",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xby7qy/the_method_i_use_for_clearing_engine_room_solo/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] \"Can we get AK-200?\" \"Nyet, we have AK-200 at home\" AK-200 at home:",
+          "summary": "I'm surprised they never added the parts for these or the ASM/VSSM, honestly. We can NEVER have enough AK-related stuff in Tarkov, am I right fellas?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xcgnvt/screenshot_can_we_get_ak200_nyet_we_have_ak200_at/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] It seems Dr Disrespect has fled to Tarkov.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xchaz8/screenshot_it_seems_dr_disrespect_has_fled_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 스커지 이벤트 연장 | 할로윈 좀비 이벤트로 이어질 것인가 | 26년 개발 로드맵, 얼마나 밀렸나? | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=LNUPjdqBM1A",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "BIG DUBS - The Sherpa #12 feat. @DesmondPilak - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=WZCVfHuf1Zk",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Taking on Juicers with the AK-308 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=mRbxrj0N6zY",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=vqjGZi--y7M",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
