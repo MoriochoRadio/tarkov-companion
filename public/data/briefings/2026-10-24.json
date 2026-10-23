@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-24T00:56:18.272+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "AI PMC behaviour can't be intended like this [BUG]",
+          "summary": "I just had a raid on Ground Zero, were literally all AI PMCs on the map swarmed the parking garage where I was doing some looting. This can't be the behaviour BSG intended with this update, is it? All kills happened in an area of around 20 meters..",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xdgf6u/ai_pmc_behaviour_cant_be_intended_like_this_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Wanted to share my FIR cat collection before prestige [video]",
+          "summary": "332 Cat Statues 31 Hideout Cat Figurines 10 Sheef Kitty Banks",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xd4pqz/wanted_to_share_my_fir_cat_collection_before/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] F*** the SUDAK-TUDAK B*******",
+          "summary": "Please for the love of god can I play your stupid f****** map more than twice per day? Why the f*** is the it locked behind a daily task? Can we get like a bitcoin trade or a new task to immediately populate after completion of the daily? Really pissed off when all I want to do is take a crack at wedge again after a long day of work. Rant over, f*** you BSG, f*** yourself Nikita",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xcmyux/feedback_fuck_the_sudaktudak_bullshit/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Flora supremacy",
+          "summary": "Just wish there was more of it in-game. Like a lot of other things... Best mix of practicality and fashion the Russians ever had in my opinion. I like a lot of the newer EMR stuff too, and of course I'm also a sucker for the older KLMK and Butan gear, but this hits different, especially if you played a lot of early 00s FPS games.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xd59hy/screenshot_flora_supremacy/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] So has boss A.I. always been able to shoot invisible, silent bullets while healing?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xd5ul7/video_so_has_boss_ai_always_been_able_to_shoot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Now that i am finally free: Icebreaker feels like a terminal type of map, it is too big and full for normal gameplay.",
+          "summary": "Clearing Icebreaker is no problem, you just spam M67 and peek, it works for every AI in the game. The UZI door trick still works and makes Wedge a joke, watch BSG fix the explosive skip instead of the shitass Wedge AI. Fixing the door clipping would be great though, thats BS - but either nerf him or revert the smoke nerf at the same time. Currently fighting Wedge is just pure cancer. The map is ov",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xd9iz3/feedback_now_that_i_am_finally_free_icebreaker/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Ace Of Spades target not accessible?",
+          "summary": "So I purchased EFT like 4 years ago. Never really payed attention to hideout targets. I have most of them unlocked except the prestige ones that I did not do. Anyone else not receive this target who did purchase EFT before release? Just curious...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xcuhdl/discussion_ace_of_spades_target_not_accessible/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Crazy Loot - The Cure #13 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=Q5msKadWQUM",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "AK-308 vs RATS on Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=u8bNgih6qYI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=bVcyfdtS8VU",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
