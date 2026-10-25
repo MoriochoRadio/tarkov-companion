@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T00:03:35.739+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 6건 · 커뮤니티 8건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[BUG] This is such a maddening way to lose everything...",
+          "summary": "I've had sync issues with the raid timer before, but at MOST, it would end the raid like 3 seconds early. If I get down to 10 seconds and don't think I'm going to make it, I start dumping all of my insured gear. I thought I had plenty of time here. Even if the raid ended 3-5 seconds early, I'd still be ok. NOPE. There goes everything! I hardly ever come to this subreddit to complain...but wow that",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xee1zs/bug_this_is_such_a_maddening_way_to_lose/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Escape from Shipping Container",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes7pj/bug_escape_from_shipping_container/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "What does this mean in Russian? [Bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xf2ez4/what_does_this_mean_in_russian_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Labyrinth Loot lost Practice Mode",
+          "summary": "So, finally getting around to running Labrythin for the first time, and I wanted to practice with normal AI - Got straight s*** on the first peak and died. Come back from the raid and all my load out, gear is gone? Am I just a dumbass or is that not normal?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xeik2f/bug_labyrinth_loot_lost_practice_mode/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Weird visual bug with Vudu 1x6x on arena, Any fixes?",
+          "summary": "every time i have i have a different visual bug with this scope",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xezcns/bug_weird_visual_bug_with_vudu_1x6x_on_arena_any/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Has anyone figured out how to not get an error when you are the non-party leader in a scav raid? [bug]",
+          "summary": "It has been months without being fixed...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xf2hik/has_anyone_figured_out_how_to_not_get_an_error/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "How to learn the maps? Noob here [New Player]",
+          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "The f*ck BSG.. [Cheating]",
+          "summary": "I get you can turn in ~2.5 million worth of saved quests on the final week and with dailies and weeklies and x2 icebreaker finish around 5million by end of the week. but this s*** is stupid. can BSG start banning accounts.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xejhg9/the_fck_bsg_cheating/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Who's this?? Never seen that green icon before...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xervlr/discussion_whos_this_never_seen_that_green_icon/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Why is there a level cap for stuff on flea",
+          "summary": "I keep running into issue where i cant buy the stuff i need from the flea market and its getting to become really annoying. Like im only level 20 because i started late and every raid im fighting level 50's and 60's they have these amazing guns and ammo. yes i know thats my fault for being behind but why also punish me on the flea i couldnt even buy an extra mag for my gun but i can buy the gun, A",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xeeuot/discussion_why_is_there_a_level_cap_for_stuff_on/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] What happened to these parts all of a sudden? They are suppose to be the same color and they definitely were. Now they are not.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xezkq9/feedback_what_happened_to_these_parts_all_of_a/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Kit before going into Labs through Factory (PvE) Any advice before loading into raid?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xexfc0/feedback_kit_before_going_into_labs_through/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Can't have s***... [Screenshot]",
+          "summary": "The shrug I did instinctivelly after saying that phrase made me genuenly laugh, so I wanted to share :D",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xegdyh/cant_have_shit_screenshot/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] You can really tell the AI just track you through walls",
+          "summary": "Just finished a Reserve run grinding out battlepass documents when while in Black Bishop I just get lasered by PMCs out by Heli. At first no big deal so I run to the opposite side of the building and go up a floor to try and get a better angle through some wooden planks. Before I even get to peak they are already prefiring the window. So I just chill out for a minute, surv, heal, pack mags whatnot",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xekpsc/discussion_you_can_really_tell_the_ai_just_track/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "The Military Research Facility - The Cure #14 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=NblsmI-1loY",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Taking the TRG M10 to Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=WybMmvTN0uc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Taking The KS-23 to FACTORY for Mental Therapy - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=2-bV6aXcOTc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
