@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-25",
+  "generatedAt": "2026-10-25T13:38:52.912+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 9건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[BUG] This is such a maddening way to lose everything...",
+          "summary": "I've had sync issues with the raid timer before, but at MOST, it would end the raid like 3 seconds early. If I get down to 10 seconds and don't think I'm going to make it, I start dumping all of my insured gear. I thought I had plenty of time here. Even if the raid ended 3-5 seconds early, I'd still be ok. NOPE. There goes everything! I hardly ever come to this subreddit to complain...but wow that",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xee1zs/bug_this_is_such_a_maddening_way_to_lose/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Escape from Shipping Container",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes7pj/bug_escape_from_shipping_container/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Labyrinth Loot lost Practice Mode",
+          "summary": "So, finally getting around to running Labrythin for the first time, and I wanted to practice with normal AI - Got straight s*** on the first peak and died. Come back from the raid and all my load out, gear is gone? Am I just a dumbass or is that not normal?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xeik2f/bug_labyrinth_loot_lost_practice_mode/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] PvE Ref not syncing with Arena",
+          "summary": "I have a bug where I had PvE Ref unlocked and got Theta container. I then prestiged and ref was locked. So I proceeded to unlock him again and I wanted to do the quests for Theta again. But the first quest for Arena - Professional Fitness part 1 - doesn't show up in Arena. I later found out that all the quests I did before prestige did not reset. They are shown as completed in Tarkov Arena but in",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xe8sjm/bug_pve_ref_not_syncing_with_arena/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes87v/bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "How to learn the maps? Noob here [New Player]",
+          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "The f*ck BSG.. [Cheating]",
+          "summary": "I get you can turn in ~2.5 million worth of saved quests on the final week and with dailies and weeklies and x2 icebreaker finish around 5million by end of the week. but this s*** is stupid. can BSG start banning accounts.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xejhg9/the_fck_bsg_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Cheating] What?",
+          "summary": "How the f*** ? Not even got one of those and this dude is selling... 64? with less than 300hs and that kd? what?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xeffnz/cheating_what/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] After 4,000 hours, the seasonal FOMO and weekly League rank grind has completely destroyed my outlook on this game. Tarkov is going downhill fast after every update.",
+          "summary": "Look at this image. I am sitting at Ascended VI , #28 in my weekly group with 2.7M+ XP, and I am literally forced to non-stop raid every single day just to avoid demotion . Time until rank change: 1d 07h. This isn't fun anymore. This is straight-up UNHEALTHY. I have over 4,000 hours in Tarkov. I’ve loved this game for years. But all this forced FOMO and daily grind mechanics have completely destro",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xe8mcb/discussion_after_4000_hours_the_seasonal_fomo_and/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Another streamers only event",
+          "summary": "Imagine you buy Escape from Tarkov just to see people play the game on Twitch, what the f*** is this? Hear me out, I'm not hating on the streamers playing the special game modes like Hunger Games and Gun Game Trios, I just don't understand why they don't release them in the game for everyone to play and enjoy. I want to play the game I paid. The worst thing is they just do this for streamers add a",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xe8dma/discussion_another_streamers_only_event/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Why is there a level cap for stuff on flea",
+          "summary": "I keep running into issue where i cant buy the stuff i need from the flea market and its getting to become really annoying. Like im only level 20 because i started late and every raid im fighting level 50's and 60's they have these amazing guns and ammo. yes i know thats my fault for being behind but why also punish me on the flea i couldnt even buy an extra mag for my gun but i can buy the gun, A",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xeeuot/discussion_why_is_there_a_level_cap_for_stuff_on/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Who's this?? Never seen that green icon before...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xervlr/discussion_whos_this_never_seen_that_green_icon/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Who is Forge!?",
+          "summary": "Less than 5 minutes into woods, this dude comes outta left field and fills me up with some M995. And my brand new gun jams?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xepvno/feedback_who_is_forge/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Can't have s***... [Screenshot]",
+          "summary": "The shrug I did instinctivelly after saying that phrase made me genuenly laugh, so I wanted to share :D",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xegdyh/cant_have_shit_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
