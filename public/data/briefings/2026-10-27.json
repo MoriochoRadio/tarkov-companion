@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T00:25:19.251+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 8건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "Since 1.1.5.0, 1–2 transits *lower* your raid XP by up to 23%. Transiting only pays off at 3 [Bug]",
+          "summary": "TL;DR verdict: 1 transit no, 2 probably no, 3 about even, 4 or more yes. PS. All these tests are from Seasonal. I have not confirmed other modes.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xf6tph/since_1150_12_transits_lower_your_raid_xp_by_up/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "For the love of god, *fix the open bolt bug* [Bug]",
+          "summary": "Not like they're optional/gimmick guns. I haven't made it through a single reload of the PPsH or RPD(N) without getting the cloned/desync magazine bug. C'mon man. We're past 1.0. Figure it the tf out.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xff591/for_the_love_of_god_fix_the_open_bolt_bug_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "[Cheating] Suspicious automated accounts trading marked keys",
+          "summary": "After observing the flea for many days I'm pretty sure there is a group of suspicious accounts selling marked keys. The group consists of many accounts (I counted around 20 so far). It is active in subgroups of several accounts, which change from day to day (like the one in picture that is active since 1-2 days). They sell all marked keys, in same way as abandoned factory above. They create key of",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xfd6uj/cheating_suspicious_automated_accounts_trading/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "This guy isn't even trying to hide it. [Cheating]",
+          "summary": "and no, he didn't farm these during the wild woods event, lol.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xfo5nd/this_guy_isnt_even_trying_to_hide_it_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Tarkov Devs are making fun of Tigz",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xfan17/discussion_tarkov_devs_are_making_fun_of_tigz/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] How do content creators get drone like angles for videos?",
+          "summary": "Was watching a video on YouTube and saw this angle, and the question popped into my head",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xffx9s/discussion_how_do_content_creators_get_drone_like/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Time to go offline for today I guess 😭",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xfjmyc/video_time_to_go_offline_for_today_i_guess/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Looks like Halloween will be centred around BD",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xfsw1j/screenshot_looks_like_halloween_will_be_centred/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "3 stooges [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xfg8mx/3_stooges_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] After 8000 and something hours, finally got a blessed weapon box",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xftmcu/video_after_8000_and_something_hours_finally_got/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "TIME for LABS - The Sherpa #14 feat. @itsYAKOV - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=kNa05ToXQCY",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "This G36 build actually feels INSANE - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=imRA7H3-t1g",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
+          "url": "https://www.youtube.com/watch?v=9JGI9V6mysg",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
