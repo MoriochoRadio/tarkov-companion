@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T15:13:50.429+09:00",
+  "period": {
+    "from": "2026-10-19",
+    "to": "2026-10-25"
+  },
+  "headline": "2026-10-19 ~ 2026-10-25 주간 정리 — 패치·공식 3건 · 주의 6건 · 공략 2건 · 화제 6건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "이번 주 누적 주의사항",
+      "items": [
+        {
+          "title": "The new labs boss is kinda interesting... [BUG]",
+          "summary": "Dear developers, can we not have people teleport to your back as challenge to fight a boss, thank you!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x94ztt/the_new_labs_boss_is_kinda_interesting_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "If you are having issues fighting Scourge and his guards [Discussion]",
+          "summary": "https://preview.redd.it/v9mmfeeyu7wh1.png?width=1547&format=png&auto=webp&s=220f0b9386dc27e7d168a78f30cf314dc3c15b7f https://preview.redd.it/iswysghzu7wh1.png?width=1613&format=png&auto=webp&s=694251bb35cd4c26f265f4eb19823a58f8837c02 https://preview.redd.it/rnpoasf0v7wh1.png?width=1328&format=png&auto=webp&s=04e2539327a2be00c3c0f812a84bc8257f225ab7 If Scourge and his boys spawn at the dome, you ca",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x91n34/if_you_are_having_issues_fighting_scourge_and_his/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Apparently Tarkov is now in the Southern Hemisphere",
+          "summary": "Apparently Tarkov has been transported to the Southern Hemisphere, as the Sun on GZ was in the northern sky and moving right to left.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9tmtq/bug_apparently_tarkov_is_now_in_the_southern/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug][Video] New boss NoClip",
+          "summary": "Every new boss just gets given more aimbot and cheat powers, what happened to realism?!?!?!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9yiw6/bugvideo_new_boss_noclip/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Shot through the floor 🥀 [bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9t6mg/shot_through_the_floor_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[bug] Why the hell do AI Scavs turn on you for defending yourself against Big Pipe?",
+          "summary": "I was literally just chilling in cover with a bunch of friendly AI Scavs, minding my own business, when Big Pipe decided to push me. Naturally, I defended myself and killed him. Apparently, that was enough for all my Scav buddies to immediately decide I was public enemy number one. How does this make any sense? The Goons are Rogue ex-PMCs, not Scavs. They're hostile toward us, and killing them isn",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x9wtyk/bug_why_the_hell_do_ai_scavs_turn_on_you_for/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (16 October 2026)",
+          "summary": "Reduced the distance at which PMC bots react to gunfire\nReduced the amount of time PMC bots spend in cover when reacting to gunfire\nReduced the amount of time PMC bots spend near points of interest while covering teammates when searching for loot\nFixed an issue that could cause Black Division bots to teleport in some cases\nFixed an issue that allowed the RShG-2 to be unloaded, which could cause a…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(16_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the Leagues system. We'd like to hear your opinion on the current Leagues system, weekly competitions, Ranking up and down, leaderboards, and rewards. Your responses will help us understand which elements of the Leagues system players find most interesting and which changes we should consider as we continue to develop it. You will receive a partici",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677386595815392107",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "이번 주 공략·팁",
+      "items": [
+        {
+          "title": "[Discussion] Finally escaped. Route and tips for 1.2",
+          "summary": "With the addition of PVE prestige I decided to finally escape. I was trying to finish every quest but got tired of grinding labyrinth but finding no labrys research notes, and the wedge buff made it impossible to clear IB for finishing Boreas. Took about 17 attempts, with a lot of b******* along the way but I finally got it done. Watched 2Lew's video and scrubbed Sheef's and noticed a few things t",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbz728/discussion_finally_escaped_route_and_tips_for_12/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "How to learn the maps? Noob here [New Player]",
+          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "여러 날 반복된 화제",
+      "items": [
+        {
+          "title": "[Discussion] Yup, it's another \"My Loadout For Terminal\" post",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x96nh4/discussion_yup_its_another_my_loadout_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "summary": "이번 주 2일 등장"
+        },
+        {
+          "title": "[screenshot] Wondering what this name color and icon means",
+          "summary": "So i killed this guy but in all the years i've played this game i've never seen a name this color or the shield icon next to it. anyone got a clue of what it means?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8xbbt/screenshot_wondering_what_this_name_color_and/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "F*** these guys honestly [Video]",
+          "summary": "Had enough of BSGs b******* AI, this is not hard AI its just dumb and unfun",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x93cb4/fuck_these_guys_honestly_video/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "My PMC is glowing [Discussion]",
+          "summary": "I think I got this glowing thing right after I killed Killa on Interchange. Any one experienced this too?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x96iex/my_pmc_is_glowing_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] Protip: Don't forget to look up :)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x93as0/video_protip_dont_forget_to_look_up/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Scourge P90 is slightly worse stat wise than the stock P90",
+          "summary": "Scourge P90 has 910 RPM for less ergo and higher recoil, whereas the Stock P90 has 900 RPM. Such a strange tiny change between the two. Like in the Scourge variants description it says its been 'customized and tuned' for Scourge, which would make me expect better recoil and ergo over stock.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8wvxa/discussion_scourge_p90_is_slightly_worse_stat/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
