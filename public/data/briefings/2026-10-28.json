@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T01:52:36.305+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Suggestion] Being able to have multiple tactical devices but unable control them is a huge waste. A simple radial menu would fix the issue and actually let us use separate laser/flashlight combos in a practical way (example from Delta Force).",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xgsean/suggestion_being_able_to_have_multiple_tactical/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Anyone else's game commonly freeze when they start shooting?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xg897c/bug_anyone_elses_game_commonly_freeze_when_they/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "TELEPORTING IN TARKOV [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xg3cdi/teleporting_in_tarkov_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Scav Drip over 9000 - He's ready to message some kids fr [Loot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xg30k5/scav_drip_over_9000_hes_ready_to_message_some/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Escape From Tarkov - Birth of a Game",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xg5t40/video_escape_from_tarkov_birth_of_a_game/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I'm Going to Miss Scourge :( [discussion]",
+          "summary": "I love the labs events on PVE (BD and Scourge). I obviously understand its very different between PVE and PVP, and I'm sure these events likely aren't fun at all on PVP but that's none of my business. It's a fun map and the added tension of powerful enemies with good loot is addicting. Gonna miss farming Scourge and his guards. Wish I had gotten more of his P90s but I don't have a lot of time to p",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xgjeqe/im_going_to_miss_scourge_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] So, are you already looking forward to the new zombie event?",
+          "summary": "What do you think—will it be rubbish again this time, or will the zombies finally break out of the lab?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xgkauw/discussion_so_are_you_already_looking_forward_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "OG Halloween event [Discussion]",
+          "summary": "https://preview.redd.it/9xx0mmotuvxh1.png?width=1347&format=png&auto=webp&s=b28f2f7a77d52286b5d5a86df48b439b0f5d2e13 What do you expect from upcoming H event?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xgagkl/og_halloween_event_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "The Consequences - The Cure #15 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=sA1KYq8qWCk",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Taking the TRG M10 to LABS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=y7nLBhvhQX4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - NEW HELIX MATTRESS STREAM #AD",
+          "url": "https://www.youtube.com/watch?v=VAFHSqxgmF8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
