@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T00:23:03.394+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 8건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "Please fix bugged mags before zombies. [bug]",
+          "summary": "The bug where you cannot load or unload large magazines is infuriating especially the idea of having to deal with it during inbound zombie event. Please fix before event! 🙏",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh7psj/please_fix_bugged_mags_before_zombies_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Killed a Rogue from 259.2m with an “Unknown weapon”?",
+          "summary": "I was looking through my raid kill list on Lighthouse and noticed this. I apparently killed a Rogue from 259.2 metres away with an “Unknown weapon”, and the hit was registered on the left leg. Does anyone know what could cause this? Is it a bug with the kill screen, some kind of damage attribution issue, or something else? Has anyone seen this before?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh1yvq/bug_killed_a_rogue_from_2592m_with_an_unknown/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] i loaded into custom raids and i lag so hard my legs break",
+          "summary": "when i start the game and load into raid, sometimes my legs are both instantly broken. i hear damage sound and bone cracking. (i heal after every death so this is not from previous raids) what can i do?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xhlnsl/bug_i_loaded_into_custom_raids_and_i_lag_so_hard/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Looking for tips on the what to take in terms of meds",
+          "summary": "PvE only I take a Calok, Army Bandage, AluSplint, some kind of pain med, a Sruv12 in the special slot, then sometimes a Cheese Square and an IFAK or AFAK. I still don't have an injector case so i havnt really dabbled in those yet, but when i do how do you use them? As in, are they in your pockets attached to a hotkey? Or in your backpack? Also when you take a shot what do you do? I assume first st",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh3qqr/discussion_looking_for_tips_on_the_what_to_take/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "치터 동향 (Reddit)",
+      "items": [
+        {
+          "title": "[Cheating] Do you think this guy's name means anything or?",
+          "summary": "https://preview.redd.it/h4b1n0kbb2yh1.png?width=3810&format=png&auto=webp&s=3f07063682ed9e661d5c161ae78d689eb5ad8582 Laughed when I saw this after getting very precisely grenaded while hidden.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh2ees/cheating_do_you_think_this_guys_name_means/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Downed State",
+          "summary": "Maybe a teaser for the already confirmed downed state for next season?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xgztl2/discussion_downed_state/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Zombie Event Preparation [Discussion]",
+          "summary": "My flea predictions for this Halloween event: - Flesh ammo will become scarce with traders, therefore jumping on the flea (as it did two years ago). - When the first zombie event happened, if you shot a few, you would trigger a swarm that attacks you. It was rumored however that if you used a suppressor, the swarm would not trigger as often. I have a feeling that will be more of a factor this time",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xgwd6u/zombie_event_preparation_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] throwing my hat in the ring, this is for a cutscene",
+          "summary": "Think, why would they prep the animation with a specific pistol and plate carrier in mind? This feels more likely to be a cutscene or interaction with a boss or quest, not a down state. That or they just use the a18 skanda as a placeholder.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh0xsf/discussion_throwing_my_hat_in_the_ring_this_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "spotted a defribilator at work today. should i take it? still need one for crisis [IRL]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xhofnf/spotted_a_defribilator_at_work_today_should_i/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "WHO PLAYS THROUGH THIS??? [Video]",
+          "summary": "The rubber band was so bad. I couldn’t even move away from the Nade. Anyone else find that unplayable ?? Or skill issue",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh8vw6/who_plays_through_this_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Holy Killa lasers",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xhkamp/video_holy_killa_lasers/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "BANTER With MY TARKOV DAD - The Sherpa #15 feat. @ToastRackTV - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=g_Y13XGT9sE",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - ZOMBIE EVENT SOON!?",
+          "url": "https://www.youtube.com/watch?v=XOPGzVcq-A4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Wiping out JUICERS with the LEG META Vector - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=39uM3p5jAI4",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
