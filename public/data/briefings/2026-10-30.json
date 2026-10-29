@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-30T00:29:24.618+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 7건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] uhh idek how to explain this",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xi9a2t/bug_uhh_idek_how_to_explain_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "How to unlock infil to Icebreaker from menu in 1.2 [Discussion] [Feedback]",
+          "summary": "I've been trying to find a way to unlock Icebreaker in menu so I don't have to risk dying in Transit areas but every video I see on how to unlock it is 5-6 months old and doesn't work when I try it myself. If anyone knows the steps to do it pls lmk, I hate using the transit.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xi6vv2/how_to_unlock_infil_to_icebreaker_from_menu_in_12/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] 1.3.0.0 Patch Notes",
+          "summary": "Patch 1.3.0.0 October 29, 2026 Changes New Halloween in-game event; Switched the in-game weather season to fall; Changed the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids; Added high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations; Added new Hideout customization sets to the Expansion Hub:Your Own Ce",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xicxsn/discussion_1300_patch_notes/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "New PMC behavior is top notch [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xicjvd/new_pmc_behavior_is_top_notch_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[New Player] What do to with this if I dont play seasonnal pvp ?",
+          "summary": "I came back to tarkov after a few years and I play only regular pvp for the moment. Is there any use for theses if I dont play seasonnal ?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xicq3c/new_player_what_do_to_with_this_if_i_dont_play/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Patch 1.3.0.0, Tomorrow, October 29",
+          "summary": "https://preview.redd.it/tbtcxjd46ayh1.png?width=1920&format=png&auto=webp&s=efdaf47e323f4c5587acb15df546b56ee0ac76c2 Tomorrow, October 29 at 7:00 AM GMT / 3:00 AM EDT, we are planning to install patch 1.3.0.0 for #EscapefromTarkov. The installation will take between 5 and 7 hours, but may be extended if required. The game will be unavailable during this time.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xi1yih/discussion_patch_1300_tomorrow_october_29/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] POV: you're a Sanitar guard",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xihx39/video_pov_youre_a_sanitar_guard/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Servers are unacceptable ATM [Discussion]",
+          "summary": "Rubberbanding in every single raid, regardless of servers chosen (Northern EU). Sometimes, it's just annoying. Most of the time you lose fights and die because of it. Sprint and jump in combat? GUARANTEED to roll back a few meters right in front of the enemy. Sometimes you get pulled halfway across the map as well. This has been going on for weeks, pretty much the whole season. How is this not tal",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xhu82x/servers_are_unacceptable_atm_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프에서 한번도 실패한 적 없던 이벤트 | 할로윈 이벤트 패치중, 좀비 사태? | 시즌 서버, 스킬 레벨업 버프 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=4-e_gssqz6Q",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "It Happened Again - The Cure #16 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=_9DlFgVenZI",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - ZOMBIE EVENT",
+          "url": "https://www.youtube.com/watch?v=9mgOszxYRzc",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Why The NL545 is The Best Gun for LABS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=pbjcqTDpLp8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
