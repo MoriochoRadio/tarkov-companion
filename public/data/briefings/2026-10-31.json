@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T00:16:05.905+09:00",
+  "headline": "패치 1.3.0.0.48484 (29 October 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.0.48484 (29 October 2026)",
+          "summary": "New Halloween in-game event;\nSwitched the in-game weather season to fall;\nChanged the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids;\nAdded high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations;\nAdded new Hideout customization sets to the Expansion Hub:\nYour Own Celestial Empire;\nOnce Upon a Time in T…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(29_October_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.3.0.0",
+          "summary": "Changes New Halloween in-game event; Switched the in-game weather season to fall; Changed the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids; Added high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations. Expansion Hub Added new Hideout customization sets: Your Own Celestial Empire; Once Upon a Time in T",
+          "url": "https://store.steampowered.com/news/app/3932890/view/719046160957833874",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "I just died extracting with train on lighthouse [Bug]",
+          "summary": "I was doing the halloween task you need to extract with train. The extraction never started and the train started moving. ended up dying to sniper scavs. Well done bsg. Also fix the ragdolls",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xivmsa/i_just_died_extracting_with_train_on_lighthouse/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Wedge Figuirine [Loot]",
+          "summary": "Just found a Wedge Figuirine. Any ideas what to do with it?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xitu89/wedge_figuirine_loot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Temporary Permit - Scav on Scav violence has returned!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xispp6/discussion_temporary_permit_scav_on_scav_violence/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Infected event feels like I’m playing a $2 steam game.",
+          "summary": "Zombies are coded so poorly. Not only that, they have pistols and will lag glitch you In swarms and tank headshots But as the title says, feels like a $2 Steam game.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xiyqkd/discussion_infected_event_feels_like_im_playing_a/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] zombies with guns are dumb",
+          "summary": "https://preview.redd.it/yq4qgwf21gyh1.png?width=550&format=png&auto=webp&s=afa22364cbe6b6092bc4f5b7ab3dca872c7b6169 Yo sick labs run just got Head, eyes with 2 mins in should this even be a thing? i don't think they add anything fun. It ruins the point of mowing zombies down with a LMG",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xiqv9h/discussion_zombies_with_guns_are_dumb/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] We found zombies",
+          "summary": "I just wanted to let yall know, you can shoot them until the door is completely blocked, we had a s*** ton of fun yesterday. After you blocked the door with bodies, the rest will enter kinda pretty slow and you can cherry-pick them. This was done for the archievment. (archievment is also a group quest, what your buddy’s shoot, counts for you as well) Have a great weekend everybody. Edit// this was",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xja0q7/screenshot_we_found_zombies/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] So we cannot look away anymore on the things we want to loot.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjc50o/video_so_we_cannot_look_away_anymore_on_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "On the QUEST GRIND - The Sherpa #16 feat. @ToastRackTV - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=kir-AS00oP8",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The HK 416 Feels So GOOD Now.. - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=k1bl-X7HdUw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - ZOMBIE EVENT",
+          "url": "https://www.youtube.com/watch?v=9mgOszxYRzc",
+          "source": "YouTube LVNDMARK"
+        }
+      ]
+    }
+  ]
+}
