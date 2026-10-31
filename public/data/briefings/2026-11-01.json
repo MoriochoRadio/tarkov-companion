@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-01",
+  "generatedAt": "2026-11-01T01:20:06.564+09:00",
+  "headline": "패치 1.3.0.0.48484 (30 October 2026)",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.0.48484 (30 October 2026)",
+          "summary": "Fixed an issue where players were unable to vault or move whilst prone in certain areas;\nFixed an issue where searching containers would be interrupted in some cases.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(30_October_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (29 October 2026)",
+          "summary": "New Halloween in-game event;\nSwitched the in-game weather season to fall;\nChanged the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids;\nAdded high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations;\nAdded new Hideout customization sets to the Expansion Hub:\nYour Own Celestial Empire;\nOnce Upon a Time in T…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(29_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.3.0.0",
+          "summary": "Changes New Halloween in-game event; Switched the in-game weather season to fall; Changed the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids; Added high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations. Expansion Hub Added new Hideout customization sets: Your Own Celestial Empire; Once Upon a Time in T",
+          "url": "https://store.steampowered.com/news/app/3932890/view/719046160957833874",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] How to kill zombies in the gas, easy way",
+          "summary": "first sorry i wasn't capturing sound but i guess you'll get the idea. The first spot imo is the most safe one because you have walls and doors to avoid the zombies with pistol until the rest opens the door. You can also try the second spot but it's super open and sometimes tagilla, players and zombies with pistol may kill u. Also in the first spot tagilla won't push you there, he will wait outside",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjrwz0/video_how_to_kill_zombies_in_the_gas_easy_way/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Halloween: The final push guide for anyone having trouble with the zombie event [Discussion]",
+          "summary": "If you run out of glass hallway just outside of gate 3 you can stand on the barrels. I never got hit by any the regular zombies so you should be good. Do be aware that if you are on PVE the pmcs sometime will rush you and kill you in this spot. Also be very careful of zombie Tagilla and any of the zombies with guns. Progress for the quest DID NOT count if the zombies died to the vaccine gas grenad",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xk7prs/halloween_the_final_push_guide_for_anyone_having/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] NEW CODE: UNDEADTARKOV",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjmt1w/discussion_new_code_undeadtarkov/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[screenshot] This event needs to be f****** tuned holy s***.",
+          "summary": "How the f*** are players supposed to do this event, barely made it out of labs after having to kill 85 f****** zombies and i had a hoard of at least 30 more chasing me, genuinely if i hadn't run to the extract and kited them like in cod zombies i would have died. I ran out of ammo in all my magazines as well. Why the f*** do i have to fight 85 f****** zombies just to do a labs run of this event. O",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjnymt/screenshot_this_event_needs_to_be_fucking_tuned/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] What's going on with his man, he ok?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjnmvj/discussion_whats_going_on_with_his_man_he_ok/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] Loot from 10 punks",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xk3kff/loot_loot_from_10_punks/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] I may have a problem with sugar intake. Also why does a pumpkin weigh 3KG?",
+          "summary": "Also the hall of fame needs a place for mask storage.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjxilx/screenshot_i_may_have_a_problem_with_sugar_intake/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "GigaBeef i NEED your MEAT [Discussion]",
+          "summary": "i unlocked the collector when the new requirements for it came in patch 1.1.0.0. and had all the items apart from SheefGG piggy bank, Gingy keychain, French bakery baguette, Bottle of YMXC water and Can of GigaBeef meat so i didn't focus on it because i know some of these are imbossible to find when one is looking for them. But yesterday i got the Gingy keychain, French bakery baguette and YMXC wa",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xk7dak/gigabeef_i_need_your_meat_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "2년 만에 돌아온 좀비 이벤트 | 맛있게 맵다. 상식적(?)인 게임이된 타르코프 | 치솟는 마켓 물가, 연어하는 탈붕이들 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=LA5i6IybL88",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "Well Well Well - The Cure #17 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=d0CT3xuBNIA",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - ZOMBIE EVENT",
+          "url": "https://www.youtube.com/watch?v=24tnBTdOnoE",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "The Most RELIABLE Late-Wipe Gun in Tarkov..",
+          "url": "https://www.youtube.com/watch?v=5G6ogZLZeQ8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
