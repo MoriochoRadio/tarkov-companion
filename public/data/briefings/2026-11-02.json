@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T00:25:33.222+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.0.48484 (30 October 2026)",
+          "summary": "Fixed an issue where players were unable to vault or move whilst prone in certain areas;\nFixed an issue where searching containers would be interrupted in some cases.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(30_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (29 October 2026)",
+          "summary": "New Halloween in-game event;\nSwitched the in-game weather season to fall;\nChanged the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids;\nAdded high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations;\nAdded new Hideout customization sets to the Expansion Hub:\nYour Own Celestial Empire;\nOnce Upon a Time in T…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(29_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.3.0.0",
+          "summary": "Changes New Halloween in-game event; Switched the in-game weather season to fall; Changed the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids; Added high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations. Expansion Hub Added new Hideout customization sets: Your Own Celestial Empire; Once Upon a Time in T",
+          "url": "https://store.steampowered.com/news/app/3932890/view/719046160957833874",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] Menu bugged out and I was able to snatch a screenshot for background usage",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xken0e/screenshot_menu_bugged_out_and_i_was_able_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "By far the weirdest bug I have ever faced on this game [Bug]",
+          "summary": "it's not fully clipped but, there was another mag that was full (you'll see it at the end when I extracted) got empty after 1 bullet just before this happens when I tried to shoot a pmc, is it cheats? is it just a bug? and apparently I killed him with a grenade just before the clip.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkj5j3/by_far_the_weirdest_bug_i_have_ever_faced_on_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] I got both the USEC and BEAR version of this quest at the same time",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkwhpb/bug_i_got_both_the_usec_and_bear_version_of_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Happy Halloween. [IRL]",
+          "summary": "Here are my brother and I’s Halloween costumes.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkia3j/happy_halloween_irl/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "BD cosplay for Halloween [IRL]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkt5zx/bd_cosplay_for_halloween_irl/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Season's about to wipe and I still refuse to let go of these. The Glorious_E effect [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xknfre/seasons_about_to_wipe_and_i_still_refuse_to_let/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] i love this Easter Egg",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkryzl/video_i_love_this_easter_egg/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "AI PMC with extended pockets? Cool. [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkg2u3/ai_pmc_with_extended_pockets_cool_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Glasses or not?",
+          "summary": "Do you wear bulletproof glasses? They once protected my head from shrapnel from a grenade.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkzg8q/discussion_glasses_or_not/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "정찰로 스트리머 스크림 터트리기 | 워독스 Wardogs",
+          "url": "https://www.youtube.com/watch?v=zQBsWxPErSM",
+          "source": "YouTube 유우양",
+          "isNew": true
+        },
+        {
+          "title": "Taking the G36 to Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=bgwoRVDeSzI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Hunting SCOURGE with the KS-23M on Labs! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=ZUFs0NgeSC0",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
