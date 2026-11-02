@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T16:40:44.816+09:00",
+  "period": {
+    "from": "2026-10-26",
+    "to": "2026-11-01"
+  },
+  "headline": "2026-10-26 ~ 2026-11-01 주간 정리 — 패치·공식 4건 · 주의 6건 · 공략 5건 · 화제 6건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "이번 주 누적 주의사항",
+      "items": [
+        {
+          "title": "[BUG] This is such a maddening way to lose everything...",
+          "summary": "I've had sync issues with the raid timer before, but at MOST, it would end the raid like 3 seconds early. If I get down to 10 seconds and don't think I'm going to make it, I start dumping all of my insured gear. I thought I had plenty of time here. Even if the raid ended 3-5 seconds early, I'd still be ok. NOPE. There goes everything! I hardly ever come to this subreddit to complain...but wow that",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xee1zs/bug_this_is_such_a_maddening_way_to_lose/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Escape from Shipping Container",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes7pj/bug_escape_from_shipping_container/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "What does this mean in Russian? [Bug]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xf2ez4/what_does_this_mean_in_russian_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Labyrinth Loot lost Practice Mode",
+          "summary": "So, finally getting around to running Labrythin for the first time, and I wanted to practice with normal AI - Got straight s*** on the first peak and died. Come back from the raid and all my load out, gear is gone? Am I just a dumbass or is that not normal?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xeik2f/bug_labyrinth_loot_lost_practice_mode/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Weird visual bug with Vudu 1x6x on arena, Any fixes?",
+          "summary": "every time i have i have a different visual bug with this scope",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xezcns/bug_weird_visual_bug_with_vudu_1x6x_on_arena_any/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Has anyone figured out how to not get an error when you are the non-party leader in a scav raid? [bug]",
+          "summary": "It has been months without being fixed...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xf2hik/has_anyone_figured_out_how_to_not_get_an_error/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.2.5.0.48146 (20 October 2026)",
+          "summary": "Reduced health of all body parts;\nDecreased field of view;\nIncreased spread when firing at a distance;\nReduced enemy detection speed.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.2.5.0.48146_(20_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (29 October 2026)",
+          "summary": "New Halloween in-game event;\nSwitched the in-game weather season to fall;\nChanged the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids;\nAdded high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations;\nAdded new Hideout customization sets to the Expansion Hub:\nYour Own Celestial Empire;\nOnce Upon a Time in T…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(29_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Patch 1.3.0.0",
+          "summary": "Changes New Halloween in-game event; Switched the in-game weather season to fall; Changed the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids; Added high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations. Expansion Hub Added new Hideout customization sets: Your Own Celestial Empire; Once Upon a Time in T",
+          "url": "https://store.steampowered.com/news/app/3932890/view/719046160957833874",
+          "source": "Steam 뉴스"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (30 October 2026)",
+          "summary": "Fixed an issue where players were unable to vault or move whilst prone in certain areas;\nFixed an issue where searching containers would be interrupted in some cases.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(30_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "이번 주 공략·팁",
+      "items": [
+        {
+          "title": "How to learn the maps? Noob here [New Player]",
+          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Looking for tips on the what to take in terms of meds",
+          "summary": "PvE only I take a Calok, Army Bandage, AluSplint, some kind of pain med, a Sruv12 in the special slot, then sometimes a Cheese Square and an IFAK or AFAK. I still don't have an injector case so i havnt really dabbled in those yet, but when i do how do you use them? As in, are they in your pockets attached to a hotkey? Or in your backpack? Also when you take a shot what do you do? I assume first st",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh3qqr/discussion_looking_for_tips_on_the_what_to_take/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "How to unlock infil to Icebreaker from menu in 1.2 [Discussion] [Feedback]",
+          "summary": "I've been trying to find a way to unlock Icebreaker in menu so I don't have to risk dying in Transit areas but every video I see on how to unlock it is 5-6 months old and doesn't work when I try it myself. If anyone knows the steps to do it pls lmk, I hate using the transit.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xi6vv2/how_to_unlock_infil_to_icebreaker_from_menu_in_12/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] How to kill zombies in the gas, easy way",
+          "summary": "first sorry i wasn't capturing sound but i guess you'll get the idea. The first spot imo is the most safe one because you have walls and doors to avoid the zombies with pistol until the rest opens the door. You can also try the second spot but it's super open and sometimes tagilla, players and zombies with pistol may kill u. Also in the first spot tagilla won't push you there, he will wait outside",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjrwz0/video_how_to_kill_zombies_in_the_gas_easy_way/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Halloween: The final push guide for anyone having trouble with the zombie event [Discussion]",
+          "summary": "If you run out of glass hallway just outside of gate 3 you can stand on the barrels. I never got hit by any the regular zombies so you should be good. Do be aware that if you are on PVE the pmcs sometime will rush you and kill you in this spot. Also be very careful of zombie Tagilla and any of the zombies with guns. Progress for the quest DID NOT count if the zombies died to the vaccine gas grenad",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xk7prs/halloween_the_final_push_guide_for_anyone_having/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "이번 주 커뮤니티 인기 글",
+      "items": [
+        {
+          "title": "The f*ck BSG.. [Cheating]",
+          "summary": "I get you can turn in ~2.5 million worth of saved quests on the final week and with dailies and weeklies and x2 icebreaker finish around 5million by end of the week. but this s*** is stupid. can BSG start banning accounts.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xejhg9/the_fck_bsg_cheating/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Who's this?? Never seen that green icon before...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xervlr/discussion_whos_this_never_seen_that_green_icon/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Why is there a level cap for stuff on flea",
+          "summary": "I keep running into issue where i cant buy the stuff i need from the flea market and its getting to become really annoying. Like im only level 20 because i started late and every raid im fighting level 50's and 60's they have these amazing guns and ammo. yes i know thats my fault for being behind but why also punish me on the flea i couldnt even buy an extra mag for my gun but i can buy the gun, A",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xeeuot/discussion_why_is_there_a_level_cap_for_stuff_on/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] What happened to these parts all of a sudden? They are suppose to be the same color and they definitely were. Now they are not.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xezkq9/feedback_what_happened_to_these_parts_all_of_a/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] Kit before going into Labs through Factory (PvE) Any advice before loading into raid?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xexfc0/feedback_kit_before_going_into_labs_through/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Can't have s***... [Screenshot]",
+          "summary": "The shrug I did instinctivelly after saying that phrase made me genuenly laugh, so I wanted to share :D",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xegdyh/cant_have_shit_screenshot/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
