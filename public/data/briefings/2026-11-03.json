@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T03:46:25.632+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 7건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.0.48484 (30 October 2026)",
+          "summary": "Fixed an issue where players were unable to vault or move whilst prone in certain areas;\nFixed an issue where searching containers would be interrupted in some cases.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(30_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (29 October 2026)",
+          "summary": "New Halloween in-game event;\nSwitched the in-game weather season to fall;\nChanged the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids;\nAdded high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations;\nAdded new Hideout customization sets to the Expansion Hub:\nYour Own Celestial Empire;\nOnce Upon a Time in T…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(29_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] No extraction in Lighthouse.",
+          "summary": "Well, I guess it's time to build a new life here.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xlf5aa/bug_no_extraction_in_lighthouse/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Prapor",
+          "summary": "I decided to keep the locked case. Prapor hit the table and started yelling. Then I went into a raid, played for 10 minutes and the sound queue of him hitting the table and yelling started when I was sneaking in Reserve bunker. I shat my pants.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xlbsyc/bug_prapor/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Suggestion] tip for the ones who need to complete boreas task line.",
+          "summary": "If you die with a BBQ Torch in your special slot you do in fact get to keep it. So you can skip wedge and go fight those last 5 BD on the upper decks right before the bridge where you find the captain. Reccomend labryinth, grab the BBQ torch and die with it. If you extract with the torch it will dissapear from your special slot. Hope this helps!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xln33h/suggestion_tip_for_the_ones_who_need_to_complete/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[IRL] Average Scav Raid",
+          "summary": "Starting my content creation journey, unknown where this would lead, very curious if I'm entering too late XD",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xlpycr/irl_average_scav_raid/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] My immediate action after I found the last item I needed for Kappa was to misclick it in my stash and eat it",
+          "summary": "I think I stared at my screen for about 7 minutes, in agony",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xm2bij/discussion_my_immediate_action_after_i_found_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "This will be my Tarkov peak (BAC 0.12%, 0.8 kd, 1300 hours) [Video]",
+          "summary": "He was lvl 34 so I dumped his gear in a dark corner :D",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xlhudh/this_will_be_my_tarkov_peak_bac_012_08_kd_1300/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Does anyone know where the original video below is from? [Video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xly2ml/does_anyone_know_where_the_original_video_below/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Do we still have SCP crossover?",
+          "summary": "I thought this will be part of the Halloween event too but haven’t seen any new information after this post",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xlc8lj/discussion_do_we_still_have_scp_crossover/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Finally Escaped!! [Discussion]",
+          "summary": "Hi all. Finally escaped! Really excited to achieve this. Just wanted to feed back a few points about terminal that I didn’t see covered on any of the guides. I was mostly just running terminal solo, so this just applies to solo. Occasionally had a random spawn with me but I’d usually die to some random bullet lol. There’s a bug after you clear armory and need to get the swipe card from the case wi",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xluivn/finally_escaped_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "2026 타르코프 좀비 이벤트 공략 | 100만원짜리 백신 가스 아끼는 방법 | 레그샷은 이제 필수 소양 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=HFghBtCXCf0",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "The ZOMBIES are BACK - The Sherpa #17 feat. @TrainYouTube - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=ZGsk1Y77G3U",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "The ZOMBIES are Back in Tarkov..",
+          "url": "https://www.youtube.com/watch?v=Wv9oopFAwug",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Causing CHAOS on Factory with the GLOCK 18 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=UyABqES596s",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
