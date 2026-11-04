@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T01:30:53.190+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.1.48558 (3 November 2026)",
+          "summary": "Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\nReduced the required number of kills in tasks to eliminate infected under the effect of a gas grenade.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(3_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (30 October 2026)",
+          "summary": "Fixed an issue where players were unable to vault or move whilst prone in certain areas;\nFixed an issue where searching containers would be interrupted in some cases.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(30_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (29 October 2026)",
+          "summary": "New Halloween in-game event;\nSwitched the in-game weather season to fall;\nChanged the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids;\nAdded high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations;\nAdded new Hideout customization sets to the Expansion Hub:\nYour Own Celestial Empire;\nOnce Upon a Time in T…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(29_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] What even is the logic here?",
+          "summary": "https://reddit.com/link/1xn2jap/video/9p7jq6pt7gzh1/player Just thought it's funny, but the axmc should be a square shorter when folded",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn2jap/bug_what_even_is_the_logic_here/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Do we know if the undead menu has the old looping performance issues? [Discussion]",
+          "summary": "\"Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\" Now that we get it as a reward has anyone tested if it has the old 5s frame time spikes because it loops in the background during a raid? I noticed when you open the menu in raid with esc its preloaded they fixed every other menu by not having it looping during a raid and when you hi",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn92ep/do_we_know_if_the_undead_menu_has_the_old_looping/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Prestige Badge [Bug]",
+          "summary": "Prestige in PvE. When i select the prestige badge in any gamemode it selects and appears on profile, until I finish a match or reload the game. During the game it appears. I need to keep reselecting it. Is this supposed to be a feature?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xngi3l/prestige_badge_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] All my keybinds are gone",
+          "summary": "ive tryd deleting the control config then repairing tryd changin my keyboard windows region settings nothing works only thing i havent done is reinstalled",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn99n7/bug_all_my_keybinds_are_gone/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] Wait...does this mean...Fence! My man!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn6ybz/screenshot_waitdoes_this_meanfence_my_man/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Why you don't hold an angle in tarkov [Discussion]",
+          "summary": "I knew he was inside and he made like one shuffling noise which was pretty much enough",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn95p4/why_you_dont_hold_an_angle_in_tarkov_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "It’s finally over. All Season 1 achievements done. [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xnf0gk/its_finally_over_all_season_1_achievements_done/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Would be nice QOL if my last selected Profile (PvE, PvP or PvPS) would automatically load [Suggestion]",
+          "summary": "So I don't have to click and wait another loading screen. I know it's not much but just a small annoyance. I don't think people switch so much between profiles, that it has to stay like it currently is.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xnkkls/would_be_nice_qol_if_my_last_selected_profile_pve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Fastest way to level endurance for Prestige 2?",
+          "summary": "Hello all, In PVE I am working on Prestige 2. I am almost ready to prestige again but I am being hindered by the endurance requirement. Disregard the roubles requirement, I can easily satisfy that requirement. What is the fastest method for leveling five endurance levels without an air filtration unit. (I am trying to work my way towards building it, although by then I'll be probably close to leve",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xnqb14/discussion_fastest_way_to_level_endurance_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[New Player]",
+          "summary": "Whoever just helped me with my quest on customs, opened marked room for me, and dropped me their kit at the end of the raid. I hope you always find the cold side of the pillow, straight Chad ggs",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xnrfgd/new_player/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 시즌2 떡밥 공개, 세기말이 온다 | 우주 타르코프, 프래그먼터리 오더의 얼리 엑세스 | 최초 플레이 공개 방송 예고 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=sXAlLyVvyB0",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "HERE WE GO AGAIN - The Cure #19 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=judPZGe02N8",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "FULL AUTO Saiga-12K on Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=kEHQQQbZ78s",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
