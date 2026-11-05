@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T01:43:47.792+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 4건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.1.48558 (3 November 2026)",
+          "summary": "Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\nReduced the required number of kills in tasks to eliminate infected under the effect of a gas grenade.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(3_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (30 October 2026)",
+          "summary": "Fixed an issue where players were unable to vault or move whilst prone in certain areas;\nFixed an issue where searching containers would be interrupted in some cases.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(30_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] 0",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xo7wg6/bug_0/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Bots instantly shooting after canceling heals.",
+          "summary": "You hit a bot, he starts to heal, you peek again to hit him while he's down, he cancels and starts shooting back instantly before his gun is up. You don't hear the shots because he doesn't have his gun in his hand. Had this happen to me on rogues, sanitar and guards, tagilla. I'm guessing it's the same for every bots. Can we get this fixed already ? Feels so bad getting shot like that, I'd rather",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xoj8l2/bug_bots_instantly_shooting_after_canceling_heals/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Why do I have to relog everytime I restart the pc? [Bug]",
+          "summary": "Why do I have to relog everytime I restart the pc? Even thou I have marked the box to remeber my login? Its so hard to deal with code, BSG?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xoifq0/why_do_i_have_to_relog_everytime_i_restart_the_pc/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Load in to a PvE bsg server streets raid and as per usual it's terrible connection. 1.6k ping with 66% packet loss. Can barely move. I spawned in and of course this is the raid I pick up the rusted blood key off the shelf. Take 3 more steps and game crashes with this error message :')",
+          "summary": "Oh and of course I also had all the items for A Bitter Victory task on me too.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xof5iq/bug_load_in_to_a_pve_bsg_server_streets_raid_and/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Fair warning with Halloween poster [bug]",
+          "summary": "When you prestige, you dont get the poster in your systems mail. Hopefully will get fixed, but yeah kinda a bummer.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xogshb/fair_warning_with_halloween_poster_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] Fragmentary Order — Official Gameplay Reveal",
+          "summary": "Watch the full trailer on Youtube: https://www.youtube.com/watch?v=uh5HEaBfz2w Make sure you follow us! https://www.instagram.com/fragmentary_order https://x.com/fragorder https://discord.com/invite/frago https://www.tiktok.com/@fragmentary_order https://www.youtube.com/@cor3corp https://www.reddit.com/r/cor3archive/",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xnwe6m/video_fragmentary_order_official_gameplay_reveal/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Fragmentary Order and Tarkov are within the same universe",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xodv8w/discussion_fragmentary_order_and_tarkov_are/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] When (if ever) will BSG actually fix the fundamental problems with Wedge?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xofcsd/video_when_if_ever_will_bsg_actually_fix_the/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I made a sophisticated tool to track additions I've confirmed to the Infected Labs map, please let me know what I missed! [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xnz3qo/i_made_a_sophisticated_tool_to_track_additions/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] NEW PROMOCODE \"TARKOVHALLOWEEN\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xome6x/loot_new_promocode_tarkovhalloween/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[discussion] Made it to sewer extract but i had grabbed \"Maps\" instead of \"Collectors Maps\"",
+          "summary": "i ran out of ammo and died trying to make it back to extract key spawn lol",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xo5krt/discussion_made_it_to_sewer_extract_but_i_had/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "니키타에게 또 속을 것인가? | 우주 타르코프, 최초 플레이 영상 공개 | 프래그먼터리 오더, 탈콥 박사의 소감 | Fragmentary Order",
+          "url": "https://www.youtube.com/watch?v=Sqb7pEoSZ04",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "A Rough Day - The Sherpa #18 feat. @TrainYouTube - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=3nG56kwCtwo",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Is the SA-58 with Ultra Nosler good against Zombies? - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=NKUD5gPnGWA",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "BENELLI M3 is the Best for the Labs event - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=6H1ew60F0G8",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
