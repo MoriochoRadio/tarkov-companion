@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T01:11:55.341+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.1.48558 (3 November 2026)",
+          "summary": "Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\nReduced the required number of kills in tasks to eliminate infected under the effect of a gas grenade.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(3_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] PvE profile stuck on “Loading Profile File” for 10+ days — BSG Support has not replied",
+          "summary": "Hi everyone, I’m looking for help with a PvE profile issue that has made Escape from Tarkov completely inaccessible for more than ten days. Every time I try to enter the game, it gets permanently stuck on “Loading Profile File.” Based on my logs, it appears that my server-side PvE inventory/profile data may be corrupted. The relevant error appears to involve this item: mag_ak74_magpul_pmag_30_ak74",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xp0yt7/bug_pve_profile_stuck_on_loading_profile_file_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "FIX THE SERVERS [bug]",
+          "summary": "Why is it currently nearly impossible to vault out of windows without getting hit with packet loss so bad that it throws you back into buildings. how are we genuinely in v1.3 and the servers are so bad that we can't vault. Genuinely FIX this s*** BSG, it's been a decade of bugs like this.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xp6dzr/fix_the_servers_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Backpack Bugged in-Raid [Bug]",
+          "summary": "Good day, since last update im experiencing a bugged Backpack for the third time now. Items are stuck in place. The bad thing about it is, that the whole backpack disappears after extraction. My question is: Is there a way to prevent this error from occurring in the first place? Thanks for your help!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xoxpzd/backpack_bugged_inraid_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] 60% of Players are in PVE",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xp8d6c/discussion_60_of_players_are_in_pve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Being 74U lover (Sketch by me)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xoom6s/discussion_being_74u_lover_sketch_by_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] 6/11/2026 dev short",
+          "summary": "Things to note: New BEAR upper, looks like it might be one of the darker ATACS patterns, although I'm not really sure Peacekeeper model, guessing we'll see him in-world finally in S2. Wearing what I'm pretty sure is an OG-107 top with Crye Woodland G3 pants Another new poster New rig, I think it's another LV-119 variant. Could easily see it being a non-BD affiliated MultiCam version as a top-end r",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xp531h/video_6112026_dev_short/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] PMC USEC, I would like to see more varieties of balaclavas in the game",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xp0kr0/discussion_pmc_usec_i_would_like_to_see_more/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Wtf is this I almost had a heart attack [Screenshot]",
+          "summary": "https://preview.redd.it/fb89ynbveuzh1.png?width=2560&format=png&auto=webp&s=588391f437a23e42f22fdf7bcc1de91655bf7726 I noticed that this pixel was all wonky mid-raid and thought my OLED was f****** up holy s*** wtf is it? Has anyone else noticed it or is it a me thing?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xoreda/wtf_is_this_i_almost_had_a_heart_attack_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] I had given up completely.",
+          "summary": "Level 60 in pve, figured it would be the one quest I’d skip. If anyone needs one lmk I’ll reply once I’ve gotten them with my username 👍",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xoy3pd/screenshot_i_had_given_up_completely/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Revisiting the Lab - The Cure #20 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=auTj7zKkUhI",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "I didn't expect this Long Barrel RPK-16 Build to Work... - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=UXFh7zDmX70",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PERMA PVP",
+          "url": "https://www.youtube.com/watch?v=1p7NUYbk79g",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
