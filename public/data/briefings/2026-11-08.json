@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T00:03:40.550+09:00",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.1.48558 (3 November 2026)",
+          "summary": "Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\nReduced the required number of kills in tasks to eliminate infected under the effect of a gas grenade.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(3_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Screenshot] New Promos from the Boss",
+          "summary": "EMBRACEPAIN - for PvP/PvPs PLAYYOURWAY - for PvE",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xpgxmd/screenshot_new_promos_from_the_boss/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Prestige 6 PVE done.",
+          "summary": "Been fun 'speedrunning' the PVE prestiges. Ended up doing Savior for p6 because I was time gated anyway and didn't feel it would be much different from something like Debtor. Stat page after reset if anyone's curious. Just wanted to share, I guess. Feel free to ama or call me a nerd.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xpjmv0/screenshot_prestige_6_pve_done/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Question about grip usage compared to irl",
+          "summary": "Why is it with the vertical foregrips (like the BGV-QDITI shown in the first picture) the model holds it in that \"broomstick\" style, but with the stubby, the thumb is kept on the left side of the grip? Is there some real world application there, or just an arbitrary design choice?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xpr77n/discussion_question_about_grip_usage_compared_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] We need buff to drip builds.",
+          "summary": "I use good/realistic looking guns all the time both pvp s and arena but they are falling behind too much due to lack of enough recoil reduction. This is my favorite m4 build with 200 recoil for example. If they slightly buff these type of drip attachments we would see people using different builds.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xq2m3t/discussion_we_need_buff_to_drip_builds/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Some people seem to think that the 60% skill increase was only for seasonal. You are wrong. [Discussion]",
+          "summary": "That out of the way skill leveling somehow still feels bad, it feels like with the DR changes they reverted back to the old skill gain xp, outside of the gym, please just flat out remove DR entirely.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xpsyx5/some_people_seem_to_think_that_the_60_skill/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Just when I found my gpsa for the hideout [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xpqype/just_when_i_found_my_gpsa_for_the_hideout/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "DUOS with Axel_tv - The Sherpa #19 feat. @Axel_tv - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=0x9C-VoM-a0",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PERMA PVP",
+          "url": "https://www.youtube.com/watch?v=mHV3tOtWo2E",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "We gave him the Halloween Experience.. - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=cgXmAAia9vk",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
