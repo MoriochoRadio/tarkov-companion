@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T00:31:49.879+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 8건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.1.48558 (3 November 2026)",
+          "summary": "Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\nReduced the required number of kills in tasks to eliminate infected under the effect of a gas grenade.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(3_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "what the hell do i do [Bug] [Cheating]",
+          "summary": "I bought these lowers off the fence because they had the yellow thing over them with the symbol and I didnt think much of it. just today I was seeing what I could sell my stuff to the fence for and these 2 receiver I bought are waayyyyy too valuabe (I BOUGHT THESE ON THE FENCE I DID NOT CHEAT THEM IN IF THEY ARE CHEATED IN) will I get banned if I sell them? what should I do?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqj733/what_the_hell_do_i_do_bug_cheating/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Blue Fire quest bug? [Bug]",
+          "summary": "https://preview.redd.it/ej5qetgude0i1.png?width=2382&format=png&auto=webp&s=b63ecb936c528acd652eeca10723433815997280 I just collected the item in the post car and none of the traders lets me turn it in or anything,i went back to the car again but the documents arent there anymore so ye idk how to progres now.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqzi58/blue_fire_quest_bug_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug]",
+          "summary": "Just spent 2 hr 45 mins transiting boss fighting looting to try and get a markup on the XP so I can go up the League system. I got a server side error and gained 0 exp. What a shame. I feel as if every time I try to use the Transit system I am getting punished for it.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqw02a/bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Suggestion] Tips for a level 18 PMC clearing Icebreaker?",
+          "summary": "Hi people I'm here to ask tips how to clear icebreaker as a lvl 18 PMC ... What gear to bring etc ... Haven't played this game for like 6 years and came back now",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqy8y4/suggestion_tips_for_a_level_18_pmc_clearing/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Somebody has a video guide for 100% clean engine room strategy for me?",
+          "summary": "Since the Halloween Patch I'm getting clapped in there too often. BD seems far more unpredictable and snappy since the Halloween Event dropped...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqtr5q/discussion_somebody_has_a_video_guide_for_100/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Wardogs is banning people a using nvidia filtres and low Shadow settings after a warning. I hope Eft do the same, to make night raids, maps and dark rooms equal to everyone.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqb4jd/discussion_wardogs_is_banning_people_a_using/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] I'm having a hard time with this new techique",
+          "summary": "Also wish nikita fixed his existing game first instead of starting up a new one",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xquj44/video_im_having_a_hard_time_with_this_new_techique/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[IRL] death shadow",
+          "summary": "I got the death shadow mask IRL, I need a KS-23, blicky, and ushanka, then I'll achieve full rat mode 😂",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqhhtq/irl_death_shadow/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Man these AI's lately, they are a bigger threat than players [Video]",
+          "summary": "Man lately I've died to so much AI unpredictables, atleast for someone with 1k hours. I'm 1.2 k/d, but AI feels like my biggest threat recently, everything from pistol zombies in event onetapping my head while im sprinting across labs, or the goons or rogues insta hs'ing me when i peek from behind a rock 80m away xd Or one of Glukhars guards hitting 7 thorax shots in 0.3 sec, or this fkn mortar on",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqq4d8/man_these_ais_lately_they_are_a_bigger_threat/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Can Sanitar die to his injectors?",
+          "summary": "As far as I understand, everything in tarkov uses more or less the same helth system that players use, seemingly with the exception of hydration and energy. Some injectors straight up decrease health over time, so in theory he should be capable of dying \"naturally\"? I don't exactly remember what he carries apart from Obdolbos, but event then, there's the possability that he instakills himself, rig",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqagyb/discussion_can_sanitar_die_to_his_injectors/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Whats up with the AI sometimes hitting 7 bullets in 0.3 sec? I just die to insta blunt dmg to thorax xd [Discussion]",
+          "summary": "As title, sometimes the ai just insta kills me with thorax hits. Sounds like they do one tap burst 3-4 bullets max, but i just have 7 blunt hits to chest and insta dies xd",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xq9j3n/whats_up_with_the_ai_sometimes_hitting_7_bullets/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "First Steps on the Cure - The Cure #21 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=GoVf-GegtTw",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Dorms CQC with the MK-18 Mjölnir! - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=9QZ95WEze6I",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PERMA PVP",
+          "url": "https://www.youtube.com/watch?v=I-72C2mwcYM",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
