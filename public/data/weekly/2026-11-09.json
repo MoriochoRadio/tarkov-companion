@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T16:58:27.034+09:00",
+  "period": {
+    "from": "2026-11-02",
+    "to": "2026-11-08"
+  },
+  "headline": "2026-11-02 ~ 2026-11-08 주간 정리 — 패치·공식 4건 · 주의 6건 · 공략 1건 · 화제 6건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "이번 주 누적 주의사항",
+      "items": [
+        {
+          "title": "[Screenshot] Menu bugged out and I was able to snatch a screenshot for background usage",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xken0e/screenshot_menu_bugged_out_and_i_was_able_to/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "By far the weirdest bug I have ever faced on this game [Bug]",
+          "summary": "it's not fully clipped but, there was another mag that was full (you'll see it at the end when I extracted) got empty after 1 bullet just before this happens when I tried to shoot a pmc, is it cheats? is it just a bug? and apparently I killed him with a grenade just before the clip.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkj5j3/by_far_the_weirdest_bug_i_have_ever_faced_on_this/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] I got both the USEC and BEAR version of this quest at the same time",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkwhpb/bug_i_got_both_the_usec_and_bear_version_of_this/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] No extraction in Lighthouse.",
+          "summary": "Well, I guess it's time to build a new life here.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xlf5aa/bug_no_extraction_in_lighthouse/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Prapor",
+          "summary": "I decided to keep the locked case. Prapor hit the table and started yelling. Then I went into a raid, played for 10 minutes and the sound queue of him hitting the table and yelling started when I was sneaking in Reserve bunker. I shat my pants.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xlbsyc/bug_prapor/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Your’re not supposed to be there… (look at the center of the screenshot)",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xmqlsq/bug_yourre_not_supposed_to_be_there_look_at_the/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "이번 주 패치·공식 소식",
+      "items": [
+        {
+          "title": "패치 1.3.0.0.48484 (30 October 2026)",
+          "summary": "Fixed an issue where players were unable to vault or move whilst prone in certain areas;\nFixed an issue where searching containers would be interrupted in some cases.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(30_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.1.48558 (3 November 2026)",
+          "summary": "Fixed incorrect lighting in certain areas of the Infected Factory map;\nFixed an issue where it was not possible to search one of the scientist' corpses in the Infected Laboratory map;\nFixed the low resolution of the Halloween main menu background when texture settings were set to low;\nFixed the absence of the Halloween main menu background animation after exiting a raid.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(3_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.0.48484 (29 October 2026)",
+          "summary": "New Halloween in-game event;\nSwitched the in-game weather season to fall;\nChanged the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids;\nAdded high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations;\nAdded new Hideout customization sets to the Expansion Hub:\nYour Own Celestial Empire;\nOnce Upon a Time in T…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.0.48484_(29_October_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "Patch 1.3.0.0",
+          "summary": "Changes New Halloween in-game event; Switched the in-game weather season to fall; Changed the colliders of certain items in the Currency and Valuables categories to make them easier to find and pick up during raids; Added high-difficulty PMC bots to PvE Zone. They can spawn on high-level locations. Expansion Hub Added new Hideout customization sets: Your Own Celestial Empire; Once Upon a Time in T",
+          "url": "https://store.steampowered.com/news/app/3932890/view/719046160957833874",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "이번 주 공략·팁",
+      "items": [
+        {
+          "title": "[Suggestion] tip for the ones who need to complete boreas task line.",
+          "summary": "If you die with a BBQ Torch in your special slot you do in fact get to keep it. So you can skip wedge and go fight those last 5 BD on the upper decks right before the bridge where you find the captain. Reccomend labryinth, grab the BBQ torch and die with it. If you extract with the torch it will dissapear from your special slot. Hope this helps!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xln33h/suggestion_tip_for_the_ones_who_need_to_complete/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "여러 날 반복된 화제",
+      "items": [
+        {
+          "title": "[Discussion] My immediate action after I found the last item I needed for Kappa was to misclick it in my stash and eat it",
+          "summary": "[이번 주 2일 등장] I think I stared at my screen for about 7 minutes, in agony",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xm2bij/discussion_my_immediate_action_after_i_found_the/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Happy Halloween. [IRL]",
+          "summary": "Here are my brother and I’s Halloween costumes.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkia3j/happy_halloween_irl/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "BD cosplay for Halloween [IRL]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkt5zx/bd_cosplay_for_halloween_irl/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "Season's about to wipe and I still refuse to let go of these. The Glorious_E effect [Screenshot]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xknfre/seasons_about_to_wipe_and_i_still_refuse_to_let/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Video] i love this Easter Egg",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkryzl/video_i_love_this_easter_egg/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "AI PMC with extended pockets? Cool. [Discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkg2u3/ai_pmc_with_extended_pockets_cool_discussion/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ]
+    }
+  ]
+}
