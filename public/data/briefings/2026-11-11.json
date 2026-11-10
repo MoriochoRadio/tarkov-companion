@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T01:34:27.317+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Exfil Brothers poster reward",
+          "summary": "Wherever I hang this poster in my hideout, it always hangs crooked and goes inside the wall. Am I playing in liminal spaces? I already wrote to support about this and sent them screenshots, even an update ago, but apparently they don’t want to fix it =(",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xsegsq/bug_exfil_brothers_poster_reward/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] The Absolute state of desync on these servers man :(",
+          "summary": "He was in Concordia, saw him for a split second while shoulder peeking and somehow still got Head, Top of Head. Has got to be at least 250ms of desync, if not more, right???",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs9ndi/video_the_absolute_state_of_desync_on_these/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] any way to combat inconvenient lag spikes?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xrwqkf/bug_any_way_to_combat_inconvenient_lag_spikes/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Terminal - got killed by the same guy I killed on Shoreline.",
+          "summary": "[PVP Seasonal] I spawn on Shoreline next to the road to Customs. On the way to Terminal I kill a naked guy with only a pistol and grab his dogtag. Then I transit to Terminal. I spawn with 2 other guys and ask them to be friendly and not TK. I get TK’d, check his profile, and TURNS OUT it’s the same guy I killed on the way to Terminal... Can someone explain how this is possible? How did he get into",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs4yz2/bug_terminal_got_killed_by_the_same_guy_i_killed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[video] this is realistic tarkov",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs9xuq/video_this_is_realistic_tarkov/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Season 2 New Modifiers",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xshw9y/discussion_season_2_new_modifiers/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] What is this, and does it serve any purpose?",
+          "summary": "See the attached photo. When I logged on after work today, I received this as a \"reward\" for something. I'm assuming it's tied to Icebreaker for obvious reasons, but I completed every achievement/task related to Icebreaker months ago (\"Part of the Ship, Part of the Crew\" achieved on 2026-07-07) and so am wondering where this thing came from lol. Thanks!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs5elb/loot_what_is_this_and_does_it_serve_any_purpose/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] RUAF at the Terminal gate should shoot anybody who attacks a player who's swiped their keycard",
+          "summary": "I've run into campers twice on Seasonal. Yes you can drop smokes, but ultimately if someone's posted up sitting in a spot where someone going to transit can't see them, they've got you dead to rights and can just wait until you run off. The fact that people going this way will be bringing juicy kit makes them a nobrainer target to camp, even more so than extract camping. Zryachiy and his boys do t",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xsct0k/suggestion_ruaf_at_the_terminal_gate_should_shoot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Improvement on Icebreaker",
+          "summary": "Gentlemen, I am pleased to inform you that I have advanced in my work on Icebreaker. Now instead of having dispatched one Rogue and then get bodied by Knight, I have slain six Rogues AND Knight before succumbing to enemy fire. Yes, I am a certified bad. Yes, I know you don't care. That is all.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs2qx5/discussion_improvement_on_icebreaker/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] The Man has posted a video explaining what's happening in the Frag Order trailer",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs3ya1/video_the_man_has_posted_a_video_explaining_whats/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "First Vaccine - The Cure #22 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=xG6py_yF7D4",
+          "source": "YouTube Pestily"
+        },
+        {
+          "title": "Wiping LABS with the MCX (SOLO Raids) - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=tNrHiZO2qsY",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Taking on JUICERS with the NL545 on Customs - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=aU4bsKvL8ds",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
