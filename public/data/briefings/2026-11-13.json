@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-13T02:01:20.491+09:00",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.1.48558 (11 November 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(11_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[Bug] Anyone ever experienced this? Help needed",
+          "summary": "My Device: Win10 CPU - Ryzen 5 5600x 16GB RAM + 16GB Virtual RAM GPU - RTX 2060 6GB Sometimes tarkov would not load map assets & textures at all. This has happened to me across almost all maps across PvE. Restarting the game solves this issue in the next raid most of the time but haven't been able to get a stable repro for the issue. What could be a possible cause and how can I fix it?? I'm suspec",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xu3zv7/bug_anyone_ever_experienced_this_help_needed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "why do people appear to go into a seated position after dying recently? [bug]",
+          "summary": "has anybody else noticed the odd glitchy death physics? a couple weeks ago i noticed players appear to drop down in the same way after most deaths, almost like trying to take a seat, even a.i do it. its a good opportunity to take advantage of hitting prone the second you get fired at, because most players will think they've killed you with the way the physics are at the moment",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtrj4d/why_do_people_appear_to_go_into_a_seated_position/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Elite Level Hideout Management bugged?",
+          "summary": "I reached max hideout management skill in PvE but i cannot use the extra slots it promises. The skill advertises two extra water filter and two extra fuel slots but whenever I try to put something in these slots (water filters and fuel respectively), I just get a \"228 - Slot not exists\"[sic!] error that just throws me to the main menu again and when I check back, the filter or fuel container are n",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtnllf/discussion_elite_level_hideout_management_bugged/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Ricochet bug [Bug]",
+          "summary": "Look i dont know if this info gonna work but after i bought unheard, my game broke. Since yesterday, 9 headshots just did ricochet. I have the clips but im too lazy for it. Why is this happening? I mean im shooting 5.45 bp, 9x19 pbp, m80 with m856a1 and m855a1 but even scav tanks 1 bullet and at the second shot hes dying. The most ridiculous info is, my home's internet using is so much lower than",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuen8y/ricochet_bug_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] I sure do love spawning on Goons.",
+          "summary": "https://preview.redd.it/t27k4izy031i1.png?width=1920&format=png&auto=webp&s=dc14f49631a63335b796f3d59d3fb6a5b4aadf99 While doing Falling Skies mind you, so its back to Woods...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtzggr/bug_i_sure_do_love_spawning_on_goons/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Video] so apparently shooting at a 1.5s interval in bushes/smoke will infinitely extend AI's time to spot you",
+          "summary": "orginial video link Thanks to amazing work by Жбобых in his video, it is now possible to exploit Wedge with smokes again. How it works (TLDR): When you are in bushes/smoke, AI will take longer to spot you. Due to a bug, when shooting in the smoke, it will extend their time to spot you, instead of shortening the reaction time. Due to another bug, Wedge will not spot you at the edge of smoke, and in",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xu63mo/video_so_apparently_shooting_at_a_15s_interval_in/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "This gave me a good laugh [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xu8ri5/this_gave_me_a_good_laugh_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] PvE is what keeps tarkov viable as a product for BSG",
+          "summary": "Yes its another post on this topic, however, rather than approaching it from the perspective of \"hurr i have less people to shoot\" or \"hurr i don't wanna be killed by sweats\" people should analyze it from the only perspective that really matters to BSG: player retention. Extraction shooters are, by default, games with a high player turnover. More people quit these type of games than that they brin",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtnbd1/discussion_pve_is_what_keeps_tarkov_viable_as_a/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Season 2 - UNTAR Control",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xu9nyh/discussion_season_2_untar_control/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Deathstick",
+          "summary": "I love using meme gun builds. I load this puppy with RIP/QuakeMaker for the ultimate death screen experience. Funny it says such high recoil numbers when in reality you spam-click this and the recticle does not move.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtrraj/screenshot_deathstick/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[IRL] 3D printed AS Val",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xu7ogl/irl_3d_printed_as_val/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "This Was a Mistake... - The Cure #23 feat. @MrDrakezilla - Project Zomboid",
+          "url": "https://www.youtube.com/watch?v=AG7vglQL90M",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "Farming Players with the AS VAL MOD 4 on LABS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=U1TCi7-Ya48",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=NfBdzwK3U7E",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
