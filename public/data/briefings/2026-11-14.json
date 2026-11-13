@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-14T01:42:19.044+09:00",
+  "headline": "New in-game survey",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.1.48558 (11 November 2026)",
+          "summary": "Simplified the objectives of many seasonal tasks and lowered their starting requirements.\nChanged the seasonal reward trade offers for Black Division gear: they now require money or barter items instead of special dogtags\nBlack Division spawn rate has been increased to 100% on all applicable locations.\nReduced reaction speed, accuracy, and health of all body parts for Black Division operatives on…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(11_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the EXFIL Brothers Program. We'd like to hear your opinion on the current EXFIL Brothers system, its rewards and requirements, and how easy it was to understand how the program works. Your responses will help us understand which elements of the program players find most interesting and which changes we should consider as we continue to develop it.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677389277779198412",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[discussion] [feedback] The most bugged game i've ever had #bsg",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuoddm/discussion_feedback_the_most_bugged_game_ive_ever/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I died on Terminal and still have the note from Prapor - [Bug]?",
+          "summary": "As the title says, I died on Terminal about 10 minutes into the raid and I still have the note from Prapor. Is this a bug that anyone else has experienced? I'm not very well versed in all the story endings, this is my 3rd attempt on Terminal and my previous 2 consumed the letter.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvah18/i_died_on_terminal_and_still_have_the_note_from/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Armored Case",
+          "summary": "Found out recently the bug where you don't receive your armored case back from Lightkeeper is still a thing. On day 6 of waiting for the case after hearing back from and confirming the bug with support. Unless you're going for the \"quick\" route of giving prap 300mil save yourselves the potential headache and just keep the case.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuxkyc/bug_armored_case/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] When scaving on BSG Servers game lags a lot",
+          "summary": "i recently noticed you can chose to run scav on local or bsg servers but when i try to go on bsg servers my game lags for around 3 minutes of loading in down to 3 fps any help to fix this ?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvbahp/bug_when_scaving_on_bsg_servers_game_lags_a_lot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] EXCLUSIVE: Escape from Tarkov’s Console Version Will Be Announced in 2027",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuxr8s/discussion_exclusive_escape_from_tarkovs_console/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "TerraGroup Tie Clip [Discussion]",
+          "summary": "Made a Tie Clip with the TerraGroup logo engraved in it, seems like a subtle way to nerd out that seems true to the tarkov universe. Definitely something a executive of the company would wear. Anyone else have similar ways so show their fandom?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xun9rb/terragroup_tie_clip_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Balance changes; WEDGE NERFED",
+          "summary": "Changed the ammo they use, though... Don't tell me they nerfed an unkillable boss and are also gonna give him scuffed ammo as \"punishment.\"",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuk9nb/discussion_balance_changes_wedge_nerfed/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "I just found 4 Red Rebels in a marked room on PVE [Screenshot]",
+          "summary": "Is this rare? I only have a few hundred hours and this is maybe like my 10th marked room.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xv9jii/i_just_found_4_red_rebels_in_a_marked_room_on_pve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Wolf in sheeps clothing was made easier to complete",
+          "summary": "apologies if this was already known, but for anyone like me that has been stuck on wolf in sheeps clothing kord breach quest - the map requirements are gone and you only need 8 bd kills",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xull57/discussion_wolf_in_sheeps_clothing_was_made/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Anyone else get attached to gear they've used for a prolong period of time?",
+          "summary": "It's not like gear fear where you don't ever take the gear out for a raid, but it's when you come back from surviving your 3rd or 4th raid in a row and you start to grow attached to the gear you keep bringing. it goes from \"Oh I won't miss this stuff when I eventually die 10 minutes in\", to \"This Ak-104 is my best friend for the rest of my life\" ...Or is this just me?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuo7lq/discussion_anyone_else_get_attached_to_gear/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "아시아 차별 논란에 도게자 박은 게임사 | 워독스 치터 비율이 제일 높았던 지역 공개 | 시즌3 개막, 신규 시가전맵 추가 | Wardogs",
+          "url": "https://www.youtube.com/watch?v=UHdxSF7E008",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=A6mtCxumcq0",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Breaking Legs with the .45 Vector for Mental Therapy - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=7H7qxRV7o2U",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
