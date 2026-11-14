@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-15T00:18:06.963+09:00",
+  "headline": "패치 1.3.0.2.48779 (13 November 2026) 외 패치노트 1건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.2.48779 (13 November 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.2.48779_(13_November_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.3.0.1.48558 (13 November 2026)",
+          "summary": "In Seasonal Mode, briefcases with documents have been added to airdrops;\nFor all gamemodes, the reward trade offers for Black Division gear, which were previously exchanged for dogtags, have been corrected. These offers now also require money or barter items.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(13_November_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
+        {
+          "title": "패치 1.3.0.1.48558 (11 November 2026)",
+          "summary": "Simplified the objectives of many seasonal tasks and lowered their starting requirements.\nChanged the seasonal reward trade offers for Black Division gear: they now require money or barter items instead of special dogtags\nBlack Division spawn rate has been increased to 100% on all applicable locations.\nReduced reaction speed, accuracy, and health of all body parts for Black Division operatives on…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(11_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Standard Edition & PvE Zone bundle!",
+          "summary": "The release anniversary of Escape from Tarkov is approaching! To celebrate, a unique Standard Edition & PvE Zone bundle is now available on Steam. It is a great starting point for those who want to begin their escape from Tarkov at their own pace while gradually exploring the Norvinsk region. In addition, it is a fitting gift for a friend you have long wanted to invite to co-op raids. The bundle o",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677389277779198538",
+          "source": "Steam 뉴스",
+          "isNew": true
+        },
+        {
+          "title": "New in-game survey",
+          "summary": "A new in-game survey is now available, focused on the EXFIL Brothers Program. We'd like to hear your opinion on the current EXFIL Brothers system, its rewards and requirements, and how easy it was to understand how the program works. Your responses will help us understand which elements of the program players find most interesting and which changes we should consider as we continue to develop it.",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677389277779198412",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "[BUG] Why are Rogues still so broken?",
+          "summary": "I know I played this poorly but why are Rogues still that f****** broken. I'm having a better time killing BD on any Map than killing the Rogues??? Is this just me?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvl03z/bug_why_are_rogues_still_so_broken/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] what is this guy selling on the flea?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvjvbm/bug_what_is_this_guy_selling_on_the_flea/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Can’t turn in the 3 FIRL TPs I have for this daily…",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvxr87/bug_cant_turn_in_the_3_firl_tps_i_have_for_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Bug] Returning player, can anyone help me understand the fluctuation in performance I'm getting?",
+          "summary": "The title and pictures kind of give the idea, but to say it plainly: I go from ~250-300fps on streets of tarkov to 50-80fps on a separate raid with no rhyme or reason that I can tell. Sometimes the low fps bug starts immediately after a fresh restart/cache clear of the game, sometimes it doesn't happen until I'm 4-5 raids deep in an instance of the game. I cant seem to determine anything that spec",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvk3tm/bug_returning_player_can_anyone_help_me/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "공략·팁 (Reddit)",
+      "items": [
+        {
+          "title": "[Discussion] Tip for next season, save your PvE account prestige. After new season drops from twitch, if you prestige on PvE it resends all the drops to your Main and Seasonal.",
+          "summary": "You can then repeat the process if you main account isnt prestige aswell, and it will resend the drops a third time, giving you triple drops on PvP Seasonal.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvplrx/discussion_tip_for_next_season_save_your_pve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "Tagilla cosplay [IRL]",
+          "summary": "Local convention of mine was happening and I wanted to bring tagilla to life in the con. How did I do?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvibqz/tagilla_cosplay_irl/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] Black Division Dog Tags",
+          "summary": "Thank you very much BSG, all this is now just useless garbage in PVE. Godbless BattleState! I spent blood and sweat to get these tokens out of them, so that you could simply, with a wave of your hand, in one instant, simply turn it into trash.... Thank you...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xve7j5/feedback_black_division_dog_tags/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Feedback] New BD Barters on PVE",
+          "summary": "Dog tags are no longer needed. Flea market prices have already skyrocketed. Was it really that hard for them to make two options for barter, for BD dog tags and for other things? They already make two options for barter with other items, like some cases",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvexnu/feedback_new_bd_barters_on_pve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Black Division got the funniest AI upgrade",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvhdz4/video_black_division_got_the_funniest_ai_upgrade/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Loot] PROMOCODE: 9GAG",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xw2n7w/loot_promocode_9gag/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] G3 customisation",
+          "summary": "They actually included the bipod to go with the tropical handguard, YIPPEEEEE Also really happy we're getting several eras of pre-modern production parts included. Always bothered me how stuff like the FAL and M1A just had stock black polymer furniture and then railed parts when there was a great deal of variety of very unique looking configurations for those rifles pre-2000",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvgz1b/screenshot_g3_customisation/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 시즌 1 세기말 시작? | 블랙 디비전 100% 스폰 | 타르코프 콘솔판, 곧 발표 (진짜임) | 시즌2는 UN군과 스캐브 라이프 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=w-BC3wIndbY",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "THIS is Why I'm Not Playing on Seasonal Anymore.. - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=cmieBdb1ccQ",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Sneaking up on Tracksuit Gamers on LABS w Fragas - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=LJaVSXZvs38",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
