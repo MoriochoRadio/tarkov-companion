@@ -31,19 +31,6 @@
       ]
     },
     {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "[Discussion] Looking for tips on the what to take in terms of meds",
-          "summary": "PvE only I take a Calok, Army Bandage, AluSplint, some kind of pain med, a Sruv12 in the special slot, then sometimes a Cheese Square and an IFAK or AFAK. I still don't have an injector case so i havnt really dabbled in those yet, but when i do how do you use them? As in, are they in your pockets attached to a hotkey? Or in your backpack? Also when you take a shot what do you do? I assume first st",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh3qqr/discussion_looking_for_tips_on_the_what_to_take/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "치터 동향 (Reddit)",
       "items": [
@@ -97,6 +84,13 @@
         {
           "title": "[Video] Holy Killa lasers",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xhkamp/video_holy_killa_lasers/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Looking for tips on the what to take in terms of meds",
+          "summary": "PvE only I take a Calok, Army Bandage, AluSplint, some kind of pain med, a Sruv12 in the special slot, then sometimes a Cheese Square and an IFAK or AFAK. I still don't have an injector case so i havnt really dabbled in those yet, but when i do how do you use them? As in, are they in your pockets attached to a hotkey? Or in your backpack? Also when you take a shot what do you do? I assume first st",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xh3qqr/discussion_looking_for_tips_on_the_what_to_take/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

@@ -1,7 +1,7 @@
 {
   "date": "2026-08-29",
   "generatedAt": "2026-08-29T02:29:18.138+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 9건 · 신규 영상 6건",
+  "headline": "오늘의 소식 — 커뮤니티 9건 · 신규 영상 4건",
   "sections": [
     {
       "type": "community",
@@ -91,12 +91,6 @@
           "isNew": true
         },
         {
-          "title": "MMOFPS 오픈월드 STALZONE l 스탈존",
-          "url": "https://www.youtube.com/watch?v=TYC9XSlEHlE",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
           "title": "Risking My SR-2M on Reserve - #25 - Punisher - Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=8XJzRtAMrts",
           "source": "YouTube Pestily",
@@ -105,12 +99,6 @@
         {
           "title": "ESCAPE FROM TARKOV - GOLD COIN EVENT",
           "url": "https://www.youtube.com/watch?v=wMDLeYFEjGc",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "How We Pulled Off the CRAZIEST Comeback in WARDOGS",
-          "url": "https://www.youtube.com/watch?v=2uUWk10SVLs",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }

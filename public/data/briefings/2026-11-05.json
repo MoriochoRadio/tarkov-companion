@@ -1,7 +1,7 @@
 {
   "date": "2026-11-05",
   "generatedAt": "2026-11-05T01:30:53.190+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 7건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -35,13 +35,6 @@
           "title": "[Bug] What even is the logic here?",
           "summary": "https://reddit.com/link/1xn2jap/video/9p7jq6pt7gzh1/player Just thought it's funny, but the axmc should be a square shorter when folded",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn2jap/bug_what_even_is_the_logic_here/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "Do we know if the undead menu has the old looping performance issues? [Discussion]",
-          "summary": "\"Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\" Now that we get it as a reward has anyone tested if it has the old 5s frame time spikes because it loops in the background during a raid? I noticed when you open the menu in raid with esc its preloaded they fixed every other menu by not having it looping during a raid and when you hi",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn92ep/do_we_know_if_the_undead_menu_has_the_old_looping/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         },
@@ -104,6 +97,13 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xnrfgd/new_player/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "Do we know if the undead menu has the old looping performance issues? [Discussion]",
+          "summary": "\"Added the «Halloween» menu background to the rewards for the «Triumph of Science» and «Shields Up!» achievements;\" Now that we get it as a reward has anyone tested if it has the old 5s frame time spikes because it loops in the background during a raid? I noticed when you open the menu in raid with esc its preloaded they fixed every other menu by not having it looping during a raid and when you hi",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xn92ep/do_we_know_if_the_undead_menu_has_the_old_looping/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -115,12 +115,6 @@
           "title": "타르코프 시즌2 떡밥 공개, 세기말이 온다 | 우주 타르코프, 프래그먼터리 오더의 얼리 엑세스 | 최초 플레이 공개 방송 예고 | Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=sXAlLyVvyB0",
           "source": "YouTube 노잼망겜",
-          "isNew": true
-        },
-        {
-          "title": "HERE WE GO AGAIN - The Cure #19 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=judPZGe02N8",
-          "source": "YouTube Pestily",
           "isNew": true
         },
         {

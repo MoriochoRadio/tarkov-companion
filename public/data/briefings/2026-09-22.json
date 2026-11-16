@@ -1,7 +1,7 @@
 {
   "date": "2026-09-22",
   "generatedAt": "2026-09-22T00:18:27.955+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건",
   "sections": [
     {
       "type": "news",
@@ -109,30 +109,6 @@
           "summary": "I just did a 20 minute raid on ground zero getting a bunch of tasks done and pmc kills. as im heading to basement extract 3 player scavs appear around me. i kill 3 but one is hiding in a corner and gets me as im leaving. dude has 9k hours and level 30 something prestige 3. im just trying to get tasks so i can unlock level 15 flear market my guy",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wm0dyl/suggestion_remove_player_scavs_from_ground_zero/",
           "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "videos",
-      "title": "신규 영상",
-      "items": [
-        {
-          "title": "동접 스팀 40만. 전쟁터에서 돈 벌어서 무장 사는 게임. | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=aiPz_NXZLbU",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "THIS is Why I keep choosing the GALIL over the M4 - WARDOGS",
-          "url": "https://www.youtube.com/watch?v=9KtISjT3-_w",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "ARENA BREAKOUT INFINITE - CHECKING OUT SEASON 7",
-          "url": "https://www.youtube.com/watch?v=ibxhVWNnVtU",
-          "source": "YouTube LVNDMARK",
           "isNew": true
         }
       ]

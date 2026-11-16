@@ -1,7 +1,7 @@
 {
   "date": "2026-08-31",
   "generatedAt": "2026-08-31T00:29:36.914+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 2건",
   "sections": [
     {
       "type": "community",
@@ -63,18 +63,6 @@
           "title": "4 Quests DONE in 1 Raid! - #26 - Punisher - Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=8lZ19Fm2OfM",
           "source": "YouTube Pestily",
-          "isNew": true
-        },
-        {
-          "title": "WARDOGS Gameplay and PVP with the AK74",
-          "url": "https://www.youtube.com/watch?v=Gl3IWa7NHC0",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "I Didn't expect the PVP to be like THIS in WARDOGS",
-          "url": "https://www.youtube.com/watch?v=CFa-WMZNc4I",
-          "source": "YouTube LVNDMARK",
           "isNew": true
         }
       ]

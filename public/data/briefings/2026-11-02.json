@@ -1,7 +1,7 @@
 {
   "date": "2026-11-02",
   "generatedAt": "2026-11-02T00:25:33.222+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 7건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -37,12 +37,6 @@
       "type": "warning",
       "title": "버그·이슈 제보 (Reddit)",
       "items": [
-        {
-          "title": "[Screenshot] Menu bugged out and I was able to snatch a screenshot for background usage",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xken0e/screenshot_menu_bugged_out_and_i_was_able_to/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
         {
           "title": "By far the weirdest bug I have ever faced on this game [Bug]",
           "summary": "it's not fully clipped but, there was another mag that was full (you'll see it at the end when I extracted) got empty after 1 bullet just before this happens when I tried to shoot a pmc, is it cheats? is it just a bug? and apparently I killed him with a grenade just before the clip.",
@@ -99,6 +93,12 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xkzg8q/discussion_glasses_or_not/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Screenshot] Menu bugged out and I was able to snatch a screenshot for background usage",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xken0e/screenshot_menu_bugged_out_and_i_was_able_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -106,12 +106,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "정찰로 스트리머 스크림 터트리기 | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=zQBsWxPErSM",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
         {
           "title": "Taking the G36 to Customs - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=bgwoRVDeSzI",

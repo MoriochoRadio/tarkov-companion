@@ -1,7 +1,7 @@
 {
   "date": "2026-10-01",
   "generatedAt": "2026-10-01T00:13:36.361+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 2건",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 1건",
   "sections": [
     {
       "type": "warning",
@@ -71,12 +71,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "Can Two Beginners Survive Project Zomboid? - The Cure #1 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=K6j1Vtbpz6w",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "This is what PERFECT team work looks like in Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=ODoQP2iXfK4",

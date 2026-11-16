@@ -1,7 +1,7 @@
 {
   "date": "2026-10-13",
   "generatedAt": "2026-10-13T03:09:54.544+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 7건 · 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -25,13 +25,6 @@
       "type": "warning",
       "title": "버그·이슈 제보 (Reddit)",
       "items": [
-        {
-          "title": "[Discussion] UPDATE: BSG fixed the PC crash issue caused by BattleEye.",
-          "summary": "https://preview.redd.it/02ju3ze3k1vh1.png?width=600&format=png&auto=webp&s=5bfc93c1bfff4bda09f756ae71b09ee838650850 Just tested it on a Lighthouse raid, and had no issues. I didn't have to delete the BattlEye folder or anything either. Should be fixed now.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x42fbk/discussion_update_bsg_fixed_the_pc_crash_issue/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
         {
           "title": "[Bug] Escaped and received no rewards",
           "summary": "I'm a completionist and did escape before but this time the only rewards I received were money and money case. There are technical issues around the game right now which I had to fix as well. PC crashed when loading Shoreline. Worst timing for an attempt... Fix that worked for me: 1) Reinstall Battleye through EFT installation folder (apparently this step alone works for many). 2) Some cmd command",
@@ -102,6 +95,13 @@
           "title": "[Video] Icebreaker clear after smokes nerf",
           "summary": "Might help some players who struggle,you need to use more smokes than before and they shoot through them if you dont kill them fast enough,but it is DOABLE. Also dont forget the gas mask,dont be like me.",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x41bs3/video_icebreaker_clear_after_smokes_nerf/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] UPDATE: BSG fixed the PC crash issue caused by BattleEye.",
+          "summary": "https://preview.redd.it/02ju3ze3k1vh1.png?width=600&format=png&auto=webp&s=5bfc93c1bfff4bda09f756ae71b09ee838650850 Just tested it on a Lighthouse raid, and had no issues. I didn't have to delete the BattlEye folder or anything either. Should be fixed now.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x42fbk/discussion_update_bsg_fixed_the_pc_crash_issue/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

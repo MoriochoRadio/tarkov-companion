@@ -1,7 +1,7 @@
 {
   "date": "2026-10-09",
   "generatedAt": "2026-10-09T00:49:39.681+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 7건 · 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -31,13 +31,6 @@
       "type": "warning",
       "title": "버그·이슈 제보 (Reddit)",
       "items": [
-        {
-          "title": "[Video] Ignoring the thorax, are smokes bugged against BD currently?",
-          "summary": "again ignoring the thorax, BD aren’t usually able to spot me that quick through smoke, did the recent update f*** up their targeting?",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x07df2/video_ignoring_the_thorax_are_smokes_bugged/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
         {
           "title": "[bug] with 1.2 the AI on knight on icebreaker is once again f*****",
           "summary": "Small rant, about how truly incompetent these devs are, Knight now has a very lovely chance of beaming you directly through the wall before you even unseal the first door to icebreaker, absolutely f****** amazing.",
@@ -90,6 +83,13 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x05q0x/how_do_they_manage_to_make_icebreaker_worse_with/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Video] Ignoring the thorax, are smokes bugged against BD currently?",
+          "summary": "again ignoring the thorax, BD aren’t usually able to spot me that quick through smoke, did the recent update f*** up their targeting?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x07df2/video_ignoring_the_thorax_are_smokes_bugged/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -101,12 +101,6 @@
           "title": "PVE 프레스티지, 비버집 철거 가능할까? | 게임 머니 루블 현질, PVE에 도입 논란 | 연막 또 너프? 열화상 낀 블랙디비전? | Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=6WEC5YFYbHU",
           "source": "YouTube 노잼망겜",
-          "isNew": true
-        },
-        {
-          "title": "A Dangerous Encounter - The Cure #5 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=jIn-jOqPic0",
-          "source": "YouTube Pestily",
           "isNew": true
         },
         {

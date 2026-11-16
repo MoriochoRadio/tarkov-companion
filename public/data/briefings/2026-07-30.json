@@ -35,17 +35,6 @@
           "isNew": true
         }
       ]
-    },
-    {
-      "type": "videos",
-      "title": "주목할 영상",
-      "items": [
-        {
-          "title": "오버워치 배치 브론즈 나옴",
-          "url": "https://www.youtube.com/watch?v=sa9nRozm9kM",
-          "source": "YouTube 유우양"
-        }
-      ]
     }
   ]
 }

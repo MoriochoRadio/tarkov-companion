@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "generatedAt": "2026-11-11T01:34:27.317+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 7건 · 신규 영상 2건",
   "sections": [
     {
       "type": "warning",
@@ -11,13 +11,6 @@
           "title": "[Bug] Exfil Brothers poster reward",
           "summary": "Wherever I hang this poster in my hideout, it always hangs crooked and goes inside the wall. Am I playing in liminal spaces? I already wrote to support about this and sent them screenshots, even an update ago, but apparently they don’t want to fix it =(",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xsegsq/bug_exfil_brothers_poster_reward/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[Video] The Absolute state of desync on these servers man :(",
-          "summary": "He was in Concordia, saw him for a split second while shoulder peeking and somehow still got Head, Top of Head. Has got to be at least 250ms of desync, if not more, right???",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs9ndi/video_the_absolute_state_of_desync_on_these/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         },
@@ -78,6 +71,13 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs3ya1/video_the_man_has_posted_a_video_explaining_whats/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Video] The Absolute state of desync on these servers man :(",
+          "summary": "He was in Concordia, saw him for a split second while shoulder peeking and somehow still got Head, Top of Head. Has got to be at least 250ms of desync, if not more, right???",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xs9ndi/video_the_absolute_state_of_desync_on_these/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -85,11 +85,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "First Vaccine - The Cure #22 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=xG6py_yF7D4",
-          "source": "YouTube Pestily"
-        },
         {
           "title": "Wiping LABS with the MCX (SOLO Raids) - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=tNrHiZO2qsY",

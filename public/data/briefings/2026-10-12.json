@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "generatedAt": "2026-10-12T00:02:47.106+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 6건 · 커뮤니티 7건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 8건 · 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -70,26 +70,6 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x3a6us/pc_crashes_bug/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
-        },
-        {
-          "title": "[Video] Is this just DESYNC?? - invisible players or flashlight floating?",
-          "summary": "Legitimately is this just a s***** server situation? Like wtf lol",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2ztrz/video_is_this_just_desync_invisible_players_or/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "[Video] Could you go away man I just found a GPSA and I don't know how to route on this map",
-          "summary": "Also managed to get out with it as well which is rare for me since i usually get scrapped within 5 minutes of dropping someone on labs. Now I just need an MCC to finish my hideout on seasonal :]",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x30kaj/video_could_you_go_away_man_i_just_found_a_gpsa/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
         }
       ]
     },
@@ -134,6 +114,20 @@
           "title": "[Video] A funny & juicy scav run",
           "summary": "https://imgur.com/a/cUECi8o A fun and profitable scav raid !",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2sr5e/video_a_funny_juicy_scav_run/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Is this just DESYNC?? - invisible players or flashlight floating?",
+          "summary": "Legitimately is this just a s***** server situation? Like wtf lol",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x2ztrz/video_is_this_just_desync_invisible_players_or/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Video] Could you go away man I just found a GPSA and I don't know how to route on this map",
+          "summary": "Also managed to get out with it as well which is rare for me since i usually get scrapped within 5 minutes of dropping someone on labs. Now I just need an MCC to finish my hideout on seasonal :]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x30kaj/video_could_you_go_away_man_i_just_found_a_gpsa/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

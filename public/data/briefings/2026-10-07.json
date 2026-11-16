@@ -40,13 +40,6 @@
           "isNew": true
         },
         {
-          "title": "Tarkov Gamebreaking Bugs [discussion]",
-          "summary": "Am me, log on, play shoreline with AA-12 w 20 and 8 rounder and plenty to repack... trying to multitask, fighting sani and his grenade boys at cottages, i cant repack either my 8 rd or 20. I run away, and exfil feeling unsatisfied, logoff. Is this not why you have 100,000 tests and run them before every code shipment, i understand you cant catch em all, but not being able to reload a mag is gamebr",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wyrjff/tarkov_gamebreaking_bugs_discussion/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
           "title": "Fuel is still bugged. [BUG]",
           "summary": "it's been years and the generator is still bugged. I lose almost 100 hours of fuel every 24h of real life time. Is this affecting anyone else?",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wyskv8/fuel_is_still_bugged_bug/",
@@ -57,12 +50,6 @@
           "title": "[Bug] My prestige was reset to 0 after the update",
           "summary": "I just opened the game after the update and finished New Beginning prestige 3 (the last funko arrived in the cultist circle). When I tried to prestige it showed the first prestige screen. I went to my profile and the prestige badges are gone (the achievements are still there). I wont prestige since i feel like it will be harder to fix this issue. Has this happened to anyone else? Edit. Just notice",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wz3vj8/bug_my_prestige_was_reset_to_0_after_the_update/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "Holy Desync Batman [video]",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wyguwe/holy_desync_batman_video/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         },
@@ -131,6 +118,19 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wywj7d/new_player_is_this_game_worth_it_if_i_just_want/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "Tarkov Gamebreaking Bugs [discussion]",
+          "summary": "Am me, log on, play shoreline with AA-12 w 20 and 8 rounder and plenty to repack... trying to multitask, fighting sani and his grenade boys at cottages, i cant repack either my 8 rd or 20. I run away, and exfil feeling unsatisfied, logoff. Is this not why you have 100,000 tests and run them before every code shipment, i understand you cant catch em all, but not being able to reload a mag is gamebr",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wyrjff/tarkov_gamebreaking_bugs_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Holy Desync Batman [video]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wyguwe/holy_desync_batman_video/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -138,11 +138,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "The Police Station Massacre - The Cure #4 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=P1xwC7jhLjM",
-          "source": "YouTube Pestily"
-        },
         {
           "title": "THIS is how you deal with CQB in Tarkov - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=i79p2mjSd7E",

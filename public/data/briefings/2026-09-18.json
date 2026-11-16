@@ -1,7 +1,7 @@
 {
   "date": "2026-09-18",
   "generatedAt": "2026-09-18T00:41:42.420+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 커뮤니티 6건",
   "sections": [
     {
       "type": "news",
@@ -69,30 +69,6 @@
           "title": "[Video] I didn't know BD were wizards",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wiubf7/video_i_didnt_know_bd_were_wizards/",
           "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "videos",
-      "title": "신규 영상",
-      "items": [
-        {
-          "title": "안녕하세요. 워독스 스트리머입니다. | 워독스, WarDogs",
-          "url": "https://www.youtube.com/watch?v=RoW11dUYXTI",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "The GALIL & Defib Combo PRINTS MONEY in WARDOGS",
-          "url": "https://www.youtube.com/watch?v=9MW1WaJ8uQA",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "ABI ZOMBIES W/ PEANUT AND GINGY",
-          "url": "https://www.youtube.com/watch?v=iT2wIJgPpjU",
-          "source": "YouTube LVNDMARK",
           "isNew": true
         }
       ]

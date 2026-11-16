@@ -1,7 +1,7 @@
 {
   "date": "2026-10-22",
   "generatedAt": "2026-10-22T01:07:50.875+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 6건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -83,12 +83,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "Clearing Out the Danger - The Cure #12 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=lknB1Hsg-RY",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "Causing CHAOS on Factory with the VECTOR - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=floqwsN8EpE",

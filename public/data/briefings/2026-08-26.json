@@ -1,7 +1,7 @@
 {
   "date": "2026-08-26",
   "generatedAt": "2026-08-26T10:57:38.311+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -78,12 +78,6 @@
         {
           "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
           "url": "https://www.youtube.com/watch?v=2wHP4tuc8-I",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "Unlocking & Trying the GALIL in Wardogs for the First Time!",
-          "url": "https://www.youtube.com/watch?v=nDjcbhct168",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }

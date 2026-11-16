@@ -1,7 +1,7 @@
 {
   "date": "2026-10-11",
   "generatedAt": "2026-10-11T01:23:30.418+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 8건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -41,20 +41,6 @@
           "title": "[Bug] When Is This Getting Fixed?",
           "summary": "Finally beat the BD in woods, then the notorious spawning/respawning instant-kill guy shows up. (There was one left, I don't know if that is important related to the bug, I was trying to get nades to make him move from a horrible angle)",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x242ce/bug_when_is_this_getting_fixed/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[Discussion] Anybody else been having this stuttering issue in 1.2.0.0?",
-          "summary": "This problem just started during the new update and it happens all raid every raid. I haven't changed my pc, monitor, or anything else. Even when I try and lower my settings to the absolute minimum it still happens. If anybody else has had this problem, or knows of a fix please let me know.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1z1hy/discussion_anybody_else_been_having_this/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[Discussion] Is anyone else having stability issues on PVE?",
-          "summary": "Ever since the last update I had, I have had several of my raids prematurely shut down (i.e., the timer goes from 30 to 10 minutes) and then crash around the 3-minute mark every time. This has been happening in almost all of my solo runs, and it has been making the game almost impossible to play solo.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1voym/discussion_is_anyone_else_having_stability_issues/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         },
@@ -117,6 +103,20 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x26baa/screenshot_changing_portrait_under_ground_zero/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Discussion] Anybody else been having this stuttering issue in 1.2.0.0?",
+          "summary": "This problem just started during the new update and it happens all raid every raid. I haven't changed my pc, monitor, or anything else. Even when I try and lower my settings to the absolute minimum it still happens. If anybody else has had this problem, or knows of a fix please let me know.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1z1hy/discussion_anybody_else_been_having_this/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Is anyone else having stability issues on PVE?",
+          "summary": "Ever since the last update I had, I have had several of my raids prematurely shut down (i.e., the timer goes from 30 to 10 minutes) and then crash around the 3-minute mark every time. This has been happening in almost all of my solo runs, and it has been making the game almost impossible to play solo.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x1voym/discussion_is_anyone_else_having_stability_issues/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -124,12 +124,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "Preparations Have Started - The Cure #6 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=BsgK2Aio0YI",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "Taking the NL545 to Interchange - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=58ptLw2P5wI",

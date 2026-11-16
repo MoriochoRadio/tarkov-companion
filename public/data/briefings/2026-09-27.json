@@ -1,7 +1,7 @@
 {
   "date": "2026-09-27",
   "generatedAt": "2026-09-27T00:08:15.676+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 10건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 커뮤니티 10건",
   "sections": [
     {
       "type": "community",
@@ -77,29 +77,6 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wqiewa/screenshot_the_poor_bot_scab_that_didnt_have_a/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "videos",
-      "title": "신규 영상",
-      "items": [
-        {
-          "title": "시참 끝.  | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=EbNKk0IbDTw",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "Dominating the whole map with the GALIL in Wardogs",
-          "url": "https://www.youtube.com/watch?v=5lMWFUsLb_o",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "ABI BINGO CHALLENGE",
-          "url": "https://www.youtube.com/watch?v=C79Dd_72_30",
-          "source": "YouTube LVNDMARK"
         }
       ]
     }

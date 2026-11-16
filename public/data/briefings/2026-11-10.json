@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "generatedAt": "2026-11-10T04:03:47.861+09:00",
-  "headline": "오늘의 소식 — 신규 영상 5건",
+  "headline": "오늘의 소식 — 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -23,18 +23,6 @@
           "title": "언리얼5.8로 만든 타르코프 카피 등장 | 환상적인 사운드, 탈붕이들의 염원 이뤄지나? | 코드 브리치 시즌 마감 1달, 챙겨야할 보상은? | Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=SyQk-pwa_Tc",
           "source": "YouTube 노잼망겜",
-          "isNew": true
-        },
-        {
-          "title": "탱크를 호구로 만드는 C4카 운영법 | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=OuVzAyXtgkc",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "First Vaccine - The Cure #22 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=xG6py_yF7D4",
-          "source": "YouTube Pestily",
           "isNew": true
         },
         {

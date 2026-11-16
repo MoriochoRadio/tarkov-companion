@@ -1,7 +1,7 @@
 {
   "date": "2026-09-05",
   "generatedAt": "2026-09-05T00:09:59.531+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 5건",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
   "sections": [
     {
       "type": "community",
@@ -59,12 +59,6 @@
           "isNew": true
         },
         {
-          "title": "신작 100명 대규모 전투. 돈벌어서 무장 사는 게임 (탈콥 + 델타포스 전면전 느낌)",
-          "url": "https://www.youtube.com/watch?v=JDgdS4ljOcY",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
           "title": "Today I Took a Beating - #31 - Punisher - Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=D5tsGxr0Fl0",
           "source": "YouTube Pestily",
@@ -73,12 +67,6 @@
         {
           "title": "Fighting Black Division & JUICERS on Streets with the SPEAR - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=6gvVDEiPzVw",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "WARDOGS PLAYTEST IS BACK",
-          "url": "https://www.youtube.com/watch?v=9yB1vUZNvO4",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
   "generatedAt": "2026-11-13T02:01:20.491+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 7건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -30,13 +30,6 @@
           "title": "why do people appear to go into a seated position after dying recently? [bug]",
           "summary": "has anybody else noticed the odd glitchy death physics? a couple weeks ago i noticed players appear to drop down in the same way after most deaths, almost like trying to take a seat, even a.i do it. its a good opportunity to take advantage of hitting prone the second you get fired at, because most players will think they've killed you with the way the physics are at the moment",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtrj4d/why_do_people_appear_to_go_into_a_seated_position/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[Discussion] Elite Level Hideout Management bugged?",
-          "summary": "I reached max hideout management skill in PvE but i cannot use the extra slots it promises. The skill advertises two extra water filter and two extra fuel slots but whenever I try to put something in these slots (water filters and fuel respectively), I just get a \"228 - Slot not exists\"[sic!] error that just throws me to the main menu again and when I check back, the filter or fuel container are n",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtnllf/discussion_elite_level_hideout_management_bugged/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         },
@@ -98,6 +91,13 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xu7ogl/irl_3d_printed_as_val/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Discussion] Elite Level Hideout Management bugged?",
+          "summary": "I reached max hideout management skill in PvE but i cannot use the extra slots it promises. The skill advertises two extra water filter and two extra fuel slots but whenever I try to put something in these slots (water filters and fuel respectively), I just get a \"228 - Slot not exists\"[sic!] error that just throws me to the main menu again and when I check back, the filter or fuel container are n",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtnllf/discussion_elite_level_hideout_management_bugged/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -105,12 +105,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "This Was a Mistake... - The Cure #23 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=AG7vglQL90M",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "Farming Players with the AS VAL MOD 4 on LABS - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=U1TCi7-Ya48",

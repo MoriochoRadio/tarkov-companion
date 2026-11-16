@@ -28,28 +28,8 @@
           "isNew": true
         },
         {
-          "title": "[Discussion] Anybody else having issues finding Scavs to kill on Lighthouse?",
-          "summary": "I don’t play often and am trying to work through some old tasks but I cant for the life of me find any scavs. I have circled the map over and over again killing 10-15 pmc’s every raid down the main road in village and water treatment but no scavs.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtbkyg/discussion_anybody_else_having_issues_finding/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
           "title": "wtf is this tarkov [Bug]",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xt7gbq/wtf_is_this_tarkov_bug/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "Tarkov actually uselful tips and loot locations for new player [New Player]",
-          "summary": "I find it hard to win fights and other thing i struggle is to find loot that sells for good money so i can buy better kits. All other useful tips is welcome too.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xsxm2v/tarkov_actually_uselful_tips_and_loot_locations/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }
@@ -98,6 +78,20 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtk3en/why_are_peoples_egos_so_fragile_about_pve/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Discussion] Anybody else having issues finding Scavs to kill on Lighthouse?",
+          "summary": "I don’t play often and am trying to work through some old tasks but I cant for the life of me find any scavs. I have circled the map over and over again killing 10-15 pmc’s every raid down the main road in village and water treatment but no scavs.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xtbkyg/discussion_anybody_else_having_issues_finding/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Tarkov actually uselful tips and loot locations for new player [New Player]",
+          "summary": "I find it hard to win fights and other thing i struggle is to find loot that sells for good money so i can buy better kits. All other useful tips is welcome too.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xsxm2v/tarkov_actually_uselful_tips_and_loot_locations/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -105,12 +99,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "정찰병 혼자. 한 팀을 파괴했습니다. | 워독스 WARDOGS",
-          "url": "https://www.youtube.com/watch?v=lWnL0gg3SuY",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
         {
           "title": "This is why EVERYONE is using the VAL MOD 4 now - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=3PiX0qA9WZM",

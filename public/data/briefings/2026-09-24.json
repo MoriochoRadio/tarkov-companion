@@ -1,7 +1,7 @@
 {
   "date": "2026-09-24",
   "generatedAt": "2026-09-24T00:35:45.643+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 커뮤니티 6건",
   "sections": [
     {
       "type": "news",
@@ -62,29 +62,6 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1wo38mc/screenshot_ian_mccollum_wants_to_know_your/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "videos",
-      "title": "신규 영상",
-      "items": [
-        {
-          "title": "볼액 맛집. 스나이퍼는 이런겁니다.. | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=vVd81Gezbk0",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "This Suppressed M4 Build has ZERO Recoil - Wardogs",
-          "url": "https://www.youtube.com/watch?v=95b0Qxm9G3s",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "ARENA BREAKOUT INFINITE - CHECKING OUT SEASON 7",
-          "url": "https://www.youtube.com/watch?v=gl5WSdmxX6w",
-          "source": "YouTube LVNDMARK"
         }
       ]
     }

@@ -46,13 +46,6 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6vy69/bug_got_panacea_crate_on_normal_tarkov_lol/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
-        },
-        {
-          "title": "[Discussion] BSG fixed a bug I had within a few days",
-          "summary": "I made a post here 5 days ago about a bug and being locked out from getting the final quest in seasonal quest line and the devs opened my ticket 2 days later and fixed the bug 3 days after that and released a small patch. I can't believe it!",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x7bsan/discussion_bsg_fixed_a_bug_i_had_within_a_few_days/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
         }
       ]
     },
@@ -110,6 +103,13 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x7bqdr/new_event_ai_aimbot_video/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Discussion] BSG fixed a bug I had within a few days",
+          "summary": "I made a post here 5 days ago about a bug and being locked out from getting the final quest in seasonal quest line and the devs opened my ticket 2 days later and fixed the bug 3 days after that and released a small patch. I can't believe it!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x7bsan/discussion_bsg_fixed_a_bug_i_had_within_a_few_days/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -117,12 +117,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "Getting Loaded - The Cure #9 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=mDc7CYc7ZjI",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "This is why the Suppressed NL545 is the BEST gun in Tarkov..",
           "url": "https://www.youtube.com/watch?v=2mAdhn276uw",

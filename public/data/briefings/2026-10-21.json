@@ -23,19 +23,6 @@
       ]
     },
     {
-      "type": "warning",
-      "title": "버그·이슈 제보 (Reddit)",
-      "items": [
-        {
-          "title": "[Discussion] Anyone else having lag and connection issues?",
-          "summary": "Hey, Started playing after a long break and got a newbie friend to join me, but we are both having heavy connection issues, disconnects and lag. We arent located in the same city. Is it just us or? Edit: region EU",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xa3t0s/discussion_anyone_else_having_lag_and_connection/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "오늘의 인기 글 (Reddit)",
       "items": [
@@ -79,6 +66,13 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xa22b0/video_the_new_wedge_meta_from_a_korean_streamer/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Discussion] Anyone else having lag and connection issues?",
+          "summary": "Hey, Started playing after a long break and got a newbie friend to join me, but we are both having heavy connection issues, disconnects and lag. We arent located in the same city. Is it just us or? Edit: region EU",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xa3t0s/discussion_anyone_else_having_lag_and_connection/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -86,12 +80,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "The Hunt For Knowledge - The Cure #11 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=PPaVL8gJyew",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "The PERFECT Gun for Clearing out Labs - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=9MqMxOe_Gkg",

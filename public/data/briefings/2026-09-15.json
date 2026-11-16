@@ -1,7 +1,7 @@
 {
   "date": "2026-09-15",
   "generatedAt": "2026-09-15T00:13:07.999+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 7건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 커뮤니티 7건 · 신규 영상 1건",
   "sections": [
     {
       "type": "news",
@@ -79,26 +79,8 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "슈본헤로 갈고 닦은 똥쟁이 실력 | 워독스, WarDogs",
-          "url": "https://www.youtube.com/watch?v=v2HqOTUEIMo",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "타르코프 때문에 싫어하는 볼트액션을 너무 잘 쏩니다 | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=nxi09y400Ek",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
           "title": "Fighting BLACK DIVISION on Streets and getting JUICED LOOT - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=Atf-_6nQXUU",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "WARDOGS LAUNCH",
-          "url": "https://www.youtube.com/watch?v=BdN10MAuBkA",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }

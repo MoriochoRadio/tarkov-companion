@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "generatedAt": "2026-10-15T00:58:52.211+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건 · 신규 영상 1건",
   "sections": [
     {
       "type": "news",
@@ -87,27 +87,10 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "워독스 시즌2, 무엇이 달라질까? 핵심 패치노트 총정리 | Wardogs",
-          "url": "https://www.youtube.com/watch?v=7yceGHqigUI",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "Big Loot Runs - The Cure #8 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=Xt2snAoJ-lM",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
-        {
           "title": "Trying the New P90 'Scourge' for the first time - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=uUSNUOvKiYM",
           "source": "YouTube LVNDMARK",
           "isNew": true
-        },
-        {
-          "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
-          "url": "https://www.youtube.com/watch?v=2RLRwGttH1c",
-          "source": "YouTube LVNDMARK"
         }
       ]
     }

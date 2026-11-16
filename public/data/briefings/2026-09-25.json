@@ -1,7 +1,7 @@
 {
   "date": "2026-09-25",
   "generatedAt": "2026-09-25T00:57:04.859+09:00",
-  "headline": "오늘의 소식 — 신규 영상 3건",
+  "headline": "오늘의 소식 — 신규 영상 1건",
   "sections": [
     {
       "type": "news",
@@ -25,18 +25,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "볼액 맛집. 스나이퍼는 이런겁니다.. | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=B8P6MaQwjXE",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "Checking out Season 7 of Arena Breakout: Infinite!",
-          "url": "https://www.youtube.com/watch?v=cTT0oBPPscU",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
         {
           "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
           "url": "https://www.youtube.com/watch?v=SVV_DAuJ4f4",

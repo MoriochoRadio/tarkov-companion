@@ -1,7 +1,7 @@
 {
   "date": "2026-09-14",
   "generatedAt": "2026-09-14T00:06:26.326+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 5건 · 커뮤니티 6건 · 신규 영상 1건",
   "sections": [
     {
       "type": "news",
@@ -117,20 +117,8 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "이건 첫번째 레슨. 파산하지 않기 | 워독스, WarDogs",
-          "url": "https://www.youtube.com/watch?v=r5g0MK9sAYM",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
           "title": "Dominating STREETS with the M4A1 - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=Ujt7eOi4L4A",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "WARDOGS LAUNCH",
-          "url": "https://www.youtube.com/watch?v=_I6bsnucJXE",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }

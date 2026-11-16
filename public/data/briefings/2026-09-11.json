@@ -1,7 +1,7 @@
 {
   "date": "2026-09-11",
   "generatedAt": "2026-09-11T00:13:46.227+09:00",
-  "headline": "오늘의 소식 — 신규 영상 4건",
+  "headline": "오늘의 소식 — 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -41,12 +41,6 @@
           "title": "On a Mission on Factory - #37 - Punisher - Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=VspNIxh0b1A",
           "source": "YouTube Pestily",
-          "isNew": true
-        },
-        {
-          "title": "Joining Peanut's squad in WARDOGS was a MISTAKE",
-          "url": "https://www.youtube.com/watch?v=XIO_NfI4-8c",
-          "source": "YouTube LVNDMARK",
           "isNew": true
         },
         {

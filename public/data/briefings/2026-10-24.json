@@ -1,7 +1,7 @@
 {
   "date": "2026-10-24",
   "generatedAt": "2026-10-24T00:56:18.272+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 6건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -79,12 +79,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "Crazy Loot - The Cure #13 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=Q5msKadWQUM",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "AK-308 vs RATS on Customs - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=u8bNgih6qYI",

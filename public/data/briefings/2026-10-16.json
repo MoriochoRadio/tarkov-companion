@@ -36,33 +36,6 @@
       ]
     },
     {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "How to level up armor and weapon maintenance? [Discussion]",
-          "summary": "I know this is probably a dumb question but I figured id ask anyway. Do you just keep using repair kits on armor and weapons? Any suggestions to speed it up or does it just take a long time? Thanks!",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5xoap/how_to_level_up_armor_and_weapon_maintenance/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[discussion] how to get better at solo pve?",
-          "summary": "hai! im pretty new to tarkov PvE me and some friends have started play recently 2 of which are longer term players. my general question is how can i catch up/make significant progress on my own since their times for playing are pretty inconsistent and i found myself enjoying it quite a lot",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x62mlm/discussion_how_to_get_better_at_solo_pve/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[Discussion] Tips for progressing wedge on Icebreaker?",
-          "summary": "Hello! Me and my friend has reached icebreaker for the first time during this season. We've been progressing and learning the map, right now it's pretty good! We've burned around 15 attempts so far, we can now clear the bottom of the helipad with around 20-25minutes left, great! We've had 3 attempts on wedge, one through the chained door and two from using the skips and fighting from above. We try",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5v2u3/discussion_tips_for_progressing_wedge_on/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "치터 동향 (Reddit)",
       "items": [
@@ -114,6 +87,27 @@
           "title": "[Screenshot] Finally unlocked it! Just in time for Halloween CBRN zombie hunting drip",
           "summary": "Not the M40 or S10, but it'll get the job done for now... Do wish there was a non-tinted version as well, maybe as a version obtainable for everyone in normal base game progression?",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x6f0a2/screenshot_finally_unlocked_it_just_in_time_for/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "How to level up armor and weapon maintenance? [Discussion]",
+          "summary": "I know this is probably a dumb question but I figured id ask anyway. Do you just keep using repair kits on armor and weapons? Any suggestions to speed it up or does it just take a long time? Thanks!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5xoap/how_to_level_up_armor_and_weapon_maintenance/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[discussion] how to get better at solo pve?",
+          "summary": "hai! im pretty new to tarkov PvE me and some friends have started play recently 2 of which are longer term players. my general question is how can i catch up/make significant progress on my own since their times for playing are pretty inconsistent and i found myself enjoying it quite a lot",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x62mlm/discussion_how_to_get_better_at_solo_pve/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tips for progressing wedge on Icebreaker?",
+          "summary": "Hello! Me and my friend has reached icebreaker for the first time during this season. We've been progressing and learning the map, right now it's pretty good! We've burned around 15 attempts so far, we can now clear the bottom of the helipad with around 20-25minutes left, great! We've had 3 attempts on wedge, one through the chained door and two from using the skips and fighting from above. We try",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x5v2u3/discussion_tips_for_progressing_wedge_on/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

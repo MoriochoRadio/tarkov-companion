@@ -35,26 +35,6 @@
       ]
     },
     {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "[Video] How to kill zombies in the gas, easy way",
-          "summary": "first sorry i wasn't capturing sound but i guess you'll get the idea. The first spot imo is the most safe one because you have walls and doors to avoid the zombies with pistol until the rest opens the door. You can also try the second spot but it's super open and sometimes tagilla, players and zombies with pistol may kill u. Also in the first spot tagilla won't push you there, he will wait outside",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjrwz0/video_how_to_kill_zombies_in_the_gas_easy_way/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "Halloween: The final push guide for anyone having trouble with the zombie event [Discussion]",
-          "summary": "If you run out of glass hallway just outside of gate 3 you can stand on the barrels. I never got hit by any the regular zombies so you should be good. Do be aware that if you are on PVE the pmcs sometime will rush you and kill you in this spot. Also be very careful of zombie Tagilla and any of the zombies with guns. Progress for the quest DID NOT count if the zombies died to the vaccine gas grenad",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xk7prs/halloween_the_final_push_guide_for_anyone_having/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "오늘의 인기 글 (Reddit)",
       "items": [
@@ -96,6 +76,20 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xk7dak/gigabeef_i_need_your_meat_discussion/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Video] How to kill zombies in the gas, easy way",
+          "summary": "first sorry i wasn't capturing sound but i guess you'll get the idea. The first spot imo is the most safe one because you have walls and doors to avoid the zombies with pistol until the rest opens the door. You can also try the second spot but it's super open and sometimes tagilla, players and zombies with pistol may kill u. Also in the first spot tagilla won't push you there, he will wait outside",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xjrwz0/video_how_to_kill_zombies_in_the_gas_easy_way/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Halloween: The final push guide for anyone having trouble with the zombie event [Discussion]",
+          "summary": "If you run out of glass hallway just outside of gate 3 you can stand on the barrels. I never got hit by any the regular zombies so you should be good. Do be aware that if you are on PVE the pmcs sometime will rush you and kill you in this spot. Also be very careful of zombie Tagilla and any of the zombies with guns. Progress for the quest DID NOT count if the zombies died to the vaccine gas grenad",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xk7prs/halloween_the_final_push_guide_for_anyone_having/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -107,12 +101,6 @@
           "title": "2년 만에 돌아온 좀비 이벤트 | 맛있게 맵다. 상식적(?)인 게임이된 타르코프 | 치솟는 마켓 물가, 연어하는 탈붕이들 | Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=LA5i6IybL88",
           "source": "YouTube 노잼망겜",
-          "isNew": true
-        },
-        {
-          "title": "Well Well Well - The Cure #17 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=d0CT3xuBNIA",
-          "source": "YouTube Pestily",
           "isNew": true
         },
         {

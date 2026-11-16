@@ -1,7 +1,7 @@
 {
   "date": "2026-09-06",
   "generatedAt": "2026-09-06T13:37:06.408+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 5건",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 2건",
   "sections": [
     {
       "type": "community",
@@ -52,27 +52,9 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "100명이 돈벌어서 무장 사서 전쟁하는 게임 ㅋㅋ 개꿀잼 | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=U2RPl4Pof30",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "돈벌어서 무장 사는 게임 ㅋㅋ 개꿀잼 | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=IJmHe_Z4JuY",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
           "title": "Heading to The Smuggler's Camp - #33 - Punisher - Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=j62QTTs1HfQ",
           "source": "YouTube Pestily",
-          "isNew": true
-        },
-        {
-          "title": "WARDOGS PLAYTEST IS BACK",
-          "url": "https://www.youtube.com/watch?v=_052TOUcEWc",
-          "source": "YouTube LVNDMARK",
           "isNew": true
         },
         {

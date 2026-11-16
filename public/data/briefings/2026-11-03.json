@@ -42,19 +42,6 @@
       ]
     },
     {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "[Suggestion] tip for the ones who need to complete boreas task line.",
-          "summary": "If you die with a BBQ Torch in your special slot you do in fact get to keep it. So you can skip wedge and go fight those last 5 BD on the upper decks right before the bridge where you find the captain. Reccomend labryinth, grab the BBQ torch and die with it. If you extract with the torch it will dissapear from your special slot. Hope this helps!",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xln33h/suggestion_tip_for_the_ones_who_need_to_complete/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "오늘의 인기 글 (Reddit)",
       "items": [
@@ -96,6 +83,13 @@
           "title": "Finally Escaped!! [Discussion]",
           "summary": "Hi all. Finally escaped! Really excited to achieve this. Just wanted to feed back a few points about terminal that I didn’t see covered on any of the guides. I was mostly just running terminal solo, so this just applies to solo. Occasionally had a random spawn with me but I’d usually die to some random bullet lol. There’s a bug after you clear armory and need to get the swipe card from the case wi",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xluivn/finally_escaped_discussion/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Suggestion] tip for the ones who need to complete boreas task line.",
+          "summary": "If you die with a BBQ Torch in your special slot you do in fact get to keep it. So you can skip wedge and go fight those last 5 BD on the upper decks right before the bridge where you find the captain. Reccomend labryinth, grab the BBQ torch and die with it. If you extract with the torch it will dissapear from your special slot. Hope this helps!",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xln33h/suggestion_tip_for_the_ones_who_need_to_complete/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

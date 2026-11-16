@@ -1,7 +1,7 @@
 {
   "date": "2026-09-08",
   "generatedAt": "2026-09-08T01:40:52.931+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 2건",
   "sections": [
     {
       "type": "community",
@@ -50,11 +50,6 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "어제 장시간 방송해서 짧방 | 델타포스 DeltaForce 三角洲行动",
-          "url": "https://www.youtube.com/watch?v=Gb65AzVeXHg",
-          "source": "YouTube 유우양"
-        },
-        {
           "title": "Encounters of The Killa Kind - #35 - Punisher - Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=WQ1g3Yd4x6w",
           "source": "YouTube Pestily",
@@ -65,11 +60,6 @@
           "url": "https://www.youtube.com/watch?v=UN53T9SobRQ",
           "source": "YouTube LVNDMARK",
           "isNew": true
-        },
-        {
-          "title": "ESCAPE FROM TARKOV SEASONAL PVP",
-          "url": "https://www.youtube.com/watch?v=yNBQhKCHDxo",
-          "source": "YouTube LVNDMARK"
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "generatedAt": "2026-11-07T01:11:55.341+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 6건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 6건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -91,12 +91,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "Revisiting the Lab - The Cure #20 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=auTj7zKkUhI",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "I didn't expect this Long Barrel RPK-16 Build to Work... - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=UXFh7zDmX70",

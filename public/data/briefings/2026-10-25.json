@@ -55,19 +55,6 @@
       ]
     },
     {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "How to learn the maps? Noob here [New Player]",
-          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "치터 동향 (Reddit)",
       "items": [
@@ -129,6 +116,13 @@
           "title": "Can't have s***... [Screenshot]",
           "summary": "The shrug I did instinctivelly after saying that phrase made me genuenly laugh, so I wanted to share :D",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xegdyh/cant_have_shit_screenshot/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "How to learn the maps? Noob here [New Player]",
+          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

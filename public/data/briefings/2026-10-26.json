@@ -1,7 +1,7 @@
 {
   "date": "2026-10-26",
   "generatedAt": "2026-10-26T00:03:35.739+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 6건 · 커뮤니티 8건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 6건 · 커뮤니티 8건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -59,18 +59,6 @@
       ]
     },
     {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "How to learn the maps? Noob here [New Player]",
-          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
-          "source": "Reddit r/EscapefromTarkov"
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "치터 동향 (Reddit)",
       "items": [
@@ -121,6 +109,12 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xekpsc/discussion_you_can_really_tell_the_ai_just_track/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "How to learn the maps? Noob here [New Player]",
+          "summary": "Hey ya'll! I play only PVE. I need to go on customs to do a quest for someone and I've been going and using the map from a website on my second monitor. Only problem is I'm not sure how to read the map that well cause there's walls everywhere and I have no idea where I am xD. Any tips on how to learn the maps? Just do practice raids I guess?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xes4bk/how_to_learn_the_maps_noob_here_new_player/",
+          "source": "Reddit r/EscapefromTarkov"
         }
       ]
     },
@@ -128,12 +122,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "The Military Research Facility - The Cure #14 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=NblsmI-1loY",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "Taking the TRG M10 to Customs - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=WybMmvTN0uc",

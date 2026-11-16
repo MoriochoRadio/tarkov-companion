@@ -81,19 +81,6 @@
       ]
     },
     {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "[Discussion] Tip for next season, save your PvE account prestige. After new season drops from twitch, if you prestige on PvE it resends all the drops to your Main and Seasonal.",
-          "summary": "You can then repeat the process if you main account isnt prestige aswell, and it will resend the drops a third time, giving you triple drops on PvP Seasonal.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvplrx/discussion_tip_for_next_season_save_your_pve/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
       "type": "community",
       "title": "오늘의 인기 글 (Reddit)",
       "items": [
@@ -134,6 +121,13 @@
           "title": "[Screenshot] G3 customisation",
           "summary": "They actually included the bipod to go with the tropical handguard, YIPPEEEEE Also really happy we're getting several eras of pre-modern production parts included. Always bothered me how stuff like the FAL and M1A just had stock black polymer furniture and then railed parts when there was a great deal of variety of very unique looking configurations for those rifles pre-2000",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvgz1b/screenshot_g3_customisation/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Tip for next season, save your PvE account prestige. After new season drops from twitch, if you prestige on PvE it resends all the drops to your Main and Seasonal.",
+          "summary": "You can then repeat the process if you main account isnt prestige aswell, and it will resend the drops a third time, giving you triple drops on PvP Seasonal.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvplrx/discussion_tip_for_next_season_save_your_pve/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

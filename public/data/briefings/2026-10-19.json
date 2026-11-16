@@ -1,7 +1,7 @@
 {
   "date": "2026-10-19",
   "generatedAt": "2026-10-19T13:38:19.020+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 2건 · 커뮤니티 6건",
+  "headline": "오늘의 소식 — 버그·이슈 1건 · 커뮤니티 7건",
   "sections": [
     {
       "type": "news",
@@ -35,13 +35,6 @@
           "title": "The new labs boss is kinda interesting... [BUG]",
           "summary": "Dear developers, can we not have people teleport to your back as challenge to fight a boss, thank you!",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x94ztt/the_new_labs_boss_is_kinda_interesting_bug/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "If you are having issues fighting Scourge and his guards [Discussion]",
-          "summary": "https://preview.redd.it/v9mmfeeyu7wh1.png?width=1547&format=png&auto=webp&s=220f0b9386dc27e7d168a78f30cf314dc3c15b7f https://preview.redd.it/iswysghzu7wh1.png?width=1613&format=png&auto=webp&s=694251bb35cd4c26f265f4eb19823a58f8837c02 https://preview.redd.it/rnpoasf0v7wh1.png?width=1328&format=png&auto=webp&s=04e2539327a2be00c3c0f812a84bc8257f225ab7 If Scourge and his boys spawn at the dome, you ca",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x91n34/if_you_are_having_issues_fighting_scourge_and_his/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }
@@ -88,6 +81,13 @@
           "title": "[Discussion] Scourge P90 is slightly worse stat wise than the stock P90",
           "summary": "Scourge P90 has 910 RPM for less ergo and higher recoil, whereas the Stock P90 has 900 RPM. Such a strange tiny change between the two. Like in the Scourge variants description it says its been 'customized and tuned' for Scourge, which would make me expect better recoil and ergo over stock.",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x8wvxa/discussion_scourge_p90_is_slightly_worse_stat/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "If you are having issues fighting Scourge and his guards [Discussion]",
+          "summary": "https://preview.redd.it/v9mmfeeyu7wh1.png?width=1547&format=png&auto=webp&s=220f0b9386dc27e7d168a78f30cf314dc3c15b7f https://preview.redd.it/iswysghzu7wh1.png?width=1613&format=png&auto=webp&s=694251bb35cd4c26f265f4eb19823a58f8837c02 https://preview.redd.it/rnpoasf0v7wh1.png?width=1328&format=png&auto=webp&s=04e2539327a2be00c3c0f812a84bc8257f225ab7 If Scourge and his boys spawn at the dome, you ca",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1x91n34/if_you_are_having_issues_fighting_scourge_and_his/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

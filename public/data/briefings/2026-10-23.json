@@ -1,7 +1,7 @@
 {
   "date": "2026-10-23",
   "generatedAt": "2026-10-23T01:05:18.334+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 4건 · 커뮤니티 7건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 8건 · 신규 영상 4건",
   "sections": [
     {
       "type": "news",
@@ -26,13 +26,6 @@
       "title": "버그·이슈 제보 (Reddit)",
       "items": [
         {
-          "title": "Support is likey closed becuase the entire web is patching out php security issues. [Discussion]",
-          "summary": "Do not reedems vibe coded php and every site basically has to patch the issue out, expect to see most sites ha e something go down for fixes over the coming weeks. You dont need to do anything on your end other then keep web browser and os up-to-date.",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xc3nmp/support_is_likey_closed_becuase_the_entire_web_is/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
           "title": "In case anyone is running into Error in Post (Error 0) This fixed it [bug]",
           "summary": "This was a fix that was in the Steam Discussions. I copy and pasted it below. Fix was posted by \"Wolverine\" The BSG Launcher worked normally when I opened it directly, but launching through Steam kept giving me the error. I finally found a fix that worked for me! Here's what I did: Completely close Steam and the BSG Launcher. Press Win + R on your keyboard. Copy and paste this path: %appdata%\\Batt",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbvois/in_case_anyone_is_running_into_error_in_post/",
@@ -50,19 +43,6 @@
           "title": "[BUG] anybody having the same issue?",
           "summary": "just got off my 10pm-7am shift hoping to play some arena just to log on and see this... anybody else having this problem? also trying to make a support ticket just gave me a 403 error, apparently the submission is temporarily disabled",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xchexc/bug_anybody_having_the_same_issue/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "[Discussion] Finally escaped. Route and tips for 1.2",
-          "summary": "With the addition of PVE prestige I decided to finally escape. I was trying to finish every quest but got tired of grinding labyrinth but finding no labrys research notes, and the wedge buff made it impossible to clear IB for finishing Boreas. Took about 17 attempts, with a lot of b******* along the way but I finally got it done. Watched 2Lew's video and scrubbed Sheef's and noticed a few things t",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbz728/discussion_finally_escaped_route_and_tips_for_12/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }
@@ -109,6 +89,20 @@
         {
           "title": "[Screenshot] It seems Dr Disrespect has fled to Tarkov.",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xchaz8/screenshot_it_seems_dr_disrespect_has_fled_to/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "Support is likey closed becuase the entire web is patching out php security issues. [Discussion]",
+          "summary": "Do not reedems vibe coded php and every site basically has to patch the issue out, expect to see most sites ha e something go down for fixes over the coming weeks. You dont need to do anything on your end other then keep web browser and os up-to-date.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xc3nmp/support_is_likey_closed_becuase_the_entire_web_is/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Finally escaped. Route and tips for 1.2",
+          "summary": "With the addition of PVE prestige I decided to finally escape. I was trying to finish every quest but got tired of grinding labyrinth but finding no labrys research notes, and the wedge buff made it impossible to clear IB for finishing Boreas. Took about 17 attempts, with a lot of b******* along the way but I finally got it done. Watched 2Lew's video and scrubbed Sheef's and noticed a few things t",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xbz728/discussion_finally_escaped_route_and_tips_for_12/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }

@@ -33,12 +33,6 @@
       "title": "버그·이슈 제보 (Reddit)",
       "items": [
         {
-          "title": "[discussion] [feedback] The most bugged game i've ever had #bsg",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuoddm/discussion_feedback_the_most_bugged_game_ive_ever/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
           "title": "I died on Terminal and still have the note from Prapor - [Bug]?",
           "summary": "As the title says, I died on Terminal about 10 minutes into the raid and I still have the note from Prapor. Is this a bug that anyone else has experienced? I'm not very well versed in all the story endings, this is my 3rd attempt on Terminal and my previous 2 consumed the letter.",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xvah18/i_died_on_terminal_and_still_have_the_note_from/",
@@ -105,6 +99,12 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuo7lq/discussion_anyone_else_get_attached_to_gear/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[discussion] [feedback] The most bugged game i've ever had #bsg",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xuoddm/discussion_feedback_the_most_bugged_game_ive_ever/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -112,12 +112,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "아시아 차별 논란에 도게자 박은 게임사 | 워독스 치터 비율이 제일 높았던 지역 공개 | 시즌3 개막, 신규 시가전맵 추가 | Wardogs",
-          "url": "https://www.youtube.com/watch?v=UHdxSF7E008",
-          "source": "YouTube 노잼망겜",
-          "isNew": true
-        },
         {
           "title": "ESCAPE FROM TARKOV - PVP RAIDS",
           "url": "https://www.youtube.com/watch?v=A6mtCxumcq0",

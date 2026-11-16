@@ -1,7 +1,7 @@
 {
   "date": "2026-08-24",
   "generatedAt": "2026-08-24T10:56:50.392+09:00",
-  "headline": "오늘의 소식 — 신규 영상 4건",
+  "headline": "오늘의 소식 — 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -20,21 +20,9 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "전쟁터에서 돈 버는 신작 FPS 게임 | 워독스",
-          "url": "https://www.youtube.com/watch?v=uAHvI3eP3y8",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
           "title": "I Paid The Tax, it's Time For Lighthouse - #20 - Punisher - Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=dTN5zVwFuL0",
           "source": "YouTube Pestily",
-          "isNew": true
-        },
-        {
-          "title": "WARDOGS PLAY TEST IS HERE",
-          "url": "https://www.youtube.com/watch?v=hS5HkuciBSA",
-          "source": "YouTube LVNDMARK",
           "isNew": true
         },
         {

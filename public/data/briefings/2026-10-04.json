@@ -1,7 +1,7 @@
 {
   "date": "2026-10-04",
   "generatedAt": "2026-10-04T00:15:02.585+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 6건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 6건 · 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -95,11 +95,6 @@
           "url": "https://www.youtube.com/watch?v=IIjnvOV6Kos",
           "source": "YouTube 노잼망겜",
           "isNew": true
-        },
-        {
-          "title": "Baddie is Carrying - The Sherpa #3 feat. Baddie - Escape from Tarkov",
-          "url": "https://www.youtube.com/watch?v=4lx5rBu6-ow",
-          "source": "YouTube Pestily"
         },
         {
           "title": "Taking the most DIABOLICAL M4 Build to Labs - Escape From Tarkov",

@@ -1,7 +1,7 @@
 {
   "date": "2026-09-29",
   "generatedAt": "2026-09-29T01:58:47.985+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 5건",
+  "headline": "오늘의 소식 — 커뮤니티 6건 · 신규 영상 2건",
   "sections": [
     {
       "type": "community",
@@ -58,24 +58,6 @@
           "title": "PVE 프레스티지 보상 공개 | (탈뽕 주의) 역대급 스태시 정리 편의성 기능 공개 | 총기 추가 로드맵, AN-94와 AEK 출시? | Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=5eKzi8o0fVs",
           "source": "YouTube 노잼망겜",
-          "isNew": true
-        },
-        {
-          "title": "쌍안경 하나면 됩니다｜워독스 정찰병 돈 버는 법",
-          "url": "https://www.youtube.com/watch?v=TlMXxWS3Zlw",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "1부 델타포스 #AD / 2부 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=TQZ1n9D6Trs",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "Fighting T-7 THERMAL PLAYERS on Armory (10,000,000 Koen Raid) - Arena Breakout Infinite",
-          "url": "https://www.youtube.com/watch?v=HpGvDMkORFg",
-          "source": "YouTube LVNDMARK",
           "isNew": true
         },
         {

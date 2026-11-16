@@ -1,7 +1,7 @@
 {
   "date": "2026-09-26",
   "generatedAt": "2026-09-26T00:57:20.087+09:00",
-  "headline": "오늘의 소식 — 커뮤니티 8건 · 신규 영상 4건",
+  "headline": "오늘의 소식 — 커뮤니티 8건 · 신규 영상 1건",
   "sections": [
     {
       "type": "community",
@@ -73,25 +73,8 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "즐추 되세요. 오늘 열화상 해금! | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=un3r-2UEUiM",
-          "source": "YouTube 유우양",
-          "isNew": true
-        },
-        {
-          "title": "볼액 맛집. 스나이퍼는 이런겁니다.. | 워독스 Wardogs",
-          "url": "https://www.youtube.com/watch?v=B8P6MaQwjXE",
-          "source": "YouTube 유우양"
-        },
-        {
           "title": "ESCAPE FROM TARKOV - SEASONAL PVP",
           "url": "https://www.youtube.com/watch?v=C79Dd_72_30",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "I tried to Carry BLUE TEAM in Wardogs (it was a mistake)",
-          "url": "https://www.youtube.com/watch?v=qpfO8TUdvWA",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }

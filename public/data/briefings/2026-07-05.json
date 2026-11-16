@@ -87,32 +87,6 @@
           "isNew": true
         }
       ]
-    },
-    {
-      "type": "videos",
-      "title": "주요 영상 모음",
-      "items": [
-        {
-          "title": "델타포스",
-          "url": "https://www.youtube.com/watch?v=Dpl4OikX7UA",
-          "source": "YouTube 유우양"
-        },
-        {
-          "title": "패치버전 쇄빙선 변한게 있으려나?",
-          "url": "https://www.youtube.com/watch?v=UtyGGdQp278",
-          "source": "YouTube 유우양"
-        },
-        {
-          "title": "Is the HK-416 BACK ON TOP again in the new AB:I season?",
-          "url": "https://www.youtube.com/watch?v=Euxtjpfk1as",
-          "source": "YouTube LVNDMARK"
-        },
-        {
-          "title": "Checking out the NEW Season (Perks Added) - Arena Breakout Infinite",
-          "url": "https://www.youtube.com/watch?v=BkcwOkYaouM",
-          "source": "YouTube LVNDMARK"
-        }
-      ]
     }
   ]
 }

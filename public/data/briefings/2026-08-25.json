@@ -1,7 +1,7 @@
 {
   "date": "2026-08-25",
   "generatedAt": "2026-08-25T10:51:33.716+09:00",
-  "headline": "오늘의 소식 — 신규 영상 4건",
+  "headline": "오늘의 소식 — 신규 영상 3건",
   "sections": [
     {
       "type": "news",
@@ -34,12 +34,6 @@
         {
           "title": "ESCAPE FROM TARKOV - SEASON 1 PVP",
           "url": "https://www.youtube.com/watch?v=5Lm3oUXB0y8",
-          "source": "YouTube LVNDMARK",
-          "isNew": true
-        },
-        {
-          "title": "My FIRST Game in WARDOGS Was Insane... ($100,000 Profit)",
-          "url": "https://www.youtube.com/watch?v=omTica8e_-s",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }

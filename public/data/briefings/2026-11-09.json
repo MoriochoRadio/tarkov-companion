@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "generatedAt": "2026-11-09T00:31:49.879+09:00",
-  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 8건 · 신규 영상 3건",
+  "headline": "오늘의 소식 — 버그·이슈 3건 · 커뮤니티 8건 · 신규 영상 2건",
   "sections": [
     {
       "type": "news",
@@ -37,26 +37,6 @@
           "title": "[Bug]",
           "summary": "Just spent 2 hr 45 mins transiting boss fighting looting to try and get a markup on the XP so I can go up the League system. I got a server side error and gained 0 exp. What a shame. I feel as if every time I try to use the Transit system I am getting punished for it.",
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqw02a/bug/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        }
-      ]
-    },
-    {
-      "type": "tips",
-      "title": "공략·팁 (Reddit)",
-      "items": [
-        {
-          "title": "[Suggestion] Tips for a level 18 PMC clearing Icebreaker?",
-          "summary": "Hi people I'm here to ask tips how to clear icebreaker as a lvl 18 PMC ... What gear to bring etc ... Haven't played this game for like 6 years and came back now",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqy8y4/suggestion_tips_for_a_level_18_pmc_clearing/",
-          "source": "Reddit r/EscapefromTarkov",
-          "isNew": true
-        },
-        {
-          "title": "[Discussion] Somebody has a video guide for 100% clean engine room strategy for me?",
-          "summary": "Since the Halloween Patch I'm getting clapped in there too often. BD seems far more unpredictable and snappy since the Halloween Event dropped...",
-          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqtr5q/discussion_somebody_has_a_video_guide_for_100/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
         }
@@ -106,6 +86,20 @@
           "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xq9j3n/whats_up_with_the_ai_sometimes_hitting_7_bullets/",
           "source": "Reddit r/EscapefromTarkov",
           "isNew": true
+        },
+        {
+          "title": "[Suggestion] Tips for a level 18 PMC clearing Icebreaker?",
+          "summary": "Hi people I'm here to ask tips how to clear icebreaker as a lvl 18 PMC ... What gear to bring etc ... Haven't played this game for like 6 years and came back now",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqy8y4/suggestion_tips_for_a_level_18_pmc_clearing/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Discussion] Somebody has a video guide for 100% clean engine room strategy for me?",
+          "summary": "Since the Halloween Patch I'm getting clapped in there too often. BD seems far more unpredictable and snappy since the Halloween Event dropped...",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xqtr5q/discussion_somebody_has_a_video_guide_for_100/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
         }
       ]
     },
@@ -113,12 +107,6 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
-        {
-          "title": "First Steps on the Cure - The Cure #21 feat. @MrDrakezilla - Project Zomboid",
-          "url": "https://www.youtube.com/watch?v=GoVf-GegtTw",
-          "source": "YouTube Pestily",
-          "isNew": true
-        },
         {
           "title": "Dorms CQC with the MK-18 Mjölnir! - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=9QZ95WEze6I",
