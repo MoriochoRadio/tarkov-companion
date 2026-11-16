@@ -12,10 +12,17 @@
 // 외부 호출을 403으로 막아서(2026-06-11 확인) 수집 불가 →
 // 공식 패치노트를 그대로 수록하는 EFT 위키 체인지로그로 대체.
 import { mkdir, writeFile } from 'node:fs/promises'
+import {
+  classifyRedditPost,
+  fetchTextWithRetry,
+  isShort,
+  isTarkovVideo,
+} from './briefing-rules.mjs'
 
+// Reddit API 규칙이 권하는 "플랫폼:앱이름:버전 (+연락처)" 꼴. 개인 정보 없이 공개 저장소 주소만 남긴다.
+// 브라우저 흉내 UA나 기본 UA(node)는 레이트리밋을 더 세게 받는다.
 const UA =
-  'tarkov-companion-briefing/1.0 (github.com/MoriochoRadio/tarkov-companion)'
-const FETCH_TIMEOUT = 15_000
+  'web:tarkov-companion-briefing:v1.1 (+https://github.com/MoriochoRadio/tarkov-companion)'
 // 체인지로그에서 이 일수보다 오래된 패치는 제외 (매일 같은 내용 반복 방지)
 const CHANGELOG_MAX_AGE_DAYS = 7
 const VIDEO_MAX_AGE_HOURS = 24
@@ -28,21 +35,14 @@ function kstDateString() {
   return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10)
 }
 
-// 소스가 일시 5xx로 빠지면 guard 때문에 그날 브리핑 품질 저하가 고착됨 — 3회 백오프 재시도
-async function getText(url) {
-  for (let attempt = 1; ; attempt++) {
-    try {
-      const res = await fetch(url, {
-        headers: { 'User-Agent': UA },
-        signal: AbortSignal.timeout(FETCH_TIMEOUT),
-      })
-      if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`)
-      return await res.text()
-    } catch (e) {
-      if (attempt >= 3) throw e
-      await new Promise((r) => setTimeout(r, attempt * 3000))
-    }
-  }
+// 소스가 일시 5xx·429로 빠지면 guard 때문에 그날 브리핑 품질 저하가 고착됨 — 최대 4회 시도.
+// 429는 Retry-After / x-ratelimit-reset 헤더가 시키는 만큼 기다린다(1회 최대 60초).
+// 상세는 briefing-rules.mjs fetchTextWithRetry
+function getText(url) {
+  return fetchTextWithRetry(url, {
+    headers: { 'User-Agent': UA },
+    log: (m) => console.log(`  ${m}`),
+  })
 }
 
 function decodeEntities(s) {
@@ -122,34 +122,7 @@ async function collectWikiChangelog() {
 const SUB = 'https://www.reddit.com/r/EscapefromTarkov'
 const REDDIT_TOP_FEED = `${SUB}/top/.rss?t=day&limit=25`
 
-// 분류 규칙 — 제목의 [태그]가 먼저, 그다음 키워드(예전 검색 RSS 쿼리와 같은 단어).
-// 어느 쪽이든 위에 있는 규칙이 이긴다. 치터 동향은 예전에도 플레어로만 골랐다.
-// label은 generate-briefing.mjs SECTION_PLAN의 feeds와 같은 문자열이어야 한다.
-const REDDIT_RULES = [
-  {
-    label: '버그·이슈·PSA',
-    max: 6,
-    tags: ['bug', 'bugs', 'bug report', 'issue', 'psa'],
-    words: /\b(bugs?|bugged|issues?|broken|desync(ed)?|psa)\b/i,
-  },
-  {
-    label: '공략·팁',
-    max: 5,
-    tags: ['guide', 'tip', 'tips', 'tutorial'],
-    words: /\b(guides?|tips?|how to)\b/i,
-  },
-  { label: '치터 동향', max: 4, tags: ['cheating', 'cheater', 'cheaters'] },
-]
-const REDDIT_POPULAR = { label: '일간 인기', max: 8 }
-
-function classifyRedditPost(title) {
-  const tags = [...title.matchAll(/\[([^\]]{1,30})\]/g)].map((m) =>
-    m[1].trim().toLowerCase(),
-  )
-  const byTag = REDDIT_RULES.find((r) => r.tags.some((t) => tags.includes(t)))
-  if (byTag) return byTag
-  return REDDIT_RULES.find((r) => r.words?.test(title)) ?? REDDIT_POPULAR
-}
+// 분류 규칙(제목 [태그] = 플레어 기준)은 briefing-rules.mjs classifyRedditPost
 
 // 본문 발췌 — 편집장이 제목만이 아니라 내용을 보고 선별할 수 있게
 function extractExcerpt(entryXml) {
@@ -209,37 +182,8 @@ const YOUTUBE_CHANNELS = [
   { name: 'LVNDMARK', id: 'UCOhsgjMEyldgS04MiP2x-zA' }, // 해외 본채널 (클립 채널 아님)
 ]
 
-// Shorts 판별 — RSS에 영상 길이가 없어서 휴리스틱 사용:
-// URL의 /shorts/ 경로, 제목·설명의 #shorts 태그
-function isShort(title, url, description) {
-  if (url.includes('/shorts/')) return true
-  return /#shorts?\b/i.test(`${title} ${description}`)
-}
-
-// 채널 피드엔 다른 게임 영상도 섞인다 (2026-08~09 237건 중 약 3분의 1 — 델타포스·워독스·
-// Arena Breakout·Mistfall Hunter 등). 제목·설명에 타르코프 고유 단어가 있을 때만 싣는다.
-// 해외 채널은 제목에 "Escape From Tarkov"를 거의 항상 붙이지만, 한국 채널은 "타르코프" 없이
-// 은어·맵·보스 이름만 쓰는 경우가 많아(예: "1시즌 3일차 쇄빙선 숏컷+웨지 잡기",
-// "블디 SSD를 주워야 해") 그런 단어도 넣었다. 설명에만 "타르코프 시즌1 영상"이 있는 경우도 있다.
-// Customs·Factory·Woods·공장·연구소처럼 다른 게임에도 흔한 단어는 뺐다.
-const TARKOV_KEYWORDS = new RegExp(
-  [
-    'tarkov', '\\beft\\b', '타르코프', '탈콥', '타르코인', '타르뱅크',
-    // 맵 (tarkov.dev 한국어 이름)
-    '세관', '삼림', '해안선', '리저브', '인터체인지', '등대', '쇄빙선', '그라운드 ?제로',
-    // 보스·세력 (영문은 다른 게임과 겹치지 않는 이름만)
-    'killa', 'tagilla', 'reshala', 'glukhar', 'shturman', 'kollontay', 'zryachiy',
-    '킬라', '타길라', '[르레]샬라', '글루하', '슈[트투]르만', '세니타', '사니타르',
-    '즈리야치', '콜론타이', '블디', '블랙 ?디비전',
-    // 커뮤니티 은어 (카파 컨테이너, 퀘스트 "Shooter Born in Heaven")
-    '카파', '슈본헤',
-  ].join('|'),
-  'i',
-)
-
-function isTarkovVideo(title, description) {
-  return TARKOV_KEYWORDS.test(`${title}\n${description}`)
-}
+// 타르코프 영상 판별(제목만 본다 · 다른 게임 제외)과 Shorts 판별은 briefing-rules.mjs
+// isTarkovVideo / isShort. 같은 영상 중복 제거는 지난 브리핑을 볼 수 있는 generate-briefing.mjs에서 한다.
 
 async function collectYouTube(reportPartial) {
   const cutoff = Date.now() - VIDEO_MAX_AGE_HOURS * 3600 * 1000
@@ -263,7 +207,7 @@ async function collectYouTube(reportPartial) {
         const url = decodeEntities(link[1])
         const descText = desc ? decodeEntities(desc[1]) : ''
         if (isShort(titleText, url, descText)) continue
-        if (!isTarkovVideo(titleText, descText)) {
+        if (!isTarkovVideo(titleText)) {
           console.log(`  youtube/${ch.name}: 타르코프 영상 아님 → 제외: ${titleText}`)
           continue
         }

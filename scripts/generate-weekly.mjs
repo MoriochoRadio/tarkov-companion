@@ -59,6 +59,8 @@ console.log(`지난 7일 브리핑 ${briefings.length}건 로드 (${weekDates.jo
 const agg = new Map()
 for (const b of briefings) {
   for (const s of b.sections ?? []) {
+    // 소스 실패로 지난 브리핑 글을 이어 붙인 섹션은 그 날짜에 이미 셌다 — 다시 세면 "N일 등장"이 부풀려진다
+    if (s.carriedFrom) continue
     for (const i of s.items ?? []) {
       if (!i?.title) continue
       const key = i.url ?? i.title
