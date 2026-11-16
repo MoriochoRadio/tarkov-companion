@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T03:50:50.474+09:00",
+  "headline": "Tarkov City Drops Campaign! 외 공식 소식 1건",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.2.48779 (13 November 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.2.48779_(13_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.1.48558 (13 November 2026)",
+          "summary": "In Seasonal Mode, briefcases with documents have been added to airdrops;\nFor all gamemodes, the reward trade offers for Black Division gear, which were previously exchanged for dogtags, have been corrected. These offers now also require money or barter items.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(13_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.1.48558 (11 November 2026)",
+          "summary": "Simplified the objectives of many seasonal tasks and lowered their starting requirements.\nChanged the seasonal reward trade offers for Black Division gear: they now require money or barter items instead of special dogtags\nBlack Division spawn rate has been increased to 100% on all applicable locations.\nReduced reaction speed, accuracy, and health of all body parts for Black Division operatives on…",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(11_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Tarkov City Drops Campaign!",
+          "summary": "Word has it that everyone on the other side of the world is going crazy over palm trees, neon lights, and sunny coastlines right now. Palm trees are hard to come by in Tarkov, but there’s still a way to bring in some resort vibes! We are launching a Twitch Drops campaign where the main trophies will be two unique shirts for your PMC. The campaign will run until November 23 at 3:00 PM GMT / 10:00 A",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677389277779199054",
+          "source": "Steam 뉴스",
+          "isNew": true
+        },
+        {
+          "title": "Anniversary discount!",
+          "summary": "November 15 marks exactly one year since Escape from Tarkov release! To celebrate this occasion, a 15% discount is active on The Unheard Steam Edition! Gamma secure container, expanded PMC pockets, expanded starting stash, the ability to equip clothing from any faction, and XP bonus for all group members - this is just a short list of the ultimate edition’s benefits. Join The Unheard and enjoy the",
+          "url": "https://store.steampowered.com/news/app/3932890/view/677389277779198550",
+          "source": "Steam 뉴스",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit)",
+      "items": [
+        {
+          "title": "High calibers are still broken [Bug]",
+          "summary": "Using the AK-50 I hit a guy with a SLAP round, and then an M33. ~500 damage absorbed by armor, 50 dealt. SWORD and AK-50 could be the most fun guns in the game, but they are just frustrating.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xxolxq/high_calibers_are_still_broken_bug/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit)",
+      "items": [
+        {
+          "title": "[Loot] NEW PROMOCODE: 1YEAROFESCAPING",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xx5gf3/loot_new_promocode_1yearofescaping/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] 1.0 stats 1 year after release, from Twitter",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xxoud2/screenshot_10_stats_1_year_after_release_from/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] AND IT'S DOWN IN THE BOGSIDE WHERE I LONG TO BE",
+          "summary": "If only there was a black 3-hole balaclava Kukla is slightly different from DPM, but it'll do in a pinch. Classic AR-18 when?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xxdrtn/screenshot_and_its_down_in_the_bogside_where_i/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[Screenshot] Looks like we might be getting the F1 model of the FAMAS as well as the G2",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xxnexf/screenshot_looks_like_we_might_be_getting_the_f1/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "WTF just happened? [New Player]",
+          "summary": "New player, I started playing yesterday. Apparently I killed this dudes, didn't know they were bosses. And later I died of hunger because I don'´t know the extraction points, lmao. I was playing as a scavenger",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xx8gsk/wtf_just_happened_new_player/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        },
+        {
+          "title": "[DISCUSSION] Icebreaker Equipment",
+          "summary": "Hello! I’m new to this subreddit but I’ve been playin Tarkov for a while now, so I’ve got all Traders (except Fence and Ref) maxed out at LL4. I think I’ve figured out the guns alright as it seems to work fine with an MP5SD and SA58 carbine (I use AP ammo on both guns). But for the body armour and helmet? I wanna know what you all suggest! (The pic is of an old loadout I tried running, I like to w",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xx411y/discussion_icebreaker_equipment/",
+          "source": "Reddit r/EscapefromTarkov",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "HyperRatTV is a Carry - The Sherpa #22 feat. @HyperRatTV - Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=YNMV1_g1idQ",
+          "source": "YouTube Pestily",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - PVP RAIDS",
+          "url": "https://www.youtube.com/watch?v=Bdl7ovPmX7M",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "This is what PERFECT Teamwork looks like in Tarkov..",
+          "url": "https://www.youtube.com/watch?v=mf-57-DWqrs",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
