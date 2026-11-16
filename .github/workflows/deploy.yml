@@ -34,19 +34,30 @@ jobs:
         with:
           path: dist
 
+  # 2026-10-14: Pages가 "updating_pages"에서 10분 넘게 멈춰 job 타임아웃(10분)으로 취소됐다.
+  # deploy-pages의 자체 대기 한도(timeout 기본 600000ms = 10분)가 job 한도와 같아서, 액션이
+  # 스스로 실패하기 전에 job이 먼저 잘려 아래 재시도 단계가 한 번도 돌지 못했다.
+  # → 1회 시도를 5분으로 줄이고(멈춘 배포는 액션이 취소한다) job 한도를 재시도까지 들어가게 늘린다.
+  #    정상 배포는 10~40초라 5분이면 충분하다.
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15 # 시도 5분 + 대기 1분 + 재시도 5분 + 여유
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment-retry.outputs.page_url || steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
-        continue-on-error: true # Pages 쪽 일시 장애("try again later")는 1회 재시도로 흡수
-      - if: steps.deployment.outcome == 'failure'
-        run: sleep 90
+        continue-on-error: true # Pages 쪽 일시 장애("try again later")·멈춤은 1회 재시도로 흡수
+        timeout-minutes: 6 # 액션 자체 timeout이 먼저 걸리지 않을 때의 안전장치
+        with:
+          timeout: 300000
+      - if: steps.deployment.outcome != 'success'
+        run: sleep 60
       - id: deployment-retry
-        if: steps.deployment.outcome == 'failure'
+        if: steps.deployment.outcome != 'success'
         uses: actions/deploy-pages@v5
+        timeout-minutes: 6
+        with:
+          timeout: 300000
