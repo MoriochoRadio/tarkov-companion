@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T02:35:32.842+09:00",
+  "headline": "오늘의 소식 — Reddit 수집 실패",
+  "sections": [
+    {
+      "type": "news",
+      "title": "패치노트 (EFT 위키)",
+      "items": [
+        {
+          "title": "패치 1.3.0.2.48779 (13 November 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.2.48779_(13_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        },
+        {
+          "title": "패치 1.3.0.1.48558 (13 November 2026)",
+          "summary": "In Seasonal Mode, briefcases with documents have been added to airdrops;\nFor all gamemodes, the reward trade offers for Black Division gear, which were previously exchanged for dogtags, have been corrected. These offers now also require money or barter items.",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.0.1.48558_(13_November_2026)",
+          "source": "EFT 위키 체인지로그"
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Developer’s diary: Technical improvements",
+          "summary": "In this episode of the \"Diaries\", we would like to talk about the features of update 1.3.5.0, scheduled for release in the second half of November. It will focus on technical improvements to Escape from Tarkov and lay the groundwork for future updates. The main change will be the transition to a new engine version - Unity 6. This is the first step in a large-scale revamp of the game's technical ba",
+          "url": "https://store.steampowered.com/news/app/3932890/view/719048067771269206",
+          "source": "Steam 뉴스"
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": "버그·이슈 제보 (Reddit) — 11/18 수집분 (오늘 수집 실패)",
+      "items": [
+        {
+          "title": "Exfil Faceshield? [Bug]",
+          "summary": "Just why does the BLACK faceshield not go on the BLACK helmet, only on the brown?",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xyni3r/exfil_faceshield_bug/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Rant: they still havnt fixed the flea market cancellation bug where you have to cancel it twice most times. 1 year since 1.0.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xy1o04/bug_rant_they_still_havnt_fixed_the_flea_market/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Bug] Panda on Customs seems well optimized",
+          "summary": "Wanted to check out stronghold while getting the 15 kills for ref in here",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xyhoc7/bug_panda_on_customs_seems_well_optimized/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ],
+      "baseTitle": "버그·이슈 제보 (Reddit)",
+      "carriedFrom": "2026-11-18"
+    },
+    {
+      "type": "community",
+      "title": "오늘의 인기 글 (Reddit) — 11/18 수집분 (오늘 수집 실패)",
+      "items": [
+        {
+          "title": "[Video] EFT Unreal Engine Port - Follow up + Q&A",
+          "summary": "Disclaimer 1: Private project. Will not be published nor shared. Disclaimer 2: Video is heavily compressed because Reddit upload limitations. Full native 4K video (no HDR this time) can be found here: https://youtu.be/u3odDHeeBdQ This post is a follow up to the initial post from last week: https://www.reddit.com/r/EscapefromTarkov/s/9tmusABc6E This video includes in 3 sections: Daytime indoor/outd",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xxzv92/video_eft_unreal_engine_port_follow_up_qa/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "My death knight cosplay, not fully finished yet [Feedback]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xy6708/my_death_knight_cosplay_not_fully_finished_yet/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] This is peak (1.0) tarkov gameplay",
+          "summary": "From the spastic movement, to the fact he is unkillable and my gun jamming after every shot. 11/10 would still recommend.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xxwhdu/discussion_this_is_peak_10_tarkov_gameplay/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Discussion] Which 416A5 two-tone set up would you use?",
+          "summary": "Ignore the scope, stock, grip, foregrip, really just everything except the colour choice. I'm just trying to figure out which two-tone look is the nicest. Also if you have some ideas Im all ears.",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xy039k/discussion_which_416a5_twotone_set_up_would_you/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "I've hoped for this gun in the game for the longest time [discussion]",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xye90j/ive_hoped_for_this_gun_in_the_game_for_the/",
+          "source": "Reddit r/EscapefromTarkov"
+        },
+        {
+          "title": "[Feedback] 1YEAROFESCAPING - Already deactivated",
+          "url": "https://www.reddit.com/r/EscapefromTarkov/comments/1xy4jlq/feedback_1yearofescaping_already_deactivated/",
+          "source": "Reddit r/EscapefromTarkov"
+        }
+      ],
+      "baseTitle": "오늘의 인기 글 (Reddit)",
+      "carriedFrom": "2026-11-18"
+    }
+  ],
+  "degraded": [
+    "reddit"
+  ]
+}
