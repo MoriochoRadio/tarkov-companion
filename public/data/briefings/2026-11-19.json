@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "generatedAt": "2026-11-19T02:29:27.461+09:00",
+  "generatedAt": "2026-11-19T16:21:14.942+09:00",
   "headline": "Developer’s diary: Technical improvements",
   "sections": [
     {
@@ -114,6 +114,12 @@
           "title": "타르코프 PVE AI봇 전면 개편 예고 | 니키타가 해설해주는 우주 타르코프, 부활 가능하다? | 시즌 2에는 UN군이 인터체인지맵에? | Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=Tux7jRMUN-4",
           "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "Being a Menace with the AK-308 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=vuqLjWCo3Ic",
+          "source": "YouTube LVNDMARK",
           "isNew": true
         }
       ]
