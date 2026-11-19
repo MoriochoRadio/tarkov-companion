@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "generatedAt": "2026-11-19T16:21:14.942+09:00",
+  "generatedAt": "2026-11-19T23:30:08.578+09:00",
   "headline": "Developer’s diary: Technical improvements",
   "sections": [
     {
@@ -111,9 +111,9 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "타르코프 PVE AI봇 전면 개편 예고 | 니키타가 해설해주는 우주 타르코프, 부활 가능하다? | 시즌 2에는 UN군이 인터체인지맵에? | Escape from Tarkov",
-          "url": "https://www.youtube.com/watch?v=Tux7jRMUN-4",
-          "source": "YouTube 노잼망겜",
+          "title": "Why Does the AUG Work So Well? - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=5aeVi2h6vFg",
+          "source": "YouTube LVNDMARK",
           "isNew": true
         },
         {
