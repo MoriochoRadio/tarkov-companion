@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
-  "generatedAt": "2026-11-21T02:11:24.634+09:00",
-  "headline": "오늘의 소식 — Reddit 수집 실패",
+  "generatedAt": "2026-11-21T16:02:51.208+09:00",
+  "headline": "오늘의 소식 — 신규 영상 1건 · Reddit 수집 실패",
   "sections": [
     {
       "type": "news",
@@ -80,6 +80,18 @@
       ],
       "baseTitle": "오늘의 인기 글 (Reddit)",
       "carriedFrom": "2026-11-18"
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "LVNDMARK vs JUICED 3-Man Squad in Dorms - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=2R8L0GDk5U0",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
     }
   ],
   "degraded": [
