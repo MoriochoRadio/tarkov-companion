@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
-  "generatedAt": "2026-11-21T19:15:51.113+09:00",
-  "headline": "오늘의 소식 — 신규 영상 2건 · Reddit 수집 실패",
+  "generatedAt": "2026-11-21T22:33:08.103+09:00",
+  "headline": "오늘의 소식 — 신규 영상 3건 · Reddit 수집 실패",
   "sections": [
     {
       "type": "news",
@@ -89,6 +89,12 @@
           "title": "타르코프 시즌2 특성 퍽 공개 | 뚜렛? 파격적인 디버프 다수 추가 | 국룰 조합 다시 짜기·시뮬레이터 | Escape from Tarkov",
           "url": "https://www.youtube.com/watch?v=9lLid8XRXXY",
           "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "Taking over Reserve with the VAL MOD 4 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=32kBAtSJ33k",
+          "source": "YouTube LVNDMARK",
           "isNew": true
         },
         {
