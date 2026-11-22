@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
-  "generatedAt": "2026-11-22T01:20:54.723+09:00",
-  "headline": "오늘의 소식 — Reddit 수집 실패",
+  "generatedAt": "2026-11-22T15:43:57.222+09:00",
+  "headline": "오늘의 소식 — 신규 영상 1건 · Reddit 수집 실패",
   "sections": [
     {
       "type": "warning",
@@ -68,6 +68,18 @@
       ],
       "baseTitle": "오늘의 인기 글 (Reddit)",
       "carriedFrom": "2026-11-18"
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "Owning DORMS with the AS VAL MOD 4 - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=ISYfz1vZwEY",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
     }
   ],
   "degraded": [
