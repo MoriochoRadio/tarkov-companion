@@ -1,17 +1,30 @@
 {
   "date": "2026-11-24",
-  "generatedAt": "2026-11-24T18:50:59.949+09:00",
-  "headline": "패치 1.3.5.0 (24 November 2026)",
+  "generatedAt": "2026-11-24T21:57:25.317+09:00",
+  "headline": "패치 1.3.5.0.48914 (24 November 2026)",
   "sections": [
     {
       "type": "news",
       "title": "패치노트 (EFT 위키)",
       "items": [
         {
-          "title": "패치 1.3.5.0 (24 November 2026)",
+          "title": "패치 1.3.5.0.48914 (24 November 2026)",
           "summary": "Vegetation and long-distance rendering: Reworked grass rendering and the distant projection system for trees and bushes;\nLighting and shadows: Updated the distant and interior shadow systems, making transitions smoother. Volumetric lighting now puts significantly less load on the CPU and GPU;\nEnvironmental decals: Optimized decal rendering speed while minimizing system load;\nOptics: Improved imag…",
-          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.5.0_(24_November_2026)",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.5.0.48914_(24_November_2026)",
           "source": "EFT 위키 체인지로그",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "type": "news",
+      "title": "Steam 공식 소식",
+      "items": [
+        {
+          "title": "Patch 1.3.5.0",
+          "summary": "Halloween event The in-game Halloween event has ended. Please note that Scav behavior toward Player Scavs and the penalty for killing them have been reverted to their standard settings. Performance and optimization Loading into and out of raids We've made changes to every stage of connecting to a raid: the resource loading architecture has been completely reworked. Connecting to the server now tak",
+          "url": "https://store.steampowered.com/news/app/3932890/view/719048635071856650",
+          "source": "Steam 뉴스",
           "isNew": true
         }
       ]
