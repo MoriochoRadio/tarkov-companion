@@ -1,7 +1,7 @@
 {
   "date": "2026-11-25",
-  "generatedAt": "2026-11-25T00:58:27.821+09:00",
-  "headline": "오늘의 소식 — 신규 영상 1건 · Reddit 수집 실패",
+  "generatedAt": "2026-11-25T06:33:26.529+09:00",
+  "headline": "오늘의 소식 — 신규 영상 2건 · Reddit 수집 실패",
   "sections": [
     {
       "type": "news",
@@ -97,6 +97,12 @@
       "type": "videos",
       "title": "신규 영상",
       "items": [
+        {
+          "title": "These CUSTOM fights are RIDICULOUS - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=8GZqKJJM-KE",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
         {
           "title": "This LOUD SR-3M Build SURPRISED me! - Escape From Tarkov",
           "url": "https://www.youtube.com/watch?v=VSNiB-Q7-iA",
