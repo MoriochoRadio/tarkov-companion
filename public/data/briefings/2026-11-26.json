@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "generatedAt": "2026-11-26T00:45:18.344+09:00",
+  "generatedAt": "2026-11-26T05:42:04.292+09:00",
   "headline": "2026 Steam Awards nomination!",
   "sections": [
     {
@@ -105,8 +105,14 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "Trying the SUPPRESSED G36 Build - Escape From Tarkov",
-          "url": "https://www.youtube.com/watch?v=PgW45Zu3HxQ",
+          "title": "ESCAPE FROM TARKOV - TESTING NEW PATCH",
+          "url": "https://www.youtube.com/watch?v=YSuDJK4DbPI",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Trying the TAN HK416 with 100 Round Mags - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=E1yaFySOd2U",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }
