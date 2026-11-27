@@ -1,12 +1,19 @@
 {
   "date": "2026-11-27",
-  "generatedAt": "2026-11-27T05:34:11.580+09:00",
-  "headline": "오늘의 소식 — 신규 영상 1건 · Reddit 수집 실패",
+  "generatedAt": "2026-11-27T20:27:29.587+09:00",
+  "headline": "패치 1.3.5.1.48982 (27 November 2026)",
   "sections": [
     {
       "type": "news",
       "title": "패치노트 (EFT 위키)",
       "items": [
+        {
+          "title": "패치 1.3.5.1.48982 (27 November 2026)",
+          "summary": "Technical update",
+          "url": "https://escapefromtarkov.fandom.com/wiki/Changelog#1.3.5.1.48982_(27_November_2026)",
+          "source": "EFT 위키 체인지로그",
+          "isNew": true
+        },
         {
           "title": "패치 1.3.5.0.48914 (24 November 2026)",
           "summary": "Vegetation and long-distance rendering: Reworked grass rendering and the distant projection system for trees and bushes;\nLighting and shadows: Updated the distant and interior shadow systems, making transitions smoother. Volumetric lighting now puts significantly less load on the CPU and GPU;\nEnvironmental decals: Optimized decal rendering speed while minimizing system load;\nOptics: Improved imag…",
