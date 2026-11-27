@@ -1,7 +1,7 @@
 {
   "date": "2026-11-28",
-  "generatedAt": "2026-11-28T00:16:27.969+09:00",
-  "headline": "오늘의 소식 — 신규 영상 1건 · Reddit 수집 실패",
+  "generatedAt": "2026-11-28T05:20:15.745+09:00",
+  "headline": "오늘의 소식 — 신규 영상 2건 · Reddit 수집 실패",
   "sections": [
     {
       "type": "news",
@@ -104,8 +104,14 @@
       "title": "신규 영상",
       "items": [
         {
-          "title": "Unity 6 Just Made Tarkov SO MUCH BETTER!",
-          "url": "https://www.youtube.com/watch?v=R9hkMC-lKGg",
+          "title": "ESCAPE FROM TARKOV - TESTING NEW PATCH",
+          "url": "https://www.youtube.com/watch?v=VvqV6-WQPBs",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Sniping players with the MK-18 Mjölnir - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=eFXvLKFBrdw",
           "source": "YouTube LVNDMARK",
           "isNew": true
         }
