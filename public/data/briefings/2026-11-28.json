@@ -1,7 +1,7 @@
 {
   "date": "2026-11-28",
-  "generatedAt": "2026-11-28T16:47:55.911+09:00",
-  "headline": "오늘의 소식 — Reddit 수집 실패",
+  "generatedAt": "2026-11-28T18:20:16.960+09:00",
+  "headline": "오늘의 소식 — 신규 영상 3건 · Reddit 수집 실패",
   "sections": [
     {
       "type": "news",
@@ -98,6 +98,30 @@
       ],
       "baseTitle": "오늘의 인기 글 (Reddit)",
       "carriedFrom": "2026-11-18"
+    },
+    {
+      "type": "videos",
+      "title": "신규 영상",
+      "items": [
+        {
+          "title": "타르코프 최적화 진짜일까? 직접 재 보니 200 FPS 돌파 | 시즌1 배틀패스, 12월 7일 지나면 유료 | Escape from Tarkov",
+          "url": "https://www.youtube.com/watch?v=L7b-0_Xu5QM",
+          "source": "YouTube 노잼망겜",
+          "isNew": true
+        },
+        {
+          "title": "ESCAPE FROM TARKOV - TESTING NEW PATCH",
+          "url": "https://www.youtube.com/watch?v=VvqV6-WQPBs",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        },
+        {
+          "title": "Sniping players with the MK-18 Mjölnir - Escape From Tarkov",
+          "url": "https://www.youtube.com/watch?v=eFXvLKFBrdw",
+          "source": "YouTube LVNDMARK",
+          "isNew": true
+        }
+      ]
     }
   ],
   "degraded": [
